@@ -1,18 +1,27 @@
 ---
 layout: about
-image: /assets/img/blog/hydejack-9.jpg
+title: About
+image: /assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  Software engineer, writer, and community builder. Notes on code, identity,
+  and the long strange trip of a career in tech.
 hide_description: true
-redirect_from:
-  - /download/
 ---
-
-# About
 
 <!--author-->
 
-## Hydejack
+I prefer Kai, but Kyle is acceptable. I like code, sound, and minimalism.
+My path began in 2006, cutting my teeth in forums and communities before graduating to production software
+I spent 2017–2020 at BigCommerce discovering the soul of a great engineering team.
+From 2022-2024, I worked for Apollo, establishing best practices for developer support documentation and community outreach.
 
-I like code, sound, and minimalism.
+---
+
+**Factoids:**
+- `xerocint` was my handle before I understood what handles were for
+- Dark Side of the Moon is better as a single uninterrupted track — stitch it in Audacity if you haven't
+- //TODO
+
+---
+
+<!--posts-->
