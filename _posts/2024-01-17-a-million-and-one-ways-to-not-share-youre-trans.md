@@ -1,0 +1,209 @@
+---
+layout: post
+title: "A Million and One Ways to NOT Share You’re Trans"
+date: 2024-01-17 00:00:00 +0000
+description: "When I first wrote this in middle school, the form was an obtuse graduation speech. Truth is best delivered with a hammer; Subtlety..."
+image:
+  path: /assets/img/blog/posts/a-million-and-one-ways-to-not-share-youre-trans/im-trans-cover.jpg
+tags:
+  - narrative
+  - personal
+  - code
+  - career-path
+categories:
+  - narrative
+---
+
+💡
+
+This is part three of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
+  
+I: [Dreaming in Code || Lucid Dreaming](https://kyleo.io/dreaming-in-code-lucid-dreaming/) II: [Waking Software Engineering](https://kyleo.io/waking-software-engineering/)
+
+When I first wrote this in middle school, the form was an obtuse graduation speech. The primary focus was how significant moments of one’s life are decided at a time when they have little control over them.
+
+I had recently completed writing the first 50 pages of “my book,” and the speech was a follow-up piece for its “inevitable success.” The original contents of "The Flame of Takuya" nor this speech exist any longer, but suffice it to say, I find it strange that an adolescent wrote a 120-odd-page novella about a main character with a dual identity.
+
+One identity had a sassy ego, exuded confidence, and was more femme-presenting than the shy, bespeckled boy with low self-esteem. With hindsight at my disposal for each of these writings, I know now that I was trying to share a more profound thought. These were rough starts at sharing with my family that I wasn’t gender-conforming, and I can clearly remember the first line of said book: “Life sucks, and everybody knows it.”
+
+The sentence is cynical and prescribes an idea I disagree with today. Changing your mind is okay, especially after decades and/or when new data is available. Often, truth is best delivered with a hammer; Subtlety is rarely appreciated, even with an explanation.
+
+I identify as a non-binary and transgender femme.  
+  
+**Wait, what?**
+
+[Brevity in writing and copy](https://www.goodreads.com/work/quotes/35832-the-elements-of-style#:~:text=Thus%2C%20brevity%20is%20a%20by%2Dproduct%20of%20vigor.&text=Never%20call%20a%20stomach%20a%20tummy%20without%20good%20reason.&text=A%20single%20overstatement%2C%20wherever%20or,object%20of%20the%20writer's%20enthusiasm.) [isn’t as employed as it should be](https://faculty.washington.edu/heagerty/Courses/b572/public/StrunkWhite.pdf). Based on the [typical questions](https://genderdysphoria.fyi/) surrounding gender identity concerning 'Non-Binary' ('NB', 'enby' if you’re feeling cute ;D), I realize this concept can be a complex puzzle for many. I can share *my* understanding of what it means to be a non-binary identifying person.
+
+I seek not only to tackle letting people know in a public way that I’ve started to transition genders but also describe “a lack thereof” binary gender identity and how, on a surface level, that’s confusing, especially when we reach the intersection of gender and sex. For clarity, gender and sex are distinct – gender is an ideological structure encompassing a spectrum of identities beyond the male-female dichotomy, while sex refers to biological attributes. In my case, I navigate the world as non-binary, blurring traditional gender norms, but biologically, I'm transitioning as a trans femme.
+
+### A Million Little Things
+
+Between 15 and 20 years ago, I immersed myself in the chase of The Idea. The Idea is so fuckin’ sick that it’d put Google, Facebook, and the rest of them to shame and eclipse them wholly. I hadn’t the first clue precisely what The Idea was, except that it was my life's elusive driving force. Whether through writing, sound, code, graphics, [drawings](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b899431a-c717-42de-acb2-b6d46986e756/d12sdho-fe8d20a2-fbca-4fca-9d93-382e88930c6d.jpg/v1/fill/w_900,h_700,q_75,strp/tree_by_kaio393_d12sdho-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzAwIiwicGF0aCI6IlwvZlwvYjg5OTQzMWEtYzcxNy00MmRlLWFjYjItYjZkNDY5ODZlNzU2XC9kMTJzZGhvLWZlOGQyMGEyLWZiY2EtNGZjYS05ZDkzLTM4MmU4ODkzMGM2ZC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7zBdMiTGhxW3xAwkhjJid5OPRAPRzE0nI7SK4gwD84k).. All channels were open to receive this materialization … but I’ve reflected on what feels, in retrospect, trite, and I [wrote about “productivity” recently](https://kyleo.io/ten-rules-for-effective-time-management/), so I‘ll digress.
+
+This flash of insight hit me when I recognized that my spastic 'try anything and everything' approach was fundamentally unsound from the more conventional 'don’t reinvent the wheel' philosophy.
+
+I pivoted into an entirely new chase that also ended in futility. Again, the details of *that new chase* don’t matter *in this context*, but after reaching a specific salary, one wonders if the time spent was well worth it. This isn’t a complaint. I’m grateful for how fortunate I have been and know I could quickly end up in a much worse circumstance. Being born in America is a gift, and many of my peers growing up were far less fortunate than I. The Idea wasn’t a product but a distraction from the truth.
+
+To continue my chase of The Idea, [I sought work in tech](https://kyleo.io/waking-software-engineering/), and I didn’t care if I had to sweep the floors. Whatever enabled me to be there and eventually apply for software dev roles. The latter wasn’t as early as I’d planned, but internally, I knew I was feminine, which made me feel I must be absolutely 100% sure of my skillset before applying. I feared sharing more of myself in the corporate world and how the government would treat me if I were anything other than "normal."
+
+It’s a million of these “what ifs” or articles like “Why do women use more exclamation points than men when communicating via text?” Oh, cool. Like me, miss “Salutations!” greeting via email – that had me perpetually entranced by a far-off thought: how quickly would I hit a switch, given the opportunity, that'd enable me to become the opposite gender?
+
+Those million little things didn’t matter to me when I was 12 and wanted to work for Google. I sent an application and did everything I could to fulfill how they described their ideal applicant, like beginning to learn Python, which I still use today. Around that same time, I discovered the National Football League’s (NFL) New England Patriots, an atypical pastime for me.   
+  
+I didn’t understand American Football and had a solid distaste for it due to its physicality. With Tom Brady, though, I didn’t have to understand football or worry about physicality. [He’s Tom Brady](https://en.wikipedia.org/wiki/Tuck_Rule_Game#:~:text=However%2C%20upon%20review%20of%20the,the%20then%2Deffective%20NFL%20rules.). I didn’t desire to play sports, but I aspired to be whatever the equivalent would be in software. Code, I understood.
+
+#### Repetitions
+
+Connecting my gender dysphoria to coding isn’t evident from the outside, but over the past three or four years, I’ve slowly unfolded it as a blind spot for me. I had all of the white-male privilege any other would have, but I only felt it when being within that class of folk meant I couldn’t be girly.
+
+Before I began cross-dressing, I was concerned with people “knowing” about how I thought or “who I really was,” and I spent a lot of my teenage years grappling from identity to identity. I had some “beta” identities but soon settled on “Kai,” a nickname someone bestowed upon me. I’d return to Kai multiple times, and we’ll cover what transitioning means for my name in a future post. In my freshman year of secondary school, I went by “XIN” (all caps, stylized with small letters for “IN”), but returned to Kai the next school year when I figured out my new online handle: `xerocint`.
+
+If you're comfortable calling me 'Kai,' feel free to do so—many of my online friends already are. While contemplating a name change, I'm exploring 'Kai' as an option throughout 2024. I haven't abandoned the name 'Kyle,' so you can use that too!
+
+> “Kai is my IRL name, and xerocint has the letters from XIN but makes more sense on the internet” – me, probably.
+
+There were 0 results on Google for that exact quoted word; unfortunately, [there are many more now,](https://www.google.com/search?sca_esv=598932482&q=%22xerocint%22&nfpr=1&sa=X&ved=2ahUKEwiF9pDZqeODAxXqj2oFHZDyDTYQvgUoAXoECAUQAw&biw=1682&bih=973&dpr=1) as teendom and angst will prove out. If my persona were cool enough, nobody would question my gender identity regarding my ability to produce code.
+
+{obligatory /s, [RIP Reddit](https://twitter.com/ChristianSelig) – FWIW, this is my pre-Reddit years, and I had taken up new handles by then}
+
+Improving a skill is all about consistent repetitions (and for the youths: *not changing your name (or phone number) multiple times a year*). Whether it’s a personal project to improve an acute skillset or a daily routine checklist and log. Logging is equally, if not of a higher volition, necessary to determine one’s accuracy in said activity.
+
+A counter-example: imagine Tom Brady’s personnel miscalculated his throwing distance during practice and gave back inaccurate or zero data. That ruins “Game Days,” where “a game of inches” requires higher accuracy than in a junior league. If a coder comments in riddles, the project lives and dies with their understanding of the functionality. Code should be commented on only when necessary, but when done so with an inept tablature, the structure only caves in.
+
+I understand Tom Brady retired recently, so I should say Patrick Mahomes or Joe Burrow or select your personal “GOAT” here (CJ Stroud, 2024, babyyy). It bears repeating because I know this isn’t an original thought: there’s only one player at specific moments in the 2000s and 2010s who NFL fans would not want to see at the other end of their respective team’s field. That was Tom Brady. If I could reach that level of *something*, then I wouldn’t ever have to worry about my gender identity. Instead of repeating positive mantras to myself, I struck out to the shadows.
+
+#### Let’s Talk About Harry Potter
+
+I’ve been so upset with J.K. Rowling since I “dunno” when, but for this saga to make any sense, we have to talk about Harry Potter:
+
+![](https://lh7-us.googleusercontent.com/4vo2bMTN7XWdJ6XSGbgqh2CknNgGGh0rLEruppLtQMmSacMtGWs2deE_Y5ftQBoC-nlAZIdV4psKICPtxUrxGVJD1qWOzrvEz03EY1EhpP4GabbfAfL9FlCG5-H0e5BklfvVVEPpl5UHK7uHtWntrXE)
+
+No, I’m still not Harry Potter.
+
+When I was a kid, I was Harry Potter. I hadn’t heard of Harry Potter when people asked me if I was Harry Potter. I first avoided what was then only a book series because of respect for my parents and fear of Hell. Witches and wizards were “Satanic” and “demonic,” so our household wasn’t allowed near such contraband by word of my mother.
+
+However, my third-grade teacher, Ms. Stauffer had the first novel on her bookshelf for anyone to read between activities in class. I hadn’t disliked reading, but until then, I only had a passing interest. For whatever reason, I decided to go against the rules and see who everyone was asking me about.
+
+Suddenly, I was transported off on the Hogwarts Express with the expectation that it was a Good Thing to imagine being this Anglo-Saxon white male and along for his adventures in a fantastical world. I *devoured* each book in turn and became adept at reading *during* class.
+
+My favorite comment was from an adult about how I looked “more like Harry Potter than Harry Potter”  around the time *Harry Potter and the Chamber of Secrets* premiered on film ([in 2002](https://www.imdb.com/title/tt0295297/), our titular character played by Daniel Radcliffe, whose performance I love) because of my “glasses” (my glasses were always broken in some capacity, I can’t recall the case on this occasion) and my “hair.”
+
+Radcliffe’s hair is quite dark, but it isn’t jet black, and what director of photography wants to deal with a cowlick on the back of the principal actor’s head all film? Some things make more sense in fiction than in film.
+
+As the series continued, I grew annoyed by Harry as a character. I get it; he'd been through a lot. This isn’t a “hot take,” if you go through the Harry Potter boards from around the fifth and sixth books, I’m essentially rehashing posts.
+
+![🤷‍♀️](https://lh7-us.googleusercontent.com/zirbW9oxMHIwMy0jhYqiGdxilp1rOlNOvaz9wvcxpuv-D96kDpCen06ilEHFfYOHuyY4ZjNfie_XlxbUM-lnQSADEzyXFz_THGN0CY21ZqFt8dmDUH86MxdhoPA6J6-veWd0X_LXmZAXyk17DsJaKYY)
+
+I found my personality and temperament more like Hermione Granger, which wasn’t surprising, but again, one of those million little things that made me go: “Huh.”\*  
+  
+\* This isn't to say if anyone's personality is like one of the opposite gender that they're transgender. The intangibles behind each character (Harry and Hermione) led *me* to an *inkling* of it.
+
+As many million little stories I have about how I became an [alchemist, I mean software engineer](https://kyleo.io/waking-software-engineering#Conclusion), there are as many that I have that explain my non-conforming gender identity. Many of those times coincide, primarily because I can’t tell you how many times I’ve wanted to retort to being called “a wizard” as factually being “a witch.” An equal amount to “flex” my knowledge and capabilities as a programmer when nobody would expect me to complete a task under normal circumstances, regardless of gender, age, or professional experience.  
+  
+This doesn’t begin to touch on other controversies surrounding Rowling’s unfriendliness for the trans community and other marginalized folx. I was far too removed from Harry’s world by that point, so I don’t feel primed to discuss that topic specifically. Humans tend to seek the path of least resistance naturally. As a biologically birthed male with a Southern Baptist-adjacent upbringing, Harry was the perfect conduit between “totally Christian” and “demonic,” my two polarities for morality at the age of nine. What’s a little light magic between imaginary friends?  
+  
+Unfortunately, it was closer to the demonic polarity than I had feared. When my mother discovered *Harry Potter and the Chamber of Secrets* ([published in 1999](https://scholasticlibrary.digital.scholastic.com/harry-potter-and-the-chamber-of-secrets.html)) in my backpack, I was given a “come to Jesus” talk, as I’ve come to describe them. Light magic and imaginary friends didn’t give glory to God. I started writing my own light magic and imaginary friend book, and my ability to stealthily sap away knowledge from the Wizarding World became more clandestine. I don’t remember exactly what was said, but my reaction was, “Never get caught again,” and the closest I can remember to “getting caught” again by Mom was smoking cigarettes when I was 17.\*\*   
+  
+\*\* She had stopped giving “come to Jesus” talks by then, and it was more an expression of surprise or possibly exasperation. I had been casually smoking for two years **(read: when around smoker friends/if I had the rare pack of smokes.. I quit smoking a long time ago, and you should, too)**.  
+  
+With this action, my mother unintentionally set me off on a journey of self-discovery where I quickly found I was much different than my family. How evil could non-fictional dark magic be if fictional light magic was terrible by these standards when I perceived *Potter* to be as innocent as I was? \*\*\*  
+  
+\*\*\* Christians called *Potter* a "slippery slope" for this reason, but we'll table this topic for longevity's sake. In short, I don't practice witchcraft, and when I did, it was *after* my interest in Harry Potter waned. I learned some spells through a schoolmate in middle school, and my attention lasted a few weeks. I recognize the beliefs of pagan and Wiccan religious groups. I hope this aside is seen as net-positive and informative because this should signal to any who aren't aware: "The *Harry Potter* series didn't instruct or receive direction from *real* Wiccan groups."  
+  
+It wouldn’t be for another six years that I’d go “all-in” (my words), drop out of high school, and try a “manual reboot” of my logic systems and moral polarities, but this is one of the critical points where I began questioning authority from a young age and where soon I’d find myself looking back to. “The adult in the room isn’t always the best source of information.”  
+  
+I may have been banned from reading Harry Potter by the librarian and the rest of my family, but that didn’t stop me from completing the remaining book available at the time, “Harry Potter and the Goblet of Fire,” seven times over before the time I was ten-years-old, or seeing the second film in theaters the year after.
+
+#### You Might Be Experiencing Gender Dysphoria If . . .
+
+**Yesterday, a couple of moments stood out to me:**  
+When I was 12, I overheard a conversation between two women while attending a show-tunes event where they discussed one of the women’s children. This child, objectively speaking, was the show's star and had an astounding voice. Their parent expressed concern that puberty would dramatically affect their child’s voice and that it was rare for a born male to [retain a "true tenor" voice](https://qr.ae/pKQ7QN) through the change. Neither of the parents knew I overheard this conversation; I was in an opportune spot to eavesdrop, albeit incidentally. It’s one of the first “unfiltered” conversations I remember from an adult (^1). As someone expecting to go into puberty soon and very protective of their ability to sing, I collected this thought to ask my dad later.
+
+(^1) Note to the Editor: Fix this some day, pls.. Another was when I was around three or four and overheard a discussion about "purchasing Game Boy games at the `water store`".
+
+To be clear, I don’t fault either of my parents *directly* for an inactive interest in my gender identity. It was the 90s, and most of my friends’ parents were younger than my parents by a decade (especially my mom, sorry Mom). GenX is still coming to the idea, and even my generation (GenY/Millenial) struggles (including myself). Future generations have given me hope and the confidence to share this with more than close friends.  
+  
+When I asked my dad how puberty would affect my voice, and after he explained something in proximity of it, “causing a drop in tone,” I had a follow-up question: “What if I want to keep my high voice?” “High voice” is an alternate vernacular from the choir for Male At Births (MABs), who can sing in the tenor register. My dad asked/commented: “You don’t want to sound like a girl, do you?” I never answered the question and stopped taking Choir as a school elective.
+
+**A shorter, internal example:**  
+  
+While discussing traditional relationships compared to modern ones, a friend and I began to admit how we can be atypical of social norms regarding relationships. A common phrase this friend would use was “I’m a goddamn princess,” and I stopped myself from saying, “What if *I* want to be the goddamn princess.” Instead, blaming my half-interrupted thought on forgetting my retort. In this friend’s defense, I still think she would have laughed it off sincerely for my benefit, but societal expectations from Texas and my lack of outside perspective enveloped the thought away. The lingering thought remained that I *would* rather “stay home with the kids,” “be a homemaker,” or, in my friend's words, be a “goddamn princess.” \*\*\*\*  
+  
+\*\*\*\* Earlier that day, a transgender friend, Alice, asked me "If I had considered if I was trans before," and I said aloud, "I haven't thought of it before," but what I meant was, "I haven't thought about it *that way* before." In my mom's Christian household, "trans" wasn't a word we spoke. Also, I would *love* to hear an update based on my latest response <3.  
+  
+These two examples have something in common: I *do* forget what the thought was, or with my father, what my question was. I remembered the reaction for all these years, but not my actions (or thoughts) that led to it. There have been a few other events that I’ve re-engaged like this, and while they had fleeting feelings of gender rejection, none are as succinct and clear as these. Direct rejection and societal rejection. It’s possible I could’ve shared my thoughts on both occasions and led to a productive conversation, but my 12-17 years of experience at each time reflected: “bury this *DEEP*,” and I did for at least ten years.  
+  
+**One last example:**  
+  
+Surprise! I thought of another one that’s hard to share but feels vital for anyone else who might have experienced it or is going through puberty, as it happened when my chest began to grow. This happens to MABs *for the briefest* of moments, and I was elated thinking that I *was* born a girl and soon I’d have what I noticed other girls at school had started to develop. This feeling was never lost on me, and I have felt like I was missing an appendage my whole life. Now that I’ve started Hormone Replacement Therapy (HRT) and this has rekindled, words cannot describe my beginning to feel of wholeness. It’s important to me to complete this writing sooner rather than later as it’ll help others see what can’t be seen with HRT and my primary goal: filling the intangibles I’ve missed and, oh, how I’ve unknowingly missed them.
+
+#### Slight Miscalculations
+
+I went through the repertoire of diagnoses as a kid. In my best estimation, my mother would project her feelings onto me, which ended up in a depression diagnosis from age nine to twelve. At that point, I outright refused to take medication because it caused me to feel depressed. I don’t recall saying anything along the lines that I was sad or upset at all, and again, in my best estimation, it has *a lot to do with* why I didn’t speak up much back then. Anything I said was contorted into something I had no intention of saying, and I would have to spend ten to fifteen minutes back-pedaling.   
+  
+This still occurs today: for example, five days ago, I sent my mother a message saying, “I love you,” only to be returned with a barrage of questions. I sent that because I knew writing this article could cause me not to want to say it to her for some time. The confoundment only further magnified my frustration, and again, I found myself “being the adult” and not sharing why I had avoided speaking to her since I started HRT and transitioning.
+
+I began self-diagnosing around the age I refused medication, Attention Deficit Hyperactive Disorder (ADHD) being an obvious candidate, but I didn’t like the idea of being “zombified” on their meds. I likened myself to the autism spectrum, specifically Asperger’s Syndrome instead. A friend at lunch pointed out one day, “You’re just reading the descriptions and matching what’s there,” my eyes went upward as I tried recalling the moments when that *was* happening and poorly hid a smirk.
+
+When I started living online, a story again unto itself; it was my freshman year of high school. The precursor event leading up to that was when I, for the first time, “dated a boy” and considered myself “bicurious.” It wasn’t “in real life,” and only for a week or so, but the conversations with him and a few friends led me to believe I *was* one of the *hethans* the Bible warned me about.   
+  
+I was far past the time that I “believed in God,” but I had to live at home for at least four more years. I grew concerned with my ability to attain that, and subconsciously, gears began to turn. I felt like Harry in *the Half-Blood Prince* ([published in 2005](https://scholasticlibrary.digital.scholastic.com/harry-potter-and-the-half-blood-prince.html))*,* except I knew my time at Hogwarts was running out.
+
+After seeking psychiatric help several years ago, I was diagnosed with ADHD and anxiety, and through healthy habits, medication, and therapy, I’ve been able to exercise these demons. I finally broke the barrier of being a paid coder instead of doing code work for standard technical support pay. Never underestimate your own ability or self-worth. If someone wants to pay you 200 grand a year\*\*\*\*\*, the only question is how you will prove yourself over the next year and how the new role could build on your foundation. What are the stock options like? Will you want to work there for three years? Five? If you aren't already asking these questions when considering a job opportunity, they should be prioritized *above* your salary. Cash compensation is measured in more than one metric.  
+  
+\*\*\*\*\* To be clear, I turned them down.
+
+#### **Realignment**
+
+In 2020, everything seemed to happen at once. [I](https://x.com/kyle_o/status/1234518529006821381?s=20) [was](https://x.com/BigCommerceDevs/status/1234944333415157763?s=20) [at](https://x.com/kyle_o/status/1234856354898157569?s=20) [VueConf 2020](https://twitter.com/kyle_o/status/1234913661514321920) [in the Austin Convention Center](https://developer.bigcommerce.com/dev-library/examples/headless/source-code/starter/vue/introduction-to-vue-js-bigcommerce/) when the COVID shutdown was inevitable, and by the last day of the show, workplaces were beginning to announce closures. My workplace at the time, [BigCommerce](https://www.crunchbase.com/organization/bigcommerce), began our transition to remote only the next week, and as quickly as that transpired, the wind down started. Internal clocks turned towards “cabin fever” and “doom scroll madness” across the planet. My own internal clock was wound to an older destination: transcendence.  
+  
+Time alone was a place of comfort for me; having dropped out, I quickly learned to make use of my own devices. Having prior experience as a child of a single mother, I set out to make the best of the situation. I fell more into journaling and music-making for fun, and we all spent at least a *little* of our 2020-stay-cation (we all stayed indoors, right?) on an Animal Crossing island of one variation or another. However, there was an unsettling feeling that those earlier tremors would soon quake.
+
+My partner and I had been together for almost seven years by that point, and I had long felt that I needed to decide whether to move forward or break things off\*\*\*\*\*\*. I’ve struggled with commitment as long as I’ve known, and I wasn’t able to force a decision, but I continued my internal delving into my gender identity. Those societal expectations left me concerned with my partner’s own view of transgender folx, albeit I’d only seen inclusion and a close friendship with her and a mutual transgender friend.
+
+\*\*\*\*\*\* Two years prior, I attempted to buy an engagement ring, and was left with a resounding thought: what if I'm *trying* not to find the *perfect ring*?  
+  
+Paranoid by nature, and my upbringing led me back: “Don’t get caught.” When I was caught, the secrecy left her suspicious, and she broke off our relationship. It turns out she found me to be “just a dude,” regardless of the “don’t take this the wrong way” and “don’t be offended.” It still stings when microaggressions are sent my way all the same.
+
+I have to remind myself that I’ve likely not encountered the worst yet: two young college kids chuckling as they pass me, muttering remarks I can tune out, or an adult slowing down so that I have to pass them only to loudly remark, “He’s a man!” when they are alone. It’s easiest to avoid the restroom altogether, which has been the real crux of my situation since I have to ingest more water to relieve an HRT side effect. “You’ll never be a woman” is an absolutist statement, and only a Sith deals in absolutes.
+
+![a GIF of Obi-Wan in "The Revenge of the Sith", caption reads: "Only a Sith deals in absolutes"](https://kyleo.io/content/images/2024/01/only-a-sith.webp)
+
+Obi-Wan, with the high ground.
+
+### Conclusion
+
+This seems the most appropriate ending here; as much as I’d *love* to discuss my medical plans, choice of name or pronouns, sexuality, or other incredibly personal information, I am undoubtedly quantifiable in sharing a lot as it is.   
+  
+My intent for posting this publicly is two-pronged: I can let my mom know from a safe distance that I’m gender-non-conforming and shed light for others with a similar upbringing on the fact that it *will* get easier. It gets harder before it gets easier, and you can do it. Somewhere in this text, I’m expected to share an “epiphany” of sorts, but words don’t work that way when dealing with the *flâneur*, and there isn’t any way for you to abscond thoughts and ideas from my brain through the screen beyond words.
+
+I haven’t taken anyone up on a janitorial role (so far), and Tom Brady is the Tom Brady of the NFL. Though I set out to be the Harry-Potter-ing-est-Tom-Brady, I became someone I love much more dearly, regardless of society's interpretation. As you are you, and the next reader whomst’d’ve ever they are. Be well, all ye readers, for tomorrow’s pronouns will.
+
+## [COLOPHON](https://drive.google.com/drive/folders/1XEK_CppZZW5vOYld6ctKb31lOW2rTFCf?usp=sharing) **Brushes used for cover image:**
+
+## [Best of Technical Brushes Set](https://www.deviantart.com/basstar/art/Technical-Brushes-BEST-OF-250x-151466590) [Colorsplatters#19](https://www.deviantart.com/oridzuru/art/PS-Brush-19-ColorSplatters-Img-167419538) [Dust#12](https://www.deviantart.com/lilithdemoness/art/Dust-Brushes-12-702925919) NEXT
+
+- The BigCommerce in the Room
+- ALL HAIL APPLE
+- 黒春光琳海
+
+For the under-appreciated intersection of LINKIN PARK and Digimon fandom.
+
+**There’s a handful of items I feel I’m holding onto where, as mentioned, I’m off-loading this for whoever it could help. So, here goes:**
+
+- I mentioned Ms. Stauffer, and as much as I'd like to say she handed me the book herself and Inspired My Love of Reading (that title belongs to my sister), she was inactive most of the year due to cancer. She was fortunately able to recover, but where I don't owe her as large a thank you as many of my other teachers, I remain forever indebted to (chronological order, and anonymized unless given permission otherwise):  
+   4th grade English/Reading: **Ms. A** – For teaching me the love of words and wordplay and expecting more of me when few others did. A special thank you for helping me realize I prefer "they" by teaching me that "they" is a plural *and* singular pronoun.  
+   7th grade English: **Ms. B** – The likelihood of me getting this appreciation note to you is slim, but thank you for the guidance on privacy, grammar, and intangibles. "This year, you will learn how not to use words like 'things.'"  
+   7th/8th grade United States / Texas History: **Ms. W** – The reason I vote independent.  
+   8th grade English: **Ms. G** – You introduced me to "Stairway to Heaven" by Led Zeppelin, which paved the way for me to discover Pink Floyd's *Dark Side of the Moon* that summer, and my descent into "Worldly" music began. Without this, I am doubtful I would have grown musically further than Linkin Park and Nine Inch Nails, or at least as quickly and fruitfully.\*\*\*\*\*\*\*  
+   9th grade Business Communication Information Systems: **Ms. T** – You believed in my technical proficiency when I felt awkward and underdeveloped, especially in graphic design. I promised you a thank you after I won that [logo design contest](https://northernbrazoriacountyeducationalliance.com/) and owe you a class visit ;)  
+   10th grade World History AP: **Ms. F** – I'm unsure where to start or how long this would go if I did. Your class inspired me to drop out, and as much as that may *feel* like a Bad Thing, it was the *best thing* for me. I still keep a list of your isms, like "Anti-instant-gratification."  
+   I believe some of my teachers had more of a hand in my life than I realize, like **Ms. G**, **Ms. B**, and **Ms. F**. I don't know any specifics to thank them for, but I know they deserve it because I saw how much they gave to *every* student.  
+    
+  **None of the content or impractical use of technical tools, grammar, and media in this article should be considered a direct reflection of their actions since it was like forever ago. I'm also excluding ~90% of my educator roster, who *are equally to blame* 😈**
+- For any 12-year-old trawling the internet looking for The Answer, maybe The Idea lies inward.
+- I think it’s fucked up that my second-grade class laughed at me in the boys' restroom for **saying** my favorite color was pink. You know who you are. If you want to make excuses for yourself like I did for *my parents* several sections ago, by all means, refuse to grow. I don’t want an apology; pay it forward. I'm not sure whether it was shell shock that told me to tell myself it was a joke or if I *was* being silly. Your call.
+- After I told my grandmother I'm non-binary, she asked if she’d said or done anything to make me feel anything other than how I wanted to be treated gender-wise. I didn’t share the times she had. She’s 93 years old, and yeah, if I wanted to blend better, I shouldn’t wear Mom’s high-heels after a certain age.
+- I'm comfortable sharing this with the rest of the Internet, but not my mother. I've unpublished, re-published, and updated this at least 100 times in the past 24 hours in a combination of fear and gratitude that it's done. Mom, if you're reading this, as I suspect it'll make its way to you before I send it to you (For What It's Worth: I intend to before I board my flight to Helsinki), **I'll love you forever, I'll like you for always, as long as I'm living, my mother you'll be.**  
+    
+  \*\*\*\*\*\*\* If you want to have the same appreciation of *Dark Side* as I do, try stitching together each track in [Audacity](https://www.audacityteam.org/) to get the *real* experience (i.e., no time for files to load, etc., between tracks). That is how I spent a 2 AM hour in the summer of 2006, after which I found *[Dark Side of the Rainbow](https://www.youtube.com/watch?v=627aciBA2E8)*.

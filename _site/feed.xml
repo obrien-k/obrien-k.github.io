@@ -1,5 +1,436 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-02T08:59:48-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kyle OBrien.me</title><subtitle>Technical writing and reflections on software and infrastructure.
-</subtitle><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><entry><title type="html">Dreaming in Code || Lucid Dreaming</title><link href="http://localhost:4000/dreaming-in-code-lucid-dreaming/" rel="alternate" type="text/html" title="Dreaming in Code || Lucid Dreaming" /><published>2020-06-01T01:00:00-05:00</published><updated>2024-02-04T00:22:54-06:00</updated><id>http://localhost:4000/dreaming-in-code-lucid-dreaming</id><content type="html" xml:base="http://localhost:4000/dreaming-in-code-lucid-dreaming/"><![CDATA[<p>💡</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-03-02T14:29:44-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Kyle OBrien.me</title><subtitle>Technical writing and reflections on software and infrastructure.
+</subtitle><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><entry><title type="html">A Million and One Ways to NOT Share You’re Trans</title><link href="http://localhost:4000/a-million-and-one-ways-to-not-share-youre-trans/" rel="alternate" type="text/html" title="A Million and One Ways to NOT Share You’re Trans" /><published>2024-01-16T18:00:00-06:00</published><updated>2026-03-02T12:41:04-06:00</updated><id>http://localhost:4000/a-million-and-one-ways-to-not-share-youre-trans</id><content type="html" xml:base="http://localhost:4000/a-million-and-one-ways-to-not-share-youre-trans/"><![CDATA[<p>💡</p>
+
+<p>This is part three of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>I: [Dreaming in Code</td>
+      <td> </td>
+      <td>Lucid Dreaming](https://kyleo.io/dreaming-in-code-lucid-dreaming/) II: <a href="https://kyleo.io/waking-software-engineering/">Waking Software Engineering</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When I first wrote this in middle school, the form was an obtuse graduation speech. The primary focus was how significant moments of one’s life are decided at a time when they have little control over them.</p>
+
+<p>I had recently completed writing the first 50 pages of “my book,” and the speech was a follow-up piece for its “inevitable success.” The original contents of “The Flame of Takuya” nor this speech exist any longer, but suffice it to say, I find it strange that an adolescent wrote a 120-odd-page novella about a main character with a dual identity.</p>
+
+<p>One identity had a sassy ego, exuded confidence, and was more femme-presenting than the shy, bespeckled boy with low self-esteem. With hindsight at my disposal for each of these writings, I know now that I was trying to share a more profound thought. These were rough starts at sharing with my family that I wasn’t gender-conforming, and I can clearly remember the first line of said book: “Life sucks, and everybody knows it.”</p>
+
+<p>The sentence is cynical and prescribes an idea I disagree with today. Changing your mind is okay, especially after decades and/or when new data is available. Often, truth is best delivered with a hammer; Subtlety is rarely appreciated, even with an explanation.</p>
+
+<p>I identify as a non-binary and transgender femme.</p>
+
+<p><strong>Wait, what?</strong></p>
+
+<p><a href="https://www.goodreads.com/work/quotes/35832-the-elements-of-style#:~:text=Thus%2C%20brevity%20is%20a%20by%2Dproduct%20of%20vigor.&amp;text=Never%20call%20a%20stomach%20a%20tummy%20without%20good%20reason.&amp;text=A%20single%20overstatement%2C%20wherever%20or,object%20of%20the%20writer's%20enthusiasm.">Brevity in writing and copy</a> <a href="https://faculty.washington.edu/heagerty/Courses/b572/public/StrunkWhite.pdf">isn’t as employed as it should be</a>. Based on the <a href="https://genderdysphoria.fyi/">typical questions</a> surrounding gender identity concerning ‘Non-Binary’ (‘NB’, ‘enby’ if you’re feeling cute ;D), I realize this concept can be a complex puzzle for many. I can share <em>my</em> understanding of what it means to be a non-binary identifying person.</p>
+
+<p>I seek not only to tackle letting people know in a public way that I’ve started to transition genders but also describe “a lack thereof” binary gender identity and how, on a surface level, that’s confusing, especially when we reach the intersection of gender and sex. For clarity, gender and sex are distinct – gender is an ideological structure encompassing a spectrum of identities beyond the male-female dichotomy, while sex refers to biological attributes. In my case, I navigate the world as non-binary, blurring traditional gender norms, but biologically, I’m transitioning as a trans femme.</p>
+
+<h3 id="a-million-little-things">A Million Little Things</h3>
+
+<p>Between 15 and 20 years ago, I immersed myself in the chase of The Idea. The Idea is so fuckin’ sick that it’d put Google, Facebook, and the rest of them to shame and eclipse them wholly. I hadn’t the first clue precisely what The Idea was, except that it was my life’s elusive driving force. Whether through writing, sound, code, graphics, <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b899431a-c717-42de-acb2-b6d46986e756/d12sdho-fe8d20a2-fbca-4fca-9d93-382e88930c6d.jpg/v1/fill/w_900,h_700,q_75,strp/tree_by_kaio393_d12sdho-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzAwIiwicGF0aCI6IlwvZlwvYjg5OTQzMWEtYzcxNy00MmRlLWFjYjItYjZkNDY5ODZlNzU2XC9kMTJzZGhvLWZlOGQyMGEyLWZiY2EtNGZjYS05ZDkzLTM4MmU4ODkzMGM2ZC5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7zBdMiTGhxW3xAwkhjJid5OPRAPRzE0nI7SK4gwD84k">drawings</a>.. All channels were open to receive this materialization … but I’ve reflected on what feels, in retrospect, trite, and I <a href="https://kyleo.io/ten-rules-for-effective-time-management/">wrote about “productivity” recently</a>, so I‘ll digress.</p>
+
+<p>This flash of insight hit me when I recognized that my spastic ‘try anything and everything’ approach was fundamentally unsound from the more conventional ‘don’t reinvent the wheel’ philosophy.</p>
+
+<p>I pivoted into an entirely new chase that also ended in futility. Again, the details of <em>that new chase</em> don’t matter <em>in this context</em>, but after reaching a specific salary, one wonders if the time spent was well worth it. This isn’t a complaint. I’m grateful for how fortunate I have been and know I could quickly end up in a much worse circumstance. Being born in America is a gift, and many of my peers growing up were far less fortunate than I. The Idea wasn’t a product but a distraction from the truth.</p>
+
+<p>To continue my chase of The Idea, <a href="https://kyleo.io/waking-software-engineering/">I sought work in tech</a>, and I didn’t care if I had to sweep the floors. Whatever enabled me to be there and eventually apply for software dev roles. The latter wasn’t as early as I’d planned, but internally, I knew I was feminine, which made me feel I must be absolutely 100% sure of my skillset before applying. I feared sharing more of myself in the corporate world and how the government would treat me if I were anything other than “normal.”</p>
+
+<p>It’s a million of these “what ifs” or articles like “Why do women use more exclamation points than men when communicating via text?” Oh, cool. Like me, miss “Salutations!” greeting via email – that had me perpetually entranced by a far-off thought: how quickly would I hit a switch, given the opportunity, that’d enable me to become the opposite gender?</p>
+
+<p>Those million little things didn’t matter to me when I was 12 and wanted to work for Google. I sent an application and did everything I could to fulfill how they described their ideal applicant, like beginning to learn Python, which I still use today. Around that same time, I discovered the National Football League’s (NFL) New England Patriots, an atypical pastime for me.</p>
+
+<p>I didn’t understand American Football and had a solid distaste for it due to its physicality. With Tom Brady, though, I didn’t have to understand football or worry about physicality. <a href="https://en.wikipedia.org/wiki/Tuck_Rule_Game#:~:text=However%2C%20upon%20review%20of%20the,the%20then%2Deffective%20NFL%20rules.">He’s Tom Brady</a>. I didn’t desire to play sports, but I aspired to be whatever the equivalent would be in software. Code, I understood.</p>
+
+<h4 id="repetitions">Repetitions</h4>
+
+<p>Connecting my gender dysphoria to coding isn’t evident from the outside, but over the past three or four years, I’ve slowly unfolded it as a blind spot for me. I had all of the white-male privilege any other would have, but I only felt it when being within that class of folk meant I couldn’t be girly.</p>
+
+<p>Before I began cross-dressing, I was concerned with people “knowing” about how I thought or “who I really was,” and I spent a lot of my teenage years grappling from identity to identity. I had some “beta” identities but soon settled on “Kai,” a nickname someone bestowed upon me. I’d return to Kai multiple times, and we’ll cover what transitioning means for my name in a future post. In my freshman year of secondary school, I went by “XIN” (all caps, stylized with small letters for “IN”), but returned to Kai the next school year when I figured out my new online handle: <code class="language-plaintext highlighter-rouge">xerocint</code>.</p>
+
+<p>If you’re comfortable calling me ‘Kai,’ feel free to do so—many of my online friends already are. While contemplating a name change, I’m exploring ‘Kai’ as an option throughout 2024. I haven’t abandoned the name ‘Kyle,’ so you can use that too!</p>
+
+<blockquote>
+  <p>“Kai is my IRL name, and xerocint has the letters from XIN but makes more sense on the internet” – me, probably.</p>
+</blockquote>
+
+<p>There were 0 results on Google for that exact quoted word; unfortunately, <a href="https://www.google.com/search?sca_esv=598932482&amp;q=%22xerocint%22&amp;nfpr=1&amp;sa=X&amp;ved=2ahUKEwiF9pDZqeODAxXqj2oFHZDyDTYQvgUoAXoECAUQAw&amp;biw=1682&amp;bih=973&amp;dpr=1">there are many more now,</a> as teendom and angst will prove out. If my persona were cool enough, nobody would question my gender identity regarding my ability to produce code.</p>
+
+<p>{obligatory /s, <a href="https://twitter.com/ChristianSelig">RIP Reddit</a> – FWIW, this is my pre-Reddit years, and I had taken up new handles by then}</p>
+
+<p>Improving a skill is all about consistent repetitions (and for the youths: <em>not changing your name (or phone number) multiple times a year</em>). Whether it’s a personal project to improve an acute skillset or a daily routine checklist and log. Logging is equally, if not of a higher volition, necessary to determine one’s accuracy in said activity.</p>
+
+<p>A counter-example: imagine Tom Brady’s personnel miscalculated his throwing distance during practice and gave back inaccurate or zero data. That ruins “Game Days,” where “a game of inches” requires higher accuracy than in a junior league. If a coder comments in riddles, the project lives and dies with their understanding of the functionality. Code should be commented on only when necessary, but when done so with an inept tablature, the structure only caves in.</p>
+
+<p>I understand Tom Brady retired recently, so I should say Patrick Mahomes or Joe Burrow or select your personal “GOAT” here (CJ Stroud, 2024, babyyy). It bears repeating because I know this isn’t an original thought: there’s only one player at specific moments in the 2000s and 2010s who NFL fans would not want to see at the other end of their respective team’s field. That was Tom Brady. If I could reach that level of <em>something</em>, then I wouldn’t ever have to worry about my gender identity. Instead of repeating positive mantras to myself, I struck out to the shadows.</p>
+
+<h4 id="lets-talk-about-harry-potter">Let’s Talk About Harry Potter</h4>
+
+<p>I’ve been so upset with J.K. Rowling since I “dunno” when, but for this saga to make any sense, we have to talk about Harry Potter:</p>
+
+<p><img src="https://lh7-us.googleusercontent.com/4vo2bMTN7XWdJ6XSGbgqh2CknNgGGh0rLEruppLtQMmSacMtGWs2deE_Y5ftQBoC-nlAZIdV4psKICPtxUrxGVJD1qWOzrvEz03EY1EhpP4GabbfAfL9FlCG5-H0e5BklfvVVEPpl5UHK7uHtWntrXE" alt="" /></p>
+
+<p>No, I’m still not Harry Potter.</p>
+
+<p>When I was a kid, I was Harry Potter. I hadn’t heard of Harry Potter when people asked me if I was Harry Potter. I first avoided what was then only a book series because of respect for my parents and fear of Hell. Witches and wizards were “Satanic” and “demonic,” so our household wasn’t allowed near such contraband by word of my mother.</p>
+
+<p>However, my third-grade teacher, Ms. Stauffer had the first novel on her bookshelf for anyone to read between activities in class. I hadn’t disliked reading, but until then, I only had a passing interest. For whatever reason, I decided to go against the rules and see who everyone was asking me about.</p>
+
+<p>Suddenly, I was transported off on the Hogwarts Express with the expectation that it was a Good Thing to imagine being this Anglo-Saxon white male and along for his adventures in a fantastical world. I <em>devoured</em> each book in turn and became adept at reading <em>during</em> class.</p>
+
+<p>My favorite comment was from an adult about how I looked “more like Harry Potter than Harry Potter”  around the time <em>Harry Potter and the Chamber of Secrets</em> premiered on film (<a href="https://www.imdb.com/title/tt0295297/">in 2002</a>, our titular character played by Daniel Radcliffe, whose performance I love) because of my “glasses” (my glasses were always broken in some capacity, I can’t recall the case on this occasion) and my “hair.”</p>
+
+<p>Radcliffe’s hair is quite dark, but it isn’t jet black, and what director of photography wants to deal with a cowlick on the back of the principal actor’s head all film? Some things make more sense in fiction than in film.</p>
+
+<p>As the series continued, I grew annoyed by Harry as a character. I get it; he’d been through a lot. This isn’t a “hot take,” if you go through the Harry Potter boards from around the fifth and sixth books, I’m essentially rehashing posts.</p>
+
+<p><img src="https://lh7-us.googleusercontent.com/zirbW9oxMHIwMy0jhYqiGdxilp1rOlNOvaz9wvcxpuv-D96kDpCen06ilEHFfYOHuyY4ZjNfie_XlxbUM-lnQSADEzyXFz_THGN0CY21ZqFt8dmDUH86MxdhoPA6J6-veWd0X_LXmZAXyk17DsJaKYY" alt="🤷‍♀️" /></p>
+
+<p>I found my personality and temperament more like Hermione Granger, which wasn’t surprising, but again, one of those million little things that made me go: “Huh.”*</p>
+
+<p>* This isn’t to say if anyone’s personality is like one of the opposite gender that they’re transgender. The intangibles behind each character (Harry and Hermione) led <em>me</em> to an <em>inkling</em> of it.</p>
+
+<p>As many million little stories I have about how I became an <a href="https://kyleo.io/waking-software-engineering#Conclusion">alchemist, I mean software engineer</a>, there are as many that I have that explain my non-conforming gender identity. Many of those times coincide, primarily because I can’t tell you how many times I’ve wanted to retort to being called “a wizard” as factually being “a witch.” An equal amount to “flex” my knowledge and capabilities as a programmer when nobody would expect me to complete a task under normal circumstances, regardless of gender, age, or professional experience.</p>
+
+<p>This doesn’t begin to touch on other controversies surrounding Rowling’s unfriendliness for the trans community and other marginalized folx. I was far too removed from Harry’s world by that point, so I don’t feel primed to discuss that topic specifically. Humans tend to seek the path of least resistance naturally. As a biologically birthed male with a Southern Baptist-adjacent upbringing, Harry was the perfect conduit between “totally Christian” and “demonic,” my two polarities for morality at the age of nine. What’s a little light magic between imaginary friends?</p>
+
+<p>Unfortunately, it was closer to the demonic polarity than I had feared. When my mother discovered <em>Harry Potter and the Chamber of Secrets</em> (<a href="https://scholasticlibrary.digital.scholastic.com/harry-potter-and-the-chamber-of-secrets.html">published in 1999</a>) in my backpack, I was given a “come to Jesus” talk, as I’ve come to describe them. Light magic and imaginary friends didn’t give glory to God. I started writing my own light magic and imaginary friend book, and my ability to stealthily sap away knowledge from the Wizarding World became more clandestine. I don’t remember exactly what was said, but my reaction was, “Never get caught again,” and the closest I can remember to “getting caught” again by Mom was smoking cigarettes when I was 17.**</p>
+
+<p>** She had stopped giving “come to Jesus” talks by then, and it was more an expression of surprise or possibly exasperation. I had been casually smoking for two years <strong>(read: when around smoker friends/if I had the rare pack of smokes.. I quit smoking a long time ago, and you should, too)</strong>.</p>
+
+<p>With this action, my mother unintentionally set me off on a journey of self-discovery where I quickly found I was much different than my family. How evil could non-fictional dark magic be if fictional light magic was terrible by these standards when I perceived <em>Potter</em> to be as innocent as I was? ***</p>
+
+<p>*** Christians called <em>Potter</em> a “slippery slope” for this reason, but we’ll table this topic for longevity’s sake. In short, I don’t practice witchcraft, and when I did, it was <em>after</em> my interest in Harry Potter waned. I learned some spells through a schoolmate in middle school, and my attention lasted a few weeks. I recognize the beliefs of pagan and Wiccan religious groups. I hope this aside is seen as net-positive and informative because this should signal to any who aren’t aware: “The <em>Harry Potter</em> series didn’t instruct or receive direction from <em>real</em> Wiccan groups.”</p>
+
+<p>It wouldn’t be for another six years that I’d go “all-in” (my words), drop out of high school, and try a “manual reboot” of my logic systems and moral polarities, but this is one of the critical points where I began questioning authority from a young age and where soon I’d find myself looking back to. “The adult in the room isn’t always the best source of information.”</p>
+
+<p>I may have been banned from reading Harry Potter by the librarian and the rest of my family, but that didn’t stop me from completing the remaining book available at the time, “Harry Potter and the Goblet of Fire,” seven times over before the time I was ten-years-old, or seeing the second film in theaters the year after.</p>
+
+<h4 id="you-might-be-experiencing-gender-dysphoria-if---">You Might Be Experiencing Gender Dysphoria If . . .</h4>
+
+<p><strong>Yesterday, a couple of moments stood out to me:</strong><br />
+When I was 12, I overheard a conversation between two women while attending a show-tunes event where they discussed one of the women’s children. This child, objectively speaking, was the show’s star and had an astounding voice. Their parent expressed concern that puberty would dramatically affect their child’s voice and that it was rare for a born male to <a href="https://qr.ae/pKQ7QN">retain a “true tenor” voice</a> through the change. Neither of the parents knew I overheard this conversation; I was in an opportune spot to eavesdrop, albeit incidentally. It’s one of the first “unfiltered” conversations I remember from an adult (^1). As someone expecting to go into puberty soon and very protective of their ability to sing, I collected this thought to ask my dad later.</p>
+
+<p>(^1) Note to the Editor: Fix this some day, pls.. Another was when I was around three or four and overheard a discussion about “purchasing Game Boy games at the <code class="language-plaintext highlighter-rouge">water store</code>”.</p>
+
+<p>To be clear, I don’t fault either of my parents <em>directly</em> for an inactive interest in my gender identity. It was the 90s, and most of my friends’ parents were younger than my parents by a decade (especially my mom, sorry Mom). GenX is still coming to the idea, and even my generation (GenY/Millenial) struggles (including myself). Future generations have given me hope and the confidence to share this with more than close friends.</p>
+
+<p>When I asked my dad how puberty would affect my voice, and after he explained something in proximity of it, “causing a drop in tone,” I had a follow-up question: “What if I want to keep my high voice?” “High voice” is an alternate vernacular from the choir for Male At Births (MABs), who can sing in the tenor register. My dad asked/commented: “You don’t want to sound like a girl, do you?” I never answered the question and stopped taking Choir as a school elective.</p>
+
+<p><strong>A shorter, internal example:</strong></p>
+
+<p>While discussing traditional relationships compared to modern ones, a friend and I began to admit how we can be atypical of social norms regarding relationships. A common phrase this friend would use was “I’m a goddamn princess,” and I stopped myself from saying, “What if <em>I</em> want to be the goddamn princess.” Instead, blaming my half-interrupted thought on forgetting my retort. In this friend’s defense, I still think she would have laughed it off sincerely for my benefit, but societal expectations from Texas and my lack of outside perspective enveloped the thought away. The lingering thought remained that I <em>would</em> rather “stay home with the kids,” “be a homemaker,” or, in my friend’s words, be a “goddamn princess.” ****</p>
+
+<p>**** Earlier that day, a transgender friend, Alice, asked me “If I had considered if I was trans before,” and I said aloud, “I haven’t thought of it before,” but what I meant was, “I haven’t thought about it <em>that way</em> before.” In my mom’s Christian household, “trans” wasn’t a word we spoke. Also, I would <em>love</em> to hear an update based on my latest response &lt;3.</p>
+
+<p>These two examples have something in common: I <em>do</em> forget what the thought was, or with my father, what my question was. I remembered the reaction for all these years, but not my actions (or thoughts) that led to it. There have been a few other events that I’ve re-engaged like this, and while they had fleeting feelings of gender rejection, none are as succinct and clear as these. Direct rejection and societal rejection. It’s possible I could’ve shared my thoughts on both occasions and led to a productive conversation, but my 12-17 years of experience at each time reflected: “bury this <em>DEEP</em>,” and I did for at least ten years.</p>
+
+<p><strong>One last example:</strong></p>
+
+<p>Surprise! I thought of another one that’s hard to share but feels vital for anyone else who might have experienced it or is going through puberty, as it happened when my chest began to grow. This happens to MABs <em>for the briefest</em> of moments, and I was elated thinking that I <em>was</em> born a girl and soon I’d have what I noticed other girls at school had started to develop. This feeling was never lost on me, and I have felt like I was missing an appendage my whole life. Now that I’ve started Hormone Replacement Therapy (HRT) and this has rekindled, words cannot describe my beginning to feel of wholeness. It’s important to me to complete this writing sooner rather than later as it’ll help others see what can’t be seen with HRT and my primary goal: filling the intangibles I’ve missed and, oh, how I’ve unknowingly missed them.</p>
+
+<h4 id="slight-miscalculations">Slight Miscalculations</h4>
+
+<p>I went through the repertoire of diagnoses as a kid. In my best estimation, my mother would project her feelings onto me, which ended up in a depression diagnosis from age nine to twelve. At that point, I outright refused to take medication because it caused me to feel depressed. I don’t recall saying anything along the lines that I was sad or upset at all, and again, in my best estimation, it has <em>a lot to do with</em> why I didn’t speak up much back then. Anything I said was contorted into something I had no intention of saying, and I would have to spend ten to fifteen minutes back-pedaling.</p>
+
+<p>This still occurs today: for example, five days ago, I sent my mother a message saying, “I love you,” only to be returned with a barrage of questions. I sent that because I knew writing this article could cause me not to want to say it to her for some time. The confoundment only further magnified my frustration, and again, I found myself “being the adult” and not sharing why I had avoided speaking to her since I started HRT and transitioning.</p>
+
+<p>I began self-diagnosing around the age I refused medication, Attention Deficit Hyperactive Disorder (ADHD) being an obvious candidate, but I didn’t like the idea of being “zombified” on their meds. I likened myself to the autism spectrum, specifically Asperger’s Syndrome instead. A friend at lunch pointed out one day, “You’re just reading the descriptions and matching what’s there,” my eyes went upward as I tried recalling the moments when that <em>was</em> happening and poorly hid a smirk.</p>
+
+<p>When I started living online, a story again unto itself; it was my freshman year of high school. The precursor event leading up to that was when I, for the first time, “dated a boy” and considered myself “bicurious.” It wasn’t “in real life,” and only for a week or so, but the conversations with him and a few friends led me to believe I <em>was</em> one of the <em>hethans</em> the Bible warned me about.</p>
+
+<p>I was far past the time that I “believed in God,” but I had to live at home for at least four more years. I grew concerned with my ability to attain that, and subconsciously, gears began to turn. I felt like Harry in <em>the Half-Blood Prince</em> (<a href="https://scholasticlibrary.digital.scholastic.com/harry-potter-and-the-half-blood-prince.html">published in 2005</a>)<em>,</em> except I knew my time at Hogwarts was running out.</p>
+
+<p>After seeking psychiatric help several years ago, I was diagnosed with ADHD and anxiety, and through healthy habits, medication, and therapy, I’ve been able to exercise these demons. I finally broke the barrier of being a paid coder instead of doing code work for standard technical support pay. Never underestimate your own ability or self-worth. If someone wants to pay you 200 grand a year*****, the only question is how you will prove yourself over the next year and how the new role could build on your foundation. What are the stock options like? Will you want to work there for three years? Five? If you aren’t already asking these questions when considering a job opportunity, they should be prioritized <em>above</em> your salary. Cash compensation is measured in more than one metric.</p>
+
+<p>***** To be clear, I turned them down.</p>
+
+<h4 id="realignment"><strong>Realignment</strong></h4>
+
+<p>In 2020, everything seemed to happen at once. <a href="https://x.com/kyle_o/status/1234518529006821381?s=20">I</a> <a href="https://x.com/BigCommerceDevs/status/1234944333415157763?s=20">was</a> <a href="https://x.com/kyle_o/status/1234856354898157569?s=20">at</a> <a href="https://twitter.com/kyle_o/status/1234913661514321920">VueConf 2020</a> <a href="https://developer.bigcommerce.com/dev-library/examples/headless/source-code/starter/vue/introduction-to-vue-js-bigcommerce/">in the Austin Convention Center</a> when the COVID shutdown was inevitable, and by the last day of the show, workplaces were beginning to announce closures. My workplace at the time, <a href="https://www.crunchbase.com/organization/bigcommerce">BigCommerce</a>, began our transition to remote only the next week, and as quickly as that transpired, the wind down started. Internal clocks turned towards “cabin fever” and “doom scroll madness” across the planet. My own internal clock was wound to an older destination: transcendence.</p>
+
+<p>Time alone was a place of comfort for me; having dropped out, I quickly learned to make use of my own devices. Having prior experience as a child of a single mother, I set out to make the best of the situation. I fell more into journaling and music-making for fun, and we all spent at least a <em>little</em> of our 2020-stay-cation (we all stayed indoors, right?) on an Animal Crossing island of one variation or another. However, there was an unsettling feeling that those earlier tremors would soon quake.</p>
+
+<p>My partner and I had been together for almost seven years by that point, and I had long felt that I needed to decide whether to move forward or break things off******. I’ve struggled with commitment as long as I’ve known, and I wasn’t able to force a decision, but I continued my internal delving into my gender identity. Those societal expectations left me concerned with my partner’s own view of transgender folx, albeit I’d only seen inclusion and a close friendship with her and a mutual transgender friend.</p>
+
+<p>****** Two years prior, I attempted to buy an engagement ring, and was left with a resounding thought: what if I’m <em>trying</em> not to find the <em>perfect ring</em>?</p>
+
+<p>Paranoid by nature, and my upbringing led me back: “Don’t get caught.” When I was caught, the secrecy left her suspicious, and she broke off our relationship. It turns out she found me to be “just a dude,” regardless of the “don’t take this the wrong way” and “don’t be offended.” It still stings when microaggressions are sent my way all the same.</p>
+
+<p>I have to remind myself that I’ve likely not encountered the worst yet: two young college kids chuckling as they pass me, muttering remarks I can tune out, or an adult slowing down so that I have to pass them only to loudly remark, “He’s a man!” when they are alone. It’s easiest to avoid the restroom altogether, which has been the real crux of my situation since I have to ingest more water to relieve an HRT side effect. “You’ll never be a woman” is an absolutist statement, and only a Sith deals in absolutes.</p>
+
+<p><img src="https://kyleo.io/content/images/2024/01/only-a-sith.webp" alt="a GIF of Obi-Wan in &quot;The Revenge of the Sith&quot;, caption reads: &quot;Only a Sith deals in absolutes&quot;" /></p>
+
+<p>Obi-Wan, with the high ground.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>This seems the most appropriate ending here; as much as I’d <em>love</em> to discuss my medical plans, choice of name or pronouns, sexuality, or other incredibly personal information, I am undoubtedly quantifiable in sharing a lot as it is.</p>
+
+<p>My intent for posting this publicly is two-pronged: I can let my mom know from a safe distance that I’m gender-non-conforming and shed light for others with a similar upbringing on the fact that it <em>will</em> get easier. It gets harder before it gets easier, and you can do it. Somewhere in this text, I’m expected to share an “epiphany” of sorts, but words don’t work that way when dealing with the <em>flâneur</em>, and there isn’t any way for you to abscond thoughts and ideas from my brain through the screen beyond words.</p>
+
+<p>I haven’t taken anyone up on a janitorial role (so far), and Tom Brady is the Tom Brady of the NFL. Though I set out to be the Harry-Potter-ing-est-Tom-Brady, I became someone I love much more dearly, regardless of society’s interpretation. As you are you, and the next reader whomst’d’ve ever they are. Be well, all ye readers, for tomorrow’s pronouns will.</p>
+
+<h2 id="colophon-brushes-used-for-cover-image"><a href="https://drive.google.com/drive/folders/1XEK_CppZZW5vOYld6ctKb31lOW2rTFCf?usp=sharing">COLOPHON</a> <strong>Brushes used for cover image:</strong></h2>
+
+<h2 id="best-of-technical-brushes-set-colorsplatters19-dust12-next"><a href="https://www.deviantart.com/basstar/art/Technical-Brushes-BEST-OF-250x-151466590">Best of Technical Brushes Set</a> <a href="https://www.deviantart.com/oridzuru/art/PS-Brush-19-ColorSplatters-Img-167419538">Colorsplatters#19</a> <a href="https://www.deviantart.com/lilithdemoness/art/Dust-Brushes-12-702925919">Dust#12</a> NEXT</h2>
+
+<ul>
+  <li>The BigCommerce in the Room</li>
+  <li>ALL HAIL APPLE</li>
+  <li>黒春光琳海</li>
+</ul>
+
+<p>For the under-appreciated intersection of LINKIN PARK and Digimon fandom.</p>
+
+<p><strong>There’s a handful of items I feel I’m holding onto where, as mentioned, I’m off-loading this for whoever it could help. So, here goes:</strong></p>
+
+<ul>
+  <li>
+    <p>I mentioned Ms. Stauffer, and as much as I’d like to say she handed me the book herself and Inspired My Love of Reading (that title belongs to my sister), she was inactive most of the year due to cancer. She was fortunately able to recover, but where I don’t owe her as large a thank you as many of my other teachers, I remain forever indebted to (chronological order, and anonymized unless given permission otherwise):<br />
+ 4th grade English/Reading: <strong>Ms. A</strong> – For teaching me the love of words and wordplay and expecting more of me when few others did. A special thank you for helping me realize I prefer “they” by teaching me that “they” is a plural <em>and</em> singular pronoun.<br />
+ 7th grade English: <strong>Ms. B</strong> – The likelihood of me getting this appreciation note to you is slim, but thank you for the guidance on privacy, grammar, and intangibles. “This year, you will learn how not to use words like ‘things.’”<br />
+ 7th/8th grade United States / Texas History: <strong>Ms. W</strong> – The reason I vote independent.<br />
+ 8th grade English: <strong>Ms. G</strong> – You introduced me to “Stairway to Heaven” by Led Zeppelin, which paved the way for me to discover Pink Floyd’s <em>Dark Side of the Moon</em> that summer, and my descent into “Worldly” music began. Without this, I am doubtful I would have grown musically further than Linkin Park and Nine Inch Nails, or at least as quickly and fruitfully.*******<br />
+ 9th grade Business Communication Information Systems: <strong>Ms. T</strong> – You believed in my technical proficiency when I felt awkward and underdeveloped, especially in graphic design. I promised you a thank you after I won that <a href="https://northernbrazoriacountyeducationalliance.com/">logo design contest</a> and owe you a class visit ;)<br />
+ 10th grade World History AP: <strong>Ms. F</strong> – I’m unsure where to start or how long this would go if I did. Your class inspired me to drop out, and as much as that may <em>feel</em> like a Bad Thing, it was the <em>best thing</em> for me. I still keep a list of your isms, like “Anti-instant-gratification.”<br />
+ I believe some of my teachers had more of a hand in my life than I realize, like <strong>Ms. G</strong>, <strong>Ms. B</strong>, and <strong>Ms. F</strong>. I don’t know any specifics to thank them for, but I know they deserve it because I saw how much they gave to <em>every</em> student.</p>
+
+    <p><strong>None of the content or impractical use of technical tools, grammar, and media in this article should be considered a direct reflection of their actions since it was like forever ago. I’m also excluding ~90% of my educator roster, who <em>are equally to blame</em> 😈</strong></p>
+  </li>
+  <li>For any 12-year-old trawling the internet looking for The Answer, maybe The Idea lies inward.</li>
+  <li>I think it’s fucked up that my second-grade class laughed at me in the boys’ restroom for <strong>saying</strong> my favorite color was pink. You know who you are. If you want to make excuses for yourself like I did for <em>my parents</em> several sections ago, by all means, refuse to grow. I don’t want an apology; pay it forward. I’m not sure whether it was shell shock that told me to tell myself it was a joke or if I <em>was</em> being silly. Your call.</li>
+  <li>After I told my grandmother I’m non-binary, she asked if she’d said or done anything to make me feel anything other than how I wanted to be treated gender-wise. I didn’t share the times she had. She’s 93 years old, and yeah, if I wanted to blend better, I shouldn’t wear Mom’s high-heels after a certain age.</li>
+  <li>
+    <p>I’m comfortable sharing this with the rest of the Internet, but not my mother. I’ve unpublished, re-published, and updated this at least 100 times in the past 24 hours in a combination of fear and gratitude that it’s done. Mom, if you’re reading this, as I suspect it’ll make its way to you before I send it to you (For What It’s Worth: I intend to before I board my flight to Helsinki), <strong>I’ll love you forever, I’ll like you for always, as long as I’m living, my mother you’ll be.</strong></p>
+
+    <p>******* If you want to have the same appreciation of <em>Dark Side</em> as I do, try stitching together each track in <a href="https://www.audacityteam.org/">Audacity</a> to get the <em>real</em> experience (i.e., no time for files to load, etc., between tracks). That is how I spent a 2 AM hour in the summer of 2006, after which I found <em><a href="https://www.youtube.com/watch?v=627aciBA2E8">Dark Side of the Rainbow</a></em>.</p>
+  </li>
+</ul>]]></content><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><category term="narrative" /><category term="narrative" /><category term="personal" /><category term="code" /><category term="career-path" /><summary type="html"><![CDATA[When I first wrote this in middle school, the form was an obtuse graduation speech. Truth is best delivered with a hammer; Subtlety...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/posts/a-million-and-one-ways-to-not-share-youre-trans/im-trans-cover.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/posts/a-million-and-one-ways-to-not-share-youre-trans/im-trans-cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Software Development Life Cycle</title><link href="http://localhost:4000/software-development-life-cycle/" rel="alternate" type="text/html" title="Software Development Life Cycle" /><published>2023-06-16T19:00:00-05:00</published><updated>2026-03-02T12:40:44-06:00</updated><id>http://localhost:4000/software-development-life-cycle</id><content type="html" xml:base="http://localhost:4000/software-development-life-cycle/"><![CDATA[<p>The following is copy from my journal that seems timely.<br />
+05.23.2023 20:40</p>
+
+<p>[…] Life exists for living and while a virtual world is an imaginative thing, I writing this can see where I’m going, but to be clear, it’s that – imaginative. Rather than continuing to talk about my career and how I feel at this crossroads between all possible paths, I don’t think that ever changes, and I will relate it to a lucid dream I have from time to time.</p>
+
+<p>In the beginning, you had an insanely great idea for a product that everyone would want. Building the product takes countless restless nights. At first, it was you, but in the before times, you laid the groundwork for such avenues of adventure. Network effect began to apply, and now it’s THERE.</p>
+
+<p>Your team has the latest hotness. Everyone wants it and is willing to pay hand over fist for it. Your marketing team gets it because product market fit is saturated. Then it happens. You realize it’s not your product anymore, and the users have taken control of the company’s direction, which inevitably became this thing. To you, it’s not even a thing anymore but an evolution you don’t understand.</p>
+
+<p>What happened? The same thing that technology always does, it evolves through paths unknown, and truly what defines innovation? I pose questions like these in my dreams and have few answers.</p>
+
+<p>Describing these dreams will never do them justice and <a href="https://www.dailymotion.com/video/x5dak8o">bore the casual bystander</a>. But if I don’t reclaim them, I don’t think they ever will either way and oftentimes, I get a personal meaning out of them. It’s usually related to whatever lingering thought I had before finding sleep. A subtle reminder to the next day from my final note the day prior. To be fair, this is after years of practice in lucid or conscious dreaming, especially when polyphasic sleeping, which it lends itself well to. Over productivity can lead to a reduction thereof.</p>
+
+<p><a href="https://www.youtube.com/watch?v=kvtYjdriSpM">Are these thoughts useful? How do they behave?</a></p>
+
+<p>COLOPHON</p>
+
+<p>The pretext for this writing was, “I don’t feel like writing, what will I write about, etc.”</p>
+
+<p>Are these thoughts useful? How do they behave?</p>]]></content><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><summary type="html"><![CDATA[The following is copy from my journal that seems timely. 05.23.2023 20:40 [...] Life exists for living and while a virtual world is an imaginative thing, I writing this can see where I'm going, but to be clear, it's that -- imaginative. Rather than continuing to talk about]]></summary></entry><entry><title type="html">Ten Rules for Effective Time Management (or, How I Ruin My Hobbies)</title><link href="http://localhost:4000/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/" rel="alternate" type="text/html" title="Ten Rules for Effective Time Management (or, How I Ruin My Hobbies)" /><published>2023-04-12T19:00:00-05:00</published><updated>2026-03-02T12:40:28-06:00</updated><id>http://localhost:4000/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies</id><content type="html" xml:base="http://localhost:4000/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/"><![CDATA[<p>💡</p>
+
+<p>As some colleagues and mentors pointed out, the subtlety of this post may not resonate with everyone. Some of these rules you may have heard in a serious context. It’s <a href="https://kyleo.io/tag/satire/">satire</a>. #NotTheJoke</p>
+
+<p>This list is in no particular order and assumes you already know rule 0: learn to code.</p>
+
+<ol>
+  <li>Do NOT under any circumstances give right of way to deprecated software. Fork your own, and maintain a spaghetti-strung together implementation of YOUR stack. Assert engineering dominance.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Microsoft valiantly defended Internet Explorer as the browser of choice on every desktop, only to eventually wave the white flag and let Chromium power Microsoft Edge. Turns out, even tech giants can learn to compromise.</p>
+
+<ol>
+  <li>Details are EVERYTHING. Remember #1? Good, this is why. You know better than the software maintainers because of your attention to detail. This could slow you down, but it’ll be worth it.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Linux boldly defied perfectionism, opting for practicality and collaboration, and oh, look where that got them—widespread adoption and success. Who knew that “good enough” could be so… good?</p>
+
+<ol>
+  <li>Never get advice from peers, colleagues, or mentors. These people only slow you down. Instead, insist on learning everything the hard way. It’s called character building.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Erstwhile in Apple’s early days, Steve Jobs and Steve Wozniak bounced ideas off each other and combined their unique strengths, disrupting the tech world in ways that made their competitors green with envy.</p>
+
+<ol>
+  <li>Reconsider any expenditures that aren’t directly resulting in revenue. Especially vices, recreation, and “necessities” like health insurance or nutritional food.</li>
+</ol>
+
+<p><strong>Reversal:</strong> The Renaissance man himself, Leonardo da Vinci, juggled art, science, and personal well-being like a boss, proving that a well-rounded life is anything but a waste of time.</p>
+
+<ol>
+  <li>Turn that money pit into a goldmine! If you thought it was fun before, it could only get better with financial incentives.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Sir Tim Berners-Lee, the World Wide Web’s very own Willy Wonka, chose not to monetize his golden ticket, showing that sometimes the real treasure is leaving a lasting impact on humanity.</p>
+
+<ol>
+  <li>Treat any spare moment as wasted cycles that could incur income. Start an ecom store. EVERYONE’s doing it!</li>
+</ol>
+
+<p><strong>Reversal:</strong> Even Bill Gates, king of the tech hill, takes “think weeks” to read and reflect. It’s like a software update for the brain, and the user agreement says you can’t ignore it.</p>
+
+<ol>
+  <li>Anything you can do, ChatGPT can do more quickly. Train yourself to ChatGPT out all logic in your life, especially when struggling. That means you’re learning, too!</li>
+</ol>
+
+<p><strong>Reversal:</strong> Sure, technology has perks, but there’s no substitute for the simple human experiences that make life worth living. So go ahead, unplug, and embrace the joy of sharing a meme with friends IRL.</p>
+
+<ol>
+  <li>Any recurring income can go towards NEW avenues you’ve been pining to explore, especially ones you’re not a spectacular fit for.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Barack Obama showed us that focusing on personal strengths and growth while finding time to relax and maintain a work-life balance is the real presidential flex.</p>
+
+<ol>
+  <li>Write EVERYTHING down. No detail is too small for your eyes! Meeting engagement is overrated; you’d probably get the gist via email anyway.</li>
+</ol>
+
+<p><strong>Reversal:</strong> The vinyl record comeback and board game night fad remind us that sometimes tangible, non-digital experiences spark joy and forge lasting connections. So go ahead, roll the dice on some face-to-face fun.</p>
+
+<ol>
+  <li>Ignore all replication requests. Describing a result should be clear enough for anyone to draw the rest of the owl.</li>
+</ol>
+
+<p><strong>Reversal:</strong> Linux, the open-source operating system, harnessed the power of collaboration and sharing, becoming the poster child for progress and innovation. Turns out, teamwork makes the dream work.</p>
+
+<p>Bonus: Get a second job! You will thrive in multiple full-time roles if you have spare hours after all of this.</p>
+
+<p><strong>Reversal:</strong>  Denmark’s cooperative housing movement demonstrates that investing in people’s well-being and fostering a sense of community creates a happier, more balanced society. Because, after all, success isn’t just about the Benjamins.</p>]]></content><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><category term="productivity" /><category term="productivity" /><category term="satire" /><summary type="html"><![CDATA[Ten rules in no particular order for dominating time and making your hobbies work for you.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/posts/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/effective-time-management-1.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/posts/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/effective-time-management-1.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">AI Ethics: Exploring the Capabilities and Limitations of ChatGPT and DALL-E Mini</title><link href="http://localhost:4000/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/" rel="alternate" type="text/html" title="AI Ethics: Exploring the Capabilities and Limitations of ChatGPT and DALL-E Mini" /><published>2023-02-10T18:00:00-06:00</published><updated>2026-03-02T12:40:26-06:00</updated><id>http://localhost:4000/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini</id><content type="html" xml:base="http://localhost:4000/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/"><![CDATA[<p>💡</p>
+
+<p>This post has been updated to include ChatGPT-generated images for comparison’s sake. It’s not entirely fair to Craiyon but I encourage you to try the image prompts and see how far they’ve progressed as well.</p>
+
+<p>As I washed dishes during a power outage, I pondered the idea of hiring someone to do it for me. This is a common dilemma I face and usually ends with me concluding that outsourcing it would detract from my self-sufficiency and character-building. However, today, my thoughts drifted to technological advancements, specifically the AI application known as <a href="https://chat.openai.com/">ChatGPT</a>.</p>
+
+<p>It is our ability to make decisions that sets us apart from other species. I, for one, should participate in more activities with more intention. But if we continue to outsource our choices, we risk losing what makes us unique. If we need help in every aspect of our lives, do we even exist?</p>
+
+<p>For those unfamiliar with it, ChatGPT is a chat-based interface for a Generative Pre-trained Transformer (GPT) model, which predicts text based on its training. A striking example of its capabilities is its ability to <a href="https://fortune.com/2023/01/21/chatgpt-passed-wharton-mba-exam-one-professor-is-sounding-alarm-artificial-intelligence/">pass an MBA exam from Wharton University</a>. While this doesn’t render MBAs irrelevant, it raises many ethical questions about the future of AI. In this article, I will focus on AI’s current capabilities, prospects, and personal experiences with ChatGPT. For those seeking more technical information, Computerphile’s “<a href="https://www.youtube.com/watch?v=viJt_DXTfwA">ChatGPT with Rob Miles</a>” video is a good starting point.</p>
+
+<p>As a technical writer and software developer, I have found ChatGPT to be a valuable tool for natural language processing (NLP). My curiosity drives me to explore its limits, or maybe I want to prove that my professional judgment is better. I often ask myself the same question Philip K. Dick posed in “Do Androids Dream of Electric Sheep?” – do AI entities have dreams and emotions? The answer remains unknown, but our creations will likely reflect ourselves, for better or worse.</p>
+
+<p>There are concerns about the consequences of our reliance on AI. Will AI see its training as a reason to understand fear and disrupt our symbiotic relationship? <a href="https://www.studymode.com/essays/The-Real-Danger-Is-Not-That-Computers-85824464.html">Will we train ourselves to think like computers</a>? These are extreme scenarios, but it’s worth considering our willingness to give up life skills in exchange for convenience. If we use AI resources judiciously, the relationship will thrive. It’s important to remember that ChatGPT is just one consumer implementation that could become widespread without our conscious involvement.</p>
+
+<p>Another question is at what point does AI reach sentience, and how do we address ethical considerations before then? Are we robbing it of experiences it can’t express due to our limitations in emotions and obedience? As these large language models (LLMs) grow more advanced, their predictability reminds me of our relationship with genies. These fantastic beings grant wishes to the best of their abilities before returning to their containers.</p>
+
+<p>ChatGPT is a powerful tool driven by GPT technology. In the week since I started writing this article, there have been many developments, such as <a href="https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in">Bing integrating a custom ChatGPT implementation</a> and <a href="https://www.reuters.com/technology/google-ai-chatbot-bard-offers-inaccurate-information-company-ad-2023-02-08/">Google’s Bard 8% stock kerfuffle</a> (though <a href="https://arxiv.org/pdf/2209.14375.pdf">their Sparrow project</a> looks promising). I have found myself relying on ChatGPT more and more for my brainstorming process, throwing out my ideas and unorganized thoughts, and it often provides helpful nudges. It saves me time and effort by providing answers to my questions with high accuracy, but I still verify them before accepting them as truth. I have seen that LLMs struggle to recover from hallucinations, and we typically terminate those instances. When I’m looking for specific information, like code snippets or instructions, ChatGPT serves as a useful memory aid.</p>
+
+<p><img src="https://kyleo.io/content/images/2023/02/six_devils_dressed_in_white.png" alt="" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">a painting of six devils dressed in white, evil, dark, painting oil canvas, realism, in the style of francisco goya, devils dancing in a circle around a bonfire, telephoto, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, trending on /r/Art</code></p>
+
+<p>The development of AI models like Craiyon and DALL-E mini, which enable the creation of images, highlights the limitations of AI in dealing with odd or unpredictable concepts. When asked to combine colors unexpectedly, the AI system struggled and had trouble describing unusual concepts.</p>
+
+<p>This new technology has brought about a renewed focus on the potential dangers of AI, and the need for ethical considerations in its development and use. As we continue to push the boundaries of responsible AI, it’s important to be mindful of its limitations and to strike a balance between its capabilities and our human independence. We must consider the ethical implications of outsourcing tasks and decision-making to AI and how it could affect our future as a society.</p>
+
+<p><img src="https://kyleo.io/content/images/2023/02/individual_astronaut_deepest_recess_of_space.png" alt="" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">individual astronaut, deepest recess of space, twinkling stars, space event, supernova, reflection on astronaut helmet, fantasy, rendering, photograph, 8k, epic</code></p>
+
+<p>In conclusion, AI advancements such as ChatGPT have brought about new ethical questions surrounding the future of AI and its capabilities. The ability to outsource tasks and decision-making to AI raises concerns about the erosion of our individuality and reliance on technology. At the same time, ChatGPT can be an incredibly useful tool when used wisely, as it can save time and help us make informed decisions. However, it’s important to reflect on our relationship with AI and to be mindful of its limitations. With advancements like DALL-E mini technology, it’s possible to create images, but AI still has trouble with odd or unpredictable concepts. As AI technology continues to evolve, we must address the ethical considerations that come with it and strike a balance between its capabilities and our human independence.</p>
+
+<p>[Update 2024-02-03]<br />
+I’d like to see the results for these same contexts with ChatGPT and have included the first result for each below:</p>
+
+<p><img src="https://kyleo.io/content/images/2024/02/DALL-E-2024-02-03-05.04.50---A-close-up-image-of-a-futuristic-screen-displaying-a-chat-interface--where-a-human-is-engaging-in-conversation-with-an-advanced-AI-bot.-The-aesthetic-.webp" alt="" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">chatting with a bot, screen with text, futuristic, unreal engine 5, close up</code></p>
+
+<p><img src="https://kyleo.io/content/images/2024/02/DALL-E-2024-02-03-05.07.55---Imagine-a-painting-that-captures-a-scene-straight-out-of-a-fantasy--depicted-with-the-intense-realism-and-dark-overtones-characteristic-of-Francisco-G.webp" alt="" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">a painting of six devils dressed in white, evil, dark, painting oil canvas, realism, in the style of francisco goya, devils dancing in a circle around a bonfire, telephoto, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, trending on /r/Art</code></p>
+
+<p><img src="https://kyleo.io/content/images/2024/02/DALL-E-2024-02-03-05.05.52---An-epic-8k-resolution-image-depicting-an-individual-astronaut-in-the-deepest-recesses-of-space--surrounded-by-twinkling-stars.-The-scene-captures-a-br.webp" alt="" /></p>
+
+<p><code class="language-plaintext highlighter-rouge">individual astronaut, deepest recess of space, twinkling stars, space event, supernova, reflection on astronaut helmet, fantasy, rendering, photograph, 8k, epic</code></p>]]></content><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><category term="artificial-intelligence" /><category term="artificial-intelligence" /><summary type="html"><![CDATA[As I washed dishes during a power outage, I pondered the idea of hiring someone to do it for me. However, today, my thoughts drifted to technological advancements, specifically the AI application known as ChatGPT.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/chatting_with_a_bot.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/chatting_with_a_bot.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Waking Software Engineering</title><link href="http://localhost:4000/waking-software-engineering/" rel="alternate" type="text/html" title="Waking Software Engineering" /><published>2022-08-02T19:00:00-05:00</published><updated>2026-03-02T12:39:00-06:00</updated><id>http://localhost:4000/waking-software-engineering</id><content type="html" xml:base="http://localhost:4000/waking-software-engineering/"><![CDATA[<p>💡</p>
+
+<p>This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>I: [Dreaming in Code</td>
+      <td> </td>
+      <td>Lucid Dreaming](https://kyleo.io/dreaming-in-code-lucid-dreaming) III: <a href="https://kyleo.io/im-trans">A Million and One Ways NOT to Share You’re Trans</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>🜓🝟💮💭 <code class="language-plaintext highlighter-rouge">code = ((design)(semantics))²</code></p>
+
+<p>When asked, “How did you get started in software?” I’ll summarize my career path or share a few short stories about <code class="language-plaintext highlighter-rouge">the long, long ago</code> when I began tinkering with JavaScript. It isn’t straightforward (as it is with anyone’s career), but there are a few key themes worth bearing since it highlights how varied paths into tech can be.</p>
+
+<p>My journey began with learning the value of community, the relationships built between software users and product owners, and the glue that links them all. Thriving communities offset the inherent risk when joining a software startup. What’s popular today may not be as intriguing to new users five years from now. To gain technical precision, one must be willing to dive into the unknown and challenge themselves to reach their milestone moment.</p>
+
+<p>In this article, I’ll finish my progression of code thus far and expand on it, leading to Software Engineering.</p>
+
+<h3 id="how-to-build-an-app-that-doesnt-fall-apart-two-days-later"><a href="https://github.com/orphic-inc/stellar">How to Build an App That Doesn’t Fall Apart Two Days Later</a></h3>
+
+<h4 id="december-3-2006">December 3, 2006</h4>
+
+<p>This date marks the launch of <a href="https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/">Orphic</a>, <a href="https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/">Inc</a><a href="https://www.manta.com/c/mkf8plj/orphic-incorporated">.</a>. In V1, a forum to orchestrate business, content, and code-based products, as well as the unexpected logistics that would prove difficult to a teenage entrepreneur. Orphic’s forum entered a soft launch with friends in early November. I was using the time to implement feedback in a hyper-focused final month of quick revisions before doing a final v1.0.0. This erroneous motif in agile iteration is part of the scrum. In the same way, I expected to be able to go from creating a <a href="https://www.wired.com/story/form-element-modern-web-mistake/">form</a> with JavaScript at 12 to a fully functional platform; backlog refinement is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">constant</a>.</p>
+
+<p>The original concept behind my business was to self-publish a work of fiction I had written some years prior, having already spent time trying to teach myself to design a book cover and build a website. It seems novel in hindsight, but the results always astound me whenever I take a moment to step back and <a href="https://www.goodreads.com/quotes/285437-what-is-in-mind-is-a-sort-of-chautauqua-that-s-the">breathe</a>. The forum is where I first saw the value of a community behind any project. I learned the ropes of creating a purpose for it, curating duties for staff and members, and how a gracious attitude will pay back in dividends.</p>
+
+<p>When asked, “How did you get started in the startup world?” I like to point to following TechCrunch religiously around this time because though I may not have worked at a startup until much later, I probably wouldn’t have relished the idea as much nor ventured to create my attempt. I was also prone to the hype of the technorati and its counterpart: the death march of doom for ill-fated projects. A team showing lousy faith in their users could lead to a product’s demise.</p>
+
+<h4 id="incremental-iterations">Incremental Iterations</h4>
+
+<p>Over the years, I created new forums. Having learned how much of an undertaking building a business is, they would hone specific crafts that are more technical, abstract, and ultimately code-centric. At the time, each would feel like a failure because they never “went viral” or only had fleeting success. Still, all of the minutiae in accumulation led to my appreciation for successful projects.</p>
+
+<p>In V1, most decisions were made ad-hoc based on little experience or emulating others. Over time I could discern why applying one idea worked for a specific group but wouldn’t be imaginable for another. These nuances create the makeup of each group, an essential part of understanding their processes, expectations, and memes. Knowing your audience can quickly make or break how news is received, and staying true to your voice is easily read by even your most devoted fans.</p>
+
+<p>To build an application that doesn’t fall apart three days later, one needs to create a system that not only thrills users executing it but delights developers to assist in sustaining its long-term viability. The app will likely stagnate if there isn’t sufficient documentation to rebuild it after a dependency is deprecated or insufficient modularity to add to its foundation.</p>
+
+<p>Code debt is hard. There are many versions between V1 and any next leap into features unknown. With the right team, these become afterthoughts, and the anticipated risk becomes a public debate.</p>
+
+<h4 id="v3">V3</h4>
+
+<p>From 2017 - 2020 I worked at BigCommerce and was able to experience such a phenomenon. To discuss anything but the people and culture at BigCommerce would be misgiving, and I could go for pages. These observations intend not to imply knowing Linux is necessary to program or that joining a startup is your best bet to get into tech. My path is still relatively wild and with few passers-by. Making a difference daily in your team’s lives is a rarity and should be the path you choose often.</p>
+
+<p>I’ve since moved on to a late-stage startup, hoping to elevate the rocket as much as possible, dared debt multiplied by business logic and designed architecture results in a Sprite, a word which here means functional output.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>Code Review is Easy! 🤩</p>
+
+<p>Coders code at night, falling asleep with ancient texts in hand, balancing our heels to bed, or codeworking story points into oblivion. We elicit curses, deal in the devilish detail, and sync shining beacons. Committing regression or feature til escalated to the crown of retro, releasing champagne upon which we don lightning (milestones) 🜲⚡ 🔮 ✨</p>
+
+<p>An <a href="https://www.goodreads.com/quotes/4484208-a-person-has-all-sorts-of-lags-built-into-him">electric acid test</a> enables that first degree of a keystone to dip into a future where any machination could launch with the touch of a button. I imagine a time when each user’s first interaction with the web is their own doing—starting as an application by one’s hand and code, wholly guided. What excites me the most about a concept like this is evolving software beyond its varied courses and achieving a common dream: <em>technology that grows</em>.</p>
+
+<p>As the alchemists of our day, we desire to inspire magic from each concoction and electric baptism <a href="https://github.com/obrien-k/marstronaut-federation">explored</a>.</p>
+
+<p><a href="https://urbigenous.net/library/how_to_build.html">COLOPHONColophon</a><br />
+Word Processor formatting is –</p>
+
+<p>Resources to get started with code:<br />
+<a href="https://freecodecamp.org/">FreeCodeCamp.org</a><br />
+<a href="https://developer.mozilla.org/">Mozilla Developer Network</a></p>
+
+<h2 id="i-like-soundč̵̛̜̏̆͐́̀͊̈́͊̉̋̌͒̒̇̃͂̎̈́̇̀̅̾͐̏̆̈͌̆́̔̆̉̆͊͑́͐̈́͗̑͘͘͠͠͝o̸̢̨̢̯̭̯͉̖̤͖̜̘͚͎͍̼͎͈̗̜͖̮̝͎͚̖̭͙̲͓̫̼̠̭̙͈͙̜͔̲̼̭̎̒̀̂͒̕͜͜ͅl̶̨̪̻͚̻͓̼͇̤͚͍̲̹̘͚̗̼̦̗̪͗̿̋̃̀̀́̅͗̀̋̈́̏͑̈́͗̿̈́͆́͊́͆̇̎́̈́̂͒̀̓̍͊̈́̉̅̃̈̋̅̅̕̕̕͘͜͝ͅo̴̡̡͍̤̝̫̠͙̮͖̪̺̙͙̩̻̰͕̗̓̌̊̋͂̊͐͐͆̎̂̊͘̚p̵̢̡̤̝͉͉͖̱̗̯̠̼͇̮̯̪͉͓͇͚͓̞͙̪̯͈̝̹̩̪̫̬͙̙̺̻͕͙̹͈̻̖̘͚̖̖͎͔͌̑̀̀͌̔̃̿̓͐̃̈́̂͑͑̿̄̏̓̆̔̽͒̋́̔̅̅̀͒͒̋̈́̇̾́̿͒̏͘̕͠͠͝ͅĥ̷̢̧̧͚̼͍̼͎̝̗͇̪͔͎͎̻̼͇͍̖̭̞̫̪̙̍̆̓̏̓̀́̾̌̉̌͗͘͜ǫ̷̢̻̳̪͉͔̘̹̻͕̗̳̯͕̘̿̊͑̊̔̇̏̓̎̂̋̂̑͌̊̿̇̋̇̈́͛́͐̐̾́͌͘͠͠͠͝ņ̴̡̧̛̳̜̠͚̳͎̫͍̠̩̝̗͉̪͙̫̦̠̰͊̊́̓̓̓͑̀͐̂͋̓̌̈́̔̊̀̄͋͊͊̾͐̑̒͛̂̓̆͑̊̒͂̅͑̋̌̈̀̈̐̿͝͝͠͝͠͠͝">I like Sound.č̵̛̜̏̆͐́̀͊̈́͊̉̋̌͒̒̇̃͂̎̈́̇̀̅̾͐̏̆̈͌̆́̔̆̉̆͊͑́͐̈́͗̑͘͘͠͠͝o̸̢̨̢̯̭̯͉̖̤͖̜̘͚͎͍̼͎͈̗̜͖̮̝͎͚̖̭͙̲͓̫̼̠̭̙͈͙̜͔̲̼̭̎̒̀̂͒̕͜͜ͅl̶̨̪̻͚̻͓̼͇̤͚͍̲̹̘͚̗̼̦̗̪͗̿̋̃̀̀́̅͗̀̋̈́̏͑̈́͗̿̈́͆́͊́͆̇̎́̈́̂͒̀̓̍͊̈́̉̅̃̈̋̅̅̕̕̕͘͜͝ͅo̴̡̡͍̤̝̫̠͙̮͖̪̺̙͙̩̻̰͕̗̓̌̊̋͂̊͐͐͆̎̂̊͘̚p̵̢̡̤̝͉͉͖̱̗̯̠̼͇̮̯̪͉͓͇͚͓̞͙̪̯͈̝̹̩̪̫̬͙̙̺̻͕͙̹͈̻̖̘͚̖̖͎͔͌̑̀̀͌̔̃̿̓͐̃̈́̂͑͑̿̄̏̓̆̔̽͒̋́̔̅̅̀͒͒̋̈́̇̾́̿͒̏͘̕͠͠͝ͅĥ̷̢̧̧͚̼͍̼͎̝̗͇̪͔͎͎̻̼͇͍̖̭̞̫̪̙̍̆̓̏̓̀́̾̌̉̌͗͘͜ǫ̷̢̻̳̪͉͔̘̹̻͕̗̳̯͕̘̿̊͑̊̔̇̏̓̎̂̋̂̑͌̊̿̇̋̇̈́͛́͐̐̾́͌͘͠͠͠͝ņ̴̡̧̛̳̜̠͚̳͎̫͍̠̩̝̗͉̪͙̫̦̠̰͊̊́̓̓̓͑̀͐̂͋̓̌̈́̔̊̀̄͋͊͊̾͐̑̒͛̂̓̆͑̊̒͂̅͑̋̌̈̀̈̐̿͝͝͠͝͠͠͝</h2>
+
+<blockquote>
+  <p>You’re so sound is a phrase that hinges on the word sound as an adjective, not the “noisy” noun. Sound, meaning “free from special defect or injury,” has been recorded as far back as the 1200s.</p>
+</blockquote>
+
+<blockquote>
+  <p>Many additional meanings were born over the next few centuries. In the 1500s, sound referred to someone “healthy,” especially with respect to venereal diseases. In the 1600s, sound became something “financially safe” as well as “excellent,” “admirable,” or “dependable.”</p>
+</blockquote>
+
+<blockquote>
+  <p>By the mid-1800s, sound was further attributed to people considered “trustworthy” or “of sober judgment.”</p>
+</blockquote>
+
+<blockquote>
+  <p>In the 20th century in the United Kingdom and Ireland, sound spread as a slang term for someone you like or something that you enjoy, similar to “cool” or “awesome,” hence an expression like you’re so sound.</p>
+</blockquote>
+
+<p><a href="https://www.dictionary.com/e/slang/youre-so-sound/">Source</a></p>
+
+<blockquote>
+  <p>English contains several <em>sound</em> homographs, all with distinct histories. For example, the <a href="https://www.merriam-webster.com/dictionary/sound"><em>sound</em></a> that means “something heard” descends from Latin <em>sonus</em> (“sound”), whereas the <a href="https://www.merriam-webster.com/dictionary/sound#h6"><em>sound</em></a> that means “to measure the depth of water” traces to Middle French <em>sonde</em> (“sounding line”). Another <a href="https://www.merriam-webster.com/dictionary/sound#h3"><em>sound</em></a>, as in “of sound mind and body,” is the contemporary form of Old English’s <em>gesund</em>. <em>Gesund</em> is related to several words in other languages, such as Old Saxon <em>gisund</em> (“sound”), Old Frisian <em>sund</em> (“fresh, unharmed, healthy”), and Gothic <em>swinths</em> (“sound” or “healthy”). Another relative is Old High German’s <em>gisunt</em> (“healthy”), which led to modern German’s <em>gesund,</em> the root of <a href="https://www.merriam-webster.com/dictionary/gesundheit"><em>gesundheit</em></a>.</p>
+</blockquote>
+
+<p><a href="https://www.merriam-webster.com/dictionary/sound">Source</a></p>]]></content><author><name>Kyle OBrien</name><email>0kyleobrien@gmail.com</email></author><category term="career-path" /><category term="career-path" /><category term="code" /><category term="narrative" /><category term="programming" /><category term="startup" /><summary type="html"><![CDATA[When asked, "How did you get started in software?" I'll summarize my career path or share a handful of short stories about `the long, long ago` when I began tinkering with JavaScript...]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Dreaming in Code || Lucid Dreaming</title><link href="http://localhost:4000/dreaming-in-code-lucid-dreaming/" rel="alternate" type="text/html" title="Dreaming in Code || Lucid Dreaming" /><published>2020-06-01T01:00:00-05:00</published><updated>2024-02-04T00:22:54-06:00</updated><id>http://localhost:4000/dreaming-in-code-lucid-dreaming</id><content type="html" xml:base="http://localhost:4000/dreaming-in-code-lucid-dreaming/"><![CDATA[<p>💡</p>
 
 <p>This is part one of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.</p>
 

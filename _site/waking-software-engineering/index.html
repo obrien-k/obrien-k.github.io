@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.2.1 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Waking Software Engineering | Kyle OBrien.me</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Waking Software Engineering" />
+<meta name="author" content="Kyle OBrien" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="When asked, “How did you get started in software?” I’ll summarize my career path or share a handful of short stories about the long, long ago when I began tinkering with JavaScript…" />
+<meta property="og:description" content="When asked, “How did you get started in software?” I’ll summarize my career path or share a handful of short stories about the long, long ago when I began tinkering with JavaScript…" />
+<link rel="canonical" href="http://localhost:4000/waking-software-engineering/" />
+<meta property="og:url" content="http://localhost:4000/waking-software-engineering/" />
+<meta property="og:site_name" content="Kyle OBrien.me" />
+<meta property="og:image" content="http://localhost:4000/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-02T19:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png" />
+<meta property="twitter:title" content="Waking Software Engineering" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Kyle OBrien"},"dateModified":"2026-03-02T12:39:00-06:00","datePublished":"2022-08-02T19:00:00-05:00","description":"When asked, “How did you get started in software?” I’ll summarize my career path or share a handful of short stories about the long, long ago when I began tinkering with JavaScript…","headline":"Waking Software Engineering","image":"http://localhost:4000/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/waking-software-engineering/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/logo.png"},"name":"Kyle OBrien"},"url":"http://localhost:4000/waking-software-engineering/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="color-scheme" content="dark light">
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kyle OBrien.me">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Kyle OBrien.me">
+
+<meta name="generator" content="Hydejack v9.2.1" />
+
+
+<link rel="alternate" href="http://localhost:4000/waking-software-engineering/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Kyle OBrien.me" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+  
+  <link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_katexPreload">
+  <noscript><link rel="stylesheet" href="/assets/bower_components/katex/dist/katex.min.css"></noscript>
+
+
+
+
+
+<script>((r,a)=>{function d(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=a.createElement("script"),e=(n.src=e,t&&d(n,"load",t,{once:!0}),a.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=a.createElement("script");function o(){r._loaded=!0,t&&d(n,"load",t,{once:!0});var e=a.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():d(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){d(a.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}})(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2026-03-02T14:29:44-06:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.2.1.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: rgb(63.8602040816, 154.5602040816, 162.8897959184);--theme-color: rgb(25,55,71);--dark-mode-body-bg: hsl(200.8695652174, 5.9895833333%, 17.5%);--dark-mode-border-color: hsl(200.8695652174, 5.9895833333%, 22.5%)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<!-- Add HTML tags here to be included in the head. You can delete the below: -->
+<link rel="dns-prefetch" href="https://assets.gumroad.com">
+<script type="module">
+  const loadJS = x => new Promise(r => window.loadJS(x).addEventListener('load', r));
+
+  let p1, p2, io1, io2, embedCreated, overlayCreated;
+  document.querySelector('hy-push-state').addEventListener('load', () => {
+    io1 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p1 = p1 || loadJS('https://gumroad.com/js/gumroad-embed.js');
+        await p1;
+        !embedCreated && await new Promise(function check1(res) {
+          if (typeof createGumroadEmbed !== 'undefined')  {
+            embedCreated = 1;
+            res(createGumroadEmbed());
+          }
+          else setTimeout(() => check1(res), 200);
+        });
+        await new Promise(function check2(res) {
+          if (typeof GumroadEmbed !== 'undefined') res(GumroadEmbed.reload());
+          else setTimeout(() => check2(res), 200);
+        });
+      }
+    }, { rootMargin: '1440px' });
+
+    io2 ||= new IntersectionObserver(async (entries) => {
+      if (entries.some(x => x.isIntersecting)) {
+        p2 = p2 || loadJS('https://gumroad.com/js/gumroad.js');
+        await p2;
+        !overlayCreated && await new Promise(function check(res) {
+          if (typeof createGumroadOverlay !== 'undefined') {
+            overlayCreated = 1;
+            res(createGumroadOverlay());
+          }
+          else setTimeout(() => check(res), 200);
+        });
+      }
+    }, { rootMargin: '300px' });
+
+    document.querySelectorAll('.gumroad-product-embed').forEach(el => io1.observe(el));
+    document.querySelectorAll('.gumroad-button').forEach(el => io2.observe(el));
+  });
+</script>
+
+
+</head>
+
+<body class="no-break-layout">
+  
+<script>
+  window._sunrise = 6;
+  window._sunset =  18;
+  ((e,s)=>{var d="light-mode",a="dark-mode",o=(new Date).getHours();"matchMedia"in e&&e.matchMedia("(prefers-color-scheme)")||(e=(o=o<=e._sunrise||o>=e._sunset?a:d)==a?d:a,s.body.classList.add(o),s.body.classList.remove(e))})(window,document);
+
+</script>
+
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>waking-software-engineering</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-waking-software-engineering" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        Waking Software Engineering
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2022-08-02T19:00:00-05:00">02 Aug 2022</time> in <span>Career-path</span> on <span>Career-path</span>, <span>Code</span>, <span>Narrative</span>, <span>Programming</span>, <span>Startup</span>
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 02 Mar 2026">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2026-03-02T12:39:00-06:00">2026-03-02</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+      
+        <div class="img-wrapper lead aspect-ratio sixteen-nine flip-project-img">
+          
+
+
+<img
+  
+    src="/assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png"
+    
+    
+  
+  alt="Waking Software Engineering"
+  
+  
+  width="864"
+  height="486"
+  loading="lazy"
+/>
+
+        </div>
+      
+      
+    
+
+    
+
+
+
+  
+    <p class="note-sm" >
+      When asked, “How did you get started in software?” I’ll summarize my career path or share a handful of short stories about <code class="language-plaintext highlighter-rouge">the long, long ago</code> when I began tinkering with JavaScript…
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>💡</p>
+
+<p>This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>I: [Dreaming in Code</td>
+      <td> </td>
+      <td>Lucid Dreaming](https://kyleo.io/dreaming-in-code-lucid-dreaming) III: <a href="https://kyleo.io/im-trans">A Million and One Ways NOT to Share You’re Trans</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>🜓🝟💮💭 <code class="language-plaintext highlighter-rouge">code = ((design)(semantics))²</code></p>
+
+<p>When asked, “How did you get started in software?” I’ll summarize my career path or share a few short stories about <code class="language-plaintext highlighter-rouge">the long, long ago</code> when I began tinkering with JavaScript. It isn’t straightforward (as it is with anyone’s career), but there are a few key themes worth bearing since it highlights how varied paths into tech can be.</p>
+
+<p>My journey began with learning the value of community, the relationships built between software users and product owners, and the glue that links them all. Thriving communities offset the inherent risk when joining a software startup. What’s popular today may not be as intriguing to new users five years from now. To gain technical precision, one must be willing to dive into the unknown and challenge themselves to reach their milestone moment.</p>
+
+<p>In this article, I’ll finish my progression of code thus far and expand on it, leading to Software Engineering.</p>
+
+<h3 id="how-to-build-an-app-that-doesnt-fall-apart-two-days-later"><a href="https://github.com/orphic-inc/stellar">How to Build an App That Doesn’t Fall Apart Two Days Later</a></h3>
+
+<h4 id="december-3-2006">December 3, 2006</h4>
+
+<p>This date marks the launch of <a href="https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/">Orphic</a>, <a href="https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/">Inc</a><a href="https://www.manta.com/c/mkf8plj/orphic-incorporated">.</a>. In V1, a forum to orchestrate business, content, and code-based products, as well as the unexpected logistics that would prove difficult to a teenage entrepreneur. Orphic’s forum entered a soft launch with friends in early November. I was using the time to implement feedback in a hyper-focused final month of quick revisions before doing a final v1.0.0. This erroneous motif in agile iteration is part of the scrum. In the same way, I expected to be able to go from creating a <a href="https://www.wired.com/story/form-element-modern-web-mistake/">form</a> with JavaScript at 12 to a fully functional platform; backlog refinement is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">constant</a>.</p>
+
+<p>The original concept behind my business was to self-publish a work of fiction I had written some years prior, having already spent time trying to teach myself to design a book cover and build a website. It seems novel in hindsight, but the results always astound me whenever I take a moment to step back and <a href="https://www.goodreads.com/quotes/285437-what-is-in-mind-is-a-sort-of-chautauqua-that-s-the">breathe</a>. The forum is where I first saw the value of a community behind any project. I learned the ropes of creating a purpose for it, curating duties for staff and members, and how a gracious attitude will pay back in dividends.</p>
+
+<p>When asked, “How did you get started in the startup world?” I like to point to following TechCrunch religiously around this time because though I may not have worked at a startup until much later, I probably wouldn’t have relished the idea as much nor ventured to create my attempt. I was also prone to the hype of the technorati and its counterpart: the death march of doom for ill-fated projects. A team showing lousy faith in their users could lead to a product’s demise.</p>
+
+<h4 id="incremental-iterations">Incremental Iterations</h4>
+
+<p>Over the years, I created new forums. Having learned how much of an undertaking building a business is, they would hone specific crafts that are more technical, abstract, and ultimately code-centric. At the time, each would feel like a failure because they never “went viral” or only had fleeting success. Still, all of the minutiae in accumulation led to my appreciation for successful projects.</p>
+
+<p>In V1, most decisions were made ad-hoc based on little experience or emulating others. Over time I could discern why applying one idea worked for a specific group but wouldn’t be imaginable for another. These nuances create the makeup of each group, an essential part of understanding their processes, expectations, and memes. Knowing your audience can quickly make or break how news is received, and staying true to your voice is easily read by even your most devoted fans.</p>
+
+<p>To build an application that doesn’t fall apart three days later, one needs to create a system that not only thrills users executing it but delights developers to assist in sustaining its long-term viability. The app will likely stagnate if there isn’t sufficient documentation to rebuild it after a dependency is deprecated or insufficient modularity to add to its foundation.</p>
+
+<p>Code debt is hard. There are many versions between V1 and any next leap into features unknown. With the right team, these become afterthoughts, and the anticipated risk becomes a public debate.</p>
+
+<h4 id="v3">V3</h4>
+
+<p>From 2017 - 2020 I worked at BigCommerce and was able to experience such a phenomenon. To discuss anything but the people and culture at BigCommerce would be misgiving, and I could go for pages. These observations intend not to imply knowing Linux is necessary to program or that joining a startup is your best bet to get into tech. My path is still relatively wild and with few passers-by. Making a difference daily in your team’s lives is a rarity and should be the path you choose often.</p>
+
+<p>I’ve since moved on to a late-stage startup, hoping to elevate the rocket as much as possible, dared debt multiplied by business logic and designed architecture results in a Sprite, a word which here means functional output.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>Code Review is Easy! 🤩</p>
+
+<p>Coders code at night, falling asleep with ancient texts in hand, balancing our heels to bed, or codeworking story points into oblivion. We elicit curses, deal in the devilish detail, and sync shining beacons. Committing regression or feature til escalated to the crown of retro, releasing champagne upon which we don lightning (milestones) 🜲⚡ 🔮 ✨</p>
+
+<p>An <a href="https://www.goodreads.com/quotes/4484208-a-person-has-all-sorts-of-lags-built-into-him">electric acid test</a> enables that first degree of a keystone to dip into a future where any machination could launch with the touch of a button. I imagine a time when each user’s first interaction with the web is their own doing—starting as an application by one’s hand and code, wholly guided. What excites me the most about a concept like this is evolving software beyond its varied courses and achieving a common dream: <em>technology that grows</em>.</p>
+
+<p>As the alchemists of our day, we desire to inspire magic from each concoction and electric baptism <a href="https://github.com/obrien-k/marstronaut-federation">explored</a>.</p>
+
+<p><a href="https://urbigenous.net/library/how_to_build.html">COLOPHONColophon</a><br />
+Word Processor formatting is –</p>
+
+<p>Resources to get started with code:<br />
+<a href="https://freecodecamp.org/">FreeCodeCamp.org</a><br />
+<a href="https://developer.mozilla.org/">Mozilla Developer Network</a></p>
+
+<h2 id="i-like-soundč̵̛̜̏̆͐́̀͊̈́͊̉̋̌͒̒̇̃͂̎̈́̇̀̅̾͐̏̆̈͌̆́̔̆̉̆͊͑́͐̈́͗̑͘͘͠͠͝o̸̢̨̢̯̭̯͉̖̤͖̜̘͚͎͍̼͎͈̗̜͖̮̝͎͚̖̭͙̲͓̫̼̠̭̙͈͙̜͔̲̼̭̎̒̀̂͒̕͜͜ͅl̶̨̪̻͚̻͓̼͇̤͚͍̲̹̘͚̗̼̦̗̪͗̿̋̃̀̀́̅͗̀̋̈́̏͑̈́͗̿̈́͆́͊́͆̇̎́̈́̂͒̀̓̍͊̈́̉̅̃̈̋̅̅̕̕̕͘͜͝ͅo̴̡̡͍̤̝̫̠͙̮͖̪̺̙͙̩̻̰͕̗̓̌̊̋͂̊͐͐͆̎̂̊͘̚p̵̢̡̤̝͉͉͖̱̗̯̠̼͇̮̯̪͉͓͇͚͓̞͙̪̯͈̝̹̩̪̫̬͙̙̺̻͕͙̹͈̻̖̘͚̖̖͎͔͌̑̀̀͌̔̃̿̓͐̃̈́̂͑͑̿̄̏̓̆̔̽͒̋́̔̅̅̀͒͒̋̈́̇̾́̿͒̏͘̕͠͠͝ͅĥ̷̢̧̧͚̼͍̼͎̝̗͇̪͔͎͎̻̼͇͍̖̭̞̫̪̙̍̆̓̏̓̀́̾̌̉̌͗͘͜ǫ̷̢̻̳̪͉͔̘̹̻͕̗̳̯͕̘̿̊͑̊̔̇̏̓̎̂̋̂̑͌̊̿̇̋̇̈́͛́͐̐̾́͌͘͠͠͠͝ņ̴̡̧̛̳̜̠͚̳͎̫͍̠̩̝̗͉̪͙̫̦̠̰͊̊́̓̓̓͑̀͐̂͋̓̌̈́̔̊̀̄͋͊͊̾͐̑̒͛̂̓̆͑̊̒͂̅͑̋̌̈̀̈̐̿͝͝͠͝͠͠͝">I like Sound.č̵̛̜̏̆͐́̀͊̈́͊̉̋̌͒̒̇̃͂̎̈́̇̀̅̾͐̏̆̈͌̆́̔̆̉̆͊͑́͐̈́͗̑͘͘͠͠͝o̸̢̨̢̯̭̯͉̖̤͖̜̘͚͎͍̼͎͈̗̜͖̮̝͎͚̖̭͙̲͓̫̼̠̭̙͈͙̜͔̲̼̭̎̒̀̂͒̕͜͜ͅl̶̨̪̻͚̻͓̼͇̤͚͍̲̹̘͚̗̼̦̗̪͗̿̋̃̀̀́̅͗̀̋̈́̏͑̈́͗̿̈́͆́͊́͆̇̎́̈́̂͒̀̓̍͊̈́̉̅̃̈̋̅̅̕̕̕͘͜͝ͅo̴̡̡͍̤̝̫̠͙̮͖̪̺̙͙̩̻̰͕̗̓̌̊̋͂̊͐͐͆̎̂̊͘̚p̵̢̡̤̝͉͉͖̱̗̯̠̼͇̮̯̪͉͓͇͚͓̞͙̪̯͈̝̹̩̪̫̬͙̙̺̻͕͙̹͈̻̖̘͚̖̖͎͔͌̑̀̀͌̔̃̿̓͐̃̈́̂͑͑̿̄̏̓̆̔̽͒̋́̔̅̅̀͒͒̋̈́̇̾́̿͒̏͘̕͠͠͝ͅĥ̷̢̧̧͚̼͍̼͎̝̗͇̪͔͎͎̻̼͇͍̖̭̞̫̪̙̍̆̓̏̓̀́̾̌̉̌͗͘͜ǫ̷̢̻̳̪͉͔̘̹̻͕̗̳̯͕̘̿̊͑̊̔̇̏̓̎̂̋̂̑͌̊̿̇̋̇̈́͛́͐̐̾́͌͘͠͠͠͝ņ̴̡̧̛̳̜̠͚̳͎̫͍̠̩̝̗͉̪͙̫̦̠̰͊̊́̓̓̓͑̀͐̂͋̓̌̈́̔̊̀̄͋͊͊̾͐̑̒͛̂̓̆͑̊̒͂̅͑̋̌̈̀̈̐̿͝͝͠͝͠͠͝</h2>
+
+<blockquote>
+  <p>You’re so sound is a phrase that hinges on the word sound as an adjective, not the “noisy” noun. Sound, meaning “free from special defect or injury,” has been recorded as far back as the 1200s.</p>
+</blockquote>
+
+<blockquote>
+  <p>Many additional meanings were born over the next few centuries. In the 1500s, sound referred to someone “healthy,” especially with respect to venereal diseases. In the 1600s, sound became something “financially safe” as well as “excellent,” “admirable,” or “dependable.”</p>
+</blockquote>
+
+<blockquote>
+  <p>By the mid-1800s, sound was further attributed to people considered “trustworthy” or “of sober judgment.”</p>
+</blockquote>
+
+<blockquote>
+  <p>In the 20th century in the United Kingdom and Ireland, sound spread as a slang term for someone you like or something that you enjoy, similar to “cool” or “awesome,” hence an expression like you’re so sound.</p>
+</blockquote>
+
+<p><a href="https://www.dictionary.com/e/slang/youre-so-sound/">Source</a></p>
+
+<blockquote>
+  <p>English contains several <em>sound</em> homographs, all with distinct histories. For example, the <a href="https://www.merriam-webster.com/dictionary/sound"><em>sound</em></a> that means “something heard” descends from Latin <em>sonus</em> (“sound”), whereas the <a href="https://www.merriam-webster.com/dictionary/sound#h6"><em>sound</em></a> that means “to measure the depth of water” traces to Middle French <em>sonde</em> (“sounding line”). Another <a href="https://www.merriam-webster.com/dictionary/sound#h3"><em>sound</em></a>, as in “of sound mind and body,” is the contemporary form of Old English’s <em>gesund</em>. <em>Gesund</em> is related to several words in other languages, such as Old Saxon <em>gisund</em> (“sound”), Old Frisian <em>sund</em> (“fresh, unharmed, healthy”), and Gothic <em>swinths</em> (“sound” or “healthy”). Another relative is Old High German’s <em>gisunt</em> (“healthy”), which led to modern German’s <em>gesund,</em> the root of <a href="https://www.merriam-webster.com/dictionary/gesundheit"><em>gesundheit</em></a>.</p>
+</blockquote>
+
+<p><a href="https://www.merriam-webster.com/dictionary/sound">Source</a></p>
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="/assets/img/profile.jpg"
+    srcset="/assets/img/profile.jpg 1x"
+    
+  
+  alt="Kyle OBrien (Kai)"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>Software engineer, writer, and community builder. I’ve been tinkering with JavaScript since before it was cool, shipped products at BigCommerce, and championed GraphQL at Apollo.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/obrien-k" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.twitch.tv/wuubi" title="Twitch" class="no-mark-external">
+      <span class="icon-twitch"></span>
+      <span class="sr-only">Twitch</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="http://steamcommunity.com/profiles/76561198062019751" title="Steam" class="no-mark-external">
+      <span class="icon-steam"></span>
+      <span class="sr-only">Steam</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="http://stackoverflow.com/users/7179029/kyle" title="Stack Overflow" class="no-mark-external">
+      <span class="icon-stackoverflow"></span>
+      <span class="sr-only">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@kyleo" title="Medium" class="no-mark-external">
+      <span class="icon-medium"></span>
+      <span class="sr-only">Medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://x.com/kyle_o" title="X" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">X</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/a-million-and-one-ways-to-not-share-youre-trans/" class="flip-title"><span>A Million and One Ways to NOT Share You’re Trans</span></a>  <time class="faded fine" datetime="2024-01-16T18:00:00-06:00">16 Jan 2024</time></li>                        <li class="h4">  <a href="/software-development-life-cycle/" class="flip-title"><span>Software Development Life Cycle</span></a>  <time class="faded fine" datetime="2023-06-16T19:00:00-05:00">16 Jun 2023</time></li>                        <li class="h4">  <a href="/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/" class="flip-title"><span>Ten Rules for Effective Time Management (or, How I Ruin My Hobbies)</span></a>  <time class="faded fine" datetime="2023-04-12T19:00:00-05:00">12 Apr 2023</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+<aside class="comments related" role="complementary">
+  <h2 class="hr-bottom">Comments</h2>
+  
+
+
+</aside>
+
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2020 - 2026. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.2.1</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Kyle OBrien.me" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Kyle OBrien.me</h2></a>
+    
+    
+      <p class="">
+        Notes on technology, systems, and career growth
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/obrien-k" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.twitch.tv/wuubi" title="Twitch" class="no-mark-external">
+      <span class="icon-twitch"></span>
+      <span class="sr-only">Twitch</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="http://steamcommunity.com/profiles/76561198062019751" title="Steam" class="no-mark-external">
+      <span class="icon-steam"></span>
+      <span class="sr-only">Steam</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="http://stackoverflow.com/users/7179029/kyle" title="Stack Overflow" class="no-mark-external">
+      <span class="icon-stackoverflow"></span>
+      <span class="sr-only">Stack Overflow</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://medium.com/@kyleo" title="Medium" class="no-mark-external">
+      <span class="icon-medium"></span>
+      <span class="sr-only">Medium</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://x.com/kyle_o" title="X" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">X</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>(()=>{var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())})();
+</script>
+  <script src="/assets/js/hydejack-9.2.1.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.2.1.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+  
+    <template id="_dark-mode-template">
+  <button id="_dark-mode" class="nav-btn no-hover" >
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-brightness-contrast"></span>
+  </button>
+</template>
+
+  
+</div>
+
+
+</body>
+</html>
