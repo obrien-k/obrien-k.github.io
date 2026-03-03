@@ -14,7 +14,7 @@ categories:
 
 💡
 
-As some colleagues and mentors pointed out, the subtlety of this post may not resonate with everyone. Some of these rules you may have heard in a serious context. It's [satire](https://kyleo.io/tag/satire/). #NotTheJoke
+As some colleagues and mentors pointed out, the subtlety of this post may not resonate with everyone. Some of these rules you may have heard in a serious context. It's [satire](/tags/#satire). #NotTheJoke
 
 This list is in no particular order and assumes you already know rule 0: learn to code.  
   

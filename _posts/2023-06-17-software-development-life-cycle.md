@@ -2,10 +2,7 @@
 layout: post
 title: "Software Development Life Cycle"
 date: 2023-06-17 00:00:00 +0000
-description: "The following is copy from my journal that seems timely.
-05.23.2023 20:40
-
-[...] Life exists for living and while a virtual world is an imaginative thing, I writing this can see where I'm going, but to be clear, it's that -- imaginative. Rather than continuing to talk about"
+description: "The following is copy from my journal that seems timely. 05.23.2023 20:40 — Life exists for living and while a virtual world is an imaginative thing."
 ---
 
 The following is copy from my journal that seems timely.  
