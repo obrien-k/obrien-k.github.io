@@ -1,7 +1,7 @@
 ---
 layout: about
 title: About
-image: /assets/img/blog/pawel-czerwinski-848z7lbCjoo-unsplash.jpg
+image: /assets/img/blog/kyle-obrien-unsplash.jpg
 description: >
   Software engineer, writer, and community builder. Notes on code, identity,
   and the long strange trip of a career in tech.
