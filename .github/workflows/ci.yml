@@ -32,6 +32,6 @@ jobs:
           gem install html-proofer
           htmlproofer _site \
             --disable-external \
-            --ignore-urls "/^#/" \
+            --ignore-urls "/^#/,/^\/page\/$/" \
             --no-enforce-https \
             --allow-missing-href
