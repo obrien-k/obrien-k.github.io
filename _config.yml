@@ -5,13 +5,6 @@
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 url:                   https://obrien-k.github.io
 
-# Uncomment and set the "base URL" of your site.
-# When your site is in a subdirectory, set to `/<name of directory>`,
-# with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
-# NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
-
-
 # General settings
 # ---------------------------------------------------------------------------------------
 
@@ -20,7 +13,7 @@ url:                   https://obrien-k.github.io
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Kyle OBrien.me
+title:                 KyleOBrien.me
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -63,23 +56,7 @@ legal:
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright: |
-  <p><pre>
-                            .  *    ✦      .    *
-              *        .          *    .        ✦
-         .        ✦   *    .            *
-                             \
-                              \  ,//')
-                       *    --= /(( '=  ✦
-                             /  ) \)
-                            /  /   \\
-                      .    '  '     `
-              *  .                         *
-            .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-          .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-        .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-      .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-  </pre></p>
-  © 2020 - 2026. All rights reserved.
+  © 2020 - 2026 Kyle O. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:title/
