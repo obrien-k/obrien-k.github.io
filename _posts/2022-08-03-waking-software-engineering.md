@@ -13,7 +13,7 @@ categories:
 💡 This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
 {:.note}
 
-III: [A Million and One Ways NOT to Share You're Trans](/im-trans/)
+I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) III: [A Million and One Ways NOT to Share You're Trans](/im-trans/)
 
 🜓🝟💮💭 `code = ((design)(semantics))²`  
   
