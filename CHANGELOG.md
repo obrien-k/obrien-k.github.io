@@ -9,6 +9,13 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.5
+May 31 2026
+{:.heading.post-date}
+
+### Content
+- Clarified series navigation links in "Waking Software Engineering" and "I'm Trans" posts — removed redundant part-1 self-reference, tightened link text for chronological flow
+
 ## v0.0.4
 Mar 13 2026
 {:.heading.post-date}
