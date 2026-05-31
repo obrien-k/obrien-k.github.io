@@ -19,6 +19,16 @@ Site will be available at `http://localhost:4000`.
 
 Pushes to `main` trigger a GitHub Actions workflow (`.github/workflows/jekyll.yml`) that builds and deploys to GitHub Pages. PRs to `main` run a CI check (`.github/workflows/ci.yml`) that builds the site and runs html-proofer.
 
+### Cloudflare Pages
+
+If deploying via Cloudflare Pages, set the following environment variable in the CF Pages build settings — without it, Ruby treats filenames as `ASCII-8BIT` and the build crashes on any post or asset with non-ASCII characters in the filename:
+
+```
+LANG = en_US.UTF-8
+```
+
+Build command: `bundle exec jekyll build` · Output directory: `_site`
+
 ## Project Structure
 
 ```
