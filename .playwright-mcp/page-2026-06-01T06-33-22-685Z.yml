@@ -1,0 +1,254 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#_main"
+  - generic:
+    - navigation:
+      - list
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: "Jump to:"
+      - generic [ref=e7]:
+        - link "Navigation ☰" [ref=e8] [cursor=pointer]:
+          - /url: "#_drawer--opened"
+          - generic [ref=e9]: Navigation
+          - generic [ref=e10]: ☰
+        - button "Dark Mode 🔆" [ref=e11] [cursor=pointer]:
+          - generic [ref=e12]: Dark Mode
+          - generic [ref=e13]: 🔆
+        - text: 
+    - main [ref=e14]:
+      - navigation [ref=e15]:
+        - list [ref=e16]:
+          - listitem [ref=e17]:
+            - link "home" [ref=e18] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e19]: / 黒春光琳海
+      - article [ref=e20]:
+        - generic [ref=e21]:
+          - heading "黒春光琳海" [level=1] [ref=e22]
+          - generic [ref=e23]:
+            - generic [ref=e24] [cursor=pointer]:
+              - time [ref=e25]: 02 Mar 2026
+              - text: in
+              - link "Code" [ref=e26]:
+                - /url: /code/
+              - text: on Code
+            - generic [ref=e27] [cursor=pointer]:
+              - generic [ref=e28]: "Last modified at:"
+              - generic [ref=e29]: 🕒
+              - time [ref=e30]: 2026-03-05
+          - img "黒春光琳海" [ref=e32]
+          - paragraph [ref=e33]: Description コウリンカイ (光琳海)
+        - paragraph [ref=e34]:
+          - link "Zalgo.txt" [ref=e35] [cursor=pointer]:
+            - /url: /assets/img/blog/posts/%E9%BB%92%E6%98%A5%E5%85%89%E7%90%B3%E6%B5%B7/Zalgo.txt
+        - paragraph [ref=e36]:
+          - img "Logotype" [ref=e37]
+      - separator [ref=e38]: ❖
+      - complementary [ref=e39]:
+        - generic [ref=e40]:
+          - img "Kyle OBrien (Kai)" [ref=e41]
+          - heading "About" [level=2] [ref=e42]
+          - paragraph [ref=e43]: Software engineer, writer, and community builder. I’ve been tinkering with JavaScript since before it was cool, shipped products at BigCommerce, and championed GraphQL at Apollo.
+          - generic [ref=e44]:
+            - generic [ref=e45]: "Social:"
+            - list [ref=e46]:
+              - listitem [ref=e47]:
+                - link " GitHub" [ref=e48] [cursor=pointer]:
+                  - /url: https://github.com/obrien-k
+                  - generic [ref=e49]: 
+                  - generic [ref=e50]: GitHub
+              - listitem [ref=e51]:
+                - link " Email" [ref=e52] [cursor=pointer]:
+                  - /url: mailto:obrienk@webbhost.net
+                  - generic [ref=e53]: 
+                  - generic [ref=e54]: Email
+              - listitem [ref=e55]:
+                - link " Facebook" [ref=e56] [cursor=pointer]:
+                  - /url: https://facebook.com/kyle0io
+                  - generic [ref=e57]: 
+                  - generic [ref=e58]: Facebook
+              - listitem [ref=e59]:
+                - link " YouTube" [ref=e60] [cursor=pointer]:
+                  - /url: https://youtube.com/@kyleoio
+                  - generic [ref=e61]: 
+                  - generic [ref=e62]: YouTube
+              - listitem [ref=e63]:
+                - link " Twitch" [ref=e64] [cursor=pointer]:
+                  - /url: https://www.twitch.tv/wuubi
+                  - generic [ref=e65]: 
+                  - generic [ref=e66]: Twitch
+              - listitem [ref=e67]:
+                - link " Steam" [ref=e68] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/profiles/76561198062019751
+                  - generic [ref=e69]: 
+                  - generic [ref=e70]: Steam
+              - listitem [ref=e71]:
+                - link " Stack Overflow" [ref=e72] [cursor=pointer]:
+                  - /url: https://stackoverflow.com/users/7179029/kyle
+                  - generic [ref=e73]: 
+                  - generic [ref=e74]: Stack Overflow
+              - listitem [ref=e75]:
+                - link " LinkedIn" [ref=e76] [cursor=pointer]:
+                  - /url: https://linkedin.com/in/0kyle
+                  - generic [ref=e77]: 
+                  - generic [ref=e78]: LinkedIn
+              - listitem [ref=e79]:
+                - link " PlayStation" [ref=e80] [cursor=pointer]:
+                  - /url: https://profile.playstation.com/XeroCint
+                  - generic [ref=e81]: 
+                  - generic [ref=e82]: PlayStation
+              - listitem [ref=e83]:
+                - link " Medium" [ref=e84] [cursor=pointer]:
+                  - /url: https://medium.com/@kyleo
+                  - generic [ref=e85]: 
+                  - generic [ref=e86]: Medium
+              - listitem [ref=e87]:
+                - link " Discord" [ref=e88] [cursor=pointer]:
+                  - /url: https://discord.com/invite/CV2wnhF
+                  - generic [ref=e89]: 
+                  - generic [ref=e90]: Discord
+              - listitem [ref=e91]:
+                - link "𝕏 X" [ref=e92] [cursor=pointer]:
+                  - /url: https://x.com/kyle_o
+                  - generic [ref=e93]: 𝕏
+                  - generic [ref=e94]: X
+      - complementary [ref=e95]:
+        - heading "Related Posts" [level=2] [ref=e96]
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Stellar" [ref=e99] [cursor=pointer]:
+              - /url: /stellar/
+            - time [ref=e100]: 01 Jun 2026
+          - listitem [ref=e101]:
+            - link "Why Your Website Sucks" [ref=e102] [cursor=pointer]:
+              - /url: /Why-Your-Website-Sucks/
+            - time [ref=e103]: 07 Mar 2026
+          - listitem [ref=e104]:
+            - link "A Million and One Ways to NOT Share You’re Trans" [ref=e105] [cursor=pointer]:
+              - /url: /im-trans/
+            - time [ref=e106]: 16 Jan 2024
+      - complementary [ref=e107]:
+        - heading "Comments" [level=2] [ref=e108]
+        - iframe [ref=e110]:
+          - generic [active] [ref=f11e1]:
+            - main [ref=f11e3]:
+              - generic [ref=f11e6]: Loading comments…
+            - alert [ref=f11e7]
+      - contentinfo [ref=e111]:
+        - separator [ref=e112]
+        - paragraph [ref=e113]: © 2020 - 2026 Kyle O. All rights reserved.
+        - navigation [ref=e114]:
+          - generic [ref=e115]:
+            - link "LICENSE" [ref=e116] [cursor=pointer]:
+              - /url: /LICENSE/
+            - text: "|"
+            - link "NOTICE" [ref=e117] [cursor=pointer]:
+              - /url: /NOTICE/
+            - text: "|"
+            - link "CHANGELOG" [ref=e118] [cursor=pointer]:
+              - /url: /CHANGELOG/
+            - text: "|"
+            - link "SOURCE" [ref=e119] [cursor=pointer]:
+              - /url: https://github.com/obrien-k/obrien-k.github.io
+        - paragraph [ref=e120]:
+          - generic [ref=e121]:
+            - text: Powered by
+            - link "Hydejack" [ref=e122] [cursor=pointer]:
+              - /url: https://hydejack.com/
+            - text: v9.2.1
+        - separator [ref=e123]
+    - banner [ref=e126]:
+      - generic [ref=e128]:
+        - generic [ref=e129]:
+          - link "KyleOBrien.me" [ref=e130] [cursor=pointer]:
+            - /url: /
+            - img "KyleOBrien.me" [ref=e131]
+          - link "KyleOBrien.me" [ref=e132] [cursor=pointer]:
+            - /url: /
+            - heading "KyleOBrien.me" [level=2] [ref=e133]
+          - paragraph [ref=e134]: I like code, sound, and minimalism.
+        - navigation [ref=e135]:
+          - generic [ref=e136]: "Navigation:"
+          - list [ref=e137]:
+            - listitem [ref=e138]:
+              - link "About" [ref=e139] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=e140]:
+              - link "Resume" [ref=e141] [cursor=pointer]:
+                - /url: /resume/
+            - listitem [ref=e142]:
+              - link "Constellations" [ref=e143] [cursor=pointer]:
+                - /url: /constellations/
+        - generic [ref=e144]:
+          - generic [ref=e145]: STATUS
+          - generic [ref=e146]: mood:curious
+          - generic [ref=e147]: doing:GraphQL devland things
+          - generic [ref=e148]: ♫OVERSEER — Heligoland
+        - generic [ref=e149]:
+          - generic [ref=e150]: "Social:"
+          - list [ref=e151]:
+            - listitem [ref=e152]:
+              - link " GitHub" [ref=e153] [cursor=pointer]:
+                - /url: https://github.com/obrien-k
+                - generic [ref=e154]: 
+                - generic [ref=e155]: GitHub
+            - listitem [ref=e156]:
+              - link " Email" [ref=e157] [cursor=pointer]:
+                - /url: mailto:obrienk@webbhost.net
+                - generic [ref=e158]: 
+                - generic [ref=e159]: Email
+            - listitem [ref=e160]:
+              - link " Facebook" [ref=e161] [cursor=pointer]:
+                - /url: https://facebook.com/kyle0io
+                - generic [ref=e162]: 
+                - generic [ref=e163]: Facebook
+            - listitem [ref=e164]:
+              - link " YouTube" [ref=e165] [cursor=pointer]:
+                - /url: https://youtube.com/@kyleoio
+                - generic [ref=e166]: 
+                - generic [ref=e167]: YouTube
+            - listitem [ref=e168]:
+              - link " Twitch" [ref=e169] [cursor=pointer]:
+                - /url: https://www.twitch.tv/wuubi
+                - generic [ref=e170]: 
+                - generic [ref=e171]: Twitch
+            - listitem [ref=e172]:
+              - link " Steam" [ref=e173] [cursor=pointer]:
+                - /url: https://steamcommunity.com/profiles/76561198062019751
+                - generic [ref=e174]: 
+                - generic [ref=e175]: Steam
+            - listitem [ref=e176]:
+              - link " Stack Overflow" [ref=e177] [cursor=pointer]:
+                - /url: https://stackoverflow.com/users/7179029/kyle
+                - generic [ref=e178]: 
+                - generic [ref=e179]: Stack Overflow
+            - listitem [ref=e180]:
+              - link " LinkedIn" [ref=e181] [cursor=pointer]:
+                - /url: https://linkedin.com/in/0kyle
+                - generic [ref=e182]: 
+                - generic [ref=e183]: LinkedIn
+            - listitem [ref=e184]:
+              - link " PlayStation" [ref=e185] [cursor=pointer]:
+                - /url: https://profile.playstation.com/XeroCint
+                - generic [ref=e186]: 
+                - generic [ref=e187]: PlayStation
+            - listitem [ref=e188]:
+              - link " Medium" [ref=e189] [cursor=pointer]:
+                - /url: https://medium.com/@kyleo
+                - generic [ref=e190]: 
+                - generic [ref=e191]: Medium
+            - listitem [ref=e192]:
+              - link " Discord" [ref=e193] [cursor=pointer]:
+                - /url: https://discord.com/invite/CV2wnhF
+                - generic [ref=e194]: 
+                - generic [ref=e195]: Discord
+            - listitem [ref=e196]:
+              - link "𝕏 X" [ref=e197] [cursor=pointer]:
+                - /url: https://x.com/kyle_o
+                - generic [ref=e198]: 𝕏
+                - generic [ref=e199]: X
+        - button "Toggle sound effects" [ref=e201] [cursor=pointer]:
+          - img [ref=e202]
+          - text: SFX
+      - img "Swipe image" [ref=e206]
