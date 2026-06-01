@@ -1,21 +1,10 @@
 ---
 layout: post
-title: "黒春光琳海"
-date: 2026-03-03 00:00:00 +0000
-description: "コウリンカイ (光琳海)"
-tags:
-  - code
-categories:
-  - code
-image:
-  path: /assets/img/blog/posts/%E9%BB%92%E6%98%A5%E5%85%89%E7%90%B3%E6%B5%B7/cover-lg.png
+title: "Stellar"
+description: ""
+tags: []
+categories: []
 ---
-
-[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt)
-
-![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
-
-## COLOPHON
 
 <!-- TODO: RSS/XML support with user-attached AnnounceKeys (previously tabled, revisit) -->
 <!-- TODO: tighten user ranks / user class system -->
@@ -204,7 +193,7 @@ Error(421): HELLO Unknown command
 *pp. 53* — Figure 7: Passthepopcorn, a private tracker that uses Gazelle. Compare the UI and options to Figure 3.
 {:.figcaption}
 
-> Control in networks must aim for an effectiveness that is immanent to the network, in the sense that the most perfectly controlled network is one that controls or regulates itself … The network itself must be articulated as an object of design, implementation, and regulation. Control in this sense does not pervades the network but operates over it; control in this sense is topsight and oversight. (p. 36)
+> Control in networks must aim for an effectiveness that is immanent to the network, in the sense that the most perfectly controlled network is one that controls or regulates itself … The network itself must be articulated as an object of design, implementation, and regulation. Control in this sense does not pervade the network but operates over it; control in this sense is topsight and oversight. (p. 36)
 
 > By maintaining Gazelle, What.CD indirectly controlled other sites, even though they fall outside the bounds of What.CD's native network. As some informal discourse suggests (not to mention the fact that "celebrities" from other trackers have a special status on What.CD), the relationships between private trackers can be characterized as achieving solidarity, which is, on the one hand, egalitarian, but as the authors above indicate, can also suggest relationships of power.
 
@@ -308,15 +297,13 @@ The one survey participant who claimed Developer status was a member for 6-8 yea
 
 ## Incredible Architecture
 
-*pp. 129–135* — The mechanics of What.CD often attracted the attention of network specialists. One participant wrote that the utility of the site was impressive:
-
 > Gazelle, the backend code made for What.cd, is still used on lots of trackers. Many of their rules have been adopted by other trackers. They made a huge difference to the private tracker community, but I wouldn't say it goes farther than that.
 
-While acknowledging the successes of Gazelle, this individual limits the scope of its impact to the closed world of private trackers, a sentiment rarely articulated elsewhere in the survey results. They are correct, though, that the development and implementation of such a tool has little utility outside of the technosocial sphere of a private tracker like What.CD.
+— *pp. 129–135*
 
 > Additionally, one participant even attributed his coding skills to the site: "I would never have become the programmer I am today if it wasn't for the hours spent working on What.cd."
 
-> What.CD's utility was tied to its "community" values, which underlines the findings related to how generally useful the site was. Online communities are generally difficult to define, as they are amorphous, transient, have blurry boundaries, and are often more contested for their community status than a city or a mosque. Nonetheless, What.CD was clearly interpreted as a vibrant community by the respondents to this survey. Question 5's responses were manually coded in a cascading manner, in which the first filter was whether or not the site was useful. The following frequency table was generated:
+> What.CD's utility was tied to its "community" values, which underlines the findings related to how generally useful the site was. Online communities are generally difficult to define, as they are amorphous, transient, have blurry boundaries, and are often more contested for their community status than a city or a mosque. Nonetheless, What.CD was clearly interpreted as a vibrant community by the respondents to this survey. Question 5's responses were manually coded in a cascading manner, in which the first filter was whether or not the site was useful.
 
 | Was What.CD Useful? | Frequency | Percent |
 | :--- | :--- | :--- |
@@ -330,13 +317,9 @@ While acknowledging the successes of Gazelle, this individual limits the scope o
 
 > Before I would just listen and download from YouTube, after w.cd I actually started to value quality, bought high end headphones, bought CD's, not only to upload them to the tracker, but also to just to build a music collection outside of my HDDs. Basically it took my music 'taste' to a whole other level. I think it also made me appreciate other art forms a lot more than before. And I'm afraid it released my inner datahoarder. I felt genuinely sad when it went offline. That's when, for the first time, I felt its effect on my life had far exceeded its immediate utility.
 
-Another user:
-
 > I actively purchase merch (mostly new vinyl) from artists I truly enjoy, and without What.cd my vinyl collection would probably be 25% of what it is. It's my opinion that others acted as myself, so that in a broader sense this was the most valuable impact of What.cd to the music world. I can say with certainty that through What.cd I exposed friends not on What to great new music that they would otherwise never have known of as well. To summarize, I believe the importance was a level playing field of exposure for artists. I won't deny that the pirating aspect was a big contributor to its effectiveness though.
 
 > It was like a big library for me. I actually work in classical music, and it was incredibly useful to have everything I needed available at a couple of mouse clicks. Yes, because of the effort put into curating the material, I think it was an important worldwide resource.
-
-A third:
 
 > From a broader cultural perspective, What.CD was pretty much the only place to find some rare releases that would otherwise be forgotten. Incredible works of art should be preserved and therefore What.CD was of great importance.
 
