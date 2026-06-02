@@ -10,12 +10,24 @@ sitemap: false
 {:toc .large-only}
 
 ## v0.0.5
-May 31 2026
+Jun 02 2026
 {:.heading.post-date}
 
 ### Content
-- Clarified series navigation links in "Waking Software Engineering" and "I'm Trans" posts — removed redundant part-1 self-reference, tightened link text for chronological flow
+- Clarified series navigation links in "Waking Software Engineering" and "A Million and One Ways to NOT Share You're Trans" posts — removed redundant part-1 self-reference, tightened link text for chronological flow
+- Merged `stellar.md` COLOPHON and What.CD assets into the `黒春光琳海` post
+- Added `AGENTS.md` and supplementary images
 
+### Fixed
+- Resolved `html-proofer` CI pipeline failure by restoring a missing `irc-channels.jpg`
+- Fixed Jekyll build failure by clearing out a rogue image directory and the `stellar.md` draft
+
+### Infrastructure
+- Reverted a broken Cloudflare proxy workflow to restore standard GitHub Pages deployment
+- Removed an accidental Playwright inclusion
+
+### Documentation
+- Added a centralized chores document tracking the `stellar-ui` logo swap, theme retention, and `mr-robot` rename (subsequently trimmed for brevity)
 ## v0.0.4
 Mar 13 2026
 {:.heading.post-date}
