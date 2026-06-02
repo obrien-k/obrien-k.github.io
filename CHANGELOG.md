@@ -15,7 +15,7 @@ Jun 02 2026
 
 ### Content
 - Clarified series navigation links in "Waking Software Engineering" and "A Million and One Ways to NOT Share You're Trans" posts — removed redundant part-1 self-reference, tightened link text for chronological flow
-- Merged `stellar.md` COLOPHON and What.CD assets into the `黒春光琳海` post
+- Merged `stellar.md` COLOPHON and Gazelle assets into the `黒春光琳海` post
 - Added `AGENTS.md` and supplementary images
 
 ### Fixed
@@ -26,8 +26,6 @@ Jun 02 2026
 - Reverted a broken Cloudflare proxy workflow to restore standard GitHub Pages deployment
 - Removed an accidental Playwright inclusion
 
-### Documentation
-- Added a centralized chores document tracking the `stellar-ui` logo swap, theme retention, and `mr-robot` rename (subsequently trimmed for brevity)
 ## v0.0.4
 Mar 13 2026
 {:.heading.post-date}
