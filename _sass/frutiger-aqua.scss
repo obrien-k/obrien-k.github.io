@@ -286,6 +286,38 @@ pre {
 }
 
 // =============================================================================
+// Blog index cards — home + posts archive
+// =============================================================================
+// The home (`layout-home`) and posts archive (`layout-list`) render posts as a
+// flip-title list (`ul.related-posts > li.h4`). Box each entry as an Aero glass
+// card: rounded aqua glass with gloss + lift in light, flat pixel-sharp 16-bit
+// box in dark (aero-surface degrades automatically). Scoped to those layouts so
+// the single-post "related posts" footer keeps its plain list.
+.layout-home,
+.layout-list {
+  .related-posts {
+    > li {
+      @include aero-surface(var(--panel-radius));
+      margin: 0 0 0.75rem;
+      padding: 0.8rem 1.1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+
+      // Title on its own line, date beneath — reads as a card, not a row.
+      > time {
+        display: block;
+        margin-top: 0.2rem;
+      }
+
+      &:hover {
+        border-color: rgb(var(--accent-rgb) / 0.45);
+        box-shadow: var(--gloss-edge), 0 6px 20px rgb(var(--accent-rgb) / 0.18);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// =============================================================================
 // Horizontal rules — gradient dividers
 // =============================================================================
 
