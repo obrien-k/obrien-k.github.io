@@ -56,25 +56,24 @@ body {
   --panel-shadow: 0 2px 6px rgba(31, 72, 92, 0.12);
   --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.95);  // wet top highlight
 
-  // Soft Vista sky-glass page background — pale teal/mint/blue (the Vista-aero
-  // hues) instead of stark white, with CSS bokeh orbs layered on top as
-  // radial-gradients. Applied to <body> below; set to `none` in dark so the
-  // dark skin keeps its solid background. background-attachment:fixed keeps it
-  // a stable "sky" behind the scrolling content + glass panels.
-  // Reference: Windows Vista "The Wow Never Ends" — a luminous green→teal→cyan→
-  // blue aurora with glossy diagonal silk-light streaks + a bright bloom. The
-  // pane stays pale (dark text rides on it), so this is the light, high-key
-  // version of that sweep; the saturated aurora lives on the sidebar.
+  // Soft Vista sky-glass page background — now a TILEABLE Aero pattern (a glass-
+  // bubble lattice + repeating silk-light ribbons) rather than one cover sweep,
+  // so it reads as a complex-but-repeatable Aero surface. Applied to main.content
+  // below; set to `none` in dark. Palette retargeted off the Vista "Wow"
+  // wallpaper's lower band — teal → dark blue, no green. The pane stays PALE
+  // (dark text rides on it), so this is the high-key echo of that palette; the
+  // saturated teal→dark-blue version lives on the sidebar. Per-layer
+  // background-size/repeat are set on main.content so the bubble lattice tiles
+  // while the base sweep covers.
   --page-bg:
-    // diagonal silk-light ribbons (the Vista "energy" streaks)
-    linear-gradient(118deg, transparent 37%, rgba(255, 255, 255, 0.55) 45%, transparent 52%),
-    linear-gradient(127deg, transparent 58%, rgba(255, 255, 255, 0.38) 65%, transparent 71%),
-    // bright bloom, lower center
-    radial-gradient(ellipse at 62% 86%, rgba(255, 255, 255, 0.75), transparent 46%),
-    // faint bokeh, upper left
-    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.4), transparent 16%),
-    // pale Vista aurora base: green -> mint -> aqua -> sky
-    linear-gradient(120deg, #e8f6dd 0%, #def4ea 30%, #dcf3f3 57%, #def0fb 100%);
+    // glass-bubble lattice — two interleaved tiles (Frutiger Aero "bubbles")
+    radial-gradient(circle at 26% 32%, rgba(255, 255, 255, 0.55), transparent 12%),
+    radial-gradient(circle at 73% 68%, rgba(204, 242, 248, 0.5), transparent 14%),
+    // repeating diagonal silk-light ribbons (Aero "energy", tiles by period)
+    repeating-linear-gradient(122deg, rgba(255, 255, 255, 0.30) 0px, rgba(255, 255, 255, 0.30) 2px, transparent 2px, transparent 30px),
+    repeating-linear-gradient(64deg,  rgba(176, 224, 240, 0.22) 0px, rgba(176, 224, 240, 0.22) 3px, transparent 3px, transparent 44px),
+    // pale teal → ice → sky-blue base sweep (no green)
+    linear-gradient(160deg, #e0f5f3 0%, #d2eff2 34%, #d6ecfb 70%, #cbe0f6 100%);
 }
 
 // Paint the sky on the CONTENT PANE (the article view), not the whole body, so
@@ -85,7 +84,9 @@ body {
 main.content {
   background-image: var(--page-bg);
   background-attachment: fixed;
-  background-size: cover;
+  // per-layer: two bubble tiles, two auto ribbons, one cover sweep
+  background-size: 184px 184px, 184px 184px, auto, auto, cover;
+  background-repeat: repeat;
 }
 
 // Dark / vaporwave. Accent = full-saturation magenta, secondary = cyan.
@@ -117,6 +118,8 @@ main.content {
   // style, hence !important).
   .sidebar-bg {
     background-image: url(/assets/img/sidebar-bg.jpg) !important;
+    background-size: cover !important;       // undo the light skin's tile lattice
+    background-repeat: no-repeat !important;
   }
   .sidebar-bg.sidebar-overlay::after {
     background: linear-gradient(
@@ -150,17 +153,24 @@ main.content {
 // these win with !important; vw-dark restores the 海 vaporwave jpg in dark.
 .sidebar-bg {
   background-image:
-    // glossy silk-light streak across the aurora
-    linear-gradient(150deg, transparent 38%, rgba(255, 255, 255, 0.22) 47%, transparent 55%),
-    // full Vista sweep: green -> teal -> cyan -> blue
+    // wet glass-bubble lattice (Frutiger Aero "bubbles")
+    radial-gradient(circle at 22% 28%, rgba(255, 255, 255, 0.22), transparent 11%),
+    radial-gradient(circle at 72% 66%, rgba(127, 224, 214, 0.20), transparent 13%),
+    // repeating Aero silk-light ribbons (tiles by period)
+    repeating-linear-gradient(124deg, rgba(255, 255, 255, 0.10) 0px, rgba(255, 255, 255, 0.10) 2px, transparent 2px, transparent 28px),
+    repeating-linear-gradient(60deg,  rgba(8, 30, 60, 0.16) 0px, rgba(8, 30, 60, 0.16) 3px, transparent 3px, transparent 40px),
+    // saturated sweep retargeted to the wallpaper's lower band:
+    // teal -> deep teal -> blue -> dark blue (no green)
     linear-gradient(
       163deg,
-      #46c258 0%,
-      #1fb39a 30%,
-      #18a7c4 55%,
-      #1f86c8 80%,
-      #166aac 100%
+      #2fb6bd 0%,
+      #178fa6 30%,
+      #137f97 52%,
+      #155f97 78%,
+      #0b3a66 100%
     ) !important;
+  background-size: 200px 200px, 200px 200px, auto, auto, cover !important;
+  background-repeat: repeat !important;
 }
 
 // Swap the dark vertical scrim for a glossy white top sheen (wet Aero highlight).
