@@ -61,19 +61,28 @@ body {
   // radial-gradients. Applied to <body> below; set to `none` in dark so the
   // dark skin keeps its solid background. background-attachment:fixed keeps it
   // a stable "sky" behind the scrolling content + glass panels.
+  // Reference: Windows Vista "The Wow Never Ends" — a luminous green→teal→cyan→
+  // blue aurora with glossy diagonal silk-light streaks + a bright bloom. The
+  // pane stays pale (dark text rides on it), so this is the light, high-key
+  // version of that sweep; the saturated aurora lives on the sidebar.
   --page-bg:
-    radial-gradient(circle at 14% 22%, rgba(255, 255, 255, 0.55), transparent 18%),
-    radial-gradient(circle at 82% 14%, rgba(168, 230, 214, 0.45), transparent 16%),
-    radial-gradient(circle at 72% 66%, rgba(150, 210, 235, 0.40), transparent 22%),
-    radial-gradient(circle at 28% 84%, rgba(255, 255, 255, 0.40), transparent 15%),
-    linear-gradient(160deg, #d3edf1 0%, #dceee6 46%, #cbe7ed 100%);
+    // diagonal silk-light ribbons (the Vista "energy" streaks)
+    linear-gradient(118deg, transparent 37%, rgba(255, 255, 255, 0.55) 45%, transparent 52%),
+    linear-gradient(127deg, transparent 58%, rgba(255, 255, 255, 0.38) 65%, transparent 71%),
+    // bright bloom, lower center
+    radial-gradient(ellipse at 62% 86%, rgba(255, 255, 255, 0.75), transparent 46%),
+    // faint bokeh, upper left
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.4), transparent 16%),
+    // pale Vista aurora base: green -> mint -> aqua -> sky
+    linear-gradient(120deg, #e8f6dd 0%, #def4ea 30%, #dcf3f3 57%, #def0fb 100%);
 }
 
-// Paint the sky on <body> (it's the element that holds the page fill; .content,
-// .sidebar and html are transparent). Only the image is set, so the gem's
-// background-COLOR var still backs it — in dark, --page-bg is `none` and the
-// solid dark bg shows through unchanged.
-body {
+// Paint the sky on the CONTENT PANE (the article view), not the whole body, so
+// it's the primary background of the right-hand pane when the sidebar is docked
+// and never bleeds under the aurora sidebar. `fixed` keeps it a stable sky while
+// content scrolls; the paint is clipped to the pane's own box. In dark,
+// --page-bg is `none`, so the pane is transparent and the solid dark bg shows.
+main.content {
   background-image: var(--page-bg);
   background-attachment: fixed;
   background-size: cover;
@@ -140,13 +149,18 @@ body {
 // pale page background. The image comes from an inline style attribute, so
 // these win with !important; vw-dark restores the 海 vaporwave jpg in dark.
 .sidebar-bg {
-  background-image: linear-gradient(
-    165deg,
-    #2aa9c4 0%,
-    #29bf9f 38%,
-    #1f86c0 72%,
-    #186ea0 100%
-  ) !important;
+  background-image:
+    // glossy silk-light streak across the aurora
+    linear-gradient(150deg, transparent 38%, rgba(255, 255, 255, 0.22) 47%, transparent 55%),
+    // full Vista sweep: green -> teal -> cyan -> blue
+    linear-gradient(
+      163deg,
+      #46c258 0%,
+      #1fb39a 30%,
+      #18a7c4 55%,
+      #1f86c8 80%,
+      #166aac 100%
+    ) !important;
 }
 
 // Swap the dark vertical scrim for a glossy white top sheen (wet Aero highlight).
