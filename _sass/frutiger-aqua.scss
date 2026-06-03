@@ -55,6 +55,28 @@ body {
   --panel-blur:   saturate(1.5) blur(8px);
   --panel-shadow: 0 2px 6px rgba(31, 72, 92, 0.12);
   --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.95);  // wet top highlight
+
+  // Soft Vista sky-glass page background — pale teal/mint/blue (the Vista-aero
+  // hues) instead of stark white, with CSS bokeh orbs layered on top as
+  // radial-gradients. Applied to <body> below; set to `none` in dark so the
+  // dark skin keeps its solid background. background-attachment:fixed keeps it
+  // a stable "sky" behind the scrolling content + glass panels.
+  --page-bg:
+    radial-gradient(circle at 14% 22%, rgba(255, 255, 255, 0.55), transparent 18%),
+    radial-gradient(circle at 82% 14%, rgba(168, 230, 214, 0.45), transparent 16%),
+    radial-gradient(circle at 72% 66%, rgba(150, 210, 235, 0.40), transparent 22%),
+    radial-gradient(circle at 28% 84%, rgba(255, 255, 255, 0.40), transparent 15%),
+    linear-gradient(160deg, #d3edf1 0%, #dceee6 46%, #cbe7ed 100%);
+}
+
+// Paint the sky on <body> (it's the element that holds the page fill; .content,
+// .sidebar and html are transparent). Only the image is set, so the gem's
+// background-COLOR var still backs it — in dark, --page-bg is `none` and the
+// solid dark bg shows through unchanged.
+body {
+  background-image: var(--page-bg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 // Dark / vaporwave. Accent = full-saturation magenta, secondary = cyan.
@@ -75,9 +97,25 @@ body {
   --panel-blur:   none;
   --panel-shadow: none;
   --gloss-edge:   none;
+  --page-bg:      none;   // dark keeps its solid background
 
   blockquote {
     background: rgba(255, 255, 255, 0.03);
+  }
+
+  // Restore the 海 vaporwave sidebar image + its dark overlay (the light skin
+  // overrides these to a Vista-aurora gradient below; both must beat the inline
+  // style, hence !important).
+  .sidebar-bg {
+    background-image: url(/assets/img/sidebar-bg.jpg) !important;
+  }
+  .sidebar-bg.sidebar-overlay::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0) 0%,
+      rgba(32, 32, 32, 0.5) 50%,
+      rgba(32, 32, 32, 0) 100%
+    ) !important;
   }
 }
 
@@ -91,6 +129,34 @@ body {
   box-shadow: var(--gloss-edge), var(--panel-shadow);
   backdrop-filter: var(--panel-blur);
   -webkit-backdrop-filter: var(--panel-blur);
+}
+
+// =============================================================================
+// Light sidebar — Vista-aurora glass
+// =============================================================================
+// Hydejack's sidebar carries white text in both skins, so the light sidebar is
+// a glossy aqua/teal/blue gradient (deep enough to keep that text legible)
+// rather than a pale panel — the saturated "Vista aurora" counterpart to the
+// pale page background. The image comes from an inline style attribute, so
+// these win with !important; vw-dark restores the 海 vaporwave jpg in dark.
+.sidebar-bg {
+  background-image: linear-gradient(
+    165deg,
+    #2aa9c4 0%,
+    #29bf9f 38%,
+    #1f86c0 72%,
+    #186ea0 100%
+  ) !important;
+}
+
+// Swap the dark vertical scrim for a glossy white top sheen (wet Aero highlight).
+.sidebar-bg.sidebar-overlay::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.06) 32%,
+    rgba(255, 255, 255, 0) 62%
+  ) !important;
 }
 
 // Explicit toggle.
