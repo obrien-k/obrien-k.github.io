@@ -1,0 +1,896 @@
+// =============================================================================
+// FRUTIGER AQUA — two-skin theme
+// "16-bit" vaporwave (dark) / "32-bit" Vista-Aero (light)
+// =============================================================================
+//
+// Loaded via the `my-style` shim that Hydejack hard-imports; the real work
+// lives here. See _sass/my-style.scss.
+//
+// Dark mode keeps the full-saturation magenta vaporwave identity.
+// Light mode flips the SAME accent touchpoints to bright aqua (Frutiger Aero /
+// Windows Vista "upgrade"). The split is driven by CSS custom properties so a
+// single set of rules serves both skins; only the values change per mode.
+//
+// Mode mechanism (Hydejack PRO 9.2): light is the unscoped default
+// (`body` / `body.light-mode`); dark is `body.dark-mode` (explicit toggle) AND
+// `@media (prefers-color-scheme: dark)` (OS preference, no class on body).
+// We mirror BOTH so OS-dark visitors who never touch the toggle still get the
+// vaporwave skin — see `@mixin vw-dark` applied in two places below.
+//
+// Channel vars hold space-separated RGB so we can vary alpha at each use site:
+//   rgb(var(--accent-rgb) / 0.4)
+
+// -----------------------------------------------------------------------------
+// Per-mode palette
+// -----------------------------------------------------------------------------
+
+// $pixel-shadow stays a static Sass token — a hard dark drop-shadow that reads
+// in both skins (image frames, the 404 title). Everything else about a panel's
+// SURFACE (fill, border, radius, gloss, blur, depth) is per-mode via CSS vars
+// below, so the light skin can go full Frutiger-Aero glass while the dark skin
+// keeps its flat 16-bit treatment untouched.
+$pixel-shadow:  rgba(0, 0, 0, 0.25);
+
+// Light / Aero is the default skin. Accent = aqua, secondary = sky. Surfaces
+// are bright "sky glass": a faint aqua-tinted translucent fill, a soft aqua
+// rim, a wet white specular top edge (--gloss-edge), gentle depth, rounded
+// corners, and a backdrop blur. The fill is tinted (not pure white) and carries
+// a drop shadow so panels still read against Hydejack's white light background;
+// the blur only bites once a tinted/bokeh page background sits behind them.
+// We also override Hydejack's own --accent-color (set on `html` from
+// site.accent_color) so theme links/outlines/buttons flip with the skin.
+body {
+  --accent-rgb:  0 153 204;    // Aqua  (#0099cc)
+  --accent2-rgb: 126 200 227;  // Sky   (#7ec8e3)
+
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+
+  // Aero sky-glass surface tokens
+  --panel-bg:     rgba(231, 245, 251, 0.7);    // faint aqua glass
+  --panel-border: rgba(120, 190, 220, 0.55);   // soft aqua rim (visible on white)
+  --panel-radius: 0.6rem;                       // larger panels (future cards)
+  --chip-radius:  0.45rem;                       // buttons, chips, code
+  --panel-blur:   saturate(1.5) blur(8px);
+  --panel-shadow: 0 2px 6px rgba(31, 72, 92, 0.12);
+  --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.95);  // wet top highlight
+
+  // Soft Vista sky-glass page background — pale teal/mint/blue (the Vista-aero
+  // hues) instead of stark white, with CSS bokeh orbs layered on top as
+  // radial-gradients. Applied to <body> below; set to `none` in dark so the
+  // dark skin keeps its solid background. background-attachment:fixed keeps it
+  // a stable "sky" behind the scrolling content + glass panels.
+  // Reference: Windows Vista "The Wow Never Ends" — a luminous green→teal→cyan→
+  // blue aurora with glossy diagonal silk-light streaks + a bright bloom. The
+  // pane stays pale (dark text rides on it), so this is the light, high-key
+  // version of that sweep; the saturated aurora lives on the sidebar.
+  --page-bg:
+    // diagonal silk-light ribbons (the Vista "energy" streaks)
+    linear-gradient(118deg, transparent 37%, rgba(255, 255, 255, 0.55) 45%, transparent 52%),
+    linear-gradient(127deg, transparent 58%, rgba(255, 255, 255, 0.38) 65%, transparent 71%),
+    // bright bloom, lower center
+    radial-gradient(ellipse at 62% 86%, rgba(255, 255, 255, 0.75), transparent 46%),
+    // faint bokeh, upper left
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.4), transparent 16%),
+    // pale Vista aurora base: green -> mint -> aqua -> sky
+    linear-gradient(120deg, #e8f6dd 0%, #def4ea 30%, #dcf3f3 57%, #def0fb 100%);
+}
+
+// Paint the sky on the CONTENT PANE (the article view), not the whole body, so
+// it's the primary background of the right-hand pane when the sidebar is docked
+// and never bleeds under the aurora sidebar. `fixed` keeps it a stable sky while
+// content scrolls; the paint is clipped to the pane's own box. In dark,
+// --page-bg is `none`, so the pane is transparent and the solid dark bg shows.
+main.content {
+  background-image: var(--page-bg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+// Dark / vaporwave. Accent = full-saturation magenta, secondary = cyan.
+// Surfaces stay exactly as the 16-bit foundation: faint white glass, hairline
+// border, pixel-sharp chips, no gloss / blur / depth.
+@mixin vw-dark() {
+  --accent-rgb:  225 0 255;    // Magenta (the single most vaporwave color)
+  --accent2-rgb: 79 177 186;   // Cyan
+
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+
+  --panel-bg:     rgba(255, 255, 255, 0.06);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  --panel-radius: 0.5rem;
+  --chip-radius:  0;
+  --panel-blur:   none;
+  --panel-shadow: none;
+  --gloss-edge:   none;
+  --page-bg:      none;   // dark keeps its solid background
+
+  blockquote {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  // Restore the 海 vaporwave sidebar image + its dark overlay (the light skin
+  // overrides these to a Vista-aurora gradient below; both must beat the inline
+  // style, hence !important).
+  .sidebar-bg {
+    background-image: url(/assets/img/sidebar-bg.jpg) !important;
+  }
+  .sidebar-bg.sidebar-overlay::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(32, 32, 32, 0) 0%,
+      rgba(32, 32, 32, 0.5) 50%,
+      rgba(32, 32, 32, 0) 100%
+    ) !important;
+  }
+}
+
+// Frutiger-Aero glass surface. Degrades automatically to the flat 16-bit panel
+// in the dark skin, where --panel-blur / --panel-shadow / --gloss-edge are
+// `none`. Pass a radius for larger panels; defaults to the chip radius.
+@mixin aero-surface($radius: var(--chip-radius)) {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: $radius;
+  box-shadow: var(--gloss-edge), var(--panel-shadow);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
+}
+
+// =============================================================================
+// Light sidebar — Vista-aurora glass
+// =============================================================================
+// Hydejack's sidebar carries white text in both skins, so the light sidebar is
+// a glossy aqua/teal/blue gradient (deep enough to keep that text legible)
+// rather than a pale panel — the saturated "Vista aurora" counterpart to the
+// pale page background. The image comes from an inline style attribute, so
+// these win with !important; vw-dark restores the 海 vaporwave jpg in dark.
+.sidebar-bg {
+  background-image:
+    // glossy silk-light streak across the aurora
+    linear-gradient(150deg, transparent 38%, rgba(255, 255, 255, 0.22) 47%, transparent 55%),
+    // full Vista sweep: green -> teal -> cyan -> blue
+    linear-gradient(
+      163deg,
+      #46c258 0%,
+      #1fb39a 30%,
+      #18a7c4 55%,
+      #1f86c8 80%,
+      #166aac 100%
+    ) !important;
+}
+
+// Swap the dark vertical scrim for a glossy white top sheen (wet Aero highlight).
+.sidebar-bg.sidebar-overlay::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.06) 32%,
+    rgba(255, 255, 255, 0) 62%
+  ) !important;
+}
+
+// Explicit toggle.
+body.dark-mode {
+  @include vw-dark();
+}
+
+// OS preference (no class on body). `:not(.light-mode)` lets an explicit
+// light toggle still win when the OS is set to dark.
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    @include vw-dark();
+  }
+}
+
+// =============================================================================
+// Base overrides
+// =============================================================================
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+.post-title {
+  font-weight: 600;
+}
+
+// =============================================================================
+// Selection & scrollbar — small touches, big feel
+// =============================================================================
+
+::selection {
+  background: rgb(var(--accent-rgb) / 0.3);
+  color: inherit;
+}
+
+// Webkit scrollbar — thin, glassy
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--accent-rgb) / 0.25);
+  border-radius: 4px;
+
+  &:hover {
+    background: rgb(var(--accent-rgb) / 0.4);
+  }
+}
+
+// Firefox
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--accent-rgb) / 0.25) transparent;
+}
+
+// =============================================================================
+// Links — gradient underlines, glow on hover
+// =============================================================================
+
+.content a:not(.btn):not(.no-mark) {
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--accent-rgb) / 0.4),
+    rgb(var(--accent2-rgb) / 0.4)
+  );
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.2s ease;
+
+  &:hover {
+    background-size: 100% 100%;
+    color: inherit;
+  }
+}
+
+// =============================================================================
+// Sidebar — glassy panel
+// =============================================================================
+
+.sidebar {
+  // Frosted glass effect over the accent_image
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgb(var(--accent-rgb) / 0.05) 50%,
+      rgb(var(--accent2-rgb) / 0.08) 100%
+    );
+    pointer-events: none;
+  }
+}
+
+// Tagline — softer, more personal
+.sidebar .tagline {
+  font-style: italic;
+  opacity: 0.85;
+  letter-spacing: 0.02em;
+}
+
+// =============================================================================
+// Code blocks — terminal aesthetic
+// =============================================================================
+
+// Pixel-sharp in the dark 16-bit skin (--chip-radius: 0); softly rounded in the
+// light Aero skin. The code background comes from the syntax highlighter, so we
+// leave the fill alone and only adjust corners + the accent border.
+pre, code {
+  border-radius: var(--chip-radius);
+}
+
+pre {
+  border-left: 3px solid rgb(var(--accent-rgb) / 0.4);
+  position: relative;
+}
+
+// =============================================================================
+// Blog index cards — home + posts archive
+// =============================================================================
+// The home (`layout-home`) and posts archive (`layout-list`) render posts as a
+// flip-title list (`ul.related-posts > li.h4`). Box each entry as an Aero glass
+// card: rounded aqua glass with gloss + lift in light, flat pixel-sharp 16-bit
+// box in dark (aero-surface degrades automatically). Scoped to those layouts so
+// the single-post "related posts" footer keeps its plain list.
+.layout-home,
+.layout-list {
+  .related-posts {
+    > li {
+      @include aero-surface(var(--panel-radius));
+      margin: 0 0 0.75rem;
+      padding: 0.8rem 1.1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+
+      // Title on its own line, date beneath — reads as a card, not a row.
+      > time {
+        display: block;
+        margin-top: 0.2rem;
+      }
+
+      &:hover {
+        border-color: rgb(var(--accent-rgb) / 0.45);
+        box-shadow: var(--gloss-edge), 0 6px 20px rgb(var(--accent-rgb) / 0.18);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// =============================================================================
+// Horizontal rules — gradient dividers
+// =============================================================================
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgb(var(--accent-rgb) / 0.3) 20%,
+    rgb(var(--accent2-rgb) / 0.3) 80%,
+    transparent
+  );
+}
+
+// =============================================================================
+// Blockquotes — indented with accent glow
+// =============================================================================
+
+// Kept as a left-border-only panel (no full rim) so the dark skin is unchanged;
+// the gloss edge, depth, and blur are all `none` in dark and only bloom in light.
+blockquote {
+  border-left: 3px solid rgb(var(--accent2-rgb) / 0.5);
+  background: var(--panel-bg);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--chip-radius) var(--chip-radius) 0;
+  box-shadow: var(--gloss-edge), var(--panel-shadow);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
+}
+
+// =============================================================================
+// Images — pixel-shadow frames
+// =============================================================================
+
+.content img:not(.avatar):not(.sidebar-bg) {
+  border-radius: 2px;
+  box-shadow:
+    2px 2px 0 $pixel-shadow,
+    4px 4px 0 rgb(var(--accent-rgb) / 0.1);
+}
+
+// =============================================================================
+// Badges / buttons — 88x31 indieweb style
+// =============================================================================
+
+.badge-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 0.5rem 0;
+
+  img {
+    width: 88px;
+    height: 31px;
+    image-rendering: pixelated;
+    border: 1px solid var(--panel-border);
+    box-shadow: none; // override content img shadow
+  }
+}
+
+// =============================================================================
+// Constellations page — affiliates / links
+// =============================================================================
+
+.constellation-link {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  margin: 0.25rem;
+  @include aero-surface();
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  background-image: none; // override gradient underline
+
+  &:hover {
+    border-color: rgb(var(--accent2-rgb) / 0.4);
+    box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent2-rgb) / 0.2);
+  }
+}
+
+// =============================================================================
+// Footer — site badge area
+// =============================================================================
+
+.footer-badge-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 1rem 0;
+
+  img {
+    width: 88px;
+    height: 31px;
+    image-rendering: pixelated;
+  }
+}
+
+// =============================================================================
+// 404 — retro error
+// =============================================================================
+
+.not-found-title {
+  font-family: monospace;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 0 $pixel-shadow;
+}
+
+// =============================================================================
+// Subtle blink for "live" elements — webrings, status
+// =============================================================================
+
+@keyframes soft-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.pulse {
+  animation: soft-pulse 3s ease-in-out infinite;
+}
+
+// =============================================================================
+// Accessibility
+// =============================================================================
+
+// Focus — visible ring that matches the aesthetic
+:focus-visible {
+  outline: 2px solid rgb(var(--accent2-rgb) / 0.8);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+// Skip-to-content link (injected via my-head.html)
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  padding: 0.5rem 1rem;
+  background: rgb(var(--accent-rgb));
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Reduced motion — kill all animations and transitions
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+}
+
+// High contrast — solidify translucent elements
+@media (prefers-contrast: more) {
+  .card,
+  .post-card {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  blockquote {
+    border-left-width: 4px;
+    border-left-color: rgb(var(--accent2-rgb) / 0.8);
+  }
+
+  .content a:not(.btn):not(.no-mark) {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+
+  .constellation-link {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+// =============================================================================
+// Resume layout
+// =============================================================================
+
+// Action bar — unified glassy button row
+.resume-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 2rem;
+
+  .btn, button {
+    @include aero-surface();
+    color: inherit;
+    font-family: monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: rgb(var(--accent-rgb) / 0.4);
+      box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent-rgb) / 0.15);
+    }
+  }
+}
+
+.resume-label {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: -0.25rem;
+}
+
+// Contact — compact inline list instead of wide grid
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0;
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+
+  dt {
+    font-weight: 600;
+    opacity: 0.6;
+    font-family: monospace;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    width: 100%;
+    margin-top: 0.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// Profile links — styled as chips
+.resume-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1.5rem;
+
+  li a {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    @include aero-surface();
+    font-family: monospace;
+    font-size: 0.85rem;
+    text-decoration: none;
+    background-image: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: rgb(var(--accent2-rgb) / 0.4);
+      box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent2-rgb) / 0.2);
+    }
+  }
+}
+
+.resume-entry {
+  margin-bottom: 2.5rem;
+
+  h3 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.resume-date {
+  font-family: monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  opacity: 0.6;
+  margin: 0.1rem 0 0.5rem;
+}
+
+// Position blocks — left accent border with gradient
+.resume-position {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgb(var(--accent-rgb) / 0.3);
+
+  h4 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.resume-highlights {
+  padding-left: 1.25rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+}
+
+.resume-skill-group {
+  margin-bottom: 1.25rem;
+
+  h3 {
+    font-family: monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Skill keywords — glassy chips with gradient border glow
+.resume-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 0.3rem 0.7rem;
+    @include aero-surface();
+    font-size: 0.9rem;
+    font-family: monospace;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: rgb(var(--accent2-rgb) / 0.4);
+      box-shadow: var(--gloss-edge), 0 0 6px rgb(var(--accent2-rgb) / 0.2);
+    }
+  }
+}
+
+// Print styles — clean resume for paper
+@media print {
+  .resume-buttons,
+  .sidebar,
+  .navbar,
+  .footer,
+  .skip-link {
+    display: none !important;
+  }
+
+  .resume {
+    font-size: 11pt;
+    color: #111;
+  }
+
+  .resume-position {
+    border-left-color: #999;
+  }
+
+  .resume-keywords li {
+    border-color: #ccc;
+    background: #f5f5f5;
+    color: #111;
+  }
+
+  .resume-contact dt {
+    opacity: 1;
+    color: #555;
+  }
+}
+
+// =============================================================================
+// Status widget — sidebar
+// =============================================================================
+
+.sidebar-status {
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.75rem;
+  @include aero-surface();
+  border-left: 2px solid rgb(var(--accent-rgb) / 0.3);
+  font-family: monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.status-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.status-key {
+  opacity: 0.5;
+}
+
+.status-val {
+  margin-left: 0.25rem;
+}
+
+// =============================================================================
+// Sound toggle — sidebar footer
+// =============================================================================
+
+.sidebar-sfx {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+.sfx-toggle {
+  background: none;
+  border: 1px solid var(--panel-border);
+  color: inherit;
+  font-family: monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  &:hover {
+    opacity: 1;
+    border-color: rgb(var(--accent-rgb) / 0.3);
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.sfx-toggle[data-sfx="off"] {
+  opacity: 0.25;
+}
+
+// =============================================================================
+// Superstar mode — Konami code Easter egg (mode-independent rainbow)
+// =============================================================================
+
+.superstar-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+  mix-blend-mode: color;
+}
+
+.superstar-mode .superstar-overlay {
+  opacity: 0.3;
+  animation: superstar-colors 0.4s steps(6) infinite;
+}
+
+@keyframes superstar-colors {
+  0%   { background: #ff0000; }
+  16%  { background: #ffff00; }
+  33%  { background: #00ff00; }
+  50%  { background: #00ffff; }
+  66%  { background: #0000ff; }
+  83%  { background: #ff00ff; }
+  100% { background: #ff0000; }
+}
+
+// Screen shake at activation — uses left/top instead of transform
+// to avoid creating a containing block that would break position: fixed on ::after
+.superstar-shake {
+  position: relative;
+  animation: screen-shake 0.5s ease-out;
+}
+
+@keyframes screen-shake {
+  0%, 100% { left: 0; top: 0; }
+  10% { left: -6px; top: 3px; }
+  20% { left: 5px; top: -5px; }
+  30% { left: -3px; top: 6px; }
+  40% { left: 6px; top: 2px; }
+  50% { left: -5px; top: -3px; }
+  60% { left: 3px; top: 5px; }
+  70% { left: -6px; top: -2px; }
+  80% { left: 5px; top: 3px; }
+  90% { left: -3px; top: -5px; }
+}
+
+// Star particles
+.superstar-particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10001;
+  font-size: 1.2rem;
+  animation: star-burst 1.5s ease-out forwards;
+}
+
+@keyframes star-burst {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1.3) rotate(120deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.3) rotate(360deg) translateY(-80px);
+    opacity: 0;
+  }
+}
+
+// Reduced motion — gentle version
+@media (prefers-reduced-motion: reduce) {
+  .superstar-mode .superstar-overlay {
+    animation: superstar-gentle 4s ease-in-out infinite;
+    opacity: 0.15;
+  }
+
+  @keyframes superstar-gentle {
+    0%, 100% { background: rgb(var(--accent-rgb) / 0.2); }
+    50% { background: rgb(var(--accent2-rgb) / 0.2); }
+  }
+
+  .superstar-shake {
+    animation: none;
+  }
+  .superstar-particle {
+    display: none;
+  }
+}
+
+// =============================================================================
+// Preserved from original — dl-table support
+// =============================================================================
+
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
+    }
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
+    }
+  }
+
+  .btn, .gumroad-button {
+    margin: 1rem 0;
+  }
+}
