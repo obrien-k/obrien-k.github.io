@@ -24,12 +24,19 @@
 // Per-mode palette
 // -----------------------------------------------------------------------------
 
-// Neutral surface tokens (panel treatment is refined per-skin in a later pass)
-$panel-glass:   rgba(255, 255, 255, 0.06);
-$panel-border:  rgba(255, 255, 255, 0.1);
+// $pixel-shadow stays a static Sass token — a hard dark drop-shadow that reads
+// in both skins (image frames, the 404 title). Everything else about a panel's
+// SURFACE (fill, border, radius, gloss, blur, depth) is per-mode via CSS vars
+// below, so the light skin can go full Frutiger-Aero glass while the dark skin
+// keeps its flat 16-bit treatment untouched.
 $pixel-shadow:  rgba(0, 0, 0, 0.25);
 
-// Light / Aero is the default. Accent = aqua, secondary = sky.
+// Light / Aero is the default skin. Accent = aqua, secondary = sky. Surfaces
+// are bright "sky glass": a faint aqua-tinted translucent fill, a soft aqua
+// rim, a wet white specular top edge (--gloss-edge), gentle depth, rounded
+// corners, and a backdrop blur. The fill is tinted (not pure white) and carries
+// a drop shadow so panels still read against Hydejack's white light background;
+// the blur only bites once a tinted/bokeh page background sits behind them.
 // We also override Hydejack's own --accent-color (set on `html` from
 // site.accent_color) so theme links/outlines/buttons flip with the skin.
 body {
@@ -39,9 +46,20 @@ body {
   --accent-color:           rgb(var(--accent-rgb));
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+
+  // Aero sky-glass surface tokens
+  --panel-bg:     rgba(231, 245, 251, 0.7);    // faint aqua glass
+  --panel-border: rgba(120, 190, 220, 0.55);   // soft aqua rim (visible on white)
+  --panel-radius: 0.6rem;                       // larger panels (future cards)
+  --chip-radius:  0.45rem;                       // buttons, chips, code
+  --panel-blur:   saturate(1.5) blur(8px);
+  --panel-shadow: 0 2px 6px rgba(31, 72, 92, 0.12);
+  --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.95);  // wet top highlight
 }
 
 // Dark / vaporwave. Accent = full-saturation magenta, secondary = cyan.
+// Surfaces stay exactly as the 16-bit foundation: faint white glass, hairline
+// border, pixel-sharp chips, no gloss / blur / depth.
 @mixin vw-dark() {
   --accent-rgb:  225 0 255;    // Magenta (the single most vaporwave color)
   --accent2-rgb: 79 177 186;   // Cyan
@@ -50,9 +68,29 @@ body {
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
 
+  --panel-bg:     rgba(255, 255, 255, 0.06);
+  --panel-border: rgba(255, 255, 255, 0.1);
+  --panel-radius: 0.5rem;
+  --chip-radius:  0;
+  --panel-blur:   none;
+  --panel-shadow: none;
+  --gloss-edge:   none;
+
   blockquote {
     background: rgba(255, 255, 255, 0.03);
   }
+}
+
+// Frutiger-Aero glass surface. Degrades automatically to the flat 16-bit panel
+// in the dark skin, where --panel-blur / --panel-shadow / --gloss-edge are
+// `none`. Pass a radius for larger panels; defaults to the chip radius.
+@mixin aero-surface($radius: var(--chip-radius)) {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: $radius;
+  box-shadow: var(--gloss-edge), var(--panel-shadow);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
 }
 
 // Explicit toggle.
@@ -166,27 +204,14 @@ html {
 }
 
 // =============================================================================
-// Cards / post entries — glassy panels
-// =============================================================================
-
-.card,
-.post-card {
-  background: $panel-glass;
-  border: 1px solid $panel-border;
-  border-radius: 0.5rem;
-  transition: border-color 0.2s ease;
-
-  &:hover {
-    border-color: rgb(var(--accent-rgb) / 0.2);
-  }
-}
-
-// =============================================================================
 // Code blocks — terminal aesthetic
 // =============================================================================
 
+// Pixel-sharp in the dark 16-bit skin (--chip-radius: 0); softly rounded in the
+// light Aero skin. The code background comes from the syntax highlighter, so we
+// leave the fill alone and only adjust corners + the accent border.
 pre, code {
-  border-radius: 0; // pixel-sharp edges
+  border-radius: var(--chip-radius);
 }
 
 pre {
@@ -214,11 +239,16 @@ hr {
 // Blockquotes — indented with accent glow
 // =============================================================================
 
+// Kept as a left-border-only panel (no full rim) so the dark skin is unchanged;
+// the gloss edge, depth, and blur are all `none` in dark and only bloom in light.
 blockquote {
   border-left: 3px solid rgb(var(--accent2-rgb) / 0.5);
-  background: $panel-glass;
+  background: var(--panel-bg);
   padding: 0.75rem 1rem;
-  border-radius: 0 0.25rem 0.25rem 0;
+  border-radius: 0 var(--chip-radius) var(--chip-radius) 0;
+  box-shadow: var(--gloss-edge), var(--panel-shadow);
+  backdrop-filter: var(--panel-blur);
+  -webkit-backdrop-filter: var(--panel-blur);
 }
 
 // =============================================================================
@@ -246,7 +276,7 @@ blockquote {
     width: 88px;
     height: 31px;
     image-rendering: pixelated;
-    border: 1px solid $panel-border;
+    border: 1px solid var(--panel-border);
     box-shadow: none; // override content img shadow
   }
 }
@@ -259,16 +289,14 @@ blockquote {
   display: inline-block;
   padding: 0.4rem 0.75rem;
   margin: 0.25rem;
-  background: $panel-glass;
-  border: 1px solid $panel-border;
-  border-radius: 0.25rem;
+  @include aero-surface();
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
   background-image: none; // override gradient underline
 
   &:hover {
     border-color: rgb(var(--accent2-rgb) / 0.4);
-    box-shadow: 0 0 8px rgb(var(--accent2-rgb) / 0.2);
+    box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent2-rgb) / 0.2);
   }
 }
 
@@ -387,9 +415,7 @@ blockquote {
   margin: 1rem 0 2rem;
 
   .btn, button {
-    background: $panel-glass;
-    border: 1px solid $panel-border;
-    border-radius: 0;
+    @include aero-surface();
     color: inherit;
     font-family: monospace;
     font-size: 0.8rem;
@@ -401,7 +427,7 @@ blockquote {
 
     &:hover {
       border-color: rgb(var(--accent-rgb) / 0.4);
-      box-shadow: 0 0 8px rgb(var(--accent-rgb) / 0.15);
+      box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent-rgb) / 0.15);
     }
   }
 }
@@ -455,9 +481,7 @@ blockquote {
   li a {
     display: inline-block;
     padding: 0.25rem 0.6rem;
-    background: $panel-glass;
-    border: 1px solid $panel-border;
-    border-radius: 0;
+    @include aero-surface();
     font-family: monospace;
     font-size: 0.85rem;
     text-decoration: none;
@@ -466,7 +490,7 @@ blockquote {
 
     &:hover {
       border-color: rgb(var(--accent2-rgb) / 0.4);
-      box-shadow: 0 0 8px rgb(var(--accent2-rgb) / 0.2);
+      box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent2-rgb) / 0.2);
     }
   }
 }
@@ -530,16 +554,14 @@ blockquote {
 
   li {
     padding: 0.3rem 0.7rem;
-    background: $panel-glass;
-    border: 1px solid $panel-border;
-    border-radius: 0;
+    @include aero-surface();
     font-size: 0.9rem;
     font-family: monospace;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
       border-color: rgb(var(--accent2-rgb) / 0.4);
-      box-shadow: 0 0 6px rgb(var(--accent2-rgb) / 0.2);
+      box-shadow: var(--gloss-edge), 0 0 6px rgb(var(--accent2-rgb) / 0.2);
     }
   }
 }
@@ -582,8 +604,7 @@ blockquote {
 .sidebar-status {
   margin: 0.75rem 0;
   padding: 0.5rem 0.75rem;
-  background: $panel-glass;
-  border: 1px solid $panel-border;
+  @include aero-surface();
   border-left: 2px solid rgb(var(--accent-rgb) / 0.3);
   font-family: monospace;
   font-size: 0.72rem;
@@ -617,7 +638,7 @@ blockquote {
 
 .sfx-toggle {
   background: none;
-  border: 1px solid $panel-border;
+  border: 1px solid var(--panel-border);
   color: inherit;
   font-family: monospace;
   font-size: 0.65rem;
