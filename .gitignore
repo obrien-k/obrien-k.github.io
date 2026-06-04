@@ -5,3 +5,6 @@ vendor/
 .bundle/
 .DS_Store
 .claude/
+
+# Photoshop sources (kept on disk for postmortem; not served — export to web formats)
+*.psd
