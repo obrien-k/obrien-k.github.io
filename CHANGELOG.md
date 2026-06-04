@@ -9,6 +9,17 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.6
+Jun 03 2026
+{:.heading.post-date}
+
+### Frutiger Aqua
+- Two-skin theme foundation — one set of rules driven by CSS custom properties serves both skins: the dark "16-bit" vaporwave identity and a new light "32-bit" Vista-Aero skin, flipping only the values per mode
+- Frutiger Aero glass surfaces in light mode — aqua-tinted translucent panels with a wet specular top edge, soft rim, depth, and backdrop blur; degrade cleanly to the flat 16-bit panel in dark
+- Vista-aurora light sidebar — a glossy teal→blue gradient (legible white text) as the saturated counterpart to the page background; dark mode keeps its static 海 sidebar image
+- Light-mode page background retargeted to the Vista "Wow" palette — teal→dark-blue, rendered as a repeatable Aero pattern on the content pane, kept pale enough for legible dark text
+- Cardified the blog index
+
 ## v0.0.5
 Jun 02 2026
 {:.heading.post-date}
