@@ -25,7 +25,8 @@
       "items": [
         "DNS",
         "Google Cloud",
-        "MongoDB"
+        "MongoDB",
+        "Customer Success"
       ]
     }
   ],
@@ -120,6 +121,82 @@
             {
               "title": "HTML Princess",
               "description": "Inspected elements of web pages and research methods of changing behavior in CSS and HTML using BigCommerce Stencil and Blueprint frameworks. Educated merchants on best practices for store design, SEO, and utilizing scripts."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "OpenTable",
+      "companyUrl": "https://www.opentable.com",
+      "startDate": "October 2016",
+      "endDate": "May 2017",
+      "roles": [
+        {
+          "title": "Customer Support Representative (Full-time, Denver, CO)",
+          "startDate": "October 2016",
+          "endDate": "May 2017",
+          "accomplishments": [
+            {
+              "title": "Taking Responsibility",
+              "description": "Owned outreach for escalated restaurant owners needing deeper troubleshooting, and recovered abandoned, low-detail cases into solid resolutions."
+            },
+            {
+              "title": "Multitasking",
+              "description": "Handled email correspondence while sustaining active phone conversations and concurrent tasks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "company": "DISH",
+      "companyUrl": "https://www.dish.com",
+      "startDate": "October 2012",
+      "endDate": "August 2016",
+      "roles": [
+        {
+          "title": "Retention Supervisor (Full-time, Denver, CO)",
+          "startDate": "October 2015",
+          "endDate": "August 2016",
+          "accomplishments": [
+            {
+              "title": "Calm under Pressure",
+              "description": "Communicated across written, verbal, and social channels under pressure to resolve issues and develop emerging company leaders."
+            }
+          ]
+        },
+        {
+          "title": "Team Lead (Full-time, Alvin, TX)",
+          "startDate": "March 2015",
+          "endDate": "October 2015",
+          "accomplishments": [
+            {
+              "title": "Flexibility",
+              "description": "Supported a super-group of 45 agents (15 new hires), stepping in to deliver performance evaluations and one-on-one feedback."
+            },
+            {
+              "title": "Efficiency Tooling",
+              "description": "Built a Jabber workflow tool — adopted by the team immediately — and trained peers on technical escalations and new-product rollouts."
+            }
+          ]
+        },
+        {
+          "title": "Customer Support Representative (Full-time, Alvin, TX)",
+          "startDate": "October 2012",
+          "endDate": "March 2015",
+          "accomplishments": [
+            {
+              "title": "Communication",
+              "description": "Served as POC for technical support of the management group and devised a system to convey information between 100 employees. Held response time below two minutes (averaging within 30 seconds) while continuing to provide phone support to customers."
+            },
+            {
+              "title": "Training & Development",
+              "description": "Led and mentored new Representatives on proprietary technical support tools and troubleshooting."
+            },
+            {
+              "title": "Awards",
+              "description": "Received the \"Pride Adventure Winning\" (PAW) award during training for epitomizing company goals."
             }
           ]
         }

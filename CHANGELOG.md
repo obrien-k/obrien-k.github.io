@@ -19,6 +19,11 @@ Jun 04 2026
 ### Content
 - 黒春光琳海 — linked the What.CD Goodbye Release datadump archive (Dunham, Ch. 3, pp. 65–113)
 
+### Resume
+- Imported earlier experience, backfilling the timeline before BigCommerce — OpenTable (Customer Support Representative, Denver CO, 2016–2017) and DISH (three roles across Alvin TX and Denver CO, 2012–2016; includes the PAW award and a sub-two-minute support-response metric)
+- Added "Customer Success" to skills
+- Kept both data sources in sync — the rendered page (`_data/resume.yml`) and the downloadable JSON (`assets/resume.json`); PDF and vCard regenerate later from the LaTeX source (`obrien-k/resume`)
+
 ## v0.0.6
 Jun 04 2026
 {:.heading.post-date}
