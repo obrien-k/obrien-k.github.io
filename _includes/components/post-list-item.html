@@ -1,0 +1,34 @@
+{% assign post = include.post %}
+{% assign format = include.format | default:site.data.strings.date_formats.related_post | default:"%d %b %Y" %}
+
+{%- comment -%}
+  Card cover, resolved defensively so no single post can break the list:
+    1. post.image (string or hash front matter)
+    2. else the first inline <img> in the rendered body (only if non-empty)
+    3. else the site-wide accent_image
+  hy-img is only rendered once a cover resolves, so we never emit <img src="">.
+{%- endcomment -%}
+{% assign cover = nil %}
+{% if post.image %}
+  {% assign cover = post.image %}
+{% else %}
+  {% assign _after_tag = post.content | split:'<img ' %}
+  {% if _after_tag.size > 1 %}
+    {% assign _after_src = _after_tag[1] | split:'src="' %}
+    {% if _after_src.size > 1 %}
+      {% assign _candidate = _after_src[1] | split:'"' | first %}
+      {% if _candidate and _candidate != '' %}{% assign cover = _candidate %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+{% unless cover %}{% assign cover = site.accent_image %}{% endunless %}
+
+<li class="h4 post-card">
+  {% if cover %}
+  <a href="{{ post.url | relative_url }}" class="post-card-cover no-hover no-print-link" tabindex="-1">
+    {% include components/hy-img.html img=cover alt=post.title width=864 height=486 %}
+  </a>
+  {% endif %}
+  <a href="{{ post.url | relative_url }}" class="flip-title"><span>{{ post.title }}</span></a>
+  <time class="faded fine" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date:format }}</time>
+</li>

@@ -319,6 +319,24 @@ pre {
       padding: 0.8rem 1.1rem;
       transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 
+      // Cover image leads the card, edge-to-edge to the panel rim. Negative
+      // margins cancel the li padding; the image rounds only its top corners so
+      // it meets the card's own radius. No `overflow:hidden` on the li, so the
+      // hover gloss/lift still blooms past the rim.
+      .post-card-cover {
+        display: block;
+        margin: -0.8rem -1.1rem 0.7rem;
+        line-height: 0;
+
+        img {
+          display: block;
+          width: 100%;
+          aspect-ratio: 16 / 9;
+          object-fit: cover;
+          border-radius: var(--panel-radius) var(--panel-radius) 0 0;
+        }
+      }
+
       // Title on its own line, date beneath — reads as a card, not a row.
       > time {
         display: block;
