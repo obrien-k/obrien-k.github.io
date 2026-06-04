@@ -1,8 +1,10 @@
 # Status widget — shown in the sidebar
 # Update these values whenever you like; rebuild to publish.
 
-mood: curious
-doing: GraphQL devland things
+mood: "2SLGBTQIA+🤷‍♀️"
+doing:
+  text: "/verbiagating…"
+  url: "https://github.com/obrien-k/skills/misc/verbiagating"
 music:
-  track: Heligoland
-  artist: OVERSEER
+  track: "Clipped On (feat. Despot)"
+  artist: "Blood Orange"

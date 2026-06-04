@@ -9,6 +9,13 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.8
+Jun 04 2026
+{:.heading.post-date}
+
+### Status
+- Sidebar/drawer status widget: kaomoji mood label, `doing` now links out, refreshed the now-playing track
+
 ## v0.0.7
 Jun 04 2026
 {:.heading.post-date}

@@ -126,17 +126,21 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     var html = '<div class="status-label">STATUS</div>';
 
     if (data.mood) {
-      html += '<div class="status-item"><span class="status-key">mood:</span>'
+      html += '<div class="status-item"><span class="status-key">ʕ⁎̯͡⁎ʔ༄</span>'
             + '<span class="status-val">' + data.mood + '</span></div>';
     }
     if (data.doing) {
+      var doingText = data.doing.text || data.doing;
+      var doingVal = data.doing.url
+        ? '<a href="' + data.doing.url + '">' + doingText + '</a>'
+        : doingText;
       html += '<div class="status-item"><span class="status-key">doing:</span>'
-            + '<span class="status-val">' + data.doing + '</span></div>';
+            + '<span class="status-val">' + doingVal + '</span></div>';
     }
     if (data.music && data.music.artist) {
       html += '<div class="status-item"><span class="status-key">&#9835;</span>'
-            + '<span class="status-val">' + data.music.artist
-            + ' &mdash; ' + data.music.track + '</span></div>';
+            + '<span class="status-val">' + data.music.track
+            + ' &mdash; ' + data.music.artist + '</span></div>';
     }
 
     var widget = document.createElement('div');
