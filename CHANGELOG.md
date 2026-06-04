@@ -9,6 +9,16 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.7
+Jun 04 2026
+{:.heading.post-date}
+
+### Cards
+- Front-page and blog-index cards now lead with the post's cover image — resolved automatically: the post's `image:` front matter, else the first inline image in the body, else the site `accent_image`, so every card has artwork with no per-post config and a cover-less post degrades cleanly instead of breaking the grid
+
+### Content
+- 黒春光琳海 — linked the What.CD Goodbye Release datadump archive (Dunham, Ch. 3, pp. 65–113)
+
 ## v0.0.6
 Jun 04 2026
 {:.heading.post-date}
