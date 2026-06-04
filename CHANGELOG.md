@@ -10,14 +10,16 @@ sitemap: false
 {:toc .large-only}
 
 ## v0.0.6
-Jun 03 2026
+Jun 04 2026
 {:.heading.post-date}
 
-### Frutiger Aqua
+### Frutiger Vista
 - Two-skin theme foundation — one set of rules driven by CSS custom properties serves both skins: the dark "16-bit" vaporwave identity and a new light "32-bit" Vista-Aero skin, flipping only the values per mode
 - Frutiger Aero glass surfaces in light mode — aqua-tinted translucent panels with a wet specular top edge, soft rim, depth, and backdrop blur; degrade cleanly to the flat 16-bit panel in dark
-- Vista-aurora light sidebar — a glossy teal→blue gradient (legible white text) as the saturated counterpart to the page background; dark mode keeps its static 海 sidebar image
-- Light-mode page background retargeted to the Vista "Wow" palette — teal→dark-blue, rendered as a repeatable Aero pattern on the content pane, kept pale enough for legible dark text
+- Vista-aurora light sidebar — a saturated green → teal → blue sweep (resampled off the Vista login screen) with a bright `#bfeef5` "light shelf" seam at ~75%, carrying legible white text; a clean gradient with no overlaid texture. Dark mode keeps its static 海 sidebar image
+- Light-mode page background — a pale whisper-green → ice → sky-blue sweep beneath repeating silk-light ribbons on the content pane, kept high-key for legible dark text
+- Aurora-mapped buttons — the resume action bar and constellation link chips share one fixed, viewport-covering Vista aurora (`assets/img/vista-aurora.png`), so each button reveals the slice at its on-screen position; a dark scrim keeps white labels legible
+- Status widget — dark translucent glass with solid white text at 7.79:1 contrast (WCAG AAA), legible on the saturated sidebar and colorblind-safe
 - Cardified the blog index
 
 ## v0.0.5
