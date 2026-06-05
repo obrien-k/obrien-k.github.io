@@ -9,6 +9,13 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.9
+Jun 04 2026
+{:.heading.post-date}
+
+### Housekeeping
+- Editorial pass — tightened post and changelog references for accuracy
+
 ## v0.0.8
 Jun 04 2026
 {:.heading.post-date}
@@ -24,7 +31,7 @@ Jun 04 2026
 - Front-page and blog-index cards now lead with the post's cover image — resolved automatically: the post's `image:` front matter, else the first inline image in the body, else the site `accent_image`, so every card has artwork with no per-post config and a cover-less post degrades cleanly instead of breaking the grid
 
 ### Content
-- 黒春光琳海 — linked the What.CD Goodbye Release datadump archive (Dunham, Ch. 3, pp. 65–113)
+- 黒春光琳海 — added a reference link in the #what-refuge section (Dunham, Ch. 3, pp. 65–113)
 
 ### Resume
 - Imported earlier experience, backfilling the timeline before BigCommerce — OpenTable (Customer Support Representative, Denver CO, 2016–2017) and DISH (three roles across Alvin TX and Denver CO, 2012–2016; includes the PAW award and a sub-two-minute support-response metric)
