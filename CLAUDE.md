@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Site Overview
 
-Personal blog/portfolio for Kyle OBrien (prefers **Kai**) at kyleobrien.me. Built with Jekyll 4.3 and the Hydejack PRO theme (gem-based: `jekyll-theme-hydejack ~> 9.1`). Hosted on GitHub Pages with a custom domain via CNAME.
+Personal blog/portfolio for Kyle OBrien (prefers **Kai**) at kyleobrien.me. Built with Jekyll 4.3 and the **free** Hydejack theme (gem-based: `jekyll-theme-hydejack ~> 9.1`, resolves to v9.2.1 — not PRO). Hosted on GitHub Pages with a custom domain via CNAME.
 
 ## Build Commands
 
@@ -20,7 +20,7 @@ KaTeX math rendering requires a JavaScript runtime (Node.js) via the `duktape` /
 
 ## Architecture
 
-**Theme**: Hydejack PRO is installed as a gem — layouts, includes, and assets live in the gem, not in this repo. Only override files are local:
+**Theme**: Hydejack (free) is installed as a gem — layouts, includes, and assets live in the gem, not in this repo. Note: the free `home` layout is just `{{ content }}` (no post list/pagination); the paginated post list is the `blog` layout. The front page (`index.html`) uses `layout: home`; the paginated article list lives at `/archive/` (`layout: archive`, a local override). Only override files are local:
 
 - `_includes/my-head.html` — empty (available for `<head>` injections)
 - `_includes/my-body.html` — Cloudflare email protection script that re-runs on Hydejack's SPA page transitions (`hy-push-state-after` event)

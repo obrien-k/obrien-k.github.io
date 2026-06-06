@@ -41,6 +41,8 @@ author:
 
 # Add links to the sidebar.
 menu:
+  - title:             Archive
+    url:               /archive/
   - title:             About
     url:               /about/
   - title:             Resume
@@ -62,7 +64,7 @@ legal:
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright: |
-  © 2020 - 2026 Kyle O. All rights reserved.
+  © 2020 - 2026 Kyle O IO. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:title/

@@ -1,0 +1,70 @@
+---
+# Custom layout: blog-style archive of every post with a subdued year filter.
+# (jekyll-paginate v1 only paginates index.html, so the Archive lists all posts
+#  and uses the date picker for navigation instead of pagination.)
+layout: base
+---
+
+{% capture years_raw %}{% for post in site.posts %}{{ post.date | date: "%Y" }},{% endfor %}{% endcapture %}
+{% assign years = years_raw | split: "," | uniq | sort | reverse %}
+
+<header class="archive-header">
+  <h1 class="archive-title">{{ page.title }}</h1>
+  <div class="archive-filter">
+    <label for="archive-year" class="archive-filter-label">{{ site.data.strings.archive_filter | default:"Year" }}</label>
+    <select id="archive-year" class="archive-year-select" aria-label="Filter posts by year">
+      <option value="all">All</option>
+      {% for y in years %}{% if y != "" %}<option value="{{ y }}">{{ y }}</option>{% endif %}{% endfor %}
+    </select>
+  </div>
+</header>
+
+<div class="archive-list">
+  {% for post in site.posts %}
+    <div class="archive-entry" data-year="{{ post.date | date: '%Y' }}">
+      {% include components/post.html post=post no_link_title=page.no_link_title no_excerpt=page.no_excerpt hide_image=page.hide_image %}
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+  .archive-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+  }
+  .archive-title { margin: 0; }
+  /* Subdued date picker */
+  .archive-filter {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    opacity: .65;
+    font-size: .8rem;
+    transition: opacity .15s ease;
+  }
+  .archive-filter:hover,
+  .archive-filter:focus-within { opacity: 1; }
+  .archive-filter-label {
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .archive-year-select {
+    font: inherit;
+    font-size: .8rem;
+    color: inherit;
+    background: transparent;
+    border: 1px solid rgba(128, 128, 128, .35);
+    border-radius: 4px;
+    padding: .15rem 1.2rem .15rem .4rem;
+    cursor: pointer;
+  }
+  .archive-year-select:focus {
+    outline: none;
+    border-color: rgba(128, 128, 128, .65);
+  }
+  .archive-entry.is-hidden { display: none; }
+</style>
