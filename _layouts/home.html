@@ -1,0 +1,56 @@
+---
+# Local override of the free Hydejack `home` layout.
+# Mirrors the gem default's Posts + Pages sections, but drives the Posts list
+# from `paginator.posts` (jekyll-paginate) and adds an Older/Newer paginator
+# below the Pages section so older articles are browsable from the home page.
+layout: base
+---
+
+{% assign strings = site.data.strings %}
+{% assign plugins = site.plugins | default:site.gems %}
+
+{% if plugins contains 'jekyll-paginate' and paginator %}
+  {% assign home_posts = paginator.posts %}
+{% else %}
+  {% assign home_posts = site.posts | slice: 0, 5 %}
+{% endif %}
+
+<article class="page" role="article">
+  <header>
+    <h1 class="page-title">{{ page.title | default:strings.home | default:"Home" }}</h1>
+    {% include components/message.html text=page.description hide=page.hide_description %}
+  </header>
+
+  {{ content }}
+
+  <hr class="dingbat related"/>
+
+  {% if home_posts.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.posts | default:"Posts" }}</h2>
+    <ul class="related-posts">
+      {% for post in home_posts %}
+        {% include_cached components/post-list-item.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% assign pages = site.html_pages | where:"layout","page" | where_exp:"page","page.sitemap != false" %}
+  {% if pages.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.pages | default:"Pages" }}</h2>
+    <ul class="related-posts">
+      {% for page in pages limit:5 %}
+        {% if page.layout == 'page' %}
+          <li class="h4">
+            <a href="{{ page.url | relative_url }}" class="flip-title">
+              <span>{{ page.title }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if plugins contains 'jekyll-paginate' and paginator.total_pages > 1 %}
+    {% include components/pagination.html %}
+  {% endif %}
+</article>
