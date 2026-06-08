@@ -8,3 +8,6 @@ vendor/
 
 # Photoshop sources (kept on disk for postmortem; not served — export to web formats)
 *.psd
+
+# Playwright / browser automation
+.playwright-mcp/

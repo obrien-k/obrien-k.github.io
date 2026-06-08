@@ -47,6 +47,12 @@ menu:
     url:               /resume/
   - title:             Constellations
     url:               /constellations/
+  - title:             Leadership Philosophy
+    url:               /leadership-philosophy/
+  - title:             Vanity House
+    url:               /vanity-house/
+  - title:             Listen to this Album
+    url:               /listen-to-this-album/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
