@@ -20,7 +20,7 @@ work:
         endDate: "March 2024"
         highlights:
           - "Launched Help Center: Composed written content for Apollo's Help Center resulting in over 100 public articles. Developed custom Algolia integration for ZenDesk Guide to align search results with Apollo."
-          - "Open Source Contributions: Addressed Open Source and enterprise inquiries regarding the Apollo platform and Federated GraphQL, resulting in improved customer satisfaction and reduced support response times. Contributed code, documentation, and infrastructure to internal and external Apollo projects."
+          - "<a href='https://stackoverflow.com/users/9281567/kyle-obrien'>Open Source Contributions</a>: Addressed Open Source and enterprise inquiries regarding the Apollo platform and Federated GraphQL, resulting in improved customer satisfaction and reduced support response times. Contributed code, documentation, and infrastructure to internal and external Apollo projects."
   - company: "Pharos"
     website: "https://app.pharoscrm.com"
     startDate: "March 2021"
@@ -52,7 +52,7 @@ work:
         startDate: "June 2017"
         endDate: "July 2018"
         highlights:
-          - "Code Noobs: Founded club to teach peers JavaScript, Node.js, and React. Met every other Saturday with visits from Engineering department. Slack group with over 50 members."
+          - "<a href='https://github.com/obrien-k/code-noobs-slackbot'>Code Noobs</a>: Founded club to teach peers JavaScript, Node.js, and React. Met every other Saturday with visits from Engineering department. Slack group with over 50 members."
           - "HTML Princess: Inspected elements of web pages and research methods of changing behavior in CSS and HTML using BigCommerce Stencil and Blueprint frameworks. Educated merchants on best practices for store design, SEO, and utilizing scripts."
   - company: "OpenTable"
     website: "https://www.opentable.com"
@@ -104,6 +104,10 @@ skills:
       - "MongoDB"
       - "Customer Success"
 projects:
+  - name: "Stellar"
+    url: "https://github.com/orphic-inc/stellar-api"
+    description: "Invite-only community & content platform: a type-safe Express/Prisma (PostgreSQL, Zod) API with auto-generated OpenAPI docs and a community reputation score, paired with a React/TypeScript front-end."
+    date: "2022 – Present"
   - name: "marstronaut-federation"
     url: "https://github.com/obrien-k/marstronaut-federation"
     description: "Built a GraphQL-backend for XKCD and NASA APIs to display Mars Rover photos and XKCD comics on a React front-end."
