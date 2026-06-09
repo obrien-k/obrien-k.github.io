@@ -1,2 +1,26 @@
 <!-- Skip to content — accessibility -->
 <a href="#_main" class="skip-link">Skip to content</a>
+
+<!-- A11y mode: restore class before first paint to prevent flash of saturated content -->
+<script>if(localStorage.getItem('a11y')==='on'){document.body.classList.add('a11y-mode');}</script>
+
+<!-- Skin registry — early restore (WS-E)
+     Creates <link id="hj-ext-skin"> dynamically ONLY when a non-default skin is
+     saved. No element = no request when the default skin is active. -->
+<script>
+(function(){
+  var s=localStorage.getItem('skin');
+  // Built-in skins (vaporwave/frutiger-aqua) need no CSS injection;
+  // Hydejack restores dark-mode from its own storage. Only act for override skins.
+  if(!s||s==='vaporwave'||s==='frutiger-aqua')return;
+  var skins={{ site.data.skins | jsonify }};
+  for(var i=0;i<skins.length;i++){
+    if(skins[i].id===s&&skins[i].css){
+      var l=document.createElement('link');
+      l.id='hj-ext-skin';l.rel='stylesheet';l.href=skins[i].css;
+      document.head.appendChild(l);
+      return;
+    }
+  }
+})();
+</script>

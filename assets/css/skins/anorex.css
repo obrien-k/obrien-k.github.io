@@ -1,0 +1,227 @@
+/* =============================================================================
+   ANOREX — Skeuomorphic wood / parchment skin
+   Ported from the Gazelle open-source project (community stylesheet).
+   Loaded as a CSS-injection override via the WS-E skin registry.
+
+   Palette:
+     sidebar light  #7a4f16   sidebar dark  #2a1800
+     link           #6B481E   hover         #A56A22
+     panel          #DCB881   border        #65430F
+     body text      #3E290A   dark accent   #C1965C
+   ============================================================================= */
+
+/* --- Accent token — drives border-left on widgets, link glow, etc. --- */
+:root {
+  --accent-rgb: 193 150 92;   /* #c1965c golden-tan */
+  --accent2-rgb: 165 106 34;  /* #a56a22 amber hover */
+  --accent-color: rgb(193, 150, 92);
+  --accent-color-faded: rgba(193, 150, 92, 0.5);
+  --accent-color-highlight: rgba(193, 150, 92, 0.1);
+}
+
+/* --- Sidebar: deep wood grain (no image) --- */
+.sidebar-bg,
+body.dark-mode .sidebar-bg {
+  background-image:
+    repeating-linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.10) 0px,  rgba(0, 0, 0, 0)    1px,
+      rgba(0, 0, 0, 0)    1px,  rgba(0, 0, 0, 0)    7px,
+      rgba(0, 0, 0, 0.06) 7px,  rgba(0, 0, 0, 0)    8px,
+      rgba(0, 0, 0, 0)    8px,  rgba(0, 0, 0, 0)   20px
+    ),
+    repeating-linear-gradient(
+      173deg,
+      rgba(255, 180, 60, 0.04) 0px,
+      rgba(255, 180, 60, 0.04) 2px,
+      transparent 2px,
+      transparent 50px
+    ),
+    linear-gradient(175deg,
+      #7a4f16 0%,
+      #5c3a10 25%,
+      #3d230a 55%,
+      #2a1800 75%,
+      #4e3212 90%,
+      #7a4f16 100%
+    ) !important;
+  background-size: auto, auto, cover !important;
+  background-repeat: repeat, repeat, no-repeat !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) .sidebar-bg {
+    background-image:
+      repeating-linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.10) 0px,  rgba(0, 0, 0, 0)    1px,
+        rgba(0, 0, 0, 0)    1px,  rgba(0, 0, 0, 0)    7px,
+        rgba(0, 0, 0, 0.06) 7px,  rgba(0, 0, 0, 0)    8px,
+        rgba(0, 0, 0, 0)    8px,  rgba(0, 0, 0, 0)   20px
+      ),
+      repeating-linear-gradient(
+        173deg,
+        rgba(255, 180, 60, 0.04) 0px,
+        rgba(255, 180, 60, 0.04) 2px,
+        transparent 2px,
+        transparent 50px
+      ),
+      linear-gradient(175deg,
+        #7a4f16 0%,
+        #5c3a10 25%,
+        #3d230a 55%,
+        #2a1800 75%,
+        #4e3212 90%,
+        #7a4f16 100%
+      ) !important;
+    background-size: auto, auto, cover !important;
+    background-repeat: repeat, repeat, no-repeat !important;
+  }
+}
+
+/* Warm wood scrim (replaces the Aero gloss / dark overlay) */
+.sidebar-bg.sidebar-overlay::after,
+body.dark-mode .sidebar-bg.sidebar-overlay::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(60, 20, 0, 0.18) 0%,
+    rgba(0, 0, 0, 0.08)   50%,
+    rgba(60, 20, 0, 0.12) 100%
+  ) !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) .sidebar-bg.sidebar-overlay::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(60, 20, 0, 0.18) 0%,
+      rgba(0, 0, 0, 0.08)   50%,
+      rgba(60, 20, 0, 0.12) 100%
+    ) !important;
+  }
+}
+
+/* --- Sidebar nav items: Vista aurora gradient as selector bg ---
+   The aurora gradient is the former sidebar bg (Frutiger Aqua light mode).
+   Each nav item uses it at reduced opacity, brightening to full on hover/active.
+   ----------------------------------------------------------------- */
+.sidebar-nav-item {
+  display: block;
+  background-image: linear-gradient(
+    163deg,
+    rgba(94,  143, 110, 0.22) 0%,
+    rgba(63,  144, 136, 0.22) 26%,
+    rgba(31,  138, 154, 0.22) 52%,
+    rgba(191, 238, 245, 0.14) 74%,
+    rgba(191, 238, 245, 0.14) 76%,
+    rgba(29,  127, 176, 0.22) 100%
+  );
+  border-radius: 3px;
+  margin: 2px 0;
+  transition: background-image 0.15s ease, opacity 0.15s ease;
+}
+
+.sidebar-nav-item:hover,
+.sidebar-nav-item.active {
+  background-image: linear-gradient(
+    163deg,
+    rgba(94,  143, 110, 0.5) 0%,
+    rgba(63,  144, 136, 0.5) 26%,
+    rgba(31,  138, 154, 0.5) 52%,
+    rgba(191, 238, 245, 0.35) 74%,
+    rgba(191, 238, 245, 0.35) 76%,
+    rgba(29,  127, 176, 0.5) 100%
+  );
+}
+
+/* --- Post card dates: lighter brown from Anorex palette ---
+   Overrides Hydejack's .faded opacity treatment with a warm brown.
+   Targets the <time> element on both home and archive post cards.
+   ----------------------------------------------------------------- */
+.related-posts li time.faded,
+.related-posts .post-card time,
+.related-posts time {
+  color: #c1965c !important;
+  opacity: 1 !important;
+}
+
+/* --- CSS custom properties: panel / chip / layout tokens ---
+   Same specificity as frutiger-aqua.scss declarations but later
+   source order, so these win without !important.
+   ----------------------------------------------------------------- */
+body,
+body.dark-mode {
+  --panel-bg:     rgba(220, 184, 129, 0.88);
+  --panel-border: rgba(101, 67, 15, 0.5);
+  --panel-radius: 0;
+  --chip-radius:  0;
+  --panel-blur:   none;
+  --panel-shadow: 1px 1px 4px rgba(60, 30, 0, 0.20);
+  --gloss-edge:   none;
+  --page-bg:      none;
+}
+
+/* --- Body text color --- */
+body {
+  color: #3e290a;
+}
+
+body.dark-mode {
+  color: #dcb881;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    color: #dcb881;
+  }
+}
+
+/* --- Content area background — warm parchment --- */
+main.content,
+.content {
+  background-color: #f5e8cc;
+  background-image: none !important;
+}
+
+body.dark-mode main.content,
+body.dark-mode .content {
+  background-color: #2a1a08;
+  background-image: none !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) main.content,
+  body:not(.light-mode) .content {
+    background-color: #2a1a08;
+    background-image: none !important;
+  }
+}
+
+/* --- Link colors --- */
+.content a:not(.btn):not(.no-mark) {
+  color: #6b481e;
+}
+
+.content a:not(.btn):not(.no-mark):hover,
+.content a:not(.btn):not(.no-mark):focus {
+  color: #a56a22;
+}
+
+body.dark-mode .content a:not(.btn):not(.no-mark) {
+  color: #c1965c;
+}
+
+body.dark-mode .content a:not(.btn):not(.no-mark):hover,
+body.dark-mode .content a:not(.btn):not(.no-mark):focus {
+  color: #dcb881;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark) {
+    color: #c1965c;
+  }
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark):hover,
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark):focus {
+    color: #dcb881;
+  }
+}

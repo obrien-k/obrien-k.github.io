@@ -1,0 +1,23 @@
+- id: vaporwave
+  label: VaporWave
+  short: VW
+  desc: "Original skin — neon magenta/cyan, 8-bit flat panels"
+  css:
+  dark: true
+  color: "rgb(225,0,255)"
+
+- id: frutiger-aqua
+  label: Frutiger Aqua
+  short: FA
+  desc: "32-bit glass / Aero — Vista-era sky and gloss panels"
+  css:
+  dark: false
+  color: "rgb(0,153,204)"
+
+- id: anorex
+  label: Anorex
+  short: AX
+  desc: "Skeuomorphic wood / parchment — ported from the Gazelle open-source project"
+  css: "/assets/css/skins/anorex.css"
+  dark:
+  color: "#c1965c"

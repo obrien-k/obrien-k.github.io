@@ -17,6 +17,27 @@ Logo assets already in `_drafts/stellar/` — copy to `src/stylesheets/<theme>/i
 
 ---
 
+## skin system: evaluate publishing as a package
+
+**Recurring** — revisit quarterly or when a downstream project needs the skin registry.
+
+The WS-E skin system (`_data/skins.yml` + `assets/css/skins/*.css` + `my-head.html`
+early-restore + `my-body.html` THEMES widget) is designed to be ejectable. The
+natural next step is CDN delivery so forks can pull skin updates without a rebuild.
+
+Options to evaluate:
+- **npm package** — publish `assets/css/skins/*.css` as `@obrien-k/hj-skins`. Update
+  `css:` entries in `skins.yml` to the jsDelivr/unpkg CDN URL. No rebuild required
+  by consumers.
+- **Ruby gem** — wrap as a Hydejack companion gem; gem users add it to `Gemfile`.
+  Lower friction for Jekyll-native consumers.
+- **pip package** — only if a Python-based static site (e.g. MkDocs) needs the skins.
+
+Until a concrete downstream need arrives, leave as-is. When evaluating: check if the
+CSS custom-property layer is thin enough to be skin-engine-agnostic (it mostly is).
+
+---
+
 ## mr-janitor rename → mr-robot
 
 **Repo:** `~/git/skills/skills/in-progress/mr-janitor/`

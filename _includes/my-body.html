@@ -50,7 +50,13 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 </script>
 
 <!-- ===================================================================
-     Interactivity: Sound toggle, Status widget, Konami Easter egg
+     Skin registry (WS-E) — must appear before the main IIFE below
+     =================================================================== -->
+<script>window.__skins = {{ site.data.skins | jsonify }};</script>
+
+<!-- ===================================================================
+     Interactivity: SFX · Status · Skin system · THEMES widget ·
+                    A11y toggle · SFX toggle · Konami Easter egg
      =================================================================== -->
 <script>
 (function() {
@@ -86,7 +92,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
       osc.stop(t + dur);
     },
 
-    /* Force play even when disabled (toggle feedback) */
     playForce: function(freq, dur, type, vol) {
       var was = this.enabled;
       this.enabled = true;
@@ -110,6 +115,77 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
       });
     }
   };
+
+  /* ----------------------------------------------------------------- */
+  /* Skin system (WS-E)                                                */
+  /* ----------------------------------------------------------------- */
+  var SKIN_KEY = 'skin';
+  var skins    = window.__skins || [];
+  var bodyObserver;
+
+  function getSkin(id) {
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === id) return skins[i];
+    }
+    return null;
+  }
+
+  /* CSS-injection skins (own <link>) win over built-ins (body class). */
+  function currentSkinId() {
+    var link = document.getElementById('hj-ext-skin');
+    if (link && link.href) {
+      for (var i = 0; i < skins.length; i++) {
+        if (skins[i].css && link.href.slice(-skins[i].css.length) === skins[i].css) {
+          return skins[i].id;
+        }
+      }
+    }
+    return document.body.classList.contains('dark-mode') ? 'vaporwave' : 'frutiger-aqua';
+  }
+
+  function getOrCreateLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (!el) {
+      el = document.createElement('link');
+      el.id = 'hj-ext-skin'; el.rel = 'stylesheet';
+      document.head.appendChild(el);
+    }
+    return el;
+  }
+
+  function removeLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (el) el.parentNode.removeChild(el);
+  }
+
+  function applySkin(id) {
+    var skin = getSkin(id);
+    if (!skin) return;
+    removeLink();
+    if (skin.css) {
+      getOrCreateLink().href = skin.css;
+      localStorage.setItem(SKIN_KEY, id);
+    } else {
+      if (skin.dark) {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+      }
+      localStorage.removeItem(SKIN_KEY);
+    }
+    updateThemeChips();
+  }
+
+  function cycleNext() {
+    var cur = currentSkinId();
+    var idx = 0;
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === cur) { idx = i; break; }
+    }
+    applySkin(skins[(idx + 1) % skins.length].id);
+  }
 
   /* ----------------------------------------------------------------- */
   /* Status widget — inject into sidebar                               */
@@ -149,6 +225,60 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     social.parentNode.insertBefore(widget, social);
   }
   {% endif %}
+
+  /* ----------------------------------------------------------------- */
+  /* THEMES widget — sidebar skin selector (WS-E)                      */
+  /* ----------------------------------------------------------------- */
+  function updateThemeChips() {
+    var widget = document.querySelector('.sidebar-themes');
+    if (!widget) return;
+    var cur = currentSkinId();
+    var chips = widget.querySelectorAll('.theme-chip');
+    for (var i = 0; i < chips.length; i++) {
+      chips[i].classList.toggle('is-active', chips[i].getAttribute('data-skin') === cur);
+    }
+  }
+
+  function injectThemeWidget() {
+    if (document.querySelector('.sidebar-themes')) return;
+    if (skins.length < 2) return;
+    var sidebar = document.querySelector('.sidebar-sticky');
+    if (!sidebar) return;
+    var social = sidebar.querySelector('.sidebar-social');
+    if (!social) return;
+
+    var html = '<div class="status-label">THEMES</div><div class="theme-chips">';
+    for (var i = 0; i < skins.length; i++) {
+      var sk = skins[i];
+      var col = sk.color || '#fff';
+      html += '<button class="theme-chip" data-skin="' + sk.id + '"'
+            + ' style="color:' + col + ';border-color:' + col + ';--chip-accent:' + col + '"'
+            + ' title="' + sk.label + (sk.desc ? ' — ' + sk.desc : '') + '"'
+            + ' aria-label="Switch to ' + sk.label + '">'
+            + sk.short
+            + '</button>';
+    }
+    html += '</div>';
+
+    var widget = document.createElement('div');
+    widget.className = 'sidebar-themes';
+    widget.innerHTML = html;
+
+    widget.addEventListener('click', function(e) {
+      var btn = e.target.closest ? e.target.closest('.theme-chip')
+              : (e.target.classList.contains('theme-chip') ? e.target : null);
+      if (!btn) return;
+      applySkin(btn.getAttribute('data-skin'));
+    });
+
+    social.parentNode.insertBefore(widget, social);
+    updateThemeChips();
+
+    if (window.MutationObserver && !bodyObserver) {
+      bodyObserver = new MutationObserver(function() { updateThemeChips(); });
+      bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
+  }
 
   /* ----------------------------------------------------------------- */
   /* Sound toggle — sidebar footer                                     */
@@ -196,6 +326,64 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
   }
 
   /* ----------------------------------------------------------------- */
+  /* A11y toggle — navbar button (WS-B)                               */
+  /* ----------------------------------------------------------------- */
+  var a11yBtn;
+
+  function isA11y() {
+    return document.body.classList.contains('a11y-mode');
+  }
+
+  function setA11y(on) {
+    document.body.classList.toggle('a11y-mode', on);
+    localStorage.setItem('a11y', on ? 'on' : 'off');
+    updateA11yBtn();
+  }
+
+  function updateA11yBtn() {
+    if (!a11yBtn) return;
+    var on = isA11y();
+    a11yBtn.setAttribute('aria-pressed', String(on));
+    a11yBtn.title = on ? 'Disable a11y mode' : 'Enable a11y mode';
+    a11yBtn.style.opacity  = on ? '1' : '0.55';
+    a11yBtn.style.fontWeight = on ? '700' : '500';
+  }
+
+  function injectA11yToggle() {
+    if (document.getElementById('_a11y-toggle')) return;
+    var bar = document.querySelector('.nav-btn-bar');
+    if (!bar) return;
+
+    a11yBtn = document.createElement('button');
+    a11yBtn.id = '_a11y-toggle';
+    a11yBtn.className = 'nav-btn no-hover';
+    a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
+    a11yBtn.setAttribute('type', 'button');
+    a11yBtn.style.cssText = 'font-size:0.8rem;letter-spacing:-0.03em;font-family:inherit;line-height:1';
+    a11yBtn.textContent = 'Aa';
+    a11yBtn.addEventListener('click', function() { setA11y(!isA11y()); });
+    updateA11yBtn();
+
+    /* Hydejack injects #_dark-mode via <script type="module"> (deferred),
+       so it may not exist yet at DOMContentLoaded. Place Aa immediately after
+       it once it appears; fall back to appending and watching. */
+    var dm = document.getElementById('_dark-mode');
+    if (dm) {
+      dm.parentNode.insertBefore(a11yBtn, dm.nextSibling);
+    } else {
+      bar.appendChild(a11yBtn);
+      var mo = new MutationObserver(function(mutations, obs) {
+        var dmNew = document.getElementById('_dark-mode');
+        if (dmNew) {
+          dmNew.parentNode.insertBefore(a11yBtn, dmNew.nextSibling);
+          obs.disconnect();
+        }
+      });
+      mo.observe(bar, { childList: true });
+    }
+  }
+
+  /* ----------------------------------------------------------------- */
   /* Event delegation — clicks & hovers for sound                      */
   /* ----------------------------------------------------------------- */
   document.addEventListener('click', function(e) {
@@ -206,7 +394,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     if (e.target.closest('.sidebar-nav a, .sidebar-social a')) SFX.hover();
   });
 
-  /* Page transitions (Hydejack SPA) */
   var pushState = document.getElementById('_pushState');
   if (pushState) {
     pushState.addEventListener('hy-push-state-after', function() {
@@ -243,14 +430,12 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     if (!SFX.ctx) SFX.init();
     SFX.starPower();
 
-    /* Shake on content area only — sidebar stays still */
     var content = document.querySelector('.content');
     if (content) {
       content.classList.add('superstar-shake');
       setTimeout(function() { content.classList.remove('superstar-shake'); }, 500);
     }
 
-    /* Delay rainbow so first stutter pulse lands on clean screen */
     setTimeout(function() { document.body.classList.add('superstar-mode'); }, 200);
 
     spawnStars(25);
@@ -272,7 +457,7 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     for (var i = 0; i < count; i++) {
       var star = document.createElement('div');
       star.className = 'superstar-particle';
-      star.textContent = '\u2605';
+      star.textContent = '★';
       star.style.left = Math.random() * 100 + 'vw';
       star.style.top = Math.random() * 100 + 'vh';
       star.style.animationDelay = (Math.random() * 0.4) + 's';
@@ -289,13 +474,26 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
   /* ----------------------------------------------------------------- */
   function initSidebar() {
     {% if site.data.status %}injectStatus();{% endif %}
+    injectThemeWidget();
     injectSoundToggle();
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSidebar);
-  } else {
+  function initAll() {
     initSidebar();
+    injectA11yToggle();
+  }
+
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      a11yBtn = null; toggleBtn = null;
+      initAll();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
   }
 })();
 </script>
