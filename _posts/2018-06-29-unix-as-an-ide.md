@@ -4,12 +4,10 @@ title: "Unix as an IDE"
 date: 2018-06-29 00:00:00 +0000
 description: "Newbies and experienced professional programmers alike appreciate the concept of the IDE, or integrated development environment. Having the primary tools…"
 tags:
-  - wuubi
   - cli
   - code
   - ide
 categories:
-  - wuubi
   - operating-systems
   - programming
   - technology

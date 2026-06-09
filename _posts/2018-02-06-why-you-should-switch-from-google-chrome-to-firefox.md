@@ -3,12 +3,10 @@ layout: post
 title: "Why You Should Switch From Google Chrome to Firefox"
 date: 2018-02-06 00:00:00 +0000
 tags:
-  - wuubi
   - google
   - mozilla
   - web-browser
 categories:
-  - wuubi
   - technology
   - web-browsers
 ---

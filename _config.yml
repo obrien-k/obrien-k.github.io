@@ -43,12 +43,12 @@ author:
 menu:
   - title:             About
     url:               /about/
+  - title:             Archive
+    url:               /archive/
   - title:             Resume
     url:               /resume/
   - title:             Vanity House
     url:               /vanity-house/
-  - title:             Archive
-    url:               /archive/
   - title:             Listen to this Album
     url:               /listen-to-this-album/
   - title:             Leadership Philosophy
