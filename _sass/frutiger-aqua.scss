@@ -47,6 +47,16 @@ body {
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
 
+  // Custom-page palette (Leadership Philosophy, Vanity House, Listen to this
+  // Album). Channel triplets so alpha can vary at use sites. Light flips these to
+  // the Aero aqua family so those pages match the Resume skin; vw-dark reproduces
+  // the original hand-picked magenta/purple palette exactly (no dark regression).
+  // See WS-A in docs/architecture.md.
+  --cp-accent-rgb:  var(--accent-rgb);    // aqua
+  --cp-accent2-rgb: var(--accent2-rgb);   // sky
+  --cp-muted-rgb:   91 107 115;           // slate, readable on the pale Aero bg
+  --cp-line-rgb:    120 190 220;          // soft aqua rim (matches --panel-border)
+
   // Aero sky-glass surface tokens
   --panel-bg:     rgba(231, 245, 251, 0.7);    // faint aqua glass
   --panel-border: rgba(120, 190, 220, 0.55);   // soft aqua rim (visible on white)
@@ -96,6 +106,12 @@ main.content {
   --accent-color:           rgb(var(--accent-rgb));
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+
+  // Custom-page palette — preserve the original hand-picked vaporwave values.
+  --cp-accent-rgb:  255 90 217;   // #ff5ad9 pink
+  --cp-accent2-rgb: 160 113 255;  // #a071ff purple
+  --cp-muted-rgb:   154 147 179;  // #9a93b3
+  --cp-line-rgb:    71 58 99;     // #473a63
 
   --panel-bg:     rgba(255, 255, 255, 0.06);
   --panel-border: rgba(255, 255, 255, 0.1);
