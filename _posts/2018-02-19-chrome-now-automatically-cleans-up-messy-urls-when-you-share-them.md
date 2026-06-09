@@ -8,6 +8,7 @@ tags:
   - google-chrome
   - web-browser
 categories:
+  - wuubi
   - google
 ---
 

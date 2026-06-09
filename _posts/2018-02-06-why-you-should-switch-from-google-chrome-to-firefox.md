@@ -8,6 +8,7 @@ tags:
   - mozilla
   - web-browser
 categories:
+  - wuubi
   - technology
   - web-browsers
 ---

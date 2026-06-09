@@ -8,6 +8,7 @@ tags:
   - artificial-intelligence
   - hardware
 categories:
+  - wuubi
   - artificial-intelligence
 ---
 

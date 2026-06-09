@@ -7,7 +7,7 @@ tags:
   - wuubi
   - puzzles
 categories:
-  - puzzles
+  - wuubi
 ---
 
 World’s Smallest 1000 piece puzzle

@@ -12,6 +12,7 @@ tags:
 categories:
   - programming
   - technology
+  - wuubi
 ---
 
 > Even though MP3 is probably the single most well known file format and codec on Earth, it’s not very well understood by most programmers – for many encoders/decoders is in the class of software “other people” write, like standard libraries or operating system kernels. This article will attempt to demystify the decoder, with short top-down primers on signal processing and information theory when necessary. Additionally, a small but not full-featured decoder will be written (in Haskell), suited to play around with.

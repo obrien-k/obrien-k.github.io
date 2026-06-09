@@ -9,6 +9,7 @@ tags:
   - code
   - ide
 categories:
+  - wuubi
   - operating-systems
   - programming
   - technology
