@@ -106,7 +106,7 @@ skills:
 projects:
   - name: "Stellar"
     url: "https://github.com/orphic-inc/stellar-api"
-    description: "Invite-only community & content platform: a type-safe Express/Prisma (PostgreSQL, Zod) API with auto-generated OpenAPI docs and a community reputation score, paired with a React/TypeScript front-end."
+    description: "Invite-only community & content platform: a type-safe Express/Prisma (PostgreSQL, Zod) API with auto-generated OpenAPI docs, a Tailwind-based stylesheet plugin system supporting authorship, and a community reputation score, paired with a React/TypeScript front-end."
     date: "2022 – Present"
   - name: "marstronaut-federation"
     url: "https://github.com/obrien-k/marstronaut-federation"

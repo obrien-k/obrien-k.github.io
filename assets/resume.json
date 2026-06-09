@@ -205,6 +205,12 @@
   ],
   "projects": [
     {
+      "url": "https://github.com/orphic-inc/stellar-api",
+      "title": "Stellar",
+      "description": "Invite-only community & content platform: a type-safe Express/Prisma (PostgreSQL, Zod) API with auto-generated OpenAPI docs, a Tailwind-based stylesheet plugin system supporting authorship, and a community reputation score, paired with a React/TypeScript front-end.",
+      "year": "2022 – Present"
+    },
+    {
       "url": "https://github.com/obrien-k/marstronaut-federation",
       "title": "marstronaut-federation",
       "description": "Built a GraphQL-backend for XKCD and NASA APIs to display Mars Rover photos and XKCD comics on a React front-end.",
