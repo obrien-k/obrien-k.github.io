@@ -1,9 +1,9 @@
 /* =============================================================================
    ANOREX — Skeuomorphic wood / parchment skin
-   Ported from Gazelle/WhatCD Anorex theme palette.
+   Ported from the Gazelle open-source project (community stylesheet).
    Loaded as a CSS-injection override via the WS-E skin registry.
 
-   Palette (from docs/architecture.md):
+   Palette:
      sidebar light  #7a4f16   sidebar dark  #2a1800
      link           #6B481E   hover         #A56A22
      panel          #DCB881   border        #65430F
@@ -143,4 +143,85 @@ body.dark-mode .sidebar-bg.sidebar-overlay::after {
 .related-posts time {
   color: #c1965c !important;
   opacity: 1 !important;
+}
+
+/* --- CSS custom properties: panel / chip / layout tokens ---
+   Same specificity as frutiger-aqua.scss declarations but later
+   source order, so these win without !important.
+   ----------------------------------------------------------------- */
+body,
+body.dark-mode {
+  --panel-bg:     rgba(220, 184, 129, 0.88);
+  --panel-border: rgba(101, 67, 15, 0.5);
+  --panel-radius: 0;
+  --chip-radius:  0;
+  --panel-blur:   none;
+  --panel-shadow: 1px 1px 4px rgba(60, 30, 0, 0.20);
+  --gloss-edge:   none;
+  --page-bg:      none;
+}
+
+/* --- Body text color --- */
+body {
+  color: #3e290a;
+}
+
+body.dark-mode {
+  color: #dcb881;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    color: #dcb881;
+  }
+}
+
+/* --- Content area background — warm parchment --- */
+main.content,
+.content {
+  background-color: #f5e8cc;
+  background-image: none !important;
+}
+
+body.dark-mode main.content,
+body.dark-mode .content {
+  background-color: #2a1a08;
+  background-image: none !important;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) main.content,
+  body:not(.light-mode) .content {
+    background-color: #2a1a08;
+    background-image: none !important;
+  }
+}
+
+/* --- Link colors --- */
+.content a:not(.btn):not(.no-mark) {
+  color: #6b481e;
+}
+
+.content a:not(.btn):not(.no-mark):hover,
+.content a:not(.btn):not(.no-mark):focus {
+  color: #a56a22;
+}
+
+body.dark-mode .content a:not(.btn):not(.no-mark) {
+  color: #c1965c;
+}
+
+body.dark-mode .content a:not(.btn):not(.no-mark):hover,
+body.dark-mode .content a:not(.btn):not(.no-mark):focus {
+  color: #dcb881;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark) {
+    color: #c1965c;
+  }
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark):hover,
+  body:not(.light-mode) .content a:not(.btn):not(.no-mark):focus {
+    color: #dcb881;
+  }
 }

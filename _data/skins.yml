@@ -17,7 +17,7 @@
 - id: anorex
   label: Anorex
   short: AX
-  desc: "Skeuomorphic wood / parchment — ported from Gazelle/WhatCD (WIP)"
+  desc: "Skeuomorphic wood / parchment — ported from the Gazelle open-source project"
   css: "/assets/css/skins/anorex.css"
   dark:
   color: "#c1965c"

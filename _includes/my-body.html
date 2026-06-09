@@ -121,7 +121,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
   /* ----------------------------------------------------------------- */
   var SKIN_KEY = 'skin';
   var skins    = window.__skins || [];
-  var skinBtn;
   var bodyObserver;
 
   function getSkin(id) {
@@ -176,7 +175,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
       }
       localStorage.removeItem(SKIN_KEY);
     }
-    updateSkinBtn();
     updateThemeChips();
   }
 
@@ -187,44 +185,6 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
       if (skins[i].id === cur) { idx = i; break; }
     }
     applySkin(skins[(idx + 1) % skins.length].id);
-  }
-
-  /* ---- navbar skin button (compact cycle, visible when sidebar hidden) */
-  function updateSkinBtn() {
-    if (!skinBtn) return;
-    var id   = currentSkinId();
-    var skin = getSkin(id);
-    var sh   = skin ? skin.short : id.slice(0, 2).toUpperCase();
-    var lbl  = skin ? skin.label : id;
-    skinBtn.textContent = sh;
-    skinBtn.setAttribute('aria-label', 'Skin: ' + lbl + ' — click to cycle');
-    skinBtn.title = lbl + (skin && skin.desc ? ' — ' + skin.desc : '');
-    skinBtn.style.opacity = (skin && skin.css) ? '1' : '0.55';
-    skinBtn.style.color = (skin && skin.color) ? skin.color : '';
-  }
-
-  function injectSkinBtn() {
-    if (document.getElementById('_skin-toggle')) return;
-    if (skins.length < 2) return;
-    var bar = document.querySelector('.nav-btn-bar');
-    if (!bar) return;
-
-    skinBtn = document.createElement('button');
-    skinBtn.id        = '_skin-toggle';
-    skinBtn.className = 'nav-btn no-hover';
-    skinBtn.setAttribute('type', 'button');
-    skinBtn.style.cssText = 'font-size:0.72rem;letter-spacing:-0.02em;font-family:inherit;line-height:1';
-    skinBtn.addEventListener('click', cycleNext);
-    bar.appendChild(skinBtn);
-    updateSkinBtn();
-
-    if (window.MutationObserver && !bodyObserver) {
-      bodyObserver = new MutationObserver(function() {
-        updateSkinBtn();
-        updateThemeChips();
-      });
-      bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-    }
   }
 
   /* ----------------------------------------------------------------- */
@@ -313,6 +273,11 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 
     social.parentNode.insertBefore(widget, social);
     updateThemeChips();
+
+    if (window.MutationObserver && !bodyObserver) {
+      bodyObserver = new MutationObserver(function() { updateThemeChips(); });
+      bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
   }
 
   /* ----------------------------------------------------------------- */
@@ -397,8 +362,25 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
     a11yBtn.style.cssText = 'font-size:0.8rem;letter-spacing:-0.03em;font-family:inherit;line-height:1';
     a11yBtn.textContent = 'Aa';
     a11yBtn.addEventListener('click', function() { setA11y(!isA11y()); });
-    bar.appendChild(a11yBtn);
     updateA11yBtn();
+
+    /* Hydejack injects #_dark-mode via <script type="module"> (deferred),
+       so it may not exist yet at DOMContentLoaded. Place Aa immediately after
+       it once it appears; fall back to appending and watching. */
+    var dm = document.getElementById('_dark-mode');
+    if (dm) {
+      dm.parentNode.insertBefore(a11yBtn, dm.nextSibling);
+    } else {
+      bar.appendChild(a11yBtn);
+      var mo = new MutationObserver(function(mutations, obs) {
+        var dmNew = document.getElementById('_dark-mode');
+        if (dmNew) {
+          dmNew.parentNode.insertBefore(a11yBtn, dmNew.nextSibling);
+          obs.disconnect();
+        }
+      });
+      mo.observe(bar, { childList: true });
+    }
   }
 
   /* ----------------------------------------------------------------- */
@@ -498,13 +480,12 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 
   function initAll() {
     initSidebar();
-    injectSkinBtn();
     injectA11yToggle();
   }
 
   if (pushState) {
     pushState.addEventListener('hy-push-state-after', function() {
-      skinBtn = null; a11yBtn = null; toggleBtn = null;
+      a11yBtn = null; toggleBtn = null;
       initAll();
     });
   }

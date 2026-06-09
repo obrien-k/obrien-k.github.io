@@ -1,6 +1,6 @@
 # Architecture Overview & v0.1.0 Plan
 
-Status: **planning** — captured 2026-06-09, pre-v0.1.0. No implementation yet.
+Status: **in progress** — updated 2026-06-09. WS-E implemented; WS-A/B/C/D pending.
 Scope: the custom layer over the **free** `jekyll-theme-hydejack` v9.2.1 gem.
 
 This document is the think-through that was deferred through the v0.0.x series. It
@@ -143,7 +143,7 @@ not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fi
     export PNG/SVG, embed. Only path that uses the actual package.
   - (c) `ghost-2-jekyll` — not applicable (it's an importer, not a renderer).
 
-### WS-E — Skin registry + Anorex (InjectStylesheet plugin)
+### WS-E — Skin registry + Anorex (InjectStylesheet plugin) ✓ implemented
 
 The Jekyll site doubles as a **scaffold/testbed** for re-skinning downstream
 projects (e.g. a Stellar instance) via an ejectable CSS override pattern,
@@ -178,17 +178,22 @@ swapped by `StylesheetInjector.tsx`.
 
 | id | Label | Source |
 |---|---|---|
-| `default` | Frutiger Aqua | built-in SCSS (`frutiger-aqua.scss`) |
-| `anorex` | Anorex | `assets/css/skins/anorex.css` — ported from Gazelle/WhatCD |
+| `vaporwave` | VaporWave | built-in SCSS (`frutiger-aqua.scss`) — dark mode |
+| `frutiger-aqua` | Frutiger Aqua | built-in SCSS (`frutiger-aqua.scss`) — light mode |
+| `anorex` | Anorex | `assets/css/skins/anorex.css` — ported from Gazelle open-source project |
 
-**Anorex palette (Gazelle source → CSS token mapping):**
+**Anorex palette (Gazelle community stylesheet → CSS token mapping):**
 - Light: body text `#3E290A`, link `#6B481E`, hover `#A56A22`, panel `#DCB881`,
   border `#65430F`. Page bg: warm parchment gradient.
 - Dark: inverts to mahogany — dark brown panels, golden-tan accents (`#C1965C`).
 - Sidebar: deep wood brown (`#7a4f16` light / `#2a1800` dark), no image.
 
+**Implemented:** `_data/skins.yml` registry, `my-head.html` early-restore script,
+sidebar THEMES widget in `my-body.html`, `assets/css/skins/anorex.css` full palette.
+Navbar order: hamburger → brightness → Aa (MutationObserver-based placement).
+
 **Future:** evaluate publishing as an npm package / Ruby gem / pip package for
-forkable CDN delivery (recurring task scheduled — see task #14).
+forkable CDN delivery (recurring task — see chores.md).
 
 ---
 
