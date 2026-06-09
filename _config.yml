@@ -13,7 +13,7 @@ url:                   https://obrien-k.github.io
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 KyleOBrien.me
+title:                 KyleOBrien.me#Kai
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -45,14 +45,16 @@ menu:
     url:               /about/
   - title:             Resume
     url:               /resume/
-  - title:             Constellations
-    url:               /constellations/
-  - title:             Leadership Philosophy
-    url:               /leadership-philosophy/
   - title:             Vanity House
     url:               /vanity-house/
+  - title:             Archive
+    url:               /archive/
   - title:             Listen to this Album
     url:               /listen-to-this-album/
+  - title:             Leadership Philosophy
+    url:               /leadership-philosophy/
+  - title:             Constellations
+    url:               /constellations/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
