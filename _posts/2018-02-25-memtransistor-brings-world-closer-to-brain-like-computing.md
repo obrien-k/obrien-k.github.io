@@ -4,11 +4,9 @@ title: "‘Memtransistor’ Brings World Closer To Brain-Like Computing"
 date: 2018-02-25 00:00:00 +0000
 description: "Lead researcher Mark C. Hersam clarified the brain-like efficacy of the memtransistor: “…in the brain, we don’t usually have one neuron connected to only one…"
 tags:
-  - wuubi
   - artificial-intelligence
   - hardware
 categories:
-  - wuubi
   - artificial-intelligence
 ---
 
