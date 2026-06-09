@@ -8,12 +8,12 @@ hide_description: true
 ---
 
 <style>
-.lp{--pink:#ff5ad9;--purple:#a071ff;--dim:#9a93b3;--line:#473a63}
+.lp{--accent:rgb(var(--cp-accent-rgb));--accent2:rgb(var(--cp-accent2-rgb));--line:rgb(var(--cp-line-rgb))}
 .lp .pillar{border:1px solid var(--line);padding:.75rem .9rem;margin:0 0 .8rem}
-.lp .pillar h3{margin:0 0 .4rem;font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--pink);font-weight:700;display:flex;gap:.65rem;align-items:baseline}
-.lp .pillar h3 .n{color:var(--purple);font-size:.72rem;font-weight:700}
+.lp .pillar h3{margin:0 0 .4rem;font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700;display:flex;gap:.65rem;align-items:baseline}
+.lp .pillar h3 .n{color:var(--accent2);font-size:.72rem;font-weight:700}
 .lp .pillar p{margin:0}
-.lp a:focus-visible,.lp :focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.lp a:focus-visible,.lp :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 
 <div class="lp">

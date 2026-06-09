@@ -7,29 +7,29 @@ hide_description: true
 ---
 
 <style>
-.collection{--pink:#ff5ad9;--purple:#a071ff;--dim:#9a93b3;--line:#473a63;--fill:#a071ff}
-.collection .lede{color:var(--dim);font-style:italic;margin:.2rem 0 1.3rem}
+.collection{--accent:rgb(var(--cp-accent-rgb));--accent2:rgb(var(--cp-accent2-rgb));--muted:rgb(var(--cp-muted-rgb));--line:rgb(var(--cp-line-rgb));--fill:rgb(var(--cp-accent2-rgb))}
+.collection .lede{color:var(--muted);font-style:italic;margin:.2rem 0 1.3rem}
 .collection .reach,.collection th,.collection td.num,.collection .stat b,.collection .panel h3,.collection .count{font-family:ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace}
 .collection .summary{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.3rem;padding:0;list-style:none}
-.collection .stat{border:1px solid var(--line);padding:.28rem .6rem;font-size:.78rem;color:var(--dim)}
-.collection .stat b{color:var(--pink);font-weight:700;margin-left:.4rem}
+.collection .stat{border:1px solid var(--line);padding:.28rem .6rem;font-size:.78rem;color:var(--muted)}
+.collection .stat b{color:var(--accent);font-weight:700;margin-left:.4rem}
 .collection .panel{border:1px solid var(--line);padding:.75rem .85rem;margin:0 0 1.2rem}
-.collection .panel h3{margin:0 0 .55rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);font-weight:700}
+.collection .panel h3{margin:0 0 .55rem;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700}
 .collection .bars{display:grid;grid-template-columns:auto 1fr auto;gap:.3rem .7rem;align-items:center;font-size:.8rem}
-.collection .bars .k{color:var(--dim)}
+.collection .bars .k{color:var(--muted)}
 .collection .track{height:9px;border:1px solid var(--line)}
 .collection .fill{height:100%;background:repeating-linear-gradient(90deg,var(--fill) 0 5px,transparent 5px 7px)}
-.collection .count{color:var(--dim);text-align:right;min-width:3ch}
-.collection .reach{color:var(--pink);letter-spacing:.08em;white-space:nowrap}
+.collection .count{color:var(--muted);text-align:right;min-width:3ch}
+.collection .reach{color:var(--accent);letter-spacing:.08em;white-space:nowrap}
 .collection .reach .o{color:var(--line)}
 .collection table{width:100%;border-collapse:collapse;font-size:.85rem;border:1px solid var(--line)}
-.collection thead th{text-align:left;padding:.42rem .6rem;border-bottom:2px solid var(--pink);font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--purple)}
-.collection tbody td{padding:.32rem .6rem;border-top:1px solid rgba(71,58,99,.5)}
-.collection tbody td.num{color:var(--dim)}
-.collection tbody tr:nth-child(2n){background:rgba(160,113,255,.05)}
-.collection tbody tr:hover{background:rgba(255,90,217,.08)}
-.collection .loss{color:var(--pink);font-weight:700}
-.collection a:focus-visible,.collection :focus-visible{outline:2px solid var(--pink);outline-offset:2px}
+.collection thead th{text-align:left;padding:.42rem .6rem;border-bottom:2px solid var(--accent);font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--accent2)}
+.collection tbody td{padding:.32rem .6rem;border-top:1px solid rgb(var(--cp-line-rgb) / .5)}
+.collection tbody td.num{color:var(--muted)}
+.collection tbody tr:nth-child(2n){background:rgb(var(--cp-accent2-rgb) / .05)}
+.collection tbody tr:hover{background:rgb(var(--cp-accent-rgb) / .08)}
+.collection .loss{color:var(--accent);font-weight:700}
+.collection a:focus-visible,.collection :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 
 <div class="collection" markdown="1">
