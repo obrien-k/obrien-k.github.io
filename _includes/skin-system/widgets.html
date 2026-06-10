@@ -1,0 +1,443 @@
+<!-- ===================================================================
+     Interactivity: SFX · Status · Skin system · THEMES widget ·
+                    A11y toggle · SFX toggle · Konami Easter egg
+     =================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  /* ----------------------------------------------------------------- */
+  /* Sound system — Web Audio API, no files needed                     */
+  /* ----------------------------------------------------------------- */
+  var SFX = {
+    ctx: null,
+    enabled: localStorage.getItem('sfx') !== 'off',
+
+    init: function() {
+      if (!this.ctx) {
+        this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (this.ctx.state === 'suspended') this.ctx.resume();
+    },
+
+    play: function(freq, dur, type, vol) {
+      if (!this.enabled) return;
+      if (!this.ctx) this.init();
+      var t = this.ctx.currentTime;
+      var osc = this.ctx.createOscillator();
+      var gain = this.ctx.createGain();
+      osc.type = type || 'square';
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(vol || 0.06, t);
+      gain.gain.exponentialRampToValueAtTime(0.001, t + dur);
+      osc.connect(gain);
+      gain.connect(this.ctx.destination);
+      osc.start(t);
+      osc.stop(t + dur);
+    },
+
+    playForce: function(freq, dur, type, vol) {
+      var was = this.enabled;
+      this.enabled = true;
+      this.play(freq, dur, type, vol);
+      this.enabled = was;
+    },
+
+    click:    function() { this.play(800, 0.06, 'square', 0.05); },
+    hover:    function() { this.play(600, 0.03, 'sine',   0.025); },
+    navigate: function() {
+      var self = this;
+      [523, 659, 784].forEach(function(f, i) {
+        setTimeout(function() { self.play(f, 0.08, 'sine', 0.04); }, i * 60);
+      });
+    },
+
+    starPower: function() {
+      var self = this;
+      [523, 659, 784, 1047, 1319, 1568].forEach(function(f, i) {
+        setTimeout(function() { self.play(f, 0.1, 'square', 0.07); }, i * 70);
+      });
+    }
+  };
+
+  /* ----------------------------------------------------------------- */
+  /* Skin system (WS-E)                                                */
+  /* ----------------------------------------------------------------- */
+  var SKIN_KEY = 'skin';
+  var skins    = window.__skins || [];
+  var bodyObserver;
+
+  function getSkin(id) {
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === id) return skins[i];
+    }
+    return null;
+  }
+
+  /* CSS-injection skins (own <link>) win over built-ins (body class). */
+  function currentSkinId() {
+    var link = document.getElementById('hj-ext-skin');
+    if (link && link.href) {
+      for (var i = 0; i < skins.length; i++) {
+        if (skins[i].css && link.href.slice(-skins[i].css.length) === skins[i].css) {
+          return skins[i].id;
+        }
+      }
+    }
+    return document.body.classList.contains('dark-mode') ? 'vaporwave' : 'frutiger-aqua';
+  }
+
+  function getOrCreateLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (!el) {
+      el = document.createElement('link');
+      el.id = 'hj-ext-skin'; el.rel = 'stylesheet';
+      document.head.appendChild(el);
+    }
+    return el;
+  }
+
+  function removeLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (el) el.parentNode.removeChild(el);
+  }
+
+  function applySkin(id) {
+    var skin = getSkin(id);
+    if (!skin) return;
+    removeLink();
+    if (skin.css) {
+      getOrCreateLink().href = skin.css;
+      localStorage.setItem(SKIN_KEY, id);
+    } else {
+      if (skin.dark) {
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+      }
+      localStorage.removeItem(SKIN_KEY);
+    }
+    updateThemeChips();
+  }
+
+  function cycleNext() {
+    var cur = currentSkinId();
+    var idx = 0;
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === cur) { idx = i; break; }
+    }
+    applySkin(skins[(idx + 1) % skins.length].id);
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* Status widget — inject into sidebar                               */
+  /* ----------------------------------------------------------------- */
+  {% if site.data.status %}
+  function injectStatus() {
+    if (document.querySelector('.sidebar-status')) return;
+    var sidebar = document.querySelector('.sidebar-sticky');
+    if (!sidebar) return;
+    var social = sidebar.querySelector('.sidebar-social');
+    if (!social) return;
+
+    var data = {{ site.data.status | jsonify }};
+    var html = '<div class="status-label">STATUS</div>';
+
+    if (data.mood) {
+      html += '<div class="status-item"><span class="status-key">ʕ⁎̯͡⁎ʔ༄</span>'
+            + '<span class="status-val">' + data.mood + '</span></div>';
+    }
+    if (data.doing) {
+      var doingText = data.doing.text || data.doing;
+      var doingVal = data.doing.url
+        ? '<a href="' + data.doing.url + '">' + doingText + '</a>'
+        : doingText;
+      html += '<div class="status-item"><span class="status-key">doing:</span>'
+            + '<span class="status-val">' + doingVal + '</span></div>';
+    }
+    if (data.music && data.music.artist) {
+      html += '<div class="status-item"><span class="status-key">&#9835;</span>'
+            + '<span class="status-val">' + data.music.track
+            + ' &mdash; ' + data.music.artist + '</span></div>';
+    }
+
+    var widget = document.createElement('div');
+    widget.className = 'sidebar-status';
+    widget.innerHTML = html;
+    social.parentNode.insertBefore(widget, social);
+  }
+  {% endif %}
+
+  /* ----------------------------------------------------------------- */
+  /* THEMES widget — sidebar skin selector (WS-E)                      */
+  /* ----------------------------------------------------------------- */
+  function updateThemeChips() {
+    var widget = document.querySelector('.sidebar-themes');
+    if (!widget) return;
+    var cur = currentSkinId();
+    var chips = widget.querySelectorAll('.theme-chip');
+    for (var i = 0; i < chips.length; i++) {
+      chips[i].classList.toggle('is-active', chips[i].getAttribute('data-skin') === cur);
+    }
+  }
+
+  function injectThemeWidget() {
+    if (document.querySelector('.sidebar-themes')) return;
+    if (skins.length < 2) return;
+    var sidebar = document.querySelector('.sidebar-sticky');
+    if (!sidebar) return;
+    var social = sidebar.querySelector('.sidebar-social');
+    if (!social) return;
+
+    var html = '<div class="status-label">THEMES</div><div class="theme-chips">';
+    for (var i = 0; i < skins.length; i++) {
+      var sk = skins[i];
+      var col = sk.color || '#fff';
+      html += '<button class="theme-chip" data-skin="' + sk.id + '"'
+            + ' style="color:' + col + ';border-color:' + col + ';--chip-accent:' + col + '"'
+            + ' title="' + sk.label + (sk.desc ? ' — ' + sk.desc : '') + '"'
+            + ' aria-label="Switch to ' + sk.label + '">'
+            + sk.short
+            + '</button>';
+    }
+    html += '</div>';
+
+    var widget = document.createElement('div');
+    widget.className = 'sidebar-themes';
+    widget.innerHTML = html;
+
+    widget.addEventListener('click', function(e) {
+      var btn = e.target.closest ? e.target.closest('.theme-chip')
+              : (e.target.classList.contains('theme-chip') ? e.target : null);
+      if (!btn) return;
+      applySkin(btn.getAttribute('data-skin'));
+    });
+
+    social.parentNode.insertBefore(widget, social);
+    updateThemeChips();
+
+    if (window.MutationObserver && !bodyObserver) {
+      bodyObserver = new MutationObserver(function() { updateThemeChips(); });
+      bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* Sound toggle — sidebar footer                                     */
+  /* ----------------------------------------------------------------- */
+  var toggleBtn;
+
+  function injectSoundToggle() {
+    if (document.querySelector('.sidebar-sfx')) return;
+    var sidebar = document.querySelector('.sidebar-sticky');
+    if (!sidebar) return;
+    var social = sidebar.querySelector('.sidebar-social');
+    if (!social) return;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'sidebar-sfx';
+
+    toggleBtn = document.createElement('button');
+    toggleBtn.className = 'sfx-toggle';
+    toggleBtn.setAttribute('aria-label', 'Toggle sound effects');
+    toggleBtn.setAttribute('title', 'Toggle sound effects');
+    updateToggleState();
+
+    toggleBtn.addEventListener('click', function() {
+      if (!SFX.ctx) SFX.init();
+      SFX.enabled = !SFX.enabled;
+      localStorage.setItem('sfx', SFX.enabled ? 'on' : 'off');
+      SFX.playForce(800, 0.06, 'square', 0.05);
+      updateToggleState();
+    });
+
+    wrap.appendChild(toggleBtn);
+    social.parentNode.insertBefore(wrap, social.nextSibling);
+  }
+
+  function updateToggleState() {
+    if (!toggleBtn) return;
+    toggleBtn.setAttribute('data-sfx', SFX.enabled ? 'on' : 'off');
+    toggleBtn.innerHTML = SFX.enabled
+      ? '<svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/>'
+        + '<path d="M15.54 8.46a5 5 0 010 7.07"/>'
+        + '<path d="M19.07 4.93a10 10 0 010 14.14"/></svg>SFX'
+      : '<svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/>'
+        + '<line x1="23" y1="9" x2="17" y2="15"/>'
+        + '<line x1="17" y1="9" x2="23" y2="15"/></svg>SFX';
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* A11y toggle — navbar button (WS-B)                               */
+  /* ----------------------------------------------------------------- */
+  var a11yBtn;
+
+  function isA11y() {
+    return document.body.classList.contains('a11y-mode');
+  }
+
+  function setA11y(on) {
+    document.body.classList.toggle('a11y-mode', on);
+    localStorage.setItem('a11y', on ? 'on' : 'off');
+    updateA11yBtn();
+  }
+
+  function updateA11yBtn() {
+    if (!a11yBtn) return;
+    var on = isA11y();
+    a11yBtn.setAttribute('aria-pressed', String(on));
+    a11yBtn.title = on ? 'Disable a11y mode' : 'Enable a11y mode';
+    a11yBtn.style.opacity  = on ? '1' : '0.55';
+    a11yBtn.style.fontWeight = on ? '700' : '500';
+  }
+
+  function injectA11yToggle() {
+    if (document.getElementById('_a11y-toggle')) return;
+    var bar = document.querySelector('.nav-btn-bar');
+    if (!bar) return;
+
+    a11yBtn = document.createElement('button');
+    a11yBtn.id = '_a11y-toggle';
+    a11yBtn.className = 'nav-btn no-hover';
+    a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
+    a11yBtn.setAttribute('type', 'button');
+    a11yBtn.style.cssText = 'font-size:0.8rem;letter-spacing:-0.03em;font-family:inherit;line-height:1';
+    a11yBtn.textContent = 'Aa';
+    a11yBtn.addEventListener('click', function() { setA11y(!isA11y()); });
+    updateA11yBtn();
+
+    /* Hydejack injects #_dark-mode via <script type="module"> (deferred),
+       so it may not exist yet at DOMContentLoaded. Place Aa immediately after
+       it once it appears; fall back to appending and watching. */
+    var dm = document.getElementById('_dark-mode');
+    if (dm) {
+      dm.parentNode.insertBefore(a11yBtn, dm.nextSibling);
+    } else {
+      bar.appendChild(a11yBtn);
+      var mo = new MutationObserver(function(mutations, obs) {
+        var dmNew = document.getElementById('_dark-mode');
+        if (dmNew) {
+          dmNew.parentNode.insertBefore(a11yBtn, dmNew.nextSibling);
+          obs.disconnect();
+        }
+      });
+      mo.observe(bar, { childList: true });
+    }
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* Event delegation — clicks & hovers for sound                      */
+  /* ----------------------------------------------------------------- */
+  document.addEventListener('click', function(e) {
+    if (e.target.closest('a, button:not(.sfx-toggle)')) SFX.click();
+  }, true);
+
+  document.addEventListener('mouseover', function(e) {
+    if (e.target.closest('.sidebar-nav a, .sidebar-social a')) SFX.hover();
+  });
+
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      SFX.navigate();
+    });
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* Konami code — Superstar mode                                      */
+  /* ----------------------------------------------------------------- */
+  var KONAMI = [38,38,40,40,37,39,37,39,66,65];
+  var konamiPos = 0;
+  var superstarTimer = null;
+  var starInterval = null;
+
+  var overlay = document.createElement('div');
+  overlay.className = 'superstar-overlay';
+  document.body.appendChild(overlay);
+
+  document.addEventListener('keydown', function(e) {
+    if (e.keyCode === KONAMI[konamiPos]) {
+      konamiPos++;
+      if (konamiPos === KONAMI.length) {
+        konamiPos = 0;
+        activateSuperstar();
+      }
+    } else {
+      konamiPos = 0;
+    }
+  });
+
+  function activateSuperstar() {
+    if (superstarTimer) return;
+    if (!SFX.ctx) SFX.init();
+    SFX.starPower();
+
+    var content = document.querySelector('.content');
+    if (content) {
+      content.classList.add('superstar-shake');
+      setTimeout(function() { content.classList.remove('superstar-shake'); }, 500);
+    }
+
+    setTimeout(function() { document.body.classList.add('superstar-mode'); }, 200);
+
+    spawnStars(25);
+    starInterval = setInterval(function() { spawnStars(4); }, 500);
+
+    superstarTimer = setTimeout(function() {
+      document.body.classList.remove('superstar-mode');
+      clearInterval(starInterval);
+      starInterval = null;
+      superstarTimer = null;
+
+      [784, 659, 523].forEach(function(f, i) {
+        setTimeout(function() { SFX.play(f, 0.12, 'square', 0.05); }, i * 100);
+      });
+    }, 8000);
+  }
+
+  function spawnStars(count) {
+    for (var i = 0; i < count; i++) {
+      var star = document.createElement('div');
+      star.className = 'superstar-particle';
+      star.textContent = '★';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.animationDelay = (Math.random() * 0.4) + 's';
+      star.style.color = 'hsl(' + (Math.random() * 360) + ', 100%, 65%)';
+      document.body.appendChild(star);
+      (function(el) {
+        setTimeout(function() { if (el.parentNode) el.remove(); }, 2000);
+      })(star);
+    }
+  }
+
+  /* ----------------------------------------------------------------- */
+  /* Init                                                              */
+  /* ----------------------------------------------------------------- */
+  function initSidebar() {
+    {% if site.data.status %}injectStatus();{% endif %}
+    injectThemeWidget();
+    injectSoundToggle();
+  }
+
+  function initAll() {
+    initSidebar();
+    injectA11yToggle();
+  }
+
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      a11yBtn = null; toggleBtn = null;
+      initAll();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+})();
+</script>

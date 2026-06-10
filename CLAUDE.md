@@ -22,10 +22,12 @@ KaTeX math rendering requires a JavaScript runtime (Node.js) via the `duktape` /
 
 **Theme**: Hydejack (free) is installed as a gem — layouts, includes, and assets live in the gem, not in this repo. Note: the free `home` layout is just `{{ content }}` (no post list/pagination); the paginated post list is the `blog` layout. The front page (`index.html`) uses `layout: home`; the paginated article list lives at `/archive/` (`layout: archive`, a local override). Only override files are local:
 
-- `_includes/my-head.html` — empty (available for `<head>` injections)
-- `_includes/my-body.html` — Cloudflare email protection script that re-runs on Hydejack's SPA page transitions (`hy-push-state-after` event)
+- `_includes/my-head.html` — skip-link + an include of `skin-system/restore.html` (early skin/a11y restore before first paint)
+- `_includes/my-body.html` — Cloudflare email protection (re-runs on Hydejack's SPA `hy-push-state-after`) + the skin-system includes
+- `_includes/skin-system/` — the skin-system chrome JS, one partial per concern: `registry.html` (`window.__skins`), `widgets.html` (SFX/status/THEMES/sound/Konami IIFE), `switcher.html` (WS-E cycle button + skin-class restore), `a11y.html` (WS-B "Aa" toggle), `archive-filters.html`, `restore.html` (head early-restore). **Use `/* */` block comments only — never `//` line comments** (production `compress_html` collapses script newlines and a `//` would comment out the rest of the IIFE; see docs/architecture.md WS-F).
 - `_sass/my-inline.scss` — inline CSS overrides (currently empty/commented)
-- `_sass/my-style.scss` — custom styles: content font-size bump (1.1rem), tighter heading letter-spacing, post-title weight
+- `_sass/my-style.scss` — thin shim Hydejack hard-imports; `@import`s the skin system in cascade order: `skins/base` → `skins/frutiger-aqua` → `skins/vaporwave` → `skins/a11y`
+- `_sass/skins/` — the skin system (WS-F): `_base.scss` (neutral token-driven chrome + shared `aero-surface` mixin), `_frutiger-aqua.scss` (default skin: aqua tokens, `fa-dark`, sidebar photo, Vista-aurora), `_vaporwave.scss` (magenta overlay), `_a11y.scss` (cross-skin neutralization, imported LAST so it wins over VaporWave). Anorex is the separate runtime-injected `assets/css/skins/anorex.scss`. Skin registry + `default: true` default-skin flag live in `_data/skins.yml`.
 
 **Content structure**:
 - `_posts/` — blog posts (date-prefixed markdown, `layout: post`)

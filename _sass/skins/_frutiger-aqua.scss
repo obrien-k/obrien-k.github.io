@@ -1,0 +1,221 @@
+// =============================================================================
+// Frutiger Aqua skin overlay
+// =============================================================================
+//
+// The default skin: "32-bit" Vista-Aero glass. Light is the unscoped default
+// (this file's `body {}` block sets the aqua tokens every other skin overrides);
+// Frutiger-Aqua also has its OWN aqua dark mode (`@mixin fa-dark`, distinct from
+// the magenta VaporWave skin). Signature aesthetics live here: the aqua accent
+// tokens, the `fa-sidebar-bg.jpg` drawer photo, and the Vista-aurora button /
+// constellation backgrounds (the structural layout of those lives in _base).
+//
+// Mode mechanism (Hydejack 9.2): light is the unscoped default (`body`); dark is
+// `body.dark-mode` (explicit toggle) AND `@media (prefers-color-scheme: dark)`
+// (OS preference, no class on body). We mirror BOTH so OS-dark visitors who never
+// touch the toggle still get FA-dark — see `@mixin fa-dark` applied in two places.
+//
+// Channel vars hold space-separated RGB so we can vary alpha at each use site:
+//   rgb(var(--accent-rgb) / 0.4)
+
+// -----------------------------------------------------------------------------
+// Per-mode palette — FA defaults (the unscoped, light skin)
+// -----------------------------------------------------------------------------
+//
+// Light / Aero is the default skin. Accent = aqua, secondary = sky. Surfaces
+// are bright "sky glass": a faint aqua-tinted translucent fill, a soft aqua
+// rim, a wet white specular top edge (--gloss-edge), gentle depth, rounded
+// corners, and a backdrop blur. The fill is tinted (not pure white) and carries
+// a drop shadow so panels still read against Hydejack's white light background;
+// the blur only bites once a tinted/bokeh page background sits behind them.
+// We also override Hydejack's own --accent-color (set on `html` from
+// site.accent_color) so theme links/outlines/buttons flip with the skin.
+body {
+  --accent-rgb:  0 153 204;    // Aqua  (#0099cc)
+  --accent2-rgb: 126 200 227;  // Sky   (#7ec8e3)
+
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+
+  // Named neutral — Steel (#888B8D). A near-neutral grey used for muted text,
+  // secondary UI, and as the a11y accent on dark backgrounds. Reused by
+  // body.a11y-mode + body.dark-mode.a11y-mode in _a11y.scss.
+  --steel-rgb: 136 139 141;
+
+  // Custom-page palette (Leadership Philosophy, Vanity House, Listen to this
+  // Album). Channel triplets so alpha can vary at use sites. Light flips these to
+  // the Aero aqua family so those pages match the Resume skin; vw-dark reproduces
+  // the original hand-picked magenta/purple palette exactly (no dark regression).
+  // See WS-A in docs/architecture.md.
+  // FA's signature aqua (#0099cc) is only ~3.5:1 on the pale Aero pane — too light
+  // for body-size text on the vaporwave-styled pages (.collection / .lp /
+  // .constellation / .resume). Use a DEEPER teal/blue for the custom-page accents
+  // so they clear AA, while keeping the aqua family. FA-dark (fa-dark), VaporWave
+  // (vw-dark), Anorex (anorex.scss), and a11y all set their OWN --cp-* elsewhere,
+  // so this is the FA-LIGHT value only.
+  --cp-accent-rgb:  0 105 134;            // #006986 deep teal — ~5:1 on the pane ✓
+  --cp-accent2-rgb: 45 95 140;            // #2d5f8c deep sky — readable secondary ✓
+  --cp-muted-rgb:   var(--steel-rgb);     // Steel — neutral grey (was aqua-slate 91 107 115)
+  --cp-line-rgb:    120 190 220;          // soft aqua rim (matches --panel-border)
+
+  // Aero sky-glass surface tokens
+  --panel-bg:     rgba(231, 245, 251, 0.7);    // faint aqua glass
+  --panel-border: rgba(120, 190, 220, 0.55);   // soft aqua rim (visible on white)
+  --panel-radius: 0.6rem;                       // larger panels (future cards)
+  --chip-radius:  0.45rem;                       // buttons, chips, code
+  --panel-blur:   saturate(1.5) blur(8px);
+  --panel-shadow: 0 2px 6px rgba(31, 72, 92, 0.12);
+  --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.95);  // wet top highlight
+
+  // Soft Vista sky-glass page background — a TILEABLE Aero pattern (repeating
+  // silk-light ribbons over a sweep) rather than one cover sweep, so it reads as
+  // a complex-but-repeatable Aero surface. Applied to main.content (in _base);
+  // set to `none` in dark. Palette retargeted off the Vista "Wow" wallpaper's
+  // lower band — teal → dark blue, no green. The pane stays PALE (dark text rides
+  // on it), so this is the high-key echo of that palette; the saturated
+  // teal→dark-blue version lives on the sidebar. Per-layer background-size/repeat
+  // are set on main.content so the ribbons tile while the base sweep covers.
+  --page-bg:
+    // repeating diagonal silk-light ribbons (Aero "energy", tiles by period)
+    repeating-linear-gradient(122deg, rgba(255, 255, 255, 0.30) 0px, rgba(255, 255, 255, 0.30) 2px, transparent 2px, transparent 30px),
+    repeating-linear-gradient(64deg,  rgba(176, 224, 240, 0.22) 0px, rgba(176, 224, 240, 0.22) 3px, transparent 3px, transparent 44px),
+    // pale whisper-green → ice → sky-blue base sweep (faint green for cohesion
+    // with the sidebar; stays high-key so dark text rides it cleanly)
+    linear-gradient(160deg, #e4f3ea 0%, #d6ecfb 55%, #cbe0f6 100%);
+}
+
+// Frutiger-Aqua DARK — the FA *aqua* identity on a dark canvas. This is NOT
+// vaporwave: it keeps the aqua accent + sky-glass language and just sends the
+// surfaces dark (night sky, dark aqua glass, the FA drawer photo dimmed). It's
+// what you get when the Frutiger-Aqua skin is viewed with the brightness toggle
+// set to dark — distinct from the VaporWave skin (which owns the magenta look).
+@mixin fa-dark() {
+  --accent-rgb:  64 196 240;   // brighter aqua (#40c4f0) — pops on the dark sky
+  --accent2-rgb: 126 200 227;  // sky
+
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.12);
+
+  --cp-accent-rgb:  var(--accent-rgb);
+  --cp-accent2-rgb: var(--accent2-rgb);
+  --cp-muted-rgb:   var(--steel-rgb);
+  --cp-line-rgb:    60 120 150;
+
+  --panel-bg:     rgba(18, 40, 54, 0.55);     // dark aqua glass
+  --panel-border: rgba(120, 200, 235, 0.30);  // aqua rim
+  --panel-radius: 0.6rem;
+  --chip-radius:  0.45rem;
+  --panel-blur:   saturate(1.3) blur(8px);
+  --panel-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --gloss-edge:   inset 0 1px 0 rgba(255, 255, 255, 0.16);
+
+  // Dark aqua "night sky" — SAME 3-layer structure as the light --page-bg so
+  // main.content's background-size (auto, auto, cover) still lines up.
+  --page-bg:
+    repeating-linear-gradient(122deg, rgba(140, 210, 240, 0.06) 0px, rgba(140, 210, 240, 0.06) 2px, transparent 2px, transparent 30px),
+    repeating-linear-gradient(64deg,  rgba(90, 170, 205, 0.05) 0px, rgba(90, 170, 205, 0.05) 3px, transparent 3px, transparent 44px),
+    linear-gradient(160deg, #0a1a26 0%, #0c2230 55%, #09202e 100%);
+
+  // FA drawer photo, dimmed with a deep aqua scrim (keeps the FA identity).
+  .sidebar-bg {
+    background-image:
+      linear-gradient(163deg, rgba(5, 18, 28, 0.66) 0%, rgba(6, 24, 34, 0.52) 50%, rgba(4, 16, 28, 0.70) 100%),
+      url(/assets/img/fa-sidebar-bg.jpg) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  .sidebar-bg.sidebar-overlay::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(8, 28, 42, 0.45) 0%,
+      rgba(8, 28, 42, 0.10) 42%,
+      transparent 70%
+    ) !important;
+  }
+}
+
+// =============================================================================
+// Light sidebar — Vista-aurora glass
+// =============================================================================
+// Hydejack's sidebar carries white text in both skins, so the light sidebar is
+// a glossy Frutiger-Aero photo (deep enough to keep that text legible) rather
+// than a pale panel — the saturated "Vista aurora" counterpart to the pale page
+// background. The image comes from an inline style attribute, so these win with
+// !important; vw-dark restores the 海 vaporwave jpg in dark.
+//
+// fa-sidebar-bg.jpg is the dedicated Frutiger-Aqua drawer photo (replaces the
+// earlier hand-rolled green→teal→blue gradient). A faint aqua scrim is layered
+// over it so the white sidebar text keeps its luminance contrast wherever the
+// photo runs bright.
+.sidebar-bg {
+  background-image:
+    linear-gradient(
+      163deg,
+      rgba(20, 70, 95, 0.28) 0%,
+      rgba(20, 90, 120, 0.12) 45%,
+      rgba(15, 80, 120, 0.30) 100%
+    ),
+    url(/assets/img/fa-sidebar-bg.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+// Swap the dark vertical scrim for a glossy white top sheen (wet Aero highlight).
+.sidebar-bg.sidebar-overlay::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.06) 32%,
+    rgba(255, 255, 255, 0) 62%
+  ) !important;
+}
+
+// Frutiger-Aqua's OWN dark mode (aqua, not magenta): applies when the brightness
+// toggle is dark AND we're not on VaporWave or the Anorex override skin. The
+// OS-dark form covers visitors who never toggle (default skin = Frutiger-Aqua).
+body.dark-mode:not(.skin-vaporwave):not(.skin-anorex) {
+  @include fa-dark();
+}
+@media screen and (prefers-color-scheme: dark) {
+  body:not(.light-mode):not(.skin-vaporwave):not(.skin-anorex) {
+    @include fa-dark();
+  }
+}
+
+// =============================================================================
+// Vista-aurora backgrounds — FA signature on the shared button / link chrome
+// =============================================================================
+// The structural layout of .resume-buttons and .constellation-link lives in
+// _base (aero-surface, flex, hover). These FA rules layer the signature Vista
+// aurora photo over that structure: a fixed, viewport-covering aurora that each
+// chip reveals a slice of at its on-screen position, with a flat dark scrim on
+// top so white label text stays legible over every region.
+
+.resume-buttons {
+  .btn, button {
+    background-image:
+      linear-gradient(rgba(4, 20, 40, 0.38), rgba(4, 20, 40, 0.38)),
+      url(/assets/img/vista-aurora.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.constellation-link {
+  // Aurora mapped across the link chips (same fixed image as .resume-buttons),
+  // dark scrim over it for legible white text.
+  background-image:
+    linear-gradient(rgba(4, 20, 40, 0.38), rgba(4, 20, 40, 0.38)),
+    url(/assets/img/vista-aurora.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
+}

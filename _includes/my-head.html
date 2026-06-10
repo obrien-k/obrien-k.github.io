@@ -1,31 +1,6 @@
 <!-- Skip to content — accessibility -->
 <a href="#_main" class="skip-link">Skip to content</a>
 
-<!-- A11y mode: restore class before first paint to prevent flash of saturated content -->
-<script>if(localStorage.getItem('a11y')==='on'){document.body.classList.add('a11y-mode');}</script>
-
-<!-- Skin registry — early restore (WS-E)
-     Creates <link id="hj-ext-skin"> dynamically ONLY when a non-default skin is
-     saved. No element = no request when the default skin is active. -->
-<script>
-(function(){
-  var s=localStorage.getItem('skin');
-  if(!s)return;
-  var skins={% if site.data.skins %}{{ site.data.skins | jsonify }}{% else %}[]{% endif %};
-  var skin=null;
-  for(var i=0;i<skins.length;i++){ if(skins[i].id===s){ skin=skins[i]; break; } }
-  if(!skin)return;
-  // Dark-only skins (VaporWave): body.dark-mode can't be set until <body> exists
-  // (see my-body.html), but painting the <html> canvas dark NOW prevents a white
-  // flash before that runs. Harmless for light reloads (this only runs for dark:true).
-  if(skin.dark===true){ document.documentElement.style.backgroundColor='#2a2f2f'; }
-  // Override skins (Anorex) inject their compiled CSS link here so it loads before
-  // first paint; built-ins need none. (VaporWave's force-dark-on-restore lives in
-  // my-body.html — it needs <body>, which doesn't exist yet at this point in <head>.)
-  if(skin.css){
-    var l=document.createElement('link');
-    l.id='hj-ext-skin';l.rel='stylesheet';l.href=skin.css;
-    document.head.appendChild(l);
-  }
-})();
-</script>
+<!-- Skin-system early restore (a11y class + saved skin) — runs before first
+     paint to prevent a flash of the wrong skin. See _includes/skin-system/. -->
+{% include skin-system/restore.html %}

@@ -3,7 +3,23 @@
 // _includes/styles/style.scss). This filename is fixed by the theme; renaming
 // it makes Hydejack silently stop loading our styles. So it stays a thin shim.
 //
-// The actual theme lives in _sass/frutiger-aqua.scss.
+// The skin system (WS-F modularization) lives in _sass/skins/ as a neutral base
+// + layered overlays. Import order IS the cascade order and matters:
+//
+//   1. base          — skin-agnostic chrome + token-driven structure
+//   2. frutiger-aqua — the default skin (its unscoped `body {}` sets the default
+//                      tokens) + its own dark + Vista-aurora signatures
+//   3. vaporwave     — magenta overlay (token overrides beat the FA defaults)
+//   4. a11y          — cross-skin neutralization; LAST so it wins over VaporWave
+//                      on the vaporwave+a11y combination (equal specificity)
+//
+// To show the neutral base instead of a default skin, drop the overlay imports
+// (a consumer vendoring the chrome into vanilla Hydejack). The Anorex skin is a
+// separate runtime-injected stylesheet (assets/css/skins/anorex.scss), not
+// imported here. See docs/architecture.md "Modularization".
 // =============================================================================
 
-@import "frutiger-aqua";
+@import "skins/base";
+@import "skins/frutiger-aqua";
+@import "skins/vaporwave";
+@import "skins/a11y";

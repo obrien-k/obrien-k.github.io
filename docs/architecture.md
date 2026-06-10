@@ -204,31 +204,57 @@ brightness no longer changes which skin you're on.
 **Add a skin:** drop a new `.scss` file in `assets/css/skins/`, add one entry to
 `_data/skins.yml`. No JS changes needed.
 
-**Modularization — the target architecture (WS-F, decided; not yet built).**
-Today `frutiger-aqua.scss` does double duty: it is BOTH the shared chrome (sidebar
+**Modularization — the target architecture (WS-F, ✅ shipped v0.1.3).**
+The old `frutiger-aqua.scss` did double duty: it was BOTH the shared chrome (sidebar
 widgets, `.nav-btn-bar`, the selector, the a11y-overlay tokens) AND the
-Frutiger-Aqua skin. That coupling is the root of the recurring *"which background
-fits where"* bugs — a skin and the base keep leaking into each other (AX inheriting
-FA's `--cp-*`, VW having no clean light canvas, etc.). Each fix is a per-skin patch
-that nudges the next collision; that is the loop. The decided direction (the
-original design intent) is a **layered, toggleable plugin**:
+Frutiger-Aqua skin. That coupling was the root of the recurring *"which background
+fits where"* bugs — a skin and the base kept leaking into each other (AX inheriting
+FA's `--cp-*`, VW having no clean light canvas, etc.). Each fix was a per-skin patch
+that nudged the next collision; that was the loop. WS-F replaced it with a
+**layered, toggleable plugin** — a neutral base + clean skin overlays:
 
-- A neutral **`base-hydejack`** layer — stock Hydejack + the shared chrome
-  (switcher, a11y, registry plumbing), with NO opinionated skin baked in.
-- **VW / FA / AX as clean overlays** on top of the base, each self-contained and
-  owning its own backgrounds + accents end-to-end — no cross-skin inheritance.
-- The set is **enable/disable-able**: this site ships with the base look disabled
-  (visitors only ever see VW/FA/AX), but a consumer dropping the component into a
-  vanilla Hydejack repo can toggle the base on and add/remove skins freely. *All
-  of our chrome features should follow this base-plus-overlay shape.*
-- Switcher + a11y + early-restore consolidate into their own `_includes/` partials
-  (the older "extract `skin-switcher.html`" gap folds into this).
+- A neutral **`base`** layer (`_sass/skins/_base.scss`) — the shared chrome
+  (switcher, a11y deco hooks, status/THEMES/SFX widgets, selector gate, Konami,
+  the token-driven *structure* of resume/constellations/blog-cards) + the shared
+  `aero-surface` mixin + `$pixel-shadow`. NO opinionated skin baked in; it reads
+  tokens (`--accent-rgb`, `--panel-*`, `--cp-*`, `--page-bg`) that overlays set.
+- **FA / VW as clean overlays** (`_sass/skins/_frutiger-aqua.scss`,
+  `_vaporwave.scss`), **AX** as the runtime-injected `assets/css/skins/anorex.scss`
+  — each self-contained, owning its own accents + backgrounds end-to-end.
+- The **a11y overlay** (`_sass/skins/_a11y.scss`) is a cross-skin neutralization
+  layer, imported **last** so it wins over the skins on the a11y combinations
+  (`body.a11y-mode` is equal-specificity with `body.skin-vaporwave`, so order is
+  the tiebreak for `--panel-bg` / `--cp-muted` / etc.).
+- Switcher, a11y toggle, the widgets IIFE, the registry, the archive filters, and
+  the early-restore are each their own `_includes/skin-system/*.html` partial,
+  `{% include %}`'d (in the same order) from `my-body.html` / `my-head.html`.
 
-This **supersedes** the per-skin patching: structural bugs like VW-resume
-light-mode illegibility get resolved by the base/overlay split, not by another
+**The four recipes (the "plugin" surface):**
+
+- **Add a skin** — append an entry to `_data/skins.yml` (`id/label/short/hue/desc`;
+  `css:` for a runtime-injected override, or `null` + a new `_sass/skins/_<id>.scss`
+  overlay `@import`ed in `my-style.scss` for a built-in). No JS edits.
+- **Change the default skin** — set `default: true` on exactly one `_data/skins.yml`
+  entry (the switcher's `defaultSkinId()` reads it). Pairs with that overlay's
+  `@import` in `my-style.scss` providing the unscoped default tokens.
+- **Show the neutral base** (no default skin) — drop the overlay `@import`s from
+  `my-style.scss` and the `default:` flag; base renders as plain token-less chrome
+  on stock Hydejack.
+- **Vendor the chrome** into a vanilla Hydejack repo — copy `_includes/skin-system/`,
+  `_sass/skins/`, `_data/skins.yml`, and the `my-head`/`my-body` include lines.
+
+This **superseded** the per-skin patching: structural bugs like VW-resume
+light-mode illegibility are now resolved by the base/overlay split, not another
 contrast tweak. ("Plugin" = a self-contained set of `_includes/` + `_sass/`
 partials + `_data/skins.yml` a consumer vendors in; Jekyll has no client-side
 plugin runtime.)
+
+> **Inline-script + `compress_html` gotcha (fixed in WS-F).** Production builds run
+> the HTML through Hydejack's `compress` layout, which collapses newlines **inside
+> `<script>`**. Any `// line comment` then swallows the rest of the (now single)
+> line — including closing braces — breaking the IIFE (silent in dev, where
+> `compress_html` is off). All skin-system partials therefore use `/* block */`
+> comments only. Keep it that way when editing them.
 
 **Current skins:**
 
@@ -306,13 +332,18 @@ plugin runtime.)
   (`resume.tex`, latexmk — pkg not yet added), compile a stain, **export PNG/SVG**,
   and **embed it on the site** in place of / over the CSS ring. This is the next
   task, **before WS-F**.
-- ⏭️ **WS-F — Modularization (`base-hydejack` + layered skins)** — **decided; the
-  major refactor, after the WS-D LaTeX coffee-stain above.** See "Modularization".
-  Subsumes the
-  switcher-partial extraction and resolves the background-matrix bug class
-  structurally (incl. the remaining **VW-resume light-mode illegibility** — a manual
-  brightness-toggle to light on a dark-only skin; no clean per-skin patch, fixed by
-  the base/overlay split).
+- ✅ **WS-F — Modularization (`base` + layered skin overlays)** — shipped (v0.1.3).
+  `frutiger-aqua.scss` split into `_sass/skins/{_base,_frutiger-aqua,_vaporwave,
+  _a11y}.scss`; chrome JS extracted into `_includes/skin-system/*`; registry-driven
+  `default_skin` (`default: true` in `_data/skins.yml`). **Behaviour-preserving** —
+  verified by diffing the compiled CSS before/after (identical declarations on all
+  486 selectors; the one equal-specificity cascade, a11y-over-VaporWave, preserved
+  by import order) plus a Playwright sweep across 3 skins × light/dark/a11y. Also
+  fixed a **pre-existing** production bug it surfaced (the `compress_html`
+  `//`-comment breakage above) that had silently disabled the cycle button +
+  early-restore in production. Subsumed the switcher-partial extraction. **Still
+  open after WS-F:** the **VW-resume light-mode illegibility** structural fix — now
+  trivial on the clean overlays (a separate small change; see "Modularization").
 
 (The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
 was imported Stellar scope, see the WS-E scope note; not a goal for this site.)

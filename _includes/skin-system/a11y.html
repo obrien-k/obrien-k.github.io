@@ -1,0 +1,79 @@
+<!-- ===================================================================
+     A11y mode toggle — WS-B
+     Injects an "Aa" nav-btn into Hydejack's .nav-btn-bar (between the
+     hamburger and the brightness button). Orthogonal to Hydejack's own
+     light/dark toggle — we own body.a11y-mode + localStorage('a11y').
+     =================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  var A11Y_KEY = 'a11y';
+  var a11yBtn;
+
+  function isA11y() {
+    return document.body.classList.contains('a11y-mode');
+  }
+
+  function setA11y(on) {
+    document.body.classList.toggle('a11y-mode', on);
+    localStorage.setItem(A11Y_KEY, on ? 'on' : 'off');
+    updateA11yBtn();
+  }
+
+  function updateA11yBtn() {
+    if (!a11yBtn) return;
+    var on = isA11y();
+    a11yBtn.setAttribute('aria-pressed', String(on));
+    a11yBtn.title = on ? 'Disable a11y mode' : 'Enable a11y mode';
+    a11yBtn.style.opacity = on ? '1' : '0.55';
+    a11yBtn.style.fontWeight = on ? '700' : '500';
+  }
+
+  function injectA11yToggle() {
+    if (document.getElementById('_a11y-toggle')) return;
+    var bar = document.querySelector('.nav-btn-bar');
+    if (!bar) return;
+
+    a11yBtn = document.createElement('button');
+    a11yBtn.id = '_a11y-toggle';
+    a11yBtn.className = 'nav-btn no-hover';
+    a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
+    a11yBtn.setAttribute('type', 'button');
+    a11yBtn.style.cssText = [
+      'font-size: 0.8rem',
+      'letter-spacing: -0.03em',
+      'font-family: inherit',
+      'line-height: 1'
+    ].join(';');
+    a11yBtn.innerHTML =
+        '<span class="ws-glyph">Aa</span>'
+      + '<span class="ws-cap">A11Y</span>'
+      + '<span class="ws-dots" aria-hidden="true"></span>';
+
+    /* Append last — order: hamburger → brightness → Aa */
+    bar.appendChild(a11yBtn);
+
+    a11yBtn.addEventListener('click', function() {
+      setA11y(!isA11y());
+    });
+
+    updateA11yBtn();
+  }
+
+  /* Re-inject after every SPA navigation (Hydejack rebuilds the navbar on route change) */
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      a11yBtn = null;  /* reference was destroyed with the old navbar DOM */
+      injectA11yToggle();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectA11yToggle);
+  } else {
+    injectA11yToggle();
+  }
+})();
+</script>

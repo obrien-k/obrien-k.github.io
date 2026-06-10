@@ -1,0 +1,122 @@
+<!-- ===================================================================
+     Archive page: subdued year date-picker filter (SPA-safe)
+     =================================================================== -->
+<script>
+(function() {
+  'use strict';
+  function initArchiveFilter() {
+    var sel = document.getElementById('archive-year');
+    if (!sel || sel.dataset.bound) return;
+    sel.dataset.bound = '1';
+    sel.addEventListener('change', function() {
+      var v = this.value;
+      var entries = document.querySelectorAll('.archive-entry');
+      for (var i = 0; i < entries.length; i++) {
+        var show = (v === 'all' || entries[i].getAttribute('data-year') === v);
+        entries[i].classList.toggle('is-hidden', !show);
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initArchiveFilter);
+  } else {
+    initArchiveFilter();
+  }
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', initArchiveFilter);
+})();
+</script>
+
+{% comment %}
+<!--
+Example code for using Matamo as alternative analytics solution.
+-->
+{% if site.matomo_analytics %}
+<script>
+  var _paq = _paq || [];
+
+  /*{% if site.matomo_analytics.no_cookies %}*/
+  _paq.push(['disableCookies']);
+  /*{% endif %}*/
+
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  _paq.push(['setTrackerUrl', u+'piwik.php']);
+  _paq.push(['setSiteId', '{{site.matomo_analytics.site_id}}']);
+
+  var pushStateEl = document.getElementById('_pushState');
+  var timeStartLoadPage, referer, timeItTookToLoadPage;
+
+  pushStateEl.addEventListener('hy-push-state-start', function() {
+    timeStartLoadPage = new Date().getTime();
+    referer = window.location.toString();
+  });
+
+  pushStateEl.addEventListener('hy-push-state-ready', function() {
+    timeItTookToLoadPage = new Date().getTime() - timeStartLoadPage;
+  });
+
+  pushStateEl.addEventListener('hy-push-state-after', function() {
+    _paq.push(['setReferrerUrl', referer]);
+    _paq.push(['setCustomUrl', window.location.toString()]);
+    _paq.push(['setDocumentTitle', document.title]);
+    _paq.push(['deleteCustomVariables', 'page']);
+    _paq.push(['setGenerationTimeMs', timeItTookToLoadPage]);
+    _paq.push(['trackPageView']);
+  });
+
+  window.loadJSDeferred('{{site.matomo_analytics.root}}piwik.js');
+</script>
+{% endif %}
+{% endcomment %}
+
+<!-- Archive filters (category chips + tag/year selects). Lives here, not in
+     archive.html, so it runs on first load AND survives Hydejack's SPA nav
+     (hy-push-state-after). No-ops on every page except /archive/. -->
+<script>
+(function () {
+  function initArchiveFilters() {
+    var bar  = document.getElementById('archive-filters');
+    var list = document.querySelector('.archive-list');
+    if (!bar || !list) return;
+    var entries = [].slice.call(list.querySelectorAll('.archive-entry'));
+    var empty   = document.querySelector('.archive-empty');
+    var state   = { cat: 'all', tag: 'all', year: 'all' };
+
+    function pad(v) { return ' ' + (v || '').replace(/\s+/g, ' ').trim() + ' '; }
+    function apply() {
+      var shown = 0;
+      entries.forEach(function (e) {
+        var okCat  = state.cat  === 'all' || pad(e.getAttribute('data-category')).indexOf(' ' + state.cat + ' ') >= 0;
+        var okTag  = state.tag  === 'all' || pad(e.getAttribute('data-tags')).indexOf(' ' + state.tag + ' ') >= 0;
+        var okYear = state.year === 'all' || e.getAttribute('data-year') === state.year;
+        var show = okCat && okTag && okYear;
+        e.classList.toggle('is-hidden', !show);
+        if (show) shown++;
+      });
+      if (empty) empty.hidden = shown !== 0;
+    }
+
+    bar.querySelectorAll('.archive-chip').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        bar.querySelectorAll('.archive-chip').forEach(function (b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        state.cat = btn.getAttribute('data-cat');
+        apply();
+      });
+    });
+    var tagSel = document.getElementById('archive-tag');
+    if (tagSel) tagSel.addEventListener('change', function () { state.tag = tagSel.value; apply(); });
+    var yearSel = document.getElementById('archive-year');
+    if (yearSel) yearSel.addEventListener('change', function () { state.year = yearSel.value; apply(); });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initArchiveFilters);
+  } else {
+    initArchiveFilters();
+  }
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', initArchiveFilters);
+})();
+</script>

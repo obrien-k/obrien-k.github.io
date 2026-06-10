@@ -9,6 +9,23 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.3
+Jun 10 2026
+{:.heading.post-date}
+
+Skin-system modularization (WS-F) — the monolithic `frutiger-aqua.scss` is split
+into a neutral base plus layered skin overlays, and the skin-system JavaScript
+into focused includes. A pure refactor: the compiled CSS is **byte-identical** to
+v0.1.2 (verified by diffing the build — 486 selectors, zero declaration changes).
+
+### Changed
+- **`_sass/frutiger-aqua.scss` → `_sass/skins/{_base,_frutiger-aqua,_vaporwave,_a11y}.scss`.** The shared, token-driven chrome (sidebar widgets, the one-per-viewport selector, the a11y framework, the structure of resume / constellations / blog cards, the `aero-surface` mixin) is now a skin-agnostic **base**; Frutiger Aqua, VaporWave, and the a11y neutralization are clean overlays that just set tokens. `_a11y` imports **last** so it still wins over VaporWave on the a11y combination (the two are equal-specificity, so cascade order is the tiebreak for `--panel-bg` / `--cp-*` / …). Verified behaviour-preserving via a Playwright sweep across 3 skins × light / dark / a11y.
+- **Skin-system JS extracted into `_includes/skin-system/`** — `registry`, `widgets` (SFX / status / THEMES / sound / Konami), `switcher` (cycle button + skin-class restore), `a11y`, `archive-filters`, and the head `restore`, each its own partial included in the same order from `my-body` / `my-head`. The skin system is now an ejectable, vendorable set of partials.
+- **Registry-driven default skin** — `default: true` in `_data/skins.yml` replaces a hardcoded fallback; it's the one-line switch for which skin shows when none is saved (pairs with the matching import in `my-style.scss`).
+
+### Fixed
+- **The skin cycle button and early skin-restore were silently broken in production.** Hydejack's `compress_html` collapses newlines inside scripts, so a `//` line-comment swallowed the rest of the IIFE — disabling the nav cycle button and the saved-skin restore-before-paint on the live (compressed) site. Dev builds (compress off) were fine, which hid it. All skin-system scripts now use `/* */` block comments. Pre-existing since WS-E; surfaced by the WS-F verification.
+
 ## v0.1.2
 Jun 10 2026
 {:.heading.post-date}
