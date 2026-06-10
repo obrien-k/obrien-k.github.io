@@ -1,8 +1,9 @@
 # Architecture Overview & v0.1.0 Plan
 
-Status: **roadmap closed** — captured 2026-06-09 (pre-v0.1.0); WS-A…F shipped
-through **v0.1.4** (2026-06-10). Two tails tracked inline: WS-D option (b) the real
-LaTeX coffee-stain, and the converter's live stock-WordPress check (§4).
+Status: **roadmap closed** — captured 2026-06-09 (pre-v0.1.0); WS-A…F all shipped
+through **v0.1.5** (2026-06-10), including WS-D option (b) the real LaTeX
+coffee-stain. One tail tracked inline: the converter's live stock-WordPress
+check (§4).
 Scope: the custom layer over the **free** `jekyll-theme-hydejack` v9.2.1 gem.
 
 This document is the think-through that was deferred through the v0.0.x series. It
@@ -326,14 +327,20 @@ plugin runtime.)
   gained category+tag+year filters; post tag-links re-resolve via a local
   `tag-list.html` override. **In-repo vocabulary normalization done; the upstream
   `ghost-2-jekyll` normalization (so re-imports stay clean) is still outstanding.**
-- 🟡 **WS-D — Leadership Philosophy rustic/coffee-stain pass** — *CSS pass shipped
-  (v0.1.2)*: token-driven aged-paper pillar cards (warm wash, hand-cut corners, soft
-  double-rule) + a pure-CSS coffee-ring (method (a), no asset); adapts per skin via
-  the `--cp-*` palette, greys out in a11y. **Still planned — the real LaTeX
-  coffee-stain (method (b)):** add the `coffeestains` package in **`~/git/resume`**
-  (`resume.tex`, latexmk — pkg not yet added), compile a stain, **export PNG/SVG**,
-  and **embed it on the site** in place of / over the CSS ring. This is the next
-  task, **before WS-F**.
+- ✅ **WS-D — rustic / coffee-stain pass** — shipped in two parts. *Method (a),
+  v0.1.2*: the **Leadership Philosophy** page got token-driven aged-paper pillar
+  cards (warm wash, hand-cut corners, soft double-rule) + a pure-CSS coffee-ring
+  (no asset), adapting per skin via `--cp-*` and greying out in a11y — **that ring
+  stays on the Leadership page in all skins**. *Method (b), v0.1.5*: the **real
+  LaTeX `coffeestains` render** (compiled in `~/git/resume`, four stains rendered;
+  **stain A**, the broken mug-ring, chosen and exported to a transparent PNG at
+  `assets/css/skins/coffeestain.png`) lives on the **résumé page only, scoped to
+  the Anorex skin only** — a mug ring on the WhatCD wood desk. It's authored in
+  `assets/css/skins/anorex.scss` as `body .resume::after` (so the AX sheet's
+  injection *is* the skin gate; `.resume` exists on no other page), `multiply`-blended
+  on the light wood, switched to a normal blend on night-wood (dark), desaturated in
+  a11y, and dropped on narrow screens. **Not** a global element and **not** on
+  Leadership — that was the placement correction.
 - ✅ **WS-F — Modularization (`base` + layered skin overlays)** — shipped (v0.1.3).
   `frutiger-aqua.scss` split into `_sass/skins/{_base,_frutiger-aqua,_vaporwave,
   _a11y}.scss`; chrome JS extracted into `_includes/skin-system/*`; registry-driven

@@ -30,6 +30,7 @@
 
 $wood-bg:   url(/assets/css/skins/woodbg.png);
 $wood-head: url(/assets/css/skins/woodhead.png);
+$coffee-stain: url(/assets/css/skins/coffeestain.png);
 
 // ── Background helper mixins ─────────────────────────────────────────
 // The wood "desk" is the SAME grain in every state (light/dark, a11y/non-a11y);
@@ -356,6 +357,37 @@ body blockquote {
 
 body .nav-btn { color: #6B481E; }
 body .nav-btn:hover { color: #A56A22; }
+
+// ── Resume coffee ring (WS-D, method b) ─────────────────────────────
+// The real `coffeestains` LaTeX render (compiled in ~/git/resume, exported to a
+// transparent PNG) — a mug ring left on the wood desk. AX-only: this sheet is
+// only injected for Anorex. Resume-only: `.resume` exists on no other page. The
+// ring sits over the top-right of the parchment résumé pane; `multiply` lets the
+// paper grain read through it on the light wood. Decorative (pointer-events:none).
+body .resume { position: relative; }
+body .resume::after {
+  content: "";
+  position: absolute;
+  top: 1.4rem;
+  right: 1.1rem;
+  width: 132px;
+  height: 130px;
+  pointer-events: none;
+  opacity: 0.55;
+  transform: rotate(-9deg);
+  background: #{$coffee-stain} center / contain no-repeat;
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+// Night wood swallows a multiplied brown — blend normally, a touch fainter.
+body.dark-mode .resume::after { mix-blend-mode: normal; opacity: 0.45; }
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) .resume::after { mix-blend-mode: normal; opacity: 0.45; }
+}
+// a11y / greyscale: desaturate to match the neutralised palette.
+body.a11y-mode .resume::after { filter: grayscale(1); opacity: 0.4; }
+// Narrow screens: drop it (matches the FA coffee-ring behaviour).
+@media (max-width: 34rem) { body .resume::after { display: none; } }
 
 // ── Dark mode — mahogany / night wood ───────────────────────────────
 // In dark mode Anorex inverts to deep brown backgrounds with warm golden-tan

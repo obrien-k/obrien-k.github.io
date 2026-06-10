@@ -9,6 +9,28 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.5
+Jun 10 2026
+{:.heading.post-date}
+
+The real coffee-stain (WS-D method b) lands — on the résumé, in Anorex only — and
+the first docx-imported post goes live.
+
+### Themes
+- **Anorex résumé coffee ring.** The actual LaTeX `coffeestains` render (compiled in
+  `~/git/resume`, stain A — the broken mug-ring — exported to a transparent PNG)
+  now sits over the top-right of the résumé pane **only under the Anorex skin** — a
+  mug ring on the WhatCD wood desk. Authored in `anorex.scss` as `body .resume::after`
+  (the AX sheet's injection is the skin gate; `.resume` is resume-only), `multiply`
+  on the light wood, normal blend on night-wood, desaturated in a11y, hidden on
+  narrow screens. (The pure-CSS ring on Leadership Philosophy is unchanged.)
+
+### Added
+- **"How to Build Your First BigCommerce App"** (2020-06-19) — published from a
+  Word `.docx` via the `archive-2-md` converter's docx adapter. Conversion
+  artifacts cleaned on import (inline-code underscores; the JSON payload re-fenced
+  as a `json` block).
+
 ## v0.1.4
 Jun 10 2026
 {:.heading.post-date}
