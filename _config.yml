@@ -311,6 +311,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - functions
+  # Dev/agent docs — keep them in the repo, off the built site.
+  - CLAUDE.md
+  - AGENTS.md
+  - README.md
 include:
   - _routes.json
   - .well-known
