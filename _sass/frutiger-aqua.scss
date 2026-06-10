@@ -57,8 +57,14 @@ body {
   // the Aero aqua family so those pages match the Resume skin; vw-dark reproduces
   // the original hand-picked magenta/purple palette exactly (no dark regression).
   // See WS-A in docs/architecture.md.
-  --cp-accent-rgb:  var(--accent-rgb);    // aqua
-  --cp-accent2-rgb: var(--accent2-rgb);   // sky
+  // FA's signature aqua (#0099cc) is only ~3.5:1 on the pale Aero pane — too light
+  // for body-size text on the vaporwave-styled pages (.collection / .lp /
+  // .constellation / .resume). Use a DEEPER teal/blue for the custom-page accents
+  // so they clear AA, while keeping the aqua family. FA-dark (fa-dark), VaporWave
+  // (vw-dark), Anorex (anorex.scss), and a11y all set their OWN --cp-* below, so
+  // this is the FA-LIGHT value only.
+  --cp-accent-rgb:  0 105 134;            // #006986 deep teal — ~5:1 on the pane ✓
+  --cp-accent2-rgb: 45 95 140;            // #2d5f8c deep sky — readable secondary ✓
   --cp-muted-rgb:   var(--steel-rgb);     // Steel — neutral grey (was aqua-slate 91 107 115)
   --cp-line-rgb:    120 190 220;          // soft aqua rim (matches --panel-border)
 
@@ -409,25 +415,25 @@ body.a11y-mode {
 .ws-dots {
   display: flex;
   justify-content: center;
-  gap: 3px;
-  min-height: 4px;
+  gap: 4px;
+  min-height: 5px;
   margin-top: 3px;
   line-height: 0;
 }
 
 .ws-dot {
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: var(--dot, #888);
-  opacity: 0.35;
+  opacity: 0.4;
   transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
 .ws-dot.on {
   opacity: 1;
-  transform: scale(1.35);
-  box-shadow: 0 0 4px var(--dot, #888);
+  transform: scale(1.4);
+  box-shadow: 0 0 5px var(--dot, #888);
 }
 
 // =============================================================================
@@ -1103,6 +1109,24 @@ blockquote {
   &:hover {
     opacity: 0.8;
   }
+}
+
+// =============================================================================
+// Theme selector — ONE per viewport (no collision)
+// =============================================================================
+// There are two skin selectors: the sidebar color chips (.sidebar-themes) and
+// the top-bar cycle button (#_skin-toggle). Showing both at once let them collide
+// (two controls, redundant + confusing). Gate them on Hydejack's $break-point-3
+// (64em) — the width where the sidebar stops being a drawer and becomes the
+// persistent left column:
+//   • < 64em (mobile / drawer): top-bar cycle button is the selector; chips hidden.
+//   • ≥ 64em (desktop / persistent sidebar): sidebar chips are the selector;
+//     cycle button hidden.
+.sidebar-themes { display: none; }
+
+@media (min-width: 64em) {
+  .sidebar-themes { display: block; }
+  #_skin-toggle   { display: none !important; }
 }
 
 // =============================================================================

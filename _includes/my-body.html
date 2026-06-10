@@ -675,9 +675,20 @@ window.__skins = {{ site.data.skins | jsonify }};
 
   // Restore the saved skin's body class as early as this inline script runs
   // (body exists here), so the right built-in skin paints without waiting for
-  // DOMContentLoaded. Does not touch brightness — Hydejack restores dark-mode
-  // from its own storage; for VaporWave the class is what flips it to magenta.
-  if (document.body) setSkinClass(currentSkinId());
+  // DOMContentLoaded. Also re-apply the brightness intent for skins that have NO
+  // light variant: VaporWave (dark:true) must force dark-mode on every load, or a
+  // reload / direct nav paints it light and the magenta washes out. (my-head.html
+  // can't do this — it runs in <head> before <body> exists.) FA/AX keep whatever
+  // brightness Hydejack restored.
+  if (document.body) {
+    var _restoreId = currentSkinId();
+    setSkinClass(_restoreId);
+    var _restoreSkin = getSkin(_restoreId);
+    if (_restoreSkin && _restoreSkin.dark === true) {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+    }
+  }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', injectSkinBtn);

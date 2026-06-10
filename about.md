@@ -34,4 +34,8 @@ I'm also available for SWE, Technical Writing, and design contract work.
 
 ---
 
+[![DiSC “Perfectionist” profile — Kyle OBrien](assets/about-me/DiSC_KO_Perfectionist.png)](assets/about-me/DiSC_KO_Perfectionist.png)
+*[Perfectionists have a strong inner drive to be systematic and precise in everything they do, prioritizing accuracy, structure, and following established procedures.](https://www.123test.com/disc-profile-perfectionist/)*
+{:.figcaption}
+
 <!--posts-->

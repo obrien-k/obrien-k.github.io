@@ -91,14 +91,14 @@ the `my-style` shim. Not idiomatic:
 Ordering: theming-token lift first (done), then a11y overlay + toggle, then
 taxonomy, then the page-specific rustic/greyscale work last.
 
-### WS-A — Theming token consolidation
+### WS-A — Theming token consolidation ✅ shipped (v0.1.0)
 - Replace the four hardcoded hex values in `leadership-philosophy.md`,
   `vanity-house.md`, `listen-to-this-album.md` with the shared CSS custom properties
   (`--accent-rgb`, `--accent2-rgb`, plus new `--dim` / `--line` tokens defined per
   skin in `frutiger-aqua.scss`).
 - Verify all three custom pages + Resume now flip together in both skins.
 
-### WS-B — A11y overlay + toggle
+### WS-B — A11y overlay + toggle ✅ shipped (v0.1.0)
 
 **Decided (2026-06-09, post gem-spelunking):** originally deferred, then
 re-scoped: a11y overlay only, no registry. Registry reinstated in WS-E (below)
@@ -143,7 +143,7 @@ not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fi
     export PNG/SVG, embed. Only path that uses the actual package.
   - (c) `ghost-2-jekyll` — not applicable (it's an importer, not a renderer).
 
-### WS-E — Skin registry + Anorex override skin
+### WS-E — Skin registry + Anorex override skin ✅ shipped (v0.1.0)
 
 A small **in-repo** skin system for this site only: a registry, the two built-in
 skins, and one runtime-loaded CSS-override skin (Anorex).
@@ -204,13 +204,31 @@ brightness no longer changes which skin you're on.
 **Add a skin:** drop a new `.scss` file in `assets/css/skins/`, add one entry to
 `_data/skins.yml`. No JS changes needed.
 
-**Not yet modular (known gap).** The switcher + a11y toggle currently live as
-inline `<script>` blocks in `_includes/my-body.html` (the Hydejack body-inject
-hook), and the early-restore in `_includes/my-head.html` — not a single
-self-contained partial. "Modular" here would mean extracting the switcher into
-its own `_includes/skin-switcher.html` that `my-body.html` just `{% include %}`s
-(Jekyll has no client-side "plugin" concept — this is template includes, not a
-plugin). Deferred, not done; see Outstanding work below.
+**Modularization — the target architecture (WS-F, decided; not yet built).**
+Today `frutiger-aqua.scss` does double duty: it is BOTH the shared chrome (sidebar
+widgets, `.nav-btn-bar`, the selector, the a11y-overlay tokens) AND the
+Frutiger-Aqua skin. That coupling is the root of the recurring *"which background
+fits where"* bugs — a skin and the base keep leaking into each other (AX inheriting
+FA's `--cp-*`, VW having no clean light canvas, etc.). Each fix is a per-skin patch
+that nudges the next collision; that is the loop. The decided direction (the
+original design intent) is a **layered, toggleable plugin**:
+
+- A neutral **`base-hydejack`** layer — stock Hydejack + the shared chrome
+  (switcher, a11y, registry plumbing), with NO opinionated skin baked in.
+- **VW / FA / AX as clean overlays** on top of the base, each self-contained and
+  owning its own backgrounds + accents end-to-end — no cross-skin inheritance.
+- The set is **enable/disable-able**: this site ships with the base look disabled
+  (visitors only ever see VW/FA/AX), but a consumer dropping the component into a
+  vanilla Hydejack repo can toggle the base on and add/remove skins freely. *All
+  of our chrome features should follow this base-plus-overlay shape.*
+- Switcher + a11y + early-restore consolidate into their own `_includes/` partials
+  (the older "extract `skin-switcher.html`" gap folds into this).
+
+This **supersedes** the per-skin patching: structural bugs like VW-resume
+light-mode illegibility get resolved by the base/overlay split, not by another
+contrast tweak. ("Plugin" = a self-contained set of `_includes/` + `_sass/`
+partials + `_data/skins.yml` a consumer vendors in; Jekyll has no client-side
+plugin runtime.)
 
 **Current skins:**
 
@@ -263,12 +281,23 @@ plugin). Deferred, not done; see Outstanding work below.
   sidebar text light even in light page modes (the dark warm-grey accent is
   illegible on the drawer otherwise).
 
-**Outstanding work (not done — don't read the detail above as "shipped"):**
-- Extract the switcher into `_includes/skin-switcher.html` (modularity gap above).
+**Status & outstanding work:**
+- ✅ **WS-A — Theming token consolidation** — shipped (v0.1.0). Shared `--cp-*`
+  custom-page palette with per-skin values, AA-checked on each skin's pane
+  (FA teal `#006986` ~5:1, AX wood-brown ~10:1, VW magenta on dark).
+- ✅ **WS-B — A11y overlay + toggle** — shipped. Foreground-only, per-skin parity,
+  filled-pill "on" cue.
+- ✅ **WS-E — Skin registry + Anorex** — shipped (v0.1.0). `_data/skins.yml`
+  registry, the switcher (now **one selector per viewport** — sidebar chips on
+  desktop, top-bar cycle button on mobile), the Anorex wood skin, and the
+  `woodhead.png` post-title nameplate. VaporWave forced-dark-on-restore.
+- ⏭️ **WS-F — Modularization (`base-hydejack` + layered skins)** — **decided, the
+  next major line item.** See "Modularization" above. Subsumes the switcher-partial
+  extraction and resolves the background-matrix bug class structurally (incl. the
+  remaining **VW-resume light-mode illegibility** — a manual brightness-toggle to
+  light on a dark-only skin; no clean per-skin patch, fixed by the base/overlay split).
 - **WS-C — Taxonomy** (`jekyll-archives`, retire hand-rolled tag pages) — not started.
 - **WS-D — Leadership Philosophy rustic/coffee-stain pass** — not started.
-- A lot of recent effort went into WS-E polish (skins / a11y / sidebar); WS-C and
-  WS-D are the next real line items.
 
 (The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
 was imported Stellar scope, see the WS-E scope note; not a goal for this site.)

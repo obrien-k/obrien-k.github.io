@@ -199,6 +199,15 @@ body {
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.08);
 
+  // Custom-page palette (.collection / .lp / .constellation / .resume). The base
+  // skin's default --cp-* is a deep teal for FA-light; AX must set its OWN warm
+  // wood values or those pages would read teal-on-wood. Brown #573811 clears AA
+  // (6.7:1); amber #A56A22 is only ~3.6:1 so the secondary uses a darker amber.
+  --cp-accent-rgb:  var(--accent-rgb);    // #573811 brown — AA on the pane
+  --cp-accent2-rgb: 139 74 13;            // #8b4a0d darker amber — ~5:1 ✓
+  --cp-muted-rgb:   73 40 2;              // #492802 muted brown
+  --cp-line-rgb:    101 67 15;            // #65430F warm rim (matches --panel-border)
+
   --panel-bg:     rgba(220, 184, 129, 0.55); // #DCB881 warm tan
   --panel-border: rgba(101,  67,  15, 0.6);  // #65430F dark brown
   // Match the other skins' rounding — Anorex previously read square (0.2/0.15)

@@ -9,6 +9,23 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.0
+Jun 10 2026
+{:.heading.post-date}
+
+The three-skin system (VaporWave · Frutiger Aqua · Anorex) lands as a milestone —
+this release reconciles the parallel theme work and fixes the rough edges left
+behind: one theme selector per viewport, readable custom pages in every skin, and
+VaporWave's signature magenta restored on reload.
+
+### Themes
+- **One theme selector per viewport** (they used to both show and collide). Desktop (≥ 64em, persistent sidebar) gets the **color chips** in the sidebar; mobile gets the compact **THEME** cycle button in the top bar. Each carries a color eye-check — the chips are tinted per theme, the cycle button shows a signature-tinted glyph plus an enlarged per-skin dot row
+- **VaporWave coloring restored.** VaporWave is a dark-only skin, so it now forces dark-mode on every load / direct-nav — it was painting light on reload, washing the magenta out to an unreadable pink-on-white. The `<html>` canvas is pre-painted dark in `<head>` to soften the load flash
+- **Custom pages now theme readably per skin** (Resume, Vanity House, Listen to this Album, Leadership Philosophy, Constellations). The shared `--cp-*` palette gets per-skin values that clear WCAG AA on each skin's pane: Frutiger Aqua deepens its aqua to teal (`#0099cc` → `#006986`, ~3.5:1 → ~5:1), Anorex uses warm wood browns on the parchment, VaporWave keeps its hand-picked magenta/purple on the dark canvas
+
+### Content
+- About page: added a **DiSC "Perfectionist" profile** figure below the Factoids, captioned with the shortened official definition (linked to the source)
+
 ## v0.0.10
 Jun 10 2026
 {:.heading.post-date}
