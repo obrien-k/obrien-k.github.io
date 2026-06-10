@@ -2,13 +2,8 @@
 layout: post
 title: "Why You Should Switch From Google Chrome to Firefox"
 date: 2018-02-06 00:00:00 +0000
-tags:
-  - google
-  - mozilla
-  - web-browser
-categories:
-  - technology
-  - web-browsers
+categories: [technology]
+tags: [browsers, google, mozilla]
 ---
 
 ![](/assets/img/blog/posts/why-you-should-switch-from-google-chrome-to-firefox/wfyblgw7ilptpp9pek8u.jpg)

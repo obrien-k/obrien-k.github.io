@@ -1,0 +1,26 @@
+---
+# Auto-generated tag archive pages (jekyll-archives, WS-C). One page per tag at
+# /tags/:name/, listing that tag's posts. Mirrors _layouts/archive.html's list
+# (same .archive-list / .archive-entry markup, so the shared meta-overflow fix in
+# _sass/my-style.scss applies here too) but loops `page.posts` — the posts for
+# this tag — and drops the year filter (a single-tag page is short).
+layout: base
+---
+
+<header class="archive-header">
+  <h1 class="archive-title">{{ page.title | default: page.tag }}</h1>
+  <p class="archive-tax-meta">
+    {{ page.posts | size }} post{% if page.posts.size != 1 %}s{% endif %}
+    tagged <b>{{ page.tag | default: page.title }}</b> ·
+    <a href="{{ '/tags/' | relative_url }}">all tags</a> ·
+    <a href="{{ '/archive/' | relative_url }}">archive</a>
+  </p>
+</header>
+
+<div class="archive-list">
+  {% for post in page.posts %}
+    <div class="archive-entry">
+      {% include components/post.html post=post no_link_title=page.no_link_title no_excerpt=page.no_excerpt hide_image=page.hide_image %}
+    </div>
+  {% endfor %}
+</div>

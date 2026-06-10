@@ -5,11 +5,8 @@ date: 2023-04-13 00:00:00 +0000
 description: "Ten rules in no particular order for dominating time and making your hobbies work for you."
 image:
   path: /assets/img/blog/posts/ten-rules-for-effective-time-management-or-how-i-ruin-my-hobbies/effective-time-management-1.png
-tags:
-  - productivity
-  - satire
-categories:
-  - productivity
+categories: [life]
+tags: [productivity, satire]
 ---
 
 💡 As some colleagues and mentors pointed out, the subtlety of this post may not resonate with everyone. Some of these rules you may have heard in a serious context. It's [satire](/tags/#satire). #NotTheJoke

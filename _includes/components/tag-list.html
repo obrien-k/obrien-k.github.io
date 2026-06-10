@@ -1,0 +1,43 @@
+{%- comment -%}
+Local override of Hydejack's components/tag-list.html (WS-C).
+
+The only change is the fallback branch: when a slug isn't found in `meta`
+(`site.featured_categories` for categories / `site.featured_tags` for tags), the
+gem renders a plain, unlinked `<span>`. We retired the hand-rolled `featured_tags`
+collection in favour of jekyll-archives, so post TAGS always hit that fallback —
+this override links them to their generated `/tags/:slug/` archive page instead of
+leaving them dead text. Categories are always present in `featured_categories`, so
+they still resolve via `meta` and never reach the fallback.
+{%- endcomment -%}
+{%- assign tags = include.tags -%}
+{%- assign meta = include.meta -%}
+{%- assign start_with = include.start_with -%}
+{%- assign separator = include.separator -%}
+{%- assign end_with = include.end_with -%}
+
+{%- assign content = '' -%}
+
+{%- if tags.size > 0 -%}
+  {%- assign content = start_with -%}
+  {%- for tag_slug in tags -%}
+    {%- capture iter_separator -%}{% if forloop.last %}{{ end_with }}{% else %}{{ separator }}{% endif %}{%- endcapture -%}
+
+    {%- if major >= 4 and minor >= 1 %}
+      {%- assign tag = meta | find: "slug", tag_slug -%}
+    {%- else -%}
+      {%- assign tag = meta | where: "slug", tag_slug | first -%}
+    {%- endif -%}
+
+    {%- if tag -%}
+      {%- capture content_temp -%}{{ content }}<a href="{{ tag.url | relative_url }}" class="flip-title">{{ tag.title }}</a>{{ iter_separator }}{%- endcapture -%}
+    {%- else -%}
+      {%- assign tag_name = tag_slug | slugify -%}
+      {%- capture tag_url -%}{{ '/tags/' | append: tag_name | append: '/' | relative_url }}{%- endcapture -%}
+      {%- capture content_temp -%}{{ content }}<a href="{{ tag_url }}" class="flip-title">{{ tag_slug | capitalize }}</a>{{ iter_separator }}{%- endcapture -%}
+    {%- endif -%}
+
+    {%- assign content = content_temp -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{{- content -}}

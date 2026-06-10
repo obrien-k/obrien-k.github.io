@@ -3,14 +3,8 @@ layout: post
 title: "Unix as an IDE"
 date: 2018-06-29 00:00:00 +0000
 description: "Newbies and experienced professional programmers alike appreciate the concept of the IDE, or integrated development environment. Having the primary tools…"
-tags:
-  - cli
-  - code
-  - ide
-categories:
-  - operating-systems
-  - programming
-  - technology
+categories: [code]
+tags: [cli, ide, operating-systems]
 ---
 
 > Newbies and experienced professional programmers alike appreciate the concept of the IDE, or integrated development environment. Having the primary tools necessary for organising, writing, maintaining, testing, and debugging code in an integrated application with common interfaces for all the different tools is certainly a very valuable asset. Additionally, an environment expressly designed for programming in various languages affords advantages such as autocompletion, and syntax checking and highlighting.

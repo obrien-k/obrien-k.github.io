@@ -1,7 +1,8 @@
 ---
-# Custom layout: blog-style archive of every post with a subdued year filter.
-# (jekyll-paginate v1 only paginates index.html, so the Archive lists all posts
-#  and uses the date picker for navigation instead of pagination.)
+# Custom layout: blog-style archive of every post with category + tag + year
+# filters (client-side; init lives in _includes/my-body.html so it survives SPA
+# nav). jekyll-paginate v1 only paginates index.html, so the Archive lists all
+# posts and filters in-page instead of paginating.
 layout: base
 ---
 
@@ -10,49 +11,95 @@ layout: base
 
 <header class="archive-header">
   <h1 class="archive-title">{{ page.title }}</h1>
-  <div class="archive-filter">
-    <label for="archive-year" class="archive-filter-label">{{ site.data.strings.archive_filter | default:"Year" }}</label>
-    <select id="archive-year" class="archive-year-select" aria-label="Filter posts by year">
-      <option value="all">All</option>
-      {% for y in years %}{% if y != "" %}<option value="{{ y }}">{{ y }}</option>{% endif %}{% endfor %}
-    </select>
-  </div>
 </header>
+
+<div class="archive-filter-bar" id="archive-filters">
+  <div class="archive-cats" role="group" aria-label="Filter by category">
+    <button type="button" class="archive-chip is-active" data-cat="all">All</button>
+    {% assign cats = site.categories | sort %}
+    {% for c in cats %}
+      <button type="button" class="archive-chip" data-cat="{{ c[0] | slugify }}">{{ c[0] }} <span class="chip-count">{{ c[1].size }}</span></button>
+    {% endfor %}
+  </div>
+  <div class="archive-selects">
+    <label class="archive-filter">
+      <span class="archive-filter-label">Tag</span>
+      <select id="archive-tag" class="archive-select" aria-label="Filter posts by tag">
+        <option value="all">All tags</option>
+        {% assign alltags = site.tags | sort %}
+        {% for t in alltags %}<option value="{{ t[0] | slugify }}">{{ t[0] }} ({{ t[1].size }})</option>{% endfor %}
+      </select>
+    </label>
+    <label class="archive-filter">
+      <span class="archive-filter-label">Year</span>
+      <select id="archive-year" class="archive-select" aria-label="Filter posts by year">
+        <option value="all">All years</option>
+        {% for y in years %}{% if y != "" %}<option value="{{ y }}">{{ y }}</option>{% endif %}{% endfor %}
+      </select>
+    </label>
+  </div>
+</div>
+
+<p class="archive-empty" hidden>No posts match those filters.</p>
 
 <div class="archive-list">
   {% for post in site.posts %}
-    <div class="archive-entry" data-year="{{ post.date | date: '%Y' }}">
+    <div class="archive-entry"
+         data-year="{{ post.date | date: '%Y' }}"
+         data-category="{% for c in post.categories %}{{ c | slugify }} {% endfor %}"
+         data-tags="{% for t in post.tags %}{{ t | slugify }} {% endfor %}">
       {% include components/post.html post=post no_link_title=page.no_link_title no_excerpt=page.no_excerpt hide_image=page.hide_image %}
     </div>
   {% endfor %}
 </div>
 
 <style>
-  .archive-header {
+  .archive-header { margin-bottom: 1rem; }
+  .archive-title { margin: 0; }
+
+  .archive-filter-bar {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
-    gap: .5rem;
+    gap: .6rem 1rem;
     margin-bottom: 1.5rem;
   }
-  .archive-title { margin: 0; }
-  /* Subdued date picker */
+  .archive-cats { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .archive-chip {
+    font: inherit;
+    font-size: .8rem;
+    line-height: 1;
+    color: inherit;
+    background: transparent;
+    border: 1px solid rgb(var(--accent-rgb) / .4);
+    border-radius: var(--chip-radius, .4rem);
+    padding: .3rem .6rem;
+    cursor: pointer;
+    opacity: .7;
+    transition: opacity .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .archive-chip:hover { opacity: 1; }
+  .archive-chip.is-active {
+    opacity: 1;
+    border-color: rgb(var(--accent-rgb));
+    background: rgb(var(--accent-rgb) / .12);
+  }
+  .chip-count { font-size: .72rem; opacity: .55; }
+
+  .archive-selects { display: flex; align-items: center; gap: .75rem; }
   .archive-filter {
     display: flex;
     align-items: center;
     gap: .4rem;
-    opacity: .65;
+    opacity: .7;
     font-size: .8rem;
     transition: opacity .15s ease;
   }
   .archive-filter:hover,
   .archive-filter:focus-within { opacity: 1; }
-  .archive-filter-label {
-    text-transform: uppercase;
-    letter-spacing: .06em;
-  }
-  .archive-year-select {
+  .archive-filter-label { text-transform: uppercase; letter-spacing: .06em; }
+  .archive-select {
     font: inherit;
     font-size: .8rem;
     color: inherit;
@@ -61,10 +108,22 @@ layout: base
     border-radius: 4px;
     padding: .15rem 1.2rem .15rem .4rem;
     cursor: pointer;
+    max-width: 11rem;
   }
-  .archive-year-select:focus {
-    outline: none;
-    border-color: rgba(128, 128, 128, .65);
-  }
+  .archive-select:focus { outline: none; border-color: rgba(128, 128, 128, .65); }
+
+  .archive-empty { opacity: .65; font-style: italic; }
   .archive-entry.is-hidden { display: none; }
+
+  /* Keep each entry's date + category/tag meta inside the reading pane. The gem's
+     `.post-date` is `flex; justify-content: space-between` with a FIXED 2rem height,
+     so a long right-hand meta string overflowed the pane onto the AX woodgrain desk
+     (illegible). Let it wrap and grow instead — scoped to the archive only, so the
+     wood is untouched on articles/other pages. */
+  .archive-entry .post-date {
+    height: auto;
+    flex-wrap: wrap;
+    row-gap: .15rem;
+  }
+  .archive-entry .post-date > * { min-width: 0; overflow-wrap: anywhere; }
 </style>

@@ -1,12 +1,17 @@
 ---
-# Featured tags need to have either the `list` or `grid` layout (PRO only).
+# Category landing page (Hydejack featured_categories). The `list` layout ships
+# in the FREE gem (verified) — the old "PRO only" note was stale.
 layout: list
 
-# The title of the tag's page.
+# The title of the category's page.
 title: Code
 
-# The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
+# The category slug — must match `categories: [<slug>]` in a post's front matter.
 slug: code
+
+description: >
+  Software, programming, and the craft of building things — decoders, shells,
+  development life cycles, and the occasional dream in code.
 
 sitemap: false
 ---

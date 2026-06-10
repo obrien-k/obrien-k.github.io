@@ -5,10 +5,8 @@ date: 2023-02-11 00:00:00 +0000
 description: "As I washed dishes during a power outage, I pondered the idea of hiring someone to do it for me. However, today, my thoughts drifted to technological advancements, specifically the AI application known as ChatGPT."
 image:
   path: /assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/chatting_with_a_bot.png
-tags:
-  - artificial-intelligence
-categories:
-  - artificial-intelligence
+categories: [ai]
+tags: [ethics]
 ---
 
 💡 This post has been updated to include ChatGPT-generated images for comparison's sake. It's not entirely fair to Craiyon but I encourage you to try the image prompts and see how far they've progressed as well.

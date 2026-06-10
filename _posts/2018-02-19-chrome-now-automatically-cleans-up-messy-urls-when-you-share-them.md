@@ -2,14 +2,8 @@
 layout: post
 title: "Chrome now automatically cleans up messy URLs when you share them"
 date: 2018-02-19 00:00:00 +0000
-tags:
-  - wuubi
-  - google
-  - google-chrome
-  - web-browser
-categories:
-  - wuubi
-  - google
+categories: [technology]
+tags: [browsers, google]
 ---
 
 ![Chrome v64 link shortening](https://web.archive.org/web/20190718005135im_/https://wuu.bi/wp-content/uploads/2018/02/ap_resize-300x240.jpeg)

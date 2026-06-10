@@ -9,6 +9,23 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.1
+Jun 10 2026
+{:.heading.post-date}
+
+Taxonomy consolidation (WS-C) — the 2018 vocabulary was a mess (9 hand-rolled tag
+pages, corrupted multi-value `categories:` front matter). It's now a clean,
+auto-generating system.
+
+### Taxonomy
+- **Four canonical categories** — `code · technology · AI · life`, one primary per post. The 17 posts' `categories:`/`tags:` front matter was rewritten clean (dropped the `wuubi` provenance marker, merged variants like `web-browser(s)` → `browsers`, removed terms that are now categories)
+- **Tag pages auto-generate** via `jekyll-archives` (`/tags/:name/`, preserving the old URLs) — the 9 hand-rolled `tags/<name>/index.md` pages and the dead `featured_tags` collection are retired. Category landing pages use Hydejack's native `featured_categories` (`/code/ /technology/ /ai/ /life/`)
+- **The `/archive/` gains category + tag + year filters** — category chips plus tag/year dropdowns, filtering the list client-side (the old year picker had no JS and never worked). `/tags/` is now a clean tag cloud linking to the archive pages
+
+### Fixed
+- Archive post-meta (dates, category/tag labels) no longer **overflows the reading pane onto the Anorex woodgrain** where it was illegible — scoped to the archive, so the wood is untouched on articles and other pages
+- Post tag links resolve to their `/tags/:name/` archive pages again (retiring `featured_tags` had left them as dead plain text)
+
 ## v0.1.0
 Jun 10 2026
 {:.heading.post-date}

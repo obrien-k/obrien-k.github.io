@@ -3,11 +3,8 @@ layout: post
 title: "Single color puzzle series, named “Pure Hell”"
 date: 2018-02-20 00:00:00 +0000
 description: "These Japase single color jigsaw puzzles are appropriately named “Pure Hell.”"
-tags:
-  - wuubi
-  - puzzles
-categories:
-  - wuubi
+categories: [life]
+tags: [puzzles]
 ---
 
 World’s Smallest 1000 piece puzzle

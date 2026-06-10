@@ -120,7 +120,7 @@ once a third skin (Anorex) appeared as a concrete use-case. WS-B scope:
 Photos are unaffected — token neutralization only targets CSS custom properties,
 not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fixed`).
 
-### WS-C — Taxonomy consolidation
+### WS-C — Taxonomy consolidation ✅ shipped (v0.1.1)
 - Add `jekyll-archives`; configure tag + category page generation.
 - Delete the 9 `tags/<name>/index.md` pages and the `featured_tags` collection config.
 - Decide the fate of `_featured_categories/code.md` and `tags.md` once archives
@@ -291,13 +291,21 @@ plugin runtime.)
   registry, the switcher (now **one selector per viewport** — sidebar chips on
   desktop, top-bar cycle button on mobile), the Anorex wood skin, and the
   `woodhead.png` post-title nameplate. VaporWave forced-dark-on-restore.
+- ✅ **WS-C — Taxonomy consolidation** — shipped (v0.1.1). 4 categories (code ·
+  technology · ai · life, one primary/post) via Hydejack `featured_categories`;
+  tags auto-generate via `jekyll-archives` (`/tags/:name/`, old URLs preserved);
+  the 9 hand-rolled tag pages + dead `featured_tags` collection retired; `/archive/`
+  gained category+tag+year filters; post tag-links re-resolve via a local
+  `tag-list.html` override. **In-repo vocabulary normalization done; the upstream
+  `ghost-2-jekyll` normalization (so re-imports stay clean) is still outstanding.**
+- ⏭️ **WS-D — Leadership Philosophy rustic/coffee-stain pass** — not started; the
+  next line item before WS-F.
 - ⏭️ **WS-F — Modularization (`base-hydejack` + layered skins)** — **decided, the
-  next major line item.** See "Modularization" above. Subsumes the switcher-partial
-  extraction and resolves the background-matrix bug class structurally (incl. the
-  remaining **VW-resume light-mode illegibility** — a manual brightness-toggle to
-  light on a dark-only skin; no clean per-skin patch, fixed by the base/overlay split).
-- **WS-C — Taxonomy** (`jekyll-archives`, retire hand-rolled tag pages) — not started.
-- **WS-D — Leadership Philosophy rustic/coffee-stain pass** — not started.
+  major refactor after WS-D.** See "Modularization" above. Subsumes the
+  switcher-partial extraction and resolves the background-matrix bug class
+  structurally (incl. the remaining **VW-resume light-mode illegibility** — a manual
+  brightness-toggle to light on a dark-only skin; no clean per-skin patch, fixed by
+  the base/overlay split).
 
 (The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
 was imported Stellar scope, see the WS-E scope note; not a goal for this site.)

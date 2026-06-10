@@ -54,9 +54,11 @@ group :jekyll_plugins do
   gem "jekyll-titles-from-headings"
   gem "jekyll-include-cache"
 
-  # Non-Github Pages plugins:
+  # Non-Github Pages plugins (this site builds via a custom GitHub Actions
+  # workflow, not the Pages whitelist, so non-whitelisted plugins are fine):
   gem "jekyll-last-modified-at"
   gem "jekyll-compose"
+  gem "jekyll-archives"   # auto-generate /tags/:name/ pages (WS-C)
 end
 
 gem 'wdm' if Gem.win_platform?

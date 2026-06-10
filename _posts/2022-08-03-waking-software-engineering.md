@@ -5,9 +5,8 @@ date: 2022-08-03 00:00:00 +0000
 description: "When asked, \"How did you get started in software?\" I'll summarize my career path or share a handful of short stories about `the long, long ago` when I began tinkering with JavaScript..."
 image:
   path: /assets/img/blog/posts/waking-software-engineering/waking-software-engineering-web-2.png
-tags: [career-path, code, narrative, programming, startup]
-categories:
-  - career-path
+categories: [life]
+tags: [career, narrative, startup]
 ---
 
 💡 This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  

@@ -3,10 +3,10 @@ layout: post
 title: "Dreaming in Code || Lucid Dreaming"
 date: 2020-06-01 00:00:00 -0600
 last_modified_at: 2024-02-04 01:22:54 -0500
-categories: [narrative]
-tags: [narrative, code, programming]
 description: "I begin the article 'How I Started a Code Study Group (and Why You Should Too)' by explaining how excited I was to start working at BigCommerce. It was only fair to summarize it in a word or I would have needed a separate piece to express how elated I was."
 image: /assets/img/blog/posts/dreaming-in-code-lucid-dreaming/cover-lg.png
+categories: [code]
+tags: [lucid-dreaming, narrative]
 ---
 
 

@@ -3,12 +3,8 @@ layout: post
 title: "Nationwide US Prison Strike: 8/21 – 9/9"
 date: 2018-10-13 00:00:00 +0000
 description: "The following was posted on another site I frequent and only recently received permission to re-post it, albeit it late, I still think it’s important to be…"
-tags:
-  - wuubi
-  - modern-slavery
-  - prison-strike
-categories:
-  - modern-slavery
+categories: [life]
+tags: [modern-slavery, prison-strike]
 ---
 
 The following was posted on another site I frequent and only recently received permission to re-post it, albeit it late, I still think it’s important to be aware of.

@@ -3,16 +3,8 @@ layout: post
 title: "Let’s build an MP3 decoder (2008)"
 date: 2018-03-15 00:00:00 +0000
 description: "Even though MP3 is probably the single most well known file format and codec on Earth, it’s not very well understood by most programmers – for many…"
-tags:
-  - wuubi
-  - audio
-  - code
-  - mp3
-  - sound
-categories:
-  - programming
-  - technology
-  - wuubi
+categories: [code]
+tags: [audio]
 ---
 
 > Even though MP3 is probably the single most well known file format and codec on Earth, it’s not very well understood by most programmers – for many encoders/decoders is in the class of software “other people” write, like standard libraries or operating system kernels. This article will attempt to demystify the decoder, with short top-down primers on signal processing and information theory when necessary. Additionally, a small but not full-featured decoder will be written (in Haskell), suited to play around with.
