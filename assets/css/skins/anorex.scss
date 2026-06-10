@@ -379,10 +379,10 @@ body .resume::after {
   mix-blend-mode: multiply;
   z-index: 1;
 }
-// Night wood swallows a multiplied brown — blend normally, a touch fainter.
-body.dark-mode .resume::after { mix-blend-mode: normal; opacity: 0.45; }
+// Light AX only — the ring read badly on the night-wood desk, so hide it in dark.
+body.dark-mode .resume::after { display: none; }
 @media (prefers-color-scheme: dark) {
-  body:not(.light-mode) .resume::after { mix-blend-mode: normal; opacity: 0.45; }
+  body:not(.light-mode) .resume::after { display: none; }
 }
 // a11y / greyscale: desaturate to match the neutralised palette.
 body.a11y-mode .resume::after { filter: grayscale(1); opacity: 0.4; }

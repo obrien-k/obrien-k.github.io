@@ -9,6 +9,15 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.6
+Jun 10 2026
+{:.heading.post-date}
+
+### Fixed
+- **Anorex résumé coffee ring is light-mode only now.** It read badly on the
+  night-wood desk, so it's hidden in Anorex dark (and OS-dark) — shown on the light
+  wood only.
+
 ## v0.1.5
 Jun 10 2026
 {:.heading.post-date}

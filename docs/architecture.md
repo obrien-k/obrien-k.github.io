@@ -338,9 +338,9 @@ plugin runtime.)
   the Anorex skin only** — a mug ring on the WhatCD wood desk. It's authored in
   `assets/css/skins/anorex.scss` as `body .resume::after` (so the AX sheet's
   injection *is* the skin gate; `.resume` exists on no other page), `multiply`-blended
-  on the light wood, switched to a normal blend on night-wood (dark), desaturated in
-  a11y, and dropped on narrow screens. **Not** a global element and **not** on
-  Leadership — that was the placement correction.
+  on the light wood, **shown in Anorex light only** (hidden on night-wood / dark,
+  where it read badly — v0.1.6), desaturated in a11y, and dropped on narrow screens.
+  **Not** a global element and **not** on Leadership — that was the placement correction.
 - ✅ **WS-F — Modularization (`base` + layered skin overlays)** — shipped (v0.1.3).
   `frutiger-aqua.scss` split into `_sass/skins/{_base,_frutiger-aqua,_vaporwave,
   _a11y}.scss`; chrome JS extracted into `_includes/skin-system/*`; registry-driven
