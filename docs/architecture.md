@@ -1,6 +1,8 @@
 # Architecture Overview & v0.1.0 Plan
 
-Status: **planning** — captured 2026-06-09, pre-v0.1.0. No implementation yet.
+Status: **roadmap closed** — captured 2026-06-09 (pre-v0.1.0); WS-A…F shipped
+through **v0.1.4** (2026-06-10). Two tails tracked inline: WS-D option (b) the real
+LaTeX coffee-stain, and the converter's live stock-WordPress check (§4).
 Scope: the custom layer over the **free** `jekyll-theme-hydejack` v9.2.1 gem.
 
 This document is the think-through that was deferred through the v0.0.x series. It
@@ -341,9 +343,16 @@ plugin runtime.)
   by import order) plus a Playwright sweep across 3 skins × light/dark/a11y. Also
   fixed a **pre-existing** production bug it surfaced (the `compress_html`
   `//`-comment breakage above) that had silently disabled the cycle button +
-  early-restore in production. Subsumed the switcher-partial extraction. **Still
-  open after WS-F:** the **VW-resume light-mode illegibility** structural fix — now
-  trivial on the clean overlays (a separate small change; see "Modularization").
+  early-restore in production. Subsumed the switcher-partial extraction.
+  **Resolved in v0.1.4:** the legacy sidebar THEME chips now delegate to the
+  authoritative switcher (`window.__skinSystem = { applySkin, currentSkinId }`
+  exposed from `switcher.html`, consumed by `widgets.html` with a legacy fallback),
+  so clicking **"VaporWave" yields true VaporWave** (magenta, purple-wave sidebar)
+  instead of landing on FA-dark; VaporWave gained a pure-CSS **synthwave
+  `--page-bg`** (3 layers — magenta verticals + cyan scanlines + a horizon radial —
+  aligned to `_base`'s `main.content { background-size: auto, auto, cover }`); and
+  the **VW-resume light-mode illegibility** is closed by the clean base/overlay
+  split. Block-comments-only preserved; production build green.
 
 (The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
 was imported Stellar scope, see the WS-E scope note; not a goal for this site.)
@@ -352,7 +361,29 @@ was imported Stellar scope, see the WS-E scope note; not a goal for this site.)
 
 ## 4. External / cross-repo dependencies
 
-- **`ghost-2-jekyll`** (tentatively `archive-2-md`) — external Ghost→Jekyll importer.
-  Owns the upstream normalization of the 2018 wuu.bi vocabulary (WS-C).
+- **`ghost-2-md`** (on disk at `~/git/ghost-2-md`; README renamed to
+  **`archive-2-md`**) — the external archive→Markdown importer. Owns the upstream
+  normalization of the 2018 wuu.bi vocabulary (WS-C). **Input-agnostic as of
+  2026-06-10:** a platform-adapter registry (`ghost`, `wordpress`/yaaburnee,
+  `generic`/html, `docx`/word) is decoupled from the input layer — `collect_sources()`
+  resolves each CLI token independently to a Wayback/live **URL**, a saved
+  **`.html`/`.htm`**, a Word **`.docx`**, a **directory** of those (`-r` recurses,
+  skipping saved-page `*_files/` asset folders), or a classic **`urls.txt`**
+  list-file; kinds mix in one run and dedupe. Adding a CMS/theme is still one
+  registry entry.
+  **Verification findings (2026-06-10):**
+  - **docx ✓** — verified end-to-end on `~/bigc-app.docx`; output is byte-identical
+    to the `_drafts/how-to-build-your-first-bigcommerce-app.md` already in the site.
+    Title + date come from the Word core-props, description auto-derives from the
+    first paragraph; headings and links convert cleanly. Two known fidelity gaps
+    (follow-ups, not blockers): (a) underscores inside inline-code are
+    backslash-escaped (`` `client\_id` ``) — markdownify escaping within `<code>`;
+    (b) Word text not carrying a code paragraph-style (e.g. a pasted JSON sample)
+    degrades to loose `<p>`s rather than a fenced code block.
+  - **default WordPress theme ⚠** — covered *by construction* in the generalized
+    `wordpress` adapter (detects stock `entry-content` + `entry-meta`/`posted-on`,
+    the `generator` meta, and `/wp-content/` asset paths; `clean_wordpress_cruft`
+    drops stock chrome + Jetpack/Sharedaddy). **Not yet exercised against a live
+    stock Twenty-\* capture** — the one remaining converter to-do.
 - **`~/git/resume`** — LaTeX resume pipeline; only viable home for real `coffeestains`
   output (WS-D, option b).

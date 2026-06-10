@@ -36,7 +36,23 @@
   --panel-blur:   none;
   --panel-shadow: none;
   --gloss-edge:   none;
-  --page-bg:      none;   // dark keeps its solid background
+
+  // Synthwave content-pane background. SAME 3-layer structure FA/FA-dark use
+  // (two auto-sized layers + one cover sweep) so main.content's per-layer
+  // background-size: auto, auto, cover (set in _base) lines up exactly.
+  // Pure CSS, no asset. Kept LOW-KEY (lines ~0.05-0.06 alpha, near-black purple
+  // base) so the light VaporWave body text + glass cards keep contrast; this is
+  // a texture, not a wallpaper. Tweak the alphas / periods / horizon to taste.
+  // Layer 1 (auto): magenta perspective verticals — thin neon lines, wide period.
+  // Layer 2 (auto): cyan scanline horizontals — fainter, tighter period.
+  // Layer 3 (cover): a single radial that is a low magenta horizon glow at the
+  //   bottom-centre fading up into a near-black indigo to deep-purple field — one
+  //   gradient does both the glow and the dark base, keeping this at exactly 3
+  //   layers (matches main.content's background-size: auto, auto, cover).
+  --page-bg:
+    repeating-linear-gradient(90deg, rgba(225, 0, 255, 0.06) 0px, rgba(225, 0, 255, 0.06) 1px, transparent 1px, transparent 46px),
+    repeating-linear-gradient(0deg,  rgba(79, 177, 186, 0.05) 0px, rgba(79, 177, 186, 0.05) 1px, transparent 1px, transparent 34px),
+    radial-gradient(135% 90% at 50% 120%, rgba(225, 0, 255, 0.20) 0%, rgba(120, 20, 150, 0.14) 22%, #1a0c2e 48%, #140a26 72%, #0c0618 100%);
 
   blockquote {
     background: rgba(255, 255, 255, 0.03);

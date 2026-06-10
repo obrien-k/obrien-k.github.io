@@ -176,7 +176,12 @@
   function updateThemeChips() {
     var widget = document.querySelector('.sidebar-themes');
     if (!widget) return;
-    var cur = currentSkinId();
+    /* Prefer the authoritative switcher's currentSkinId (reads the explicit
+       body.skin-<id> class / saved skin) so the active chip tracks the TRUE
+       skin; fall back to the legacy dark-mode heuristic only if unavailable. */
+    var cur = (window.__skinSystem && window.__skinSystem.currentSkinId)
+            ? window.__skinSystem.currentSkinId()
+            : currentSkinId();
     var chips = widget.querySelectorAll('.theme-chip');
     for (var i = 0; i < chips.length; i++) {
       chips[i].classList.toggle('is-active', chips[i].getAttribute('data-skin') === cur);
@@ -212,7 +217,16 @@
       var btn = e.target.closest ? e.target.closest('.theme-chip')
               : (e.target.classList.contains('theme-chip') ? e.target : null);
       if (!btn) return;
-      applySkin(btn.getAttribute('data-skin'));
+      /* Drive the AUTHORITATIVE switcher applySkin (sets body.skin-<id> +
+         brightness intent + persists) so clicking "VaporWave" yields real
+         VaporWave, not FA-dark; fall back to the legacy local copy if the
+         switcher hasn't loaded. */
+      var id = btn.getAttribute('data-skin');
+      if (window.__skinSystem && window.__skinSystem.applySkin) {
+        window.__skinSystem.applySkin(id);
+      } else {
+        applySkin(id);
+      }
     });
 
     social.parentNode.insertBefore(widget, social);

@@ -106,6 +106,14 @@ window.__skins = {{ site.data.skins | jsonify }};
     updateSkinBtn();
   }
 
+  /* Expose the AUTHORITATIVE skin functions so the legacy sidebar THEME chips
+     (widgets.html) can drive the same logic the nav cycle button uses — setting
+     an explicit body.skin-<id> class + persisting localStorage + applying the
+     skin's brightness intent — instead of widgets.html's old dark-mode-only
+     heuristic (which landed VaporWave on FA-dark). widgets.html falls back to its
+     local copy only if this is undefined. (block comments only — see WS-F.) */
+  window.__skinSystem = { applySkin: applySkin, currentSkinId: currentSkinId };
+
   /* ---- cycle ----------------------------------------------------- */
 
   function cycleNext() {

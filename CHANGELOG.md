@@ -9,6 +9,34 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.4
+Jun 10 2026
+{:.heading.post-date}
+
+VaporWave is finally itself. The legacy sidebar THEME chips were wired to the old
+dark-mode heuristic, so clicking **VaporWave** actually landed you on Frutiger-Aqua
+dark. They now delegate to the real switcher, and VaporWave gets the synthwave
+reading pane it never had.
+
+### Fixed
+- **The THEME chips select the *true* skin now.** `switcher.html` exposes
+  `window.__skinSystem = { applySkin, currentSkinId }`; `widgets.html`'s sidebar
+  chips drive those (with a legacy fallback) instead of their own dark-mode-only
+  copy — so "VaporWave" sets `body.skin-vaporwave` (magenta, purple-wave
+  `sidebar-bg.jpg` everywhere) rather than resolving to FA-dark. The active-chip
+  highlight tracks the real skin too.
+
+### Themes
+- **VaporWave synthwave content pane.** A pure-CSS `--page-bg` on `body.skin-vaporwave`
+  — magenta perspective verticals + faint cyan scanlines over a bottom-centre
+  horizon radial fading into a near-black indigo field. Three layers, aligned to
+  `_base`'s `main.content { background-size: auto, auto, cover }`; low-alpha so the
+  light VaporWave body text and glass cards keep their contrast. No image asset.
+- **VW-resume light-mode legibility** closed out on the clean base/overlay split.
+
+(Block-comments-only preserved in the skin-system partials; production build green.
+See `docs/architecture.md` WS-F + §4 for the converter roadmap closure.)
+
 ## v0.1.3
 Jun 10 2026
 {:.heading.post-date}
