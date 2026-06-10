@@ -16,7 +16,8 @@ Jun 10 2026
 ### Themes
 - **Frutiger Aqua and VaporWave are now separate skins.** Skin identity lives on a `body.skin-*` class instead of being inferred from dark-mode, so Frutiger Aqua has its own **aqua dark mode** (dark night-sky pane, dimmed FA drawer photo) rather than turning into VaporWave's magenta when you toggle brightness. VaporWave keeps its magenta + `sidebar-bg.jpg` look on its own
 - Frutiger Aqua drawer uses the dedicated `fa-sidebar-bg.jpg` photo (faint aqua scrim for legible white text) in place of the hand-rolled gradient
-- Anorex: rounded panels/chips to match the other skins (`0.6`/`0.45rem`); woodgrain in **all four states** (light/dark × a11y) — dark mode is now night-wood, not flat; radial-lit "desk" with a parchment wash on the reading pane (grain visible, text still AA); translucent-woodgrain blog cards; a carved-wood selector gradient on each nav item; and a warm lit band spanning the nav links (About→Constellations)
+- Anorex: rounded panels/chips to match the other skins (`0.6`/`0.45rem`); woodgrain in **all four states** (light/dark × a11y) — dark mode is now night-wood, not flat; radial-lit "desk" with a parchment wash on the reading pane (grain visible, text still AA); translucent-woodgrain blog cards; a carved-wood selector gradient on each nav item; and a radial lamplight highlight in the sidebar
+- Anorex post titles now sit on a **`woodhead.png` carved-wood nameplate** (`.post-title` — the home/archive list cards and the single-post page header), `inline-block` so the band hugs the title text; dark mode darkens the wood with a wash and flips the title text light. The sidebar stays a clean lamplight gradient (woodhead is used only on post titles now)
 - Sidebar title `KyleOBrien.me#Kai` → `KyleOBrien.me/Kai`
 - Skin cycle button is now a labelled **THEME** control: signature-tinted glyph plus a cycle-position dot row (one dot per skin); the **A11Y** toggle is labelled to match, captions aligned
 

@@ -143,29 +143,43 @@ not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fi
     export PNG/SVG, embed. Only path that uses the actual package.
   - (c) `ghost-2-jekyll` — not applicable (it's an importer, not a renderer).
 
-### WS-E — Skin registry + Anorex (InjectStylesheet plugin)
+### WS-E — Skin registry + Anorex override skin
 
-The Jekyll site doubles as a **scaffold/testbed** for re-skinning downstream
-projects (e.g. a Stellar instance) via an ejectable CSS override pattern,
-analogous to how stellar-ui ships `kuro` and `proton` as standalone CSS files
-swapped by `StylesheetInjector.tsx`.
+A small **in-repo** skin system for this site only: a registry, the two built-in
+skins, and one runtime-loaded CSS-override skin (Anorex).
+
+> **Scope note — this is NOT the Stellar stylesheet inject/eject work.** Earlier
+> drafts of this section borrowed framing from `obrien-k/stellar*` (the
+> `StylesheetInjector`, the `kuro`/`proton` standalone sheets, CDN/package
+> delivery). That is a separate spec that lives in those repos and should be
+> documented there — none of its CDN/packaging machinery applies to this Jekyll
+> site. The only thing in common is the bare idea "swap a stylesheet at runtime".
+> Don't import that scope here.
+
+**"Inject" / "eject" here mean, concretely:**
+- *Inject* — the switcher adds a single `<link id="hj-ext-skin">` that loads an
+  override skin's compiled CSS at runtime. Built-in skins need no link (they're
+  in the main Hydejack bundle).
+- *Eject* — remove the feature to return to stock Hydejack: delete the
+  skin-switcher block from `my-body.html` + the early-restore from `my-head.html`
+  (and the override files under `assets/css/skins/`). No other template coupling.
 
 **Architecture:**
 
 - `_data/skins.yml` — registry: `id`, `label`, `short`, `hue` (signature color
-  for the cycle dot/glyph), `desc`, `css` (null for built-ins, relative path or
-  CDN URL for override skins), `dark`.
-- `assets/css/skins/<name>.{css,scss}` — self-contained custom-property override
+  for the cycle dot/glyph), `desc`, `css` (null for built-ins, relative path for
+  override skins), `dark`.
+- `assets/css/skins/<name>.scss` — self-contained custom-property override
   targeting Hydejack's token layer (`--accent-rgb`, `--panel-bg`, etc.) + minimal
   structural selectors. **Authored in SCSS** (front-matter `assets/css/skins/<name>.scss`
   → Jekyll compiles to the sibling `.css` the registry injects). SCSS buys mixins
-  to DRY the dark / a11y variants; the *output* is still a standalone, ejectable
-  CSS file, so the runtime-`<link>` and CDN story are unchanged. (Was pure CSS;
-  switched to SCSS once Anorex grew dark + a11y + OS-dark variants worth DRYing.)
+  to DRY the light/dark/a11y/OS-dark variants; the *output* is a standalone CSS
+  file. (Was pure CSS; switched to SCSS once Anorex grew enough variants to DRY.)
 - `_includes/my-head.html` — `<link id="hj-ext-skin" rel="stylesheet" href="">` +
   inline early-restore script (reads `localStorage('skin')`, sets `href` before
   first paint to prevent flash of wrong skin).
-- `_includes/my-body.html` — skin switcher JS: reads `window.__skins` (Liquid-
+- `_includes/my-body.html` — skin switcher JS, inline in Hydejack's body-inject
+  hook (see "Not yet modular" below). Reads `window.__skins` (Liquid-
   injected from `_data/skins.yml`), injects the **THEME** cycle button into the
   `.nav-btn-bar` (glyph tinted with the active skin's `hue`, a cycle-position dot
   row beneath, "THEME" caption), swaps the `<link>` href, persists
@@ -187,14 +201,16 @@ class (+ `localStorage('skin')`), orthogonal to Hydejack's own dark-mode toggle:
 `currentSkinId()` reads the class/storage, not `body.dark-mode`, so flipping
 brightness no longer changes which skin you're on.
 
-**Forkable/ejectable contract:**
-- To eject: delete `<link id="hj-ext-skin">` from `my-head.html` and the skin
-  switcher block from `my-body.html`. Zero template coupling elsewhere.
-- To pull upstream skin changes without a rebuild: update `css` in `skins.yml`
-  to a CDN URL (e.g. npm-published CSS file). The `<link>` swap happens at
-  runtime — no Jekyll rebuild required.
-- To add a skin: drop a new CSS/SCSS file in `assets/css/skins/`, add one entry
-  to `_data/skins.yml`. No JS changes needed.
+**Add a skin:** drop a new `.scss` file in `assets/css/skins/`, add one entry to
+`_data/skins.yml`. No JS changes needed.
+
+**Not yet modular (known gap).** The switcher + a11y toggle currently live as
+inline `<script>` blocks in `_includes/my-body.html` (the Hydejack body-inject
+hook), and the early-restore in `_includes/my-head.html` — not a single
+self-contained partial. "Modular" here would mean extracting the switcher into
+its own `_includes/skin-switcher.html` that `my-body.html` just `{% include %}`s
+(Jekyll has no client-side "plugin" concept — this is template includes, not a
+plugin). Deferred, not done; see Outstanding work below.
 
 **Current skins:**
 
@@ -208,17 +224,25 @@ brightness no longer changes which skin you're on.
 - Light: body text `#3E290A`, link `#573811` (darkened from `#6B481E` to clear
   WCAG AA — 6.7:1 — on the parchment reading surface), hover `#A56A22`, panel
   `#DCB881`, border `#65430F`.
-- Backgrounds (helper mixins `ax-desk` / `ax-pane` / `ax-sidebar` / `ax-card`):
-  the wood "desk" (`woodbg.png`) tiles the AX body under a **radial vignette**
-  (lit toward the top-centre) so the grain reads with depth, not flat banding.
-  The reading pane (`main.content`) floats a `0.68` parchment wash over the same
-  grain (grain stays visible; body 6.1:1 / links 4.7:1 ✓ AA even over the darkest
-  streaks). Blog cards float a translucent tan over the grain so it shows through.
-- Sidebar (`woodhead.png`): a warm **lit band** spans the nav links (~32–59% — the
-  top of About to the bottom of Constellations), with the `::after` scrim framing
-  it darker above/below. Each nav `li` carries a persistent carved-wood tab
-  gradient, brighter on hover/current. Sidebar links are gold (`#dcb881`) in both
-  brightness modes (the drawer is dark-backed, so its text always reads light).
+- Backgrounds (helper mixins `ax-desk` / `ax-pane` / `ax-sidebar` / `ax-card` /
+  `ax-wood-band`): the wood "desk" (`woodbg.png`) tiles the AX body under a
+  **radial vignette** (lit toward the top-centre) so the grain reads with depth,
+  not flat banding. The reading pane (`main.content`) floats a `0.68` parchment
+  wash over the same grain (grain stays visible; body 6.1:1 / links 4.7:1 ✓ AA
+  even over the darkest streaks). Blog cards float a translucent tan over the grain
+  so it shows through.
+- Post titles (`.post-title` — list cards on home/archive **and** the single-post
+  page header): `woodhead.png` backs each title as a carved-wood **nameplate**
+  (`ax-wood-band`, `inline-block` so it hugs the title text; `cover`-sized, rounded
+  to the chip radius, inset bevel). Dark text clears AA on the light wood; dark
+  mode flips to light text over a darkening overlay wash (a `filter` would dim the
+  title text). This is the only place `woodhead.png` is used.
+- Sidebar: the `.sidebar-bg` backdrop is just a soft "lamplight" gradient
+  (`ax-sidebar`) over the warm base colour, with the `::after` scrim a gentle
+  top/bottom edge vignette — no woodhead here. Each nav `li` carries a persistent
+  carved-wood tab gradient, brighter on hover/current. Sidebar links are gold
+  (`#dcb881`) in both brightness modes (the drawer is dark-backed, so its text
+  always reads light).
 - Dark = **night wood** (not flat black): the same grain darkened by a deep radial
   vignette on the desk + a stained-board wash on the pane; mahogany panels,
   golden-tan accents (`#C1965C`).
@@ -239,8 +263,15 @@ brightness no longer changes which skin you're on.
   sidebar text light even in light page modes (the dark warm-grey accent is
   illegible on the drawer otherwise).
 
-**Future:** evaluate publishing as an npm package / Ruby gem / pip package for
-forkable CDN delivery (recurring task scheduled — see task #14).
+**Outstanding work (not done — don't read the detail above as "shipped"):**
+- Extract the switcher into `_includes/skin-switcher.html` (modularity gap above).
+- **WS-C — Taxonomy** (`jekyll-archives`, retire hand-rolled tag pages) — not started.
+- **WS-D — Leadership Philosophy rustic/coffee-stain pass** — not started.
+- A lot of recent effort went into WS-E polish (skins / a11y / sidebar); WS-C and
+  WS-D are the next real line items.
+
+(The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
+was imported Stellar scope, see the WS-E scope note; not a goal for this site.)
 
 ---
 

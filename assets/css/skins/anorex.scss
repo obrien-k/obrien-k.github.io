@@ -56,24 +56,46 @@ $wood-head: url(/assets/css/skins/woodhead.png);
   background-attachment: fixed, fixed !important;
 }
 
-// Sidebar: woodhead grain with a warm "lamplight" band over the wood. The light
-// inner-band is positioned to span the nav links — from the top of About (~32%)
-// to the bottom of Constellations (~59%) — fading into the wood just outside, so
-// the menu sits in a lit panel.
+// Sidebar backdrop: a warm "lamplight" gradient over the base colour — lit from
+// the top of About (~30%) down past the status widget (~78%), with WIDE (~14%)
+// soft ramps in and out so it reads as a panel, not a hard stripe. No woodhead
+// here anymore — the woodhead graphic is used solely as the post-title nameplate
+// (see ax-wood-band); the sidebar is just this soft gradient.
 @mixin ax-sidebar($highlight, $base, $bright) {
   background-image:
     linear-gradient(
       to bottom,
-      transparent 24%,
-      #{$highlight} 32%,
-      #{$highlight} 59%,
-      transparent 67%
-    ),
-    #{$wood-head} !important;
+      transparent     16%,
+      #{$highlight}   30%,
+      #{$highlight}   78%,
+      transparent     92%
+    ) !important;
   background-color: #{$base} !important;
-  background-repeat: no-repeat, repeat-x !important;
-  background-size: 100% 100%, auto !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
   filter: #{$bright} !important;
+}
+
+// Woodhead "title band": the woodhead header graphic backs a post title — a
+// carved-wood nameplate behind the title text, on both the list cards and the
+// single-post page header. `cover` scales the 100×75 graphic to fill the band
+// (crisp grain, no tiling seams); rounded to the chip radius. In dark mode an
+// optional wash darkens the wood to night-wood (a filter would dim the title
+// text, so darken via an overlay layer instead).
+@mixin ax-wood-band($wash: null) {
+  @if $wash {
+    background-image: linear-gradient(#{$wash}, #{$wash}), #{$wood-head} !important;
+  } @else {
+    background-image: #{$wood-head} !important;
+  }
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  border-radius: var(--chip-radius);
+  padding: 0.1em 0.4em;
+  box-shadow:
+    inset 0  1px 0 rgba(255, 240, 210, 0.25),
+    inset 0 -1px 0 rgba(40, 24, 4, 0.35);
 }
 
 // Translucent woodgrain card — grain shows THROUGH the panel; per-mode wash.
@@ -113,6 +135,15 @@ $wood-head: url(/assets/css/skins/woodhead.png);
   .layout-list .related-posts > li {
     @include ax-card(rgba(28, 17, 3, 0.78), rgba(178, 122, 46, 0.40));
   }
+  // Night-wood title band: darken the woodhead via an overlay wash; light title
+  // text (a filter would dim it).
+  .post-title {
+    @include ax-wood-band(rgba(20, 12, 2, 0.58));
+    display: inline-block;
+    color: #f1e6cc !important;
+  }
+  .post-title a,
+  .post-title .flip-title { color: #f1e6cc !important; }
   pre,
   code {
     background: rgba(62, 41, 10, 0.5) !important;
@@ -207,19 +238,17 @@ body a:hover { color: #A56A22; }
 
 // ── Sidebar ─────────────────────────────────────────────────────────
 
-body .sidebar-bg { @include ax-sidebar(rgba(255, 226, 170, 0.28), #7a4f16, none); }
+body .sidebar-bg { @include ax-sidebar(rgba(255, 228, 174, 0.42), #7a4f16, none); }
 
-// Scrim now FRAMES the lit nav band: it darkens the top (avatar/title) and the
-// bottom (status/social) and stays clear over the nav links (~32–59%), so the
-// light inner-band reads as a spotlight on the menu instead of being cancelled.
+// Scrim is just a gentle edge vignette now — darkens the very top (avatar) and
+// very bottom (below the social row) and stays clear through the middle so the
+// soft lamplight glow over the nav + status isn't cancelled.
 body .sidebar-bg.sidebar-overlay::after {
   background: linear-gradient(
     to bottom,
     rgba(62, 41, 10, 0.45) 0%,
-    rgba(62, 41, 10, 0.28) 18%,
-    transparent             30%,
-    transparent             60%,
-    rgba(62, 41, 10, 0.32) 72%,
+    rgba(62, 41, 10, 0)    16%,
+    rgba(62, 41, 10, 0)    84%,
     rgba(62, 41, 10, 0.45) 100%
   ) !important;
 }
@@ -283,6 +312,20 @@ body .layout-list .related-posts > li,
 body .post-card {
   @include ax-card(rgba(220, 184, 129, 0.80), rgba(101, 67, 15, 0.45));
 }
+
+// ── Post title "wood band" ───────────────────────────────────────────
+// woodhead.png backs each post title as a carved-wood nameplate — the list cards
+// (home + archive) and the single-post page header all render `.post-title`, so
+// one rule covers every context. `inline-block` hugs the title text so the band
+// reads as a nameplate, not a full-width slab. Dark text clears AA on the light
+// wood (dark mode flips to light text over the night-wood wash).
+body .post-title {
+  @include ax-wood-band();
+  display: inline-block;
+  color: #2e2519 !important;
+}
+body .post-title a,
+body .post-title .flip-title { color: #2e2519 !important; }
 
 // ── Code ─────────────────────────────────────────────────────────────
 
