@@ -13,7 +13,7 @@
   // Built-in skins (vaporwave/frutiger-aqua) need no CSS injection;
   // Hydejack restores dark-mode from its own storage. Only act for override skins.
   if(!s||s==='vaporwave'||s==='frutiger-aqua')return;
-  var skins={{ site.data.skins | jsonify }};
+  var skins={% if site.data.skins %}{{ site.data.skins | jsonify }}{% else %}[]{% endif %};
   for(var i=0;i<skins.length;i++){
     if(skins[i].id===s&&skins[i].css){
       var l=document.createElement('link');

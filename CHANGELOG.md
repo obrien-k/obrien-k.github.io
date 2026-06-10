@@ -9,6 +9,26 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.0.10
+Jun 10 2026
+{:.heading.post-date}
+
+### Themes
+- **Frutiger Aqua and VaporWave are now separate skins.** Skin identity lives on a `body.skin-*` class instead of being inferred from dark-mode, so Frutiger Aqua has its own **aqua dark mode** (dark night-sky pane, dimmed FA drawer photo) rather than turning into VaporWave's magenta when you toggle brightness. VaporWave keeps its magenta + `sidebar-bg.jpg` look on its own
+- Frutiger Aqua drawer uses the dedicated `fa-sidebar-bg.jpg` photo (faint aqua scrim for legible white text) in place of the hand-rolled gradient
+- Anorex: rounded panels/chips to match the other skins (`0.6`/`0.45rem`); woodgrain in **all four states** (light/dark × a11y) — dark mode is now night-wood, not flat; radial-lit "desk" with a parchment wash on the reading pane (grain visible, text still AA); translucent-woodgrain blog cards; a carved-wood selector gradient on each nav item; and a warm lit band spanning the nav links (About→Constellations)
+- Sidebar title `KyleOBrien.me#Kai` → `KyleOBrien.me/Kai`
+- Skin cycle button is now a labelled **THEME** control: signature-tinted glyph plus a cycle-position dot row (one dot per skin); the **A11Y** toggle is labelled to match, captions aligned
+
+### Accessibility
+- A11y mode now actually engages on Anorex (it previously no-op'd under the skin's hardcoded colors); it is **foreground-only** — backgrounds keep their full look so a11y and non-a11y read identically per skin, with only text/accents neutralized to high-contrast
+- "A11y engaged" cue is a subtle filled pill on the **A11Y** toggle (no content-pane outline)
+- The dark-backed sidebar/drawer keeps its text light in every mode — fixes illegible sidebar links (e.g. the status `doing:` link) in a11y light mode
+- Audited and corrected contrast to WCAG AA: Anorex links `#6B481E`→`#573811` (was 4.36:1), plus verified the FA and Anorex a11y palettes
+
+### Build
+- Anorex skin migrated to SCSS (`anorex.scss`, front-matter compiled) so mixins DRY the light/dark/a11y/OS-dark variants; ships as the same ejectable `anorex.css`
+
 ## v0.0.9
 Jun 04 2026
 {:.heading.post-date}

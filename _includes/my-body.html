@@ -499,6 +499,275 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 </script>
 
 <!-- ===================================================================
+     Skin switcher — WS-E
+     Injects a cycle button into .nav-btn-bar before the a11y Aa button.
+     Nav order: hamburger → brightness → [skin cycle] → Aa
+
+     Three skins (from _data/skins.yml):
+       VW  — VaporWave: body.dark-mode on,  no CSS override
+       FA  — Frutiger Aqua: body.dark-mode off, no CSS override
+       AX  — Anorex: CSS injection, preserves current dark-mode state
+
+     Built-in skin state (VW/FA) is derived from body.dark-mode at read time —
+     MutationObserver keeps the button label in sync when the brightness toggle
+     changes the class independently. Anorex is tracked via localStorage('skin').
+
+     Ejectable: remove this block + the early-restore script in my-head.html.
+     =================================================================== -->
+<script>
+window.__skins = {{ site.data.skins | jsonify }};
+</script>
+<script>
+(function() {
+  'use strict';
+
+  var SKIN_KEY = 'skin';
+  var skins    = window.__skins || [];
+  var skinBtn;
+  var observer;
+
+  /* ---- helpers -------------------------------------------------- */
+
+  function getSkin(id) {
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === id) return skins[i];
+    }
+    return null;
+  }
+
+  /* Skin identity is tracked EXPLICITLY now (localStorage + a body.skin-<id>
+     class), independent of dark-mode. This is what lets Frutiger-Aqua have its
+     own dark mode (brightness toggle) WITHOUT becoming VaporWave — the two used
+     to be the same thing (dark-mode === vaporwave). */
+  function setSkinClass(id) {
+    var b = document.body.classList;
+    for (var i = 0; i < skins.length; i++) b.remove('skin-' + skins[i].id);
+    b.add('skin-' + id);
+  }
+
+  function currentSkinId() {
+    var saved = localStorage.getItem(SKIN_KEY);
+    if (saved && getSkin(saved)) return saved;
+    for (var i = 0; i < skins.length; i++) {
+      if (document.body.classList.contains('skin-' + skins[i].id)) return skins[i].id;
+    }
+    return 'frutiger-aqua';
+  }
+
+  function getOrCreateLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (!el) {
+      el = document.createElement('link');
+      el.id = 'hj-ext-skin'; el.rel = 'stylesheet';
+      document.head.appendChild(el);
+    }
+    return el;
+  }
+
+  function removeLink() {
+    var el = document.getElementById('hj-ext-skin');
+    if (el) el.parentNode.removeChild(el);
+  }
+
+  /* ---- apply ----------------------------------------------------- */
+
+  function applySkin(id) {
+    var skin = getSkin(id);
+    if (!skin) return;
+
+    removeLink();              // clear any CSS override first
+    setSkinClass(id);          // explicit skin identity on <body>
+    if (skin.css) getOrCreateLink().href = skin.css;
+
+    // Brightness intent per skin: dark === true forces dark (VaporWave is a dark
+    // skin), false forces light (Frutiger-Aqua's signature is light — toggle
+    // brightness afterwards for FA-dark), null leaves the current brightness be
+    // (Anorex respects whatever the brightness toggle is set to).
+    if (skin.dark === true) {
+      document.body.classList.add('dark-mode');
+      document.body.classList.remove('light-mode');
+    } else if (skin.dark === false) {
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
+    }
+    localStorage.setItem(SKIN_KEY, id);   // persist for ALL skins now
+    updateSkinBtn();
+  }
+
+  /* ---- cycle ----------------------------------------------------- */
+
+  function cycleNext() {
+    var cur = currentSkinId();
+    var idx = 0;
+    for (var i = 0; i < skins.length; i++) {
+      if (skins[i].id === cur) { idx = i; break; }
+    }
+    applySkin(skins[(idx + 1) % skins.length].id);
+  }
+
+  /* ---- button label --------------------------------------------- */
+
+  function updateSkinBtn() {
+    if (!skinBtn) return;
+    var id   = currentSkinId();
+    var skin = getSkin(id);
+    var sh   = skin ? skin.short : id.slice(0, 2).toUpperCase();
+    var lbl  = skin ? skin.label : id;
+    var hue  = (skin && skin.hue) ? skin.hue : 'currentColor';
+    var tip  = skin ? (lbl + (skin.desc ? ' — ' + skin.desc : '')) : lbl;
+
+    // Cycle-position dots — one per skin, in registry order, each tinted with
+    // its own signature hue; the active skin's dot is filled + enlarged so the
+    // row reads as "where am I in the cycle".
+    var dots = '';
+    for (var i = 0; i < skins.length; i++) {
+      var on = skins[i].id === id;
+      dots += '<i class="ws-dot' + (on ? ' on' : '') + '"'
+            + ' style="--dot:' + (skins[i].hue || '#888') + '"></i>';
+    }
+
+    // Glyph tinted with the active skin's signature hue (highlights the theme
+    // name); THEME caption next (kept in normal flow so it aligns with A11Y's
+    // caption); the dot row is absolutely positioned BELOW the caption so it
+    // doesn't change the button's height.
+    skinBtn.innerHTML =
+        '<span class="ws-glyph" style="color:' + hue + '">' + sh + '</span>'
+      + '<span class="ws-cap">THEME</span>'
+      + '<span class="ws-dots">' + dots + '</span>';
+    skinBtn.setAttribute('aria-label', 'Theme: ' + lbl + ' — click to cycle');
+    skinBtn.title = tip;
+    skinBtn.style.opacity = '1';
+  }
+
+  /* ---- inject ---------------------------------------------------- */
+
+  function injectSkinBtn() {
+    if (document.getElementById('_skin-toggle')) return;
+    if (skins.length < 2) return;
+    var bar = document.querySelector('.nav-btn-bar');
+    if (!bar) return;
+
+    skinBtn = document.createElement('button');
+    skinBtn.id        = '_skin-toggle';
+    skinBtn.className = 'nav-btn no-hover';
+    skinBtn.setAttribute('type', 'button');
+    skinBtn.style.cssText = 'font-size:0.72rem;letter-spacing:-0.02em;font-family:inherit;line-height:1';
+    skinBtn.addEventListener('click', cycleNext);
+    bar.appendChild(skinBtn); // appended before Aa (registered via next DOMContentLoaded)
+    updateSkinBtn();
+
+    // Stay in sync when the brightness toggle flips body.dark-mode independently
+    if (window.MutationObserver && !observer) {
+      observer = new MutationObserver(function() { updateSkinBtn(); });
+      observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+    }
+  }
+
+  /* ---- SPA lifecycle -------------------------------------------- */
+
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      skinBtn = null;
+      injectSkinBtn();
+    });
+  }
+
+  // Restore the saved skin's body class as early as this inline script runs
+  // (body exists here), so the right built-in skin paints without waiting for
+  // DOMContentLoaded. Does not touch brightness — Hydejack restores dark-mode
+  // from its own storage; for VaporWave the class is what flips it to magenta.
+  if (document.body) setSkinClass(currentSkinId());
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectSkinBtn);
+  } else {
+    injectSkinBtn();
+  }
+})();
+</script>
+
+<!-- ===================================================================
+     A11y mode toggle — WS-B
+     Injects an "Aa" nav-btn into Hydejack's .nav-btn-bar (between the
+     hamburger and the brightness button). Orthogonal to Hydejack's own
+     light/dark toggle — we own body.a11y-mode + localStorage('a11y').
+     =================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  var A11Y_KEY = 'a11y';
+  var a11yBtn;
+
+  function isA11y() {
+    return document.body.classList.contains('a11y-mode');
+  }
+
+  function setA11y(on) {
+    document.body.classList.toggle('a11y-mode', on);
+    localStorage.setItem(A11Y_KEY, on ? 'on' : 'off');
+    updateA11yBtn();
+  }
+
+  function updateA11yBtn() {
+    if (!a11yBtn) return;
+    var on = isA11y();
+    a11yBtn.setAttribute('aria-pressed', String(on));
+    a11yBtn.title = on ? 'Disable a11y mode' : 'Enable a11y mode';
+    a11yBtn.style.opacity = on ? '1' : '0.55';
+    a11yBtn.style.fontWeight = on ? '700' : '500';
+  }
+
+  function injectA11yToggle() {
+    if (document.getElementById('_a11y-toggle')) return;
+    var bar = document.querySelector('.nav-btn-bar');
+    if (!bar) return;
+
+    a11yBtn = document.createElement('button');
+    a11yBtn.id = '_a11y-toggle';
+    a11yBtn.className = 'nav-btn no-hover';
+    a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
+    a11yBtn.setAttribute('type', 'button');
+    a11yBtn.style.cssText = [
+      'font-size: 0.8rem',
+      'letter-spacing: -0.03em',
+      'font-family: inherit',
+      'line-height: 1'
+    ].join(';');
+    a11yBtn.innerHTML =
+        '<span class="ws-glyph">Aa</span>'
+      + '<span class="ws-cap">A11Y</span>'
+      + '<span class="ws-dots" aria-hidden="true"></span>';
+
+    // Append last — order: hamburger → brightness → Aa
+    bar.appendChild(a11yBtn);
+
+    a11yBtn.addEventListener('click', function() {
+      setA11y(!isA11y());
+    });
+
+    updateA11yBtn();
+  }
+
+  // Re-inject after every SPA navigation (Hydejack rebuilds the navbar on route change)
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      a11yBtn = null;  // reference was destroyed with the old navbar DOM
+      injectA11yToggle();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectA11yToggle);
+  } else {
+    injectA11yToggle();
+  }
+})();
+</script>
+
+<!-- ===================================================================
      Archive page: subdued year date-picker filter (SPA-safe)
      =================================================================== -->
 <script>
