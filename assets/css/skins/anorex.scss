@@ -1,0 +1,336 @@
+---
+# Front matter (even empty) tells Jekyll to run this through the Sass converter
+# and emit /assets/css/skins/anorex.css — the path the skin registry injects at
+# runtime. Authored in SCSS (mixins DRY the dark / a11y variants); ships as a
+# standalone, ejectable CSS file. See docs/architecture.md WS-E.
+---
+//
+// Anorex skin for jekyll-theme-hydejack
+// =======================================
+// Ported from the Gazelle/WhatCD "anorex" stylesheet.
+// Theme: warm wood / parchment — rich browns, tans, amber.
+//
+// Usage (runtime injection):
+//   <link id="hj-ext-skin" rel="stylesheet" href="/assets/css/skins/anorex.css">
+//
+// Forkable/CDN: point the href at any CDN copy of the COMPILED css — no rebuild
+// at swap time. Eject: remove the <link> tag and delete this file + its compiled
+// output. Zero template changes required.
+//
+// Follows the same CSS custom property token pattern as frutiger-aqua.scss.
+// All tokens use space-separated RGB channels for alpha variation:
+//   rgb(var(--accent-rgb) / 0.4)
+//
+// Source palette (Gazelle anorex/style.css):
+//   body bg:    wood texture / #C1965C     content bg: #DCB881  tan
+//   text:       #492802                    box bg:     #DCB881
+//   link:       #6B481E                    box border: #65430F  dark brown
+//   link hover: #A56A22                    head bg:    #B27A2E  wood nav
+//   row alt:    #CDA369
+
+$wood-bg:   url(/assets/css/skins/woodbg.png);
+$wood-head: url(/assets/css/skins/woodhead.png);
+
+// ── Background helper mixins ─────────────────────────────────────────
+// The wood "desk" is the SAME grain in every state (light/dark, a11y/non-a11y);
+// only the radial vignette over it changes. Running it radially — lighter toward
+// the top-centre, darker to the rim — gives the tiled grain depth so it stops
+// reading as flat horizontal banding (the "not sitting right" look).
+@mixin ax-desk($inner, $outer) {
+  background-image:
+    radial-gradient(ellipse 150% 100% at 50% 0%, #{$inner} 0%, #{$outer} 100%),
+    #{$wood-bg} !important;
+  background-repeat: no-repeat, repeat !important;
+  background-attachment: fixed, fixed !important;
+  background-size: cover, auto !important;
+}
+
+// Reading surface: a flat wash over the SAME grain so the wood reads through as
+// light paper (day) or stained board (night) while text keeps its contrast.
+@mixin ax-pane($wash) {
+  background-image:
+    linear-gradient(#{$wash}, #{$wash}),
+    #{$wood-bg} !important;
+  background-size: auto, auto !important;
+  background-repeat: repeat, repeat !important;
+  background-attachment: fixed, fixed !important;
+}
+
+// Sidebar: woodhead grain with a warm "lamplight" band over the wood. The light
+// inner-band is positioned to span the nav links — from the top of About (~32%)
+// to the bottom of Constellations (~59%) — fading into the wood just outside, so
+// the menu sits in a lit panel.
+@mixin ax-sidebar($highlight, $base, $bright) {
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 24%,
+      #{$highlight} 32%,
+      #{$highlight} 59%,
+      transparent 67%
+    ),
+    #{$wood-head} !important;
+  background-color: #{$base} !important;
+  background-repeat: no-repeat, repeat-x !important;
+  background-size: 100% 100%, auto !important;
+  filter: #{$bright} !important;
+}
+
+// Translucent woodgrain card — grain shows THROUGH the panel; per-mode wash.
+@mixin ax-card($wash, $border) {
+  background-image:
+    linear-gradient(#{$wash}, #{$wash}),
+    #{$wood-bg} !important;
+  background-size: auto, auto !important;
+  background-repeat: repeat, repeat !important;
+  border: 1px solid #{$border} !important;
+}
+
+// ── Dark mode — mahogany / night wood ───────────────────────────────
+// Keeps the woodgrain (darkened) in BOTH the desk and the panes — dark mode is
+// night wood, not a flat black.
+@mixin ax-dark {
+  --accent-rgb:   193 150 92;   // #C1965C warm gold
+  --accent2-rgb:  220 184 129;  // #DCB881 tan
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+  --panel-bg:     rgba(62, 41, 10, 0.65);   // #3E290A dark brown
+  --panel-border: rgba(178, 122, 46, 0.45); // #B27A2E mid brown
+  --panel-shadow: none;
+  color: #f1e6cc;
+
+  @include ax-desk(rgba(58, 34, 6, 0.50), rgba(8, 5, 0, 0.88));
+  main.content { @include ax-pane(rgba(20, 12, 2, 0.82)); }
+
+  a { color: #dcb881 !important; }
+  a:hover { color: #f1e6cc !important; }
+  .content a { color: #dcb881 !important; }
+  .content a:hover { color: #f1e6cc !important; }
+  .sidebar-bg { @include ax-sidebar(rgba(196, 150, 92, 0.18), #2a1800, brightness(0.62)); }
+  .post-card,
+  .layout-home .related-posts > li,
+  .layout-list .related-posts > li {
+    @include ax-card(rgba(28, 17, 3, 0.78), rgba(178, 122, 46, 0.40));
+  }
+  pre,
+  code {
+    background: rgba(62, 41, 10, 0.5) !important;
+    border-color: rgba(178, 122, 46, 0.3) !important;
+    color: #e8d5a8 !important;
+  }
+  blockquote {
+    background: rgba(62, 41, 10, 0.35) !important;
+    border-left-color: #C1965C !important;
+  }
+}
+
+// ── A11y mode — KEEPS the wood (per design) ─────────────────────────
+// a11y and non-a11y read IDENTICALLY: same grain desk / sidebar / nav. a11y only
+// swaps the FOREGROUND to higher-contrast neutrals — Anorex's base already clears
+// AA on the wood, so the change is small (no background flattening, no frame).
+@mixin ax-a11y-light {
+  --accent-rgb:   67 58 47;     // #433a2f near-grey brown — 8.8:1 on the pane ✓
+  --accent2-rgb:  67 58 47;
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.08);
+  color: #2e2519 !important;
+
+  a,
+  .content a,
+  .page a { color: #433a2f !important; }
+  .content a:hover,
+  .page a:hover { color: #1f1a12 !important; }
+}
+
+@mixin ax-a11y-dark {
+  --accent-rgb:   216 210 196;  // #d8d2c4 — 11.9:1 on night wood ✓
+  --accent2-rgb:  216 210 196;
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+  color: #e8e0d0 !important;
+
+  a,
+  .content a { color: #d8d2c4 !important; }
+  .content a:hover { color: #fff !important; }
+}
+
+// ── Light (default) — parchment / warm tan ──────────────────────────
+
+body {
+  --accent-rgb:   87 56 17;     // #573811  deep brown — 6.7:1 on parchment ✓ AA
+                                // (was #6B481E, which only hit 4.36:1 → failed AA)
+  --accent2-rgb:  165 106 34;   // #A56A22  amber — gradient tails / secondary only
+
+  --accent-color:           rgb(var(--accent-rgb));
+  --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
+  --accent-color-highlight: rgb(var(--accent-rgb) / 0.08);
+
+  --panel-bg:     rgba(220, 184, 129, 0.55); // #DCB881 warm tan
+  --panel-border: rgba(101,  67,  15, 0.6);  // #65430F dark brown
+  // Match the other skins' rounding — Anorex previously read square (0.2/0.15)
+  // against FA's 0.6/0.45. Bring it in line so AX panels/chips feel the same.
+  --panel-radius: 0.6rem;
+  --chip-radius:  0.45rem;
+  --panel-blur:   none;
+  --panel-shadow: 0 1px 3px rgba(73, 40, 2, 0.18);
+  --gloss-edge:   none;
+
+  // AX page background — the warm wood "desk" sits behind everything (real
+  // Gazelle grain texture), lit by a soft radial vignette. The reading surface
+  // floats a lighter parchment wash over the same grain (see main.content).
+  --page-bg: #{$wood-bg};
+
+  @include ax-desk(rgba(255, 244, 222, 0.18), rgba(74, 44, 10, 0.34));
+
+  color: #3E290A;
+}
+
+// Article reading surface — keep the light wood grain VISIBLE: a 0.68 parchment
+// wash lets the grain read through as light paper while dark text/links still
+// clear AA even over the darkest grain streaks (body 6.1:1, links 4.7:1 ✓).
+main.content { @include ax-pane(rgba(247, 237, 214, 0.68)); }
+
+// ── Links ───────────────────────────────────────────────────────────
+
+body a { color: #573811; }
+body a:hover { color: #A56A22; }
+
+// Hydejack scopes content links — override both. #573811 clears AA on the
+// parchment reading surface; the FA gradient underline carries the hover.
+.content a,
+.page   a { color: #573811 !important; }
+.content a:hover,
+.page   a:hover { color: #A56A22 !important; }
+
+// ── Sidebar ─────────────────────────────────────────────────────────
+
+body .sidebar-bg { @include ax-sidebar(rgba(255, 226, 170, 0.28), #7a4f16, none); }
+
+// Scrim now FRAMES the lit nav band: it darkens the top (avatar/title) and the
+// bottom (status/social) and stays clear over the nav links (~32–59%), so the
+// light inner-band reads as a spotlight on the menu instead of being cancelled.
+body .sidebar-bg.sidebar-overlay::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(62, 41, 10, 0.45) 0%,
+    rgba(62, 41, 10, 0.28) 18%,
+    transparent             30%,
+    transparent             60%,
+    rgba(62, 41, 10, 0.32) 72%,
+    rgba(62, 41, 10, 0.45) 100%
+  ) !important;
+}
+
+body .sidebar { color: #f1e6cc; }
+// Match AX dark — sidebar links are gold (#dcb881) in BOTH brightness modes
+// (dark already forces gold via `body.dark-mode a`; mirror it into light). a11y
+// owns its own sidebar colors, so leave those alone.
+body:not(.a11y-mode) .sidebar a,
+body:not(.a11y-mode) .sidebar-nav-item { color: #dcb881; }
+body .sidebar a:hover { color: #f1e6cc; }
+body .sidebar-title { color: #f1e6cc; }
+
+// ── Nav selector gradient — each li (About / Resume / Archive / …) ───
+// A carved wooden "tab" gradient (sampled off woodnav.png: amber #aa7d3e →
+// dark #573811) sits on EVERY nav item so the nav reads as a row of wooden
+// tabs; at rest it's a faint bevel, and the hovered/current item lights up to
+// the full carved tab. Rounded to match --chip-radius.
+body .sidebar-nav-item {
+  color: #f1e6cc;
+  border-radius: var(--chip-radius);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
+
+  &:hover,
+  &:focus-visible,
+  &.sidebar-nav-item--active,
+  &[aria-current] {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(190, 142, 76, 0.95) 0%,
+      rgba(170, 125, 62, 0.95) 42%,
+      rgba(120,  80, 28, 0.95) 100%
+    );
+    box-shadow:
+      inset 0  1px 0 rgba(255, 240, 210, 0.30),
+      inset 0 -1px 0 rgba(40, 24, 4, 0.45),
+      0 1px 2px rgba(40, 24, 4, 0.35);
+    color: #fff5e2;
+  }
+}
+
+// Persistent faint wood tab so the gradient reads across the whole nav at rest.
+// Applies in every state — a11y nav matches non-a11y nav (per design).
+body .sidebar-nav-item {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(190, 142, 76, 0.28) 0%,
+    rgba(120,  80, 28, 0.28) 100%
+  );
+  box-shadow: inset 0 -1px 0 rgba(40, 24, 4, 0.25);
+}
+
+// ── Article cards (blog index / home) — translucent woodgrain ────────
+// Home/posts-list cards float a translucent tan (0.80) over the wood desk so the
+// grain shows THROUGH while titles/links stay AA. Applies in every state (dark
+// mode swaps the wash in ax-dark); a11y keeps the same wood.
+body .layout-home .related-posts > li,
+body .layout-list .related-posts > li,
+body .post-card {
+  @include ax-card(rgba(220, 184, 129, 0.80), rgba(101, 67, 15, 0.45));
+}
+
+// ── Code ─────────────────────────────────────────────────────────────
+
+body pre,
+body code {
+  background: rgba(193, 150, 92, 0.22) !important;
+  border: 1px solid rgba(101, 67, 15, 0.28) !important;
+  color: #3E290A !important;
+}
+
+// ── Blockquotes ──────────────────────────────────────────────────────
+
+body blockquote {
+  background: rgba(220, 184, 129, 0.28) !important;
+  border-left-color: #6B481E !important;
+}
+
+// ── Nav bar ──────────────────────────────────────────────────────────
+
+body .nav-btn { color: #6B481E; }
+body .nav-btn:hover { color: #A56A22; }
+
+// ── Dark mode — mahogany / night wood ───────────────────────────────
+// In dark mode Anorex inverts to deep brown backgrounds with warm golden-tan
+// accents — like mahogany panels in lamplight.
+
+body.dark-mode { @include ax-dark; }
+
+// OS dark preference (no class on body). :not(.light-mode) lets an explicit
+// light toggle still win.
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) { @include ax-dark; }
+}
+
+// ── A11y mode ────────────────────────────────────────────────────────
+// Anorex hardcodes its palette with !important, so the FA body.a11y-mode token
+// remap could never reach it — a11y mode was a silent no-op whenever AX was the
+// active skin. These rules give Anorex a real a11y state, matching the 2px
+// theme-coloured "a11y-on" frame the built-in skins get. Higher specificity
+// (body.a11y-mode) + later source order beats the base AX rules.
+
+body.a11y-mode { @include ax-a11y-light; }
+
+// Dark + a11y. Explicit toggle is always valid; the OS-dark form must stay
+// inside the media query so it never bleeds onto light-OS users (who carry no
+// .light-mode class either).
+body.dark-mode.a11y-mode { @include ax-a11y-dark; }
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode).a11y-mode { @include ax-a11y-dark; }
+}

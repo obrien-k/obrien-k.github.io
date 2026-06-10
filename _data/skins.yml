@@ -1,0 +1,40 @@
+# Skin registry — _data/skins.yml
+#
+# Three skins, two built-in (compiled into frutiger-aqua.scss, toggled via
+# body.dark-mode) and one CSS-injection override (Anorex).
+#
+# Fields:
+#   id:      unique key; also used by the cycle button to identify state
+#   label:   display name
+#   short:   2-char abbreviation shown on the nav cycle button
+#   hue:     signature color — tints the active glyph + this skin's cycle dot
+#   desc:    one-liner for tooltip / docs
+#   css:     path or CDN URL to override stylesheet; null = built-in
+#   dark:    true = activates body.dark-mode; false = removes it; null = leave as-is
+#
+# CSS-injection skins (css != null) are ejectable: swap the href to a CDN URL
+# in `css` and the site pulls changes at runtime, no rebuild needed.
+
+- id: vaporwave
+  label: VaporWave
+  short: VW
+  hue: "#e100ff"
+  desc: "Original skin — neon magenta/cyan, 8-bit flat panels"
+  css: null
+  dark: true
+
+- id: frutiger-aqua
+  label: Frutiger Aqua
+  short: FA
+  hue: "#0099cc"
+  desc: "32-bit glass / Aero — Vista-era sky and gloss panels"
+  css: null
+  dark: false
+
+- id: anorex
+  label: Anorex
+  short: AX
+  hue: "#a56a22"
+  desc: "Skeuomorphic wood / parchment — ported from Gazelle/WhatCD (WIP)"
+  css: /assets/css/skins/anorex.css
+  dark: null

@@ -81,15 +81,15 @@ the `my-style` shim. Not idiomatic:
 2. **Taxonomy** → adopt **`jekyll-archives`** to auto-generate tag + category pages;
    retire the 9 hand-rolled tag pages and the dead `featured_tags` collection; then
    normalize the 2018 vocabulary to a canonical set.
-3. **v0.1.0 scope** → all of: theming consolidation, taxonomy consolidation,
-   skin-registry refactor, and persisting this overview.
+3. **v0.1.0 scope** → theming consolidation (done), a11y overlay + toggle,
+   taxonomy consolidation, skin registry + Anorex (WS-E).
 
 ---
 
 ## 3. v0.1.0 plan (sequenced)
 
-Ordering: theming-token lift first (unblocks skin registry), then skin registry,
-then taxonomy, then the page-specific rustic/greyscale work last.
+Ordering: theming-token lift first (done), then a11y overlay + toggle, then
+taxonomy, then the page-specific rustic/greyscale work last.
 
 ### WS-A — Theming token consolidation
 - Replace the four hardcoded hex values in `leadership-philosophy.md`,
@@ -98,14 +98,27 @@ then taxonomy, then the page-specific rustic/greyscale work last.
   skin in `frutiger-aqua.scss`).
 - Verify all three custom pages + Resume now flip together in both skins.
 
-### WS-B — Skin-registry refactor
-- Formalize the two-skin engine into a registry: `_data/skins.yml` + one SCSS partial
-  per skin, each honoring the same token contract (`--accent-rgb`, `--accent2-rgb`,
-  `--panel-*`, `--dim`, `--line`, …), selected by a body class.
-- This is an **in-repo refactor, not a greenfield project**. It does not belong in
-  `resume` (LaTeX) or `ghost-2-jekyll` (importer) — different domains. Could later
-  graduate to its own SCSS gem if reused across sites; premature for now.
-- Add the **greyscale/high-contrast skin** as a registry entry + toggle (decision #1).
+### WS-B — A11y overlay + toggle
+
+**Decided (2026-06-09, post gem-spelunking):** originally deferred, then
+re-scoped: a11y overlay only, no registry. Registry reinstated in WS-E (below)
+once a third skin (Anorex) appeared as a concrete use-case. WS-B scope:
+
+- Add `body.a11y-mode` block to `frutiger-aqua.scss` — re-maps `--accent-rgb`,
+  `--accent2-rgb`, and surface tokens to neutral greys; drops `--page-bg` to
+  `none`. Also handle `body.dark-mode.a11y-mode` combo. ~35 lines total.
+- Copy `a11y.png` (or equivalent icon) from assets into the Jekyll site.
+- Inject a second `nav-btn` into `.nav-btn-bar` (next to Hydejack's brightness
+  button) in `_includes/my-body.html`, following the exact pattern of the
+  existing sound toggle: toggle `body.a11y-mode`, persist `localStorage('a11y')`,
+  re-apply on `hy-push-state-after`.
+- Early class-apply in `_includes/my-head.html` to avoid a flash-of-saturated-
+  content on page load.
+
+**No skin-registry in this workstream.** Four effective a11y states:
+`light`, `dark`, `light+a11y`, `dark+a11y`. Hydejack's toggle is untouched.
+Photos are unaffected — token neutralization only targets CSS custom properties,
+not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fixed`).
 
 ### WS-C — Taxonomy consolidation
 - Add `jekyll-archives`; configure tag + category page generation.
@@ -129,6 +142,105 @@ then taxonomy, then the page-specific rustic/greyscale work last.
   - (b) Real LaTeX in **`~/git/resume`** (exists) — compile a `coffeestains` doc,
     export PNG/SVG, embed. Only path that uses the actual package.
   - (c) `ghost-2-jekyll` — not applicable (it's an importer, not a renderer).
+
+### WS-E — Skin registry + Anorex (InjectStylesheet plugin)
+
+The Jekyll site doubles as a **scaffold/testbed** for re-skinning downstream
+projects (e.g. a Stellar instance) via an ejectable CSS override pattern,
+analogous to how stellar-ui ships `kuro` and `proton` as standalone CSS files
+swapped by `StylesheetInjector.tsx`.
+
+**Architecture:**
+
+- `_data/skins.yml` — registry: `id`, `label`, `short`, `hue` (signature color
+  for the cycle dot/glyph), `desc`, `css` (null for built-ins, relative path or
+  CDN URL for override skins), `dark`.
+- `assets/css/skins/<name>.{css,scss}` — self-contained custom-property override
+  targeting Hydejack's token layer (`--accent-rgb`, `--panel-bg`, etc.) + minimal
+  structural selectors. **Authored in SCSS** (front-matter `assets/css/skins/<name>.scss`
+  → Jekyll compiles to the sibling `.css` the registry injects). SCSS buys mixins
+  to DRY the dark / a11y variants; the *output* is still a standalone, ejectable
+  CSS file, so the runtime-`<link>` and CDN story are unchanged. (Was pure CSS;
+  switched to SCSS once Anorex grew dark + a11y + OS-dark variants worth DRYing.)
+- `_includes/my-head.html` — `<link id="hj-ext-skin" rel="stylesheet" href="">` +
+  inline early-restore script (reads `localStorage('skin')`, sets `href` before
+  first paint to prevent flash of wrong skin).
+- `_includes/my-body.html` — skin switcher JS: reads `window.__skins` (Liquid-
+  injected from `_data/skins.yml`), injects the **THEME** cycle button into the
+  `.nav-btn-bar` (glyph tinted with the active skin's `hue`, a cycle-position dot
+  row beneath, "THEME" caption), swaps the `<link>` href, persists
+  `localStorage('skin')`. SPA-safe via `hy-push-state-after` re-inject. The
+  **A11Y** toggle (`body.a11y-mode`) sits beside it with its own caption; the
+  caption is kept in flow so THEME/A11Y align, with the dot row in flow beneath
+  THEME (A11Y carries an empty dot-row spacer so the two captions stay aligned).
+
+**Skin identity is decoupled from brightness (`body.skin-<id>`).** Originally the
+two built-ins *were* the brightness state: dark-mode === VaporWave, light === FA.
+That conflated "Frutiger-Aqua in dark mode" with "the VaporWave skin". Now the
+switcher writes an explicit `body.skin-vaporwave|skin-frutiger-aqua|skin-anorex`
+class (+ `localStorage('skin')`), orthogonal to Hydejack's own dark-mode toggle:
+- **VaporWave** owns the magenta look on `body.skin-vaporwave` (forced dark).
+- **Frutiger-Aqua** has its OWN dark mode (`@mixin fa-dark` — aqua accents on a
+  dark night-sky canvas, dimmed FA drawer photo), triggered by
+  `body.dark-mode:not(.skin-vaporwave):not(.skin-anorex)` + the OS-dark mirror.
+- **Anorex** respects the brightness toggle for its light/dark wood variants.
+`currentSkinId()` reads the class/storage, not `body.dark-mode`, so flipping
+brightness no longer changes which skin you're on.
+
+**Forkable/ejectable contract:**
+- To eject: delete `<link id="hj-ext-skin">` from `my-head.html` and the skin
+  switcher block from `my-body.html`. Zero template coupling elsewhere.
+- To pull upstream skin changes without a rebuild: update `css` in `skins.yml`
+  to a CDN URL (e.g. npm-published CSS file). The `<link>` swap happens at
+  runtime — no Jekyll rebuild required.
+- To add a skin: drop a new CSS/SCSS file in `assets/css/skins/`, add one entry
+  to `_data/skins.yml`. No JS changes needed.
+
+**Current skins:**
+
+| id | Label | hue | Source |
+|---|---|---|---|
+| `vaporwave` | VaporWave | `#e100ff` | built-in SCSS (`frutiger-aqua.scss`, `body.skin-vaporwave`, magenta, forced dark) |
+| `frutiger-aqua` | Frutiger Aqua | `#0099cc` | built-in SCSS default — aqua; light + its OWN aqua dark (`@mixin fa-dark`); `fa-sidebar-bg.jpg` drawer photo |
+| `anorex` | Anorex | `#a56a22` | `assets/css/skins/anorex.scss` → compiled css — ported from Gazelle/WhatCD; light + dark wood |
+
+**Anorex palette (Gazelle source → CSS token mapping):**
+- Light: body text `#3E290A`, link `#573811` (darkened from `#6B481E` to clear
+  WCAG AA — 6.7:1 — on the parchment reading surface), hover `#A56A22`, panel
+  `#DCB881`, border `#65430F`.
+- Backgrounds (helper mixins `ax-desk` / `ax-pane` / `ax-sidebar` / `ax-card`):
+  the wood "desk" (`woodbg.png`) tiles the AX body under a **radial vignette**
+  (lit toward the top-centre) so the grain reads with depth, not flat banding.
+  The reading pane (`main.content`) floats a `0.68` parchment wash over the same
+  grain (grain stays visible; body 6.1:1 / links 4.7:1 ✓ AA even over the darkest
+  streaks). Blog cards float a translucent tan over the grain so it shows through.
+- Sidebar (`woodhead.png`): a warm **lit band** spans the nav links (~32–59% — the
+  top of About to the bottom of Constellations), with the `::after` scrim framing
+  it darker above/below. Each nav `li` carries a persistent carved-wood tab
+  gradient, brighter on hover/current. Sidebar links are gold (`#dcb881`) in both
+  brightness modes (the drawer is dark-backed, so its text always reads light).
+- Dark = **night wood** (not flat black): the same grain darkened by a deep radial
+  vignette on the desk + a stained-board wash on the pane; mahogany panels,
+  golden-tan accents (`#C1965C`).
+- Rounding lifted to `--panel-radius: 0.6rem` / `--chip-radius: 0.45rem` to match
+  the built-in skins (was 0.2 / 0.15, read square next to FA).
+
+**A11y mode across skins (WS-B + Anorex parity):**
+- a11y is now **foreground-only** — it does NOT flatten backgrounds. Anorex (and
+  FA) keep their full look (wood / sky, light and dark); a11y just swaps text and
+  accents to higher-contrast neutrals. Anorex still needs its **own** blocks
+  (it hardcodes with `!important`): `#433a2f` light (8.8:1), `#d8d2c4` dark
+  (11.9:1). FA a11y accents `#706555` (5.7:1) / Steel `#888B8D` (4.75:1) clear AA.
+  This makes a11y and non-a11y read identically, per skin.
+- "a11y engaged" cue is a **filled pill** on the `Aa`/A11Y toggle (low-alpha fill
+  in the theme's a11y accent) — no `main.content` border/outline (an earlier 2px
+  frame read as a heavy box and was dropped).
+- The sidebar/drawer is dark-backed in every skin + mode, so a11y forces ALL
+  sidebar text light even in light page modes (the dark warm-grey accent is
+  illegible on the drawer otherwise).
+
+**Future:** evaluate publishing as an npm package / Ruby gem / pip package for
+forkable CDN delivery (recurring task scheduled — see task #14).
 
 ---
 
