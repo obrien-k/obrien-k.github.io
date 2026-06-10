@@ -9,6 +9,13 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.2
+Jun 10 2026
+{:.heading.post-date}
+
+### Themes
+- **Leadership Philosophy gets a rustic pass (WS-D).** The five pillars now sit on aged-paper cards — a warm wash, hand-cut (irregular) corners, and a soft inner double-rule — with a faint CSS coffee-ring stain (no image asset). It's token-driven off the shared `--cp-*` palette, so it adapts per skin (brown on Anorex, teal on Frutiger Aqua, magenta on VaporWave) and greys out in a11y/greyscale
+
 ## v0.1.1
 Jun 10 2026
 {:.heading.post-date}

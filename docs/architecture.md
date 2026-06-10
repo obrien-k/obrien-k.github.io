@@ -132,7 +132,7 @@ not `<img>` elements. No `filter: grayscale(1)` on `<html>` (breaks `position:fi
 - **Archive page** (`/archive/`, `_layouts/archive.html`) is the front door for the
   normalized taxonomy — make it the v0.1.0 focus once tags are clean.
 
-### WS-D — Leadership Philosophy: rustic / coffee-stain
+### WS-D — Leadership Philosophy: rustic / coffee-stain ✅ shipped (v0.1.2)
 - Apply a skeuomorphic/rustic treatment (parchment, sepia, torn-edge) via CSS, using
   shared skin tokens so it respects light/dark + greyscale.
 - **Coffee stains:** Jekyll **cannot** run the LaTeX `coffeestains` package — KaTeX
@@ -298,10 +298,13 @@ plugin runtime.)
   gained category+tag+year filters; post tag-links re-resolve via a local
   `tag-list.html` override. **In-repo vocabulary normalization done; the upstream
   `ghost-2-jekyll` normalization (so re-imports stay clean) is still outstanding.**
-- ⏭️ **WS-D — Leadership Philosophy rustic/coffee-stain pass** — not started; the
-  next line item before WS-F.
+- ✅ **WS-D — Leadership Philosophy rustic/coffee-stain pass** — shipped (v0.1.2).
+  Token-driven aged-paper pillar cards (warm wash, hand-cut corners, soft
+  double-rule) + a pure-CSS coffee-ring (method (a), no asset); both adapt per skin
+  via the `--cp-*` palette and grey out in a11y. (Method (b) — real LaTeX
+  `coffeestains` from `~/git/resume` — was not needed.)
 - ⏭️ **WS-F — Modularization (`base-hydejack` + layered skins)** — **decided, the
-  major refactor after WS-D.** See "Modularization" above. Subsumes the
+  major refactor, now the next line item.** See "Modularization" above. Subsumes the
   switcher-partial extraction and resolves the background-matrix bug class
   structurally (incl. the remaining **VW-resume light-mode illegibility** — a manual
   brightness-toggle to light on a dark-only skin; no clean per-skin patch, fixed by
