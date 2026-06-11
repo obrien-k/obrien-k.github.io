@@ -86,6 +86,30 @@ layout: base
   </section>
   {% endif %}
 
+    <!-- Projects -->
+  {% if resume.projects.size > 0 %}
+  <section class="resume-projects" aria-label="Projects">
+    <h2 class="hr">Projects</h2>
+    {% for project in resume.projects %}
+      <div class="resume-entry">
+        <h3>
+          {% if project.url %}
+            <a href="{{ project.url }}">{{ project.name }}</a>
+          {% else %}
+            {{ project.name }}
+          {% endif %}
+        </h3>
+        {% if project.date %}
+          <p class="resume-date faded">{{ project.date }}</p>
+        {% endif %}
+        {% if project.description %}
+          <p>{{ project.description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
   <!-- Work Experience -->
   {% if resume.work.size > 0 %}
   <section class="resume-work" aria-label="Work experience">
@@ -116,30 +140,6 @@ layout: base
             {% endif %}
           </div>
         {% endfor %}
-      </div>
-    {% endfor %}
-  </section>
-  {% endif %}
-
-  <!-- Projects -->
-  {% if resume.projects.size > 0 %}
-  <section class="resume-projects" aria-label="Projects">
-    <h2 class="hr">Projects</h2>
-    {% for project in resume.projects %}
-      <div class="resume-entry">
-        <h3>
-          {% if project.url %}
-            <a href="{{ project.url }}">{{ project.name }}</a>
-          {% else %}
-            {{ project.name }}
-          {% endif %}
-        </h3>
-        {% if project.date %}
-          <p class="resume-date faded">{{ project.date }}</p>
-        {% endif %}
-        {% if project.description %}
-          <p>{{ project.description }}</p>
-        {% endif %}
       </div>
     {% endfor %}
   </section>
