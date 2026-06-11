@@ -3,9 +3,11 @@ layout: post
 title: "How to Build Your First BigCommerce App"
 date: 2020-06-19 00:00:00 +0000
 description: "Developing your first app for a platform is an exhilarating experience -- you discover new technologies that would unlock abilities for your team or nuances…"
+categories: [code]
+featured: true
 ---
 
-### Introduction
+### How to Build Your First BigCommerce App
 
 Developing your first app for a platform is an exhilarating experience -- you discover new technologies that would unlock abilities for your team or nuances that could affect your application idea.
 
