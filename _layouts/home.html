@@ -23,6 +23,16 @@ layout: base
 
   {{ content }}
 
+  {% assign featured_posts = site.posts | where: "featured", true %}
+  {% if featured_posts.size > 0 %}
+    <h2 class="hr-bottom">{{ strings.featured | default:"Featured" }}</h2>
+    <ul class="related-posts">
+      {% for post in featured_posts %}
+        {% include_cached components/post-list-item.html post=post %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   <hr class="dingbat related"/>
 
   {% if home_posts.size > 0 %}
