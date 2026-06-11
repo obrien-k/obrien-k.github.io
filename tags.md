@@ -11,8 +11,9 @@ categories on the [archive]({{ '/archive/' | relative_url }}).
 <ul class="tag-cloud">
   {% assign tags = site.tags | sort %}
   {% for tag in tags %}
+    {% assign tag_slug = tag[0] | slugify %}
     <li>
-      <a href="{{ '/tags/' | append: tag[0] | slugify | append: '/' | relative_url }}">{{ tag[0] }}</a>
+      <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag[0] }}</a>
       <span class="tag-count">{{ tag[1].size }}</span>
     </li>
   {% endfor %}
