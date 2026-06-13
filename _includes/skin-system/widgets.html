@@ -84,7 +84,14 @@
         }
       }
     }
-    return document.body.classList.contains('dark-mode') ? 'vaporwave' : 'frutiger-aqua';
+    /* Read body.skin-* class set by switcher.html (authoritative) */
+    for (var j = 0; j < skins.length; j++) {
+      if (document.body.classList.contains('skin-' + skins[j].id)) return skins[j].id;
+    }
+    var _saved = localStorage.getItem(SKIN_KEY);
+    if (_saved && getSkin(_saved)) return _saved;
+    for (var k = 0; k < skins.length; k++) { if (skins[k].default) return skins[k].id; }
+    return 'frutiger-aqua';
   }
 
   function getOrCreateLink() {
@@ -199,7 +206,7 @@
     var html = '<div class="status-label">THEMES</div><div class="theme-chips">';
     for (var i = 0; i < skins.length; i++) {
       var sk = skins[i];
-      var col = sk.color || '#fff';
+      var col = sk.hue || '#fff';
       html += '<button class="theme-chip" data-skin="' + sk.id + '"'
             + ' style="color:' + col + ';border-color:' + col + ';--chip-accent:' + col + '"'
             + ' title="' + sk.label + (sk.desc ? ' — ' + sk.desc : '') + '"'
@@ -244,7 +251,9 @@
   var toggleBtn;
 
   function injectSoundToggle() {
-    if (document.querySelector('.sidebar-sfx')) return;
+    /* Same SPA re-acquire pattern — re-grab toggleBtn so updateToggleState() works */
+    var existingWrap = document.querySelector('.sidebar-sfx');
+    if (existingWrap) { toggleBtn = existingWrap.querySelector('.sfx-toggle'); updateToggleState(); return; }
     var sidebar = document.querySelector('.sidebar-sticky');
     if (!sidebar) return;
     var social = sidebar.querySelector('.sidebar-social');
@@ -308,7 +317,10 @@
   }
 
   function injectA11yToggle() {
-    if (document.getElementById('_a11y-toggle')) return;
+    /* Hydejack keeps the navbar across SPA navigations. Re-acquire the reference
+       and refresh visual state rather than bailing — same fix as injectSkinBtn. */
+    var existing = document.getElementById('_a11y-toggle');
+    if (existing) { a11yBtn = existing; updateA11yBtn(); return; }
     var bar = document.querySelector('.nav-btn-bar');
     if (!bar) return;
 
@@ -318,7 +330,8 @@
     a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
     a11yBtn.setAttribute('type', 'button');
     a11yBtn.style.cssText = 'font-size:0.8rem;letter-spacing:-0.03em;font-family:inherit;line-height:1';
-    a11yBtn.textContent = 'Aa';
+    /* Full glyph/cap/dots structure matching a11y.html and the THEME button layout */
+    a11yBtn.innerHTML = '<span class="ws-glyph">Aa</span><span class="ws-cap">A11Y</span><span class="ws-dots" aria-hidden="true"></span>';
     a11yBtn.addEventListener('click', function() { setA11y(!isA11y()); });
     updateA11yBtn();
 

@@ -31,7 +31,11 @@
   }
 
   function injectA11yToggle() {
-    if (document.getElementById('_a11y-toggle')) return;
+    /* Hydejack keeps the navbar across SPA navigations. Re-acquire the reference
+       and refresh visual state rather than bailing — otherwise a11yBtn stays null
+       and all updateA11yBtn() calls after a navigation are silent no-ops. */
+    var existing = document.getElementById('_a11y-toggle');
+    if (existing) { a11yBtn = existing; updateA11yBtn(); return; }
     var bar = document.querySelector('.nav-btn-bar');
     if (!bar) return;
 
@@ -61,11 +65,12 @@
     updateA11yBtn();
   }
 
-  /* Re-inject after every SPA navigation (Hydejack rebuilds the navbar on route change) */
+  /* Sync after SPA navigation — Hydejack preserves the navbar DOM so the button
+     is still there; injectA11yToggle now re-acquires rather than re-creates it. */
   var pushState = document.getElementById('_pushState');
   if (pushState) {
     pushState.addEventListener('hy-push-state-after', function() {
-      a11yBtn = null;  /* reference was destroyed with the old navbar DOM */
+      a11yBtn = null;
       injectA11yToggle();
     });
   }
