@@ -162,7 +162,13 @@ window.__skins = {{ site.data.skins | jsonify }};
   /* ---- inject ---------------------------------------------------- */
 
   function injectSkinBtn() {
-    if (document.getElementById('_skin-toggle')) return;
+    /* Hydejack preserves the navbar across SPA navigations, so the old button
+       may still be in the DOM after hy-push-state-after nulled skinBtn. Re-acquire
+       the reference and refresh the label rather than bailing — otherwise skinBtn
+       stays null and every updateSkinBtn() call after this becomes a no-op, freezing
+       the label on whatever skin was active before the navigation. */
+    var existing = document.getElementById('_skin-toggle');
+    if (existing) { skinBtn = existing; updateSkinBtn(); return; }
     if (skins.length < 2) return;
     var bar = document.querySelector('.nav-btn-bar');
     if (!bar) return;
@@ -207,6 +213,12 @@ window.__skins = {{ site.data.skins | jsonify }};
     if (_restoreSkin && _restoreSkin.dark === true) {
       document.body.classList.add('dark-mode');
       document.body.classList.remove('light-mode');
+    } else if (_restoreSkin && _restoreSkin.dark === false) {
+      /* Restore light-mode so Hydejack's prefers-color-scheme auto-dark doesn't
+         override FA on reload. Hydejack checks !body.contains('light-mode') before
+         auto-applying dark-mode from the system preference (_sunset logic). */
+      document.body.classList.remove('dark-mode');
+      document.body.classList.add('light-mode');
     }
   }
 

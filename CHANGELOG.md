@@ -9,6 +9,26 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
+## v0.1.7
+Jun 13 2026
+{:.heading.post-date}
+
+### Fixed
+- **Theme switcher dark-mode bugs (WS-F).** Three root causes patched:
+  - `widgets.html` was reading `sk.color` to tint sidebar THEME chips; the field is
+    `hue` in `_data/skins.yml` — all chips rendered white. Fixed.
+  - `widgets.html`'s local `currentSkinId()` used an old `dark-mode === vaporwave`
+    heuristic, predating the explicit `body.skin-<id>` class system (WS-F). Replaced
+    with a `body.skin-*` class scan → localStorage → `default` flag fallback chain,
+    matching `switcher.html`'s authoritative logic.
+  - `switcher.html` restore block didn't reinstate `body.light-mode` for FA
+    (`dark: false`) on reload. Hydejack uses `light-mode` to suppress
+    `prefers-color-scheme: dark` auto-application; without it, FA would re-render
+    dark on every page load for users whose OS is in dark mode. Fixed.
+  - `a11y.html` bailed early on SPA navigation instead of re-acquiring the existing
+    `#_a11y-toggle` reference — left `a11yBtn` null, silencing all `updateA11yBtn()`
+    calls until hard reload. Fixed.
+
 ## v0.1.6
 Jun 10 2026
 {:.heading.post-date}
