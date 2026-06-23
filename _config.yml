@@ -47,10 +47,10 @@ menu:
     url:               /archive/
   - title:             Resume
     url:               /resume/
-  - title:             Leadership Philosophy
-    url:               /leadership-philosophy/
   - title:             Constellations
     url:               /constellations/
+  - title:             Leadership Philosophy
+    url:               /leadership-philosophy/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
