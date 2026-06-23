@@ -26,7 +26,7 @@ Another question is at what point does AI reach sentience, and how do we address
 
 ChatGPT is a powerful tool driven by GPT technology. In the week since I started writing this article, there have been many developments, such as [Bing integrating a custom ChatGPT implementation](https://techcrunch.com/2023/02/07/microsoft-launches-the-new-bing-with-chatgpt-built-in) and [Google's Bard 8% stock kerfuffle](https://www.reuters.com/technology/google-ai-chatbot-bard-offers-inaccurate-information-company-ad-2023-02-08/) (though [their Sparrow project](https://arxiv.org/pdf/2209.14375.pdf) looks promising). I have found myself relying on ChatGPT more and more for my brainstorming process, throwing out my ideas and unorganized thoughts, and it often provides helpful nudges. It saves me time and effort by providing answers to my questions with high accuracy, but I still verify them before accepting them as truth. I have seen that LLMs struggle to recover from hallucinations, and we typically terminate those instances. When I'm looking for specific information, like code snippets or instructions, ChatGPT serves as a useful memory aid.
 
-![](https://kyleo.io/content/images/2023/02/six_devils_dressed_in_white.png)
+![a painting of six devils dressed in white](/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/11-09-2022-a-painting-of-six-devils-dressed-in-white.png)
 
 `a painting of six devils dressed in white, evil, dark, painting oil canvas, realism, in the style of francisco goya, devils dancing in a circle around a bonfire, telephoto, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, trending on /r/Art`
 
