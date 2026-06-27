@@ -114,6 +114,15 @@ A year ago I laughed at GitLab, needing to have a whole custom instance to get a
 
 Similar story 2 years ago, except with NGINX/wildcard SSLs/databases for things like WordPress.
 
+<!-- TODO: fill in the ladder rung-by-rung. Apache/vhosts is NOT a 2017 thing — it's a carryover from the Orphic, Inc. days (2007). -->
+
+> **The ladder — rungs to fill in** *(climbing, against the 2020 vantage above)*
+>
+> - **Apache Virtual Hosts / SSL** — *"I had been doing since 2007 … a carry over from the Orphic, Inc. days (we had a website but I haven't touched on it in this article at all)."*
+> - **NGINX / wildcard SSLs / databases** — for things like WordPress
+> - **GitLab** — a whole custom instance for a custom-domain version
+> - **GKE / Docker / Kubernetes** — autonomously instantiating containers
+
 While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want/need and I’m actually okay with it. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. In the same way I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in between.
 
 ## "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
