@@ -40,6 +40,17 @@ After a while of playing with the tools and brushes, I began to peruse my old fr
 
 WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format and possibly want to make minor (or major) changes with plugins, custom themes.. My best guess is, when I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days as I mentioned, so I probably wanted to connect to the phpBB forum, which.. Had a plugin but I wanted my "concept"/sliced-html through.. another likely archived thread.
 
+## Colour Theory
+
+<!-- TODO (prose — Kai's words): migrate the PhotoShop material up the page into
+     this section. This is the metaphor SEED — PhotoShop → RGB → the RED / GREEN
+     / BLUE Pokémon versions → "every trainee needs a specialty." It blooms later
+     at the "better way vs how hard could it be" section. Poke → Poké throughout. -->
+
+<video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
+*a certain hue and saturation of all colors*
+{:.figcaption}
+
 ## December 3 2006
 
 December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](https://kyleo.io/dreaming-in-code-lucid-dreaming#Teenage-Debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to self-publish a work of fiction I had written for some years prior, having already spent some time trying to teach myself to design a book cover and build a website for it. It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
@@ -70,7 +81,7 @@ It's the same with Orphic where I was the lead designer, coder, and founder of t
 
 I registered theubergooglers.com on October 21, 2007 via BlueHost and used the cPanel front-end to manage html files and a phpbb instance via fantastico deluxe, then later a blog using WordPress + failure to implement phpbb with the wordpress instance.. So I was an administrator, podcaster (there was a few-episode podcast series), and forum moderator. There were several other staff members.
 
-Using methods [I'd experienced as effective myself](https://youtu.be/IqQzvfn_s30?t=109), I shared several forms of "viral marketing" as I'd likely consider it at the time. On December 03, 2008 (or 12.3.08) I launched The Uber Googlers using [phpBB](https://phpbb.com), thoughts about a book were a far-gone idea after I had discovered an affinity for code in between.
+Using methods [I'd experienced as effective myself](https://youtu.be/IqQzvfn_s30?t=109), I shared several forms of "viral marketing" as I'd likely consider it at the time. On December 03, 2008 (or 12.3.08) I launched The Uber Googlers using [phpBB](https://phpbb.com), thoughts about a book were a far-gone idea after I had discovered an affinity for code in between.<!-- TODO (Kai): the Oct/Nov 2007 screenshots show phpBB already live at ~6k posts — so this Dec 3 2008 date is the *launch* (12,308), not the first phpBB. Tweak wording if it reads as the latter. -->
 
 [![The Uber Googlers — October 2007](/assets/img/blog/posts/a-universe/ubergooglers-2007-10.png)](/assets/img/blog/posts/a-universe/ubergooglers-2007-10.png)
 The Uber Googlers, October 2007 — Tech Haven barely warm: Computer / PSP / DS / Xbox 360 / PS3 / Wii / Apple Talk, 110 posts, 6 registered users, moderators *«Kai», duncanyoyo1.* Most ever online: 12, on Oct 22, 2007.
@@ -110,26 +121,36 @@ Settling for a project that builds successfully and resolves failure gracefully 
 
 It was 3 years ago in 2020 when that scrap was written, prior to [Dreaming in Code](/dreaming-in-code-lucid-dreaming/), led to that article, but some of the pieces weren't ever complete e.g. the infrastructure stability stuff, which was touched on briefly in [Waking Software Engineering](/waking-software-engineering/).
 
-A year ago I laughed at GitLab, needing to have a whole custom instance to get a custom domain level version of it going
+<!-- TODO (prose — Kai's words): flesh each rung into prose. The loose
+     "a year ago / 3 years ago / 2 years ago" sentences were folded into the
+     skeleton below as absolute years. The climb is Windows → LAMP → … → K8s,
+     with WordPress as the through-line (planted 2007, paid back 2017–18). -->
 
-3 years ago it was similar with SSLs and getting the Apache Virtual Hosts setup
-
-Similar story 2 years ago, except with NGINX/wildcard SSLs/databases for things like WordPress.
-
-<!-- TODO: fill in the ladder rung-by-rung. Apache/vhosts is NOT a 2017 thing — it's a carryover from the Orphic, Inc. days (2007). -->
-
-> **The ladder — rungs to fill in** *(climbing, against the 2020 vantage above)*
+> **The ladder of the stack** *(climbing toward the 2020 vantage above)*
 >
-> - **Apache Virtual Hosts / SSL** — *"I had been doing since 2007 … a carry over from the Orphic, Inc. days (we had a website but I haven't touched on it in this article at all)."*
-> - **NGINX / wildcard SSLs / databases** — for things like WordPress
-> - **GitLab** — a whole custom instance for a custom-domain version
-> - **GKE / Docker / Kubernetes** — autonomously instantiating containers
+> - **2006 — Orphic, Inc.** — first server: taught myself Windows server admin on the GoDaddy box under the forum, then decided Windows wasn't for me.
+> - **2007–08 — The Uber Googlers** — ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the Dec 3 2008 launch (12,308).
+> - **2016 — NGINX / wildcard SSL**
+> - **2017–18 — Docker volumes/containers** — WordPress again, now headless/ephemeral.
+> - **2020 — GitLab** — I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
+> - **2020 — GKE / Docker / Kubernetes** — autonomously instantiating containers.
 
 While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want/need and I’m actually okay with it. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. In the same way I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in between.
 
 ## "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
 
+<!-- TODO (prose — Kai's words): THE BLOOM. Dexter = LLMs → everyday users doing
+     yesteryear's witch/warlock alchemy; automotive equipment replacing the
+     manufacturers, "reducing human involvement to only the necessary pieces";
+     the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back
+     L19's "alchemical weapons … before LLMs." Seeded up in ## Colour Theory.
+     Poke → Poké. -->
+
 ## If you're not fucked, you're fucking
+
+<!-- TODO (prose — Kai's words): connective tissue from the bloom above so this
+     reads as the embodied aftermath ("destroying everything weekly"), not an
+     orphaned outburst. Curses stay. -->
 
 > that's when things get fucky
 
@@ -158,6 +179,11 @@ For example, I hope wuu.bi to inspire others to create their own mastodon instan
 What the idea comes down to is enabling that first degree of a touchstone, while in no way can I enable a former self, I look forward to a future where such a reality could be launched with the touch of a button. It's unrealistic to attempt any possible futures that would've brought me, but I do imagine a time where a user's first interaction with the web is one of their own making.
 
 This might start as an application by their own hand and code, albeit completely rail-roaded. What excites me the most about a concept like this is that it would evolve beyond software by the varied nature of this course and enter a realm I thought impossible: technology that grows.
+
+<!-- TODO (prose — Kai's words): forward-stub bow-tie to the kuro "黒春光琳海"
+     piece — "technology that grows" = the PokéDex becoming Dexter; "bit rots
+     the same way any muscle atrophies." Light hand-off only (the full metaphor
+     blooms above). Finalize once the kuro Conclusion lands. -->
 
 ## Colophon
 
