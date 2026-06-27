@@ -42,10 +42,10 @@ WordPress' general design-guidance is the hallmark of its success. Do you need a
 
 ## Colour Theory
 
-<!-- TODO (prose — Kai's words): migrate the PhotoShop material up the page into
-     this section. This is the metaphor SEED — PhotoShop → RGB → the RED / GREEN
-     / BLUE Pokémon versions → "every trainee needs a specialty." It blooms later
-     at the "better way vs how hard could it be" section. Poke → Poké throughout. -->
+<!-- TODO (prose — Kai's words): the graphic-design beat of the by-hand era —
+     PhotoShop → white space, typography, kerning, colour (hue/saturation). Migrate
+     the PhotoShop material up the page into here. NOT the Dexter/LLM metaphor —
+     that lives at the "better way vs how hard could it be" bloom and in kuro. -->
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
 *a certain hue and saturation of all colors*
@@ -53,7 +53,7 @@ WordPress' general design-guidance is the hallmark of its success. Do you need a
 
 ## December 3 2006
 
-December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](https://kyleo.io/dreaming-in-code-lucid-dreaming#Teenage-Debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to self-publish a work of fiction I had written for some years prior, having already spent some time trying to teach myself to design a book cover and build a website for it. It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
+December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](https://kyleo.io/dreaming-in-code-lucid-dreaming#Teenage-Debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to [self-publish a work of fiction I had written](/waking-software-engineering/). It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
 
 It does warrant a second warning for the image host Photobucket's mass deactivation of accounts as I wouldn't know the account's username or email associated with it:
 
@@ -143,8 +143,8 @@ While it feels unfortunate to say, this new pattern has emerged of _mostly_ fini
      yesteryear's witch/warlock alchemy; automotive equipment replacing the
      manufacturers, "reducing human involvement to only the necessary pieces";
      the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back
-     L19's "alchemical weapons … before LLMs." Seeded up in ## Colour Theory.
-     Poke → Poké. -->
+     L19's "alchemical weapons … before LLMs." Home for the metaphor is kuro;
+     this is the in-article bloom. Poke → Poké. -->
 
 ## If you're not fucked, you're fucking
 
