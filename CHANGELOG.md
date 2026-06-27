@@ -9,11 +9,39 @@ sitemap: false
 * this list will be replaced by the toc
 {:toc .large-only}
 
-## v0.1.7
-Jun 13 2026
+## v0.1.8
+Jun 26 2026
 {:.heading.post-date}
 
-### Fixed
+### Added
+- **"The Android's Dream; A Love Letter to the Bomb"** (2020-06-14) — the WordPress
+  developer-community and WhatCo.de scraps merged into one piece with the Uber
+  Googlers as the spine: WordPress → Orphic Inc. → the Uber Googlers → BC4WP →
+  WhatCo.de, threaded by the "does it fall apart?" question. Ships 6 Orphic / Uber
+  Googlers screenshots.
+
+### Changed
+- **AI-ethics post.** Wired the 2022 Craiyon "six devils" render into the post. (#41)
+- **Sidebar reorder.** Leadership Philosophy below Constellations; removed Vanity
+  House and "Listen to this Album." (#41)
+- **CI.** Bumped `actions/checkout` 6 → 7 (Node 24-era runner). (#39)
+
+## v0.1.7
+Jun 13 2026 — **tag held; not released**
+{:.heading.post-date}
+
+> ⚠️ **Known issue.** The WS-F dark-mode theme-switcher fixes below did **not** hold —
+> the regression still reproduces, so the `v0.1.7` tag is held until it genuinely
+> lands. Tracking: [#43](https://github.com/obrien-k/obrien-k.github.io/issues/43).
+
+### Added
+- **Category `/tags/` redirects + featured BigCommerce post.** (#36)
+
+### Changed
+- **Sidebar: projects above experience.** (#37)
+- **Build: exclude dev/agent docs (CLAUDE/AGENTS/README) from the built site.**
+
+### Fixed (attempted — see Known issue above)
 - **Theme switcher dark-mode bugs (WS-F).** Three root causes patched:
   - `widgets.html` was reading `sk.color` to tint sidebar THEME chips; the field is
     `hue` in `_data/skins.yml` — all chips rendered white. Fixed.
