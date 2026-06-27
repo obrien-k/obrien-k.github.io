@@ -84,7 +84,7 @@ We could wrestle with blogs/customization/plugin support but overall we're left 
 
 So going back to the users: one user in particular I know very well:
 
-<!-- TODO: add Topher's avatar image -->
+[![Topher's avatar](/assets/img/blog/posts/a-universe/topher-avatar.gif)](https://bsky.app/profile/topher1kenobe.bsky.social)
 *Topher's well known avatar across the net.*
 {:.figcaption}
 
