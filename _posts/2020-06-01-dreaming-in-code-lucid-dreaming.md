@@ -112,6 +112,13 @@ Build in security from the ground up
 
 Build an architecture that supports sharing, communication, and collaboration
 
+[![The Chandler Project Vision page, archived — TWiki revision r29, 10 Sep 2010](/assets/img/blog/posts/chandler-project-vision/live-vision-2-hero-2026-06-27.png)](https://web.archive.org/web/20221208074307/https://www.chandlerproject.org/vision-2/)
+*The seven goals above are lifted from the Chandler Project Vision page — OSAF wiki, revision r29, 10 Sep 2010.*
+{:.figcaption}
+
+📎 Archived from the OSAF wiki — [chandlerproject.org/vision-2/](https://web.archive.org/web/20221208074307/https://www.chandlerproject.org/vision-2/), revision r29 (10 Sep 2010), CC-BY 3.0. Captured 27 Jun 2026: the live domain now resolves to betting-site SEO spam, with the original vision left intact only as bait beneath a casino banner — bit-rot in real time. The last clean Wayback snapshot is from 8 Dec 2022; even three years ago it hadn't turned. The link above points to that capture, not the squat.
+{:.note}
+
 ### The Chandler Project
 
 Mitch Kapor founded Lotus Software in 1982, known for Lotus 1-2-3, an early example of the ["killer app"](http://www.catb.org/jargon/html/K/killer-app.html) for a platform. Focused on three activities for users of the program, Lotus 1-2-3 stood the opposite of an academic approach taken by the equally amicable VisiCalc. This spreadsheet application incorporated many rare features at the time and has since become a necessity like macros. Another milestone was that you could quickly and easily graph data when Operating Systems hadn't popularized a GUI yet. By driving VisiCalc out of existence and IBM PC sales skyward, Kapor and the original developer of Lotus 1-2-3, [Jonathan Sachs](https://www.itworld.com/article/2826737/programmers-who-defined-the-technology-industry--where-are-they-now-.html?page=3), created [the first killer app](http://www.dssresources.com/history/sshistory.html).
@@ -266,6 +273,10 @@ Time is incremental but definable. It is a center of control (by culture) but ca
 #### Easter Eggs
 
 For the astute, many of these links lead to insecure pages, an unfortunate event because I knew the insecure Chandler links likely meant that no one was actively maintaining Chandler. We can only do so much to preserve the software, knowledge, and unique events surrounding it. There are hidden events called [Easter Eggs](http://catb.org/jargon/html/E/Easter-egg.html) in software, and they have become more widely known due to their inclusion in video games. Think of this as an easter egg, like a colophon, or just another piece of the static you see.
+
+[![chandlerproject.org in June 2026 — the Vision page wrapped in betting-site spam](/assets/img/blog/posts/chandler-project-vision/live-vision-2-fullpage-2026-06-27.png)](https://web.archive.org/web/20221208074307/https://www.chandlerproject.org/vision-2/)
+*chandlerproject.org on 27 Jun 2026: the original Vision text still loads, but a domain squatter has wrapped it top-and-bottom in "18+ / Responsible Gaming" betting-site spam to farm the dead project's search authority. The inaccessible-in-an-SSL-strict-future rot, arriving on schedule.*
+{:.figcaption}
 
 > "We got here by having high goals," Toy continues. "Part of our struggle is in not valuing the goals equally. But there's no disagreement over the list itself. The biggest fear is that the goals are simply not meetable. We do have a proposed design. It's got some holes. It's time to talk about those holes and make sure we have plans to fill those holes so that never again, as long as I live, do we roll our eyes when the word data comes out of our mouths. This is the snake that must be killed."
 > "And in this meeting," Hertzfeld says, "we kill the snake—we don't just make plans to kill the snake."
