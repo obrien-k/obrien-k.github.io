@@ -24,7 +24,7 @@ In this article, I'll finish my progression of code thus far and expand on it, l
 
 ### [How to Build an App That Doesn't Fall Apart Two Days Later](https://github.com/orphic-inc/stellar)
 
-#### December 3, 2006
+#### [December 3, 2006](/the-androids-dream-a-love-letter-to-the-bomb/#december-3-2006)
 
 This date marks the launch of [Orphic](https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/), [Inc](https://web.archive.org/web/20070509064337/http://www.orphicinc.com:80/)[.](https://www.manta.com/c/mkf8plj/orphic-incorporated). In V1, a forum to orchestrate business, content, and code-based products, as well as the unexpected logistics that would prove difficult to a teenage entrepreneur. Orphic's forum entered a soft launch with friends in early November. I was using the time to implement feedback in a hyper-focused final month of quick revisions before doing a final v1.0.0. This erroneous motif in agile iteration is part of the scrum. In the same way, I expected to be able to go from creating a [form](https://www.wired.com/story/form-element-modern-web-mistake/) with JavaScript at 12 to a fully functional platform; backlog refinement is a [constant](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const).
 
