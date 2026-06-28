@@ -48,8 +48,10 @@ The graphic-design beat of the by-hand era — PhotoShop → white space, typogr
 Pokemon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since `that article`.
 
 In 1994, when Pokemon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokeDex. Now, the PokeDex is "an encyclopedia of Pokemon knowledge", and we don't have to get into the minutae of Pokemon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
-[img]pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map[/img] // todo: is it possible to trim a .webp in-line in Jekyl/kramdown? this has a big black frame
-{.figcaption: [https://vgmaps.de/maps/view?m=19871](Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk)}
+
+[![Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
+Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk
+{:.figcaption}
 
 Within three years, when the Pokemon anime first aired on April 1, 1997, the PokeDex wasn't represented as a book, [it was a high-tech device with a (possibly AI?) personality named Dexter](https://www.youtube.com/watch?v=9HJ5gthNfqU). This is belaboring the point a bit, but this thought occurred to me on a walk this morning when I connected how quickly the turnaround time there was on the societal understanding of technology where mobile phones weren't common-place and then it's not as far-fetche`d to believe you'd have the encyclopedia of your world in your pocket three years later.
 
