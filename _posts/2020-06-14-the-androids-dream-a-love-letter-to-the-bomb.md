@@ -1,12 +1,16 @@
 ---
 layout: post
 title: "The Android's Dream; A Love Letter to the Bomb"
-date: 2020-06-14 00:00:00 +0000
-description: "WordPress, the Uber Googlers, Orphic Inc., BC4WP, and WhatCo.de — five answers to one question: does it fall apart?"
+date: 2020-06-02 00:00:00 +0000
+description: "WordPress, the Uber Googlers, Orphic Inc., BC4WP, and WhatCo.de — five answers to one question: where do ideas fall apart?"
 tags:
   - code
+  - personal
+  - infra
+  - narrative
 categories:
   - code
+  - narrative
 image:
   path: /assets/img/blog/posts/wordpress-dev-community/uber-googlers-v0.png
 ---
@@ -14,25 +18,42 @@ image:
 ## UPDATE
 ## [DONE](https://korin.pink)
 
-Ehh... Start over?
+[Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
 
-Agentic work is something I only briefly touched in, and will only be lightly touched on again today. Automating my XX years of studying the web, servers, infrastructure, code, all the things.. What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failing tests typically leads to higher likelihood of greenery. Whether or not the love letter falls apart, that's for you to say.
+Agentic work is something I only briefly touched on in my [AI ethics piece](https://kyleobrien.me/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/), but is tangential today, re-starting this work in 2026. The chronology of this article was _intended_ to be a "fast-follow" for "Dreaming in Code || Lucid Dreaming", and is narrated as such. While I have 2026's experience to look back with, it's only now that a lot of these concepts have crystalized into my current understanding of technology. 
 
-Where most sites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this one will only become more clear organically.
+Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failing tests typically leads to higher likelihood of greenery. Whether or not this love letter falls apart, that's for anyone to say.
 
-[In as such was proven](https://kyleo.io/dreaming-in-code-lucid-dreaming/#fnref7), software time has claimed yet another milestone. For me, this would be an autonomous form of the existing back-end for [What Code](https://web.archive.org/web/20201101031004/https://whatco.de/), and save for upstream issues, it was near complete. With enough rigor it's possible to work around this, but would also be reverted if GitLab does at some point resolve it on their own.
+Where most sites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this one will only become more clear organically. WhatCo.DE is my latest "chase" on the internet.
+
+[In as such was proven](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#rough-translations), software time has claimed yet another milestone. For me, this would be an autonomous form of the existing back-end for [WhatCo.DE](https://web.archive.org/web/20201101031004/https://whatco.de/), and save for upstream issues, it was near complete. With enough rigor it's possible to work around this, but would also be reverted if GitLab does at some point resolve it on their own (several years later I checked and no movement, and not worth digging up a third time). The existing bug where subdomains can't instantiate docker containers isn't a priority for the GitLab team.
 
 The purpose of this article is to retroactively collect my thoughts on trying to autonomously instantiate Docker containers through Google Kubernetes Engine ([as well as my host](https://techcrunch.com/2022/04/14/why-akamai-bought-linode/) [Linode's LKE](https://www.linode.com/content/linode-kubernetes-engine-easily-deploy-kubernetes-with-lke/)) with an explanation of why and what that means. I'll also prepare any possible future iterations in conceptual form, and share some of my own opinions on these solutions for deployment.
 
-I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation.
+I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation. Editor's Note: 2026 Kai checking in and the view here is much nicer. Give Docker a second or third chance if you haven't found the right deployment/distribution method. There's a lot of good use cases for Docker containers.
 
-While in the pursuit of optimization with a optimistic attitude, developers often find themselves in a task they're unable to pursue: the scope outweighs the technical debt of the project. During self-projects we're able to fall on re-scopes, but when demand outweighs the means a re-engagement in approach is necessary. It's at this point where I found myself with What Code when a beacon of light appeared in the form of [Cloudron.io](https://cloudron.io). Henceforth, I found and was reminded of many projects in a similar vein [read: [Nacelle](https://techcrunch.com/2020/06/29/nacelle-raises-4-8m-for-its-headless-e-commerce-platform/), [yunohost](https://yunohost.org/#/)]. While some workarounds are available for the issue I ran into, the overall execution is one that I find unsustainable. This is a re-occurring theme when each time I revisit attempting this project, it's only after a long enough break that I even realize the stop-gap solutions I'll have on hand are cohesively dead on arrival.
+While in the pursuit of optimization with a optimistic attitude, developers often find themselves in a task they're unable to pursue: the scope outweighs the technical debt of the project. During self-projects we're able to fall on re-scopes, but when demand outweighs the means a re-engagement in approach is necessary. It's at this point where I found myself with WhatCo.DE when a beacon of light appeared in the form of [Cloudron.io](https://cloudron.io). Henceforth, I found and was reminded of many projects in a similar vein [read: [Nacelle](https://techcrunch.com/2020/06/29/nacelle-raises-4-8m-for-its-headless-e-commerce-platform/), [yunohost](https://yunohost.org/#/), [NearlyFreeSpeech.NET](https://nearlyfreespeech.net)]. While some workarounds are available for the issue I ran into, the overall execution is one that I find unsustainable. This is a re-occurring theme when each time I revisit attempting this project, it's only after a long enough break that I even realize the stop-gap solutions I'll have on hand are cohesively dead on arrival.
 
-As with my previous entry, history is required to understand the ultimate goal which will be revealed in time.
+As with my coded dreams, history is required to understand the ultimate goal, which is both abstract and tangible in scope.
 
 ## WordPress
 
-[WordPress](https://wordpress.org) has been in the news lately. I'm not here to talk about [Automaticc](https://siliconprairienews.com/2025/04/proposed-class-action-lawsuit-alleges-unfair-business-practices-targeted-at-wp-engine-and-its-customers/). I'm here about software, the WordPress blogging software that more or less ran my life for a year, and always was in the corner of my mind as far as _who_ WordPress was for and that's just about anyone. A [teenage "Uber Googler"](https://www.deviantart.com/xerocint) ([Ryu cheats](https://www.deviantart.com/xerocint/art/Ryu-Cheats-110476759)) -- Design was somewhat of a nature -- my UI-leanings were always towards the interface, the thing "something that you can hold" [as Delta put it in LINKIN PARK's Meteora - Making Of video](https://youtu.be/5Bhy0g8qXt0?t=404). 
+[WordPress](https://wordpress.org) has been in the news lately. I'm not here to talk about [Automaticc](https://siliconprairienews.com/2025/04/proposed-class-action-lawsuit-alleges-unfair-business-practices-targeted-at-wp-engine-and-its-customers/). I'm here for the free open-source software. WordPress was in the corner of my mind in 2007, it made an excellent candidate for hosting _whatever my chase was at the time_, offerring both blogging and general website templates. It was also designed for anyone, and had a strong communal backing. phpBB and forum software itself will be broached at some uncertain date, but for now I began targeting my next domain, thubergooglers.com. A [teenage "Uber Googler"](https://www.deviantart.com/xerocint) ([Ryu cheats](https://www.deviantart.com/xerocint/art/Ryu-Cheats-110476759)) -- Design was somewhat of a nature -- my UI-leanings were always towards the interface, the thing "something that you can hold" [as Delta put it in LINKIN PARK's Meteora - Making Of video](https://youtu.be/5Bhy0g8qXt0?t=404). 
+
+
+## Colour Theory
+
+The graphic-design beat of the by-hand era — PhotoShop → white space, typography, kerning, colour (hue/saturation). 
+
+Pokemon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since `that article`.
+
+In 1994, when Pokemon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokeDex. Now, the PokeDex is "an encyclopedia of Pokemon knowledge", and we don't have to get into the minutae of Pokemon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
+
+[![Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
+Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk
+{:.figcaption}
+
+Within three years, when the Pokemon anime first aired on April 1, 1997, the PokeDex wasn't represented as a book, [it was a high-tech device with a (possibly AI?) personality named Dexter](https://www.youtube.com/watch?v=9HJ5gthNfqU). This is belaboring the point a bit, but this thought occurred to me on a walk this morning when I connected how quickly the turnaround time there was on the societal understanding of technology where mobile phones weren't common-place and then it's not as far-fetche`d to believe you'd have the encyclopedia of your world in your pocket three years later.
 
 The full story of how I first began PhotoShop... I'll start here: my cousin showed me some of the ropes in PhotoShop 7.0 -- A relic, for anyone who was using the internet at my age at the time (arriving nearly 2 years before PhotoShop CS), but it was relevant enough to learn what mattered: making incremental changes to an image at hand-- you're at a baseball game and want to crop out some stray people grazing in the back of the otherwise clean photo. Immediately, I took to it like Microsoft Paint (shoutout: Paint.NET for existing, graduating to v1.0<!-- unsure double check what major release changes they've had-->) and trying to make my own images out of pure thought.
 
@@ -40,12 +61,6 @@ After a while of playing with the tools and brushes, I began to peruse my old fr
 
 WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format and possibly want to make minor (or major) changes with plugins, custom themes.. My best guess is, when I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days as I mentioned, so I probably wanted to connect to the phpBB forum, which.. Had a plugin but I wanted my "concept"/sliced-html through.. another likely archived thread.
 
-## Colour Theory
-
-<!-- TODO (prose — Kai's words): the graphic-design beat of the by-hand era —
-     PhotoShop → white space, typography, kerning, colour (hue/saturation). Migrate
-     the PhotoShop material up the page into here. NOT the Dexter/LLM metaphor —
-     that lives at the "better way vs how hard could it be" bloom and in kuro. -->
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
 *a certain hue and saturation of all colors*
@@ -91,6 +106,19 @@ The Uber Googlers, October 2007 — Tech Haven barely warm: Computer / PSP / DS 
 A month later, November 2007 — Tech Haven differentiated into Computer / Nintendo / Microsoft / Sony / Apple / Entertainment Talk, a Site News board, Video Comments for the podcast, an Archive ("where all old and unneeded — but they will always have a place in our hearts &lt;3 — threads will go"). 5,956 posts, 78 registered users. Moderators *«Kai», duncanyoyo1, setnev, Mitsyku.*
 {:.figcaption}
 
+[![The Uber Googlers — March 2008 - The Fun House](/assets/img/blog/posts/a-universe/ubergooglers-2008-03-fun-house.png)](https://web.archive.org/web/20080305051814/http://theubergooglers.com/forums/viewforum.php?f=66&sid=5a9a315595499e646316d45973d417b6)
+Part of "Uber Googlers 2.0", The Fun House, March 2008 — Branching "games" like "Count to a Googol" (6,231 posts) into its own forum was a popular decision. Moderators *bijan, fredy.*
+{:.figcaption}
+
+[![The Uber Googlers — April 2008 - Final Archived Memberlist](/assets/img/blog/posts/a-universe/ubergooglers-2008-04-memberlist.png)](https://web.archive.org/web/20080422085118/http://www.theubergooglers.com/forums/memberlist.php)
+The final/complete memberlist, April 2008 — 15,939 posts, 796 members, an Archive ("where all old and unneeded — but they will always have a place in our hearts &lt;3 — threads will go"). 5,956 posts, 78 registered users. Moderators *doogly, dearxstranger, Setnev.*
+{:.figcaption}
+
+
+[![The Uber Googlers — June 12 2008 - Final Archive](/assets/img/blog/posts/a-universe/ubergooglers-2008-06.png)](https://web.archive.org/web/20080612135131/http://theubergooglers.com/forums/index.php)
+Nine months later, June 12 2008 — The final available capture of The Uber Googlers phpBB forum, 15,939 posts, 796 members. Off-topic and The Fun House were obvious main-stays (3,146 and 6,922 posts, respectively). Moderators *doogly, dearxstranger, Setnev.*
+{:.figcaption}
+
 We could wrestle with blogs/customization/plugin support but overall we're left with the WordPress community. The users tying it together that are the pulse of WordPress. They have a right to be lost and confused about how to proceed.
 
 So going back to the users: one user in particular I know very well:
@@ -121,36 +149,25 @@ Settling for a project that builds successfully and resolves failure gracefully 
 
 It was 3 years ago in 2020 when that scrap was written, prior to [Dreaming in Code](/dreaming-in-code-lucid-dreaming/), led to that article, but some of the pieces weren't ever complete e.g. the infrastructure stability stuff, which was touched on briefly in [Waking Software Engineering](/waking-software-engineering/).
 
-<!-- TODO (prose — Kai's words): flesh each rung into prose. The loose
-     "a year ago / 3 years ago / 2 years ago" sentences were folded into the
-     skeleton below as absolute years. The climb is Windows → LAMP → … → K8s,
-     with WordPress as the through-line (planted 2007, paid back 2017–18). -->
-
-> **The ladder of the stack** *(climbing toward the 2020 vantage above)*
+> **The ladder of my stack**
 >
-> - **2006 — Orphic, Inc.** — first server: taught myself Windows server admin on the GoDaddy box under the forum, then decided Windows wasn't for me.
-> - **2007–08 — The Uber Googlers** — ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the Dec 3 2008 launch (12,308).
-> - **2016 — NGINX / wildcard SSL**
-> - **2017–18 — Docker volumes/containers** — WordPress again, now headless/ephemeral.
-> - **2020 — GitLab** — I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
-> - **2020 — GKE / Docker / Kubernetes** — autonomously instantiating containers.
+> - **2006 — Orphic, Inc.** — First server: taught myself Windows server admin on an externally-owned GoDaddy box under the forum, and decided Windows wasn't for me.
+> - **2007–08 — The Uber Googlers** — Ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the December 03, 2008 launch (12,308).
+> - **2016 — NGINX / wildcard SSL** - "Launched" [WebbHost.net](https://webbhost.net) (redirects here, currently, serves as infrastructure today). We're focused on infra today, but this is also when I took Node.js seriously as a development language.
+> - **2017–18 — Docker volumes/containers** — WordPress again, now headless, ephemeral. Working towards "leveling-up" my infra/DevOps chops.
+> - **2019 — GitLab** — I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
+> - **2020 — GKE / Docker / Kubernetes** — Autonomously instantiating containers. ⬅️ You are here.
 
 While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want/need and I’m actually okay with it. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. In the same way I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in between.
 
 ## "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
 
-<!-- TODO (prose — Kai's words): THE BLOOM. Dexter = LLMs → everyday users doing
-     yesteryear's witch/warlock alchemy; automotive equipment replacing the
-     manufacturers, "reducing human involvement to only the necessary pieces";
-     the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back
-     L19's "alchemical weapons … before LLMs." Home for the metaphor is kuro;
-     this is the in-article bloom. Poke → Poké. -->
+THE BLOOM. Dexter = LLMs → everyday users doing yesteryear's witch/warlock alchemy; automotive equipment replacing the manufacturers, "reducing human involvement to only the necessary pieces"; the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back L19's "alchemical weapons … before LLMs." Home for the metaphor is kuro;
+ this is the in-article bloom. Poke → Poké.
 
 ## If you're not fucked, you're fucking
 
-<!-- TODO (prose — Kai's words): connective tissue from the bloom above so this
-     reads as the embodied aftermath ("destroying everything weekly"), not an
-     orphaned outburst. Curses stay. -->
+connective tissue from the bloom above so this reads as the embodied aftermath ("destroying everything weekly"), not an orphaned outburst. Curses stay.
 
 > that's when things get fucky
 
@@ -158,7 +175,7 @@ While it feels unfortunate to say, this new pattern has emerged of _mostly_ fini
 
 Don't forget you started trying this out by deploying GitLab with Rancher and that was just as fucked.
 
-I'm really combating the premise of this title by destroying everything practically more-or-less every week for.. oh 3 months or so now?
+Thrashing the original title by destroying everything practically more-or-less every week for.. oh 3 months or so now? Is kind of the name of the game, Kai. .
 
 ## How to Build an App That Doesn't Fall Apart Two Days Later
 
@@ -180,17 +197,12 @@ What the idea comes down to is enabling that first degree of a touchstone, while
 
 This might start as an application by their own hand and code, albeit completely rail-roaded. What excites me the most about a concept like this is that it would evolve beyond software by the varied nature of this course and enter a realm I thought impossible: technology that grows.
 
-<!-- TODO (prose — Kai's words): forward-stub bow-tie to the kuro "黒春光琳海"
-     piece — "technology that grows" = the PokéDex becoming Dexter; "bit rots
-     the same way any muscle atrophies." Light hand-off only (the full metaphor
-     blooms above). Finalize once the kuro Conclusion lands. -->
+Forward-stub bow-tie to the kuro "黒春光琳海" piece — "technology that grows" = the PokéDex becoming Dexter; "bit rots the same way any muscle atrophies." Light hand-off only (the full metaphor blooms above). Finalize once the kuro Conclusion lands.
 
-## Colophon
+## COLOPHON
 
-## Include wear sunscreen quotes?
-https://www.chicagotribune.com/columns/chi-schmich-sunscreen-column-column.html
-was thinking primarily bubblegum algebra
+## [Don’t worry about the future. Or worry, but know that worrying is as effective as trying to solve an algebra equation by chewing bubble gum. The real troubles in your life are apt to be things that never crossed your worried mind, the kind that blindside you at 4 p.m. on some idle Tuesday](https://www.chicagotribune.com/columns/chi-schmich-sunscreen-column-column.html).
 
-[Masterclass in Presentation/Persuation, Macworld 2007](https://youtu.be/VQKMoT-6XSg) -- [Something about how the back looks better than their front](https://youtu.be/0BHPtoTctDY?t=350)
+[Masterclass in Presentation/Persuasion, iPhone introduction, Macworld 2007](https://youtu.be/VQKMoT-6XSg) -- [It looks like it's from another planet. And a GOOD planet.](https://youtu.be/0BHPtoTctDY?t=350)
 
-Up in the air... floats like the wind? Is there something like WiFi/network that could be “latched onto”?
+Float like a wifi card, sting like an ETH.
