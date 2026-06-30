@@ -43,9 +43,7 @@ As with my coded dreams, history is required to understand the ultimate goal, wh
 
 ## Colour Theory
 
-The graphic-design beat of the by-hand era — PhotoShop → white space, typography, kerning, colour (hue/saturation). 
-
-Pokemon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since `that article`.
+Pokemon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since [`that article`](/im-trans/) (... which is from the future >.>).
 
 In 1994, when Pokemon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokeDex. Now, the PokeDex is "an encyclopedia of Pokemon knowledge", and we don't have to get into the minutae of Pokemon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
 
@@ -64,6 +62,14 @@ WordPress' general design-guidance is the hallmark of its success. Do you need a
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
 *a certain hue and saturation of all colors*
+{:.figcaption}
+
+[![RED Chapter 1](/assets/img/blog/posts/a-universe/RED.png)](https://bulbapedia.bulbagarden.net/wiki/Red_(Adventures)#/media/File:Red_Adventures.png)
+レッド
+{:.figcaption}
+
+[![BLUE Chapter 1](/assets/img/blog/posts/a-universe/Blue_RGB_chapter.png)](https://bulbapedia.bulbagarden.net/wiki/Blue_(Adventures)#/media/File:Blue_RGB_chapter.png)
+Read: グリーン, or GREEN.
 {:.figcaption}
 
 ## [December 3 2006](/waking-software-engineering/#december-3-2006)
