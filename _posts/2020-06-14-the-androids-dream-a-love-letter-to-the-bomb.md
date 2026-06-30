@@ -43,15 +43,35 @@ As with my coded dreams, history is required to understand the ultimate goal, wh
 
 ## Colour Theory
 
-Pokemon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since [`that article`](/im-trans/) (... which is from the future >.>).
+Pokémon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since [`that article`](/im-trans/) (... which is from the future >.>).
 
-In 1994, when Pokemon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokeDex. Now, the PokeDex is "an encyclopedia of Pokemon knowledge", and we don't have to get into the minutae of Pokemon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
+In 1994, when Pokémon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokéDex. Now, the PokéDex is "an encyclopedia of Pokémon knowledge", and we don't have to get into the minutae of Pokémon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
 
-[![Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
-Professor Oak's Lab, 2 PokeDexes in the top-left, on the desk
+[![Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
+Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk
 {:.figcaption}
 
-Within three years, when the Pokemon anime first aired on April 1, 1997, the PokeDex wasn't represented as a book, [it was a high-tech device with a (possibly AI?) personality named Dexter](https://www.youtube.com/watch?v=9HJ5gthNfqU). This is belaboring the point a bit, but this thought occurred to me on a walk this morning when I connected how quickly the turnaround time there was on the societal understanding of technology where mobile phones weren't common-place and then it's not as far-fetche`d to believe you'd have the encyclopedia of your world in your pocket three years later.
+Within three years, when the Pokémon anime first aired on April 1, 1997, the PokéDex wasn't represented as a book, [it was a high-tech device with a (possibly AI?) personality named Dexter](https://www.youtube.com/watch?v=9HJ5gthNfqU). This is belaboring the point a bit, but this thought occurred to me on a walk this morning when I connected how quickly the turnaround time there was on the societal understanding of technology where mobile phones weren't common-place and then it's not as [far-fetche`d](https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)) to believe you'd have the encyclopedia of your world in your pocket three years later.
+
+> As older we get, it is that measure easier to forget one's dreams.
+
+My introduction to and experience with Pokémon is unlike most, and echoes a sentiment I languish on in `that article`. Our family's church had a program called the Royal Ambassadors (or RAs) and in summary were akin to boy scouts. Our RA troop was going camping and while we arrived late, I was just in time to see a huddle of boys around a familiar device to me: the GameBoy. I had inherited my older brother's since he had grown out of it, but what the loaded cartridge and displayed interface was all new to me. This was also my introduction to Role-playing Games (RPGs).
+
+I knew none of the group but I felt collected in their excitement over the boy's finding of a [_rare candy_](https://bulbapedia.bulbagarden.net/wiki/Rare_Candy). I'm not sure I knew what "rare" meant until then. A long-time friend and I agree: Pokémon at least enhanced, if not _vastly improved_ our ability to read in our early adolescence. Our fascination was equally shared by the world, a universal language gamers (and many non-gamers) inspired Pokémania.
+
+However, this was at great behest by my mother. Evolution? Evilution. Pokémon doesn't give glory to God. Fortunately, my father and family were able to coerce her into allowing Pokémon within the household. A silent bullet dodged that I only knew about abstractly. This pattern re-occurred throughout the years, technology being a major hurdle to entry within the household, which only burned my desire for it further. The same year, my elementary school requested permission for internet access in their extremely strict and locked down environment (WebSense), but my mom refused. It was only after an intense argument that she finally relented. My best guess is my father saw the writing on the wall as far as such drastic restrictions would limit my ability to succeed in life, and would be a repeated conversation for my siblings.
+
+There's no way in hell a world with PokéDexes and network-based computation would a child have a chance of surviving, much less thriving. Glory to god or not, automobiles replaced horses, and the internet is replacing telephones in real-time. I can't imagine a world in which we never got the internet or a PC, but this wouldn't occur until a decade later. In my spelunking for this article, I found the first `typ0`, a zine from Orphic. This thread was posted in late 2007, and included a post indicating my family finally had a dedicated, non-free-trial/dial-up, internet connection. In a later post on flickr, my tech setup had become my entire focus of being.
+
+[![Flickr user xerocint](https://live.staticflickr.com/2471/3755528432_d73946a514_b.jpg)](https://www.flickr.com/photos/xerocint/3755528432/)
+Coolio carpet, Space theme calendar, trash can, Rhodes King V guitar, an amp, mattress, pillow, desk, computer setup, Wall-E robot, Robosapien, chair, Maxell poster, PS3, charging station, etc.
+{:.figcaption}
+
+If we zoom in on the top-left, where shelves display boxes of software like trophies:
+
+[![PhotoShop CS2](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)
+PhotoShop CS2 != PhotoShop 7.0.
+{:.figcaption}
 
 The full story of how I first began PhotoShop... I'll start here: my cousin showed me some of the ropes in PhotoShop 7.0 -- A relic, for anyone who was using the internet at my age at the time (arriving nearly 2 years before PhotoShop CS), but it was relevant enough to learn what mattered: making incremental changes to an image at hand-- you're at a baseball game and want to crop out some stray people grazing in the back of the otherwise clean photo. Immediately, I took to it like Microsoft Paint (shoutout: Paint.NET for existing, graduating to v1.0<!-- unsure double check what major release changes they've had-->) and trying to make my own images out of pure thought.
 
@@ -64,12 +84,16 @@ WordPress' general design-guidance is the hallmark of its success. Do you need a
 *a certain hue and saturation of all colors*
 {:.figcaption}
 
-[![RED Chapter 1](/assets/img/blog/posts/a-universe/RED.png)](https://bulbapedia.bulbagarden.net/wiki/Red_(Adventures)#/media/File:Red_Adventures.png)
+[![RED Pokémon Adventures](/assets/img/blog/posts/a-universe/RED.png)](https://bulbapedia.bulbagarden.net/wiki/Red_(Adventures)#/media/File:Red_Adventures.png)
 レッド
 {:.figcaption}
 
-[![BLUE Chapter 1](/assets/img/blog/posts/a-universe/Blue_RGB_chapter.png)](https://bulbapedia.bulbagarden.net/wiki/Blue_(Adventures)#/media/File:Blue_RGB_chapter.png)
+[![BLUE Pokémon Adventures: Chapter 1](/assets/img/blog/posts/a-universe/Blue_RGB_chapter.png)](https://bulbapedia.bulbagarden.net/wiki/Blue_(Adventures)#/media/File:Blue_RGB_chapter.png)
 Read: グリーン, or GREEN.
+{:.figcaption}
+
+[![Crystal Pokémon Adventures: GSC](/assets/img/blog/posts/a-universe/Crystal_GSC.png)](https://bulbapedia.bulbagarden.net/wiki/Crystal_(Adventures)#/media/File:CrystalGSC.png)
+クリスタル
 {:.figcaption}
 
 ## [December 3 2006](/waking-software-engineering/#december-3-2006)
@@ -167,7 +191,7 @@ While it feels unfortunate to say, this new pattern has emerged of _mostly_ fini
 ### "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
 
 THE BLOOM. Dexter = LLMs → everyday users doing yesteryear's witch/warlock alchemy; automotive equipment replacing the manufacturers, "reducing human involvement to only the necessary pieces"; the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back L19's "alchemical weapons … before LLMs." Home for the metaphor is kuro;
- this is the in-article bloom. Poke → Poké.
+ this is the in-article bloom.
 
  ## Conclusion
 
