@@ -15,8 +15,9 @@ image:
   path: /assets/img/blog/posts/wordpress-dev-community/uber-googlers-v0.png
 ---
 
-## UPDATE
-## [DONE](https://korin.pink)
+#### UPDATE.PBP
+
+### [DONE](https://korin.pink)
 
 [Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
 
@@ -24,28 +25,33 @@ Agentic work is something I only briefly touched on in my [AI ethics piece](http
 
 Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failing tests typically leads to higher likelihood of greenery. Whether or not this love letter falls apart, that's for anyone to say.
 
-Where most sites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this one will only become more clear organically. WhatCo.DE is my latest "chase" on the internet.
+## Introduction
+
+Where most sites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this one will only become more clear organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). The citations are very.. easter-egg-like in this article, we'll put it that way. Some link to a very recent post, some might say from _yesterday_, but others might say from three years from now. In the sense that many of the articles have received periodic updates, including Dreaming in Code \|\| Lucid Dreaming. I welcome you to dive deeper into this epic of sorts, but don't let that distract you from today.
 
 [In as such was proven](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#rough-translations), software time has claimed yet another milestone. For me, this would be an autonomous form of the existing back-end for [WhatCo.DE](https://web.archive.org/web/20201101031004/https://whatco.de/), and save for upstream issues, it was near complete. With enough rigor it's possible to work around this, but would also be reverted if GitLab does at some point resolve it on their own (several years later I checked and no movement, and not worth digging up a third time). The existing bug where subdomains can't instantiate docker containers isn't a priority for the GitLab team.
 
 The purpose of this article is to retroactively collect my thoughts on trying to autonomously instantiate Docker containers through Google Kubernetes Engine ([as well as my host](https://techcrunch.com/2022/04/14/why-akamai-bought-linode/) [Linode's LKE](https://www.linode.com/content/linode-kubernetes-engine-easily-deploy-kubernetes-with-lke/)) with an explanation of why and what that means. I'll also prepare any possible future iterations in conceptual form, and share some of my own opinions on these solutions for deployment.
 
-I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation. Editor's Note: 2026 Kai checking in and the view here is much nicer. Give Docker a second or third chance if you haven't found the right deployment/distribution method. There's a lot of good use cases for Docker containers.
+I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation. *Editor's Note: 2026 Kai checking in and the view here is much nicer. Give Docker a second or third chance if you haven't found the right deployment/distribution method. There's a lot of good use cases for Docker containers.*
 
 While in the pursuit of optimization with a optimistic attitude, developers often find themselves in a task they're unable to pursue: the scope outweighs the technical debt of the project. During self-projects we're able to fall on re-scopes, but when demand outweighs the means a re-engagement in approach is necessary. It's at this point where I found myself with WhatCo.DE when a beacon of light appeared in the form of [Cloudron.io](https://cloudron.io). Henceforth, I found and was reminded of many projects in a similar vein [read: [Nacelle](https://techcrunch.com/2020/06/29/nacelle-raises-4-8m-for-its-headless-e-commerce-platform/), [yunohost](https://yunohost.org/#/), [NearlyFreeSpeech.NET](https://nearlyfreespeech.net)]. While some workarounds are available for the issue I ran into, the overall execution is one that I find unsustainable. This is a re-occurring theme when each time I revisit attempting this project, it's only after a long enough break that I even realize the stop-gap solutions I'll have on hand are cohesively dead on arrival.
 
 As with my coded dreams, history is required to understand the ultimate goal, which is both abstract and tangible in scope.
 
-## WordPress
+### WordPress
 
 [WordPress](https://wordpress.org) has been in the news lately. I'm not here to talk about [Automaticc](https://siliconprairienews.com/2025/04/proposed-class-action-lawsuit-alleges-unfair-business-practices-targeted-at-wp-engine-and-its-customers/). I'm here for the free open-source software. WordPress was in the corner of my mind in 2007, it made an excellent candidate for hosting _whatever my chase was at the time_, offering both blogging and general website templates. It was also designed for anyone, and had a strong communal backing. phpBB and forum software itself will be broached at some uncertain date, but for now I began targeting my next domain, thubergooglers.com. A [teenage "Uber Googler"](https://www.deviantart.com/xerocint) ([Ryu cheats](https://www.deviantart.com/xerocint/art/Ryu-Cheats-110476759)) -- Design was somewhat of a nature -- my UI-leanings were always towards the interface, the thing "something that you can hold" [as Delta put it in LINKIN PARK's Meteora - Making Of video](https://youtu.be/5Bhy0g8qXt0?t=404). 
 
+When I grew up, I wanted to be a [Power Ranger](https://en.wikipedia.org/wiki/Mighty_Morphin_Power_Rangers). I also wanted to be a game developer, author.. and while Power Rangers offers some "colour theory" on its own, today's lends it's hand more so to the "game developer" version of Power Rangers-tangentially-related colour theory.
 
-## Colour Theory
+Using WordPress as a stand-in for "GAME FREAK", let's get started in the world of Pokémon.
+
+#### Colour Theory
 
 Pokémon as a metaphorical device isn't the easiest digestion tool, but [that hasn't stopped me from introducing concepts that way in the past](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#linux) and the only one I've mustered since [`that article`](/im-trans/) (... which is from the future >.>).
 
-In 1994, when Pokémon Red and Green first released in Japan from Game Freak, licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokéDex. Now, the PokéDex is "an encyclopedia of Pokémon knowledge", and we don't have to get into the minutae of Pokémon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
+In 1994, when [Pokémon Red and Green](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Green_Versions) first released in Japan from [GAME FREAK](https://bulbapedia.bulbagarden.net/wiki/Game_Freak), licensed by Nintendo for the Nintendo GameBoy (DMG-001), it included a PokéDex. Now, the PokéDex is "an encyclopedia of Pokémon knowledge", and we don't have to get into the minutae of Pokémon to dissect this specific piece of information from the original release: when given this encyclopedia, the visual representation, the "sprite" in video game terms is a book:
 
 [![Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
 Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk
@@ -59,7 +65,7 @@ My introduction to and experience with Pokémon is unlike most, and echoes a sen
 
 I knew none of the group but I felt collected in their excitement over the boy's finding of a [_rare candy_](https://bulbapedia.bulbagarden.net/wiki/Rare_Candy). I'm not sure I knew what "rare" meant until then. A long-time friend and I agree: Pokémon at least enhanced, if not _vastly improved_ our ability to read in our early adolescence. Our fascination was equally shared by the world, a universal language gamers (and many non-gamers) inspired Pokémania.
 
-However, this was at great behest by my mother. Evolution? Evilution. Pokémon doesn't give glory to God. Fortunately, my father and family were able to coerce her into allowing Pokémon within the household. A silent bullet dodged that I only knew about abstractly. This pattern re-occurred throughout the years, technology being a major hurdle to entry within the household, which only burned my desire for it further. The same year, my elementary school requested permission for internet access in their extremely strict and locked down environment (WebSense), but my mom refused. It was only after an intense argument that she finally relented. My best guess is my father saw the writing on the wall as far as such drastic restrictions would limit my ability to succeed in life, and would be a repeated conversation for my siblings.
+However, this was at great behest by my mother. Evolution? Evilution. Pokémon doesn't give glory to God. Fortunately, my father (and family ?) were able to coerce her into allowing Pokémon within the household. A silent bullet dodged that I only knew about abstractly. This pattern re-occurred throughout the years, technology being a major hurdle to entry within the household, which only burned my desire for it further. The same year, my elementary school requested permission for internet access in their extremely strict and locked down environment (WebSense), but my mom refused. It was only after an intense argument that she finally relented. My best guess is my father saw the writing on the wall as far as such drastic restrictions would limit my ability to succeed in life, and would be a repeated conversation for my siblings.
 
 There's no way in hell a world with PokéDexes and network-based computation would a child have a chance of surviving, much less thriving. Glory to god or not, automobiles replaced horses, and the internet is replacing telephones in real-time. I can't imagine a world in which we never got the internet or a PC, but this wouldn't occur until a decade later. In my spelunking for this article, I found the first `typ0`, a zine from Orphic. This thread was posted in late 2007, and included a post indicating my family finally had a dedicated, non-free-trial/dial-up, internet connection. In a later post on flickr, my tech setup had become my entire focus of being.
 
@@ -69,15 +75,19 @@ Coolio carpet, Space theme calendar, trash can, Rhodes King V guitar, an amp, ma
 
 If we zoom in on the top-left, where shelves display boxes of software like trophies:
 
+##### PhotoShop 
+
 [![PhotoShop CS2](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)
 PhotoShop CS2 != PhotoShop 7.0.
 {:.figcaption}
 
-The full story of how I first began PhotoShop... I'll start here: my cousin showed me some of the ropes in PhotoShop 7.0 -- A relic, for anyone who was using the internet at my age at the time (arriving nearly 2 years before PhotoShop CS), but it was relevant enough to learn what mattered: making incremental changes to an image at hand-- you're at a baseball game and want to crop out some stray people grazing in the back of the otherwise clean photo. Immediately, I took to it like Microsoft Paint (shoutout: Paint.NET for existing, graduating to v1.0<!-- unsure double check what major release changes they've had-->) and trying to make my own images out of pure thought.
+My cousin showed me some of the ropes in [PhotoShop 7.0](https://web.archive.org/web/20020802075320/http://www.adobe.com:80/products/photoshop/main.html) -- [A relic](https://computerhistory.org/blog/adobe-photoshop-source-code/), for anyone who was using the internet at the time ([arriving nearly 2 years before PhotoShop CS](https://lowendmac.com/software/p/photoshop.html)), but it was relevant enough to learn what mattered: making incremental changes to an image at hand-- you're at a baseball game and want to crop out some stray people grazing in the back of the otherwise clean photo. Immediately, I took to it like Microsoft Paint (shoutout: [Paint.NET](https://www.reddit.com/r/technology/comments/1tso01g/after_22_years_you_can_finally_download_paintnet/)).
 
-After a while of playing with the tools and brushes, I began to peruse my old friend, the Internet. And this again, is a story from the long-long ago, where PhotoShop CS was out and I didn't have _all the capabilities of the latest release_, but I did have a partial git diff. And a lot to learn with how you start with "pure thought stuff" and reach a "something you can hold in your hands". Now we call everything "apps", but then it was "website". You didn't trade a Facebook, or a Spotify. You might have a Livejournal, or later, MySpace or last.fm. Blogger was my jam, and here we're reaching a bifrucation--I can't tell you **exactly** the first time I used, read a WordPress site. Once you know, you know though.
+After a while of playing with the tools and brushes, I began to peruse my old friend, the Internet. And this again, is a story from the `long-long ago`, where PhotoShop CS was out and I didn't have _all the capabilities of the latest release_, but I did have a partial [git diff](https://git-scm.com/docs/git-diff). And a lot to learn with how you start from ["pure thought stuff"](http://localhost:4000/dreaming-in-code-lucid-dreaming/#why-do-we-build-castles-in-the-sky) and reach a "something you can hold in your hands". 
 
-WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format and possibly want to make minor (or major) changes with plugins, custom themes.. My best guess is, when I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days as I mentioned, so I probably wanted to connect to the phpBB forum, which.. Had a plugin but I wanted my "concept"/sliced-html through.. another likely archived thread.
+Now we call everything "apps", but then it was "website". You didn't trade a Facebook, or a Spotify. You might have a Livejournal, or later, MySpace or last.fm. Blogger was my jam, and here we're reaching a bifrucation--I can't tell you **exactly** the first time I used or read a WordPress site. [Once you know, you know though](https://github.com/Heilemann/kubrick-for-wordpress). In the same way PhotoShop opened the worlds of graphic and web design to me, WordPress formally introduced me to the blogosphere, and FOSS-based web applications.
+
+WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format website (especially in ca. 2005)? Do you want to make minor (or major) changes with plugins? From my best recollection, I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days as I mentioned, so I probably wanted to connect WordPress to the phpBB forum in a way that wasn't supported.
 
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
@@ -89,44 +99,66 @@ WordPress' general design-guidance is the hallmark of its success. Do you need a
 {:.figcaption}
 
 [![BLUE Pokémon Adventures: Chapter 1](/assets/img/blog/posts/a-universe/Blue_RGB_chapter.png)](https://bulbapedia.bulbagarden.net/wiki/Blue_(Adventures)#/media/File:Blue_RGB_chapter.png)
-Read: グリーン, or GREEN.
+グリーン, read: GREEN.
 {:.figcaption}
 
 [![Crystal Pokémon Adventures: GSC](/assets/img/blog/posts/a-universe/Crystal_GSC.png)](https://bulbapedia.bulbagarden.net/wiki/Crystal_(Adventures)#/media/File:CrystalGSC.png)
 クリスタル
 {:.figcaption}
 
-## [December 3 2006](/waking-software-engineering/#december-3-2006)
+### Swimming oneself
 
-December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](https://kyleo.io/dreaming-in-code-lucid-dreaming#Teenage-Debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to [self-publish a work of fiction I had written](/waking-software-engineering/). It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
+> You swam yourself!
+
+- Julian
+
+[![Just keep swimming](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)
+
+In 2016, while living in Denver, Colorado, my partner, her best friend, and I went white-water rafting. I'm unsure of how similar others' experiences were with mine, and it was my first. Our raft's guide's name was Julian, assuming that's how it was spelled. Julian was radically canderous, and wasn't averse to sharing how late in the season it was nor how exhausted he was of guiding rafts on white-water.
+
+My favorite part of Julian's sarcastic soapboxing was their catchphrase, "You swam yourself!". 
+
+Swimming oneself is easier than one would expect, or at least Julian would have you believe. Nobody in our group "swam theirselves", and I like to believe it was Julian's impression on us to avoid swimming ourselves.
+
+This was years ago now and I'd be pressed to find an example of what that looked like in the scenario of white-water rafting, but say for example one were to reach for a branch on the side of the river. That would be an instant-qualification for swimming oneself.
+
+## [December 3, 2006](/waking-software-engineering/#december-3-2006)
+
+December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](/dreaming-in-code-lucid-dreaming#teenage-debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to [self-publish a work of fiction I had written](/waking-software-engineering/). It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
 
 It does warrant a second warning for the image host Photobucket's mass deactivation of accounts as I wouldn't know the account's username or email associated with it:
 
 [![Orphic, Inc. — December 30, 2006](/assets/img/blog/posts/a-universe/orphic-2006-12-30.jpg)](/assets/img/blog/posts/a-universe/orphic-2006-12-30.jpg)
-Orphic, Inc. on ProBoards, December 30, 2006 — Photobucket's "PLEASE UPDATE YOUR ACCOUNT" tombstones now stand where the sliced graphics were. Most users ever online was 21, on Dec 16, 2006.
+Orphic, Inc. on ProBoards, December 30, 2006 — Photobucket's "PLEASE UPDATE YOUR ACCOUNT" tombstones now stand where the sliced graphics were. Most users ever online was 21, on Dec 16, 2006. Only The Great Hall (introductions) and The Haven (general) boards were visible for launch.
 {:.figcaption}
 
 [![Orphic, Inc. — August 26, 2007](/assets/img/blog/posts/a-universe/orphic-2007-08-26.jpg)](/assets/img/blog/posts/a-universe/orphic-2007-08-26.jpg)
-*"what would you do if it were you?"* — typ0, Iss. 1: June/06, the 6,000-post mark, and a "Next 'Everyone Get On' date." The board had a News, a Haven, Apply!, Requests, Suggestions.
+*"What would you do if it were you?"* — typ0, Iss. 1: June 2007, the 6,000-post mark, and a "Next 'Everyone Get On'" event. The forum had The Haven, Video Game Downloads, and Miscellaneous boards after nine months. Most users ever online was 40, on June 10th of the same year.
 {:.figcaption}
 
 [![Orphic, Inc. — September 7, 2007](/assets/img/blog/posts/a-universe/orphic-2007-09-07.jpg)](/assets/img/blog/posts/a-universe/orphic-2007-09-07.jpg)
-By the 7,000-post banner: *"From now on, if someone goes off topic: Who cares? let em. Let the topic flow like a regular conversation."* Business Divisions, 185 members.
+Multiple news tables in the header: Submit Art Work \| Public Announcement \| 7,000 post celebration. News ticker: *"From now on, if someone goes off topic: Who cares? let em. Let the topic flow like a regular conversation."* Business Divisions separated into it's own board, Program Downloads added to Miscellaneous, 185 members.
 {:.figcaption}
 
-This is when a huge slip-up occurred (ugh?), unappeased with the slow-crawl growth I had seen, I decided to commission one of the newly found graphics forums I'd been attempting to hone my craft on (I vaguely recall thinking the aesthetic would bring more people, but I really attribute this to my commitment to process). I was so excited by their forum when I found it, if I had a similarly appearance it'd work my forum as well, right?
+This is when I swam myself, and unfortunately an entire community suffered. Unappeased with the slow-crawl growth I had seen after a burst of activity, I decided to commission one of the [newly found graphics forums](/dreaming-in-code-lucid-dreaming/#teenage-debugging) I'd been attempting to hone my craft on. I vaguely recall thinking the aesthetic would bring more people, but I really attribute this to my commitment to the improvement process. I was so excited by their forum when I found it, if I had a similarly appearance it'd work my forum as well, right?
 
 [![orphic… pearlLiquidation — a commissioned sliced-HTML banner](/assets/img/blog/posts/a-universe/orphic-v3-banner.jpg)](/assets/img/blog/posts/a-universe/orphic-v3-banner.jpg)
 The commissioned aesthetic — *orphic… pearlLiquidation.*
 {:.figcaption}
 
-It's the same with Orphic where I was the lead designer, coder, and founder of the website. I was trying to form a community around my book/literally just trying to get people to read it/advertise it/seeking a book deal ("the idea" in the `long, long ago`) and ended up in my trying to learn `business`. UG didn't exist until a year after Orphic, and Orphic was more or less scrapped as an idea--honed my concept into focusing on news about one company rather than trying to create my own from scratch, could focus on strengths, writing, forums, some design.
+It's the same with Orphic where I was the lead designer, coder, and founder of the website. The initial goal being to form a [community](#^1) for my book, ended up "hiring" teenagers my age (if not older) to read and advertise it. What started out as seeking a book deal ("the idea" in the `beforetimes`), resulted in learning `business` fundamentals. 
+
+The Uber Googlers didn't exist until a year after Orphic, and Orphic was more or less [scrapped as an idea](https://korin.pink/wiki/blog-posts/scraps/How-to-Build-an-App-That-Doesnt-Fall-Apart-Two-Days-Later). My new concept was centered around an external [company](#^2), a given source of news to feed content.
+
+##### ^1: In my mind at the time, over-scoped to a business.
+
+##### ^2: That many `OIers` were, like me, also fans of.
 
 ## 12,308
 
-I registered theubergooglers.com on October 21, 2007 via BlueHost and used the cPanel front-end to manage html files and a phpbb instance via fantastico deluxe, then later a blog using WordPress + failure to implement phpbb with the wordpress instance.. So I was an administrator, podcaster (there was a few-episode podcast series), and forum moderator. There were several other staff members.
+I registered theubergooglers.com on October 21, 2007 via BlueHost and used the cPanel front-end to manage HTML files and a phpBB instance via [Fantastico DeLuxe](https://www.inhost.com/fantastico_de_luxe.php), then later a blog using WordPress.
 
-Using methods [I'd experienced as effective myself](https://youtu.be/IqQzvfn_s30?t=109), I shared several forms of "viral marketing" as I'd likely consider it at the time. On December 03, 2008 (or 12.3.08) I launched The Uber Googlers using [phpBB](https://phpbb.com), thoughts about a book were a far-gone idea after I had discovered an affinity for code in between.<!-- TODO (Kai): the Oct/Nov 2007 screenshots show phpBB already live at ~6k posts — so this Dec 3 2008 date is the *launch* (12,308), not the first phpBB. Tweak wording if it reads as the latter. -->
+Using methods [I'd experienced as effective myself](https://youtu.be/IqQzvfn_s30?t=109), I shared several forms of "viral marketing" as I'd likely consider it at the time. On December 03, 2008 (or 12.3.08) I launched The Uber Googlers using [phpBB](https://phpbb.com), thoughts about a book were a far-gone idea after I had discovered an affinity for code in between. While Orphic only allowed a solo month of lead time, for The Uber Googlers I planned a monthly release-cycle, each month a new feature added atop the last, with a final-stack planned for completion one year later. Little did I know, combining forum, blog, messaging, and additional software via AJAX was a tall order for a `Teenage Debugger`.
 
 [![The Uber Googlers — October 2007](/assets/img/blog/posts/a-universe/ubergooglers-2007-10.png)](/assets/img/blog/posts/a-universe/ubergooglers-2007-10.png)
 The Uber Googlers, October 2007 — Tech Haven barely warm: Computer / PSP / DS / Xbox 360 / PS3 / Wii / Apple Talk, 110 posts, 6 registered users, moderators *«Kai», duncanyoyo1.* Most ever online: 12, on Oct 22, 2007.
@@ -137,33 +169,36 @@ A month later, November 2007 — Tech Haven differentiated into Computer / Ninte
 {:.figcaption}
 
 [![The Uber Googlers — March 2008 - The Fun House](/assets/img/blog/posts/a-universe/ubergooglers-2008-03-fun-house.png)](https://web.archive.org/web/20080305051814/http://theubergooglers.com/forums/viewforum.php?f=66&sid=5a9a315595499e646316d45973d417b6)
-Part of "Uber Googlers 2.0", The Fun House, March 2008 — Branching "games" like "Count to a Googol" (6,231 posts) into its own forum was a popular decision. Moderators *bijan, fredy.*
+Part of "Uber Googlers 2.0", "re-ubering your googling" -- The Fun House, March 2008 — Branching "games" like "Count to a Googol" (6,231 posts) into its own forum was a popular decision. Moderators *bijan, fredy.*
 {:.figcaption}
 
 [![The Uber Googlers — April 2008 - Final Archived Memberlist](/assets/img/blog/posts/a-universe/ubergooglers-2008-04-memberlist.png)](https://web.archive.org/web/20080422085118/http://www.theubergooglers.com/forums/memberlist.php)
-The final/complete memberlist, April 2008 — 15,939 posts, 796 members, an Archive ("where all old and unneeded — but they will always have a place in our hearts &lt;3 — threads will go"). 5,956 posts, 78 registered users. Moderators *doogly, dearxstranger, Setnev.*
+The final/complete memberlist, April 2008. Active staff and members have archived member pages, such as [duncanyoyo1](https://web.archive.org/web/20080511045414/http://theubergooglers.com/forums/profile.php?mode=viewprofile&u=3&sid=1ba662be8754ba1f64b91254f02a36ba) and [sonypsp0009](https://web.archive.org/web/20080511045421/http://theubergooglers.com/forums/profile.php?mode=viewprofile&u=5&sid=1ba662be8754ba1f64b91254f02a36ba).
 {:.figcaption}
-
 
 [![The Uber Googlers — June 12 2008 - Final Archive](/assets/img/blog/posts/a-universe/ubergooglers-2008-06.png)](https://web.archive.org/web/20080612135131/http://theubergooglers.com/forums/index.php)
 Nine months later, June 12 2008 — The final available capture of The Uber Googlers phpBB forum, 15,939 posts, 796 members. Off-topic and The Fun House were obvious main-stays (3,146 and 6,922 posts, respectively). Moderators *doogly, dearxstranger, Setnev.*
 {:.figcaption}
 
-We could wrestle with blogs/customization/plugin support but overall we're left with the WordPress community. The users tying it together that are the pulse of WordPress. They have a right to be lost and confused about how to proceed.
+I swam myself here by attempting to implement phpBB with the WordPress instance, and continuing to add layers when thrashing the system. We could wrestle with blogs, customization, or plugin support of these various communities but the one that left a lasting impact is the WordPress community. The users tying it together that are the pulse of WordPress. They have a right to be lost and confused about how to proceed regarding Automaticc's actions, especially WPEngine.
 
-So going back to the users: one user in particular I know very well:
+Back to the users, and one user in particular I know well:
 
-[![Topher's avatar](/assets/img/blog/posts/a-universe/topher-avatar.gif)](https://bsky.app/profile/topher1kenobe.bsky.social)
+[![Topher's avatar](/assets/img/blog/posts/a-universe/topher-avatar.gif)](https://heropress.com)
 *Topher's well known avatar across the net.*
 {:.figcaption}
 
 The first Topher I met wasn't literally Topher, it was someone like Topher.
 
-The first thing I remember about SWIT they told me to slow down, they needed to: I was requesting someone to build a whole website architecture amassing APIs at [ludicrous speed](/assets/img/blog/posts/a-universe/spaceballs-ludicrous-speed-theyve-gone-plaid.gif). Topher has this same precaution when working with WP-- how would the WordPress community feel about this? At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce, but was spearheaded by Topher acting as a liason for WordPress' pulse--and soul. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, along with the team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with BigCommerce (we'll get there in a while, but if you want to skip to the end [## The BigCommerce in the Room](#the-bigcommerce-in-the-room)), by WPEngine. Now we're getting spicy.
+The first thing I remember about SWIT ([Someone Who Isn't Topher](https://en.wiktionary.org/wiki/swim#Etymology_3)) they told me to slow down, they needed to: I was requesting someone to build a whole website architecture amassing APIs at [ludicrous speed](/assets/img/blog/posts/a-universe/spaceballs-ludicrous-speed-theyve-gone-plaid.gif). Topher has this same precaution when working with WordPress-- how would the WordPress community feel about this? At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce, but was spearheaded by Topher acting as a liason for WordPress' pulse--and soul. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, along with the team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with [BigCommerce](#^3), by [WPEngine](https://wpengine.com). [Now, we're getting spicy 🌶️](https://wpvswpe.report/)
 
-I never worked with WPEngine directly, but they seemed like a solid company from the one in-office interview I did with them while applying/waiting to hear back about a position at `Commerce` (again, I haven't worked there in awhile and a name change to a company makes explaining your resume more difficult), and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
+I never worked with WPEngine directly, but from the one in-office interview I did with them, they seemed like a solid company. While applying, then waiting to hear back about a position at (`Commerce`)[#^4], and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
 
 Back to plugin hell: competency in design can be summarized by me as: knowing the limits of your architecture/surface of work. Seeing the BC4WP plugin was a "trophy-moment" for BigCommerce to me at the time. Having a competitive approach to opening the architecture up meant a better surface of level of connecting BigCommerce stores in lieu of something like WooCommerce. The installation was quirky (and in the all-hailed label of beta), but was smoothed out as feedback was received: the product sync proccess could hang for large stores, and v1 wasn't too far around the corner. I was a T1 at the time, but my recollection of earlier times when I used WordPress proliferated in a single moment, Here, I knew a fair amount of the architecture, theming, and the PHP I had so dreaded years before. PHP was just another script to parse.
+
+##### ^3: We'll get there in a while soon, but if you want to skip two lines: [## The BigCommerce in the Room](#the-bigcommerce-in-the-room)
+
+##### ^4: Again, I haven't worked there in awhile, and a name change to a company makes explaining your resume more difficult. I'll primarily refer to [Commmerce](https://www.commerce.com/) as BigCommerce in this article.
 
 ## The BigCommerce in the Room
 
@@ -171,13 +206,13 @@ The common-trope there, BigCommerce has been a failure in the news lately, their
 
 I do this to lovingly "run them through the coals" so to speak, as I said I left with a heavy heart and wished my former colleagues the best. I call my time at BigCommerce as learning what a real engineering team looks like and that has stayed true until today. Mostly. I've noticed a wide-berth departure of nearly everyone I would consider an "A player", whether due to finding better work or one of their slew of layoffs. The primary sticking point I found from even my early days was how BigCommerce constantly compared itself to Shopify when they should focus on their own product.
 
-This was seen in other projects where BigCommerce felt like it got in its own way. BC4WP consistently had to fight for _what made sense_ rather than more involved discussions that could easily deteriorate against "what's the best long term decision?" or similar questions. When working at Apollo, I was contacted by a BigCommerce employee who was interested in applying federated GraphQL concepts to BigCommerce's relay-style GraphQL only to be stymied their own team.
+This was seen in other projects where BigCommerce felt like it got in its own way. BC4WP consistently had to fight for _what made sense_ rather than more involved discussions that could easily deteriorate against "what's the best long term decision?" or similar questions. When working at Apollo, I was contacted by a BigCommerce employee who was interested in applying federated GraphQL concepts to BigCommerce's relay-style GraphQL only to be stymied their own team. Definitive case of BigComerece swam themselves.
 
 ## Stack Ladder
 
 Settling for a project that builds successfully and resolves failure gracefully is a fair measure especially on brownfield projects, but pursuit of this in greener pastures accelerate your path to a graveyard. Retaining deathmarch-style actions as practice is wasteful and mythologizing your month is equally manic.
 
-It was 3 years ago in 2020 when that scrap was written, prior to [Dreaming in Code](/dreaming-in-code-lucid-dreaming/), led to that article, but some of the pieces weren't ever complete e.g. the infrastructure stability stuff, which was touched on briefly in [Waking Software Engineering](/waking-software-engineering/).
+It was 3 years ago, in 2020, when [this scrap](https://korin.pink/wiki) was instantiated, prior to [Dreaming in Code](/dreaming-in-code-lucid-dreaming/) which lives on as the `OP` for KyleO.IO, now re-located at KyleOBrien.me. This original work led to "Dreaming in Code", and included the `Lucid Dreaming` bit, but some of the pieces weren't ever complete. The infrastructure and stability we've coalesced over the course of these some few thousand words was there but missing key insight. This was glancingly touched on in [Waking Software Engineering](/waking-software-engineering/), where I fall into waxing code-based poetry.
 
 > - **2006 — Orphic, Inc.** — First server: taught myself Windows server admin on an externally-owned GoDaddy box under the forum, and decided Windows wasn't for me.
 > - **2007–08 — The Uber Googlers** — Ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the December 03, 2008 launch (12,308).
@@ -186,28 +221,33 @@ It was 3 years ago in 2020 when that scrap was written, prior to [Dreaming in Co
 > - **2019 — GitLab** — I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
 > - **2020 — GKE / Docker / Kubernetes** — Autonomously instantiating containers. ⬅️ You are here.
 
-While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want/need and I’m actually okay with it. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. In the same way I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in between.
+While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want, starting with what I need, and that's OK. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. I'm mostly unchanged from my adolescence, where I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in-between. No matter the roots, my neural pathways seem hardwired for settling into codework.
 
 ### "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
 
-THE BLOOM. Dexter = LLMs → everyday users doing yesteryear's witch/warlock alchemy; automotive equipment replacing the manufacturers, "reducing human involvement to only the necessary pieces"; the trainer needing RED / GREEN / BLUE / CRYSTAL specialties. Pays back L19's "alchemical weapons … before LLMs." Home for the metaphor is kuro;
- this is the in-article bloom.
+#### [🜲⚡ 🔮 ✨](/waking-software-engineering/#conclusion)
 
- ## Conclusion
+Alchemically, in an [`10万ボルト` fashion, there is a wizard awaiting you](https://on.soundcloud.com/NBBVlB0agc6RafsPAh). With great amelioration, I implore acceleration into descent of Consumption.
 
-Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out of the end of this post, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, I'm not intending to imply an understanding of Linux is necessary to program (or anything else at all from this or my prior post), my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
+Everyday users performing yesteryear's witch or warlock's [electric baptism](/waking-software-engineering/#conclusion). Automotive equipment replaces manufacturers, Dexter reminds me too much of an LLM, and we're rapidly reducing human involvement to only the necessary components. Every trainer needs a specialty, and whether yours is `RED`, `GREEN`, or `CRYSTAL`, personally I call my mine [`黒`](/assets/img/blog/posts/黒春光琳海/cover-lg.png). This isn't to say I possess alchemical weapons, but what is one training their Pokémon for, if not fantastical warfare, or research into `a deeper magic`?
+
+## Conclusion
+
+Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out by the end of this article, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, [I'm not intending to imply an understanding of Linux is necessary](/dreaming-in-code-lucid-dreaming/#linux) to [program](#5), my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
 
 Programming isn't about app ideas, it's whether or not your code could be used for something bigger than ideas.
 
 The purpose of WhatCo.DE is fairly difficult to define and is part of the namesake. This is meant to create a sustainable system using Open Source software or platforms which will further propagate it's viability (with the goal of making it stable and _easy_) as a system through which anyone can spin up a site with virtually unlimited bandwidth and begin their own developer journey.
 
-For example, I hope wuu.bi to inspire others to create their own mastodon instances, same for tube.wuu.bi and PeerTube. I've had an eye on these platforms for years and I was overjoyed at how successful they've been the closer I looked.
+For example, I hope [wuu.bi](https://web.archive.org/web/20180811200251/https://wuu.bi/) to inspire others to [create their own mastodon instances](https://web.archive.org/web/20201115224145/https://wuu.bi/), same for tube.wuu.bi and [PeerTube](https://joinpeertube.org/). I've had an eye on these platforms for years and I was overjoyed at how successful they've been the closer I looked.
 
 What the idea comes down to is enabling that first degree of a touchstone, while in no way can I enable a former self, I look forward to a future where such a reality could be launched with the touch of a button. It's unrealistic to attempt any possible futures that would've brought me, but I do imagine a time where a user's first interaction with the web is one of their own making.
 
 This might start as an application by their own hand and code, albeit completely rail-roaded. What excites me the most about a concept like this is that it would evolve beyond software by the varied nature of this course and enter a realm I thought impossible: technology that grows.
+B
+bit rots the same way any muscle atrophies.
 
-Forward-stub bow-tie to the kuro "黒春光琳海" piece — "technology that grows" = the PokéDex becoming Dexter; "bit rots the same way any muscle atrophies." Light hand-off only (the full metaphor blooms above). Finalize once the kuro Conclusion lands.
+#^5: Or anything specific from this or my prior post. Outside of the Docker containers bit at the beginning.
 
 ## 𝕗̶̴̶̸̢̞̬͕̘̬̝̥͕͎͈͍̗̭͍̬͔̬ͫ̔̿́͗̉͆͛ͥ̀̀ͪ̾ͯ̏͞͞͡҉̶̜͉̟͎͇͛͆̀͜͟҉̾҉̷𝕜̵̸̴̷̸̸̨̧͖̥̰̤͕͇̹̫̣̺̘̫̩̝̬͖̻̰͙͔̫̩̩͇̻͍͔̞͉̞̫̠̥ͭ͌̄̓͗̐̑͗ͦ̂͒̾ͮͮͫͩ̀̋̓̍ͭͣͧ̃̍̄ͪͭ͐ͭ͗ͩ̃̃̂ͤ̒̾ͣͫ̍́͑ͬ͘͘̚̚̚͜͟͢͡͠͡͝𝕟̡̛̛̛̺͇̘̱̱̱͎̻̹̭ͤ̎̐̀́͌͗̓͒͑̌̚͘̕̚͟͞͠͡҉̨̛͔̥͉̖̲͙̹̝̳̪̜̖̹̟̊̌͋̊̊̓͛̋ͮ͂ͪ͗͂̋͒̆͜͢͜͡ͅ҉̡̧̘͉͍̲̺͚͙̩̠͉̻̻̬̥̤̻͚̾̊̈́ͭ́ͧͩ̅̉̆̿ͪ̿̌̈̅ͨ͛̎̚ͅℂ̷̶̛̰̩̘̻͔̰̖͈͍̪̙̳̻͓͎̖̙̻͐̆̎̃̐͑̉ͣ̄͒̄̑ͤ̎́̔͢͜͠͞ͅ҉̛͍̠̣̪̯̞̟̣̥͓̘ͧ̋͂ͤ́ͥͭ̓ͭ́ͧ̇ͧ̎ͨ͘̚̚͞͡͡ͅ҉̧̳̖̭͚̥̗̯͉͚̋̓͒ͧͣ͗͛͟͝͠𝕆̷̶̷̨̛͍̺͈̝̙̼̤̞̳͚͖̬̝̳̦͕̮͎͇͔̿̉ͧͮ̅͑̅͋̏ͥ͌̒͛̐̋̓ͨͪ͐̌̈ͮ́͆̌̌̅̕͜͟͟͝𝕃̝ͬ𝕆ℙℍ𝕆ℕ𝕓𝕚̷̸̷̢̡̢̤̯̩̞͎͙̮̹̟̞̪̗̠̯͓̤̠͕̰͚͔͍̝̖̽́͒̿͒̉ͤ̊̅ͨͥ̏͐ͥͪ͛ͨ̄̀̅ͮ͞͠͡𝕙̷̸̷̸̶̧̡̡̢̢̡̛̛̱͍̣̤̜̲̱̙̱͉̣̮̰̟͚͔̺̮̩̣̳̫̺̞̰̘̺̥͚̤ͭ̆̈́̀̀̇̿ͪ̐̓͊̎̏ͧ̓͆̈̑̎̏̈̓ͨ͋̂̄͋͊ͩ̓̄̅͒̊̅ͮ̿ͦ̿̂̿́͑̕͟͟͢͠͞͝͞ͅͅ
 
@@ -221,27 +261,53 @@ T̐ͦ̔̐ͣ͒̾ͣ̊̌̑ͣ̇́ͭ̈́̄̏̓ͭ̔͗ͣͬ͊͌̃ͫ͛ͭ̾̈́̑́́͐̓�
 
 > If you a have a problem with cursing, fucking talk to HR
 
-Don't forget you started trying this out by deploying GitLab with Rancher and that was just as fucked.
+> Don't forget you started trying this out by deploying GitLab with Rancher and that was just as fucked.
 
-Thrashing the original title by destroying everything practically more-or-less every week for.. oh 3 months or so now? Is kind of the name of the game, Kai. .
+Bucking the {{original}} title by destroying everything practically more-or-less every week for.. oh 3 months or so now? ((Is kind of the name of the game, Kai. .))
 
 ## How to Build an App That Doesn't Fall Apart Two Days Later
 
 Last night, while amidst [this project (private link!)](https://korin.pink/wiki) I discovered https://whatco.de to be on an incorrect version and to make a long story short caused a kerfuffle of mass proportions that ruined the instance effectively. I need to come back to this but essentially the steps up to this point made it much easier, a somewhat abstract goal behind wanting to spin up GitLab so there is some effectiveness after all is said and done. I was able to quickly load in a Ghost CMS container on the latest version (the reason I tried modifying ghost folder permissions to begin with) and port over the loaded storage drive.
 
-I'm essentially trying to open this access like Netlify has but packaged with GitLab. This creates an end-to-end DevOps experience [as they describe](https://about.gitlab.com/concurrent-devops/).
+I'm essentially trying to open this access like Netlify has but packaged with GitLab. This creates an end-to-end DevOps experience [as they describe«d»](https://web.archive.org/web/20200901011316/https://about.gitlab.com/topics/concurrent-devops/)[.](#^6)
+
+##### ^6: It's crazy to me how many articles I originally sourced here in 2020 that in 2026 required an archive.org dive.
 
 ## COLOPHON
 
 ### [Don’t worry about the future. Or worry, but know that worrying is as effective as trying to solve an algebra equation by chewing bubble gum. The real troubles in your life are apt to be things that never crossed your worried mind, the kind that blindside you at 4 p.m. on some idle Tuesday](https://www.chicagotribune.com/columns/chi-schmich-sunscreen-column-column.html).
 
-### 🫘̲
+#### 🫘̲
 
 [Masterclass in Presentation/Persuasion, iPhone introduction, Macworld 2007](https://youtu.be/VQKMoT-6XSg) -- [It looks like it's from another planet. And a GOOD planet.](https://youtu.be/0BHPtoTctDY?t=350)
 
 
-█▀▀ █░░ █▀█ ▄▀█ ▀█▀   █░░ █ █▄▀ █▀▀   ▄▀█   █░█░█ █ █▀▀ █   █▀▀ ▄▀█ █▀█ █▀▄ ░   █▀ ▀█▀ █ █▄░█ █▀▀
-█▀░ █▄▄ █▄█ █▀█ ░█░   █▄▄ █ █░█ ██▄   █▀█   ▀▄▀▄▀ █ █▀░ █   █▄▄ █▀█ █▀▄ █▄▀ █   ▄█ ░█░ █ █░▀█ █▄█
+<pre><code>
+███████╗██╗░░░░░░█████╗░░█████╗░████████╗  ██╗░░░░░██╗██╗░░██╗███████╗  ░█████╗░
+██╔════╝██║░░░░░██╔══██╗██╔══██╗╚══██╔══╝  ██║░░░░░██║██║░██╔╝██╔════╝  ██╔══██╗
+█████╗░░██║░░░░░██║░░██║███████║░░░██║░░░  ██║░░░░░██║█████═╝░█████╗░░  ███████║
+██╔══╝░░██║░░░░░██║░░██║██╔══██║░░░██║░░░  ██║░░░░░██║██╔═██╗░██╔══╝░░  ██╔══██║
+██║░░░░░███████╗╚█████╔╝██║░░██║░░░██║░░░  ███████╗██║██║░╚██╗███████╗  ██║░░██║
+╚═╝░░░░░╚══════╝░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░  ╚══════╝╚═╝╚═╝░░╚═╝╚══════╝  ╚═╝░░╚═╝
 
-█░░ █ █▄▀ █▀▀   ▄▀█ █▄░█   █▀▀ ▀█▀ █░█ ░
-█▄▄ █ █░█ ██▄   █▀█ █░▀█   ██▄ ░█░ █▀█ ▄
+░██╗░░░░░░░██╗██╗███████╗██╗  ░█████╗░░█████╗░██████╗░██████╗░░░░
+░██║░░██╗░░██║██║██╔════╝██║  ██╔══██╗██╔══██╗██╔══██╗██╔══██╗░░░
+░╚██╗████╗██╔╝██║█████╗░░██║  ██║░░╚═╝███████║██████╔╝██║░░██║░░░
+░░████╔═████║░██║██╔══╝░░██║  ██║░░██╗██╔══██║██╔══██╗██║░░██║██╗
+░░╚██╔╝░╚██╔╝░██║██║░░░░░██║  ╚█████╔╝██║░░██║██║░░██║██████╔╝╚█║
+░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝  ░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝╚═════╝░░╚╝
+
+░██████╗████████╗██╗███╗░░██╗░██████╗░  ██╗░░░░░██╗██╗░░██╗███████╗  ░█████╗░███╗░░██╗
+██╔════╝╚══██╔══╝██║████╗░██║██╔════╝░  ██║░░░░░██║██║░██╔╝██╔════╝  ██╔══██╗████╗░██║
+╚█████╗░░░░██║░░░██║██╔██╗██║██║░░██╗░  ██║░░░░░██║█████═╝░█████╗░░  ███████║██╔██╗██║
+░╚═══██╗░░░██║░░░██║██║╚████║██║░░╚██╗  ██║░░░░░██║██╔═██╗░██╔══╝░░  ██╔══██║██║╚████║
+██████╔╝░░░██║░░░██║██║░╚███║╚██████╔╝  ███████╗██║██║░╚██╗███████╗  ██║░░██║██║░╚███║
+╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚═════╝░  ╚══════╝╚═╝╚═╝░░╚═╝╚══════╝  ╚═╝░░╚═╝╚═╝░░╚══╝
+
+███████╗████████╗██╗░░██╗░░░
+██╔════╝╚══██╔══╝██║░░██║░░░
+█████╗░░░░░██║░░░███████║░░░
+██╔══╝░░░░░██║░░░██╔══██║░░░
+███████╗░░░██║░░░██║░░██║██╗
+╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝
+</code></pre>
