@@ -124,7 +124,7 @@ This was years ago now and I'd be pressed to find an example of what that looked
 
 ## [December 3, 2006](/waking-software-engineering/#december-3-2006)
 
-December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](/dreaming-in-code-lucid-dreaming#Teenage-Debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to [self-publish a work of fiction I had written](/waking-software-engineering/). It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
+December 3, 2006 marked the launch of "Orphic, Inc.". This was a forum that I'd intended to be a business as the name suggests, albeit much would prove difficult to a teenage entrepreneur. I launched Orphic, Inc. on [ProBoards](https://proboards.com) after having spent a month doing a soft-launch with friends. To complete the journey, you [might remember my mentioning learning about graphic design and the like through communities](/dreaming-in-code-lucid-dreaming#teenage-debugging), but my story also begins with another one which I wrote at an even younger age. The original concept behind my business was to [self-publish a work of fiction I had written](/waking-software-engineering/). It seems more novel in hindsight, but the results always astound me whenever I take a moment to step back and breathe.
 
 It does warrant a second warning for the image host Photobucket's mass deactivation of accounts as I wouldn't know the account's username or email associated with it:
 
@@ -225,7 +225,7 @@ While it feels unfortunate to say, this new pattern has emerged of _mostly_ fini
 
 ### "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
 
-#### [🜲⚡ 🔮 ✨](waking-software-engineering/#conclusion)
+#### [🜲⚡ 🔮 ✨](/waking-software-engineering/#conclusion)
 
 Alchemically, in an [`10万ボルト` fashion, there is a wizard awaiting you](https://on.soundcloud.com/NBBVlB0agc6RafsPAh). With great amelioration, I implore acceleration into descent of Consumption.
 
@@ -233,7 +233,7 @@ Everyday users performing yesteryear's witch or warlock's [electric baptism](/wa
 
 ## Conclusion
 
-Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out by the end of this article, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, [I'm not intending to imply an understanding of Linux is necessary](/dreaming-in-code-lucid-dreaming/#Linux) to [program](#5), my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
+Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out by the end of this article, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, [I'm not intending to imply an understanding of Linux is necessary](/dreaming-in-code-lucid-dreaming/#linux) to [program](#5), my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
 
 Programming isn't about app ideas, it's whether or not your code could be used for something bigger than ideas.
 
