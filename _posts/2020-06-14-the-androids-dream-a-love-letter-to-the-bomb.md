@@ -87,8 +87,7 @@ After a while of playing with the tools and brushes, I began to peruse my old fr
 
 Now we call everything "apps", but then it was "website". You didn't trade a Facebook, or a Spotify. You might have a Livejournal, or later, MySpace or last.fm. Blogger was my jam, and here we're reaching a bifrucation--I can't tell you **exactly** the first time I used or read a WordPress site. [Once you know, you know though](https://github.com/Heilemann/kubrick-for-wordpress). In the same way PhotoShop opened the worlds of graphic and web design to me, WordPress formally introduced me to the blogosphere, and FOSS-based web applications.
 
-WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format website (especially in ca. 2005)? Do you want to make minor (or major) changes with plugins? From my best recollection, I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days as I mentioned, so I probably wanted to connect WordPress to the phpBB forum in a way that wasn't supported.
-
+WordPress' general design-guidance is the hallmark of its success. Do you need a Blog-style format website (especially in ca. 2005)? Do you want to make minor (or major) changes with plugins? From my best recollection, I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14 year-old knows about how the internet works. This was [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days (ca. 2007-8) so I probably wanted to connect WordPress to the phpBB forum in a way that wasn't supported.
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
 *a certain hue and saturation of all colors*
@@ -146,7 +145,7 @@ This is when I swam myself, and unfortunately an entire community suffered. Unap
 The commissioned aesthetic — *orphic… pearlLiquidation.*
 {:.figcaption}
 
-It's the same with Orphic where I was the lead designer, coder, and founder of the website. The initial goal being to form a [community](#^1) for my book, ended up "hiring" teenagers my age (if not older) to read and advertise it. What started out as seeking a book deal ("the idea" in the `beforetimes`), resulted in learning `business` fundamentals. 
+With Orphic, I was the lead designer, coder, and founder of the website. The initial goal being to form a [community](#^1) for my book, ended up "hiring" teenagers my age (if not older) to read and advertise it. What started out as seeking a book deal ("the idea" in the `beforetimes`), resulted in learning `business` fundamentals. 
 
 The Uber Googlers didn't exist until a year after Orphic, and Orphic was more or less [scrapped as an idea](https://korin.pink/wiki/blog-posts/scraps/How-to-Build-an-App-That-Doesnt-Fall-Apart-Two-Days-Later). My new concept was centered around an external [company](#^2), a given source of news to feed content.
 
@@ -200,7 +199,7 @@ Back to plugin hell: competency in design can be summarized by me as: knowing th
 
 ##### ^4: Again, I haven't worked there in awhile, and a name change to a company makes explaining your resume more difficult. I'll primarily refer to [Commmerce](https://www.commerce.com/) as BigCommerce in this article.
 
-## The BigCommerce in the Room
+### The BigCommerce in the Room
 
 The common-trope there, BigCommerce has been a failure in the news lately, their stock underperformed year-over-year until a dramatic restructuring where they changed CEOs and in the past year changed their name to Commerce. I left BigCommerce with a heavy heart, I felt the inevitable post-IPO change on the horizon and didn't expect the stock to perform well. By leaving BigCommerce, I rejected a grant of over a thousand shares, woth approximately $100,000 at the time. By the time I was able to sell it (30 days earlier than I would have if I stayed, due to my early exit), that had dropped significantly and I'm only including my "inelligible" shares. For context, that thousand was much more than my intial stock option grant as a new hire in 2017.
 
@@ -214,16 +213,16 @@ Settling for a project that builds successfully and resolves failure gracefully 
 
 It was 3 years ago, in 2020, when [this scrap](https://korin.pink/wiki) was instantiated, prior to [Dreaming in Code](/dreaming-in-code-lucid-dreaming/) which lives on as the `OP` for KyleO.IO, now re-located at KyleOBrien.me. This original work led to "Dreaming in Code", and included the `Lucid Dreaming` bit, but some of the pieces weren't ever complete. The infrastructure and stability we've coalesced over the course of these some few thousand words was there but missing key insight. This was glancingly touched on in [Waking Software Engineering](/waking-software-engineering/), where I fall into waxing code-based poetry.
 
-> - **2006 — Orphic, Inc.** — First server: taught myself Windows server admin on an externally-owned GoDaddy box under the forum, and decided Windows wasn't for me.
-> - **2007–08 — The Uber Googlers** — Ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the December 03, 2008 launch (12,308).
-> - **2016 — NGINX / wildcard SSL** - "Launched" [WebbHost.net](https://webbhost.net) (redirects here, currently, serves as infrastructure today). We're focused on infra today, but this is also when I took Node.js seriously as a development language.
-> - **2017–18 — Docker volumes/containers** — WordPress again, now headless, ephemeral. Working towards "leveling-up" my infra/DevOps chops.
-> - **2019 — GitLab** — I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
-> - **2020 — GKE / Docker / Kubernetes** — Autonomously instantiating containers. ⬅️ You are here.
+> - **2006 — Orphic, Inc.**: First server: taught myself Windows server admin on an externally-owned GoDaddy box under the forum, and decided Windows wasn't for me.
+> - **2007–08 — The Uber Googlers**: Ditched Windows for the LAMP stack; BlueHost/cPanel, Apache vhosts, phpBB + WordPress. Registered Oct 2007; a year's work to the December 03, 2008 launch (12,308).
+> - **2016 — NGINX / wildcard SSL**: "Launched" [WebbHost.net](https://webbhost.net) (redirects here, currently, serves as infrastructure today). We're focused on infra today, but this is also when I took Node.js seriously as a development language.
+> - **2017–18 — Docker volumes/containers**: WordPress again, now headless, ephemeral. Working towards "leveling-up" my infra/DevOps chops.
+> - **2019 — GitLab**: I laughed at GitLab, needing a whole custom instance to get a custom-domain-level version of it going.
+> - **2020 — GKE / Docker / Kubernetes**: Autonomously instantiating containers. ⬅️ You are here.
 
-While it feels unfortunate to say, this new pattern has emerged of _mostly_ finishing what I want, starting with what I need, and that's OK. That being a part of the pattern specifically makes it unsurprising as it’s part of the learning process. I'm mostly unchanged from my adolescence, where I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform, I’ll always quickly re-learn the steps in-between. No matter the roots, my neural pathways seem hardwired for settling into codework.
+While it feels unfortunate to say, this now obvious pattern has emerged of _mostly_ finishing what I want, starting with what I need, and that's OK. Those parts of the pattern specifically make it unsurprising; The learning process self-evident. I've accepted that I'm mostly unchanged from my adolescence, where I expected to be able to go from creating a form with JavaScript at 12 to a fully functional platform. I’ll also quickly re-learn the steps in-between, no matter what decade we're in. No matter the roots, my neural pathways seem hardwired for settling into codework.
 
-### "There's gotta be a better way" approach vs ["How hard could it be"](https://www.youtube.com/watch?v=FKTxC9pl-WM) approach
+### The Alchemist's "There's gotta be a better way!"  vs The Sorcerer's ["How hard could it be?"](https://www.youtube.com/watch?v=FKTxC9pl-WM)
 
 #### [🜲⚡ 🔮 ✨](/waking-software-engineering/#conclusion)
 
@@ -265,7 +264,7 @@ T̐ͦ̔̐ͣ͒̾ͣ̊̌̑ͣ̇́ͭ̈́̄̏̓ͭ̔͗ͣͬ͊͌̃ͫ͛ͭ̾̈́̑́́͐̓�
 
 Bucking the {{original}} title by destroying everything practically more-or-less every week for.. oh 3 months or so now? ((Is kind of the name of the game, Kai. .))
 
-## How to Build an App That Doesn't Fall Apart Two Days Later
+### How to Build an App That Doesn't Fall Apart Two Days Later
 
 Last night, while amidst [this project (private link!)](https://korin.pink/wiki) I discovered https://whatco.de to be on an incorrect version and to make a long story short caused a kerfuffle of mass proportions that ruined the instance effectively. I need to come back to this but essentially the steps up to this point made it much easier, a somewhat abstract goal behind wanting to spin up GitLab so there is some effectiveness after all is said and done. I was able to quickly load in a Ghost CMS container on the latest version (the reason I tried modifying ghost folder permissions to begin with) and port over the loaded storage drive.
 
