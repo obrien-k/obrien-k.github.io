@@ -309,3 +309,6 @@ Donald Knuth, [http://www.ams.org/notices/200203/fea-knuth.pdf](http://www.ams.o
 "*Dreaming in Code*" pp.149
 
 "*Dreaming in Code*" pp.109
+
+## COLOPHON
+[UPDATE.PBP](/the-androids-dream-a-love-letter-to-the-bomb)

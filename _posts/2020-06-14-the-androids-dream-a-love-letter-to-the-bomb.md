@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "The Android's Dream; A Love Letter to the Bomb"
-date: 2020-06-02 00:00:00 +0000
-description: "WordPress, the Uber Googlers, Orphic Inc., BC4WP, and WhatCo.de — five answers to one question: where do ideas fall apart?"
+date: 2020-06-14 00:00:00 +0000
+description: "WordPress, the Uber Googlers, Orphic Inc., BC4WP, and WhatCo.DE — five answers to one question: where do ideas fall apart?"
 tags:
   - code
   - personal
@@ -13,27 +13,30 @@ categories:
   - narrative
 image:
   path: /assets/img/blog/posts/wordpress-dev-community/uber-googlers-v0.png
+featured: true
 ---
 
-#### UPDATE.PBP
+#### [UPDATE.PBP](https://consolemods.org/wiki/PSP:Updating_your_Firmware_(OFW))
 
 ### [DONE](https://korin.pink)
 
 [Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
 
-Agentic work is something I only briefly touched on in my [AI ethics piece](https://kyleobrien.me/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/), but is tangential today, re-starting this work in 2026. The chronology of this article was _intended_ to be a "fast-follow" for "Dreaming in Code \|\| Lucid Dreaming", and is narrated as such. While I have 2026's experience to look back with, it's only now that a lot of these concepts have crystalized into my current understanding of technology. 
+Agentic work is something I briefly touched on in my [AI ethics piece](https://kyleobrien.me/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/), but is tangential today, re-starting this work in 2026. The chronology of this article was _intended_ to be a "fast-follow" for "Dreaming in Code \|\| Lucid Dreaming", and is narrated as such. While I have 2026's experience to look back with, it's only now that a lot of these concepts have crystalized into my current understanding of technology. 
 
 Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failing tests typically leads to higher likelihood of greenery. Whether or not this love letter falls apart, that's for anyone to say.
 
 ## Introduction
 
-Where most sites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this one will only become more clear organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). The citations are very.. easter-egg-like in this article, we'll put it that way. Some link to a very recent post, some might say from _yesterday_, but others might say from three years from now. In the sense that many of the articles have received periodic updates, including Dreaming in Code \|\| Lucid Dreaming. I welcome you to dive deeper into this epic of sorts, but don't let that distract you from today.
+Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become more clear organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the COLOPHON-noted easter-eggs mentioned in our previous article. Some link to a very recent post (in 2026), some link to articles from _two weeks ago_, but others from three years in the future (2023). Many of the articles have received periodic updates, including Dreaming in Code \|\| Lucid Dreaming. 
+
+I welcome you to dive deeper into this epic of sorts, but don't let that distract you. I only point out the fact that I often will slip in new links, COLOPHON bits, and in today's lifecycle, a complete article six years after the fact with a publish date reflecting the originally intended date.
 
 [In as such was proven](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#rough-translations), software time has claimed yet another milestone. For me, this would be an autonomous form of the existing back-end for [WhatCo.DE](https://web.archive.org/web/20201101031004/https://whatco.de/), and save for upstream issues, it was near complete. With enough rigor it's possible to work around this, but would also be reverted if GitLab does at some point resolve it on their own (several years later I checked and no movement, and not worth digging up a third time). The existing bug where subdomains can't instantiate docker containers isn't a priority for the GitLab team.
 
 The purpose of this article is to retroactively collect my thoughts on trying to autonomously instantiate Docker containers through Google Kubernetes Engine ([as well as my host](https://techcrunch.com/2022/04/14/why-akamai-bought-linode/) [Linode's LKE](https://www.linode.com/content/linode-kubernetes-engine-easily-deploy-kubernetes-with-lke/)) with an explanation of why and what that means. I'll also prepare any possible future iterations in conceptual form, and share some of my own opinions on these solutions for deployment.
 
-I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation. *Editor's Note: 2026 Kai checking in and the view here is much nicer. Give Docker a second or third chance if you haven't found the right deployment/distribution method. There's a lot of good use cases for Docker containers.*
+I'd be remiss to neglect mentioning that I had prior misgivings with Docker and these misgivings only surface themselves further when attempting a full-scale application reliant on it as a foundation. *Editor's Note: 2026 Kai checking in, and the view here is much nicer. Give Docker a second or third chance if you haven't found the right deployment/distribution method. There's a lot of good use cases for Docker containers. [Yacht is cool!](https://www.youtube.com/watch?v=1qAAH_kghYc)*
 
 While in the pursuit of optimization with a optimistic attitude, developers often find themselves in a task they're unable to pursue: the scope outweighs the technical debt of the project. During self-projects we're able to fall on re-scopes, but when demand outweighs the means a re-engagement in approach is necessary. It's at this point where I found myself with WhatCo.DE when a beacon of light appeared in the form of [Cloudron.io](https://cloudron.io). Henceforth, I found and was reminded of many projects in a similar vein [read: [Nacelle](https://techcrunch.com/2020/06/29/nacelle-raises-4-8m-for-its-headless-e-commerce-platform/), [yunohost](https://yunohost.org/#/), [NearlyFreeSpeech.NET](https://nearlyfreespeech.net)]. While some workarounds are available for the issue I ran into, the overall execution is one that I find unsustainable. This is a re-occurring theme when each time I revisit attempting this project, it's only after a long enough break that I even realize the stop-gap solutions I'll have on hand are cohesively dead on arrival.
 
@@ -181,7 +184,7 @@ Nine months later, June 12 2008 — The final available capture of The Uber Goog
 
 I swam myself here by attempting to implement phpBB with the WordPress instance, and continuing to add layers when thrashing the system. We could wrestle with blogs, customization, or plugin support of these various communities but the one that left a lasting impact is the WordPress community. The users tying it together that are the pulse of WordPress. They have a right to be lost and confused about how to proceed regarding Automaticc's actions, especially WPEngine.
 
-Back to the users, and one user in particular I know well:
+Back to the users, and [one user in particular I know well](https://www.youtube.com/watch?v=7QvBMU2oRm4):
 
 [![Topher's avatar](/assets/img/blog/posts/a-universe/topher-avatar.gif)](https://heropress.com)
 *Topher's well known avatar across the net.*
@@ -189,7 +192,9 @@ Back to the users, and one user in particular I know well:
 
 The first Topher I met wasn't literally Topher, it was someone like Topher.
 
-The first thing I remember about SWIT ([Someone Who Isn't Topher](https://en.wiktionary.org/wiki/swim#Etymology_3)) they told me to slow down, they needed to: I was requesting someone to build a whole website architecture amassing APIs at [ludicrous speed](/assets/img/blog/posts/a-universe/spaceballs-ludicrous-speed-theyve-gone-plaid.gif). Topher has this same precaution when working with WordPress-- how would the WordPress community feel about this? At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce, but was spearheaded by Topher acting as a liason for WordPress' pulse--and soul. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, along with the team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with [BigCommerce](#^3), by [WPEngine](https://wpengine.com). [Now, we're getting spicy 🌶️](https://wpvswpe.report/)
+The first thing I remember about SWIT ([Someone Who Isn't Topher](https://en.wiktionary.org/wiki/swim#Etymology_3)) is that they told me to slow down. They needed to, I was requesting for someone to build a whole website architecture amassing APIs at [ludicrous speed](/assets/img/blog/posts/a-universe/spaceballs-ludicrous-speed-theyve-gone-plaid.gif). Topher has this same precaution when working with WordPress-- how would the WordPress community feel about this? If such a drastic change was required, why?
+
+At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce. BigCommerce's WordPress plugin developer support was spearheaded by Topher acting as a liason for WordPress' community. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, and the development team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with [BigCommerce](#^3) by [WPEngine](https://wpengine.com). [Now, we're getting spicy 🌶️](https://wpvswpe.report/)
 
 I never worked with WPEngine directly, but from the one in-office interview I did with them, they seemed like a solid company. While applying, then waiting to hear back about a position at (`Commerce`)[#^4], and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
 
@@ -228,7 +233,7 @@ While it feels unfortunate to say, this now obvious pattern has emerged of _most
 
 Alchemically, in an [`10万ボルト` fashion, there is a wizard awaiting you](https://on.soundcloud.com/NBBVlB0agc6RafsPAh). With great amelioration, I implore acceleration into descent of Consumption.
 
-Everyday users performing yesteryear's witch or warlock's [electric baptism](/waking-software-engineering/#conclusion). Automotive equipment replaces manufacturers, Dexter reminds me too much of an LLM, and we're rapidly reducing human involvement to only the necessary components. Every trainer needs a specialty, and whether yours is `RED`, `GREEN`, or `CRYSTAL`, personally I call my mine [`黒`](/assets/img/blog/posts/黒春光琳海/cover-lg.png). This isn't to say I possess alchemical weapons, but what is one training their Pokémon for, if not fantastical warfare, or research into `a deeper magic`?
+Everyday users performing yesteryear's witch or warlock's [electric baptism](/waking-software-engineering/#conclusion). Automotive equipment replaces manufacturer. Dexter reminds me too much of an LLM. And we're rapidly reducing human involvement to only the necessary components and activity. Every trainer needs a specialty, and whether yours is `RED`, `GREEN`, or `CRYSTAL`, personally I call my mine [`黒`](/assets/img/blog/posts/黒春光琳海/cover-lg.png). This isn't to say I possess alchemical weapons, but what is one training their Pokémon for, if not fantastical warfare, or research into `a deeper magic`?
 
 ## Conclusion
 
@@ -309,4 +314,8 @@ I'm essentially trying to open this access like Netlify has but packaged with Gi
 ██╔══╝░░░░░██║░░░██╔══██║░░░
 ███████╗░░░██║░░░██║░░██║██╗
 ╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝
+</code></pre>
+
+<pre><code>
+// TODO MIRROR || MIRROR DARKLY
 </code></pre>
