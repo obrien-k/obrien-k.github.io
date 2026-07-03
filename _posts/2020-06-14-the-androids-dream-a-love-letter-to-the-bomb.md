@@ -2,7 +2,7 @@
 layout: post
 title: "The Android's Dream; A Love Letter to the Bomb"
 date: 2020-06-14 00:00:00 +0000
-description: "WordPress, the Uber Googlers, Orphic Inc., BC4WP, and WhatCo.DE — five answers to one question: where do ideas fall apart?"
+description: "WordPress, Orphic Inc., the Uber Googlers, BC4WP, and WhatCo.DE — five answers to one question: where do ideas fall apart?"
 tags:
   - code
   - personal
