@@ -326,6 +326,29 @@ blockquote {
 }
 
 // =============================================================================
+// Footnotes — visible "Footnotes" heading above the citations list
+// =============================================================================
+// kramdown auto-collects footnote definitions into `.footnotes` at the end of
+// the content with no title — the theme only draws a divider via ::before.
+// Repurpose ::before as a section heading (higher specificity than the theme's
+// `.footnotes::before`) and move the divider onto the container.
+
+.content .footnotes {
+  border-top: 1px solid var(--border-color);
+
+  &::before {
+    content: "Footnotes";
+    display: block;
+    border-top: 0; // cancel the theme's divider-on-::before
+    margin: 1.5rem 0 0.5rem;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+}
+
+// =============================================================================
 // Badges / buttons — 88x31 indieweb style
 // =============================================================================
 
