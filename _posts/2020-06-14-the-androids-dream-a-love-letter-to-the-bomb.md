@@ -148,13 +148,13 @@ This is when I swam myself, and unfortunately an entire community suffered. Unap
 The commissioned aesthetic — *orphic… pearlLiquidation.*
 {:.figcaption}
 
-With Orphic, I was the lead designer, coder, and founder of the website. The initial goal being to form a [community](#^1) for my book, ended up "hiring" teenagers my age (if not older) to read and advertise it. What started out as seeking a book deal ("the idea" in the `beforetimes`), resulted in learning `business` fundamentals. 
+With Orphic, I was the lead designer, coder, and founder of the website. The initial goal being to form a community[^1] for my book, ended up "hiring" teenagers my age (if not older) to read and advertise it. What started out as seeking a book deal ("the idea" in the `beforetimes`), resulted in learning `business` fundamentals. 
 
-The Uber Googlers didn't exist until a year after Orphic, and Orphic was more or less [scrapped as an idea](https://korin.pink/wiki/blog-posts/scraps/How-to-Build-an-App-That-Doesnt-Fall-Apart-Two-Days-Later). My new concept was centered around an external [company](#^2), a given source of news to feed content.
+The Uber Googlers didn't exist until a year after Orphic, and Orphic was more or less [scrapped as an idea](https://korin.pink/wiki/blog-posts/scraps/How-to-Build-an-App-That-Doesnt-Fall-Apart-Two-Days-Later). My new concept was centered around an external company[^2], a given source of news to feed content.
 
-##### ^1: In my mind at the time, over-scoped to a business.
+[^1]: In my mind at the time, over-scoped to a business.
 
-##### ^2: That many `OIers` were, like me, also fans of.
+[^2]: That many `OIers` were, like me, also fans of.
 
 ## 12,308
 
@@ -194,15 +194,15 @@ The first Topher I met wasn't literally Topher, it was someone like Topher.
 
 The first thing I remember about SWIT ([Someone Who Isn't Topher](https://en.wiktionary.org/wiki/swim#Etymology_3)) is that they told me to slow down. They needed to, I was requesting for someone to build a whole website architecture amassing APIs at [ludicrous speed](/assets/img/blog/posts/a-universe/spaceballs-ludicrous-speed-theyve-gone-plaid.gif). Topher has this same precaution when working with WordPress-- how would the WordPress community feel about this? If such a drastic change was required, why?
 
-At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce. BigCommerce's WordPress plugin developer support was spearheaded by Topher acting as a liason for WordPress' community. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, and the development team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with [BigCommerce](#^3) by [WPEngine](https://wpengine.com). [Now, we're getting spicy 🌶️](https://wpvswpe.report/)
+At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagues from BigCommerce. BigCommerce's WordPress plugin developer support was spearheaded by Topher acting as a liason for WordPress' community. When something wasn't an expected WordPress plugin flow he'd help surface the divergence, and the development team behind these projects delivering on regular cadence. BC4WP was originally built in partnership with BigCommerce[^3] by [WPEngine](https://wpengine.com). [Now, we're getting spicy 🌶️](https://wpvswpe.report/)
 
-I never worked with WPEngine directly, but from the one in-office interview I did with them, they seemed like a solid company. While applying, then waiting to hear back about a position at (`Commerce`)[#^4], and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
+I never worked with WPEngine directly, but from the one in-office interview I did with them, they seemed like a solid company. While applying, then waiting to hear back about a position at `Commerce`[^4], and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
 
 Back to plugin hell: competency in design can be summarized by me as: knowing the limits of your architecture/surface of work. Seeing the BC4WP plugin was a "trophy-moment" for BigCommerce to me at the time. Having a competitive approach to opening the architecture up meant a better surface of level of connecting BigCommerce stores in lieu of something like WooCommerce. The installation was quirky (and in the all-hailed label of beta), but was smoothed out as feedback was received: the product sync proccess could hang for large stores, and v1 wasn't too far around the corner. I was a T1 at the time, but my recollection of earlier times when I used WordPress proliferated in a single moment, Here, I knew a fair amount of the architecture, theming, and the PHP I had so dreaded years before. PHP was just another script to parse.
 
-##### ^3: We'll get there in a while soon, but if you want to skip two lines: [## The BigCommerce in the Room](#the-bigcommerce-in-the-room)
+[^3]: We'll get there in a while soon, but if you want to skip two lines: [## The BigCommerce in the Room](#the-bigcommerce-in-the-room)
 
-##### ^4: Again, I haven't worked there in awhile, and a name change to a company makes explaining your resume more difficult. I'll primarily refer to [Commmerce](https://www.commerce.com/) as BigCommerce in this article.
+[^4]: Again, I haven't worked there in awhile, and a name change to a company makes explaining your resume more difficult. I'll primarily refer to [Commmerce](https://www.commerce.com/) as BigCommerce in this article.
 
 ### The BigCommerce in the Room
 
@@ -237,7 +237,7 @@ Everyday users performing yesteryear's witch or warlock's [electric baptism](/wa
 
 ## Conclusion
 
-Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out by the end of this article, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, [I'm not intending to imply an understanding of Linux is necessary](/dreaming-in-code-lucid-dreaming/#linux) to [program](#5), my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
+Know your limits but that of your hardware can be a good measure for what is truly necessary. In turn, you're able to gauge what actually matters especially when looking from a larger pool of perspective. I don't expect an app idea to come out by the end of this article, but reaching towards app ideas should be a clear indication of whether I missed my mark. If it comes across that my findings are recommendations, [I'm not intending to imply an understanding of Linux is necessary](/dreaming-in-code-lucid-dreaming/#linux) to program[^5], my path is one still fairly wild and without many passers-by. A combination of these anecdotes and events of discovery (and self-discovery) allowed me to become a better programmer with enough perseverance and a proper strategy.
 
 Programming isn't about app ideas, it's whether or not your code could be used for something bigger than ideas.
 
@@ -251,7 +251,7 @@ This might start as an application by their own hand and code, albeit completely
 B
 bit rots the same way any muscle atrophies.
 
-#^5: Or anything specific from this or my prior post. Outside of the Docker containers bit at the beginning.
+[^5]: Or anything specific from this or my prior post. Outside of the Docker containers bit at the beginning.
 
 ## 𝕗̶̴̶̸̢̞̬͕̘̬̝̥͕͎͈͍̗̭͍̬͔̬ͫ̔̿́͗̉͆͛ͥ̀̀ͪ̾ͯ̏͞͞͡҉̶̜͉̟͎͇͛͆̀͜͟҉̾҉̷𝕜̵̸̴̷̸̸̨̧͖̥̰̤͕͇̹̫̣̺̘̫̩̝̬͖̻̰͙͔̫̩̩͇̻͍͔̞͉̞̫̠̥ͭ͌̄̓͗̐̑͗ͦ̂͒̾ͮͮͫͩ̀̋̓̍ͭͣͧ̃̍̄ͪͭ͐ͭ͗ͩ̃̃̂ͤ̒̾ͣͫ̍́͑ͬ͘͘̚̚̚͜͟͢͡͠͡͝𝕟̡̛̛̛̺͇̘̱̱̱͎̻̹̭ͤ̎̐̀́͌͗̓͒͑̌̚͘̕̚͟͞͠͡҉̨̛͔̥͉̖̲͙̹̝̳̪̜̖̹̟̊̌͋̊̊̓͛̋ͮ͂ͪ͗͂̋͒̆͜͢͜͡ͅ҉̡̧̘͉͍̲̺͚͙̩̠͉̻̻̬̥̤̻͚̾̊̈́ͭ́ͧͩ̅̉̆̿ͪ̿̌̈̅ͨ͛̎̚ͅℂ̷̶̛̰̩̘̻͔̰̖͈͍̪̙̳̻͓͎̖̙̻͐̆̎̃̐͑̉ͣ̄͒̄̑ͤ̎́̔͢͜͠͞ͅ҉̛͍̠̣̪̯̞̟̣̥͓̘ͧ̋͂ͤ́ͥͭ̓ͭ́ͧ̇ͧ̎ͨ͘̚̚͞͡͡ͅ҉̧̳̖̭͚̥̗̯͉͚̋̓͒ͧͣ͗͛͟͝͠𝕆̷̶̷̨̛͍̺͈̝̙̼̤̞̳͚͖̬̝̳̦͕̮͎͇͔̿̉ͧͮ̅͑̅͋̏ͥ͌̒͛̐̋̓ͨͪ͐̌̈ͮ́͆̌̌̅̕͜͟͟͝𝕃̝ͬ𝕆ℙℍ𝕆ℕ𝕓𝕚̷̸̷̢̡̢̤̯̩̞͎͙̮̹̟̞̪̗̠̯͓̤̠͕̰͚͔͍̝̖̽́͒̿͒̉ͤ̊̅ͨͥ̏͐ͥͪ͛ͨ̄̀̅ͮ͞͠͡𝕙̷̸̷̸̶̧̡̡̢̢̡̛̛̱͍̣̤̜̲̱̙̱͉̣̮̰̟͚͔̺̮̩̣̳̫̺̞̰̘̺̥͚̤ͭ̆̈́̀̀̇̿ͪ̐̓͊̎̏ͧ̓͆̈̑̎̏̈̓ͨ͋̂̄͋͊ͩ̓̄̅͒̊̅ͮ̿ͦ̿̂̿́͑̕͟͟͢͠͞͝͞ͅͅ
 
@@ -273,9 +273,9 @@ Bucking the {{original}} title by destroying everything practically more-or-less
 
 Last night, while amidst [this project (private link!)](https://korin.pink/wiki) I discovered https://whatco.de to be on an incorrect version and to make a long story short caused a kerfuffle of mass proportions that ruined the instance effectively. I need to come back to this but essentially the steps up to this point made it much easier, a somewhat abstract goal behind wanting to spin up GitLab so there is some effectiveness after all is said and done. I was able to quickly load in a Ghost CMS container on the latest version (the reason I tried modifying ghost folder permissions to begin with) and port over the loaded storage drive.
 
-I'm essentially trying to open this access like Netlify has but packaged with GitLab. This creates an end-to-end DevOps experience [as they describe«d»](https://web.archive.org/web/20200901011316/https://about.gitlab.com/topics/concurrent-devops/)[.](#^6)
+I'm essentially trying to open this access like Netlify has but packaged with GitLab. This creates an end-to-end DevOps experience [as they describe«d»](https://web.archive.org/web/20200901011316/https://about.gitlab.com/topics/concurrent-devops/).[^6]
 
-##### ^6: It's crazy to me how many articles I originally sourced here in 2020 that in 2026 required an archive.org dive.
+[^6]: It's crazy to me how many articles I originally sourced here in 2020 that in 2026 required an archive.org dive.
 
 ## COLOPHON
 
