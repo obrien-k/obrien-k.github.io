@@ -15,7 +15,7 @@ tags: [lucid-dreaming, narrative]
 
 II: [Waking Software Engineering](/waking-software-engineering/) III: [A Million and One Ways NOT to Share You're Trans](/im-trans/)
 
-# Dreaming in Code
+## Introduction
 
 I began the article "[How I Started a Code Study Group (and Why You Should Too)](https://medium.com/bigcommerce-developer-blog/how-i-started-a-code-study-group-and-why-you-should-too-fbed8d4fbb54)" by explaining how excited I was to start working at BigCommerce. It was only fair to summarize it in a word, or I would have needed a separate piece to express how pleased I was. Since a young age, I'd wanted to join a start-up but had little idea what that would entail. I imagined the early days of Apple or Google, where thoughts ran rampant. There are many likely culprits for why I believed this, the most influential of which was Scott Rosenberg's ["](https://books.google.com/books/about/Dreaming_in_Code.html?id=dZqcuS2SfDgC)*[Dreaming in Code:  Two Dozen Programmers, Three Years, 4732 Bugs, and One Quest for Transcendent Software](https://books.google.com/books/about/Dreaming_in_Code.html?id=dZqcuS2SfDgC)*["](https://books.google.com/books/about/Dreaming_in_Code.html?id=dZqcuS2SfDgC).
 
@@ -119,7 +119,7 @@ Build an architecture that supports sharing, communication, and collaboration
 📎 Archived from the OSAF wiki — [chandlerproject.org/vision-2/](https://web.archive.org/web/20221208074307/https://www.chandlerproject.org/vision-2/), revision r29 (10 Sep 2010), CC-BY 3.0. Captured 27 Jun 2026: the live domain now resolves to betting-site SEO spam, with the original vision left intact only as bait beneath a casino banner — bit-rot in real time. The last clean Wayback snapshot is from 8 Dec 2022; even three years ago it hadn't turned. The link above points to that capture, not the squat.
 {:.note}
 
-### The Chandler Project
+## The Chandler Project
 
 Mitch Kapor founded Lotus Software in 1982, known for Lotus 1-2-3, an early example of the ["killer app"](http://www.catb.org/jargon/html/K/killer-app.html) for a platform. Focused on three activities for users of the program, Lotus 1-2-3 stood the opposite of an academic approach taken by the equally amicable VisiCalc. This spreadsheet application incorporated many rare features at the time and has since become a necessity like macros. Another milestone was that you could quickly and easily graph data when Operating Systems hadn't popularized a GUI yet. By driving VisiCalc out of existence and IBM PC sales skyward, Kapor and the original developer of Lotus 1-2-3, [Jonathan Sachs](https://www.itworld.com/article/2826737/programmers-who-defined-the-technology-industry--where-are-they-now-.html?page=3), created [the first killer app](http://www.dssresources.com/history/sshistory.html).
 
@@ -131,7 +131,7 @@ Steve Jobs took this to an extreme, considering his role on the planet, to "[put
 
 > "The Cathedral and the Bazaar" dissected Torvalds's style of managing the Linux project over (then) half a decade's development from personal hobby to global phenomenon and derived a set of principles from it. "Every good work of software starts by scratching a developer's personal itch. Programmers are motivated and led toward their best work by a desire to accomplish something that pleases them or fulfills a personal need. "Good programmers know what to write. Great ones know what to rewrite (and reuse)." No programmer will want to build something from scratch if he can grab something that is already written and adapt it to new ends."[5]
 
-#### Rough Translations
+### Rough Translations
 
 > Software is Hard[6]
 
@@ -264,7 +264,7 @@ So while we sit on our castles upon high, we should remember some of our more ag
 > Software design, Kapor argued, was not simply a matter of hanging attractive graphics atop the programmers' code. It was the fundamental creative act of imagining the user's needs and devising structures in software to fulfill those needs. As the architect draws up blueprints for the construction team, so the software designer should create the floor plans and  
 > elevation views from which software engineers would work. Reaching back to ancient Rome, Kapor proposed applying to software the architecture theorist Vitruvius's principles of good design: *firmness*—sound structure, no bugs; *commodity*—"A program should be suitable for the purposes for which it was intended"; *delight*—"The experience of using the program should be a pleasurable one."[11]
 
-### Conclusion
+## Conclusion
 
 I hope this can serve as a signal in the same philosophical capacity Chandler aimed to reach for, or at least as much as it did for me. Chandler embraced Open Source and shared their code but lacked the documentation for anyone to contribute. I question the whole approach Chandler made in its strides to "the soul of Agenda", this concept I have no basis on but feel some responsibility for. While they understood the base of a level to some degree of what they were trying to discover, I'm unsure if it was proper to that desired core. Agenda handles time.
 
