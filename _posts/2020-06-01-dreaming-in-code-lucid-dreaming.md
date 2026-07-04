@@ -54,13 +54,13 @@ For those familiar with the ProBoards world, [Wrighty might be a familiar name](
 
 The Internet had [varying misgivings with browsers](https://www.cio.com/article/2429915/browser-wars--firefox-may-already-be-dead.html), but sending code to production targeting a specific device (or Operating System) made it ineffable as a trade-off. This wasn't as obvious to me then, but as quoted in "Dreaming in Code":
 
-> "All programmers are optimists," Frederick Brooks wrote in 1975. "Perhaps the hundreds of nitty frustrations drive away all but those who habitually focus on the end goal. Perhaps it is merely that computers are young, programmers are younger, and the young are always optimists." But programmers' innate optimism is often obscured by their forthrightness about difficulties and problems. Reporters know that when you can't get a straight answer from a salesperson or a marketer about a product, an engineer will (when not locked away or ordered to be silent) speak the hard truth. In my very first conversation with Chandler's original software architect, John Anderson, at a time when I understood the project to be in its infancy, he sat down across from me and, before I could ask a question, declared, "Here's what our three biggest failures are." So if programmers are optimists by nature, they also have a keen eye for the downside. A hyperactive imagination for disaster scenarios is a professional asset; they have to think through everything that can go wrong in order to practice their craft. [1]
+> "All programmers are optimists," Frederick Brooks wrote in 1975. "Perhaps the hundreds of nitty frustrations drive away all but those who habitually focus on the end goal. Perhaps it is merely that computers are young, programmers are younger, and the young are always optimists." But programmers' innate optimism is often obscured by their forthrightness about difficulties and problems. Reporters know that when you can't get a straight answer from a salesperson or a marketer about a product, an engineer will (when not locked away or ordered to be silent) speak the hard truth. In my very first conversation with Chandler's original software architect, John Anderson, at a time when I understood the project to be in its infancy, he sat down across from me and, before I could ask a question, declared, "Here's what our three biggest failures are." So if programmers are optimists by nature, they also have a keen eye for the downside. A hyperactive imagination for disaster scenarios is a professional asset; they have to think through everything that can go wrong in order to practice their craft.[^1]
 
 Beginning work in early 2003, the [OSAF](http://www.osafoundation.org/) programmers this volume centered around wouldn't be prepared to utilize the front-end web when [iPhone shattered the computing industry](https://time.com/4832599/iphone-anniversary-industry-change/) four years later.
 
 > It might be a stretch for a Web-oriented platform like Mozilla, which was designed to display data in static screenful delivered from a server. A Mozilla-based Chandler would need to base such a feature on Javascript, a programming language meant specifically for embedding program code inside Web pages. (HTML, the basic language for publishing Web pages, isn't really a programming language at all; it just tells a browser what to show on screen.)
 
-> "You never see this in a Web application because the client can only make a few round trips to the server in a second," Kapor says. "I want a sense of confidence that we'll have a first-class way to do this. To me this is at the heart of the whole PC-versus-Web thing. You can have only so many round trips to the server per second or your performance gets clobbered."[2]
+> "You never see this in a Web application because the client can only make a few round trips to the server in a second," Kapor says. "I want a sense of confidence that we'll have a first-class way to do this. To me this is at the heart of the whole PC-versus-Web thing. You can have only so many round trips to the server per second or your performance gets clobbered."[^2]
 
 It only fits the first chapter titled "Doomed."
 
@@ -88,7 +88,7 @@ The Chandler project's language of choice was Python, something as flexible as m
 
 *A local habitation and a name.*
 
-> The words belong to Theseus, the Duke of Athens, who lumps together "the lunatic, the lover, and the poet" as victims of their own imagination's flights. A devotee of "cool reason," he's contemptuous of the labor he describes—the "tricks" of "seething brains."[3]
+> The words belong to Theseus, the Duke of Athens, who lumps together "the lunatic, the lover, and the poet" as victims of their own imagination's flights. A devotee of "cool reason," he's contemptuous of the labor he describes—the "tricks" of "seething brains."[^3]
 
 By the sky, I mean [Linux servers](/assets/img/blog/posts/dreaming-in-code-lucid-dreaming/linux-servers-mostly.webp), which like many of these topics, can be challenging to compact enough into a digestible form. There's an understandable indifference toward Linux. It's understood that you'll likely require troubleshooting during installation, which creates a barrier to entry for any "normal" user. For Linux, it's a near expectation your graphic card drivers might not work (meaning you won't have a display to work with). With that alone, the majority of users will be confused.
 
@@ -125,15 +125,15 @@ Mitch Kapor founded Lotus Software in 1982, known for Lotus 1-2-3, an early exam
 
 After leaving Lotus in 1986, Kapor founded the Electronic Frontier Foundation ([EFF.org](https://www.eff.org/)) and later, in 2003, helped found the [Mozilla Foundation](https://foundation.mozilla.org/en/). An investor in the computing industry and related causes, he began feeling that itch all engineers at heart need to satisfy.
 
-> His motivation to create Chandler—an ambitious rethinking of PIM software to enable easy sharing of data and to run on the three most popular kinds of personal computers—was, undoubtedly, to use Raymond's phrase, "scratching a personal itch." He wanted to build Chandler because he craved something like it, and similar existing products simply didn't match the picture in his head. But he didn't begin, as a lone open source hacker might have, by posting a first chunk of code; he began, as an entrepreneur would, by subleasing some office space.[4]
+> His motivation to create Chandler—an ambitious rethinking of PIM software to enable easy sharing of data and to run on the three most popular kinds of personal computers—was, undoubtedly, to use Raymond's phrase, "scratching a personal itch." He wanted to build Chandler because he craved something like it, and similar existing products simply didn't match the picture in his head. But he didn't begin, as a lone open source hacker might have, by posting a first chunk of code; he began, as an entrepreneur would, by subleasing some office space.[^4]
 
 Steve Jobs took this to an extreme, considering his role on the planet, to "[put a dent in the universe](https://www.macworld.com/article/214642/steve-jobs-making-a-dent-in-the-universe.html)," Apple's hallmarks resemble the Chandler tenants of design. These can be derived from the first-mentioned law's inspiration:
 
-> "The Cathedral and the Bazaar" dissected Torvalds's style of managing the Linux project over (then) half a decade's development from personal hobby to global phenomenon and derived a set of principles from it. "Every good work of software starts by scratching a developer's personal itch. Programmers are motivated and led toward their best work by a desire to accomplish something that pleases them or fulfills a personal need. "Good programmers know what to write. Great ones know what to rewrite (and reuse)." No programmer will want to build something from scratch if he can grab something that is already written and adapt it to new ends."[5]
+> "The Cathedral and the Bazaar" dissected Torvalds's style of managing the Linux project over (then) half a decade's development from personal hobby to global phenomenon and derived a set of principles from it. "Every good work of software starts by scratching a developer's personal itch. Programmers are motivated and led toward their best work by a desire to accomplish something that pleases them or fulfills a personal need. "Good programmers know what to write. Great ones know what to rewrite (and reuse)." No programmer will want to build something from scratch if he can grab something that is already written and adapt it to new ends."[^5]
 
 ### Rough Translations
 
-> Software is Hard[6]
+> Software is Hard[^6]
 
 Often in computing, we discuss "executables," "applications," and "programs" with variance, and clearly defining these abstract concepts in such minutiae may be the same defiance "programmers" face when speaking with machines. The "execution" and in-so-far-as defined by Merriam-Webster: ["1: to carry out fully: put completely into effect"](https://www.merriam-webster.com/dictionary/execute) was a recent topic of interest with a colleague. We were attempting to define "execution" or the program's performance. I may be paraphrasing on his behalf, but we decided it's relative to the feeling of accomplishment and pride that occurs when executed to perfection.
 
@@ -145,11 +145,11 @@ Chandler was a philosophical project with lofty goals and lacked direction. When
 
 After each re-read of "*Dreaming in Code,*" I'm left with a sense of wanting. Many of Chandler's goals have been fulfilled [in](https://github.com/) [other](https://gitlab.com/) [ways](https://bitbucket.com/), but the core of it remains in the ether and never realized to perfection.
 
-> In planning my project I had failed to take into account Hofstadter's Law, the recursive principle to which Douglas Hofstadter attached his name: *It always takes longer than you expect, even when you take into account Hofstadter's Law*. This strange loop seemed to define the essence of software time. Now I was stuck in it myself. After three years, Chandler was beginning to become a somewhat usable, though incomplete, calendar program. But I could not say with any confidence how much longer it would take for the project to deliver something like its original promise. OSAF's managers had a plan that involved four more "dot releases" over roughly two more years to arrive at a 1.0 version of the program—but the shape and scope of that program remained open to further revision and course correction.[7]
+> In planning my project I had failed to take into account Hofstadter's Law, the recursive principle to which Douglas Hofstadter attached his name: *It always takes longer than you expect, even when you take into account Hofstadter's Law*. This strange loop seemed to define the essence of software time. Now I was stuck in it myself. After three years, Chandler was beginning to become a somewhat usable, though incomplete, calendar program. But I could not say with any confidence how much longer it would take for the project to deliver something like its original promise. OSAF's managers had a plan that involved four more "dot releases" over roughly two more years to arrive at a 1.0 version of the program—but the shape and scope of that program remained open to further revision and course correction.[^7]
 
 The Chandler project has since become a scar of the Internet, made history in literature as a relic of "where dragons be," and is soon destined to become utterly inaccessible in an SSL-strict future. The software is so dated that while it brings a smile of nostalgia on my face when I open it, it's sadly due to the [long](http://www.chandlerproject.org/files/Journal/AppsMeeting20050412/)-[lived](https://books.google.com/books?id=TzsqA_hrjTcC&pg=PA13&lpg=PA13&dq=chandler+wxwidget+bug&source=bl&ots=vroHZQw46l&sig=ACfU3U1FnNW_b-JGVskGBENWpZTGE0nfPQ&hl=en&sa=X&ved=2ahUKEwjll7C9qa3pAhXCnuAKHcRLBFgQ6AEwBHoECAoQAQ#v=onepage&q=chandler%20wxwidget%20bug&f=false) wxWidget flicker greeting me. Bug 44's discussed label that ended with "scary" was more accurately described as "black hole." From Eric Raymond's "The Cathedral and the Bazaar":
 
-> It's fairly clear that one cannot code from the ground up in bazaar style. One can test, debug and improve in bazaar style, but it would be very hard to originate a project in bazaar mode. . . . Your nascent developer community needs to have something runnable and testable to play with. When you start community-building, what you need to be able to present is a plausible promise. Your program doesn't have to work particularly well. It can be crude, buggy, incomplete, and poorly documented. What it must not fail to do is convince potential co-developers that it can be evolved into something really neat in the foreseeable future.[8]
+> It's fairly clear that one cannot code from the ground up in bazaar style. One can test, debug and improve in bazaar style, but it would be very hard to originate a project in bazaar mode. . . . Your nascent developer community needs to have something runnable and testable to play with. When you start community-building, what you need to be able to present is a plausible promise. Your program doesn't have to work particularly well. It can be crude, buggy, incomplete, and poorly documented. What it must not fail to do is convince potential co-developers that it can be evolved into something really neat in the foreseeable future.[^8]
 
 ### Linux
 
@@ -159,7 +159,7 @@ Closed-source software was uncommon until the mid-1970s to the 1980s, when [IBM 
 
 On most systems, it is one of the first programs loaded on start-up after the bootloader:
 
-> Computer system inventors escaped this dilemma by using a small program called a "bootstrap loader" that gave the machine just enough capabilities to load the big operating system into memory and begin normal functioning. In early generations of computing, human operators would enter the bootstrap loader manually via console switches or from punch cards; modern computers store it on fixed memory chips.[8:1]
+> Computer system inventors escaped this dilemma by using a small program called a "bootstrap loader" that gave the machine just enough capabilities to load the big operating system into memory and begin normal functioning. In early generations of computing, human operators would enter the bootstrap loader manually via console switches or from punch cards; modern computers store it on fixed memory chips.[^8]
 
 The kernel handles the rest of the start-up and input/output requests from software, translating them into data-processing instructions for the central processing unit. It manages memory and peripherals like keyboards, monitors, printers, and speakers. You should check out [systemd and related discussions](https://blog.darknedgy.net/technology/2020/05/02/0/), for those interested in more technical details.
 
@@ -181,7 +181,7 @@ Abstract:
 
 While self-contained, Rosenberg offers additional insight within the context of the Chandler project:
 
-> Maybe Eric Raymond's "The Cathedral and the Bazaar" had been wrong, and Linus's Law ("'Given enough eyeballs, all bugs are shallow") didn't transcend Brooks's Law after all. Or perhaps OSAF, for all its transparency, had so far failed to meet Raymond's requirement for success with a bazaar-style open source project—that it must recognize, embrace, and reward good ideas from outsiders. Richard Stallman, the godfather of free software, liked to say, "When people ask me when something will be finished, I respond, 'It will be ready sooner if you help.'" OSAF welcomed volunteers and external contributions, but Chandler's grand design ambitions and sluggish pace of delivery had made it hard for outsiders to pitch in.[9]
+> Maybe Eric Raymond's "The Cathedral and the Bazaar" had been wrong, and Linus's Law ("'Given enough eyeballs, all bugs are shallow") didn't transcend Brooks's Law after all. Or perhaps OSAF, for all its transparency, had so far failed to meet Raymond's requirement for success with a bazaar-style open source project—that it must recognize, embrace, and reward good ideas from outsiders. Richard Stallman, the godfather of free software, liked to say, "When people ask me when something will be finished, I respond, 'It will be ready sooner if you help.'" OSAF welcomed volunteers and external contributions, but Chandler's grand design ambitions and sluggish pace of delivery had made it hard for outsiders to pitch in.[^9]
 
 #### Distributions
 
@@ -223,7 +223,7 @@ Time is hard.
 Being a person of process, I find that by enjoying the process in itself, I'll lose whether it's something to lose myself in, and it's from my network of rabbit holes in code that I can [echo back an error in the pipeline](https://www.mac4n6.com/blog/2018/3/30/omg-seriously-apfs-encrypted-plaintext-password-found-in-another-more-persistent-macos-log-file). For Chandler, Kapor wanted the "soul of [Agenda](https://en.wikipedia.org/wiki/Lotus_Agenda)," something that can only be summarized by Kapor himself:
 
 > But he never really moved on from Agenda. He remained, he'd say, "so emotionally attached to this product, it's like my child." As he began winding down his career as a venture capitalist, he contracted with some programmers to build an up-to-date version of Agenda using Java. But the result was unsatisfying. "It felt narrow, old-fashioned," Kapor says. "It was kind of like building a model-T Ford. We know a lot more about cars now!" It turned out that what he cherished was not the "feature set" of Agenda —- the list of specific things it could do —- but the program's spirit of dynamic flexibility, of "put it in first, make decisions later." Whatever shape his new software would take, Kapor decided, as he pondered the inadequacies of  
-> Microsoft Exchange and began to dream of inventing something to put in its place, it would have to conjure the soul of Agenda.[10]
+> Microsoft Exchange and began to dream of inventing something to put in its place, it would have to conjure the soul of Agenda.[^10]
 
 So while we sit on our castles upon high, we should remember some of our more agreeable rules in design.
 
@@ -262,7 +262,7 @@ So while we sit on our castles upon high, we should remember some of our more ag
 *designer as a champion of the user experience.*
 
 > Software design, Kapor argued, was not simply a matter of hanging attractive graphics atop the programmers' code. It was the fundamental creative act of imagining the user's needs and devising structures in software to fulfill those needs. As the architect draws up blueprints for the construction team, so the software designer should create the floor plans and  
-> elevation views from which software engineers would work. Reaching back to ancient Rome, Kapor proposed applying to software the architecture theorist Vitruvius's principles of good design: *firmness*—sound structure, no bugs; *commodity*—"A program should be suitable for the purposes for which it was intended"; *delight*—"The experience of using the program should be a pleasurable one."[11]
+> elevation views from which software engineers would work. Reaching back to ancient Rome, Kapor proposed applying to software the architecture theorist Vitruvius's principles of good design: *firmness*—sound structure, no bugs; *commodity*—"A program should be suitable for the purposes for which it was intended"; *delight*—"The experience of using the program should be a pleasurable one."[^11]
 
 ## Conclusion
 
@@ -282,33 +282,22 @@ For the astute, many of these links lead to insecure pages, an unfortunate event
 > "And in this meeting," Hertzfeld says, "we kill the snake—we don't just make plans to kill the snake."
 > "Yes," Toy answers.
 > "The dragon has many swords in it."
-> "There's also some bodies of brave knights who walked into the flames."[12]
+> "There's also some bodies of brave knights who walked into the flames."[^12]
 
 ---
 
-"*Dreaming in Code*" pp.54
-
-"*Dreaming in Code*" pp.157
-
-"*Dreaming in Code*" pp.64
-
-"*Dreaming in Code*" pp.27-28
-
-"*Dreaming in Code*" pp.23-24
-
-Donald Knuth, [http://www.ams.org/notices/200203/fea-knuth.pdf](http://www.ams.org/notices/200203/fea-knuth.pdf)
-
-"*Dreaming in Code*" pp. 331
-
-"The Cathedral and the Bazaar" [http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
-
-"*Dreaming in Code*" pp.44
-
-"*Dreaming in Code*" pp.47
-
-"*Dreaming in Code*" pp.149
-
-"*Dreaming in Code*" pp.109
+[^1]: "*Dreaming in Code*" pp.54
+[^2]: "*Dreaming in Code*" pp.157
+[^3]: "*Dreaming in Code*" pp.64
+[^4]: "*Dreaming in Code*" pp.27-28
+[^5]: "*Dreaming in Code*" pp.23-24
+[^6]: Donald Knuth, [http://www.ams.org/notices/200203/fea-knuth.pdf](http://www.ams.org/notices/200203/fea-knuth.pdf)
+[^7]: "*Dreaming in Code*" pp. 331
+[^8]: "The Cathedral and the Bazaar" [http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/](http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/)
+[^9]: "*Dreaming in Code*" pp.44
+[^10]: "*Dreaming in Code*" pp.47
+[^11]: "*Dreaming in Code*" pp.149
+[^12]: "*Dreaming in Code*" pp.109
 
 ## COLOPHON
 [UPDATE.PBP](/the-androids-dream-a-love-letter-to-the-bomb)
