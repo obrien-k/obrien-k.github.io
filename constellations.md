@@ -23,6 +23,7 @@ hide_description: true
 ## Badges
 <div class="badge-wall" role="list" aria-label="Site badges">
   <img src="/assets/img/constellation.png" alt="KyleOBrien.me" width="88" height="31">
+  <a href="https://prismatic.pink"><img src="/assets/img/constellations/prismaticpink-button2.gif" alt="Prismatic.pink" width="88" height="31"></a>
 </div>
 
 Want to trade badges? Reach out via any link in the sidebar.
