@@ -1,0 +1,190 @@
+<!-- ===================================================================
+     Table of contents (WS-3). Free Hydejack's dynamic sidebar TOC is a PRO
+     feature, so this builds an equivalent from the article's own headings and
+     renders it UBIQUITOUSLY:
+       - default (any width, incl. mobile): an inline collapsible <details>
+         "Contents" box at the top of the article;
+       - promoted to a fixed sticky sidebar in the right-hand margin ONLY when
+         there's actually room for it (measured, not a magic breakpoint — the
+         docked Hydejack sidebar eats the left margin and shrinks the right one
+         at mid widths, so a fixed px breakpoint is unreliable).
+     Intersectionless position-based scroll-spy highlights the current section.
+     Rebuilds on push-state navigation; detaches its listeners on rebuild.
+     NOTE: `/* */` block comments ONLY — production compress_html collapses
+     script newlines, so a `//` line comment would eat the rest of the IIFE.
+     =================================================================== -->
+<script>
+(function () {
+  var ID = '_postToc';
+  var DOCK_MIN_MARGIN = 264; /* px of free right margin needed to dock */
+
+  /* Heading label minus Hydejack's injected `.permalink` anchor. */
+  function labelOf(h) {
+    var c = h.cloneNode(true);
+    var p = c.querySelector('.permalink');
+    if (p) p.remove();
+    return c.textContent.trim();
+  }
+
+  function proseEl() {
+    return document.querySelector('main.content article .content')
+        || document.querySelector('article .content')
+        || document.querySelector('main.content article')
+        || document.querySelector('article');
+  }
+
+  function collect() {
+    var prose = proseEl();
+    if (!prose) return [];
+    var out = [];
+    var all = prose.querySelectorAll('h2, h3, h4');
+    for (var i = 0; i < all.length; i++) {
+      var h = all[i];
+      var label = labelOf(h);
+      /* stop before the COLOPHON graffiti zone — it isn't article structure.
+         Fold to Latin letters only: NFKD turns the mathematical-bold COLOPHON
+         heading into ASCII, and dropping non-letters strips the zalgo combining
+         marks sprinkled between glyphs from several Unicode ranges, so the
+         buried "COLOPHON" reads contiguously. */
+      var norm = label.normalize('NFKD').replace(/[^A-Za-z]/g, '');
+      if (/COLOPHON/i.test(norm)) break;
+      if (!h.id || !label || h.classList.contains('no_toc')) continue;
+      var level = h.tagName === 'H4' ? 4 : (h.tagName === 'H3' ? 3 : 2);
+      out.push({ id: h.id, label: label, level: level });
+    }
+    return out;
+  }
+
+  var TOP_CLEARANCE = 96; /* px below the viewport top when stuck (clears navbar) */
+
+  /* Scroll-aware sticky top: start aligned with the article body (below the
+     header + Hydejack's margin description note), then rise with the page until
+     it sticks at TOP_CLEARANCE — the classic sticky-sidebar motion, and it never
+     covers the header-region margin notes. `_startDoc` is the body start in
+     document coords, cached by layout(). */
+  function applyStickyTop(toc) {
+    if (!toc.classList.contains('is-docked')) return;
+    var start = toc._startDoc || TOP_CLEARANCE;
+    toc.style.top = Math.max(TOP_CLEARANCE, Math.round(start - window.scrollY)) + 'px';
+  }
+
+  /* Dock into the right margin when there's room, else inline+collapsible. */
+  function layout(toc) {
+    var pane = document.querySelector('main.content') || proseEl();
+    if (!pane) return;
+    var right = pane.getBoundingClientRect().right;
+    var avail = window.innerWidth - right;
+    if (avail >= DOCK_MIN_MARGIN) {
+      toc.classList.add('is-docked');
+      toc.open = true;
+      toc.style.left = Math.round(right + 24) + 'px';
+      /* article body start = bottom of the post <header> (title/meta/cover +
+         description), in document coords */
+      var header = document.querySelector('main.content article header');
+      toc._startDoc = header
+        ? Math.round(header.getBoundingClientRect().bottom + window.scrollY)
+        : TOP_CLEARANCE;
+      applyStickyTop(toc);
+    } else {
+      toc.classList.remove('is-docked');
+      toc.style.left = '';
+      toc.style.top = '';
+    }
+  }
+
+  function build() {
+    var old = document.getElementById(ID);
+    if (old) {
+      if (old._tocCleanup) old._tocCleanup();
+      old.remove();
+    }
+
+    var heads = collect();
+    if (heads.length < 3) return;
+
+    var toc = document.createElement('details');
+    toc.id = ID;
+    toc.className = 'post-toc';
+
+    var summary = document.createElement('summary');
+    summary.className = 'post-toc-title';
+    summary.textContent = 'Contents';
+    toc.appendChild(summary);
+
+    var ul = document.createElement('ul');
+    heads.forEach(function (item) {
+      var li = document.createElement('li');
+      li.className = 'lvl-' + item.level;
+      var a = document.createElement('a');
+      a.href = '#' + item.id;
+      a.textContent = item.label;
+      /* no-mark opts out of the .content gradient-underline link styling */
+      a.className = 'no-mark';
+      a.setAttribute('data-toc-target', item.id);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    toc.appendChild(ul);
+
+    /* Inline mode sits at the top of the article BODY — after the post header
+       (title/meta/cover), before the first prose element. (Docked mode is
+       fixed, so its DOM position is cosmetic.) The article has no prose wrapper
+       div; headings are flat children, so anchor off the <header>. */
+    var article = document.querySelector('main.content article')
+               || document.querySelector('article');
+    var header = article && article.querySelector('header');
+    if (header && header.parentElement === article) {
+      header.insertAdjacentElement('afterend', toc);
+    } else {
+      article.insertBefore(toc, article.firstChild);
+    }
+
+    layout(toc);
+    spy(heads, toc);
+  }
+
+  function spy(heads, toc) {
+    var links = {};
+    toc.querySelectorAll('a').forEach(function (a) {
+      links[a.getAttribute('data-toc-target')] = a;
+    });
+    /* Position-based scroll-spy: current = the last heading whose top has
+       crossed a line near the top of the viewport. Handles the jump-to case
+       (a clicked heading lands at the top and is immediately current). */
+    var THRESHOLD = 140;
+    var ticking = false;
+    function update() {
+      ticking = false;
+      applyStickyTop(toc);
+      var current = heads[0].id;
+      for (var i = 0; i < heads.length; i++) {
+        var el = document.getElementById(heads[i].id);
+        if (el && el.getBoundingClientRect().top <= THRESHOLD) current = heads[i].id;
+      }
+      Object.keys(links).forEach(function (id) {
+        links[id].classList.toggle('active', id === current);
+      });
+    }
+    function onScroll() {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }
+    function onResize() {
+      layout(toc);
+      onScroll();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onResize, { passive: true });
+    update();
+    toc._tocCleanup = function () {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onResize);
+    };
+  }
+
+  if (document.readyState !== 'loading') build();
+  else document.addEventListener('DOMContentLoaded', build);
+
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', build);
+})();
+</script>
