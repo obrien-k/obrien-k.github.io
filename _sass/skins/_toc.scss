@@ -1,0 +1,91 @@
+// =============================================================================
+// Table of contents (WS-3) — custom, token-driven, ubiquitous
+// =============================================================================
+// Free Hydejack ships no dynamic sidebar TOC (PRO only), so skin-system/toc.html
+// injects `details.post-toc` and this styles it in two modes:
+//
+//   DEFAULT (every width, incl. mobile) — an inline collapsible <details>
+//     "Contents" box at the top of the article. Robust everywhere.
+//   .is-docked (added by JS when the right margin is wide enough) — a fixed
+//     sticky sidebar in that margin, forced open, positioned via inline
+//     left/top set in JS (the layout isn't reliably centered at mid widths, so
+//     JS measures the content edge instead of trusting a px breakpoint).
+//
+// Uses the aero-surface mixin + tokens, so it inherits each skin's panel
+// treatment and a11y neutralization for free.
+
+.post-toc {
+  display: block;
+  margin: 0 0 2rem;
+  padding: 0.5rem 1rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  @include aero-surface;
+
+  .post-toc-title,
+  summary.post-toc-title {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.72;
+    padding: 0.25rem 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0.4rem 0 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.1rem 0;
+
+    &.lvl-3 { padding-left: 0.9rem; font-size: 0.95em; }
+    &.lvl-4 { padding-left: 1.8rem; font-size: 0.9em; }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    background-image: none; // belt-and-suspenders vs .content link underline
+    color: inherit;
+    opacity: 0.75;
+    padding: 0.05rem 0 0.05rem 0.6rem;
+    border-left: 2px solid transparent;
+    transition: opacity 0.15s ease, border-color 0.15s ease;
+
+    &:hover { opacity: 1; }
+
+    &.active {
+      opacity: 1;
+      font-weight: 600;
+      border-left-color: rgb(var(--accent-rgb));
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Docked mode — fixed sticky sidebar in the right margin (JS sets left/top)
+// -----------------------------------------------------------------------------
+
+.post-toc.is-docked {
+  position: fixed;
+  width: 232px;
+  max-height: calc(100vh - 9rem);
+  overflow-y: auto;
+  margin: 0;
+  z-index: 5;
+  font-size: 0.82rem;
+
+  // title becomes a non-interactive label; no disclosure marker
+  summary.post-toc-title {
+    cursor: default;
+    pointer-events: none;
+    list-style: none;
+
+    &::-webkit-details-marker { display: none; }
+    &::marker { content: ''; }
+  }
+}
