@@ -22,15 +22,17 @@ featured: true
 
 [Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
 
-Agentic work is something I briefly touched on in my [AI ethics piece](https://kyleobrien.me/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/), but is tangential today, re-starting this work in 2026. The chronology of this article was _intended_ to be a "fast-follow" for "Dreaming in Code \|\| Lucid Dreaming", and is narrated as such. While I have 2026's experience to look back with, it's only now that a lot of these concepts have crystalized into my current understanding of technology. 
+Agentic work is something I briefly touched on in my [AI ethics piece](https://kyleobrien.me/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/). It is increasingly relevant in a tangential way today, re-starting this post-mortem in 2026. The _intended_ chronology was a "fast-follow" for "Dreaming in Code \|\| Lucid Dreaming", and is narrated as such. 
 
 Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failing tests typically leads to higher likelihood of greenery. Whether or not this love letter falls apart, that's for anyone to say.
 
+There are many references to Docker containers, infrastructure (infra), and abstract representations of concepts (read: `colour`). There be dragons here.
+
 ## Introduction
 
-Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become more clear organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the COLOPHON-noted easter-eggs mentioned in our previous article. Some link to a very recent post (in 2026), some link to articles from _two weeks ago_, but others from three years in the future (2023). Many of the articles have received periodic updates, including Dreaming in Code \|\| Lucid Dreaming. 
+Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become more clear organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the easter-eggs mentioned in our previous article. Some link to a very recent post (in 2026), some link to articles from _two weeks ago_, but others from three years in the future (2023). Many of the articles have received periodic updates, including Dreaming in Code \|\| Lucid Dreaming. 
 
-I welcome you to dive deeper into this epic of sorts, but don't let that distract you. I only point out the fact that I often will slip in new links, COLOPHON bits, and in today's lifecycle, a complete article six years after the fact with a publish date reflecting the originally intended date.
+I welcome you to dive deeper into this epic of sorts, but don't let that distract you. I only point out the fact that I often will slip in new links, COLOPHON bits, and in today's lifecycle, a complete article six years after the fact with a publish date reflecting the originally intended publish date.
 
 [In as such was proven](https://kyleobrien.me/dreaming-in-code-lucid-dreaming/#rough-translations), software time has claimed yet another milestone. For me, this would be an autonomous form of the existing back-end for [WhatCo.DE](https://web.archive.org/web/20201101031004/https://whatco.de/), and save for upstream issues, it was near complete. With enough rigor it's possible to work around this, but would also be reverted if GitLab does at some point resolve it on their own (several years later I checked and no movement, and not worth digging up a third time). The existing bug where subdomains can't instantiate docker containers isn't a priority for the GitLab team.
 
@@ -197,8 +199,6 @@ At BigCommerce, the BC4WP plugin was sheparded by he, and several other colleagu
 I never worked with WPEngine directly, but from the one in-office interview I did with them, they seemed like a solid company. While applying, then waiting to hear back about a position at `Commerce`[^4], and _didn't_ get a position at WPEngine. I had studied a book of php theming with WordPress, and they turned me down? No shade to anyone in the room but it did put a chip on my soldier to double down on learning the [CLI](/dreaming-in-code-lucid-dreaming/#the-command-line)
 
 Back to plugin hell: competency in design can be summarized by me as: knowing the limits of your architecture/surface of work. Seeing the BC4WP plugin was a "trophy-moment" for BigCommerce to me at the time. Having a competitive approach to opening the architecture up meant a better surface of level of connecting BigCommerce stores in lieu of something like WooCommerce. The installation was quirky (and in the all-hailed label of beta), but was smoothed out as feedback was received: the product sync proccess could hang for large stores, and v1 wasn't too far around the corner. I was a T1 at the time, but my recollection of earlier times when I used WordPress proliferated in a single moment, Here, I knew a fair amount of the architecture, theming, and the PHP I had so dreaded years before. PHP was just another script to parse.
-
-
 
 ### The BigCommerce in the Room
 
