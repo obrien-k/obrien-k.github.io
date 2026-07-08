@@ -1,5 +1,15 @@
 <!-- A11y mode: restore class before first paint to prevent flash of saturated content -->
-<script>if(localStorage.getItem('a11y')==='on'){document.body.classList.add('a11y-mode');}</script>
+<script>
+(function(){
+  if(localStorage.getItem('a11y')!=='on')return;
+  /* This runs in <head>, where document.body is still null — watch <html> for the
+     <body> node and tag it the instant it's created, still before first paint. */
+  if(document.body){document.body.classList.add('a11y-mode');return;}
+  new MutationObserver(function(_,o){
+    if(document.body){document.body.classList.add('a11y-mode');o.disconnect();}
+  }).observe(document.documentElement,{childList:true});
+})();
+</script>
 
 <!-- Skin registry — early restore (WS-E)
      Creates <link id="hj-ext-skin"> dynamically ONLY when a non-default skin is

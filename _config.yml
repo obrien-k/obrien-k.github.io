@@ -311,6 +311,8 @@ exclude:
   - CLAUDE.md
   - AGENTS.md
   - README.md
+  # DOM-scrape debug capture — keep in repo, never publish.
+  - page-structure.txt
 include:
   - _routes.json
   - .well-known

@@ -54,6 +54,15 @@ main.content {
   background-repeat: repeat;
 }
 
+// iOS Safari ignores background-attachment: fixed and sizes `cover` layers
+// against the whole document instead of the viewport (giant zoomed smear).
+// -webkit-touch-callout only exists on iOS, so this targets exactly that engine.
+@supports (-webkit-touch-callout: none) {
+  main.content {
+    background-attachment: scroll;
+  }
+}
+
 // =============================================================================
 // Injected nav controls — THEME (skin cycle) + A11Y toggles
 // =============================================================================

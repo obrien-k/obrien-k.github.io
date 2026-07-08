@@ -1,6 +1,7 @@
 <!-- ===================================================================
      Interactivity: SFX · Status · Skin system · THEMES widget ·
-                    A11y toggle · SFX toggle · Konami Easter egg
+                    SFX toggle · Konami Easter egg
+     (The A11y "Aa" navbar toggle lives in skin-system/a11y.html — WS-B.)
      =================================================================== -->
 <script>
 (function() {
@@ -293,68 +294,6 @@
   }
 
   /* ----------------------------------------------------------------- */
-  /* A11y toggle — navbar button (WS-B)                               */
-  /* ----------------------------------------------------------------- */
-  var a11yBtn;
-
-  function isA11y() {
-    return document.body.classList.contains('a11y-mode');
-  }
-
-  function setA11y(on) {
-    document.body.classList.toggle('a11y-mode', on);
-    localStorage.setItem('a11y', on ? 'on' : 'off');
-    updateA11yBtn();
-  }
-
-  function updateA11yBtn() {
-    if (!a11yBtn) return;
-    var on = isA11y();
-    a11yBtn.setAttribute('aria-pressed', String(on));
-    a11yBtn.title = on ? 'Disable a11y mode' : 'Enable a11y mode';
-    a11yBtn.style.opacity  = on ? '1' : '0.55';
-    a11yBtn.style.fontWeight = on ? '700' : '500';
-  }
-
-  function injectA11yToggle() {
-    /* Hydejack keeps the navbar across SPA navigations. Re-acquire the reference
-       and refresh visual state rather than bailing — same fix as injectSkinBtn. */
-    var existing = document.getElementById('_a11y-toggle');
-    if (existing) { a11yBtn = existing; updateA11yBtn(); return; }
-    var bar = document.querySelector('.nav-btn-bar');
-    if (!bar) return;
-
-    a11yBtn = document.createElement('button');
-    a11yBtn.id = '_a11y-toggle';
-    a11yBtn.className = 'nav-btn no-hover';
-    a11yBtn.setAttribute('aria-label', 'Toggle a11y mode');
-    a11yBtn.setAttribute('type', 'button');
-    a11yBtn.style.cssText = 'font-size:0.8rem;letter-spacing:-0.03em;font-family:inherit;line-height:1';
-    /* Full glyph/cap/dots structure matching a11y.html and the THEME button layout */
-    a11yBtn.innerHTML = '<span class="ws-glyph">Aa</span><span class="ws-cap">A11Y</span><span class="ws-dots" aria-hidden="true"></span>';
-    a11yBtn.addEventListener('click', function() { setA11y(!isA11y()); });
-    updateA11yBtn();
-
-    /* Hydejack injects #_dark-mode via <script type="module"> (deferred),
-       so it may not exist yet at DOMContentLoaded. Place Aa immediately after
-       it once it appears; fall back to appending and watching. */
-    var dm = document.getElementById('_dark-mode');
-    if (dm) {
-      dm.parentNode.insertBefore(a11yBtn, dm.nextSibling);
-    } else {
-      bar.appendChild(a11yBtn);
-      var mo = new MutationObserver(function(mutations, obs) {
-        var dmNew = document.getElementById('_dark-mode');
-        if (dmNew) {
-          dmNew.parentNode.insertBefore(a11yBtn, dmNew.nextSibling);
-          obs.disconnect();
-        }
-      });
-      mo.observe(bar, { childList: true });
-    }
-  }
-
-  /* ----------------------------------------------------------------- */
   /* Event delegation — clicks & hovers for sound                      */
   /* ----------------------------------------------------------------- */
   document.addEventListener('click', function(e) {
@@ -443,28 +382,24 @@
   /* ----------------------------------------------------------------- */
   /* Init                                                              */
   /* ----------------------------------------------------------------- */
+  /* The A11y "Aa" navbar toggle lives in skin-system/a11y.html (WS-B). */
   function initSidebar() {
     {% if site.data.status %}injectStatus();{% endif %}
     injectThemeWidget();
     injectSoundToggle();
   }
 
-  function initAll() {
-    initSidebar();
-    injectA11yToggle();
-  }
-
   if (pushState) {
     pushState.addEventListener('hy-push-state-after', function() {
-      a11yBtn = null; toggleBtn = null;
-      initAll();
+      toggleBtn = null;
+      initSidebar();
     });
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAll);
+    document.addEventListener('DOMContentLoaded', initSidebar);
   } else {
-    initAll();
+    initSidebar();
   }
 })();
 </script>

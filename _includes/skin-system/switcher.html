@@ -13,10 +13,10 @@
      changes the class independently. Anorex is tracked via localStorage('skin').
 
      Ejectable: remove this block + the early-restore script in my-head.html.
+
+     window.__skins is set by skin-system/registry.html, included before this
+     partial (see my-body.html).
      =================================================================== -->
-<script>
-window.__skins = {{ site.data.skins | jsonify }};
-</script>
 <script>
 (function() {
   'use strict';
@@ -102,6 +102,10 @@ window.__skins = {{ site.data.skins | jsonify }};
       document.body.classList.remove('dark-mode');
       document.body.classList.add('light-mode');
     }
+    /* Keep the <html> canvas in sync with the head early-restore (restore.html
+       paints it dark for dark:true skins to prevent a white flash) — clear it
+       when leaving a dark skin so the stale inline color can't linger. */
+    document.documentElement.style.backgroundColor = skin.dark === true ? '#2a2f2f' : '';
     localStorage.setItem(SKIN_KEY, id);   /* persist for ALL skins now */
     updateSkinBtn();
   }
@@ -204,8 +208,11 @@ window.__skins = {{ site.data.skins | jsonify }};
   /* DOMContentLoaded. Also re-apply the brightness intent for skins that have NO */
   /* light variant: VaporWave (dark:true) must force dark-mode on every load, or a */
   /* reload / direct nav paints it light and the magenta washes out. (my-head.html */
-  /* can't do this — it runs in <head> before <body> exists.) FA/AX keep whatever */
-  /* brightness Hydejack restored. */
+  /* can't do this — it runs in <head> before <body> exists.) dark:false skins get */
+  /* NO forcing on restore: adding light-mode here would defeat the OS-preference */
+  /* fa-dark path (_frutiger-aqua.scss matches body:not(.light-mode) under */
+  /* prefers-color-scheme: dark) and reset FA-dark to light on every reload. The */
+  /* explicit force-light stays a click-time act in applySkin only. */
   if (document.body) {
     var _restoreId = currentSkinId();
     setSkinClass(_restoreId);
@@ -213,12 +220,6 @@ window.__skins = {{ site.data.skins | jsonify }};
     if (_restoreSkin && _restoreSkin.dark === true) {
       document.body.classList.add('dark-mode');
       document.body.classList.remove('light-mode');
-    } else if (_restoreSkin && _restoreSkin.dark === false) {
-      /* Restore light-mode so Hydejack's prefers-color-scheme auto-dark doesn't
-         override FA on reload. Hydejack checks !body.contains('light-mode') before
-         auto-applying dark-mode from the system preference (_sunset logic). */
-      document.body.classList.remove('dark-mode');
-      document.body.classList.add('light-mode');
     }
   }
 
