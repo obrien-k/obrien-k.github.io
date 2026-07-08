@@ -55,14 +55,30 @@
       + '<span class="ws-cap">A11Y</span>'
       + '<span class="ws-dots" aria-hidden="true"></span>';
 
-    /* Append last — order: hamburger → brightness → Aa */
-    bar.appendChild(a11yBtn);
-
     a11yBtn.addEventListener('click', function() {
       setA11y(!isA11y());
     });
 
     updateA11yBtn();
+
+    /* Hydejack injects #_dark-mode via <script type="module"> (deferred), so it
+       may not exist yet at DOMContentLoaded. Place Aa immediately after it once
+       it appears — order: hamburger → brightness → Aa; fall back to appending
+       and watching the bar until then. */
+    var dm = document.getElementById('_dark-mode');
+    if (dm) {
+      dm.parentNode.insertBefore(a11yBtn, dm.nextSibling);
+    } else {
+      bar.appendChild(a11yBtn);
+      var mo = new MutationObserver(function(mutations, obs) {
+        var dmNew = document.getElementById('_dark-mode');
+        if (dmNew) {
+          dmNew.parentNode.insertBefore(a11yBtn, dmNew.nextSibling);
+          obs.disconnect();
+        }
+      });
+      mo.observe(bar, { childList: true });
+    }
   }
 
   /* Sync after SPA navigation — Hydejack preserves the navbar DOM so the button

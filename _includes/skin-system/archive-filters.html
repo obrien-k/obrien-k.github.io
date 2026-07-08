@@ -1,32 +1,3 @@
-<!-- ===================================================================
-     Archive page: subdued year date-picker filter (SPA-safe)
-     =================================================================== -->
-<script>
-(function() {
-  'use strict';
-  function initArchiveFilter() {
-    var sel = document.getElementById('archive-year');
-    if (!sel || sel.dataset.bound) return;
-    sel.dataset.bound = '1';
-    sel.addEventListener('change', function() {
-      var v = this.value;
-      var entries = document.querySelectorAll('.archive-entry');
-      for (var i = 0; i < entries.length; i++) {
-        var show = (v === 'all' || entries[i].getAttribute('data-year') === v);
-        entries[i].classList.toggle('is-hidden', !show);
-      }
-    });
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initArchiveFilter);
-  } else {
-    initArchiveFilter();
-  }
-  var ps = document.getElementById('_pushState');
-  if (ps) ps.addEventListener('hy-push-state-after', initArchiveFilter);
-})();
-</script>
-
 {% comment %}
 <!--
 Example code for using Matamo as alternative analytics solution.

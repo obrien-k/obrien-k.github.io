@@ -219,3 +219,14 @@ body.dark-mode:not(.skin-vaporwave):not(.skin-anorex) {
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55);
 }
+
+// iOS Safari ignores background-attachment: fixed and sizes `cover` against the
+// document, so the aurora renders as a giant zoomed slice. Fall back to a
+// per-chip cover (loses the shared-viewport parallax, keeps the look legible).
+@supports (-webkit-touch-callout: none) {
+  .resume-buttons .btn,
+  .resume-buttons button,
+  .constellation-link {
+    background-attachment: scroll;
+  }
+}
