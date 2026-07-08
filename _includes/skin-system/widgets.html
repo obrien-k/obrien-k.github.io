@@ -8,11 +8,12 @@
   'use strict';
 
   /* ----------------------------------------------------------------- */
-  /* Sound system — Web Audio API, no files needed                     */
+  /* Sound system — Web Audio API (synth blips) + sampled mp3 clips     */
   /* ----------------------------------------------------------------- */
   var SFX = {
     ctx: null,
     enabled: localStorage.getItem('sfx') !== 'off',
+    clips: {},   /* url -> decoded AudioBuffer cache (see playClip) */
 
     init: function() {
       if (!this.ctx) {
@@ -53,13 +54,36 @@
       });
     },
 
-    starPower: function() {
+    /* Play a sampled clip (mp3) through the same AudioContext. Fetches +
+       decodes once, then caches the AudioBuffer. `force` plays even when SFX is
+       muted (the enable-confirmation chime needs this); otherwise it respects
+       the mute state like play(). Falls back to a synth blip if the file 404s. */
+    playClip: function(url, vol, force) {
+      if (!force && !this.enabled) return;
+      if (!this.ctx) this.init();
       var self = this;
-      [523, 659, 784, 1047, 1319, 1568].forEach(function(f, i) {
-        setTimeout(function() { self.play(f, 0.1, 'square', 0.07); }, i * 70);
-      });
+      function run(buf) {
+        var src  = self.ctx.createBufferSource();
+        var gain = self.ctx.createGain();
+        src.buffer = buf;
+        gain.gain.value = vol || 0.5;
+        src.connect(gain);
+        gain.connect(self.ctx.destination);
+        src.start();
+      }
+      if (this.clips[url]) { run(this.clips[url]); return; }
+      fetch(url)
+        .then(function(r) { return r.arrayBuffer(); })
+        .then(function(b) { return self.ctx.decodeAudioData(b); })
+        .then(function(buf) { self.clips[url] = buf; run(buf); })
+        .catch(function() { self.playForce(800, 0.06, 'square', 0.05); });
     }
   };
+
+  /* Sampled UI clips (mp3), loaded lazily on first use. relative_url respects
+     any baseurl the site is served under. */
+  var CLIP_ENABLE    = '{{ "/assets/sound/dexter-chime.mp3" | relative_url }}';
+  var CLIP_SUPERSTAR = '{{ "/assets/sound/100000-volts.mp3" | relative_url }}';
 
   /* ----------------------------------------------------------------- */
   /* Skin system (WS-E)                                                */
@@ -273,7 +297,10 @@
       if (!SFX.ctx) SFX.init();
       SFX.enabled = !SFX.enabled;
       localStorage.setItem('sfx', SFX.enabled ? 'on' : 'off');
-      SFX.playForce(800, 0.06, 'square', 0.05);
+      /* Confirm the new state audibly: dexter chime turning ON (forced, since
+         enabled flips this same tick), a soft synth blip turning OFF. */
+      if (SFX.enabled) SFX.playClip(CLIP_ENABLE, 0.6, true);
+      else SFX.playForce(420, 0.09, 'sine', 0.05);
       updateToggleState();
     });
 
@@ -338,7 +365,8 @@
   function activateSuperstar() {
     if (superstarTimer) return;
     if (!SFX.ctx) SFX.init();
-    SFX.starPower();
+    /* 100,000-volt superstar fanfare — respects mute, like the old starPower. */
+    SFX.playClip(CLIP_SUPERSTAR, 0.6);
 
     var content = document.querySelector('.content');
     if (content) {

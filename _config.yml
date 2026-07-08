@@ -313,6 +313,9 @@ exclude:
   - README.md
   # DOM-scrape debug capture — keep in repo, never publish.
   - page-structure.txt
+  # Source-quality SFX masters — kept in git for backup; only the mp3s ship.
+  - assets/sound/dexter-chime.wav
+  - assets/sound/100000-volts.wav
 include:
   - _routes.json
   - .well-known
