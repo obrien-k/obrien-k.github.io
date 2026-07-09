@@ -12,7 +12,7 @@ categories:
   - code
   - narrative
 image:
-  path: /assets/img/blog/posts/wordpress-dev-community/uber-googlers-v0.png
+  path: /assets/img/blog/posts/a-universe/the-androids-dream-cover-lg.png
 featured: true
 ---
 
