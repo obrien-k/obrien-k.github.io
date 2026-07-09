@@ -20,7 +20,7 @@ featured: true
 
 [Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
 
-Agentic work is something I briefly touched on in my [AI ethics piece](/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/). It is increasingly relevant in a tangential way today, re-starting this post-mortem in 2026. The _intended_ chronology was a "fast-follow" for "[Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code)", and is narrated as such. 
+Agentic work is something I briefly touched on in my [AI ethics piece](/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/). It is increasingly relevant in a tangential way today, re-starting this post-mortem in 2026. The _intended_ chronology was a "fast-follow" for "[Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming)", and is narrated as such. 
 
 Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failed tests typically increases the likelihood of greenery when mindfully inquired about. Whether this love letter falls apart or not, that's for anyone to say.
 
