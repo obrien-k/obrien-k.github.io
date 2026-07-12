@@ -121,6 +121,12 @@ $coffee-stain: url(/assets/css/skins/coffeestain.png);
   --panel-bg:     rgba(62, 41, 10, 0.65);   // #3E290A dark brown
   --panel-border: rgba(178, 122, 46, 0.45); // #B27A2E mid brown
   --panel-shadow: none;
+  // Menu/breadcrumb text + navbar buttons — the light-mode browns vanish on the
+  // night wood; go warm gold like the sidebar links.
+  --menu-text: #dcb881;
+  --gray: #c9b48c;
+  .nav-btn { color: #dcb881; }
+  .nav-btn:hover { color: #f1e6cc; }
   color: #f1e6cc;
 
   @include ax-desk(rgba(58, 34, 6, 0.50), rgba(8, 5, 0, 0.88));
@@ -222,9 +228,12 @@ body {
   // AX page background — the warm wood "desk" sits behind everything (real
   // Gazelle grain texture), lit by a soft radial vignette. The reading surface
   // floats a lighter parchment wash over the same grain (see main.content).
-  --page-bg: #{$wood-bg};
-
   @include ax-desk(rgba(255, 244, 222, 0.18), rgba(74, 44, 10, 0.34));
+
+  // Breadcrumbs + menu text — the gem default (#bbb) is tan-on-tan here; deep
+  // brown clears AA on the parchment.
+  --menu-text: #573811;
+  --gray: #5d452a;
 
   color: #3E290A;
 }

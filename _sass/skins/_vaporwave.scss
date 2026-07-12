@@ -22,12 +22,16 @@
   --accent-color:           rgb(var(--accent-rgb));
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1);
+  --accent-color-darkened:  rgb(199 0 226);
 
   // Custom-page palette — preserve the original hand-picked vaporwave values.
   --cp-accent-rgb:  255 90 217;   // #ff5ad9 pink
   --cp-accent2-rgb: 160 113 255;  // #a071ff purple
   --cp-muted-rgb:   154 147 179;  // #9a93b3
   --cp-line-rgb:    71 58 99;     // #473a63
+
+  // Muted lavender for breadcrumbs / nav buttons on the indigo pane.
+  --menu-text: #b3a6c4;
 
   --panel-bg:     rgba(255, 255, 255, 0.06);
   --panel-border: rgba(255, 255, 255, 0.1);
@@ -37,22 +41,9 @@
   --panel-shadow: none;
   --gloss-edge:   none;
 
-  // Synthwave content-pane background. SAME 3-layer structure FA/FA-dark use
-  // (two auto-sized layers + one cover sweep) so main.content's per-layer
-  // background-size: auto, auto, cover (set in _base) lines up exactly.
-  // Pure CSS, no asset. Kept LOW-KEY (lines ~0.05-0.06 alpha, near-black purple
-  // base) so the light VaporWave body text + glass cards keep contrast; this is
-  // a texture, not a wallpaper. Tweak the alphas / periods / horizon to taste.
-  // Layer 1 (auto): magenta perspective verticals — thin neon lines, wide period.
-  // Layer 2 (auto): cyan scanline horizontals — fainter, tighter period.
-  // Layer 3 (cover): a single radial that is a low magenta horizon glow at the
-  //   bottom-centre fading up into a near-black indigo to deep-purple field — one
-  //   gradient does both the glow and the dark base, keeping this at exactly 3
-  //   layers (matches main.content's background-size: auto, auto, cover).
-  --page-bg:
-    repeating-linear-gradient(90deg, rgba(225, 0, 255, 0.06) 0px, rgba(225, 0, 255, 0.06) 1px, transparent 1px, transparent 46px),
-    repeating-linear-gradient(0deg,  rgba(79, 177, 186, 0.05) 0px, rgba(79, 177, 186, 0.05) 1px, transparent 1px, transparent 34px),
-    radial-gradient(135% 90% at 50% 120%, rgba(225, 0, 255, 0.20) 0%, rgba(120, 20, 150, 0.14) 22%, #1a0c2e 48%, #140a26 72%, #0c0618 100%);
+  // Flat near-black-indigo pane — keeps the VW canvas identity; the neon
+  // grid/horizon-glow imagery is gone by design (read as noise under text).
+  --pane-color: #140a26;
 
   blockquote {
     background: rgba(255, 255, 255, 0.03);
@@ -78,4 +69,12 @@
 
 body.skin-vaporwave {
   @include vw-dark();
+}
+
+// VaporWave is DARK-ONLY: no light palette exists, and Hydejack's light-mode
+// text colors (#333 body) are unreadable on the VW canvas. The switcher already
+// forces dark-mode at select time and on restore (switcher.html); hiding the
+// brightness toggle closes the last path into light-mode while VW is active.
+body.skin-vaporwave #_dark-mode {
+  display: none;
 }

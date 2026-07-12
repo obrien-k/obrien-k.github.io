@@ -23,7 +23,7 @@
   label: VaporWave
   short: VW
   hue: "#e100ff"
-  desc: "Original skin — neon magenta/cyan, 8-bit flat panels"
+  desc: "Original skin — neon magenta/cyan, 8-bit flat panels (dark-only)"
   css: null
   dark: true
 

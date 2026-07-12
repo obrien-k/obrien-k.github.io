@@ -259,6 +259,14 @@ plugin runtime.)
 > `compress_html` is off). All skin-system partials therefore use `/* block */`
 > comments only. Keep it that way when editing them.
 
+> **SCSS custom-property `//` gotcha (found in the 2026-07 visibility pass).** Sass
+> treats everything after `--prop:` as an opaque value and emits it **verbatim —
+> including `//` line comments**. A `//` inside a multi-line custom-property
+> declaration therefore ships to the browser and invalidates the whole value
+> (silently: `var(--prop)` just computes to nothing). This is how FA-light's
+> Vista-sky `--page-bg` never rendered. Never put comments *inside* a custom
+> property declaration; comment above it instead.
+
 **Current skins:**
 
 | id | Label | hue | Source |

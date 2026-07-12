@@ -29,6 +29,7 @@ body.a11y-mode {
   --accent-color:           rgb(var(--accent-rgb));
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5);
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.08);
+  --accent-color-darkened:  rgb(95 86 72);
 
   // Custom-page palette → warm greys (both cp tokens pointing same direction)
   --cp-accent-rgb:  var(--accent-rgb);
@@ -36,8 +37,9 @@ body.a11y-mode {
   --cp-muted-rgb:   var(--steel-rgb);
   --cp-line-rgb:    180 175 170;
 
-  // Drop the sky gradient — plain surface reads cleaner in a11y mode
-  --page-bg: none;
+  // Flatten the pane to Hydejack's plain body bg — neutral reads cleaner in
+  // a11y mode (beats VW's indigo --pane-color via import order).
+  --pane-color: transparent;
 
   // Desaturated panel — neutral wash instead of aqua glass
   --panel-bg:     rgba(210, 208, 206, 0.5);
@@ -57,6 +59,7 @@ body.dark-mode.a11y-mode {
   --accent-color:           rgb(var(--accent-rgb)) !important;
   --accent-color-faded:     rgb(var(--accent-rgb) / 0.5) !important;
   --accent-color-highlight: rgb(var(--accent-rgb) / 0.1) !important;
+  --accent-color-darkened:  rgb(118 121 123) !important;
 
   --cp-accent-rgb:  var(--steel-rgb) !important;
   --cp-accent2-rgb: 110 113 115 !important;
@@ -73,6 +76,7 @@ body.dark-mode.a11y-mode {
     --accent-color:           rgb(var(--accent-rgb)) !important;
     --accent-color-faded:     rgb(var(--accent-rgb) / 0.5) !important;
     --accent-color-highlight: rgb(var(--accent-rgb) / 0.1) !important;
+    --accent-color-darkened:  rgb(118 121 123) !important;
 
     --cp-accent-rgb:  var(--steel-rgb) !important;
     --cp-accent2-rgb: 110 113 115 !important;
