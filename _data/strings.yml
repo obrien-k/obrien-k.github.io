@@ -39,6 +39,14 @@ search:
   placeholder:         Search posts…
   no_results:          No posts match.
 
+newsletter:
+  title:               Get new posts by email
+  prompt:              No spam, unsubscribe whenever.
+  email_placeholder:   you@example.com
+  submit:              Subscribe
+
+random:                Random post
+
 loading:               Loading…
 redirecting:           Redirecting…
 

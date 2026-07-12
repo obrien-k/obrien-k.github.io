@@ -395,6 +395,62 @@ pre {
 }
 
 // =============================================================================
+// Newsletter addon — post-page signup card (WS-G)
+// =============================================================================
+// Config-gated (newsletter.buttondown_username in _config.yml) — renders nothing
+// when unset, so this CSS is inert until the include actually emits markup.
+
+.newsletter {
+  @include aero-surface(var(--panel-radius));
+  padding: 1rem 1.25rem;
+}
+
+.newsletter-prompt {
+  margin-top: -0.3rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+
+  input[type="email"] {
+    flex: 1 1 12rem;
+    @include aero-surface();
+    padding: 0.4rem 0.75rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: inherit;
+    background-color: transparent;
+
+    &:focus-visible {
+      outline: 2px solid rgb(var(--accent2-rgb) / 0.8);
+      outline-offset: 2px;
+    }
+  }
+
+  // Reuses the .resume-buttons button treatment: glassy chip, accent-glow hover.
+  button {
+    @include aero-surface();
+    font-family: monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    color: inherit;
+    background-color: transparent;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      border-color: rgb(var(--accent-rgb) / 0.4);
+      box-shadow: var(--gloss-edge), 0 0 8px rgb(var(--accent-rgb) / 0.15);
+    }
+  }
+}
+
+// =============================================================================
 // Horizontal rules — gradient dividers
 // =============================================================================
 
