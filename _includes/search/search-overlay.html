@@ -200,6 +200,9 @@
   function openOverlay() {
     if (!overlayEl || isOpen()) return;
     overlayEl.hidden = false;
+    /* Fades the docked TOC out (_toc.scss) so two translucent glass panels
+       don't composite into an illegible bleed-through of both panels' text. */
+    document.body.classList.add('search-open');
     searchBtn.setAttribute('aria-expanded', 'true');
     ensureDocsLoaded(); /* prefetch as soon as the panel opens */
     inputEl.focus();
@@ -210,6 +213,7 @@
   function closeOverlay(refocus) {
     if (!overlayEl || !isOpen()) return;
     overlayEl.hidden = true;
+    document.body.classList.remove('search-open');
     searchBtn.setAttribute('aria-expanded', 'false');
     document.removeEventListener('keydown', onKeydown, true);
     document.removeEventListener('click', onDocClick, true);
