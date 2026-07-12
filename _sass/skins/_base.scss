@@ -41,26 +41,14 @@ $pixel-shadow:  rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: var(--panel-blur);
 }
 
-// Paint the sky on the CONTENT PANE (the article view), not the whole body, so
-// it's the primary background of the right-hand pane when the sidebar is docked
-// and never bleeds under the aurora sidebar. `fixed` keeps it a stable sky while
-// content scrolls; the paint is clipped to the pane's own box. In dark,
-// --page-bg is `none`, so the pane is transparent and the solid dark bg shows.
+// Content-pane fill — a FLAT solid per skin (--pane-color), painted on the
+// pane (not the body) so it never bleeds under the sidebar. Patterned
+// --page-bg layers are gone: the light one never rendered (Sass keeps `//`
+// comments verbatim inside custom-property values, so the emitted value was
+// invalid), and the dark lattices read as noise. Transparent default lets
+// Hydejack's own body bg through (FA light stays white).
 main.content {
-  background-image: var(--page-bg);
-  background-attachment: fixed;
-  // per-layer: two auto ribbons, one cover sweep
-  background-size: auto, auto, cover;
-  background-repeat: repeat;
-}
-
-// iOS Safari ignores background-attachment: fixed and sizes `cover` layers
-// against the whole document instead of the viewport (giant zoomed smear).
-// -webkit-touch-callout only exists on iOS, so this targets exactly that engine.
-@supports (-webkit-touch-callout: none) {
-  main.content {
-    background-attachment: scroll;
-  }
+  background-color: var(--pane-color, transparent);
 }
 
 // =============================================================================
@@ -201,6 +189,15 @@ html {
 // =============================================================================
 // Sidebar — glassy panel
 // =============================================================================
+
+// Site logo — logo.png is a black glyph on alpha, and the drawer is dark-backed
+// in every skin, so each skin supplies --logo-filter (typically invert + soft
+// drop-shadow) to render it light. The asset itself stays black for
+// jekyll-seo-tag / social cards. Scoped to the sidebar so any other .avatar
+// (author picture) is untouched.
+.sidebar-sticky .avatar {
+  filter: var(--logo-filter, none);
+}
 
 .sidebar {
   // Frosted glass effect over the accent_image

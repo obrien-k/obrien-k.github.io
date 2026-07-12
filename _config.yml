@@ -91,13 +91,19 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
+# accent_color seeds the gem's <html>-level --accent-color + derived tokens
+# (-faded/-highlight/-darkened, page-style.scss); keep it on the DEFAULT skin's
+# accent (Frutiger Aqua) so those derivations stop being VaporWave magenta.
+# Skins re-override on <body>.
 accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          rgb(225,0,255)
+accent_color:          rgb(0,153,204)
 
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
-# Defaults to `accent_color`.
-theme_color:           rgb(79,177,186)
+# Defaults to `accent_color`. Also seeds the gem's derived --dark-mode-body-bg
+# (hsl(hue, sat/8, 17.5%)) — with the aqua hue that lands on a dark blue-slate
+# that sits well under the FA-dark night-aqua pane.
+theme_color:           rgb(0,153,204)
 
 # IMPORTANT:
 # As of Hydejack 9.2, Google Fonts are turned off by default due to a stronger focus on privacy.
@@ -246,7 +252,7 @@ hydejack:
   # Similarly, showing last modified date can devalue a post if it is too far in the past.
   hide_last_modified:  false
 
-  # Note that dark mode only works in the PRO version of Hydejack.
+  # Dark mode ships in the free v9 gem (the upstream "PRO only" note is stale).
   dark_mode:
     # Set to `true` to always use the dark theme.
     always:            false
