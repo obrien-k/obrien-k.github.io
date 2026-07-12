@@ -199,7 +199,9 @@ main.content {
 .search-result-title {
   display: block;
   font-weight: 600;
-  color: rgb(var(--accent-rgb));
+  // cp accent, not accent: FA-light's aqua is ~3.2:1 on the pale panel; the
+  // custom-page accent is the AA-clearing deep variant of the same hue.
+  color: rgb(var(--cp-accent-rgb));
 }
 
 .search-result-meta {
