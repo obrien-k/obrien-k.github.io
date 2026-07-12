@@ -67,3 +67,10 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 {% include skin-system/a11y.html %}
 {% include skin-system/archive-filters.html %}
 {% include skin-system/toc.html %}
+
+<!-- ===================================================================
+     Search (WS-G) — hand-rolled navbar button + overlay. Included after the
+     skin-system partials so its DOMContentLoaded listener (button append)
+     registers last and the button lands after THEME/A11Y in .nav-btn-bar.
+     =================================================================== -->
+{% include search/search-overlay.html %}

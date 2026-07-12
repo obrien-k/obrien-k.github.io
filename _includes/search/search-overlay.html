@@ -1,0 +1,321 @@
+<!-- ===================================================================
+     Search — navbar button + overlay (WS-G)
+     Hand-rolled: the free Hydejack gem sets window._search (DATA_URL etc) and
+     the #_search-input hash convention (navbar auto-hide guard) but ships NO
+     search code — no fetch, no index, no UI. This include is the whole feature:
+     button injection + overlay markup + client-side scoring, fetched lazily
+     from assets/sitedata.json on first open.
+
+     Injects #_search-toggle into .nav-btn-bar (after THEME/A11Y — appended last,
+     included after the skin-system partials in my-body.html) and #_search-overlay
+     as a sibling of .navbar > .content, absolutely positioned under the fixed
+     navbar (no dependency on the gem's $navbar-height Sass var).
+
+     Re-injection on hy-push-state-after follows the exact pattern from
+     skin-system/switcher.html:168-204 — re-acquire the existing elements by id
+     before creating new ones.
+
+     Block comments only (compress_html collapses <script> newlines in
+     production; a `//` would comment out the rest of the IIFE — see
+     docs/architecture.md WS-F note).
+     =================================================================== -->
+<script>
+(function() {
+  'use strict';
+
+  var SEARCH_LABEL       = {{ site.data.strings.search.label | jsonify }};
+  var SEARCH_PLACEHOLDER = {{ site.data.strings.search.placeholder | jsonify }};
+  var SEARCH_NO_RESULTS  = {{ site.data.strings.search.no_results | jsonify }};
+  var RESULT_LIMIT = 8;
+  var DEBOUNCE_MS = 120;
+  var SNIPPET_RADIUS = 80;
+
+  var searchBtn, overlayEl, inputEl, resultsEl;
+  var docsPromise = null;
+  var debounceTimer = null;
+
+  /* ---- data ------------------------------------------------------- */
+
+  function ensureDocsLoaded() {
+    if (docsPromise) return docsPromise;
+    var url = (window._search && window._search.DATA_URL) || '/assets/sitedata.json';
+    docsPromise = fetch(url).then(function(res) { return res.json(); }).catch(function() {
+      docsPromise = null; /* allow a retry on the next open/keystroke */
+      return [];
+    });
+    return docsPromise;
+  }
+
+  /* ---- scoring ------------------------------------------------------
+     AND-ish: a doc scores 0 (excluded) unless EVERY token matches it
+     somewhere. Per matching token: title substring +5 (+2 more if a title
+     word starts with it), any tag/category substring +3, content occurrence
+     count +1 each (capped at +5 per token). */
+
+  function scoreDoc(doc, tokens) {
+    var titleLower = (doc.title || '').toLowerCase();
+    var titleWords = titleLower.split(/\s+/);
+    var tagsCats = ([]).concat(doc.tags || [], doc.categories || []).join(' ').toLowerCase();
+    var contentLower = (doc.content || '').toLowerCase();
+    var total = 0;
+
+    for (var i = 0; i < tokens.length; i++) {
+      var tok = tokens[i];
+      var tokScore = 0;
+
+      if (titleLower.indexOf(tok) !== -1) {
+        tokScore += 5;
+        for (var w = 0; w < titleWords.length; w++) {
+          if (titleWords[w].indexOf(tok) === 0) { tokScore += 2; break; }
+        }
+      }
+
+      if (tagsCats.indexOf(tok) !== -1) tokScore += 3;
+
+      var occ = 0;
+      var idx = contentLower.indexOf(tok);
+      while (idx !== -1) {
+        occ++;
+        idx = contentLower.indexOf(tok, idx + tok.length);
+      }
+      tokScore += Math.min(occ, 5);
+
+      if (tokScore === 0) return 0; /* every token must match */
+      total += tokScore;
+    }
+
+    return total;
+  }
+
+  function firstMatchingTag(doc, tokens) {
+    var tags = doc.tags || [];
+    for (var i = 0; i < tags.length; i++) {
+      var tagLower = tags[i].toLowerCase();
+      for (var j = 0; j < tokens.length; j++) {
+        if (tagLower.indexOf(tokens[j]) !== -1) return tags[i];
+      }
+    }
+    return tags[0] || '';
+  }
+
+  function snippetFor(doc, tokens) {
+    var content = doc.content || '';
+    var idx = content.toLowerCase().indexOf(tokens[0]);
+    if (idx === -1) return content.slice(0, SNIPPET_RADIUS * 2);
+
+    var start = Math.max(0, idx - SNIPPET_RADIUS);
+    var end = Math.min(content.length, idx + tokens[0].length + SNIPPET_RADIUS);
+    var snippet = content.slice(start, end);
+    if (start > 0) snippet = '…' + snippet;
+    if (end < content.length) snippet = snippet + '…';
+    return snippet;
+  }
+
+  /* ---- render ------------------------------------------------------ */
+
+  function clearResults() {
+    while (resultsEl.firstChild) resultsEl.removeChild(resultsEl.firstChild);
+  }
+
+  function renderEmpty() {
+    var li = document.createElement('li');
+    li.className = 'search-empty';
+    li.textContent = SEARCH_NO_RESULTS;
+    resultsEl.appendChild(li);
+  }
+
+  function renderResults(matches, tokens) {
+    clearResults();
+    if (matches.length === 0) { renderEmpty(); return; }
+
+    for (var i = 0; i < matches.length; i++) {
+      var doc = matches[i].doc;
+
+      var li = document.createElement('li');
+      li.setAttribute('role', 'option');
+
+      var a = document.createElement('a');
+      a.href = doc.url;
+      a.className = 'search-result';
+
+      var title = document.createElement('span');
+      title.className = 'search-result-title';
+      title.textContent = doc.title;
+
+      var meta = document.createElement('span');
+      meta.className = 'search-result-meta';
+      var tag = firstMatchingTag(doc, tokens);
+      meta.textContent = doc.date + (tag ? ' · ' + tag : '');
+
+      var excerpt = document.createElement('p');
+      excerpt.className = 'search-result-excerpt';
+      excerpt.textContent = snippetFor(doc, tokens);
+
+      a.appendChild(title);
+      a.appendChild(meta);
+      a.appendChild(excerpt);
+      li.appendChild(a);
+      resultsEl.appendChild(li);
+    }
+  }
+
+  /* ---- search -------------------------------------------------------
+     textContent-only rendering (no innerHTML on per-result data) so post
+     titles/excerpts never need HTML-escaping. */
+
+  function runSearch() {
+    var raw = inputEl.value.toLowerCase().trim();
+    var tokens = raw.split(/\s+/).filter(function(t) { return t.length > 0; });
+
+    if (tokens.length === 0) { clearResults(); return; }
+
+    ensureDocsLoaded().then(function(docs) {
+      /* Stale-response guard: the field may have changed (or cleared) while
+         the fetch/scoring for this call was in flight. */
+      var current = inputEl.value.toLowerCase().trim()
+        .split(/\s+/).filter(function(t) { return t.length > 0; });
+      if (current.join(' ') !== tokens.join(' ')) return;
+
+      var scored = [];
+      for (var i = 0; i < docs.length; i++) {
+        var score = scoreDoc(docs[i], tokens);
+        if (score > 0) scored.push({ doc: docs[i], score: score });
+      }
+      scored.sort(function(a, b) { return b.score - a.score; });
+      renderResults(scored.slice(0, RESULT_LIMIT), tokens);
+    });
+  }
+
+  function onInput() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(runSearch, DEBOUNCE_MS);
+  }
+
+  /* ---- open / close -------------------------------------------------- */
+
+  function isOpen() {
+    return overlayEl && !overlayEl.hidden;
+  }
+
+  function openOverlay() {
+    if (!overlayEl || isOpen()) return;
+    overlayEl.hidden = false;
+    searchBtn.setAttribute('aria-expanded', 'true');
+    ensureDocsLoaded(); /* prefetch as soon as the panel opens */
+    inputEl.focus();
+    document.addEventListener('keydown', onKeydown, true);
+    document.addEventListener('click', onDocClick, true);
+  }
+
+  function closeOverlay(refocus) {
+    if (!overlayEl || !isOpen()) return;
+    overlayEl.hidden = true;
+    searchBtn.setAttribute('aria-expanded', 'false');
+    document.removeEventListener('keydown', onKeydown, true);
+    document.removeEventListener('click', onDocClick, true);
+    if (refocus) searchBtn.focus();
+  }
+
+  function toggleOverlay() {
+    if (isOpen()) { closeOverlay(false); } else { openOverlay(); }
+  }
+
+  function onKeydown(e) {
+    if (e.key === 'Escape' || e.keyCode === 27) {
+      e.stopPropagation();
+      closeOverlay(true);
+    }
+  }
+
+  function onDocClick(e) {
+    if (overlayEl.contains(e.target) || searchBtn.contains(e.target)) return;
+    closeOverlay(false);
+  }
+
+  function onResultClick(e) {
+    if (e.target.closest && e.target.closest('a')) closeOverlay(false);
+  }
+
+  /* ---- inject --------------------------------------------------------
+     Hydejack preserves the navbar across SPA navigations (only #_main gets
+     replaced), so the button/overlay normally survive untouched. Re-acquire
+     by id first anyway rather than bailing, matching switcher.html's
+     defensive pattern — otherwise a future template change that DOES clear
+     the navbar would silently freeze every handler below on a detached node. */
+
+  function injectSearchUI() {
+    var existingBtn = document.getElementById('_search-toggle');
+    if (existingBtn) {
+      searchBtn  = existingBtn;
+      overlayEl  = document.getElementById('_search-overlay');
+      inputEl    = document.getElementById('_search-input');
+      resultsEl  = document.getElementById('_search-results');
+      return;
+    }
+
+    var bar = document.querySelector('.nav-btn-bar');
+    var navbar = document.getElementById('_navbar');
+    if (!bar || !navbar) return;
+
+    searchBtn = document.createElement('button');
+    searchBtn.id = '_search-toggle';
+    searchBtn.className = 'nav-btn no-hover';
+    searchBtn.setAttribute('type', 'button');
+    searchBtn.setAttribute('aria-label', SEARCH_LABEL);
+    searchBtn.setAttribute('aria-expanded', 'false');
+    searchBtn.setAttribute('aria-controls', '_search-overlay');
+    searchBtn.innerHTML =
+        '<span class="ws-glyph"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" '
+      + 'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" '
+      + 'aria-hidden="true"><circle cx="11" cy="11" r="7"></circle>'
+      + '<line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>'
+      + '<span class="ws-cap">SEARCH</span>'
+      + '<span class="ws-dots" aria-hidden="true"></span>';
+    searchBtn.addEventListener('click', toggleOverlay);
+    bar.appendChild(searchBtn);
+
+    /* Built via createElement/setAttribute (not innerHTML string concat) so a
+       stray `"` in a _data/strings.yml value can't break the markup. */
+    overlayEl = document.createElement('div');
+    overlayEl.id = '_search-overlay';
+    overlayEl.setAttribute('role', 'search');
+    overlayEl.hidden = true;
+
+    inputEl = document.createElement('input');
+    inputEl.type = 'search';
+    inputEl.id = '_search-input';
+    inputEl.setAttribute('aria-autocomplete', 'list');
+    inputEl.setAttribute('aria-controls', '_search-results');
+    inputEl.setAttribute('autocomplete', 'off');
+    inputEl.placeholder = SEARCH_PLACEHOLDER;
+    inputEl.addEventListener('input', onInput);
+
+    resultsEl = document.createElement('ul');
+    resultsEl.id = '_search-results';
+    resultsEl.setAttribute('role', 'listbox');
+    resultsEl.setAttribute('aria-label', SEARCH_LABEL);
+    resultsEl.addEventListener('click', onResultClick);
+
+    overlayEl.appendChild(inputEl);
+    overlayEl.appendChild(resultsEl);
+    navbar.appendChild(overlayEl);
+  }
+
+  /* ---- SPA lifecycle --------------------------------------------- */
+
+  var pushState = document.getElementById('_pushState');
+  if (pushState) {
+    pushState.addEventListener('hy-push-state-after', function() {
+      closeOverlay(false);
+      searchBtn = null;
+      injectSearchUI();
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectSearchUI);
+  } else {
+    injectSearchUI();
+  }
+})();
+</script>

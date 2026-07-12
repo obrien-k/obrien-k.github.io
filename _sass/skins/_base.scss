@@ -117,6 +117,112 @@ main.content {
 }
 
 // =============================================================================
+// Search — navbar button + overlay (WS-G)
+// =============================================================================
+// #_search-overlay is appended as a sibling of .navbar > .content (both live
+// directly under the fixed #_navbar), so `top: 100%` anchors it under the
+// navbar without needing the gem's private $navbar-height Sass var. Shown/
+// hidden via the `hidden` attribute (display:none) — no open/close animation,
+// so there's nothing for prefers-reduced-motion to need to kill; the
+// `transition` below only smooths hover/focus states, which the global
+// reduced-motion kill (below) already neutralizes.
+// z-index 9000: below the Konami overlay (9998), above page content.
+
+#_search-overlay {
+  position: absolute;
+  top: 100%;
+  left: 0.5rem;
+  right: 0.5rem;
+  z-index: 9000;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  @include aero-surface(var(--panel-radius));
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  #_search-overlay {
+    left: auto;
+    right: 1rem;
+    width: 22rem;
+  }
+}
+
+#_search-input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--panel-border);
+  border-radius: var(--chip-radius);
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease;
+
+  &:focus-visible {
+    outline: 2px solid rgb(var(--accent2-rgb) / 0.8);
+    outline-offset: 2px;
+  }
+}
+
+#_search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.search-result {
+  display: block;
+  padding: 0.5rem 0.6rem;
+  border-radius: var(--chip-radius);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: rgb(var(--accent-rgb) / 0.12);
+  }
+}
+
+.search-result-title {
+  display: block;
+  font-weight: 600;
+  color: rgb(var(--accent-rgb));
+}
+
+.search-result-meta {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.65;
+  margin: 0.15rem 0;
+}
+
+.search-result-excerpt {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+  line-height: 1.4;
+}
+
+.search-empty {
+  padding: 0.5rem 0.6rem;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+// =============================================================================
 // Base overrides
 // =============================================================================
 
