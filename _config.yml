@@ -223,7 +223,14 @@ hydejack:
   no_third_column:     false
 
   # Set to `true` if you don't like oversized headlines on large screens.
-  no_large_headings:   false
+  # On very wide screens (>= 104rem), Hydejack deliberately widens .content h1
+  # past its column (bumping font-size along with it) for a full-bleed hero
+  # heading. Our content pane has a solid --pane-color fill (see _base.scss),
+  # so the widened title spills past the pane's edge instead of blending into
+  # the page background like it does in stock Hydejack — disabling it here
+  # only turns off the >=104rem/124em width+size escalation; the normal
+  # >=86em (2.4rem) large-title styling is untouched.
+  no_large_headings:   true
 
   # Set to `true` if you do not want to expose your resume and projects
   # in machine-readable formats.
