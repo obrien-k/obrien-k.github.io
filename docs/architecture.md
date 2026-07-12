@@ -368,6 +368,28 @@ plugin runtime.)
   aligned to `_base`'s `main.content { background-size: auto, auto, cover }`); and
   the **VW-resume light-mode illegibility** is closed by the clean base/overlay
   split. Block-comments-only preserved; production build green.
+- ✅ **WS-G — PRO-parity features (hand-rolled search + post addons)** — shipped.
+  The free `jekyll-theme-hydejack` 9.2.1 gem sets up `window._search` (DATA_URL/
+  STORAGE_KEY/INDEX_KEY) and a `#_search-input` hash special-case in the navbar
+  auto-hide JS, but ships **no search implementation** — no fetch, no index, no
+  UI, no `search-*.js` chunk. Search here is fully hand-rolled: a navbar
+  button + overlay (`_includes/search/search-overlay.html`, included from
+  `my-body.html` after the skin-system partials) that lazy-fetches
+  `assets/sitedata.json` (a Liquid-generated post index, front-matter-gated
+  `sitemap: false`) on first open and scores/ranks client-side. The only gem
+  convention honored is the `#_search-input` id, so navigating into the field
+  doesn't trigger the navbar's scroll-based auto-hide. Follows the switcher's
+  re-injection pattern (`_includes/skin-system/switcher.html:168-204`) for SPA
+  survival. `_layouts/post.html` is **shadowed** from the gem (verbatim copy +
+  a marker comment) to add `newsletter`/`random` branches to its
+  `{% case addon %}` — the free gem's switch only handles `about`/`related`/
+  `comments` and silently no-ops on anything else; re-diff against the gem on
+  theme version bumps. The newsletter addon (`components/newsletter.html`) is
+  config-gated on `newsletter.buttondown_username` (`_config.yml`) so it ships
+  inert (renders nothing) until Kai registers an account — note Liquid's
+  `blank` literal doesn't match empty strings in this environment (it resolves
+  via a `.blank?` respond_to? check that plain Ruby strings don't implement;
+  `empty` does, via `.empty?`) — the gate uses `!= empty`, not `== blank`.
 
 (The earlier "publish as npm/gem/pip for CDN delivery" note was deleted — that
 was imported Stellar scope, see the WS-E scope note; not a goal for this site.)
