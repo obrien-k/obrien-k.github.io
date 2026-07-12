@@ -89,3 +89,12 @@
     &::marker { content: ''; }
   }
 }
+
+// Search overlay owns the screen while open — recede rather than composite two
+// translucent glass panels on top of each other (aero-surface + backdrop-blur
+// on both makes search results and TOC entries bleed through illegibly).
+body.search-open .post-toc.is-docked {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
