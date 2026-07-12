@@ -1,0 +1,15 @@
+{% assign pool = site.posts | where_exp: "p", "p.url != page.url" %}
+{% assign random_post = pool | sample %}
+{% if random_post %}
+<aside class="random related mb4" role="complementary">
+  <h2 class="hr-bottom">{{ site.data.strings.random | default:"Random post" }}</h2>
+  <ul class="related-posts">
+    {% include_cached components/post-list-item.html post=random_post %}
+  </ul>
+</aside>
+{% endif %}
+{%- comment -%}
+  `sample` randomizes per BUILD, not per view (static site — no per-request
+  server). A per-view JS re-roll from assets/sitedata.json is a possible later
+  enhancement; not built here.
+{%- endcomment -%}

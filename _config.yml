@@ -39,6 +39,10 @@ author:
   # # Used by `jekyll-seo-tag`:
   twitter:             kyle_o
 
+# Newsletter (Buttondown). Leave username empty to hide the newsletter post-addon.
+newsletter:
+  buttondown_username: ""
+
 # Add links to the sidebar.
 menu:
   - title:             About
