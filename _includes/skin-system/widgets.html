@@ -177,10 +177,10 @@
     var data = {{ site.data.status | jsonify }};
     var html = '<div class="status-label">STATUS</div>';
 
-    if (data.mood) {
-      html += '<div class="status-item"><span class="status-key">ʕ⁎̯͡⁎ʔ༄</span>'
-            + '<span class="status-val">' + data.mood + '</span></div>';
-    }
+    {% if site.statuscafe.username != empty %}
+    html += '<div class="status-item" id="statuscafe"><span class="status-key">ʕ⁎̯͡⁎ʔ༄</span>'
+          + '<div id="statuscafe-username"></div><div id="statuscafe-content"></div></div>';
+    {% endif %}
     if (data.doing) {
       var doingText = data.doing.text || data.doing;
       var doingVal = data.doing.url
@@ -199,7 +199,20 @@
     widget.className = 'sidebar-status';
     widget.innerHTML = html;
     social.parentNode.insertBefore(widget, social);
+    {% if site.statuscafe.username != empty %}
+    loadStatusCafe();
+    {% endif %}
   }
+
+  {% if site.statuscafe.username != empty %}
+  /* status.cafe fetches and fills #statuscafe-content itself once this loads. */
+  function loadStatusCafe() {
+    var sc = document.createElement('script');
+    sc.src = 'https://status.cafe/current-status.js?name=' + encodeURIComponent('{{ site.statuscafe.username }}');
+    sc.async = true;
+    document.body.appendChild(sc);
+  }
+  {% endif %}
   {% endif %}
 
   /* ----------------------------------------------------------------- */

@@ -13,7 +13,7 @@ url:                   https://obrien-k.github.io
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 KyleOBrien.me/Kai
+title:                 KyleOBrien.me
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -24,7 +24,7 @@ description:           >
 tagline:               I like code, sound, and minimalism.
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [code, sound, minimalism, software, infrastructure, writing]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -42,6 +42,10 @@ author:
 # Newsletter (Buttondown). Leave username empty to hide the newsletter post-addon.
 newsletter:
   buttondown_username: ""
+
+# status.cafe live status embed. Leave username empty to hide the row.
+statuscafe:
+  username: "korin"
 
 # Add links to the sidebar.
 menu:

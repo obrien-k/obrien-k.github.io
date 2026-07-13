@@ -900,6 +900,21 @@ blockquote {
   text-underline-offset: 2px;
 }
 
+// status.cafe injects these two divs itself at runtime; #statuscafe-username
+// is suppressed as redundant (the sidebar already identifies the author).
+// justify-content: center matches the other status rows, which get centered
+// for free via inherited text-align — flexbox ignores that for its own items.
+#statuscafe {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+#statuscafe-username {
+  display: none;
+}
+
 // =============================================================================
 // THEMES widget — sidebar skin selector (WS-E)
 // Matches STATUS widget: same dark glass bg, same monospace label font.
