@@ -61,7 +61,7 @@ cookies_banner:
 not_found:
   title:               '404'
   message:             |
-    This page doesn't exist — or it did once, and the web moved on.
+    This page doesn't exist, or it did before the world moved on.
     <!--home_link-->.
   home_link:           Return to the index
 

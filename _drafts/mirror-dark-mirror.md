@@ -1,4 +1,12 @@
-MIRROR \| DARK MIRROR.md
+---
+layout: post
+title: "MIRROR | DARK MIRROR"
+date: 2026-12-01 00:00:00 +0000
+description: "RORRIM KRAD | RORRIM"
+image:
+  path: /assets/img/blog/posts/mirror-dark-mirror/cover-lg.png
+categories: [life]
+---
 
 ## Introduction
 
