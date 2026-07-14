@@ -11,7 +11,7 @@ categories:
   - narrative
 image:
   path: /assets/img/blog/posts/a-universe/the-androids-dream-cover-lg.png
-featured: true
+permalink: /the-androids-dream/
 ---
 
 #### [UPDATE.PBP](https://consolemods.org/wiki/PSP:Updating_your_Firmware_(OFW))
@@ -24,7 +24,7 @@ Agentic work is something I briefly touched on in my [AI ethics piece](/ai-ethic
 
 Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failed tests typically increases the likelihood of greenery when mindfully inquired about. Whether this love letter falls apart or not, that's for anyone to say.
 
-There are many references to Docker containers, infrastructure (infra), and abstract representations of concepts (read: `colour`). There be dragons here.
+There are many references to Docker containers, infrastructure (infra), and abstract representations of concepts (read: `colour`). [There be dragons here](/assets/ephemera/wordpress-backup.conf).
 
 ## Introduction
 
