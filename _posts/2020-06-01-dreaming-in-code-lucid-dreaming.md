@@ -300,4 +300,4 @@ For the astute, many of these links lead to insecure pages, an unfortunate event
 [^12]: "*Dreaming in Code*" pp.109
 
 ## COLOPHON
-[UPDATE.PBP](/the-androids-dream-a-love-letter-to-the-bomb)
+[UPDATE.PBP](/the-androids-dream)
