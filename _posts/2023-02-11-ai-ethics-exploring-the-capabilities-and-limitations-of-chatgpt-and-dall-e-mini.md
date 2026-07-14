@@ -28,7 +28,7 @@ ChatGPT is a powerful tool driven by GPT technology. In the week since I started
 
 ![a painting of six devils dressed in white](/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/11-09-2022-a-painting-of-six-devils-dressed-in-white.png)
 
-`a painting of six devils dressed in white, evil, dark, painting oil canvas, realism, in the style of francisco goya, devils dancing in a circle around a bonfire, telephoto, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, trending on /r/Art`
+`a painting of six devils dressed in white, devil staying up all night, evil, dark, painting oil canvas, photorealistic, in the style of Vincent Van Gogh, devils dancing in a circle around a bonfire, bird's eye view, satanic sacrifice, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, realism`
 
 The development of AI models like Craiyon and DALL-E mini, which enable the creation of images, highlights the limitations of AI in dealing with odd or unpredictable concepts. When asked to combine colors unexpectedly, the AI system struggled and had trouble describing unusual concepts.
 
@@ -47,11 +47,11 @@ I'd like to see the results for these same contexts with ChatGPT and have includ
 
 `chatting with a bot, screen with text, futuristic, unreal engine 5, close up`
 
-![](https://kyleo.io/content/images/2024/02/DALL-E-2024-02-03-05.07.55---Imagine-a-painting-that-captures-a-scene-straight-out-of-a-fantasy--depicted-with-the-intense-realism-and-dark-overtones-characteristic-of-Francisco-G.webp)
+![DALL-E render: six devils dressed in white dancing around a bonfire, in the style of Francisco Goya](/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/02-03-2024-six-devils-dressed-in-white.webp)
 
 `a painting of six devils dressed in white, evil, dark, painting oil canvas, realism, in the style of francisco goya, devils dancing in a circle around a bonfire, telephoto, night on bald mountain, devils with capes and horns, ritualistic dance, fantasy, trending on /r/Art`
 
-![](https://kyleo.io/content/images/2024/02/DALL-E-2024-02-03-05.05.52---An-epic-8k-resolution-image-depicting-an-individual-astronaut-in-the-deepest-recesses-of-space--surrounded-by-twinkling-stars.-The-scene-captures-a-br.webp)
+![DALL-E render: individual astronaut in the deepest recesses of space, supernova reflected in helmet](/assets/img/blog/posts/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/02-03-2024-individual-astronaut-deepest-recess-of-space.webp)
 
 `individual astronaut, deepest recess of space, twinkling stars, space event, supernova, reflection on astronaut helmet, fantasy, rendering, photograph, 8k, epic`
 
