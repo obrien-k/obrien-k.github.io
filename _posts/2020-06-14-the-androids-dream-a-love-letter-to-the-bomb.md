@@ -320,6 +320,6 @@ I'm essentially trying to open this access like Netlify has, but packaged with G
 ╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝
 </code></pre>
 
-<pre><code>
-// TODO MIRROR || MIRROR DARKLY
-</code></pre>
+<pre>
+// TODO MIRROR | MIRROR DARKLY
+</pre>
