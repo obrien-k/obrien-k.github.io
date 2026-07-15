@@ -98,3 +98,29 @@ body.search-open .post-toc.is-docked {
   pointer-events: none;
   transition: opacity 0.15s ease;
 }
+
+// -----------------------------------------------------------------------------
+// Docked description — the post's `.note-sm` note styled to match the docked
+// TOC panel above it. Fixed-positioned (JS sets top/left); kept in place in the
+// DOM so Hydejack's `.page > header > .note-sm:before` "DESCRIPTION" label still
+// matches. main.content is a positioned ancestor, so fixed (not absolute) keeps
+// the coordinates viewport-relative like the TOC.
+// -----------------------------------------------------------------------------
+
+p.note-sm.post-toc-desc-docked {
+  @include aero-surface;
+  position: fixed;
+  width: 232px;
+  z-index: 5;
+  margin: 0;
+  padding: 1.2rem 1rem 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  border-left: none;
+}
+
+body.search-open .post-toc-desc-docked {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}

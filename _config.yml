@@ -404,9 +404,14 @@ readme_index:
 relative_links:
   collections:         true
 
+# Fills in a title for headless PAGES (404, LICENSE, NOTICE, CHANGELOG) from
+# their first heading. `collections: false` keeps it away from posts/collection
+# docs: the plugin treats every Jekyll::Document title as overridable and would
+# otherwise clobber a post's explicit front-matter title with its first heading
+# whenever the body opens with one (e.g. `## Introduction`).
 titles_from_headings:
   strip_title:         true
-  collections:         true
+  collections:         false
 
 compress_html:
   comments:            ["<!--", "-->"]

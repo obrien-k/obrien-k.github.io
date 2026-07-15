@@ -1,24 +1,20 @@
-<!-- ===================================================================
-     Table of contents (WS-3). Free Hydejack's dynamic sidebar TOC is a PRO
-     feature, so this builds an equivalent from the article's own headings and
-     renders it UBIQUITOUSLY:
-       - default (any width, incl. mobile): an inline collapsible <details>
-         "Contents" box at the top of the article;
-       - promoted to a fixed sticky sidebar in the right-hand margin ONLY when
-         there's actually room for it (measured, not a magic breakpoint — the
-         docked Hydejack sidebar eats the left margin and shrinks the right one
-         at mid widths, so a fixed px breakpoint is unreliable).
-     Intersectionless position-based scroll-spy highlights the current section.
-     Rebuilds on push-state navigation; detaches its listeners on rebuild.
-     NOTE: `/* */` block comments ONLY — production compress_html collapses
-     script newlines, so a `//` line comment would eat the rest of the IIFE.
-     =================================================================== -->
+<!-- Table of contents (WS-3). Free Hydejack's dynamic sidebar TOC is PRO-only,
+     so this builds one from the article's headings: an inline <details> box by
+     default, promoted to a fixed sticky sidebar when the right margin is wide
+     enough (measured per-layout — Hydejack's docked sidebar shrinks the right
+     margin at mid widths, so a fixed px breakpoint can't tell). The post
+     description docks above it as a matching panel.
+     `/* */` comments ONLY inside <script>: production compress_html collapses
+     newlines, so a `//` would comment out the rest of the IIFE. -->
 <script>
 (function () {
   var ID = '_postToc';
-  var DOCK_MIN_MARGIN = 264; /* px of free right margin needed to dock */
+  var DESC_DOCKED = 'post-toc-desc-docked';
+  var DOCK_MIN_MARGIN = 264;  /* px of free right margin needed to dock */
+  var TOP_CLEARANCE = 96;     /* px below viewport top where the TOC sticks (clears navbar) */
+  var GAP = 16;               /* px between the description and TOC panels */
 
-  /* Heading label minus Hydejack's injected `.permalink` anchor. */
+  /* Heading text minus Hydejack's injected `.permalink` anchor. */
   function labelOf(h) {
     var c = h.cloneNode(true);
     var p = c.querySelector('.permalink');
@@ -33,6 +29,55 @@
         || document.querySelector('article');
   }
 
+  /* Hydejack's "DESCRIPTION" label is a CSS :before keyed to
+     `.page > header > .note-sm`, so the note is restyled in place, never moved
+     in the DOM — moving it would drop the label. */
+  function descEl() {
+    var header = document.querySelector('main.content article header');
+    return header && header.querySelector(':scope > p.note-sm');
+  }
+
+  /* Doc-coord Y the docked column aligns to: the cover image top, so the stack
+     sits beside the header visual rather than level with the body text. The
+     wrapper reserves its height via aspect-ratio, so this is stable before the
+     image loads. Falls back to the header top when there's no cover. */
+  function columnAnchor() {
+    var el = document.querySelector('main.content article header .img-wrapper')
+          || document.querySelector('main.content article header');
+    return el ? Math.round(el.getBoundingClientRect().top + window.scrollY) : TOP_CLEARANCE;
+  }
+
+  /* Tracks scroll but is never clamped, so it scrolls off the top with the page
+     rather than sticking like the TOC. */
+  function applyDescScroll(desc) {
+    if (desc && desc.classList.contains(DESC_DOCKED))
+      desc.style.top = Math.round(desc._docTop - window.scrollY) + 'px';
+  }
+
+  function dockDescription(desc, left, anchor) {
+    if (!desc) return null;
+    desc.classList.add(DESC_DOCKED);
+    /* Neutralize Hydejack's "third column" float inline. At >=104em its
+       `.page > header > .lead + .note-sm { position:absolute; right:-25rem;
+       width:21rem; bottom:0 }` (specificity 0,4,2) outranks the docked class
+       and would fling the panel off-screen and stretch it to full height.
+       Inline wins; these mirror the docked TOC's fixed 232px panel. */
+    desc.style.position = 'fixed';
+    desc.style.width = '232px';
+    desc.style.right = desc.style.bottom = 'auto';
+    desc._docTop = anchor;
+    desc.style.left = left + 'px';
+    applyDescScroll(desc);
+    return anchor + desc.offsetHeight + GAP;
+  }
+
+  function undockDescription(desc) {
+    if (!desc || !desc.classList.contains(DESC_DOCKED)) return;
+    desc.classList.remove(DESC_DOCKED);
+    desc.style.position = desc.style.width = desc.style.right =
+      desc.style.bottom = desc.style.top = desc.style.left = '';
+  }
+
   function collect() {
     var prose = proseEl();
     if (!prose) return [];
@@ -41,11 +86,9 @@
     for (var i = 0; i < all.length; i++) {
       var h = all[i];
       var label = labelOf(h);
-      /* stop before the COLOPHON graffiti zone — it isn't article structure.
-         Fold to Latin letters only: NFKD turns the mathematical-bold COLOPHON
-         heading into ASCII, and dropping non-letters strips the zalgo combining
-         marks sprinkled between glyphs from several Unicode ranges, so the
-         buried "COLOPHON" reads contiguously. */
+      /* Stop at the COLOPHON graffiti zone — not article structure. NFKD folds
+         the mathematical-bold heading to ASCII and stripping non-letters drops
+         the zalgo combining marks between glyphs, so the buried word matches. */
       var norm = label.normalize('NFKD').replace(/[^A-Za-z]/g, '');
       if (/COLOPHON/i.test(norm)) break;
       if (!h.id || !label || h.classList.contains('no_toc')) continue;
@@ -55,40 +98,31 @@
     return out;
   }
 
-  var TOP_CLEARANCE = 96; /* px below the viewport top when stuck (clears navbar) */
-
-  /* Scroll-aware sticky top: start aligned with the article body (below the
-     header + Hydejack's margin description note), then rise with the page until
-     it sticks at TOP_CLEARANCE — the classic sticky-sidebar motion, and it never
-     covers the header-region margin notes. `_startDoc` is the body start in
-     document coords, cached by layout(). */
   function applyStickyTop(toc) {
     if (!toc.classList.contains('is-docked')) return;
     var start = toc._startDoc || TOP_CLEARANCE;
     toc.style.top = Math.max(TOP_CLEARANCE, Math.round(start - window.scrollY)) + 'px';
   }
 
-  /* Dock into the right margin when there's room, else inline+collapsible. */
+  /* Dock into the right margin when there's room, else inline + collapsible. */
   function layout(toc) {
     var pane = document.querySelector('main.content') || proseEl();
     if (!pane) return;
     var right = pane.getBoundingClientRect().right;
-    var avail = window.innerWidth - right;
-    if (avail >= DOCK_MIN_MARGIN) {
+    var desc = descEl();
+    if (window.innerWidth - right >= DOCK_MIN_MARGIN) {
       toc.classList.add('is-docked');
       toc.open = true;
-      toc.style.left = Math.round(right + 24) + 'px';
-      /* article body start = bottom of the post <header> (title/meta/cover +
-         description), in document coords */
-      var header = document.querySelector('main.content article header');
-      toc._startDoc = header
-        ? Math.round(header.getBoundingClientRect().bottom + window.scrollY)
-        : TOP_CLEARANCE;
+      var left = Math.round(right + 24);
+      toc.style.left = left + 'px';
+      var anchor = columnAnchor();
+      var descBottom = dockDescription(desc, left, anchor);
+      toc._startDoc = descBottom !== null ? descBottom : anchor;
       applyStickyTop(toc);
     } else {
+      undockDescription(desc);
       toc.classList.remove('is-docked');
-      toc.style.left = '';
-      toc.style.top = '';
+      toc.style.left = toc.style.top = '';
     }
   }
 
@@ -118,18 +152,15 @@
       var a = document.createElement('a');
       a.href = '#' + item.id;
       a.textContent = item.label;
-      /* no-mark opts out of the .content gradient-underline link styling */
-      a.className = 'no-mark';
+      a.className = 'no-mark';  /* opt out of .content link underline styling */
       a.setAttribute('data-toc-target', item.id);
       li.appendChild(a);
       ul.appendChild(li);
     });
     toc.appendChild(ul);
 
-    /* Inline mode sits at the top of the article BODY — after the post header
-       (title/meta/cover), before the first prose element. (Docked mode is
-       fixed, so its DOM position is cosmetic.) The article has no prose wrapper
-       div; headings are flat children, so anchor off the <header>. */
+    /* Inline mode renders after the header; docked mode is fixed, so its DOM
+       position is cosmetic. Headings are flat children, so anchor off <header>. */
     var article = document.querySelector('main.content article')
                || document.querySelector('article');
     var header = article && article.querySelector('header');
@@ -143,19 +174,19 @@
     spy(heads, toc);
   }
 
+  /* Current section = last heading whose top has crossed a line near the
+     viewport top, so a clicked heading landing at the top reads as current. */
   function spy(heads, toc) {
     var links = {};
     toc.querySelectorAll('a').forEach(function (a) {
       links[a.getAttribute('data-toc-target')] = a;
     });
-    /* Position-based scroll-spy: current = the last heading whose top has
-       crossed a line near the top of the viewport. Handles the jump-to case
-       (a clicked heading lands at the top and is immediately current). */
     var THRESHOLD = 140;
     var ticking = false;
     function update() {
       ticking = false;
       applyStickyTop(toc);
+      applyDescScroll(descEl());
       var current = heads[0].id;
       for (var i = 0; i < heads.length; i++) {
         var el = document.getElementById(heads[i].id);
@@ -178,6 +209,7 @@
     toc._tocCleanup = function () {
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onResize);
+      undockDescription(descEl());
     };
   }
 
