@@ -13,7 +13,7 @@ tags: [lucid-dreaming, narrative]
 💡 This is part one of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
 {:.note}
 
-II: [Waking Software Engineering](/waking-software-engineering/) III: [A Million and One Ways NOT to Share You're Trans](/im-trans/)
+II: [The Android's Dream: A Love Letter to the Bomb](/the-androids-dream/) III: [Waking Software Engineering](/waking-software-engineering/)
 
 ## Introduction
 

@@ -14,21 +14,14 @@ image:
 permalink: /the-androids-dream/
 ---
 
-#### [UPDATE.PBP](https://consolemods.org/wiki/PSP:Updating_your_Firmware_(OFW))
+💡 This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
+{:.note}
 
-### [DONE](https://korin.pink)
-
-[Ehh... Start over?](https://web.archive.org/web/20201101012732/https://kyleo.io/)
-
-Agentic work is something I briefly touched on in my [AI ethics piece](/ai-ethics-exploring-the-capabilities-and-limitations-of-chatgpt-and-dall-e-mini/). It is increasingly relevant in a tangential way today, re-starting this post-mortem in 2026. The _intended_ chronology was a "fast-follow" for "[Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming)", and is narrated as such. 
-
-Automating my `XX` years of exploring the web, studying servers, testing infrastructure, writing code, all the things... What does it mean when we're building up whole universes at the snap of a finger? Alchemical weapons have existed long before the rise of LLMs, and reproducing failed tests typically increases the likelihood of greenery when mindfully inquired about. Whether this love letter falls apart or not, that's for anyone to say.
-
-There are many references to Docker containers, infrastructure (infra), and abstract representations of concepts (read: `colour`). [There be dragons here](/assets/ephemera/wordpress-backup.conf).
+I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) III: [Waking Software Engineering](/waking-software-engineering/)
 
 ## Introduction
 
-Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become clearer organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the Easter eggs mentioned in our previous article. Some link to a very recent post (in 2026), some to articles from _two weeks ago_, but others to one from three years in the future (2023). Many of the articles have received periodic updates, including "Dreaming in Code \|\| Lucid Dreaming". 
+Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become clearer organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the `Easter eggs` mentioned in the previous article, linked above. Some link to a post in 2024, some to an article from _two weeks ago_ (the only previous post at the original time of writing), but others to one from three years in the future (2023). Many of the articles have received periodic updates, including "Dreaming in Code \|\| Lucid Dreaming". 
 
 I welcome you to dive deeper into this epic of sorts, but don't let that distract you. I only point out the fact that I often will slip in new links, COLOPHON bits, and in today's lifecycle, a complete article six years after the fact with a publish date reflecting the originally intended publish date.
 
@@ -40,7 +33,7 @@ I'd be remiss not to mention that I had prior misgivings about Docker, and these
 
 While pursuing optimization with an optimistic attitude, developers often find themselves in a task they're unable to pursue: the scope outweighs the technical debt of the project. During self-projects, we're able to fall on re-scopes, but when demand outweighs the means, a re-engagement in approach is necessary. It was at this point that I found myself with WhatCo.DE when a beacon of light appeared in the form of [Cloudron.io](https://cloudron.io). Henceforth, I found and was reminded of many projects in a similar vein [read: [Nacelle](https://techcrunch.com/2020/06/29/nacelle-raises-4-8m-for-its-headless-e-commerce-platform/), [yunohost](https://yunohost.org/#/), [NearlyFreeSpeech.NET](https://nearlyfreespeech.net)]. While some workarounds are available for the issue I ran into, the overall execution is unsustainable. This is a recurring theme: each time I revisit attempting this project, it's only after a long enough break that I even realize the stop-gap solutions I'll have on hand are, cohesively, dead on arrival.
 
-As with my coded dreams, history is required to understand the ultimate goal, which is both abstract and tangible in scope.
+As with my coded dreams, history is required to understand the ultimate goal, which is both abstract and tangible in scope. There are many references to Docker containers, infrastructure (infra), and abstract representations of concepts (read: `colour`). [There be dragons here](/assets/ephemera/wordpress-backup.conf).
 
 ### WordPress
 

@@ -9,10 +9,10 @@ categories: [life]
 tags: [career, narrative, startup]
 ---
 
-💡 This is part two of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
+💡 This is part three of a long-form series where I describe my early experiences in the tech world. Each part stands alone but is chronologically cataloged for a comprehensive narrative.  
 {:.note}
 
-I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) III: [A Million and One Ways NOT to Share You're Trans](/im-trans/)
+I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) II: [The Android's Dream: A Love Letter to the Bomb](/the-androids-dream/)
 
 🜓🝟💮💭 `code = ((design)(semantics))²`  
   
