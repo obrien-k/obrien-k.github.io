@@ -33,4 +33,4 @@ assets/          Images, icons, CSS
 docs/            Project documentation (reserved)
 ```
 
-The Hydejack PRO theme is gem-based (`jekyll-theme-hydejack`). Layouts and most includes come from the gem; only override files live in this repo.
+The Hydejack theme (free tier, `jekyll-theme-hydejack`) is gem-based. Layouts and most includes come from the gem; only override files live in this repo.
