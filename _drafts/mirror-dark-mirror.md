@@ -18,7 +18,6 @@ MIRROR
 
 - [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://youtu.be/F7AiLcvdAI4?si=ntoGf-unR4xDC2qN&t=4071)
 
-
 Non-Binary
 
 Stonemasons were the software engineers of their day. when I grew up I wanted to be Steve jobs
