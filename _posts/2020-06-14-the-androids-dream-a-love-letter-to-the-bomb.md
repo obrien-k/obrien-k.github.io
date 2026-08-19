@@ -20,6 +20,7 @@ permalink: /the-androids-dream/
 I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) III: [Waking Software Engineering](/waking-software-engineering/)
 
 [![Morpheus asking Neo if he feels like Alice](/assets/img/blog/posts/a-universe/alice.gif)](https://imsdb.com/scripts/Matrix,-The.html)
+
 I imagine, right now you feel a bit like Alice, tumbling down the rabbit hole.
 {:.figcaption}
 

@@ -1,0 +1,118 @@
+<!-- ===================================================================
+     Hash-anchor re-targeting (WS-H)
+
+     Fixes cross-page anchor links (e.g. /the-androids-dream#the-bigcommerce-
+     in-the-room) landing thousands of pixels short of their target.
+
+     Why: hy-push-state swaps in the new page and immediately calls
+     scrollIntoView({behavior:'smooth'}) on the hash target. Chrome resolves
+     the destination offset ONCE, when the animation starts — but at that
+     moment the new page's in-content images have not loaded and reserve no
+     height (markdown `![]()` emits <img> with no width/height; only
+     Hydejack's front-matter cover image gets dimensions). The document then
+     grows by ~10,000px mid-flight and the ~1.5s animation finishes at a stale
+     offset. Warm image cache hides the bug entirely, which is why it only
+     shows up on a cold visit.
+
+     Fix: take over hash scrolling. Jump instantly (native anchor behaviour —
+     the first instant scroll also cancels hy-push-state's in-flight smooth
+     animation), then keep re-pinning the target for a short settle window as
+     late-loading images/embeds reflow the document. Bails out the moment the
+     reader scrolls, so it can never fight them.
+
+     `/* */` comments ONLY inside <script>: production compress_html collapses
+     newlines, so a `//` would comment out the rest of the IIFE.
+     =================================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  var GAP = 16;          /* px of breathing room below the fixed navbar */
+  var FALLBACK_NAV = 80; /* navbar height to assume if it can't be measured */
+  var SETTLE_MS = 3000;  /* keep re-pinning for this long after a hash nav */
+  var STABLE_FRAMES = 8; /* ...or stop early once the target holds still */
+
+  var running = false;
+
+  /* Clearance matches _base.scss's `scroll-padding-top`, measured live so a
+     shorter mobile navbar doesn't get over-compensated. */
+  function clearance() {
+    var nav = document.getElementById('_navbar');
+    var h = nav ? Math.round(nav.getBoundingClientRect().height) : 0;
+    return (h || FALLBACK_NAV) + GAP;
+  }
+
+  function targetEl() {
+    var hash = location.hash;
+    if (!hash || hash.length < 2) return null;
+    var id = hash.slice(1);
+    try { id = decodeURIComponent(id); } catch (e) { /* keep raw id */ }
+    return document.getElementById(id) || document.getElementsByName(id)[0] || null;
+  }
+
+  function wantedY(el) {
+    var top = el.getBoundingClientRect().top + window.pageYOffset - clearance();
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    return Math.max(0, Math.min(Math.round(top), Math.round(max)));
+  }
+
+  function anchor() {
+    var el = targetEl();
+    if (!el || running) return;
+    running = true;
+
+    var deadline = Date.now() + SETTLE_MS;
+    var stable = 0;
+    var abort = false;
+
+    /* Any real reader input wins immediately. Our own window.scroll() calls
+       fire `scroll` but never these, so they can't self-cancel. */
+    var stop = function () { abort = true; };
+    var opts = { passive: true };
+    window.addEventListener('wheel', stop, opts);
+    window.addEventListener('touchstart', stop, opts);
+    window.addEventListener('keydown', stop, opts);
+
+    function done() {
+      running = false;
+      window.removeEventListener('wheel', stop, opts);
+      window.removeEventListener('touchstart', stop, opts);
+      window.removeEventListener('keydown', stop, opts);
+    }
+
+    function tick() {
+      if (abort || Date.now() > deadline) return done();
+
+      /* Re-resolve every frame: the element may have been replaced (SPA swap)
+         and its offset moves as images above it finally reserve height. */
+      var live = targetEl();
+      if (!live) return done();
+
+      var want = wantedY(live);
+      if (Math.abs(window.pageYOffset - want) > 1) {
+        stable = 0;
+        /* Instant, not smooth — a smooth hop would re-introduce the same
+           stale-offset race this whole file exists to fix. */
+        window.scroll(window.pageXOffset, want);
+      } else if (++stable >= STABLE_FRAMES) {
+        return done();
+      }
+      requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+  }
+
+  /* SPA navigation (the broken case), plus the same-page and cold-load cases
+     so every route through a hash gets the same navbar clearance. */
+  var ps = document.getElementById('_pushState');
+  if (ps) ps.addEventListener('hy-push-state-after', anchor);
+  window.addEventListener('hashchange', anchor);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', anchor);
+  } else {
+    anchor();
+  }
+})();
+</script>

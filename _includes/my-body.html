@@ -59,6 +59,7 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
        a11y      → WS-B "Aa" navbar toggle
        archive-filters → /archive/ category chips + tag/year selects (SPA-safe)
        toc       → WS-3 sticky sidebar TOC (scroll-spy; free-Hydejack equivalent)
+       hash-anchor → WS-H re-pins #fragment targets past late-loading reflow
      Ejectable: remove these includes + skin-system/restore.html (my-head.html).
      =================================================================== -->
 {% include skin-system/registry.html %}
@@ -67,6 +68,7 @@ Code for integrating CloudFlare's email protection with Hydejack's single page a
 {% include skin-system/a11y.html %}
 {% include skin-system/archive-filters.html %}
 {% include skin-system/toc.html %}
+{% include skin-system/hash-anchor.html %}
 
 <!-- ===================================================================
      Search (WS-G) — hand-rolled navbar button + overlay. Included after the

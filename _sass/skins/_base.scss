@@ -41,6 +41,16 @@ $pixel-shadow:  rgba(0, 0, 0, 0.25);
   -webkit-backdrop-filter: var(--panel-blur);
 }
 
+// Fragment-link clearance. #_navbar is `position: fixed` and 80px tall, so a
+// bare anchor jump parks the heading underneath it. scroll-padding-top offsets
+// every scroll-into-view the browser performs itself (fragment on load,
+// same-page #links, footnote jumps, scrollIntoView({block:'start'})). Keep in
+// sync with _includes/skin-system/hash-anchor.html, which applies the same
+// clearance to the scrolls it drives (it measures #_navbar live).
+html {
+  scroll-padding-top: 96px;
+}
+
 // Content-pane fill — a FLAT solid per skin (--pane-color), painted on the
 // pane (not the body) so it never bleeds under the sidebar. Patterned
 // --page-bg layers are gone: the light one never rendered (Sass keeps `//`
