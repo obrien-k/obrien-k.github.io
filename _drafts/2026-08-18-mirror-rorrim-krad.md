@@ -21,9 +21,11 @@ The One awakens, looks to the agents of control, and denies their attempt to kil
 
 ## Introduction
 
-We've covered the `long, long ago` quite considerably, but what of the `long ago`? This begins to get a bit hazy where I found myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of these groups. My primary objective was locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It also wasn't my original plan, merely a pivot several years in the making. Where the wool had covered my eyes before I tried marijuana, after partaking, and [later obsessing over the medical benefits](/exchanging-lies-exposing-truth); I soon found myself seeking a glimpse behind the veil.
+We've covered the `long, long ago` quite considerably, but what of the `long ago`? This begins to get a bit hazy where I found myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of these groups. My primary objective was locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It also wasn't my original plan, merely a pivot several years in the making. Where the wool had covered my eyes before I tried marijuana, after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt); I soon found myself seeking a glimpse behind the veil.
 
 My reflections on Information Technology, web design, and software architecture often make references I promise to fold-in "someday" and that day is today. There's a lot of connective tissue in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream-a-love-letter-to-the-bomb), but as with any article I try to structure them in a way where the connective tissue is only additive. Not a promise: The "I'll probably never talk about this stuff so don't ask" that people still ask about from `that article`.
+
+While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (as far as possible, e.g. I’m not going to expound on Chitaquas, or as previously mentioned). Suffice it to say, I’ve had a lot of thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and pre-requisite knowledge necessary to reach [the point](#the-point).
 
 The story begins on the #intp channel of ECNet.org, an IRC channel I had joined after taking an Myers-Briggs Type Indicator (MBTI) test and had led me there. A year later I would test as INTJ, and is consistently my type now. However, I had already made friends in #intp so frequented that channel as #intj wasn't as populated. We (hopefully) won't get too into the weeds of MBTI, but if you're interested in finding out your type [try this free test here](TBD). Some time into my first year on the server, another user, SF, shared that he was dropping out of high school to pursue game development. I quickly joined others in mocking him, but the more he stated his case, [the more I found myself agreeing with him]().
 
@@ -31,13 +33,11 @@ Since, I've considered many possibilities, the most likely of which is his being
 
 At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly Photoshop, but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school months later.
 
-# MIRROR
+## MIRROR
 
 > What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too.
 
 - [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://youtu.be/F7AiLcvdAI4?si=ntoGf-unR4xDC2qN&t=4071)
-
-Non-Binary
 
 Stonemasons were the software engineers of their day.
 
@@ -56,7 +56,7 @@ Who's in your Pokemon party? Who's in your box?
 
 I typically rotate out my starter
 
-## Kai's Reclassified High School Dropout Guide
+### Kai's Reclassified High School Dropout Guide
 
 To be clear, I do not recommend any fifteen-year-olds drop out of school or try marijuana. There are studies that show how it hinders brain growth in adolescents, the same way that caffiene has shown to stunt physical growth. As mentioned in [Waking Software Engineering](waking-software-engineering), my path is untame and likely unsuitable for many. There are many points to be made though in regards to how society views each of these topics today, and I bore marijuana legalization to the core as a teenager.
 
@@ -68,7 +68,7 @@ My classes where the entire hour was a long joke, compared with my AP classes wh
 
 Now, this wasn't the best insight in hindsight, but I figured I was already networking online. I had a LinkedIn and was friends with some important technorati, I bet I could continue to leverage that network into a job, and later found that wasn't the case.
 
-## [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
+### [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
 
 Like many teenagers, I had become acutely aware of how different my politics were from my parents, and became enthralled with [Barack Obama](
 https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this in any proximity, but I received the signal I wanted. 
@@ -86,13 +86,13 @@ My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v
 "I'm telling you [...], you won't have to." - Morpheus
 {:.figcaption}
 
-## Street Smarts vs. Book Smarts
+### Street Smarts vs. Book Smarts
 
 I hear this comparison a lot and  I can wholeheartedly agree. However, one's temperament, identity, and purpose can heavily weigh on each necessity. I read _a lot_ during that first initial few years and compounded my knowledge of a variation of many topics that had always interested me. This compacts into a compounded maladaptive coping mechanism, **but** I was able to learn this as a detriment of mine needing addressing because of my forged path. The meaning behind words has become embattled within many spheres of society and echoes the sentiments of Hermann Melville's _Moby Dick_.
 
-### [Common Sense](https://oll.libertyfund.org/pages/1776-paine-common-sense-pamphlet)
+#### [Common Sense](https://oll.libertyfund.org/pages/1776-paine-common-sense-pamphlet)
 
-#### [Qualia](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality)
+##### [Qualia](https://en.wikipedia.org/wiki/Pirsig%27s_Metaphysics_of_Quality)
 
 A degree in philosophy is fairly worthless for a software engineer, or one such person seeking employment in the software engineering space. A wannabe amateur philosopher found solace in unexpected places, primarily Thoreau, Emerson, and Kierkegaard. Exististenialism is a topic I've considered writing on, but feels too well-tread of ground to belabour further. Living online means exactly that, every thought a tweet, every photo on flickr. Exact locations may one day be delivered upon further, but looking toward the future is my primary intent. Describing the quality of education I received in comparison with that of the typical American would only befit a branch never stepped foot upon. Reaching the height of the tree from here is within reach, but only from the vantage point of _this tree_.
 
@@ -106,7 +106,7 @@ Derived of an ergot alkaloid, Albert Hoffman synthesized in 1938, on April 19th:
 
 Acid speaks of its own volition. I believe that the mind expanding effects of specifically acid (others swear by "magic mushrooms" for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic (semi-Buddhist) before my first acid trip at 21 and believed in a higher power after.
 
-## Let's Talk About Chicks, Man.
+### Let's Talk About Chicks, Man.
 
 This section has literally nothing to do with chicks, or men. I'm a fan of misnomers and while calling it out, I'll likely refrain from using them, as that removes a lot of the fun, but if you haven't become acutely aware of this by now I often use misnomers in project titles, etc.
 
@@ -121,7 +121,7 @@ And my intention with my next article was to biograph someone close to me. I fel
 The One handles Agent Smith with ease
 {:.figcaption}
 
-### Motivation
+#### Motivation
 
 One topic present on mind lately have been mine, communal, and societal motivations behind actions and words. [Words have meaning](https://medium.com/whither-news/words-matter-damnit-fc883733a729). Whether someone's intent is malicious or not, neither necessitate breaking boundaries. Facebook (now Meta) has a now-famous motto, ["Move fast and break things"](https://en.wikipedia.org/wiki/Meta_Platforms#History). I took a similar approach to the workplace where I intended to "wreck shop", whatever that meant in that industry. The first of which was a tire and truck auto shop, hence my verbiage. Now, some may take that as literally knocking down vehicle bays, ripping up semi-trucks tires, what have you. Instead, this means to take whatever normal behaviors I observed, typically accepted system interactivity, and turn the machine on its head. I would sweat my ass off with a goddamn smile on my face, and I did. This was the first time I took a cold shower, and ho, it was worth.
 
@@ -129,7 +129,7 @@ When writing, I often have a specific audience in mind, save my short-form writi
 
 In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I did find one thing in common with him, but it was only our love of walks.
 
-## Heroes
+### Heroes
 
 Yesterday, Hayden Panettiere took her own life by way of drug overdose, and this feels like another echo of Chester Bennington's death ten years ago. I (obscurely) referenced this in `that article`, but as with many things I find more solace in a quote from media. "Either you die a hero, or you live long enough to see yourself become the villain,". We elevate many to the pop culture stratosphere to deconstruct them at their moments of weakness, a detrimental cycle that alienates our fellow people, and do our damndest to become just like them.
 
@@ -137,13 +137,11 @@ Today, like with many of these thoughtlines and intersections of philosophy, des
 
 It's not to late to save yourself before you swim yourself, and it's not too late to restructure your personal social hierarchy to give credence to those that give you the same. something something save yourself kid
 
-# RORRIM KRAD
+## RORRIM KRAD
 
 > Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing.
 
-- [the movie?](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
-
-Transgender
+- "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
 
 <!-- WILL IT FIT?
 
@@ -155,23 +153,19 @@ Firstly, this isn't anything novel. In fact, [its documented widely](https://sci
 
 I began Kyle O IO with the intention of advocating for FOSS/OSS, and as much as it pained readers I shoe-horned a brief introduction to Linux in the first article which doubled its length, but also filled out the symmetry to the first half. It was the Lucid core to [Lucid Dreaming in Code](/dreaming-in-code-lucid-dreaming). Where Linux was my entrypoint, Gazelle was the first open-source utility that I fell in love with.
 
-It's odd to describe oneself as "falling in love" with software, but in the rare circumstance it happens, you know immediately. While this post will likely be the blog's most lengthy, it will "book-end" the conversations I opened (as far as possible, e.g. I'm not going to expound on Chitaquas) in that first post. Suffice it to say, I've had a lot of thoughts on these topics for a while and summarizing them has been tasking, but I'm in a place where I feel I have the resources necessary (largely in part due to a study I found and reference gratuitously below) to reach `the point`.
+### The Point
 
-## The Point
+It's odd to describe oneself as "falling in love" with software, but in the rare circumstance it happens, you know immediately.
 
 It's gettin live in here
 
 <!-- TODO: missing image (placeholder [img:./stellar/.jpg]) -->
 
-[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/)
-
-https://fsymbols.com/generators/zalgo/
-https://codepen.io/thunder33345/pen/oXXoXG
-https://hipsum.co
+[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
 
 ![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
 
-## [what-refuge](https://gist.github.com/jake-g/401804140cc036b4a8105b144bdd0f4b)
+### [what-refuge](https://gist.github.com/jake-g/401804140cc036b4a8105b144bdd0f4b)
 
 > Private trackers, while closed to the general public, are "internally open" systems in that their content is exhaustive and available to any valid user. Streaming services, alternately, while open to the general public, are closed in various ways to several publics: new releases are not available to free customers, certain releases are only available to users in specific geographic locales due to licensing restrictions, and the system is just not generally "hackable" like private trackers are. Moving forward, private tracker users should be cautiously optimistic about the paradigms of the two approaches to be bridged in ways that are socially useful.
 
@@ -186,7 +180,7 @@ https://hipsum.co
 
 > [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
 
-## Prepare for the Interview
+### Prepare for the Interview
 
 > You are responsible for knowing all of the information on this site.
 >
