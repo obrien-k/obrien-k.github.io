@@ -15,6 +15,7 @@ permalink: /mirror-rorrim-krad/
 ---
 
 [![The One awakens, looks to the agents of control, and denies their attempt to kill](/assets/img/blog/posts/mirror-rorrim-krad/neo.gif)](https://archive.org/details/exploringmatrixv00habe)
+
 The One awakens, looks to the agents of control, and denies their attempt to kill.
 {:.figcaption}
 
@@ -28,7 +29,7 @@ The story begins on the #intp channel of ECNet.org, an IRC channel I had joined 
 
 Since, I've considered many possibilities, the most likely of which is his being indocrinated by the book he shared with me, "The Teenage Liberation Handbook" by Grace Llewellyn. A book that trains teenagers on coercing their parents into allowing the reader to drop out of school and begin "unschooling". This topic recently came into vogue and raises the same problems I ran into, which is the type of parent to resort to this kind of schooling is likely going to use "grocery shopping" as a math lesson. Sure, the concept is there, but based on reality these parents aren't even teaching their kids how sales tax works. I'm unsure of SF's results, as we lost touch a few years after he had dropped out. [This was his GitHub page](https://github.com/sf17k/) and "The Road" was entered into Ludum Dare 4, which I played and voted on for him.
 
-At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly Photoshop, but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school weeks later.
+At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly Photoshop, but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school months later.
 
 # MIRROR
 
@@ -38,7 +39,7 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 Non-Binary
 
-Stonemasons were the software engineers of their day. when I grew up I wanted to be Steve jobs
+Stonemasons were the software engineers of their day.
 
 In Pokemon's first release, there were very limited genders to the Pokemon, some had a male/female variant (Nidoran) which branched into two different variations of those Pokemon and yes if you're not familiar Pokemon is a Japanese video-game originally titled ポケットモンスター that caused what later would be called Pokemania, something I feel more-or-less a byproduct of today. Coding concepts? Instantly start deriding in Pokemon terms. You have a grammatical question about prose? Well, if it were in Pokemon.. First website I ever visted? Pokemon.com, you bet. If I'm able to retain less than 100 "Pokemon" uses in this article, I deserve a damn cookie. Again, to the point:
 
@@ -146,8 +147,64 @@ Transgender
 
 <!-- WILL IT FIT?
 
-I think all the gender stuff is bs and trying to bifrucate someone between trans/non-binary.. I dunno, it doesn't fit me to not be both, where I feel physically like I'm missing parts now that didn't feel that way when I had been on HRT for a few months, but my mental model is from not androgeny but closer to non-binary where.. I don't see why gender as a construct has to exist. Sure it's important to know biological markers etc for sex but gender is just the "pink v blue" "dolls v trucks" "quiet v loud" etc that society impresses upon people as they mature
+I think all the gender stuff is bs and trying to bifrucate someone between trans/non-binary.. I dunno, it doesn't fit me to not be both, where I feel physically like I'm missing parts now that didn't feel that way when I had been on HRT for a few months, but my mental model is from not androgeny but closer to non-binary where.. I don't see why gender as a construct has to exist. Sure it's important to know biological markers etc for sex but gender is just the "pink v blue" "dolls v trucks" "quiet v loud" etc that society impresses upon people as they mature  -->
+
+Firstly, this isn't anything novel. In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purists' paradise, a technosocial pheonomenon, only a Whatter would understand.
+
+"Only a Whatter would understand," might be something SWIM would describe their experience with another "Whatter," their self-described nomenclature for themselves. And in those conversations, they might guide each on their musical journeys. I wouldn't know, I was only a casual bystander and far too young to understand how essential What, or What.CD, would become to `The Scene`. I'm not interested in discussing `Warez` or `The Scene`, but there's a large pool of content related to that which can be found in the COLOPHON.
+
+I began Kyle O IO with the intention of advocating for FOSS/OSS, and as much as it pained readers I shoe-horned a brief introduction to Linux in the first article which doubled its length, but also filled out the symmetry to the first half. It was the Lucid core to [Lucid Dreaming in Code](/dreaming-in-code-lucid-dreaming). Where Linux was my entrypoint, Gazelle was the first open-source utility that I fell in love with.
+
+It's odd to describe oneself as "falling in love" with software, but in the rare circumstance it happens, you know immediately. While this post will likely be the blog's most lengthy, it will "book-end" the conversations I opened (as far as possible, e.g. I'm not going to expound on Chitaquas) in that first post. Suffice it to say, I've had a lot of thoughts on these topics for a while and summarizing them has been tasking, but I'm in a place where I feel I have the resources necessary (largely in part due to a study I found and reference gratuitously below) to reach `the point`.
+
+## The Point
+
+It's gettin live in here
+
+<!-- TODO: missing image (placeholder [img:./stellar/.jpg]) -->
+
+[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/)
+
+https://fsymbols.com/generators/zalgo/
+https://codepen.io/thunder33345/pen/oXXoXG
+https://hipsum.co
+
+![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
+
+## [what-refuge](https://gist.github.com/jake-g/401804140cc036b4a8105b144bdd0f4b)
+
+> Private trackers, while closed to the general public, are "internally open" systems in that their content is exhaustive and available to any valid user. Streaming services, alternately, while open to the general public, are closed in various ways to several publics: new releases are not available to free customers, certain releases are only available to users in specific geographic locales due to licensing restrictions, and the system is just not generally "hackable" like private trackers are. Moving forward, private tracker users should be cautiously optimistic about the paradigms of the two approaches to be bridged in ways that are socially useful.
+
+> The platform on which What.CD operated was an open source content management system called Gazelle. Gazelle began development when the site was first launched in October of 2007 and was considered to have reached a level of maturity indicated by its documentation, bug fixes, and coding standardization. It was maintained by What.CD administrators, and is used by many other private trackers. Its architecture also follows many of the conventions and logics stemming from What.CD, including torrent and user organization, facilitating forums, and creating user interfaces. For example, the following rules were taken from Project Gazelle's "Coding Standards:"
+> - All button labels shall use sentence case.
+> - All table headings shall use sentence case.
+> - All text-based buttons shall use the [`brackets` CSS class](https://github.com/WhatCD/Gazelle/blob/63b337026d49b5cf63ce4be20fdabdc880112fa3/docs/CodingStandards.txt#L167).
+
+— *pp. 52*
+
+[Archive.org/whatinterviewprep.com](https://web.archive.org/web/20150315071742/https://www.whatinterviewprep.com/)
+
+> [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
+
+## Prepare for the Interview
+
+> You are responsible for knowing all of the information on this site.
+>
+> In order to receive an invite to What.CD, you must pass our interview. Though every interview is different, the information you must learn in order to pass each interview is the same:
+>
+> 1. **Analog and Digital Music Sources** — What's the difference between vinyl and CDs?
+> 2. **Audio Formats** — What are the different types of music formats, and which are allowed on What.CD?
+> 3. **MP3** — Everything you need to know about LAME and LAME Presets.
+> 4. **Transcodes** — How you can figure out if a transcode is good or bad.
+> 5. **Torrenting** — BitTorrent vocabulary, ratio, and more!
+> 6. **Spectral Analysis** — The best way to determine the bitrate of an unknown music file. (Pretty pictures!)
+> 7. **CD Burning and CD Ripping** — How to make the best possible CD rip.
+> 8. **What.CD Rules** — Break them and perish.
+>
+> Luckily, everything you need to know is right on this site! Make sure you carefully read through all of the pages under the Knowledge menu before you even think of queuing in #what.cd-invites. Take notes if you wish, however, you may **NOT** use these notes while taking an interview.
+
+— *[whatinterviewprep.com/prepare-for-the-interview](https://web.archive.org/web/20150321040459/https://www.whatinterviewprep.com/prepare-for-the-interview/)*
 
 ## Conclusion
 
-hahafkmeamirite.gif -->
+hahafkmeamirite.gif
