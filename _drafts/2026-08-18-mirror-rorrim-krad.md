@@ -14,9 +14,8 @@ image:
 permalink: /mirror-rorrim-krad/
 ---
 
-[![Morpheus asking Neo if he feels like Alice](/assets/img/blog/posts/mirror-rorrim-krad/neo.gif)](https://archive.org/details/exploringmatrixv00habe)
-
-
+[![The One awakens, looks to the agents of control, and denies their attempt to kill](/assets/img/blog/posts/mirror-rorrim-krad/neo.gif)](https://archive.org/details/exploringmatrixv00habe)
+The One awakens, looks to the agents of control, and denies their attempt to kill.
 {:.figcaption}
 
 ## Introduction
@@ -70,7 +69,8 @@ Now, this wasn't the best insight in hindsight, but I figured I was already netw
 
 ## [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
 
-Like many teenagers, I had become acutely aware of how different my politics were from my parents, and became enthralled with Barack Obama. His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this in any proximity, but I received the signal I wanted. 
+Like many teenagers, I had become acutely aware of how different my politics were from my parents, and became enthralled with [Barack Obama](
+https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this in any proximity, but I received the signal I wanted. 
 
 It was around this same time, as previously referenced "I began to live on the internet", where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I bore this new title with confidence, "High School Dropout" would be a point of pride, where years later I'd come to regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance of any patriot counterpart in America. We had no reason to fear Big Brother, most of that stuff was buried behind national security threats, and the thread which we weave our basket becomes tantilized by the comfort of our own breadth.
 
@@ -79,9 +79,10 @@ Yes we can, could mean a myriad of things in 2008 versus 2028. The beads on our 
 My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v=NRzDsxUOm4M).
 
 
-[![Morpheus asking Neo if he feels like Alice](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)
+[![The One can do more than dodge bullets](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)
 
-
+"Are you telling me I can dodge bullets?" - Neo
+"I'm telling you [...], you won't have to." - Morpheus
 {:.figcaption}
 
 ## Street Smarts vs. Book Smarts
@@ -114,9 +115,9 @@ After finishing `that article` (as I affectionately refer to it), I knew any fol
 
 And my intention with my next article was to biograph someone close to me. I felt with `that article`, that I had book-ended the first cycle of whatever this blog is, and that it had grown too myopic. Too many threads woven together on too large of a tapestry. In fact, we've come so far from my original plan that I'm 5,391 miles from where I advised I'd be in `that article`. Life finds a way though and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter becomes clear. It wasn't clear to me a year ago, nor was it last week. I only had this vague target I constantly refer to as "Dropout Days", which I refer to when referencing my time between the ages 15-19, but truly it was my first attempt at exploring the world through the eyes of a journalist or photojournalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time.
 
-[![Morpheus asking Neo if he feels like Alice](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
+[![The One handles Agent Smith with ease](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
 
-
+The One handles Agent Smith with ease
 {:.figcaption}
 
 ### Motivation
@@ -135,7 +136,7 @@ Today, like with many of these thoughtlines and intersections of philosophy, des
 
 It's not to late to save yourself before you swim yourself, and it's not too late to restructure your personal social hierarchy to give credence to those that give you the same. something something save yourself kid
 
-# DARK MIRROR
+# RORRIM KRAD
 
 > Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing.
 
