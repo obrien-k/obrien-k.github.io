@@ -165,7 +165,13 @@ In 2018 or so, Matt Chaffin said to me "but AI won't be able to replace us, we g
 
 At this point though, if I'm already on a list for that, why not complete this diatribe six years in the making style?
 
+I know why we gave up and sadly it's convenience, "[it's easier to run, replacing this pain with something numb](https://linkinpedia.com/wiki/Easier_To_Run),". It's easier to say "I have nothing to hide" than to see the nuance behind what's being asked of you. It's easier to assume you'll never be an eney of the state because why would you? Facists attack the marginalized groups first for a reason. [The reason should be self-explanatory](https://encyclopedia.ushmm.org/content/en/article/martin-niemoeller-first-they-came-for-the-socialists). I wonder if Anne Frank's rescuers were concerned with having nothing to hide before 1943. We'll never know that, but I do know futurisitic dystopian novels quite well. I love the fact that I read 1984 several times before 10th grade Pre-AP English, skimmed Anthem, and received higher marks on my Anthem test. As much as I love the idea of Objectivism, I disliked Anthem, but liked Atlas Shrugged (the half I made it through).
 
+I'm doing that tangential ranting thing again.
+
+Having Nero for an emperor had to be so infuriatingly exhausting. Man in charge of the state clowning his way through life and as the state burns, [he throws a party](https://www.britishmuseum.org/blog/10-questions-about-emperor-nero-and-some-curious-answers).
+
+One direction I considered taking this in was Search Engine Optimization (SEO) and how penetratingly tracked an individual is. Anyone can find these answers easily with a quick search. I would recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
 <!-- WILL IT FIT?
 
 I think all the gender stuff is bs and trying to bifrucate someone between trans/non-binary.. I dunno, it doesn't fit me to not be both, where I feel physically like I'm missing parts now that didn't feel that way when I had been on HRT for a few months, but my mental model is from not androgeny but closer to non-binary where.. I don't see why gender as a construct has to exist. Sure it's important to know biological markers etc for sex but gender is just the "pink v blue" "dolls v trucks" "quiet v loud" etc that society impresses upon people as they mature  -->
