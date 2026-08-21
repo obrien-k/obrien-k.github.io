@@ -20,13 +20,14 @@ permalink: /the-androids-dream/
 I: [Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming/) III: [Waking Software Engineering](/waking-software-engineering/)
 
 [![Morpheus asking Neo if he feels like Alice](/assets/img/blog/posts/a-universe/alice.gif)](https://imsdb.com/scripts/Matrix,-The.html)
+{: style="text-align: center;"}
 
 I imagine, right now you feel a bit like Alice, tumbling down the rabbit hole.
 {:.figcaption}
 
 ## Introduction
 
-Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become clearer organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the `Easter eggs` mentioned in the previous article, linked above. Some link to a post in 2024, some to an article from _two weeks ago_ (the only previous post at the original time of writing), but others to one from three years in the future (2023). Many of the articles have received periodic updates, including "Dreaming in Code \|\| Lucid Dreaming". 
+Where most websites might include an "Introductory" post [by this point](https://web.archive.org/web/20201101031004/https://whatco.de/), I think the true meaning behind this site will only become clearer organically. WhatCo.DE is [my latest "chase" on the internet](/waking-software-engineering). Our citations today fully embrace the `Easter eggs` mentioned in the previous article, linked above. Some link to a post in 2024, some to an article from _two weeks ago_ (the only previous post at the original time of writing), but others to one from three years in the future (2023). Many of the articles have received periodic updates, including "[Dreaming in Code \|\| Lucid Dreaming](/dreaming-in-code-lucid-dreaming)". 
 
 I welcome you to dive deeper into this epic of sorts, but don't let that distract you. I only point out the fact that I often will slip in new links, COLOPHON bits, and in today's lifecycle, a complete article six years after the fact with a publish date reflecting the originally intended publish date.
 
@@ -55,7 +56,9 @@ Pokémon as a metaphorical device isn't the easiest digestion tool, but [that ha
 In 1994, when [Pokémon Red and Green](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Red_and_Green_Versions) were first released in Japan from [GAME FREAK](https://bulbapedia.bulbagarden.net/wiki/Game_Freak), licensed by Nintendo for the Nintendo Game Boy (DMG-001), it included a PokéDex. Now, the PokéDex is "a hi-tech encyclopedia" of Pokémon knowledge, and we don't have to get into the minutiae of Pokémon to dissect this specific piece of information from the original release. When given this encyclopedia, the visual representation, the "sprite" in video game terms, is a book:
 
 [![Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk](/assets/img/blog/posts/a-universe/pokemon-red-green-and-blue-versions-pallet-town-professor-oaks-lab-game-boy-map.png)](https://vgmaps.de/maps/view?m=19871)
-Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk
+{: style="text-align: center;"}
+
+Professor Oak's Lab, 2 PokéDexes in the top-left, on the desk.
 {:.figcaption}
 
 Within three years, when the Pokémon anime first aired on April 1, 1997, the PokéDex wasn't represented as a book. [It was a flashy device with a personality named Dexter](https://www.youtube.com/watch?v=9HJ5gthNfqU). This is belaboring the point a bit, but this thought occurred to me on a walk this morning when I connected how quickly the turnaround time there was on the societal understanding of technology where mobile phones weren't common-place. Then it's not as [far-fetche`d](https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)) to believe you'd have the encyclopedia of your world in your pocket three years later.
@@ -71,6 +74,7 @@ However, this was at my mother's great behest. Evolution? Evilution. Pokémon do
 There's no way in hell a world with PokéDexes and network-based computation would give a child a chance of surviving, much less thriving, without knowledge of it. Glory to god or not, automobiles replaced horses, and the internet is replacing telephones in real time. I can't imagine a world in which we never got the internet or a PC, but this wouldn't occur until a decade later. In my spelunking for this article, I found the first `typ0`, a zine from Orphic. This thread was posted in late 2007, and included a post indicating my family finally had a dedicated, non-free-trial/dial-up internet connection. In a later post on Flickr, my tech setup had become my entire focus.
 
 [![Flickr user xerocint](https://live.staticflickr.com/2471/3755528432_d73946a514_b.jpg)](https://www.flickr.com/photos/xerocint/3755528432/)
+
 Coolio carpet, Space theme calendar, trash can, Rhodes King V guitar, an amp, mattress, pillow, desk, computer setup, Wall-E robot, Robosapien, chair, Maxell poster, PS3, charging station, etc.
 {:.figcaption}
 
@@ -79,6 +83,8 @@ If we zoom in on the top-left, where shelves display boxes of software like trop
 ##### Photoshop 
 
 [![Photoshop CS2](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)](/assets/img/blog/posts/a-universe/photoshop-cs2-shelf.png)
+{: style="text-align: center;"}
+
 Photoshop CS2 != Photoshop 7.0.
 {:.figcaption}
 
@@ -91,6 +97,7 @@ Now we call everything "apps", but then it was "website". You didn't trade a Fac
 WordPress' general design guidance is the hallmark of its success. Do you need a Blog-style format website (especially in ca. 2005)? Do you want to make minor (or major) changes with plugins? From my best recollection, I wanted to use [BuddyPress](https://wordpress.org/plugins/buddypress/) to connect to last.fm and MySpace. How little a ~14-year-old knows about how the internet works. These were [The Uber Googlers](https://web.archive.org/web/20071103072735/http://theubergooglers.com/) days (ca. 2007-8), so I probably wanted to connect WordPress to the phpBB forum in a way that wasn't supported.
 
 <video src="/assets/img/blog/posts/a-universe/colour-theory-a-certain-hue-and-saturation-of-all-colors.mp4" controls loop muted playsinline width="100%"></video>
+
 *a certain hue and saturation of all colors*
 {:.figcaption}
 
@@ -113,6 +120,7 @@ WordPress' general design guidance is the hallmark of its success. Do you need a
 - Julian
 
 [![Just keep swimming](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)
+{: style="text-align: center;"}
 
 In 2016, while living in Denver, Colorado, my partner, her best friend, and I went white-water rafting. I'm unsure of how similar others' experiences were to mine, and it was my first. Our raft guide's name was Julian, assuming that's how it was spelled. Julian was radically canderous, and wasn't averse to sharing how late in the season it was, nor how exhausted he was of guiding rafts on white-water.
 
@@ -181,6 +189,8 @@ I swam here by attempting to implement phpBB on the WordPress instance and conti
 Back to the users, and [one user in particular I know well](https://www.youtube.com/watch?v=7QvBMU2oRm4):
 
 [![Topher's avatar](/assets/img/blog/posts/a-universe/topher-avatar.gif)](https://heropress.com)
+{: style="text-align: center;"}
+
 *Topher's well-known avatar across the net.*
 {:.figcaption}
 
@@ -240,12 +250,13 @@ For example, I hope [wuu.bi](https://web.archive.org/web/20180811200251/https://
 What the idea comes down to is enabling that first degree of a touchstone; while in no way can I enable a former self, I look forward to a future where such a reality could be launched with the touch of a button. It's unrealistic to attempt any possible futures that might've brought me here, but I do imagine a time where a user's first interaction with the web is one of their own making.
 
 This might start as an application by their own hand and code, albeit completely rail-roaded. What excites me the most about a concept like this is that it would evolve beyond software, through the varied nature of this course, and enter a realm I thought impossible: technology that grows.
-B
-bit rots the same way any muscle atrophies.
+
+Bit rots the same way any muscle atrophies.
 
 
 ## 𝕗̶̴̶̸̢̞̬͕̘̬̝̥͕͎͈͍̗̭͍̬͔̬ͫ̔̿́͗̉͆͛ͥ̀̀ͪ̾ͯ̏͞͞͡҉̶̜͉̟͎͇͛͆̀͜͟҉̾҉̷𝕜̵̸̴̷̸̸̨̧͖̥̰̤͕͇̹̫̣̺̘̫̩̝̬͖̻̰͙͔̫̩̩͇̻͍͔̞͉̞̫̠̥ͭ͌̄̓͗̐̑͗ͦ̂͒̾ͮͮͫͩ̀̋̓̍ͭͣͧ̃̍̄ͪͭ͐ͭ͗ͩ̃̃̂ͤ̒̾ͣͫ̍́͑ͬ͘͘̚̚̚͜͟͢͡͠͡͝𝕟̡̛̛̛̺͇̘̱̱̱͎̻̹̭ͤ̎̐̀́͌͗̓͒͑̌̚͘̕̚͟͞͠͡҉̨̛͔̥͉̖̲͙̹̝̳̪̜̖̹̟̊̌͋̊̊̓͛̋ͮ͂ͪ͗͂̋͒̆͜͢͜͡ͅ҉̡̧̘͉͍̲̺͚͙̩̠͉̻̻̬̥̤̻͚̾̊̈́ͭ́ͧͩ̅̉̆̿ͪ̿̌̈̅ͨ͛̎̚ͅℂ̷̶̛̰̩̘̻͔̰̖͈͍̪̙̳̻͓͎̖̙̻͐̆̎̃̐͑̉ͣ̄͒̄̑ͤ̎́̔͢͜͠͞ͅ҉̛͍̠̣̪̯̞̟̣̥͓̘ͧ̋͂ͤ́ͥͭ̓ͭ́ͧ̇ͧ̎ͨ͘̚̚͞͡͡ͅ҉̧̳̖̭͚̥̗̯͉͚̋̓͒ͧͣ͗͛͟͝͠𝕆̷̶̷̨̛͍̺͈̝̙̼̤̞̳͚͖̬̝̳̦͕̮͎͇͔̿̉ͧͮ̅͑̅͋̏ͥ͌̒͛̐̋̓ͨͪ͐̌̈ͮ́͆̌̌̅̕͜͟͟͝𝕃̝ͬ𝕆ℙℍ𝕆ℕ𝕓𝕚̷̸̷̢̡̢̤̯̩̞͎͙̮̹̟̞̪̗̠̯͓̤̠͕̰͚͔͍̝̖̽́͒̿͒̉ͤ̊̅ͨͥ̏͐ͥͪ͛ͨ̄̀̅ͮ͞͠͡𝕙̷̸̷̸̶̧̡̡̢̢̡̛̛̱͍̣̤̜̲̱̙̱͉̣̮̰̟͚͔̺̮̩̣̳̫̺̞̰̘̺̥͚̤ͭ̆̈́̀̀̇̿ͪ̐̓͊̎̏ͧ̓͆̈̑̎̏̈̓ͨ͋̂̄͋͊ͩ̓̄̅͒̊̅ͮ̿ͦ̿̂̿́͑̕͟͟͢͠͞͝͞ͅͅ
 [![The Wizard of Oz's Dorothy enters a dream...](/assets/img/blog/posts/a-universe/kansas.gif)](https://ok.ru/video/239366376143)
+{: style="text-align: center;"}
 
 It means buckle your seatbelt, Dorothy. Cause Kansas is going bye-bye.
 {:.figcaption}

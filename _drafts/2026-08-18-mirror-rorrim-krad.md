@@ -15,6 +15,7 @@ permalink: /mirror-rorrim-krad/
 ---
 
 [![The One awakens, looks to the agents of control, and denies their attempt to kill](/assets/img/blog/posts/mirror-rorrim-krad/neo.gif)](https://archive.org/details/exploringmatrixv00habe)
+{: style="text-align: center;"}
 
 The One awakens, looks to the agents of control, and denies their attempt to kill.
 {:.figcaption}
@@ -81,6 +82,7 @@ My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v
 
 
 [![The One can do more than dodge bullets](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)
+{: style="text-align: center;"}
 
 "Are you telling me I can dodge bullets?" - Neo
 "I'm telling you [...], you won't have to." - Morpheus
@@ -117,6 +119,7 @@ After finishing `that article` (as I affectionately refer to it), I knew any fol
 And my intention with my next article was to biograph someone close to me. I felt with `that article`, that I had book-ended the first cycle of whatever this blog is, and that it had grown too myopic. Too many threads woven together on too large of a tapestry. In fact, we've come so far from my original plan that I'm 5,391 miles from where I advised I'd be in `that article`. Life finds a way though and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter becomes clear. It wasn't clear to me a year ago, nor was it last week. I only had this vague target I constantly refer to as "Dropout Days", which I refer to when referencing my time between the ages 15-19, but truly it was my first attempt at exploring the world through the eyes of a journalist or photojournalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time.
 
 [![The One handles Agent Smith with ease](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
+{: style="text-align: center;"}
 
 The One handles Agent Smith with ease
 {:.figcaption}
@@ -143,11 +146,31 @@ It's not to late to save yourself before you swim yourself, and it's not too lat
 
 - "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
 
+That was the easy part and [I'd like to apologize to everyone in advance for this](https://getyarn.io/yarn-clip/84588835-855e-498d-a5ad-7b9b254ee796); I am going to be cagey and speaking in double speak, I mean meme speak, I mean code switching. I think it's fucked up that I have to write this in a way that won't keep me up at night in terms of [OpSec](https://medium.com/@mohiitlamba/how-investigative-journalists-actually-use-the-dark-web-367a8184343e). This, unfortunately, has been the state of the machine for a while, but I've kept these thoughts to myself to avoid being put on any [lists](https://www.propublica.org/article/heres-one-way-to-land-on-the-nsas-watch-list). And, summarily, is a huge part of the problem.
+
+Why is today's society so readily willing to sacrifice any shred of privacy for incalculably less value? Have our collective concerns and senses of liberty been so heavily eroded that we can't see the corporitization of our own lives?
+
+This coming from the person who hands Google and Apple all of their data with a grin on their face is a bit schadenfreude, but hear me out: my data is incredibly tainted and noisy. I can't recall my exact reasoning for sharing all this data as a teenager (and championing the idea to friends and family), but after 2014 I made damn sure it'd take a lot of sifting, account hopping, and migraine-induscing research to connect any of the dots in my life.
+
+Today, that doesn't matter. Generative AI has a lot of faults, but it can certainly gobble data. But when your government isn't only asking what you can do for it, but stipulating upon you that you relinquish certain (if not all) unalienable rights it calls into question:
+
+[What have _you_ done for _me_ lately?](https://bleacherreport.com/articles/272429-the-nfl-what-have-you-done-for-me-lately)
+{: style="text-align: center;"}
+
+Writing _any_ follow-up to `that article` has resulted in indictments of people who my deserve it more or less than others, but once I hit "Publish", I regret the decision and take it down. As much as it pissed me off about how DISH handled closing down their Alvin call center in 2016, it wasn't Darren Swanson's fault, no matter how much of an asshat he looked. It's only capitalism at work. Customer Service is a cost center in every industry.
+
+In 2018 or so, Matt Chaffin said to me "but AI won't be able to replace us, we give everything a human touch," (paraphrasing) and I made some hedging remark like "I'm not so sure" while I wanted to grip him by the shoulders and say "brother, we will be the _first_ to go,". I don't think this was cognitive dissonance, or stupidity. It is the same reaction I had when generative AI began proliferating in software. "Sucks to suck, but I'll be OK,". Such was not the case.
+
+[In all likelihood, I _am_ on a list now, as previously accepted consequence of writing, typing, editing, and publishing `that article`](https://en.wikipedia.org/wiki/Persecution_of_transgender_people_under_the_second_Trump_administration).
+
+At this point though, if I'm already on a list for that, why not complete this diatribe six years in the making style?
+
+
 <!-- WILL IT FIT?
 
 I think all the gender stuff is bs and trying to bifrucate someone between trans/non-binary.. I dunno, it doesn't fit me to not be both, where I feel physically like I'm missing parts now that didn't feel that way when I had been on HRT for a few months, but my mental model is from not androgeny but closer to non-binary where.. I don't see why gender as a construct has to exist. Sure it's important to know biological markers etc for sex but gender is just the "pink v blue" "dolls v trucks" "quiet v loud" etc that society impresses upon people as they mature  -->
 
-Firstly, this isn't anything novel. In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purists' paradise, a technosocial pheonomenon, only a Whatter would understand.
+This isn't anything novel. In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purists' paradise, a technosocial pheonomenon, only a Whatter would understand.
 
 "Only a Whatter would understand," might be something SWIM would describe their experience with another "Whatter," their self-described nomenclature for themselves. And in those conversations, they might guide each on their musical journeys. I wouldn't know, I was only a casual bystander and far too young to understand how essential What, or What.CD, would become to `The Scene`. I'm not interested in discussing `Warez` or `The Scene`, but there's a large pool of content related to that which can be found in the COLOPHON.
 
