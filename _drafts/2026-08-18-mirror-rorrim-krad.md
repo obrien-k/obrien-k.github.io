@@ -42,21 +42,6 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 Stonemasons were the software engineers of their day.
 
-In Pokemon's first release, there were very limited genders to the Pokemon, some had a male/female variant (Nidoran) which branched into two different variations of those Pokemon and yes if you're not familiar Pokemon is a Japanese video-game originally titled ポケットモンスター that caused what later would be called Pokemania, something I feel more-or-less a byproduct of today. Coding concepts? Instantly start deriding in Pokemon terms. You have a grammatical question about prose? Well, if it were in Pokemon.. First website I ever visted? Pokemon.com, you bet. If I'm able to retain less than 100 "Pokemon" uses in this article, I deserve a damn cookie. Again, to the point:
-
-I'd love a world that were more like Pokemon gen 1 where the gender-spectrum were less of a question and more of a passing interest, if not indescretionary? (Ed. note: find better word).
-
-What do I mean by that: I love gen 2 Pokemon. It's fantastic, breeding unlocks new ways to get new friends, but I dunno about making new friends myself. If you dig.
-
-See and this is where Pokemon's great for my analogy/metaphor (breaking rules here I'm pretty sure): I think it's great that Nidoran male/female exist and that you can have a Pikachu like that or insert Pokemon name you know. There's also Ditto though, and other ungendered Pokemon. And this is semi-crossed-over with my J.K. Rowling-bit: I've become so far removed from Pokemon at this point in my life Nintendo's staunch positioning against marginalized-folx (google this, find an authoritative resource/article detailing it) isn't relevant to me as a non-Pokemon player. Sure, I'll still boot up my old GameBoy cartridges, but like I said: gender was fairly an after-thought in gen 1 and likely a late addition (again, fact check) with expanded plans for gen 2 which was a _behemoth_ of a game.
-<!-- The phrase "your world in your pocket" is load-bearing there -->
-
-In my best estimation, the cross-section of their determination, obligation to society, and tenacity in tone while remaining pleasant in demeanor and jovial in their work....?
-
-Who's in your Pokemon party? Who's in your box?
-
-I typically rotate out my starter
-
 ### Kai's Reclassified High School Dropout Guide
 
 To be clear, I do not recommend any fifteen-year-olds drop out of school or try marijuana. There are studies that show how it hinders brain growth in adolescents, the same way that caffiene has shown to stunt physical growth. As mentioned in [Waking Software Engineering](waking-software-engineering), my path is untame and likely unsuitable for many. There are many points to be made though in regards to how society views each of these topics today, and I bore marijuana legalization to the core as a teenager.
@@ -165,16 +150,13 @@ In 2018 or so, Matt Chaffin said to me "but AI won't be able to replace us, we g
 
 At this point though, if I'm already on a list for that, why not complete this diatribe six years in the making style?
 
-I know why we gave up and sadly it's convenience, "[it's easier to run, replacing this pain with something numb](https://linkinpedia.com/wiki/Easier_To_Run),". It's easier to say "I have nothing to hide" than to see the nuance behind what's being asked of you. It's easier to assume you'll never be an eney of the state because why would you? Facists attack the marginalized groups first for a reason. [The reason should be self-explanatory](https://encyclopedia.ushmm.org/content/en/article/martin-niemoeller-first-they-came-for-the-socialists). I wonder if Anne Frank's rescuers were concerned with having nothing to hide before 1943. We'll never know that, but I do know futurisitic dystopian novels quite well. I love the fact that I read 1984 several times before 10th grade Pre-AP English, skimmed Anthem, and received higher marks on my Anthem test. As much as I love the idea of Objectivism, I disliked Anthem, but liked Atlas Shrugged (the half I made it through).
+I know why we gave up and sadly it's convenience, "[it's easier to run, replacing this pain with something numb](https://linkinpedia.com/wiki/Easier_To_Run),". It's easier to say "I have nothing to hide" than to see the nuance behind what's being asked of you. It's easier to assume you'll never be an enemy of the state because why would you? Facists attack the marginalized groups first for a reason. [The reason should be self-explanatory](https://encyclopedia.ushmm.org/content/en/article/martin-niemoeller-first-they-came-for-the-socialists). I wonder if Anne Frank's rescuers were concerned with having nothing to hide before 1943. We'll never know that, but I do know futurisitic dystopian novels quite well. I love the fact that I read 1984 several times before 10th grade Pre-AP English, skimmed Anthem, and received higher marks on my Anthem test. As much as I love the idea of Objectivism, I disliked Anthem, but liked Atlas Shrugged (the half I made it through).
 
 I'm doing that tangential ranting thing again.
 
 Having Nero for an emperor had to be so infuriatingly exhausting. Man in charge of the state clowning his way through life and as the state burns, [he throws a party](https://www.britishmuseum.org/blog/10-questions-about-emperor-nero-and-some-curious-answers).
 
-One direction I considered taking this in was Search Engine Optimization (SEO) and how penetratingly tracked an individual is. Anyone can find these answers easily with a quick search. I would recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
-<!-- WILL IT FIT?
-
-I think all the gender stuff is bs and trying to bifrucate someone between trans/non-binary.. I dunno, it doesn't fit me to not be both, where I feel physically like I'm missing parts now that didn't feel that way when I had been on HRT for a few months, but my mental model is from not androgeny but closer to non-binary where.. I don't see why gender as a construct has to exist. Sure it's important to know biological markers etc for sex but gender is just the "pink v blue" "dolls v trucks" "quiet v loud" etc that society impresses upon people as they mature  -->
+One direction I considered taking this in was [Search](https://www.youtube.com/watch?v=U0-8SrbG0xA) [Engine](https://www.youtube.com/watch?v=S3MQLlMbS-Y) [Optimization](https://www.youtube.com/watch?v=NRzDsxUOm4M) (SEO) and how penetratingly tracked an individual is. Anyone can find these answers easily with a quick search. I would recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
 
 This isn't anything novel. In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purists' paradise, a technosocial pheonomenon, only a Whatter would understand.
 
