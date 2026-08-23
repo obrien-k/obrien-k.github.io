@@ -166,16 +166,54 @@ I began Kyle O IO with the intention of advocating for FOSS/OSS, and as much as 
 
 ### The Point
 
-It's odd to describe oneself as "falling in love" with software, but in the rare circumstance it happens, you know immediately.
+> "It's gettin' live in here" - Crystal Edwards
 
-It's gettin live in here
+I've quite frequently referenced Philip K. Dick's title "How to Build a Universe that Doesn't Fall Apart Two Days Later" and if you've followed this journey from 2020 (or earlier) until now, it may be apparent what `The Point` is; But suffice it to say, here's our next hammer: This is a mirage.
 
-<!-- TODO: missing image (placeholder [img:./stellar/.jpg]) -->
+It's odd to describe oneself as "falling in love" with software, but in the rare circumstance it happens, you know immediately. It behooves me to say I had the same experience with the Internet Protocol, computers, and the world wide web; A mathematically-derived, logic-based, collective conciousness one can tap into at will and whim.
+
+Attempting to build a universe, to me, is contemplating your application from user to developer, admin to consumer; Documentation key, oversight near-omnipotent. Growth into emergent regions, constellations from far away galaxies reach back in earnest, all without deconstructing upon it's first failure. Failures are loud signals to be prepared for, every runbook exercised should result in at least blessing for two more days of runtime.
+
+Calling this project complete is "early", but only in the way [Bill Belichick is "on to Cincinatti"] (https://www.patriots.com/news/bill-belichick-press-conference-transcript-we-re-on-to-cincinnati-208851). In a short reprieve on April 20th, 2010, I described it as "Photoshop in real life, in real time", which this is absolutely not. It does beg into question though what **_it is_**.
+
+<pre>Center, found apple
+It fell from a nearby tree
+whose roots reach the wall.
+
+Walls that shield the truth
+Crapemyrtle, born here
+but escape is soon.
+
+Succulent desire,
+High school dropout, my fire,
+Mistake? Expired.
+
+Across the desert,
+into the rockies and the
+Aspens. Annual.
+
+Change is my only
+constant. Now surrounded by
+Cedar, bluebonnets.
+
+Enter and exit
+ecom, a developer
+molded into form.
+
+The apple rotted,
+experience informs me,
+all walls, closing in.</pre>
+
+"I have nothing to hide" is the most common response I hear to my concern with our increasingly surveilled state, which entirely misses the mark. This isn't a question of citizens' lived reality, but the clandestine intent of the state. "Why do you have to be paranoid?" Whether this is due to my upbringing or a suspected autism diagnosis is up for debate, but what isn't up for debate is the fact that [we behave differently when surveilled](https://www.scientificamerican.com/article/how-being-watched-changes-how-you-think/). It's great we're seeing a ton of backlash towards [Flock cameras](https://www.youtube.com/watch?v=uB0gr7Fh6lY) and [Meta may be held responsile for _some_ of their actions](https://www.wired.com/story/metas-big-reckoning-is-here/), but this is surface level stuff that doesn't get to the root of the issue. The machinations that allowed these trespasses on our liberties to begin in the first place is absolutely asinine to me. But I am not without hope. I think there's been some excellent movement politcall at the local level, which is where government starts.
+
+So even to those who have nothing to hide, I beg you to educate yourself further on these topics because whether or not you have skeletons in your closet today doesn't mean your children, hobbies, or selves will remain classified as "safe" tomorrow. Your elected officials and peers _love_ to create legislation in the name of children, the same children who feel disenfranchised by that same government. The same government that protects Big Tabacco and has spurned the use of alternatives. The same government that did little to nothing about Exxon's disinformation campaign about the long-term effects on our environment.
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
 
 ![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
 
+> [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
+ 
 ### [what-refuge](https://gist.github.com/jake-g/401804140cc036b4a8105b144bdd0f4b)
 
 > Private trackers, while closed to the general public, are "internally open" systems in that their content is exhaustive and available to any valid user. Streaming services, alternately, while open to the general public, are closed in various ways to several publics: new releases are not available to free customers, certain releases are only available to users in specific geographic locales due to licensing restrictions, and the system is just not generally "hackable" like private trackers are. Moving forward, private tracker users should be cautiously optimistic about the paradigms of the two approaches to be bridged in ways that are socially useful.
@@ -189,7 +227,6 @@ It's gettin live in here
 
 [Archive.org/whatinterviewprep.com](https://web.archive.org/web/20150315071742/https://www.whatinterviewprep.com/)
 
-> [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
 
 ### Prepare for the Interview
 
@@ -217,3 +254,117 @@ hahafkmerite.gif
 ## COLOPHON
 
 [The most important part of a speech is the opening line. When time is not a factor, I like to try out three or four different ones.](https://tvquot.es/the-office/quote/5wmsp4y/)
+
+## Regarding IRC
+
+> Nearly all of them required a valid What.CD username and password (as specified in the IRC rules), but the #help and #general channels were accessible to anyone with the knowledge of the channel's address and the ability to use an IRC client (a special program that grants access to the IRC's interface). Also, if a user's account had been deactivated because of a poor ratio, they could visit the channel #disabled to reason with the administrators.
+
+— *pp. 48*
+
+> Control in networks must aim for an effectiveness that is immanent to the network, in the sense that the most perfectly controlled network is one that controls or regulates itself … The network itself must be articulated as an object of design, implementation, and regulation. Control in this sense does not pervades the network but operates over it; control in this sense is topsight and oversight. (p. 36)
+
+> By maintaining Gazelle, What.CD indirectly controlled other sites, even though they fall outside the bounds of What.CD's native network. As some informal discourse suggests (not to mention the fact that "celebrities" from other trackers have a special status on What.CD), the relationships between private trackers can be characterized as achieving solidarity, which is, on the one hand, egalitarian, but as the authors above indicate, can also suggest relationships of power.
+
+— *pp. 53*
+
+[![](/assets/img/blog/posts/stellar/pass-the-popcorn.jpg)](/assets/img/blog/posts/stellar/pass-the-popcorn.jpg)
+*pp. 53* — Figure 7: Passthepopcorn, a private tracker that uses Gazelle. Compare the UI and options to Figure 3. (Dunham, n.d.)
+{:.figcaption}
+
+[![](/assets/img/blog/posts/stellar/irc-channels.jpg)](/assets/img/blog/posts/stellar/irc-channels.jpg) (Dunham, n.d.)
+{:.figcaption}
+
+```
+XXXXXXXX your unique ID
+s2.what-network.net message of the day
+- "The single biggest problem in communication is the illusion that it has taken place."
+- WE HAD TO RESTORE FROM SOME OLDER BACKUPS SO NICKSERV PASSWORDS MAY NEED TO BE RESET. !!!
+End of message of the day.
+There are 1153 users and 903 invisible on 2 servers
+35 operator(s) online
+470 channels formed
+I have 2045 clients and 1 servers
+Current Local Users: 2045 Max: 2129
+Current Global Users: 2056 Max: 2040
+Reply(396): whatnetllc.e01.@0dge9r.IP is now your displayed host
+tonianton has changed mode: +x
+s2.what-network.net has changed mode: +x
+Reply(396): ianianian.member.what.cd is now your displayed host
+Error(421): #INDIE Unknown command
+Error(421): HELLO Unknown command
+```
+
+```
+12:22 <@indie> * moham is listening to Ryan Adams - Out of the Woods, from the album 1989 [Song]
+12:24 <@what.cd> Fran has joined (423144@franciscouza.poweruser.what.cd)
+12:24 <@what.cd> bsol has joined (188560@bsol.member.what.cd)
+12:25 <@what.cd> Sent-x has joined (8476@sentex.member.what.cd)
+12:26 <@what.cd> bohhmmDPLA has joined (462689@bohhmmopla.poweruser.what.cd)
+12:27 <@what.cd> connacea has left ()
+12:28 <@what.cd> Alain -> ircpolice
+12:29 <irc.what-network.net> Kuriyama has left IRC (Quit: Something probably broke. Back sooner or later.)
+12:30 <@what.cd> dereranger has joined (463823@dereranger.user.what.cd)
+12:31 <@what.cd> SpeedDaemon3 has joined (270774@speeddaemon3.poweruser.what.cd)
+12:34 <@indie> moham debaser25 yesterday i watched Everything you Wanted to Know about Sex and also Love and Death
+12:35 <@indie> moham Love and Death was great and i liked the first skit in Everything You wanted
+12:35 <@indie> moham but it went p well downhill after that
+12:35 <@what.cd> fzerox you know my friendly reminders are really doing you a favour
+12:35 <@what.cd> fzerox the real irc police aren't as lovely as me
+12:36 <@what.cd> fzerox plus I can't actually kickban anyone
+12:36 <@what.cd> BloodyNobody it takes a lot more than briefly discussing political figures to trigger them though
+12:36 <@what.cd> BloodyNobody like yesterday
+12:39 <irc.what-network.net> tharue has left IRC (Quit: Leaving)
+12:39 <irc.what-network.net> Nomensl has left IRC (Ping timeout: 241 seconds)
+12:39 <irc.what-network.net> NZI has left IRC (Ping timeout: 241 seconds)
+12:39 <@what.cd> indyisfaster has joined (227736@indyisfaster.member.what.cd)
+12:39 <irc.what-network.net> indyisfaster has left IRC (Quit: Textual IRC Client: www.textualapp.com)
+12:40 <irc.what-network.net> punisherwolf has left IRC (Connection closed)
+```
+
+> There were also official IRC channels for specific music genres, which allow more granular conversational topics than the forum categories. Additionally, there were several unofficial channels that are not run by What.CD, which ranged from such topics like the #bonnaroo to chat in the #french language.
+
+— *pp. 49*
+
+### #psych ftw
+
+> Some user classes, mostly secondary ones, were specialized and created an official space for users who wanted to share their own music ("Artist"), elite visitors from other private trackers ("Torrent Celebrity"), or those who maintain the site ("Delta Team," "Build Team," and "Alpha Team"). In connection with Feenberg's discussion of class dynamics in technological systems, we see a contradiction between the predicted egalitarianism of technological alternatives and possibly autocratic tendencies of What.CD.
+>
+> "Do not PM, DCC, or Query anyone you don't know or have never talked to without asking first; this applies specifically to staff" (What.CD)
+
+— *pp. 50*
+
+<!-- TODO: RSS/XML support with user-attached AnnounceKeys (previously tabled, revisit) -->
+<!-- TODO: tighten user ranks / user class system -->
+<!-- TODO: IRC server + channel nomenclature -->
+
+---
+
+[![](/assets/img/blog/posts/stellar/kuro-logo.png)](/assets/img/blog/posts/stellar/kuro-logo.png)
+Kuro — dark theme
+{:.figcaption}
+
+[![](/assets/img/blog/posts/stellar/anorex-logo.png)](/assets/img/blog/posts/stellar/anorex-logo.png)
+Anorex — light theme
+{:.figcaption}
+
+[![](/assets/img/blog/posts/stellar/layer-cake-logo.png)](/assets/img/blog/posts/stellar/layer-cake-logo.png)
+Layer Cake — light theme
+{:.figcaption}
+
+[![](/assets/img/blog/posts/stellar/layer-cake-logo-dk.png)](/assets/img/blog/posts/stellar/layer-cake-logo-dk.png)
+Layer Cake — dark theme
+{:.figcaption}
+
+[![](/assets/img/blog/posts/stellar/max-accounting-bytes.png)](/assets/img/blog/posts/stellar/max-accounting-bytes.png)
+stellar-api: a single contribution's byte count (4,781,401,702) refusing to fit a 32-bit `INT4` — the accounting outgrowing its own column.
+{:.figcaption}
+
+---
+
+[What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
+
+(What.cd's Gazelle on GitHub [HN Archive.org
+])[https://web.archive.org/web/20230624070146/https://news.ycombinator.com/item?id=6019392]
+(Digital Desire and Recorded Music: OiNK, Mnemotechnics and the Private BitTorrent Architecture)[https://scispace.com/papers/digital-desire-and-recorded-music-oink-mnemotechnics-and-the-3sim7zaads]
+()[https://arc.net/l/quote/tawyivtn]
+(Community, Collaboration and Contribution: Evaluating a BitTorrent Tracker as a Digital Library)[https://cdr.lib.unc.edu/concern/masters_papers/w66346920]
