@@ -117,6 +117,8 @@ When writing, I often have a specific audience in mind, save my short-form writi
 
 In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I did find one thing in common with him, but it was only our love of walks.
 
+When working at DISH, the call center was a converted Wal-Mart, a sprawl of of cubicles in a football-field-sized room. From the front, there was the "fish bowl" where the Resource Center department managed schedules and actioned similar activities. The cubicles behind them were situated in "pods", approximately 20 cubicles in a group, encircled around the supervisor's cubicle. And from each pod, at the center you'd have the supervisor's radio station of choice being played (assuming they weren't on a phone call, evaluating their agents, meeting for a 1:1, etc.). I use the term radio station, but it was more likely Pandora, YouTube, or similar. This was before Spotify grew to be as popular as it is today. As much as I wanted off the phones, I primarily wanted to be the authority on my pod's "radio station", and after having a supervisor who primarily listened to Creed, Nickelback, and Pearl Jam I finally got promoted to Team Lead. Silly motivation, excellent result.
+
 ### Heroes
 
 Yesterday, Hayden Panettiere took her own life by way of drug overdose, and this feels like another echo of Chester Bennington's death ten years ago. I (obscurely) referenced this in `that article`, but as with many things I find more solace in a quote from media. "Either you die a hero, or you live long enough to see yourself become the villain,". We elevate many to the pop culture stratosphere to deconstruct them at their moments of weakness, a detrimental cycle that alienates our fellow people, and do our damndest to become just like them.
@@ -208,12 +210,36 @@ all walls, closing in.</pre>
 
 So even to those who have nothing to hide, I beg you to educate yourself further on these topics because whether or not you have skeletons in your closet today doesn't mean your children, hobbies, or selves will remain classified as "safe" tomorrow. Your elected officials and peers _love_ to create legislation in the name of children, the same children who feel disenfranchised by that same government. The same government that protects Big Tabacco and has spurned the use of alternatives. The same government that did little to nothing about Exxon's disinformation campaign about the long-term effects on our environment.
 
-[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
-
-![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
-
 > [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
  
+I've mentioned in the past how the web feels stale, and generative AI has only accelerated this to the point that it seems like the web is a deep fried meme. I can't claim a solution to this, but I can claim an attempt at trying. When I initially set out to do this, I had the presence of mind that it would potentially piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring to light something typically left in the shadows.
+
+I've done what I could do protect it from the code level, but as with anything, what can be used to improve society can also be used to hinder it. Back to our history lesson.
+
+### A Primer on What.CD and Gazelle; A Tale of Addiction
+
+The best place to start this section is with WhatMan. I don't know all the intracicies of who built, ran, and operated the front-end of What.CD, but WhatMan was a SysOp. SysOp is the highest level of authority on Gazelle, at least as a platform. SWIM ran into some trouble on What and lost their ability to socialize there, but still had all of the remaining features at their disposal. From what was reported to me though, in their conversation with WhatMan, they requested that if they returned to high school and got their diploma, they be allowed to socialize again.
+
+SWIM began off-loading all of their thinking to this group, whether it was what kind of car they should drive, drop out of high school, or try marijuana. The adviced doled out doesn't really matter, our focus here is how an insane amount of trust was handed over to a group who may or may not have deserved it. Wherein Kai found a group of incredibly technically oriented people on PSP Hacking 101/Too Smart Guys, SWIM found a group more paranoid than they on What.CD. They found like-minded individuals and when opinions differed, it led them to new perspectives. SWIM made a joke that they weren't going to try heroin or LSD, but wanted to dip their toes in the world of drugs with marijuana. SWIM turned out to be incorrect.
+
+WhatMan agreed to think about it, and SWIM _tried_ to go back to school, if only for the silly motivation of getting back in the good graces of What.CD's administration. However, falling a few credits short, SWIM decided it was time to move along and began applying for work. What.CD was a distraction, an addictive one, and started to give credence to staff's decision.
+
+By this time, SWIM began going by the nickname "LSD" on the internet, changing their steam name, IRC, and first-tried username on sites to that. Who could say what their motivation was, outside of masquerading as something they had no experience in, but it likely invited conversation on the topic quite readily. It likely resulted in just the right person to come along and offer to ship it at no cost. It likely resulted in other drugs finding their way to Someone Who Isn't Me. It likely resulted in ascertaining knowledge that most visitors on this page have no inclination of learning, such as [Pretty Good Privacy](https://help.uillinois.edu/TDClient/37/uic/KB/Article/869/What-are-PGP-Public-and-Private-Keys), operatonal security, and decreased trust in an already distrustful person.
+
+Was this from a Whatter? Who's to say, but I can say it's unlikely SWIM would have found themselves if not for What. When the social fallout happened, SWIM reports that many fellow Whatters reached out to them, one of whom had a transgender parent and thought it'd be good for SWIM to talk to them. But SWIM couldn't be _one of those_, it'd destroy their own parents, and might end up with them in gay conversion therapy.
+
+The primary sources of addiction in my own life came from recommendations of doctors, suggesting I use a muscle relaxer like Bendaryl to sleep, and for someone who was obsessed with lucid dreaming at the time this was an awful answer. It wasn't from a doctor, but the readily available NyQuil seemed an equally viable strategy and it wasn't like the local Walmart ever ID'd me in 2008. I haven't allowed these drugs in my household since 2014 (when I first moved out on my own), and still have physical malidies that effect me to this day from those drugs.
+
+When Bob Arctor described his experience in the world of drugs, I couldn't help but see parallels to my own life after re-viewing it when I, too, had become entrenched in the world. I justified my use in that it was therapeutic, it was helping me sleep, but in reality it was making me sleep less. There are too many times to count that I ingested enough of either of these drugs that I might not have woken up, and one of the times this happened it made my father cry. My father doesn't cry. My luck would run out eventually if I didn't drastically change my life and while I didn't after that incident, at the first opportunity to separate myself from the world I had become too familiar with, I did. I moved across the country, cut ties with the friends I had surrounded myself with, and started over.
+
+I don't have the same list of friends that Philip K. Dick lists at the end of "A Scanner Darkly" that have suffered unimaginable mental and physical effects of drug addiction, nor is mine nearly as long, and not due to age, but my separation and eventual disconnection from the folx that fortunately haven't suffered as greatly as his. But the friends of those friends have. It's taken great willpower to reach out to these people to do some background coverage on what we remember from my `dropout days`, only because I know how influential they once were in my life, and it would be a test of my own ability to keep set boundaries. It has been insightful though, and a reminder that we're all still connected even if I had taken a step back for over a decade.
+
+I do have a list of friends that died too young though for other, if not more nefarious reasons, such as suicide and murder. Suicide from a friend I bonded with over asexuality when we were 17, murder that incited me to run away from home around the same time.
+
+It was a pipedream to say in the least that I'd be able to rebuild Gazelle in my own vision of what it could be, at the time. I was of the opinion that Gazelle could be used in a way to make good on what software _should_ be, in service of the users, rather than the powers that be. Believe me, I tried, and at first believed it was something _I_ was doing wrong. By the time I was 20 though, I began to suspect it was an issue with the underlying software and hired someone to try getting Gazelle running on a server, and they made more progress than I did, but still failed to even get it installed on a server.
+
+Later, this became much easier, but by then it was too late and the web had moved on. We were indunated with Spotify, Netflix, and various streaming services that even former Whatters moved on to. Even now, the application I've built, as much as it fits the definition of a universal one, it feels too late. This project was primarily to see if I could though, and it turned out with enough perserverance it was.
+
 ### [what-refuge](https://gist.github.com/jake-g/401804140cc036b4a8105b144bdd0f4b)
 
 > Private trackers, while closed to the general public, are "internally open" systems in that their content is exhaustive and available to any valid user. Streaming services, alternately, while open to the general public, are closed in various ways to several publics: new releases are not available to free customers, certain releases are only available to users in specific geographic locales due to licensing restrictions, and the system is just not generally "hackable" like private trackers are. Moving forward, private tracker users should be cautiously optimistic about the paradigms of the two approaches to be bridged in ways that are socially useful.
@@ -332,6 +358,10 @@ Error(421): HELLO Unknown command
 > "Do not PM, DCC, or Query anyone you don't know or have never talked to without asking first; this applies specifically to staff" (What.CD)
 
 — *pp. 50*
+
+[Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
+
+![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
 
 <!-- TODO: RSS/XML support with user-attached AnnounceKeys (previously tabled, revisit) -->
 <!-- TODO: tighten user ranks / user class system -->
