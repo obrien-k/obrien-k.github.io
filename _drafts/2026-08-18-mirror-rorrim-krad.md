@@ -102,19 +102,19 @@ My current read on the state of the machine was first mentioned in 2020, where I
 
 After finishing `that article`, I knew any follow-up article would be difficult to ascertain in regards to subject and my ability to continue the `COLOPHON` specified "next" section. Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming" I realized how tasking my intentions can be and finally published what was originally "Lucid Dreaming" as "The Android's Dream". And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
-And my intention with my next article was to biograph someone close to me. I felt with `that article`, that I had book-ended the first cycle of whatever this blog is, and that it had grown too myopic. Too many threads woven together on too large of a tapestry. In fact, we've come so far from my original plan that I'm 5,391 miles from where I advised I'd be in `that article`. Life finds a way though and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter becomes clear. It wasn't clear to me a year ago, nor was it last week. I only had this vague target I constantly refer to as "Dropout Days", which I refer to when referencing my time between the ages 15-19, but truly it was my first attempt at exploring the world through the eyes of a journalist or photojournalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time.
+And my intention with my next article was to biograph someone close to me. I felt with `that article`, that I had book-ended the first cycle of whatever this blog is, and that it had grown too myopic. Too many threads woven together on too large of a tapestry. In fact, we've come so far from my original plan that I'm 5,391 miles from where I advised I'd be in `that article`. Life finds a way though and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter becomes clear. It wasn't clear to me a year ago, nor was it last week. I only had this vague target I referred to as `dropout days`, my time between the ages 15 - 19[^2], but it was also my attempt at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time.
 
 [![The One handles Agent Smith with ease](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
 {: style="text-align: center;"}
 
-The One handles Agent Smith with ease
+You don't understand. You see, words are like bullets...
 {:.figcaption}
 
 #### Motivation
 
-One topic present on mind lately have been mine, communal, and societal motivations behind actions and words. [Words have meaning](https://medium.com/whither-news/words-matter-damnit-fc883733a729). Whether someone's intent is malicious or not, neither necessitate breaking boundaries. Facebook (now Meta) has a now-famous motto, ["Move fast and break things"](https://en.wikipedia.org/wiki/Meta_Platforms#History). I took a similar approach to the workplace where I intended to "wreck shop", whatever that meant in that industry. The first of which was a tire and truck auto shop, hence my verbiage. Now, some may take that as literally knocking down vehicle bays, ripping up semi-trucks tires, what have you. Instead, this means to take whatever normal behaviors I observed, typically accepted system interactivity, and turn the machine on its head. I would sweat my ass off with a goddamn smile on my face, and I did. This was the first time I took a cold shower, and ho, it was worth.
+One topic present on mind lately have been mine, communal, and societal motivations behind actions and words. [Words have meaning](https://medium.com/whither-news/words-matter-damnit-fc883733a729). Whether someone's intent is malicious or not, neither necessitate breaking boundaries. Facebook (now Meta) has a now-famous motto, ["Move fast and break things"](https://en.wikipedia.org/wiki/Meta_Platforms#History). I took a similar approach to the workplace where I intended to "wreck shop", whatever that meant in the applicable industry. The first of which was a tire and truck auto shop, hence my verbiage. Now, some may take that as literally knocking down vehicle bays, ripping up semi-trucks tires, what have you. Instead, this means to take whatever normal behaviors I observed, typically accepted system interactivity, and turn the machine on its head. I would sweat my ass off with a goddamn smile on my face, and I did. This was the first time I took a cold shower, and ho, it was worth.
 
-When writing, I often have a specific audience in mind, save my short-form writing which is usually one of those "for me" works. Generally though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621) who was an editor, and encouraged me after my first short story when I was nine-years-old. I was motivated by my sister, who I previously mentioned as inspiring my love of reading.
+When writing, I often have a specific audience in mind, save my short-form writing which is usually one of those []"for me" works](https://fipresci.org/report/one-for-them-one-for-me/). Generally though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621) who was an editor, and encouraged me after my first short story when I was nine-years-old. I was motivated by my sister, who I previously mentioned as inspiring my love of reading.
 
 In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I did find one thing in common with him, but it was only our love of walks.
 
@@ -247,129 +247,43 @@ SWIM still remains in contact with many former Whatters, something one only does
 
 SWIM went back in their message history when asked some of these questions, and looked back on the time when What.CD went down fondly. All Whatters trying to look out for each other, remain operationally secure, but inviting each other to the previously mentioned upcropping of replacements. While from the outside, these were lawless individuals sharing secrets and attempting to circumvent lawful copyright protection, on the inside they were free-thinkers fighting against the system and powers that be. [Whether or not you believe piracy should be a crime is entirely up to you](https://www.youtube.com/watch?v=mntVh15W1uY), but there are arguments against that which would be best handled by someone with more at stake.
 
+### Bibbidy-boppidi-boo
 
+In one of these conversations, SWIM asked me, absolutely seriously, "Do you believe in magic?". I paused, taking stock of the situation, and my immediate response was a resounding "Yes,". In the same way that we exist in a universe that required infinitismal effort from a significantly impossible set of circumstances to occur, magic occurs every day.
 
-> Private trackers, while closed to the general public, are "internally open" systems in that their content is exhaustive and available to any valid user. Streaming services, alternately, while open to the general public, are closed in various ways to several publics: new releases are not available to free customers, certain releases are only available to users in specific geographic locales due to licensing restrictions, and the system is just not generally "hackable" like private trackers are. Moving forward, private tracker users should be cautiously optimistic about the paradigms of the two approaches to be bridged in ways that are socially useful.
+Not in the way that Cinderella's fairy god-mother provided her, but closer to C.S. Lewis' character Aslan described a ["deeper magic"](https://www.wtsbooks.com/blogs/westminster-kids/creation-and-c-s-lewis-deeper-magic) and to be clear I don't ascribe to modern day Christianity. In fact, when I was a self-described atheist, I used The Chronicles of Narnia as a talking point for why I didn't believe in the Bible to my mother, "There's seven books! Why should I believe it any less than Jonah and the Whale, or Jack and the Beanstalk?". This quote is for posterity and using a fifteen-year-old's arguments in a discussion about religion is immature.
 
-> The platform on which What.CD operated was an open source content management system called Gazelle. Gazelle began development when the site was first launched in October of 2007 and was considered to have reached a level of maturity indicated by its documentation, bug fixes, and coding standardization. It was maintained by What.CD administrators, and is used by many other private trackers. Its architecture also follows many of the conventions and logics stemming from What.CD, including torrent and user organization, facilitating forums, and creating user interfaces. For example, the following rules were taken from Project Gazelle's "Coding Standards:"
-> - All button labels shall use sentence case.
-> - All table headings shall use sentence case.
-> - All text-based buttons shall use the [`brackets` CSS class](https://github.com/WhatCD/Gazelle/blob/63b337026d49b5cf63ce4be20fdabdc880112fa3/docs/CodingStandards.txt#L167).
+That deeper magic exists though, and we see (saw?) this in the Open Source community until recently where generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded. For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. Most citizens though, don't realize this, and for some reason believe there's an omniscient parent in the sky dragging the sun across the horizon so that we have daylight. We're well past the hour where we should be allowed to believe our parents are the reason electricity works, and the doomsday clock ticks ever closer to midnight.
 
-— *pp. 52*
+Unfortunately, Light Magic exists as equally as Dark Magic does, and we could call this Positive/Negative Magic, or what have you, but `that article` calls it Light Magic so we'll digress there.
 
-[Archive.org/whatinterviewprep.com](https://web.archive.org/web/20150315071742/https://www.whatinterviewprep.com/)
-
-
-### Prepare for the Interview
-
-> You are responsible for knowing all of the information on this site.
->
-> In order to receive an invite to What.CD, you must pass our interview. Though every interview is different, the information you must learn in order to pass each interview is the same:
->
-> 1. **Analog and Digital Music Sources** — What's the difference between vinyl and CDs?
-> 2. **Audio Formats** — What are the different types of music formats, and which are allowed on What.CD?
-> 3. **MP3** — Everything you need to know about LAME and LAME Presets.
-> 4. **Transcodes** — How you can figure out if a transcode is good or bad.
-> 5. **Torrenting** — BitTorrent vocabulary, ratio, and more!
-> 6. **Spectral Analysis** — The best way to determine the bitrate of an unknown music file. (Pretty pictures!)
-> 7. **CD Burning and CD Ripping** — How to make the best possible CD rip.
-> 8. **What.CD Rules** — Break them and perish.
->
-> Luckily, everything you need to know is right on this site! Make sure you carefully read through all of the pages under the Knowledge menu before you even think of queuing in #what.cd-invites. Take notes if you wish, however, you may **NOT** use these notes while taking an interview.
-
-— *[whatinterviewprep.com/prepare-for-the-interview](https://web.archive.org/web/20150321040459/https://www.whatinterviewprep.com/prepare-for-the-interview/)*
+I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD helps me see beyond the tangible, and profoundly effected me that first time so much that it gives me pause when asked such questions.
 
 ## Conclusion
 
-hahafkmerite.gif
+Capturing such magic in a bottle is more difficult than with lightning, believe me, I've tried, but as with all things I speak better in code than English so I'll make this conclusion brief. If you'd like to know more about this next generation mirage, check it out on [GitHub](https://github.com/orphic-inc/stellar-compose).
 
 ---
 [^1] [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
+[^2] Read: faffing about between schools and prior to full-time employment.
+
+## Further Reading
+[What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
+
+[What.cd's Gazelle on GitHub (Hacker News from Archive.org)](https://web.archive.org/web/20230624070146/https://news.ycombinator.com/item?id=6019392)
+
+[Digital Desire and Recorded Music: OiNK, Mnemotechnics and the Private BitTorrent Architecture](https://scispace.com/papers/digital-desire-and-recorded-music-oink-mnemotechnics-and-the-3sim7zaads)
+
+[Community, Collaboration and Contribution: Evaluating a BitTorrent Tracker as a Digital Library](https://cdr.lib.unc.edu/concern/masters_papers/w66346920)
 
 ## COLOPHON
 
 [The most important part of a speech is the opening line. When time is not a factor, I like to try out three or four different ones.](https://tvquot.es/the-office/quote/5wmsp4y/)
 
-[&](https://www.youtube.com/watch?v=1H_DnYVqa3k)[&][https://arngren.net/]
+[&](https://www.youtube.com/watch?v=1H_DnYVqa3k)[&](https://arngren.net/)
 
-## Regarding IRC
+### [NEXT](https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg)
 
-> Nearly all of them required a valid What.CD username and password (as specified in the IRC rules), but the #help and #general channels were accessible to anyone with the knowledge of the channel's address and the ability to use an IRC client (a special program that grants access to the IRC's interface). Also, if a user's account had been deactivated because of a poor ratio, they could visit the channel #disabled to reason with the administrators.
-
-— *pp. 48*
-
-> Control in networks must aim for an effectiveness that is immanent to the network, in the sense that the most perfectly controlled network is one that controls or regulates itself … The network itself must be articulated as an object of design, implementation, and regulation. Control in this sense does not pervades the network but operates over it; control in this sense is topsight and oversight. (p. 36)
-
-> By maintaining Gazelle, What.CD indirectly controlled other sites, even though they fall outside the bounds of What.CD's native network. As some informal discourse suggests (not to mention the fact that "celebrities" from other trackers have a special status on What.CD), the relationships between private trackers can be characterized as achieving solidarity, which is, on the one hand, egalitarian, but as the authors above indicate, can also suggest relationships of power.
-
-— *pp. 53*
-
-[![](/assets/img/blog/posts/stellar/pass-the-popcorn.jpg)](/assets/img/blog/posts/stellar/pass-the-popcorn.jpg)
-*pp. 53* — Figure 7: Passthepopcorn, a private tracker that uses Gazelle. Compare the UI and options to Figure 3. (Dunham, n.d.)
-{:.figcaption}
-
-[![](/assets/img/blog/posts/stellar/irc-channels.jpg)](/assets/img/blog/posts/stellar/irc-channels.jpg) (Dunham, n.d.)
-{:.figcaption}
-
-```
-XXXXXXXX your unique ID
-s2.what-network.net message of the day
-- "The single biggest problem in communication is the illusion that it has taken place."
-- WE HAD TO RESTORE FROM SOME OLDER BACKUPS SO NICKSERV PASSWORDS MAY NEED TO BE RESET. !!!
-End of message of the day.
-There are 1153 users and 903 invisible on 2 servers
-35 operator(s) online
-470 channels formed
-I have 2045 clients and 1 servers
-Current Local Users: 2045 Max: 2129
-Current Global Users: 2056 Max: 2040
-Reply(396): whatnetllc.e01.@0dge9r.IP is now your displayed host
-tonianton has changed mode: +x
-s2.what-network.net has changed mode: +x
-Reply(396): ianianian.member.what.cd is now your displayed host
-Error(421): #INDIE Unknown command
-Error(421): HELLO Unknown command
-```
-
-```
-12:22 <@indie> * moham is listening to Ryan Adams - Out of the Woods, from the album 1989 [Song]
-12:24 <@what.cd> Fran has joined (423144@franciscouza.poweruser.what.cd)
-12:24 <@what.cd> bsol has joined (188560@bsol.member.what.cd)
-12:25 <@what.cd> Sent-x has joined (8476@sentex.member.what.cd)
-12:26 <@what.cd> bohhmmDPLA has joined (462689@bohhmmopla.poweruser.what.cd)
-12:27 <@what.cd> connacea has left ()
-12:28 <@what.cd> Alain -> ircpolice
-12:29 <irc.what-network.net> Kuriyama has left IRC (Quit: Something probably broke. Back sooner or later.)
-12:30 <@what.cd> dereranger has joined (463823@dereranger.user.what.cd)
-12:31 <@what.cd> SpeedDaemon3 has joined (270774@speeddaemon3.poweruser.what.cd)
-12:34 <@indie> moham debaser25 yesterday i watched Everything you Wanted to Know about Sex and also Love and Death
-12:35 <@indie> moham Love and Death was great and i liked the first skit in Everything You wanted
-12:35 <@indie> moham but it went p well downhill after that
-12:35 <@what.cd> fzerox you know my friendly reminders are really doing you a favour
-12:35 <@what.cd> fzerox the real irc police aren't as lovely as me
-12:36 <@what.cd> fzerox plus I can't actually kickban anyone
-12:36 <@what.cd> BloodyNobody it takes a lot more than briefly discussing political figures to trigger them though
-12:36 <@what.cd> BloodyNobody like yesterday
-12:39 <irc.what-network.net> tharue has left IRC (Quit: Leaving)
-12:39 <irc.what-network.net> Nomensl has left IRC (Ping timeout: 241 seconds)
-12:39 <irc.what-network.net> NZI has left IRC (Ping timeout: 241 seconds)
-12:39 <@what.cd> indyisfaster has joined (227736@indyisfaster.member.what.cd)
-12:39 <irc.what-network.net> indyisfaster has left IRC (Quit: Textual IRC Client: www.textualapp.com)
-12:40 <irc.what-network.net> punisherwolf has left IRC (Connection closed)
-```
-
-> There were also official IRC channels for specific music genres, which allow more granular conversational topics than the forum categories. Additionally, there were several unofficial channels that are not run by What.CD, which ranged from such topics like the #bonnaroo to chat in the #french language.
-
-— *pp. 49*
-
-### #psych ftw
-
-> Some user classes, mostly secondary ones, were specialized and created an official space for users who wanted to share their own music ("Artist"), elite visitors from other private trackers ("Torrent Celebrity"), or those who maintain the site ("Delta Team," "Build Team," and "Alpha Team"). In connection with Feenberg's discussion of class dynamics in technological systems, we see a contradiction between the predicted egalitarianism of technological alternatives and possibly autocratic tendencies of What.CD.
->
-> "Do not PM, DCC, or Query anyone you don't know or have never talked to without asking first; this applies specifically to staff" (What.CD)
-
-— *pp. 50*
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
 
@@ -403,10 +317,3 @@ stellar-api: a single contribution's byte count (4,781,401,702) refusing to fit 
 
 ---
 
-[What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
-
-(What.cd's Gazelle on GitHub [HN Archive.org
-])[https://web.archive.org/web/20230624070146/https://news.ycombinator.com/item?id=6019392]
-(Digital Desire and Recorded Music: OiNK, Mnemotechnics and the Private BitTorrent Architecture)[https://scispace.com/papers/digital-desire-and-recorded-music-oink-mnemotechnics-and-the-3sim7zaads]
-()[https://arc.net/l/quote/tawyivtn]
-(Community, Collaboration and Contribution: Evaluating a BitTorrent Tracker as a Digital Library)[https://cdr.lib.unc.edu/concern/masters_papers/w66346920]
