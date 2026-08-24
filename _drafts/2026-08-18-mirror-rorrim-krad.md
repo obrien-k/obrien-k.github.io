@@ -4,9 +4,9 @@ title: "MIRROR | RORRIM KRAD"
 date: 2026-08-18 00:00:00 +0000
 description: ""
 tags:
+  - nsfw
   - education
   - drugs
-  - nsfw
 categories:
   - philosophy
 image:
@@ -17,20 +17,22 @@ permalink: /mirror-rorrim-krad/
 [![The One awakens, looks to the agents of control, and denies their attempt to kill](/assets/img/blog/posts/mirror-rorrim-krad/neo.gif)](https://archive.org/details/exploringmatrixv00habe)
 {: style="text-align: center;"}
 
-The One awakens, looks to the agents of control, and denies their attempt to kill.
+"No." - The One
 {:.figcaption}
 
 ## Introduction
 
-We've covered the `long, long ago` quite considerably, but what of the `long ago`? Haze meets our gaze, and we settle into my `dropout days`. I tried finding myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of this group. My primary objective was locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It also wasn't my original plan, merely a pivot several years in the making. Where the wool had covered my eyes before I tried marijuana, after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt); I soon found myself seeking a glimpse behind the veil of [conciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm).
+We've covered the `long, long ago` quite considerably, and of the `long ago`: haze meets our gaze as we settle into my `dropout days`. I tried finding myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), my primary objective had become locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It wasn't my original plan, merely a pivot several years in the making. 
+
+Prior to dropping out, the wool was pulled over my eyes, hiding the complex machinery that operates society. Before I tried marijuana, after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt); I soon found myself seeking a glimpse behind the veil of [conciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm).
 
 My reflections on Information Technology, web design, and software architecture often make references I promise to fold-in "someday" and that day is today. There's a lot of connective tissue in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream-a-love-letter-to-the-bomb), but as with any article I try to structure them in a way where the connective tissue is only additive. Not a promise: The "I'll probably never talk about this stuff so don't ask" that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it).
 
 While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (within the previously mentioned boundaries, and excluding expounding on Chitaquas). Suffice it to say, I’ve gathered my thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and published the pre-requisite knowledge necessary to reach [the point](#the-point).
 
-The story begins on the #intp channel of ECNet.org, an IRC channel I had joined after taking a Myers-Briggs Type Indicator (MBTI) test that led me there. A year later I would test as INTJ, and is consistently my type now. However, I had already made friends in #intp so frequented that channel (not to mention #intj wasn't as populated). We won't get into the weeds of MBTI, but if you're interested in finding out your type [try this free test here](https://sakinorva.net/functions). Some time into my first year on the server, another user, SF, shared that he was dropping out of high school to pursue game development. I quickly joined others in mocking him, but the more he stated his case, [the more I found myself agreeing with him](https://www.imdb.com/title/tt1566648/).
+The story begins on the #intp channel of ECNet.org, an IRC channel I had joined after taking a Myers-Briggs Type Indicator (MBTI) test that led me there. A year later I would test as INTJ, and is consistently my type now. However, I had already made friends in #intp so frequented that channel (not to mention #intj wasn't as populated). We won't get into the weeds of MBTI, but if you're interested in finding out your type [try this free test here](https://sakinorva.net/functions). One day on #intp, another user, SF, shared that he was dropping out of high school to pursue game development. I quickly joined others in mocking him, but the more he stated his case, [the more I found myself agreeing with him](https://www.imdb.com/title/tt1566648/).
 
-Since, I've considered many possibilities, the most likely of which is his being indocrinated by the book he shared with me, "The Teenage Liberation Handbook" by Grace Llewellyn. A book that trains teenagers on coercing their parents into allowing the reader to drop out of school and begin "unschooling". This topic recently came into vogue and raises the same problems I ran into, which is the type of parent to resort to this kind of schooling is likely going to use "grocery shopping" as a math lesson. Sure, the concept is there, but based on reality these parents aren't even teaching their kids how sales tax works. I'm unsure of SF's results, as we lost touch a few years after he had dropped out. [This was his GitHub page](https://github.com/sf17k/) and "The Road" was entered into Ludum Dare 4, which I played and voted on for him.
+Since, I've considered many possibilities, the most likely of which is his being indocrinated by the book he shared with me, ["The Teenage Liberation Handbook" by Grace Llewellyn](https://openlibrary.org/books/OL8521345M/The_Teenage_Liberation_Handbook). This self-described handbook trains teenagers to coerce their parents into allowing the reader to drop out of school and begin "unschooling". This topic recently came into vogue and raises the same problems I ran into, which is the type of parent to resort to this kind of schooling is likely going to use "grocery shopping" as a math lesson. Sure, the concept is there, but based on reality these parents aren't even teaching their kids how sales tax works, much less using it as a socioeconomic lesson for why prices changes. I'm unsure of SF's results, as we lost touch a few years after he had dropped out. [This was his GitHub page](https://github.com/sf17k/) and "The Road" was entered into Ludum Dare 13, which I played and voted on for him.
 
 At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly Photoshop, but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school months later.
 
@@ -40,42 +42,41 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 - [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://youtu.be/F7AiLcvdAI4?si=ntoGf-unR4xDC2qN&t=4071)
 
-Stonemasons were the software engineers of their day.
-
 ### Kai's Reclassified High School Dropout Guide
 
-To be clear, I do not recommend any fifteen-year-olds drop out of school or try marijuana. There are studies that show how it hinders brain growth in adolescents, the same way that caffiene has shown to stunt physical growth. As mentioned in [Waking Software Engineering](/waking-software-engineering), my path is untame and likely unsuitable for many. There are many points to be made though in regards to how society views each of these topics today, and I bore marijuana legalization to the core as a teenager.
+To be clear, I do not recommend any fifteen-year-olds drop out of school or try marijuana. There are [studies](https://pubmed.ncbi.nlm.nih.gov/25460036/) that [show](https://pmc.ncbi.nlm.nih.gov/articles/PMC3930618/) how it hinders brain growth in adolescents. As mentioned in [Waking Software Engineering](/waking-software-engineering), my path is untame and likely unsuitable for many. There are many points to be made though in regards to how society views each of these topics today, especially in regards to how the education system consistently fails our [youth](/assets/img/blog/posts/mirror-rorrim-krad/youths.webp).
 
-When adults were proven to be people holding a veil in front of my eyes though, it made it difficult to unsee the connection. After smoking weed, going home, and feeling (fairly) normal the next day I began pondering on SF's position. If I was lied to about [Harry Potter](/im-trans#lets-talk-about-harry-potter) and marijuana, how likely was it the school system wasn't as necessary as it was made out to be?
+When adults were proven to be people holding a veil in front of my eyes though, it made it difficult to unsee the connection. One of my parents, and society in general spoke of the critical dangers of smoking marijuana, even once. After smoking weed, going home, and feeling (fairly) normal the next day I began pondering on SF's position. If I was lied to about [Harry Potter](/im-trans#lets-talk-about-harry-potter) and marijuana, how likely was it the school system wasn't as necessary as it was made out to be?
 
-I look back at my "dropout letter" where I address my high school counselor and parents specifically, and cringe wholeheartedly. I mention "unplugging from the matrix", and how I'm going to "change the world". I'm definitely still another cog in the machine, as self-effacing as that may sound. My primary lesson from dropping out in hindsight is how difficult it is to fight the grain. I was able to find employment and succeed at working my way into the software world, but that wasn't world-bending. I was successful at avoiding tens of thousands of dollars in debt, but even assuming I went to college (which one can still do with a GED) I would've gotten a degree in Philosophy. 
+I look back at my "dropout letter" where I address my high school counselor and parents specifically, and cringe wholeheartedly. I mentioned "unplugging from the matrix", and how I was going to "change the world" by dropping out. I'm still another cog in the machine, as self-effacing as that may sound. My primary lesson from dropping out in hindsight is how difficult it is to fight the grain. I was able to find employment and succeed at working my way into the software world, but that isn't world-bending. I was successful at avoiding tens of thousands of dollars in debt, but even assuming I went to college (which one can still do with a GED) I would've gotten a degree in Philosophy. 
 
-My classes where the entire hour was a long joke, compared with my AP classes where students actually cared about their grade, only compounded my angst further. Why spend several more years in the machine, when I could take a step back, and view the machine as a whole? The assumed position of an interest in college became one that I re-examined and found less interesting. Presuming I would have any use of a Philosophy degree in the field of software, the only other benefit to spending tens of thousands of dollars on a college degree was networking.
+My classes where the entire hour was one long joke, compared with my AP classes where students actually cared about their grade, only compounded my frustration further. Why spend several more years in the machine, when I could take a step back, and view the machine as a whole? The assumed position of an interest in college became one that I re-examined and found less interesting. Presuming I would have any use of a Philosophy degree in the field of software, the only other benefit I could see to spending tens of thousands of dollars on a college degree was networking.
 
-Now, this wasn't the best insight in hindsight, but I figured I was already networking online. I had a LinkedIn and was friends with some important technorati, I bet I could continue to leverage that network into a job, and later found that wasn't the case.
+I figured I was already networking online, which was presumptuous, in hindsight. I had a LinkedIn and was friends with some important technorati, I bet I could continue to leverage that network into a job, and later found that wasn't the case.
 
 ### [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
 
 Like many teenagers, I had become acutely aware of how different my politics were from my parents, and became enthralled with [Barack Obama](
-https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this in any proximity, but I received the signal I wanted. 
+https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this conceptually, but I received the signal I wanted. 
 
-It was around this same time, as previously referenced "I began to live on the internet", where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I bore this new title with confidence, "High School Dropout" would be a point of pride, where years later I'd come to regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance of any patriot counterpart in America. We had no reason to fear Big Brother, most of that stuff was buried behind national security threats, and the thread which we weave our basket becomes tantilized by the comfort of our own breadth.
+Around the same time, as previously referenced ["I began to live on the internet"](/im-trans/#slight-miscalculations), where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I bore this new title with confidence, "High School Dropout" would be a point of pride, where years later I'd come to regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance of any patriot counterpart in America. We had no reason to fear Big Brother, most of that stuff was buried behind national security threats, and the thread which we weave our basket becomes tantilized by the comfort of our own breadth.
 
 Yes we can, could mean a myriad of things in 2008 versus 2028. The beads on our tapestry click into place.
 
 My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v=NRzDsxUOm4M).
 
-
 [![The One can do more than dodge bullets](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)
 {: style="text-align: center;"}
 
 "Are you telling me I can dodge bullets?" - Neo
+{:.figcaption}
+
 "No, Neo. I'm trying to tell you that when you're ready, you won't have to." - Morpheus
 {:.figcaption}
 
 ### Street Smarts vs. Book Smarts
 
-I hear this comparison a lot and  I can wholeheartedly agree. However, one's temperament, identity, and purpose can heavily weigh on each necessity. I read _a lot_ during that first initial few years and compounded my knowledge of a variation of many topics that had always interested me. This compacts into a compounded maladaptive coping mechanism, but I **was** able to learn this as a detriment of mine needing addressing because of my forged path. The meaning behind words has become embattled within many spheres of society and echoes the sentiments of Hermann Melville's _Moby Dick_.
+I hear this comparison a lot and  I can wholeheartedly agree. However, one's temperament, identity, and purpose can heavily weigh on each necessity. I read _a lot_ during those first initial few years and expanded my knowledge of a variation of many topics that had always interested me. This compacts into a maladaptive coping mechanism, but I **was** able to learn this as a detriment of mine which needed addressing because of my forged path. The meaning behind words has become embattled within many spheres of society and echoes the sentiments of Hermann Melville's _Moby Dick_.
 
 #### [Common Sense](https://oll.libertyfund.org/pages/1776-paine-common-sense-pamphlet)
 
@@ -89,15 +90,15 @@ I often find myself seeking balance in a mindset of analysis and strict logic, n
 
 Derived of an ergot alkaloid, Albert Hoffman synthesized in 1938, on April 19th:
 
-> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.”
+> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.”[^1]
 
-Acid speaks of its own volition. I believe that the mind expanding effects of specifically acid (others swear by "magic mushrooms" for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic (semi-Buddhist) before my first acid trip at 21 and believed in a higher power after.
+Acid speaks of its own volition. I believe that the mind expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic (semi-Buddhist) before my first acid trip at 21 and believed in a higher power after.
 
 ### Let's Talk About Chicks, Man.
 
 This section has literally nothing to do with chicks, or men. I'm a fan of misnomers and while calling it out, I'll likely refrain from using them, as that removes a lot of the fun, but if you haven't become acutely aware of this by now I often use misnomers in project titles, etc.
 
-My current read on the state of the machine was first mentioned in 2020, where I described echoing an error in the pipeline up through the static void we seek refuge through. In a lot of ways, I proved myself _correct_ and _incorrect_ as a teen rebel, my answers sought online caused a reflection inward but only after decades of searching. Does this imply I _wouldn't_ have found an answer had I chose to continue the oft-traveled graduation of my compatriots? I certainly can't as noted above, but it does beg the question: with how radically diametrically opposed to how I was being taught and nudged in specific directions, how incorrect was I?
+My current read on the state of the machine was first mentioned in 2020, where I described echoing back an error in the pipeline up through the static void we seek refuge through. In a lot of ways, I proved myself _correct_ and _incorrect_ as a teen rebel, my answers sought online caused a reflection inward but only after decades of searching. Does this imply I _wouldn't_ have found an answer had I chose to continue the oft-traveled graduation of my compatriots? I certainly can't as noted above, but it does beg the question: with how radically diametrically opposed to how I was being taught and nudged in specific directions, how incorrect was I?
 
 After finishing `that article`, I knew any follow-up article would be difficult to ascertain in regards to subject and my ability to continue the `COLOPHON` specified "next" section. Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming" I realized how tasking my intentions can be and finally published what was originally "Lucid Dreaming" as "The Android's Dream". And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
@@ -282,6 +283,9 @@ SWIM went back in their message history when asked some of these questions, and 
 ## Conclusion
 
 hahafkmerite.gif
+
+---
+[^1] [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
 
 ## COLOPHON
 

@@ -113,14 +113,12 @@ WordPress' general design guidance is the hallmark of its success. Do you need a
 クリスタル
 {:.figcaption}
 
-### Swimming oneself
-
-> You swam yourself!
-
-- Julian
+### Swimming Oneself
 
 [![Just keep swimming](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)](/assets/img/blog/posts/a-universe/just-keep-swimming.gif)
 {: style="text-align: center;"}
+
+> "You swam yourself!" - Julian
 
 In 2016, while living in Denver, Colorado, my partner, her best friend, and I went white-water rafting. I'm unsure of how similar others' experiences were to mine, and it was my first. Our raft guide's name was Julian, assuming that's how it was spelled. Julian was radically canderous, and wasn't averse to sharing how late in the season it was, nor how exhausted he was of guiding rafts on white-water.
 
@@ -333,6 +331,4 @@ I'm essentially trying to open this access like Netlify has, but packaged with G
 ╚══════╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝
 </code></pre>
 
-<pre>
-// TODO MIRROR | MIRROR DARKLY
-</pre>
+[TODO MIRROR \| MIRROR DARKLY](/mirror-rorrim-krad)
