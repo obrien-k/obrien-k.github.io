@@ -34,7 +34,7 @@ The story begins on the #intp channel of ECNet.org, an IRC channel I had joined 
 
 Since, I've considered many possibilities, the most likely of which is his being indocrinated by the book he shared with me, ["The Teenage Liberation Handbook" by Grace Llewellyn](https://openlibrary.org/books/OL8521345M/The_Teenage_Liberation_Handbook). This self-described handbook trains teenagers to coerce their parents into allowing the reader to drop out of school and begin "unschooling". This topic recently came into vogue and raises the same problems I ran into, which is the type of parent to resort to this kind of schooling is likely going to use "grocery shopping" as a math lesson. Sure, the concept is there, but based on reality these parents aren't even teaching their kids how sales tax works, much less using it as a socioeconomic lesson for why prices changes. I'm unsure of SF's results, as we lost touch a few years after he had dropped out. [This was his GitHub page](https://github.com/sf17k/) and "The Road" was entered into Ludum Dare 13, which I played and voted on for him.
 
-At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly Photoshop, but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school months later.
+At the same time, I had recently been moved into an Art class, my Theater Tech teacher had resigned due to family obligations and I needed to pick a new "art" class for that specified credit. It wasn't exactly [Photoshop](/the-androids-dream#photoshop), but sure art is cool. The table I was assigned to included someone who sold weed and asked if I wanted to buy some from him. After some discussion, I went home and started doing my own research. It wasn't the first time I had been offered weed before, and I can't say for certain whether it was the points my new classmate made or if it was the simultaneous thought of assumed trust in the systems that be, but the two are inextricably linked in my dropping out of high school months later.
 
 ## MIRROR
 
@@ -74,7 +74,7 @@ My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v
 
 ### Street Smarts vs. Book Smarts
 
-I hear this comparison a lot and  I can wholeheartedly agree. However, one's temperament, identity, and purpose can heavily weigh on each necessity. I read _a lot_ during those first initial few years and expanded my knowledge of a variation of many topics that had always interested me. This compacts into a maladaptive coping mechanism, but I **was** able to learn this as a detriment of mine which needed addressing because of my forged path. The meaning behind words has become embattled within many spheres of society and echoes the sentiments of Hermann Melville's _Moby Dick_.
+I hear this comparison a lot and  I can wholeheartedly agree. However, one's temperament, identity, and purpose can heavily weigh on each necessity. I read _a lot_ during those first initial few years and expanded my knowledge on a variation of many topics that had always interested me. This compacts into a maladaptive coping mechanism, but I **was** able to learn this as a detriment of mine which needed addressing because of my forged path. The meaning behind words has become embattled within many spheres of society and echoes the sentiments of Hermann Melville's _Moby Dick_.
 
 #### [Common Sense](https://oll.libertyfund.org/pages/1776-paine-common-sense-pamphlet)
 
@@ -93,6 +93,14 @@ Derived of an ergot alkaloid, Albert Hoffman synthesized in 1938, on April 19th:
 [^1]
 
 Acid speaks of its own volition. I believe that the mind expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic (semi-Buddhist) before my first acid trip at 21 and believed in a higher power after.
+
+#### Longform
+
+I love longform works, [the sheer amount of information and interworked media can feel comforting](https://aresluna.org/the-hardest-working-font-in-manhattan/), and to me is a reminder of what the internet is all about. It provides a blank canvas more malleable than a sheet of paper or Photoshop document, because of the expansiveness of HTML[^3]. During [my time in Denver, CO](/the-androids-dream#swimming-oneself), I would travel to work via RTD, their local light rail system. Due to my lack of data plan I would peruse [longform.org](https://longform.org/) at home on Wifi for articles to save to Instapaper which would allow me to read them during the ride.
+
+Where physical books and media typically have more oversight, web-based articles make up for that with the ability to update or modify any aspect of the content within minutes. Physical books require a reprint or follow-up edition for new information. There's some tradeoffs in either direction, but for people like myself who live on the bleeding edge the tradeoffs in the direction of online media lean in our favor.
+
+LSD, for me, reminds me of longform in a way, and while other psychedelic drugs can provide a brief respite from the banalities of everyday life, trips are exactly that: a trip.
 
 ### Let's Talk About Chicks, Man.
 
@@ -262,8 +270,11 @@ I can't tell you exactly what I believe, except that the connectedness I feel wh
 Capturing such magic in a bottle is more difficult than with lightning, believe me, I've tried, but as with all things I speak better in code than English so I'll make this conclusion brief. If you'd like to know more about this next generation mirage, check it out on [GitHub](https://github.com/orphic-inc/stellar-compose).
 
 ---
-[^1] [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
-[^2] Read: faffing about between schools and prior to full-time employment.
+[^1]: [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](https://www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
+
+[^2]: Read: faffing about between schools and prior to full-time employment.
+
+[^3]: We're focusing on web-based longform articles, today, but they exist in print as well.
 
 ## Further Reading
 [What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
