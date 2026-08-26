@@ -22,11 +22,11 @@ permalink: /mirror-rorrim-krad/
 
 ## Introduction
 
-We've covered the `long, long ago` quite considerably, and of the `long ago`: haze meets our gaze as we settle into my `dropout days`. I tried finding myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), my primary objective had become locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It wasn't my original plan, merely a pivot several years in the making. 
+We've covered the `long, long ago` quite considerably, and of the `long ago`: haze meets our gaze as we settle into my `dropout days`. I tried finding myself in drugs more than society or community. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), my primary objective had become locating LSD-25, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream) and my new chase of acid isn't plainly obvious, but the result was. It wasn't my original plan, merely a pivot several years in the making. 
 
 Prior to dropping out, the wool was pulled over my eyes, hiding the complex machinery that operates society. Before I tried marijuana, after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt); I soon found myself seeking a glimpse behind the veil of [conciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm).
 
-My reflections on Information Technology, web design, and software architecture often make references I promise to fold-in "someday" and that day is today. There's a lot of connective tissue in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream-a-love-letter-to-the-bomb), but as with any article I try to structure them in a way where the connective tissue is only additive. Not a promise: The "I'll probably never talk about this stuff so don't ask" that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it).
+My reflections on Information Technology, web design, and software architecture often make references I promise to fold-in "someday" and that day is today. There's a lot of connective tissue in The Android's Dream, but as with any article I try to structure them in a way where the connective tissue is only additive. Not a promise: The "I'll probably never talk about this stuff so don't ask" that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it).
 
 While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (within the previously mentioned boundaries, and excluding expounding on Chitaquas). Suffice it to say, I’ve gathered my thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and published the pre-requisite knowledge necessary to reach [the point](#the-point).
 
@@ -38,9 +38,7 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 ## MIRROR
 
-> What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too.
-
-- [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://youtu.be/F7AiLcvdAI4?si=ntoGf-unR4xDC2qN&t=4071)
+> "What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too," - "A Scanner Darkly" by [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://youtu.be/F7AiLcvdAI4?si=ntoGf-unR4xDC2qN&t=4071)
 
 ### Kai's Reclassified High School Dropout Guide
 
@@ -59,7 +57,7 @@ I figured I was already networking online, which was presumptuous, in hindsight.
 Like many teenagers, I had become acutely aware of how different my politics were from my parents, and became enthralled with [Barack Obama](
 https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled), combined with lectures I was receiving at school all seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They were in no way saying this conceptually, but I received the signal I wanted. 
 
-Around the same time, as previously referenced ["I began to live on the internet"](/im-trans/#slight-miscalculations), where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I bore this new title with confidence, "High School Dropout" would be a point of pride, where years later I'd come to regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance of any patriot counterpart in America. We had no reason to fear Big Brother, most of that stuff was buried behind national security threats, and the thread which we weave our basket becomes tantilized by the comfort of our own breadth.
+Around the same time, as previously referenced ["I began to live on the internet"](/im-trans/#slight-miscalculations), where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I bore this new title with confidence, "[High School Dropout](https://www.urbandictionary.com/define.php?term=High+School+Dropout)" would be a point of pride, where years later I'd come to regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance of any patriot counterpart in America. We had no reason to fear Big Brother, most of that stuff was buried behind national security threats, and the thread which we weave our basket becomes tantilized by the comfort of our own breadth.
 
 Yes we can, could mean a myriad of things in 2008 versus 2028. The beads on our tapestry click into place.
 
@@ -90,7 +88,9 @@ I often find myself seeking balance in a mindset of analysis and strict logic, n
 
 Derived of an ergot alkaloid, Albert Hoffman synthesized in 1938, on April 19th:
 
-> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.”[^1]
+> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.”
+
+[^1]
 
 Acid speaks of its own volition. I believe that the mind expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic (semi-Buddhist) before my first acid trip at 21 and believed in a higher power after.
 
@@ -114,7 +114,7 @@ You don't understand. You see, words are like bullets...
 
 One topic present on mind lately have been mine, communal, and societal motivations behind actions and words. [Words have meaning](https://medium.com/whither-news/words-matter-damnit-fc883733a729). Whether someone's intent is malicious or not, neither necessitate breaking boundaries. Facebook (now Meta) has a now-famous motto, ["Move fast and break things"](https://en.wikipedia.org/wiki/Meta_Platforms#History). I took a similar approach to the workplace where I intended to "wreck shop", whatever that meant in the applicable industry. The first of which was a tire and truck auto shop, hence my verbiage. Now, some may take that as literally knocking down vehicle bays, ripping up semi-trucks tires, what have you. Instead, this means to take whatever normal behaviors I observed, typically accepted system interactivity, and turn the machine on its head. I would sweat my ass off with a goddamn smile on my face, and I did. This was the first time I took a cold shower, and ho, it was worth.
 
-When writing, I often have a specific audience in mind, save my short-form writing which is usually one of those []"for me" works](https://fipresci.org/report/one-for-them-one-for-me/). Generally though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621) who was an editor, and encouraged me after my first short story when I was nine-years-old. I was motivated by my sister, who I previously mentioned as inspiring my love of reading.
+When writing, I often have a specific audience in mind, save my short-form writing which is usually one of those ["for me" works](https://fipresci.org/report/one-for-them-one-for-me/). Generally though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621) who was an editor, and encouraged me after my first short story when I was nine-years-old. I was motivated by my sister, who I previously mentioned as inspiring my love of reading.
 
 In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I did find one thing in common with him, but it was only our love of walks.
 
@@ -130,9 +130,7 @@ It's not to late to save yourself before you swim yourself, and it's not too lat
 
 ## RORRIM KRAD
 
-> Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing.
-
-- "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
+> "Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing," - "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
 
 That was the easy part and [I'd like to apologize to everyone in advance for this](https://getyarn.io/yarn-clip/84588835-855e-498d-a5ad-7b9b254ee796); I am going to be cagey and speaking in double speak, I mean meme speak, I mean code switching. I think it's fucked up that I have to write this in a way that won't keep me up at night in terms of [OpSec](https://medium.com/@mohiitlamba/how-investigative-journalists-actually-use-the-dark-web-367a8184343e). This, unfortunately, has been the state of the machine for a while, but I've kept these thoughts to myself to avoid being put on any [lists](https://www.propublica.org/article/heres-one-way-to-land-on-the-nsas-watch-list). And, summarily, is a huge part of the problem.
 
@@ -147,7 +145,7 @@ Today, that doesn't matter. Generative AI has a lot of faults, but it can certai
 
 Writing _any_ follow-up to `that article` has resulted in indictments of people who my deserve it more or less than others, but once I hit "Publish", I regret the decision and take it down. As much as it pissed me off about how DISH handled closing down their Alvin call center in 2016, it wasn't Darren Swanson's fault, no matter how much of an asshat he looked. It's only capitalism at work. Customer Service is a cost center in every industry.
 
-In 2018 or so, Matt Chaffin said to me "but AI won't be able to replace us, we give everything a human touch," (paraphrasing) and I made some hedging remark like "I'm not so sure" while I wanted to grip him by the shoulders and say "brother, we will be the _first_ to go,". I don't think this was cognitive dissonance, or stupidity. It is the same reaction I had when generative AI began proliferating in software. "Sucks to suck, but I'll be OK,". Such was not the case.
+In 2018 or so, [Matt Chaffin](https://www.linkedin.com/in/matthewchaffin/) said to me "but AI won't be able to replace us, we give everything a human touch," (paraphrasing) and I made some hedging remark like "I'm not so sure" while I wanted to grip him by the shoulders and say "brother, we will be the _first_ to go,". I don't think this was cognitive dissonance, or stupidity. It is the same reaction I had when generative AI began proliferating in software. "Sucks to suck, but I'll be OK,". Such was not the case.
 
 [In all likelihood, I _am_ on a list now, a previously accepted consequence of writing, typing, editing, and publishing `that article`](https://en.wikipedia.org/wiki/Persecution_of_transgender_people_under_the_second_Trump_administration).
 
