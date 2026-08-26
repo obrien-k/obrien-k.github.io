@@ -307,34 +307,3 @@ Capturing such magic in a bottle is more difficult than with lightning, believe 
 
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
-
-![Logotype](/assets/img/blog/posts/黒春光琳海/logo-sm.png)
-
-<!-- TODO: RSS/XML support with user-attached AnnounceKeys (previously tabled, revisit) -->
-<!-- TODO: tighten user ranks / user class system -->
-<!-- TODO: IRC server + channel nomenclature -->
-
----
-
-[![](/assets/img/blog/posts/stellar/kuro-logo.png)](/assets/img/blog/posts/stellar/kuro-logo.png)
-Kuro — dark theme
-{:.figcaption}
-
-[![](/assets/img/blog/posts/stellar/anorex-logo.png)](/assets/img/blog/posts/stellar/anorex-logo.png)
-Anorex — light theme
-{:.figcaption}
-
-[![](/assets/img/blog/posts/stellar/layer-cake-logo.png)](/assets/img/blog/posts/stellar/layer-cake-logo.png)
-Layer Cake — light theme
-{:.figcaption}
-
-[![](/assets/img/blog/posts/stellar/layer-cake-logo-dk.png)](/assets/img/blog/posts/stellar/layer-cake-logo-dk.png)
-Layer Cake — dark theme
-{:.figcaption}
-
-[![](/assets/img/blog/posts/stellar/max-accounting-bytes.png)](/assets/img/blog/posts/stellar/max-accounting-bytes.png)
-stellar-api: a single contribution's byte count (4,781,401,702) refusing to fit a 32-bit `INT4` — the accounting outgrowing its own column.
-{:.figcaption}
-
----
-
