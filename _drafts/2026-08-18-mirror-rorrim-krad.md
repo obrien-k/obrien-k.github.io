@@ -102,7 +102,7 @@ LSD reminds me of longform in a way, and while other psychedelic drugs can provi
 
 SWIM once tripped with {which rapper?} and had such a moment where SWIM quit smoking cigarettes and hasn't smoked them in the seven years since, the rapper announced the following day {something, what was it?}. SWIM once tripped with a college friend who had conversations with fish where each was able to continue the conversation as though they could read the fish's thoughts. SWIM attended many concerts in the 90s while tripping, one of which where they could "feel the harmonics reverberating through their brain".
 
-#### [Set & Setting](https://en.wikipedia.org/wiki/Set_and_setting)
+#### [Set & Setting](https://maps.org/news/bulletin/the-american-trip-set-setting-and-psychedelics-in-20th-century-psychology/)
 
 I will dole out some specific advice when it comes to tripping on acid, but know that this advice hasn't ever done much for me as far as improving my experiences. However, assuming you're not going to read anything else, [you must be in a proper mind set and physical setting before dosing LSD](https://www.academia.edu/33412177/Constructing_drug_effects_A_history_of_set_and_setting).
 
@@ -304,6 +304,8 @@ Capturing such magic in a bottle is more difficult than with lightning, believe 
 [&](https://www.youtube.com/watch?v=1H_DnYVqa3k)[&](https://arngren.net/)
 
 ### [NEXT](https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg)
+
+> I’ve got kind of a weird feeling that my experience as someone high functioning with ADHD is alot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
 
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
