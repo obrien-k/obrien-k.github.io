@@ -26,7 +26,7 @@ We've covered the `long, long ago` quite considerably, but what of the `long ago
 
 Before I dropped out, wool was pulled over my eyes, obscuring the complex machinery and politics that run civilization. Prior to smoking marijuana, I had not dropped out, and only after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt), did I soon find myself seeking a glimpse behind the veil of [consciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm). Psychedelics became my friend, especially while coding.
 
-My reflections on Information Technology, web design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and designed additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" “love” that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^1].
+My reflections on Information Technology, web design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and arranged additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" questions that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^1].
 
 While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (within the previously mentioned boundaries, and excluding expounding on [Chautauquas](https://openlibrary.org/books/OL24224878M/Zen_and_the_art_of_motorcycle_maintenance)). Suffice it to say, I’ve gathered my thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and published the pre-requisite knowledge necessary to reach [`The Point`](#the-point).
 
@@ -152,9 +152,11 @@ Yesterday (2026.08.26), Dolly Parton died, and today Tim Curry followed suit. Wh
 
 > "Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing," - "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
 
-That was the easy part, and [I'd like to apologize to everyone in advance for this](https://getyarn.io/yarn-clip/84588835-855e-498d-a5ad-7b9b254ee796); I am going to be cagey and speaking in double speak, I mean meme speak, I mean code-switching. I think it's fucked up that I have to write this in a way that won't keep me up at night in terms of [OpSec](https://medium.com/@mohiitlamba/how-investigative-journalists-actually-use-the-dark-web-367a8184343e). This, unfortunately, has been the state of the machine for a while, but I've kept these thoughts to myself to avoid being put on any [lists](https://www.propublica.org/article/heres-one-way-to-land-on-the-nsas-watch-list). And, in short, it's a huge part of the problem.
+That was the easy part, and [I'd like to apologize to everyone in advance for this](https://getyarn.io/yarn-clip/84588835-855e-498d-a5ad-7b9b254ee796); I am going to be cagey and speaking in double speak; I mean meme speak, I mean code-switching. I think it's fucked up that I have to write this in a way that won't keep me up at night in terms of [OpSec](https://medium.com/@mohiitlamba/how-investigative-journalists-actually-use-the-dark-web-367a8184343e). This, unfortunately, has been the state of the machine for a while, but I've kept these thoughts to myself to avoid being put on any [lists](https://www.propublica.org/article/heres-one-way-to-land-on-the-nsas-watch-list). And, in short, it's a huge part of the problem.
 
 Why is today's society so readily willing to sacrifice any shred of privacy for incalculably less value? Have our collective concerns and senses of liberty been so heavily eroded that we can't see the corporatization of our own lives?
+
+> "You watch the smoke, I do that too," - Emily
 
 This comes from the person who hands Google and Apple all their data with a grin on their face, so this is a bit of schadenfreude, but hear me out: my data is incredibly tainted and noisy. I can't recall exactly why I shared all this data as a teenager (and championed the idea to friends and family), but after 2014 I made damn sure it'd take a lot of sifting, account hopping, and migraine-inducing research to connect any of the dots in my life.
 
@@ -185,7 +187,7 @@ I began Kyle O IO intending to advocate for FOSS/OSS, and as much as it pained r
 
 ### The Point
 
-> "It's gettin' live in here" - Crystal Edwards
+> "It's gettin' live in here" - Crystal
 
 I've quite frequently referenced Philip K. Dick's title "How to Build a Universe that Doesn't Fall Apart Two Days Later," and if you've followed this journey from 2020 (or earlier) until now, it may be apparent what `The Point` is; But suffice it to say, here's our next hammer: This is a mirage.
 
@@ -307,6 +309,8 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 [&](https://www.youtube.com/watch?v=1H_DnYVqa3k)[&](https://arngren.net/)[&](https://www.deadlanguagesociety.com/p/weird-is-a-weird-word)
 
 ### [NEXT](https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg)
+
+AI PSYCHOSIS
 
 > I’ve got kind of a weird feeling that my experience as someone high functioning with ADHD is alot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
 
