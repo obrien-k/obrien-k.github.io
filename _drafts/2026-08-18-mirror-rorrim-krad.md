@@ -38,7 +38,7 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 ## MIRROR
 
-> "What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too," - "A Scanner Darkly" by [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://www.npr.org/2006/07/07/5541990/scanner-darkly-looks-odd-and-thats-good)
+> "Curiosity is intrinsically rewarding. I enjoy asking questions, making connections between apparently unrelated ideas and following intellectual rabbit holes. The discoveries don't need to be novel, and the exploration doesn't need to produce anything," - Autotelier
 
 ### Kai's Reclassified High School Dropout Guide
 
@@ -150,7 +150,7 @@ Yesterday (2026.08.26), Dolly Parton died, and today Tim Curry followed suit. Wh
 
 ## RORRIM KRAD
 
-> "Now in the dark world where I dwell, ugly things and surprising things and sometimes little wondrous things spill out on me and I can count on nothing," - "[A Scanner Darkly](https://www.goodreads.com/quotes/738663-the-pain-so-unexpected-and-undeserved-had-for-some-reason)" - [Philip K. Dick](https://youtu.be/F7AiLcvdAI4?si=K6FRuvqXo-K0OpOn&t=1792)
+> "What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too," - "A Scanner Darkly" by [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://www.npr.org/2006/07/07/5541990/scanner-darkly-looks-odd-and-thats-good)
 
 That was the easy part, and [I'd like to apologize to everyone in advance for this](https://getyarn.io/yarn-clip/84588835-855e-498d-a5ad-7b9b254ee796); I am going to be cagey and speaking in double speak; I mean meme speak, I mean code-switching. I think it's fucked up that I have to write this in a way that won't keep me up at night in terms of [OpSec](https://medium.com/@mohiitlamba/how-investigative-journalists-actually-use-the-dark-web-367a8184343e). This, unfortunately, has been the state of the machine for a while, but I've kept these thoughts to myself to avoid being put on any [lists](https://www.propublica.org/article/heres-one-way-to-land-on-the-nsas-watch-list). And, in short, it's a huge part of the problem.
 
@@ -310,9 +310,8 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 ### [NEXT](https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg)
 
-AI PSYCHOSIS
+#### AI PSYCHOSIS
 
 > I’ve got kind of a weird feeling that my experience as someone high functioning with ADHD is alot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
-
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
