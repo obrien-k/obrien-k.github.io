@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MIRROR | RORRIM KRAD"
-date: 2026-10-08 00:00:00 +0000
+date: 2027-03-01 00:00:00 +0000
 description: ""
 tags:
   - nsfw
@@ -232,6 +232,7 @@ all walls, closing in.</pre>
 So even to those who have nothing to hide, I beg you to educate yourself further on these topics because whether or not you have skeletons in your closet today doesn't mean your children, hobbies, or selves will remain classified as "safe" tomorrow. Your elected officials and peers _love_ to create legislation in the name of children, the same children who feel disenfranchised by that same government. The same government protects Big Tobacco and has spurned alternatives. The same government that did little to nothing about Exxon's disinformation campaign about the long-term effects on our environment.
 
 > [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
+
 I've mentioned before how the web feels stale, and generative AI has only accelerated it to the point that the web feels like a deep-fried meme. I can't claim to have a solution, but I can claim I tried. When I first set out to do this, I had the presence of mind to realize it could piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring something typically left in the shadows to light.
 
 I've done what I could to protect it at the code level, but as with anything, what can improve society can also hinder it. Back to our history lesson.
