@@ -156,7 +156,9 @@ That was the easy part, and [I'd like to apologize to everyone in advance for th
 
 Why is today's society so readily willing to sacrifice any shred of privacy for incalculably less value? Have our collective concerns and senses of liberty been so heavily eroded that we can't see the corporatization of our own lives?
 
-> "You watch the smoke, I do that too," - Emily
+> "You watch the smoke, I do that too." - Emily
+
+> "If you mix the mashed potatoes and sauce, you can't separate them later. It's forever. The smoke comes out of Daddy's cigarette, but it never goes back in. We cannot go back. That's why it's hard to choose. You have to make the right choice. As long as you don't choose, everything remains possible." - [Mr. Nobody](https://www.imdb.com/title/tt0485947/quotes/?item=qt2810448)
 
 This comes from the person who hands Google and Apple all their data with a grin on their face, so this is a bit of schadenfreude, but hear me out: my data is incredibly tainted and noisy. I can't recall exactly why I shared all this data as a teenager (and championed the idea to friends and family), but after 2014 I made damn sure it'd take a lot of sifting, account hopping, and migraine-inducing research to connect any of the dots in my life.
 
