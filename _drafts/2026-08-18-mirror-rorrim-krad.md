@@ -268,19 +268,19 @@ SWIM went back in their message history when asked some of these questions, and 
 
 ### Bibbidy-boppidi-boo
 
-In one of these conversations, SWIM asked me, absolutely seriously, "Do you believe in magic?" I paused, taking stock of the situation, and my immediate response was a resounding "Yes,". Just as we exist in a universe that requires infinitesimal effort from an impossibly improbable set of circumstances, magic happens every day.
+In one of these conversations, SWIM asked me, absolutely seriously, "Do you believe in magic?" I paused, taking stock of the situation, and my immediate response was a resounding "Yes." As we exist in a universe that requires infinitesimal effort from an impossibly improbable set of circumstances, magic happens every day.
 
-Not in the way that Cinderella's fairy godmother provided her, but closer to C.S. Lewis' character Aslan described a ["deeper magic"](https://www.wtsbooks.com/blogs/westminster-kids/creation-and-c-s-lewis-deeper-magic), and to be clear, I don't ascribe to modern-day Christianity. In fact, when I was a self-described atheist, I used The Chronicles of Narnia as a talking point for why I didn't believe in the Bible to my mother: "There are seven books! Why should I believe it any less than Jonah and the Whale, or Jack and the Beanstalk?" This quote is for posterity, and using a fifteen-year-old's arguments in a discussion about religion is immature.
+Not in the way that Cinderella's fairy godmother provided her, but closer to C.S. Lewis' character Aslan described a ["deeper magic"](https://www.wtsbooks.com/blogs/westminster-kids/creation-and-c-s-lewis-deeper-magic), and to be clear, I don't ascribe to modern-day Christianity. In fact, when I was a self-described atheist, I used _The Chronicles of Narnia_ as a talking point for why I didn't believe in the Bible to my mother: "There are seven books! Why should I believe it any less than Jonah and the Whale, or Jack and the Beanstalk?" This quote is for posterity, and using a fifteen-year-old's arguments in a discussion about religion is immature.
 
-That deeper magic exists, though, and we see (saw?) this in the Open Source community until recently, when generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded. For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. Most citizens, though, don't realize this and, for some reason, believe an omniscient parent in the sky drags the sun across the horizon so we have daylight. We're well past the point where we should believe our parents are why electricity works, and the doomsday clock ticks closer to midnight.
+That deeper magic exists, though, and we see (saw?) this in the Open Source community until recently, when generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded. For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. Few citizens (and netizens) understand this fact, and believe an omniscient parent in the sky drags the sun across the horizon so we have daylight. We're well past the point where we should believe any parent's existence is how electricity works, and the doomsday clock ticks closer to midnight.
 
-Unfortunately, Light Magic exists as much as Dark Magic does, and we could call it Positive/Negative Magic, or whatever, but `that article` calls it Light Magic, so we'll digress there.
+Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there.
 
 I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD helps me see beyond the tangible, and profoundly affected me that first time so much that it gives me pause when asked such questions.
 
 ## Conclusion
 
-Capturing such magic in a bottle is harder than with lightning; believe me, I've tried, but as with all things, I speak better in code than English, so I'll keep this conclusion brief. If you'd like to know more about this next-generation mirage, check it out on [GitHub](https://github.com/orphic-inc/stellar-compose).
+Capturing such magic in a bottle is harder than with lightning; believe me, I've tried, but as with all things, I speak better in code than English, so I'll keep this conclusion brief. If you'd like to know more about my next-generation mirage, check it out on [GitHub](https://github.com/orphic-inc/stellar-compose).
 
 —
 [^1]: This is satire. 
@@ -312,6 +312,6 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 #### AI PSYCHOSIS
 
-> I’ve got kind of a weird feeling that my experience as someone high functioning with ADHD is alot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
+> I’ve got kind of a weird feeling that my experience as someone high functioning with AuADHD is a lot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
