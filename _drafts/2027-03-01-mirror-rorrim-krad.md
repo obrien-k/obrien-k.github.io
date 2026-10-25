@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MIRROR | RORRIM KRAD"
-date: 2027-03-01 00:00:00 +0000
+date: 2026-10-01 00:00:00 +0000
 description: ""
 tags:
   - nsfw
@@ -20,13 +20,13 @@ permalink: /mirror-rorrim-krad/
 "No." - The One
 {:.figcaption}
 
-## Introduction
+## [Introduction](https://www.youtube.com/watch?v=q2nNzNo_Xps)
 
 We've covered the `long, long ago` quite considerably, but what of the `long ago`? Haze meets our gaze as we settle into my `dropout days`. As a late teenager, I tried finding myself in drugs more than friends, communities, or society. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), LSD-25 was my muse, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream) and my new chase of LSD isn't plainly obvious, but the result was. It wasn't my initial goal, merely a multi-pivot several years in the making. It comes full circle, of course.
 
 Before I dropped out, wool was pulled over my eyes, obscuring the complex machinery and politics that run civilization. Prior to smoking marijuana, I had not dropped out, and only after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt), did I soon find myself seeking a glimpse behind the veil of [consciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm). Psychedelics became my friend, especially while coding.
 
-My reflections on Information Technology, web design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and arranged additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" questions that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^1].
+My reflections on Information Technology, interface design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and arranged additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" questions that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^1].
 
 While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (within the previously mentioned boundaries, and excluding expounding on [Chautauquas](https://openlibrary.org/books/OL24224878M/Zen_and_the_art_of_motorcycle_maintenance)). Suffice it to say, I’ve gathered my thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and published the pre-requisite knowledge necessary to reach [`The Point`](#the-point).
 
@@ -38,7 +38,7 @@ At the same time, I had recently been moved into an Art class, my Theater Tech t
 
 ## MIRROR
 
-> "Curiosity is intrinsically rewarding. I enjoy asking questions, making connections between apparently unrelated ideas and following intellectual rabbit holes. The discoveries don't need to be novel, and the exploration doesn't need to produce anything," - Autotelier
+> "Curiosity is intrinsically rewarding. I enjoy asking questions, making connections between apparently unrelated ideas and following intellectual rabbit holes. The discoveries don't need to be novel, and the exploration doesn't need to produce anything." - Autotelier
 
 ### Kai's Reclassified High School Dropout Guide
 
@@ -90,7 +90,7 @@ Derived from an ergot alkaloid, Albert Hoffman synthesized it in 1938, on April 
 
 > One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.” [^3]
 
-LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after.
+LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19].
 
 #### Longform
 
@@ -132,9 +132,9 @@ You don't understand. You see, words are like bullets...
 
 One topic present on my mind lately has been my communal and societal motivations behind actions and words. [Words have meaning](https://medium.com/whither-news/words-matter-damnit-fc883733a729). Whether someone's intent is malicious or not, neither necessitates breaking boundaries. Facebook (now Meta) has a now-famous motto, ["Move fast and break things"](https://en.wikipedia.org/wiki/Meta_Platforms#History). I took a similar approach to the workplace, intending to "wreck shop", whatever that meant in the industry. The first was a tire and truck auto shop, hence the verbiage. Now, some may take that literally, knocking down vehicle bays, ripping up semi-truck tires, what have you. Instead, it means taking whatever normal behaviors I observed, the typically accepted system interactivity, and turning the machine on its head. I would sweat my ass off with a goddamn smile on my face, and I did. This was the first time I took a cold shower, and ho, it was worth.
 
-When I write, I often have a specific audience in mind, except for my short-form writing, which is usually one of those ["for me" works](https://fipresci.org/report/one-for-them-one-for-me/). Generally, though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621), an editor, who encouraged me after my first short story when I was nine years old. I was also motivated by my sister, whom I mentioned earlier as inspiring my love of reading.
+When I write, I often have a specific audience in mind, except for my short-form writing, which is usually one of those ["for me" works](https://fipresci.org/report/one-for-them-one-for-me/). Generally, though, I was motivated by [my grandfather](https://www.legacy.com/us/obituaries/fortwayne/name/henry-o-brien-obituary?id=22348621), an editor, who encouraged me after reading and editing my first short story when I was nine years old. I was also motivated by my sister, whom I mentioned in `that article` as inspiring my love of reading.
 
-In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I found one thing in common with him, but only our love of walks.
+In the `long, long ago`, I exasperatingly likened myself to Steve Jobs, as different as we were. After reading [Walter Issacsson's Steve Jobs biography](https://openlibrary.org/books/OL27154061M/Steve_Jobs), I found one thing in common with him, our love of walks.
 
 When working at DISH, the call center was a converted Wal-Mart, a sprawl of cubicles in a football-field-sized room. At the front was the "fish bowl," where the Resource Center department managed schedules and handled similar tasks. The cubicles behind them were arranged in "pods", about 20 cubicles per group, encircling the supervisor's cubicle. From each pod, you'd hear the supervisor's radio station of choice playing in the center (assuming they weren't on a phone call, evaluating their agents, meeting for a 1:1, etc.). I use the term radio station, but it was more likely Pandora, YouTube, or similar. This was before Spotify became as popular as it is today. As much as I wanted off the phones, I primarily wanted to be the authority on my pod's "radio station", and after having a supervisor who primarily listened to Creed, Nickelback, and Pearl Jam, I finally got promoted to Team Lead. Silly motivation, excellent result.
 
@@ -227,13 +227,13 @@ The apple rotted,
 experience informs me,
 all walls, closing in.</pre>
 
-"I have nothing to hide" is the most common response I hear to my concern about our increasingly surveilled state, and it misses the mark. This isn't about citizens' lived reality, but about the state's clandestine intent. "Why do you have to be paranoid?" Whether this is due to my upbringing or a suspected autism diagnosis is up for debate, but what isn't up for debate is the fact that [we behave differently when surveilled](https://www.scientificamerican.com/article/how-being-watched-changes-how-you-think/). It's great we're seeing a ton of backlash towards [Flock cameras](https://www.youtube.com/watch?v=uB0gr7Fh6lY) and [Meta may be held responsible for _some_ of their actions](https://www.wired.com/story/metas-big-reckoning-is-here/), but this is surface-level stuff that doesn't get to the root of the issue. The machinations that allowed these trespasses on our liberties to begin in the first place are, to me, absolutely asinine. But I am not without hope. I think there's been some excellent political movement at the local level, which is where the government starts.
+"I have nothing to hide" is the most common response I hear to my concern about our increasingly surveilled state, and it misses the mark. This isn't about citizens' lived reality, but about the state's clandestine intent. "Why do you have to be paranoid?" Whether this is due to my upbringing or a suspected autism diagnosis is up for debate, but what isn't up for debate is the fact that [we behave differently when surveilled](https://www.scientificamerican.com/article/how-being-watched-changes-how-you-think/). It's great that we're seeing a ton of backlash towards [Flock cameras](https://www.youtube.com/watch?v=uB0gr7Fh6lY) and [Meta may be held responsible for _some_ of their actions](https://www.wired.com/story/metas-big-reckoning-is-here/), but these are surface-level points that don't get to the root of the issue. The machinations that allowed these trespasses on our liberties to begin in the first place are, to me, absolutely asinine. But I am not without hope. I think there's been some excellent political movement at the local level, which is where the government starts.
 
-So even to those who have nothing to hide, I beg you to educate yourself further on these topics because whether or not you have skeletons in your closet today doesn't mean your children, hobbies, or selves will remain classified as "safe" tomorrow. Your elected officials and peers _love_ to create legislation in the name of children, the same children who feel disenfranchised by that same government. The same government protects Big Tobacco and has spurned alternatives. The same government that did little to nothing about Exxon's disinformation campaign about the long-term effects on our environment.
+So even to those who have nothing to hide, I urge you to educate yourself further on these topics because whether or not you have skeletons in your closet today doesn't mean your children, hobbies, or selves will remain classified as "safe" tomorrow. Your elected officials and peers _love_ to create legislation in the name of children, the same children who feel disenfranchised by that same government. The same government protects Big Tobacco and has spurned alternatives. The same government that did little to nothing about Exxon's disinformation campaign about the long-term effects on our environment.
 
 > [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
 
-I've mentioned before how the web feels stale, and generative AI has only accelerated it to the point that the web feels like a deep-fried meme. I can't claim to have a solution, but I can claim I tried. When I first set out to do this, I had the presence of mind to realize it could piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring something typically left in the shadows to light.
+I've mentioned before how the web feels stale, and generative AI has only accelerated it to the degree that the web feels like a deep-fried meme. I can't claim to have a solution, but I can claim I tried. When I first set out to do this, I had the presence of mind to realize it could piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring something typically left in the shadows to light.
 
 I've done what I could to protect it at the code level, but as with anything, what can improve society can also hinder it. Back to our history lesson.
 
@@ -267,7 +267,7 @@ I've talked at length about communities in the past, and studying What.CD and Ga
 
 SWIM still stays in contact with many former Whatters, something one does only when the roots of their commonalities with that community run deep. SWIM described a time when another user, "RainbowAlbatross", was living in Japan and was coerced by fellow Whatters to bike in town so that they could rip and upload Gorillaz's "Plastic Beach" album a day before it was set to be released in the U.S. They describe forum topics like "Free Stuff", "Epic Threads", and "Street Racing" which are fun anecdotally, but have little bearing on today's agenda.
 
-SWIM went back in their message history when asked some of these questions, and looked back on the time when What.CD went down fondly. All Whatters trying to look out for each other, remain operationally secure, but inviting each other to the previously mentioned upcropping of replacements. From the outside, these were lawless individuals sharing secrets and trying to circumvent lawful copyright protection; on the inside, they were free-thinkers fighting against the system and powers that be. [Whether you believe piracy should be a crime is entirely up to you](https://www.youtube.com/watch?v=mntVh15W1uY), but arguments against it are best handled by someone with more at stake.
+SWIM reviewed their message history when asked some of these questions, and reminisced on the time when What.CD went down fondly. All Whatters trying to look out for each other, remain operationally secure, but inviting each other to the previously mentioned upcropping of replacements. From the outside, these were lawless individuals sharing secrets and trying to circumvent lawful copyright protection; on the inside, they were free-thinkers fighting against the system and powers that be. [Whether you believe piracy should be a crime is entirely up to you](https://www.youtube.com/watch?v=mntVh15W1uY), but arguments against it are best handled by someone with more at stake.
 
 ### Bibbidy-boppidi-boo
 
@@ -277,9 +277,9 @@ Not in the way that Cinderella's fairy godmother provided her, but closer to C.S
 
 That deeper magic exists, though, and we see (saw?) this in the Open Source community until recently, when generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded. For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. Few citizens (and netizens) understand this fact, and believe an omniscient parent in the sky drags the sun across the horizon so we have daylight. We're well past the point where we should believe any parent's existence is how electricity works, and the doomsday clock ticks closer to midnight.
 
-Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there.
+Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there. We've dipped our toes into Dark Magic enough for today.
 
-I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD helps me see beyond the tangible, and profoundly affected me that first time so much that it gives me pause when asked such questions.
+I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD helps me see beyond the tangible, and profoundly affected me that first time so much that it gives me pause when asked such questions. As with all prose, less is more, and especially in the case of acid: silence is deafeningly loud.
 
 ## Conclusion
 
