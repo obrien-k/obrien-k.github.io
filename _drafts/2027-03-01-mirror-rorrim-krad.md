@@ -110,7 +110,9 @@ I will dole out some specific advice when it comes to tripping on acid, but know
 - "Distraction device", popular items include: a Rubik's Cube, fidget spinner, Game Boy (or your equivalent handheld nostalgia), what have you. We all carry one in our phones, but I try to limit my application use to something like [Frax](https://fr.ax/).
 - "Go with the flow" -- The primary reason that none of the above has been entirely useful is because of this; plans are out the window regardless of how well you plan the itinerary. I've had a playlist in iTunes (Apple Music, now) called "The Trip" for over a decade and have never once listened to it while tripping.
 
-Continuing that last bullet point, I believe this is why I gel so well with LSD; it causes me to break from my typically structured and analytical view of the world and experience it as it is. While I love the geometric shapes that appear between fine points, or how my mouse cursor leaves trails when I disable the setting in my OS, these are only fun distractions. What I absolutely loved about my first trip on acid was the "mindfuck" effect of it, where everything becomes more alive, including my brain chemistry.
+Continuing that last bullet point, I believe this is why I gel so well with LSD; it causes me to break from my typically structured and analytical view of the world and experience it as it is. While I love the geometric shapes that appear between fine points, or how my mouse cursor leaves trails when the setting is disabled in my OS, these are only fun distractions. What I absolutely loved about my first trip on acid was the "mindfuck" effect of it, where everything becomes more alive, including my brain chemistry.
+
+This all being said, you should absolutely have a "trip sitter," that is someone more experienced in psychedelia and the spiritual realm that can guide you through your trip, especially your first time.
 
 ### Let's Talk About Chicks, Man.
 
