@@ -90,11 +90,11 @@ Derived from an ergot alkaloid, Albert Hoffman synthesized it in 1938, on April 
 
 > One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.” [^3]
 
-LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19].
+LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after[^4].
 
 #### Longform
 
-I love longform works; [the sheer amount of information and interworked media can feel comforting](https://aresluna.org/the-hardest-working-font-in-manhattan/), and to me, it reminds me what the internet is all about. It provides a blank canvas more malleable than a sheet of paper or a Photoshop document because of HTML's expansiveness [^4]. During [my time in Denver, CO](/the-androids-dream#swimming-oneself), I traveled to work via [RTD](https://www.rtd-denver.com/), including their local light rail system. Because I didn't have a data plan, I would read [longform.org](https://longform.org/) at home on Wi-Fi and save articles to Instapaper, so I could read them during the ride.
+I love longform works; [the sheer amount of information and interworked media can feel comforting](https://aresluna.org/the-hardest-working-font-in-manhattan/), and it reminds me what the internet is all about. It provides a blank canvas more malleable than a sheet of paper or a Photoshop document because of HTML's expansiveness [^5]. During [my time in Denver, CO](/the-androids-dream#swimming-oneself), I traveled to work via [RTD](https://www.rtd-denver.com/), including their local light rail system. Because I didn't have a data plan, I would read [longform.org](https://longform.org/) at home on Wi-Fi and save articles to Instapaper, so I could read them during the ride.
 
 Where physical books and media typically have more oversight, web-based articles make up for it by letting you update or modify any aspect of the content within minutes. Physical books require a reprint or a follow-up edition to add new information. There are trade-offs in either direction, but for people like me who live on the bleeding edge, the trade-offs in online media lean in our favor.
 
@@ -122,7 +122,7 @@ I first mentioned my current read on the state of the machine in 2020, when I de
 
 After finishing `that article`, I knew any follow-up article would be difficult to ascertain, given the subject and my ability to continue the `COLOPHON` specified "NEXT" section. Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming," I realized how tasking my intentions can be, and I finally published what was originally "Lucid Dreaming" as "The Android's Dream." And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
-I intended to write a biography of someone close to me. I felt with `that article`, that I had bookended the first [cycle](https://encyclopediaofbuddhism.org/wiki/Sa%E1%B9%83s%C4%81ra) or [arc](https://tvtropes.org/pmwiki/pmwiki.php/Main/StoryArc) of this blog, and that it had grown too myopic. Too many threads woven together on too large a tapestry. In fact, we've come so far from my original plan that I'm [5,391 miles](/im-trans/#colophon-brushes-used-for-cover-image) from where I advised I'd be in `that article`. Life finds a way, though, and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter became clear. <!-- Ed. note weak and poorly worded It wasn't clear to me a year ago, nor was it last week. I only had this vague target I referred to as `dropout days`, my time between the ages 15 - 19[^3?], when I attempted at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time. -->
+I intended to write a biography of someone close to me. I felt with `that article`, that I had bookended the first [cycle](https://encyclopediaofbuddhism.org/wiki/Sa%E1%B9%83s%C4%81ra) or [arc](https://tvtropes.org/pmwiki/pmwiki.php/Main/StoryArc) of this blog, and that it had grown too myopic. Too many threads woven together on too large a tapestry. In fact, we've come so far from my original plan that I'm [5,391 miles](/im-trans/#colophon-brushes-used-for-cover-image) from where I advised I'd be in `that article`. Life finds a way, though, and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter became clear. <!-- Ed. note weak and poorly worded It wasn't clear to me a year ago, nor was it last week. I only had this vague target I referred to as `dropout days`, my time between the ages 15 - 19[^6], when I attempted at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time. -->
 
 [![The One handles Agent Smith with ease](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
 {: style="text-align: center;"}
@@ -288,15 +288,18 @@ I can't tell you exactly what I believe, except that the connectedness I feel wh
 Capturing such magic in a bottle is harder than with lightning; believe me, I've tried, but as with all things, I speak better in code than English, so I'll keep this conclusion brief. If you'd like to know more about my next-generation mirage, check it out on [GitHub](https://github.com/orphic-inc/stellar-compose).
 
 —
+
 [^1]: This is satire. 
 
 [^2]: Sorry, Ms. B.
 
 [^3]: [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](https://www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
 
-[^4]: Read: faffing about between schools and prior to full-time employment.
+[^4]: [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19]
 
 [^5]: We're focusing on web-based long-form articles today, but they exist in print as well.
+
+[^6]: Read: faffing about between schools and prior to full-time employment.
 
 ## Further Reading
 [What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
