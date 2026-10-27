@@ -24,9 +24,9 @@ permalink: /mirror-rorrim-krad/
 
 We've covered the `long, long ago` quite considerably, but what of the `long ago`? Haze meets our gaze as we settle into my `dropout days`. As a late teenager, I tried finding myself in drugs more than friends, communities, or society. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), LSD-25 was my muse, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream) and my new chase of LSD isn't plainly obvious, but the result was. It wasn't my initial goal, merely a multi-pivot several years in the making. It comes full circle, of course.
 
-Before I dropped out, wool was pulled over my eyes, obscuring the complex machinery and politics that run civilization. Prior to smoking marijuana, I had not dropped out, and only after partaking, and [later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt), did I soon find myself seeking a glimpse behind the veil of [consciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm). Psychedelics became my friend, especially while coding.
+Before I dropped out, wool was pulled over my eyes, obscuring the complex machinery and politics that run civilization. Prior to smoking marijuana, I had not dropped out, and only after partaking[^1], did I soon find myself seeking a glimpse behind the veil of [consciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm). Psychedelics became my friend, especially while coding.
 
-My reflections on Information Technology, interface design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and arranged additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" questions that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^1].
+My reflections on Information Technology, interface design, and software architecture often make references I promise to fold in "someday"; there's connective tissue in The Android's Dream, but it is structured and arranged additively. What I'll continue to refrain from covering has already been promised: the "I'll probably never talk about this stuff so don't ask" questions that people still ask about from [`that article`](/im-trans) (as I affectionately refer to it)[^2].
 
 While this article is the blog’s most lengthy, it will “book-end” the conversations I opened (within the previously mentioned boundaries, and excluding expounding on [Chautauquas](https://openlibrary.org/books/OL24224878M/Zen_and_the_art_of_motorcycle_maintenance)). Suffice it to say, I’ve gathered my thoughts on these topics for a while and summarizing them has been tasking, but I’m in a place where I feel I have the resources and published the pre-requisite knowledge necessary to reach [`The Point`](#the-point).
 
@@ -82,19 +82,19 @@ I hear this comparison a lot, and I typically agree with its underlying sentimen
 
 A philosophy degree is fairly worthless for a software engineer, or anyone seeking employment in the software engineering space. A wannabe amateur philosopher found solace in unexpected places, primarily Thoreau, Emerson, Kierkegaard, and Kant. I've considered writing on existentialism, but it feels like too well-trodden ground to belabor. Living online means exactly that: every thought, a tweet, every photo, on Flickr. Exact locations may one day be delivered upon further notice, but my primary intent is to look toward the future. Describing the quality of education I received compared with that of the typical American would only suit a branch I've never set foot on. Reaching the height of the tree from here is within reach, but only from the vantage point of _this tree_.
 
-I often find myself seeking balance between analysis and strict logic, numbers to quantify, but acknowledging things' qualia[^2]. A metric that can be gamed is no metric at all. Let's get back to the acid.
+I often find myself seeking balance between analysis and strict logic, numbers to quantify, but acknowledging things' qualia[^3]. A metric that can be gamed is no metric at all. Let's get back to the acid.
 
 ### Lysergic Acid Diethylamide
 
 Derived from an ergot alkaloid, Albert Hoffman synthesized it in 1938, on April 19th:
 
-> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.” [^3]
+> One hallucinogenic feature of the drug that astounded Hofmann was synesthesia, the overflow from one sensory modality to another in which colors are “heard” and sounds may be “seen.” [^4]
 
-LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after[^4].
+LSD-25 ([known on the street as acid](https://www.soberrecovery.com/addiction/lsd-street-names/)) speaks of its own volition. I believe that the mind-expanding effects of specifically acid (others swear by [Psilocybin](https://maps.org/tag/psilocybin/) for microdosing, but from my research I found LSD-25 at 15-20ug to be a sweet spot) should be experienced (within physical and mental health limitations) by everyone at least once in their life. To keep my experience brief, I was an atheist/agnostic ([semi-Buddhist](https://alanwatts.org/)) before my first acid trip at 21 and believed in a higher power after[^5].
 
 #### Longform
 
-I love longform works; [the sheer amount of information and interworked media can feel comforting](https://aresluna.org/the-hardest-working-font-in-manhattan/), and it reminds me what the internet is all about. It provides a blank canvas more malleable than a sheet of paper or a Photoshop document because of HTML's expansiveness [^5]. During [my time in Denver, CO](/the-androids-dream#swimming-oneself), I traveled to work via [RTD](https://www.rtd-denver.com/), including their local light rail system. Because I didn't have a data plan, I would read [longform.org](https://longform.org/) at home on Wi-Fi and save articles to Instapaper, so I could read them during the ride.
+I love longform works; [the sheer amount of information and interworked media can feel comforting](https://aresluna.org/the-hardest-working-font-in-manhattan/), and it reminds me what the internet is all about. It provides a blank canvas more malleable than a sheet of paper or a Photoshop document because of HTML's expansiveness [^6]. During [my time in Denver, CO](/the-androids-dream#swimming-oneself), I traveled to work via [RTD](https://www.rtd-denver.com/), including their local light rail system. Because I didn't have a data plan, I would read [longform.org](https://longform.org/) at home on Wi-Fi and save articles to Instapaper, so I could read them during the ride.
 
 Where physical books and media typically have more oversight, web-based articles make up for it by letting you update or modify any aspect of the content within minutes. Physical books require a reprint or a follow-up edition to add new information. There are trade-offs in either direction, but for people like me who live on the bleeding edge, the trade-offs in online media lean in our favor.
 
@@ -187,7 +187,7 @@ One direction I considered was [Search](https://www.youtube.com/watch?v=U0-8SrbG
 
 "Only a Whatter would understand" might be something SWIM would say about their experience with another "Whatter," their self-described term. And in those conversations, they might guide each other on their musical journeys. I wouldn't know; I was only a casual bystander and far too young to understand how essential What, or What.CD would become to `The Scene`. I'm not interested in discussing [`Warez`](https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157) or `The Scene`, but there's a large pool of content related to that which can be found in the COLOPHON.
 
-I began Kyle O IO intending to advocate for FOSS/OSS, and as much as it pained readers, I shoehorned a brief introduction to Linux into the first article, which doubled its length but also filled out the symmetry with the first half. It was the Lucid core to [Lucid Dreaming in Code](/dreaming-in-code-lucid-dreaming). Linux was my entry point, and Gazelle was the first open-source utility I fell in love with.
+I began Kyle O IO intending to advocate for FOSS/OSS, and as much as it pained readers, I shoehorned a brief introduction to Linux into the first article, which doubled its length but also filled out the symmetry with the first half. It was the Lucid core to [Lucid Dreaming in Code](/dreaming-in-code-lucid-dreaming). Linux was my entry point, and [Gazelle](https://github.com/WhatCD/Gazelle) was the first open-source utility I fell in love with.
 
 ### The Point
 
@@ -199,7 +199,7 @@ It's odd to describe oneself as "falling in love" with software, but when it hap
 
 To me, building a universe means contemplating your application from user to developer, admin to consumer; documentation key, oversight near-omnipotent. Growth into emergent regions: constellations from far-away galaxies reach back in earnest, all without deconstructing on the first failure. Failures are loud signals to prepare for; every runbook exercised should result in at least two more days of runtime.
 
-Calling this project complete is "early", but only in the way [Bill Belichick "let[s] a player go a year too early [rather] than a year too late"](https://www.theringer.com/2024/01/11/nfl/bill-belichick-out-new-england-patriots-legacy-robert-kraft-tom-brady). In a short reprieve on April 20th, 2010, I described it as "Photoshop in real life, in real time", which this is absolutely not. It does beg into question what **_it is_**.
+Calling my latest project complete is "early", but only in the way [Bill Belichick "let[s] a player go a year too early [rather] than a year too late"](https://www.theringer.com/2024/01/11/nfl/bill-belichick-out-new-england-patriots-legacy-robert-kraft-tom-brady). In a short reprieve on April 20th, 2010, I described an early attempt as "Photoshop in real life, in real time", which this is absolutely not. It does beg into question what **_it is_**.
 
 <pre>Center, found apple
 It fell from a nearby tree
@@ -241,9 +241,9 @@ I've done what I could to protect it at the code level, but as with anything, wh
 
 ### A Primer on What.CD and Gazelle; A Tale of Addiction
 
-The best place to start this section is with WhatMan. I don't know all of the intricacies of who built, ran, and operated the front-end of What.CD, but WhatMan was a SysOp. SysOp is the highest level of authority on Gazelle, at least as a platform. SWIM ran into some trouble on What and lost their ability to socialize there, but still had all of the remaining features at their disposal. From what I was told, though, in their conversation with WhatMan, they asked that if they returned to high school and got their diploma, they would be allowed to socialize again.
+The best place to start this section is with [WhatMan](/assets/img/blog/posts/mirror-rorrim-krad/whatman-stepping-down-as-sysop-of-what-cd.webp). I don't know all of the intricacies of who built, ran, and operated the front-end of What.CD, but WhatMan was a SysOp. SysOp is the highest level of authority on Gazelle, at least as a platform. SWIM ran into some trouble on What and lost their ability to socialize there, but still had all of the remaining features at their disposal. From what I was told, though, in their conversation with WhatMan, they asked that if they returned to high school and got their diploma, they would be allowed to socialize again.
 
-SWIM began offloading all of their thinking to this group, whether it was what kind of car they should drive, drop out of high school, or try marijuana. The advice they got doesn't really matter; our focus is how an insane amount of trust was handed over to a group that may or may not have deserved it. Kai found a group of incredibly technically oriented people on PSP Hacking 101/Too Smart Guys; SWIM found a group more paranoid than they were on What.CD. They found like-minded individuals and when opinions differed, it led them to new perspectives. SWIM made a joke that they weren't going to try heroin or LSD, but wanted to dip their toes in the world of drugs with marijuana. SWIM turned out to be incorrect.
+The reason SWIM lost their privileges to post on the forums, and similar Gazelle features was due to their offloading all kinds of thinking to this group, whether it was what kind of car they should drive, drop out of high school, or try marijuana. The advice they got doesn't really matter; our focus is how an insane amount of trust was handed over to a group that may or may not have deserved it. Kai found a group of incredibly technically oriented people on PSP Hacking 101/Too Smart Guys; SWIM found a group more paranoid than they were on What.CD. They found like-minded individuals and when opinions differed, it led them to new perspectives. SWIM made a joke that they weren't going to try heroin or LSD, but wanted to dip their toes in the world of drugs with marijuana. SWIM turned out to be incorrect.
 
 WhatMan agreed to think about it, and SWIM _tried_ to go back to school, if only for the silly motivation of getting back in the good graces of What.CD's administration. However, falling a few credits short, SWIM decided it was time to move along and began applying for work. What.CD was a distraction, an addictive one, and SWIM started to give credence to staff's decision.
 
@@ -289,17 +289,19 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 —
 
-[^1]: This is satire. 
+[^1]: [Later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt)
 
-[^2]: Sorry, Ms. B.
+[^2]: [This is satire](http://localhost:4000/tags/satire/).
 
-[^3]: [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](https://www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
+[^3]: Sorry, Ms. B.
 
-[^4]: [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19]
+[^4]: [Hofmann Synthesizes the Potent Psychedelic Drug LSD-25](https://www.ebsco.com/research-starters/health-and-medicine/hofmann-synthesizes-potent-psychedelic-drug-lsd-25)
 
-[^5]: We're focusing on web-based long-form articles today, but they exist in print as well.
+[^5]: [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19]
 
 [^6]: Read: faffing about between schools and prior to full-time employment.
+
+[^7]: We're focusing on web-based long-form articles today, but they exist in print as well.
 
 ## Further Reading
 [What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
