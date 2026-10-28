@@ -204,7 +204,7 @@ I've quite frequently referenced Philip K. Dick's title ["How to Build a Univers
 
 It's odd to describe oneself as "falling in love" with software, but when it happened, I knew immediately. I can say I had the same experience with the Photoshop, Internet Protocol, computers, and the World Wide Web: a mathematically derived, logic-based, collective consciousness I could tap into at will and whim.
 
-To me, building a universe means contemplating your application from user to developer, admin to consumer; documentation key, oversight near-omnipotent. Growth into emergent regions: constellations from far-away galaxies reach back in earnest, all without deconstructing on the first failure. Failures are loud signals to prepare for; every runbook exercised should result in at least two more days of runtime.
+To me, building a universe means contemplating an application from user to developer, admin to consumer; documentation key, oversight near-omnipotent. Growth into emergent regions: constellations from far-away galaxies reach back in earnest, all without deconstructing on the first failure. Failures are loud signals to prepare for; every runbook exercised should result in at least two more days of runtime.
 
 Calling my latest project complete is "early", but only in the way [Bill Belichick "let[s] a player go a year too early [rather] than a year too late"](https://www.theringer.com/2024/01/11/nfl/bill-belichick-out-new-england-patriots-legacy-robert-kraft-tom-brady). In a short reprieve on April 20th, 2010, I described an early attempt as "Photoshop in real life, in real time", which this is absolutely not. It does beg into question what **_it is_**.
 
