@@ -286,7 +286,9 @@ I've talked at length about communities in the past, and studying What.CD and Ga
 
 SWIM still stays in contact with many former Whatters, something one does only when the roots of their commonalities with that community run deep. SWIM described a time when another user, "RainbowAlbatross", was living in Japan and was coerced by fellow Whatters to bike in town so that they could rip and upload Gorillaz's "Plastic Beach" album a day before it was set to be released in the U.S. They describe forum topics like "Free Stuff", "Epic Threads", and "Street Racing" which are fun anecdotally, but have little bearing on today's agenda.
 
-SWIM reviewed their message history when asked some of these questions, and reminisced on the time when What.CD went down fondly. All Whatters trying to look out for each other, remain operationally secure, but inviting each other to the previously mentioned upcropping of replacements. From the outside, these were lawless individuals sharing secrets and trying to circumvent lawful copyright protection; on the inside, they were free-thinkers fighting against the system and powers that be. [Whether you believe piracy should be a crime is entirely up to you](https://www.youtube.com/watch?v=mntVh15W1uY), but arguments against it are best handled by someone with more at stake.
+SWIM reviewed their message history when asked some of these questions, and reminisced on the time when What.CD went down fondly. All Whatters trying to look out for each other, remain operationally secure, but inviting each other to the previously mentioned upcropping of replacements. From the outside, these were lawless individuals sharing secrets and trying to circumvent lawful copyright protection; on the inside, they were free-thinkers fighting against the system and powers that be. 
+
+[Whether you believe piracy should be a crime is entirely up to you](https://www.youtube.com/watch?v=mntVh15W1uY), but arguments against it are best handled by someone with more at stake.
 
 ### Bibbidy-boppidi-boo
 
@@ -302,7 +304,7 @@ Few citizens (and netizens) understand this fact, and believe an omniscient pare
 
 Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there. We've dipped our toes into Dark Magic enough for today.
 
-I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD helps me see beyond the tangible, and profoundly affected me that first time so much that it gives me pause when asked such questions. As with all prose, less is more, and especially in the case of acid: silence is deafeningly loud.
+I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD, it helps me see beyond the tangible, and profoundly affected me the first time so much that it gives me pause when asked such questions. As with all prose, less is more, and especially in the case of acid: silence is deafeningly loud.
 
 ## Conclusion
 
