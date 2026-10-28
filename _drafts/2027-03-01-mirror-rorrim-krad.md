@@ -202,7 +202,7 @@ I began Kyle O IO intending to advocate for FOSS/OSS, and as much as it pained r
 
 I've quite frequently referenced Philip K. Dick's title ["How to Build a Universe that Doesn't Fall Apart Two Days Later,"](/waking-software-engineering/#how-to-build-an-app-that-doesnt-fall-apart-two-days-later) and if you've followed this journey from 2020 (or earlier) until now, it may be apparent what `The Point` is; But suffice it to say, here's our next hammer: This is a mirage.
 
-It's odd to describe oneself as "falling in love" with software, but when it happens, you know immediately. I can say I had the same experience with the Photoshop, Internet Protocol, computers, and the World Wide Web: a mathematically derived, logic-based, collective consciousness you can tap into at will and whim.
+It's odd to describe oneself as "falling in love" with software, but when it happened, I knew immediately. I can say I had the same experience with the Photoshop, Internet Protocol, computers, and the World Wide Web: a mathematically derived, logic-based, collective consciousness you can tap into at will and whim.
 
 To me, building a universe means contemplating your application from user to developer, admin to consumer; documentation key, oversight near-omnipotent. Growth into emergent regions: constellations from far-away galaxies reach back in earnest, all without deconstructing on the first failure. Failures are loud signals to prepare for; every runbook exercised should result in at least two more days of runtime.
 
