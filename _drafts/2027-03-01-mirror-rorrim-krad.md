@@ -48,20 +48,20 @@ When adults proved to be people holding a veil in front of my eyes, it became ha
 
 I look back at my "dropout letter" where I address my high school counselor and parents specifically, and cringe wholeheartedly. I mentioned "unplugging from the matrix", and how I was going to "change the world" by dropping out. I'm still another cog in the machine, as self-effacing as that may sound. In hindsight, my primary lesson from dropping out is how difficult it is to fight the grain. I found employment and worked my way into the software world, but that isn't world-bending. I avoided tens of thousands of dollars in debt, but even if I went to college (which you can still do with a GED), I would've gotten a Philosophy degree.
 
-My classes, where the entire hour was one long joke, compared with my AP classes where students actually cared about their grade, only compounded my frustration. Why spend several more years in the machine when I could step back and see the machine as a whole? I re-examined the assumed interest in college and found it less compelling. Assuming I would use a Philosophy degree in software, the only other benefit I could see to spending that kind of money on a college degree was networking.
+My classes, where the entire hour was one long joke, compared with my AP classes where students actually cared about their marks, only compounded my frustration. Why spend several more years in the machine when I could step back and see the machine as a whole? I re-examined the assumed interest in college and found it less compelling. Assuming I would use a Philosophy degree in software, the only other benefit I could see to spending that kind of money on a college degree was networking.
 
 I presumptuously assumed I was already achieving the same by networking online. I had a LinkedIn, was connected with important technorati, and bet I could keep leveraging that network into a job, but later found that wasn't the case.
 
 ### [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
 
-Like many teenagers, I became acutely aware of how different my politics were from my parents, and became enthralled with [Barack Obama](
-https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg), combined with lectures I received at school, seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They weren't saying this conceptually, but I got the signal I wanted.
+Like many teenagers, I became acutely aware of how different my politics were from my parents, and at the time was enthralled with [Barack Obama](
+https://www.newyorker.com/news/fault-lines/how-i-became-a-subaru-socialist). His message of [Hope](https://upload.wikimedia.org/wikipedia/en/5/55/Barack_Obama_Hope_poster.jpg), combined with lectures I received at school, seemed to point me in one direction: the answers I sought about my own identity and place in the world wouldn't be found in the compulsory school system. They weren't saying this conceptually, but I received the signal I wanted.
 
-Around the same time, as previously referenced ["I began to live on the internet"](/im-trans/#slight-miscalculations), where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I wore this new title with confidence; "[High School Dropout](https://www.urbandictionary.com/define.php?term=High+School+Dropout)" would be a point of pride, though years later I'd regret the decision out of fear of a workplace "finding out". At the time, though, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance as any patriot counterpart in America. We had no reason to fear Big Brother; the named target was national security threats, and the thread we weave into our basket became tantalized by the comfort of our own breadth.
+Around the same time, as previously referenced ["I began to live on the internet"](/im-trans/#slight-miscalculations), where I tally-ho'd my newly begot exploration of Life, The Universe, and Everything to my every heart's content and desire. I wore this new title with confidence; "[High School Dropout](https://www.urbandictionary.com/define.php?term=High+School+Dropout)" would be a point of pride, though years later I'd regret the decision out of fear of a workplace "finding out". At the time, I shared this information frivolously. I touted privacy as a non-concern with the same allegiance as any patriot counterpart in America. We had no reason to fear Big Brother; the named target was national security threats, and the thread we weave into our basket became tantalized by the comfort of our own breadth.
 
 Yes, we can, could mean a myriad of things in 2008 versus 2028. The beads on our tapestry click into place.
 
-My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v=NRzDsxUOm4M), [The Chicago Ten](https://kyleobrien.me/the-chicago-ten/).
+My thoughts today are best left to [CITIZENFOUR](https://www.youtube.com/watch?v=NRzDsxUOm4M), [The Chicago Ten](https://kyleobrien.me/the-chicago-ten/), ["The Electric Koolaid Acid Test"](https://openlibrary.org/works/OL1925362W/The_Electric_Kool-Aid_Acid_Test).
 
 [![The One can do more than dodge bullets](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/bullet-drop.gif)
 {: style="text-align: center;"}
@@ -98,9 +98,11 @@ I love longform works; [the sheer amount of information and interworked media ca
 
 Where physical books and media typically have more oversight, web-based articles make up for it by letting you update or modify any aspect of the content within minutes. Physical books require a reprint or a follow-up edition to add new information. There are trade-offs in either direction, but for people like me who live on the bleeding edge, the trade-offs in online media lean in our favor.
 
-LSD reminds me of longform in a way, and while other psychedelic drugs can provide a brief respite from the banalities of everyday life, trips are exactly that: a trip. Trips can seem like a childish pastime, but if you're in the group that believes that, I implore you to [change your mind](openlibrary.org/works/OL20159801W/How_to_Change_Your_Mind). As previously mentioned, these medicinal therapies aren't for everyone, but neglecting the positive effects for those that it does profoundly impact is, in my opinion, malicious.
+Lysergic Acid Diethylamide, LSD-25, or acid is the longform of psychedelics. While other psychedelic drugs can provide a brief respite from the banalities of everyday life[^7], trips are exactly that: a trip. Trips can seem like a childish pastime, but if you're in the group that believes that, I implore you to [change your mind](openlibrary.org/works/OL20159801W/How_to_Change_Your_Mind). As previously mentioned, these medicinal therapies aren't for everyone, but neglecting the positive effects for those that it does profoundly impact is, in my opinion, malicious.
 
 SWIM once tripped with Riff Raff and shared a profound experience where they "had an astral plane convergence". SWIM quit smoking cigarettes and hasn't smoked them in the seven years since; Riff Raff "switched things up" the following day. Another SWIM once tripped with a college friend and had conversations with fish, where each could keep the conversation going as though they could read the fish's thoughts. Yet another SWIM attended many concerts in the 90s while tripping, one of which they said they could "feel the harmonics reverberating through their brain."
+
+
 
 #### [Set & Setting](https://maps.org/news/bulletin/the-american-trip-set-setting-and-psychedelics-in-20th-century-psychology/)
 
@@ -112,13 +114,13 @@ I will dole out some specific advice when it comes to tripping on acid, but know
 
 Continuing that last bullet point, I believe this is why I gel so well with LSD; it causes me to break from my typically structured and analytical view of the world and experience it as it is. While I love the geometric shapes that appear between fine points, or how my mouse cursor leaves trails when the setting is disabled in my OS, these are only fun distractions. What I absolutely loved about my first trip on acid was the "mindfuck" effect of it, where everything becomes more alive, including my brain chemistry.
 
-This all being said, you should absolutely have a "trip sitter," that is someone more experienced in psychedelia and the spiritual realm that can guide you through your trip, especially your first time.
+Any potential psychonaut should absolutely have a "trip sitter," that is someone more experienced in psychedelia and the spiritual realm that can guide you through your trip, especially your first time.
 
 ### Let's Talk About Chicks, Man.
 
 This section has literally nothing to do with chicks or men. I'm a fan of misnomers, and since I’ve noted it directly, I'll likely refrain from using them, as that removes a lot of the fun, but if you haven't become acutely aware of this by now, I often use misnomers in project titles, etc.
 
-I first mentioned my current read on the state of the machine in 2020, when I described echoing back an error in the pipeline up through the static void we seek refuge in. In many ways, I proved myself _correct_ and _incorrect_ as a teen rebel; the answers I sought online prompted a reflection inward, but only after decades of searching. Does this imply I _wouldn't_ have found an answer had I chosen to continue the oft-traveled graduation of my compatriots? I certainly can't as noted above, but it does beg the question: with how radically diametrically opposed to how I was being taught and nudged in specific directions, how incorrect was I?
+I first mentioned my current read on the state of the machine in 2020, when I described [echoing back an error in the pipeline](dreaming-in-code-lucid-dreaming/#lucid-dreaming) up through the static void we seek refuge in. In many ways, I proved myself _correct_ and _incorrect_ as a teen rebel; the answers I sought online prompted a reflection inward, but only after decades of searching. Does this imply I _wouldn't_ have found an answer had I chosen to continue the oft-traveled graduation of my compatriots? I certainly can't as noted above, but it does beg the question: with how radically diametrically opposed to how I was being taught and nudged in specific directions, how incorrect was I?
 
 After finishing `that article`, I knew any follow-up article would be difficult to ascertain, given the subject and my ability to continue the `COLOPHON` specified "NEXT" section. Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming," I realized how tasking my intentions can be, and I finally published what was originally "Lucid Dreaming" as "The Android's Dream." And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
@@ -301,7 +303,9 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 [^6]: Read: faffing about between schools and prior to full-time employment.
 
-[^7]: We're focusing on web-based long-form articles today, but they exist in print as well.
+[^7]: ["The Spirit Molecule"](https://openlibrary.org/books/OL8233276M/DMT_The_Spirit_Molecule), Dimethyltryptamine, or DMT, would be described better by a shaman or similar mystic. I am no medium and only seek to put to text my own experiences.
+
+[^8]: We're focusing on web-based long-form articles today, but they exist in print as well.
 
 ## Further Reading
 [What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
