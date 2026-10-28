@@ -344,6 +344,6 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 #### AI PSYCHOSIS
 
-> I’ve got kind of a weird feeling that my experience as someone high functioning with AuADHD is a lot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
+> I’ve got kind of a weird feeling that my experience as someone high functioning with AußDHD is a lot more relatable than most people would think. I dunno if it’s some environmental shit like lead or some shit but I think it’s far more common of an experience than people would think. Like 10 to 20 percent of the population kind of common. - SWIM
 
 [Zalgo.txt](/assets/img/blog/posts/黒春光琳海/Zalgo.txt) [Zalgo-txt](https://fsymbols.com/generators/zalgo/) [Zalgo-txt](https://codepen.io/thunder33345/pen/oXXoXG) [Zalgo-txt](https://hipsum.co)
