@@ -22,7 +22,7 @@ permalink: /mirror-rorrim-krad/
 
 ## [Introduction](https://www.youtube.com/watch?v=q2nNzNo_Xps)
 
-We've covered the `long, long ago` quite considerably, but what of the `long ago`? Haze meets our gaze as we settle into my `dropout days`. As a late teenager, I tried finding myself in drugs more than friends, communities, or society. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), LSD-25 was my muse, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream) and my new chase of LSD isn't plainly obvious, but the result was. It wasn't my initial goal, merely a multi-pivot several years in the making. It comes full circle, of course.
+We've covered the `long, long ago` quite considerably, but what of the `long ago`? Haze meets our gaze as we settle into my `dropout days`. As a late teenager, I tried finding myself in drugs more than friends, communities, or society. There is the drug `Scene`, but I was only ever on the outskirts of this group. By the end of this period (2008 - 2012, ages 15 - 19), LSD-25 was my muse, [Albert Hoffman's self-described "Problem Child"](https://virtualtrip.maps.org/product/lsd-my-problem-child/). Connecting the rabbit holes discussed in [The Android's Dream; A Love Letter to the Bomb](/the-androids-dream) and my new chase of LSD isn't plainly obvious, but the result was. It wasn't my initial goal, merely a multi-pivot several years in the making. [It comes full circle, of course](https://archive.ph/owOv5).
 
 Before I dropped out, wool was pulled over my eyes, obscuring the complex machinery and politics that run civilization. Prior to smoking marijuana, I had not dropped out, and only after partaking[^1], did I soon find myself seeking a glimpse behind the veil of [consciousness](https://jacobsm.com/deoxy/deoxy.org/deoxy.htm) and [ego](https://jacobsm.com/deoxy/deoxy.org/egofalse.htm). Psychedelics became my friend, especially while coding.
 
@@ -190,7 +190,7 @@ One direction I considered was [Search](https://www.youtube.com/watch?v=U0-8SrbG
 
 ### What?
 
-[This isn't anything novel](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming). In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) ([Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purist's paradise, a technosocial phenomenon, only a Whatter would understand.
+[This isn't anything novel](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming). In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) ([Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)), and [lately has been on more than my own mind](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purist's paradise, a technosocial phenomenon, only a Whatter would understand.
 
 "Only a Whatter would understand" might be something SWIM would say about their experience with another "Whatter," their self-described term. And in those conversations, they might guide each other on their musical journeys. I wouldn't know; I was only a casual bystander and far too young to understand how essential What, or What.CD would become to `The Scene`. I'm not interested in discussing [`Warez`](https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157) or `The Scene`, but there's a large pool of content related to that which can be found in the [COLOPHON](#colophon).
 
@@ -343,6 +343,9 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 [&](https://www.youtube.com/watch?v=1H_DnYVqa3k)[&](https://arngren.net/)[&](https://www.deadlanguagesociety.com/p/weird-is-a-weird-word)
 
 ### [NEXT](https://imgs.xkcd.com/comics/barrel_cropped_(1).jpg)
+
+[DeadHonestCitation](https://github.com/obrien-k/DeadHonestCitation)
+[DeadSimpleCMS](https://github.com/obrien-k/DeadSimpleCMS)
 
 #### AI PSYCHOSIS
 

@@ -14,7 +14,7 @@ I prefer Kai, but Kyle is acceptable. I like code, sound, and minimalism. I:
 
 - Worked 4 years in Operations for a Fortune 250 telecommunications enterprise that launched [Sling.tv](https://sling.tv).
 - Joined multiple early series startups, including Commerce, which [celebrated an IPO as BIGC in August 2020](https://www.bigcommerce.com/press/releases/bigcommerce-announces-pricing-of-initial-public-offering/).
-- [Contributed to FOSS and OSS projects forever](https://github.com/obrien-k).
+- Actively volunteer in tech and the arts.
 
 My career-path began in 2006, cutting my teeth in forums and communities before graduating to production software.
 I spent 2017–2020 at BigCommerce discovering the soul of a great engineering team.
