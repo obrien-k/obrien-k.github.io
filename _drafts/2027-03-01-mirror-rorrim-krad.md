@@ -109,7 +109,7 @@ SWIM once tripped with Riff Raff and shared a profound experience where they "ha
 I will dole out some specific advice when it comes to tripping on acid, but know that this advice hasn't ever done much for me as far as improving my experiences. However, assuming you're not going to read anything else, [you must be in a proper mindset and physical setting before dosing LSD](https://www.academia.edu/33412177/Constructing_drug_effects_A_history_of_set_and_setting).
 
 - "Trip blanket", one that has an amicable texture to touch, and warm enough for when you inevitably get the chills on LSD.
-- "Distraction device", popular items include: a Rubik's Cube, fidget spinner, Game Boy (or your equivalent handheld nostalgia), what have you. We all carry one in our phones, but I try to limit my application use to something like [Frax](https://fr.ax/).
+- "Distraction device", popular items include: a Rubik's Cube, fidget spinner, hacky sack, Game Boy (or your equivalent handheld nostalgia), what have you. We all carry one in our phones, but I try to limit my application use to something like [Frax](https://fr.ax/).
 - "Go with the flow" -- The primary reason that none of the above has been entirely useful is because of this; plans are out the window regardless of how well you plan the itinerary. I've had a playlist in iTunes (Apple Music, now) called "The Trip" for over a decade and have never once listened to it while tripping.
 
 Continuing that last bullet point, I believe this is why I gel so well with LSD; it causes me to break from my typically structured and analytical view of the world and experience it as it is. While I love the geometric shapes that appear between fine points, or how my mouse cursor leaves trails when the setting is disabled in my OS, these are only fun distractions. What I absolutely loved about my first trip on acid was the "mindfuck" effect of it, where everything becomes more alive, including my brain chemistry.
@@ -118,11 +118,14 @@ Any potential psychonaut should absolutely have a "trip sitter," that is someone
 
 ### Let's Talk About Chicks, Man.
 
+[![Joel McHale, on The Soup, talking about Chicks, Man.](/assets/img/blog/posts/mirror-rorrim-krad/lets-talk-about-chicks-man.webp)](https://en.wikipedia.org/wiki/The_Soup)
+{: style="text-align: center;"}
+
 This section has literally nothing to do with chicks or men. I'm a fan of misnomers, and since I’ve noted it directly, I'll likely refrain from using them, as that removes a lot of the fun, but if you haven't become acutely aware of this by now, I often use misnomers in project titles, etc.
 
 I first mentioned my current read on the state of the machine in 2020, when I described [echoing back an error in the pipeline](dreaming-in-code-lucid-dreaming/#lucid-dreaming) up through the static void we seek refuge in. In many ways, I proved myself _correct_ and _incorrect_ as a teen rebel; the answers I sought online prompted a reflection inward, but only after decades of searching. Does this imply I _wouldn't_ have found an answer had I chosen to continue the oft-traveled graduation of my compatriots? I certainly can't as noted above, but it does beg the question: with how radically diametrically opposed to how I was being taught and nudged in specific directions, how incorrect was I?
 
-After finishing `that article`, I knew any follow-up article would be difficult to ascertain, given the subject and my ability to continue the `COLOPHON` specified "NEXT" section. Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming," I realized how tasking my intentions can be, and I finally published what was originally "Lucid Dreaming" as "The Android's Dream." And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
+After finishing `that article`, I knew any follow-up article would be difficult to ascertain, given the subject and my ability to continue the `COLOPHON` specified ["NEXT" section](/im-trans/#next). Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming," I realized how tasking my intentions can be, and I finally published what was originally "Lucid Dreaming" as "The Android's Dream." And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
 I intended to write a biography of someone close to me. I felt with `that article`, that I had bookended the first [cycle](https://encyclopediaofbuddhism.org/wiki/Sa%E1%B9%83s%C4%81ra) or [arc](https://tvtropes.org/pmwiki/pmwiki.php/Main/StoryArc) of this blog, and that it had grown too myopic. Too many threads woven together on too large a tapestry. In fact, we've come so far from my original plan that I'm [5,391 miles](/im-trans/#colophon-brushes-used-for-cover-image) from where I advised I'd be in `that article`. Life finds a way, though, and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter became clear. <!-- Ed. note weak and poorly worded It wasn't clear to me a year ago, nor was it last week. I only had this vague target I referred to as `dropout days`, my time between the ages 15 - 19[^6], when I attempted at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time. -->
 
@@ -171,13 +174,13 @@ Today, that doesn't matter. Generative AI has many faults, but it can certainly 
 [What have _you_ done for _me_ lately?](https://bleacherreport.com/articles/272429-the-nfl-what-have-you-done-for-me-lately)
 {: style="text-align: center;"}
 
-Writing _any_ follow-up to `that article` has resulted in indictments of people who may deserve it more or less than others, but once I hit "Publish", I regret the decision and take it down. As much as it pissed me off that DISH closed its Alvin call center in 2016, it wasn't Darren Swanson's fault, no matter how much of an asshat he looked. It's only capitalism at work. Customer Service is a cost center in every industry.
+Writing _any_ follow-up to `that article` has resulted in indictments of people who may deserve it more or less than others, but once I hit "Publish", I regret the decision and take it down. As much as it pissed me off that [DISH closed its Alvin call center in 2016](https://www.youtube.com/watch?v=BvSO43mByqU), it wasn't [Darren Swanson](https://www.linkedin.com/in/swansondarren/)'s fault, no matter how much of an asshat he looked. It's only capitalism at work. Customer Service is a cost center in every industry.
 
 In 2018 or so, [Matt Chaffin](https://www.linkedin.com/in/matthewchaffin/) said to me, "but AI won't be able to replace us; we give everything a human touch," (paraphrasing), and I made some hedging remark like "I'm not so sure" while I wanted to grip him by the shoulders and say "my brother in Christ, we will be the _first_ to go,". I don't think this was cognitive dissonance or stupidity. It is the same reaction I had when generative AI began proliferating in software. "Sucks to suck, but I'll be OK,". Such was not the case.
 
 [In all likelihood, I _am_ on a list now, a previously accepted consequence of writing, typing, editing, and publishing `that article`](https://en.wikipedia.org/wiki/Persecution_of_transgender_people_under_the_second_Trump_administration).
 
-If I'm already on that list, why not finish this diatribe, six years in the making, in style?
+If I'm already on that list, why not finish this diatribe, seven years in the making, in style?
 
 I know why we gave up, and sadly it's convenient: "[it's easier to run, replacing this pain with something numb](https://linkinpedia.com/wiki/Easier_To_Run)." It's easier to say "I have nothing to hide" than to see the nuance behind what they're asking of you. It's easier to assume you'll never be an enemy of the state because why would you? Fascists attack the marginalized groups first for a reason. [The reason should be self-explanatory](https://encyclopedia.ushmm.org/content/en/article/martin-niemoeller-first-they-came-for-the-socialists). I wonder if Anne Frank's rescuers were concerned with having nothing to hide before 1943. We'll never know that, but I do know futuristic dystopian novels quite well. I love that I read 1984 several times before 10th grade Pre-AP English, skimmed Anthem, and got higher marks on my Anthem test. As much as I love the idea of Objectivism, I disliked Anthem, but liked Atlas Shrugged (the half I made it through).
 
@@ -185,9 +188,11 @@ Having Nero as emperor must have been infuriatingly exhausting. He was in charge
 
 One direction I considered was [Search](https://www.youtube.com/watch?v=U0-8SrbG0xA) [Engine](https://www.youtube.com/watch?v=S3MQLlMbS-Y) [Optimization](https://www.youtube.com/watch?v=NRzDsxUOm4M) (SEO) and how deeply you can track an individual. Anyone can find these answers easily with a quick search. I would recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
 
-[This isn't anything novel](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming). In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purist's paradise, a technosocial phenomenon, only a Whatter would understand.
+### What?
 
-"Only a Whatter would understand" might be something SWIM would say about their experience with another "Whatter," their self-described term. And in those conversations, they might guide each other on their musical journeys. I wouldn't know; I was only a casual bystander and far too young to understand how essential What, or What.CD would become to `The Scene`. I'm not interested in discussing [`Warez`](https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157) or `The Scene`, but there's a large pool of content related to that which can be found in the COLOPHON.
+[This isn't anything novel](https://www.pigeonsandplanes.com/read/music-piracy-what-cd-oink-nine-inch-nails-streaming). In fact, [its documented widely](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) ([Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)). Explaining What is akin to describing Burning Man, Woodstock, or The Library of Alexandria. [SWIM](https://www.urbandictionary.com/define.php?term=SWIM) described it that way: an archive of anything, lossless tracks in any digital or physical format, especially vinyl. An audiophile purist's paradise, a technosocial phenomenon, only a Whatter would understand.
+
+"Only a Whatter would understand" might be something SWIM would say about their experience with another "Whatter," their self-described term. And in those conversations, they might guide each other on their musical journeys. I wouldn't know; I was only a casual bystander and far too young to understand how essential What, or What.CD would become to `The Scene`. I'm not interested in discussing [`Warez`](https://archive.org/details/b904a8eb-9c98-4bb1-bf25-3cb9d075b157) or `The Scene`, but there's a large pool of content related to that which can be found in the [COLOPHON](#colophon).
 
 I began Kyle O IO intending to advocate for FOSS/OSS, and as much as it pained readers, I shoehorned a brief introduction to Linux into the first article, which doubled its length but also filled out the symmetry with the first half. It was the Lucid core to [Lucid Dreaming in Code](/dreaming-in-code-lucid-dreaming). Linux was my entry point, and [Gazelle](https://github.com/WhatCD/Gazelle) was the first open-source utility I fell in love with.
 
@@ -237,11 +242,11 @@ So even to those who have nothing to hide, I urge you to educate yourself furthe
 
 > [Enshittification](https://www.democracynow.org/2025/10/10/cory_doctorow) - [Cory Doctorow](https://craphound.com/), [craphound.com/enshittification](https://craphound.com/category/enshittification/)
 
-I've mentioned before how the web feels stale, and generative AI has only accelerated it to the degree that the web feels like a deep-fried meme. I can't claim to have a solution, but I can claim I tried. When I first set out to do this, I had the presence of mind to realize it could piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring something typically left in the shadows to light.
+I've mentioned before how the web feels stale, and generative AI has only accelerated it to the degree that the web feels like a [deep-fried meme](https://old.reddit.com/r/DeepFriedMemes/). I can't claim to have a solution, but I can claim I tried. When I first set out to do this, I had the presence of mind to realize it could piss people off, especially the original creators of Gazelle. It's essentially a bastardization of the concepts behind it, trying to bring something typically left in the shadows to light.
 
 I've done what I could to protect it at the code level, but as with anything, what can improve society can also hinder it. Back to our history lesson.
 
-### A Primer on What.CD and Gazelle; A Tale of Addiction
+### A Primer on [What.CD](https://en.wikipedia.org/wiki/What.CD) and Gazelle; A Tale of Addiction
 
 The best place to start this section is with [WhatMan](/assets/img/blog/posts/mirror-rorrim-krad/whatman-stepping-down-as-sysop-of-what-cd.webp). I don't know all of the intricacies of who built, ran, and operated the front-end of What.CD, but WhatMan was a SysOp. SysOp is the highest level of authority on Gazelle, at least as a platform. SWIM ran into some trouble on What and lost their ability to socialize there, but still had all of the remaining features at their disposal. From what I was told, though, in their conversation with WhatMan, they asked that if they returned to high school and got their diploma, they would be allowed to socialize again.
 
@@ -255,13 +260,23 @@ Was this from a Whatter? Who's to say, but I can say it's unlikely SWIM would ha
 
 The primary sources of addiction in my own life came from recommendations of doctors, suggesting I use a muscle relaxer like Benadryl to sleep, and for someone who was obsessed with lucid dreaming at the time, this was an awful answer. It wasn't from a doctor, but the common household medicine cabinet option of [NyQuil](https://tropedia.fandom.com/wiki/JPod) seemed equally viable, and it wasn't like the local Walmart ever ID'd me in 2008. I haven't allowed these drugs in my household since 2014 (when I first moved out on my own), and I still have physical maladies that affect me to this day from those drugs.
 
-Upon a later viewing of "A Scanner Darkly", when Bob Arctor (the narrator) described his experience in the world of drugs, I couldn't help but see parallels to my own life when I, too, had become entrenched in it. I justified my use of drugs in that it was therapeutic; it was helping me sleep, but in reality it was making me sleep less. There are too many times to count that I ingested enough of either of these drugs that I might not have woken up, and one of the times this happened, it made my father cry. My father doesn't cry. My luck would run out eventually if I didn't drastically change my life, and while I didn't after that incident; I did at the first opportunity to separate myself from the world I had become too familiar with. I moved across the country, cut ties with the [friends who provided my ends](https://www.youtube.com/watch?v=W0uxwY3Sk3k) and I had surrounded myself with, and started over.
+Upon a later viewing of "A Scanner Darkly", when Bob Arctor (the narrator) described his experience in the world of drugs, I couldn't help but see parallels to my own life when I, too, had become entrenched in it. I justified my use of drugs in that it was therapeutic; it was helping me sleep, but in reality it was making me sleep less. 
 
-I don't have the same [list of friends that Philip K. Dick closes "A Scanner Darkly" with](https://old.reddit.com/r/Frisson/comments/11r37au/text_philip_k_dicks_epilogue_to_a_scanner_darkly/) that have suffered unimaginable mental and physical effects of drug addiction, nor is mine nearly as long, and not due to age, but my separation and eventual disconnection from the folx that fortunately haven't suffered as greatly as his. But the friends of those friends have. It has taken great willpower to reach out to these people to do some background coverage on what we remember from my `dropout days`, only because I know how influential they once were in my life, and it would be a test of my own ability to keep set boundaries. It's been insightful, and a reminder that we're all still connected, even if I've taken a step back for over a decade.
+There are too many times to count that I ingested enough of either of these drugs that I might not have woken up, and one of the times this happened, it made my father cry. 
+
+_My father doesn't cry._
+
+My luck would run out eventually if I didn't drastically change my life, and while I didn't after that incident; I did at the first opportunity to separate myself from the world I had become too familiar with. I moved across the country, cut ties with the [friends who provided my ends](https://www.youtube.com/watch?v=W0uxwY3Sk3k) and I had surrounded myself with, and started over.
+
+I don't have the same [list of friends that Philip K. Dick closes "A Scanner Darkly" with](https://old.reddit.com/r/Frisson/comments/11r37au/text_philip_k_dicks_epilogue_to_a_scanner_darkly/) that have suffered unimaginable mental and physical effects of drug addiction, nor is mine nearly as long, and not due to age, but my separation and eventual disconnection from the folx that fortunately haven't suffered as greatly as his. 
+
+**But the friends of those friends have.**
+
+It has taken great willpower to reach out to these people to do some background coverage on what we remember from my `dropout days`, only because I know how influential they once were in my life, and it would be a test of my own ability to keep set boundaries. It's been insightful, and a reminder that we're all still connected, even if I've taken a step back for over a decade.
 
 I do have a list of friends that died too young, for other, if not more nefarious, reasons, such as suicide and murder. Suicide from a friend I bonded with over asexuality when we were 17, murder that incited me to run away from home around the same time.
 
-It was a pipe dream to think, at the time, that I could rebuild Gazelle in my own vision of what it could be. I believed Gazelle could be used to make good on what software _should_ be, in service of the users rather than the powers that be. Believe me, I tried to modify Gazelle to fit my means, and at first I believed I was doing something wrong. By the time I was 20, though, I began to suspect the issue was with the underlying software, so I hired someone to try to get Gazelle running on a server. They made more progress than I did, but still failed to even get it installed.
+It was a pipe dream to think, around this time, that I could rebuild Gazelle in my own vision of what it could be. I believed Gazelle could be used to make good on what software _should_ be, in service of the users rather than the powers that be. Believe me, I tried to modify Gazelle to fit my means, and at first I believed I was doing something wrong. By the time I was 20, I began to suspect the issue was with the underlying software, so I hired someone to try to get Gazelle running on a server. They made more progress than I did, but also failed to install it.
 
 Later, [this became much easier](https://github.com/OPSnet/Gazelle), but by then it was too late, and the web had moved on. We were inundated with Spotify, Netflix, and various streaming services that even former Whatters moved on to. Even now, the application I've built, as much as it fits the definition of a universal one, feels too late. This project was primarily to see if I could, and it turned out that, with enough perseverance, I did.
 
@@ -279,7 +294,11 @@ In one of these conversations, SWIM asked me, absolutely seriously, "Do you beli
 
 Not in the way that Cinderella's fairy godmother provided her, but closer to C.S. Lewis' character Aslan described a ["deeper magic"](https://www.wtsbooks.com/blogs/westminster-kids/creation-and-c-s-lewis-deeper-magic), and to be clear, I don't ascribe to modern-day Christianity. In fact, when I was a self-described atheist, I used _The Chronicles of Narnia_ as a talking point for why I didn't believe in the Bible to my mother: "There are seven books! Why should I believe it any less than Jonah and the Whale, or Jack and the Beanstalk?" This quote is for posterity, and using a fifteen-year-old's arguments in a discussion about religion is immature.
 
-That deeper magic exists, though, and we see (saw?) this in the Open Source community until recently, when generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded. For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. Few citizens (and netizens) understand this fact, and believe an omniscient parent in the sky drags the sun across the horizon so we have daylight. We're well past the point where we should believe any parent's existence is how electricity works, and the doomsday clock ticks closer to midnight.
+That deeper magic exists, and we see (saw?) this in the Open Source community until recently, when generative AI has made such projects incredibly burdensome, especially those that are solo-run or underfunded.
+
+For years, I saw [core-js](https://core-js.io/) request funding through npm, and then the maintainer later [published a manifesto](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md) practically begging for support. [Our web relies on these dependencies](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency), and it isn't specific to the internet or technology. 
+
+Few citizens (and netizens) understand this fact, and believe an omniscient parent in the sky drags the sun across the horizon so we have daylight. We're well past the point where we should believe any parent's existence is how electricity works, and the doomsday clock ticks closer to midnight.
 
 Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there. We've dipped our toes into Dark Magic enough for today.
 
@@ -307,7 +326,8 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 [^8]: We're focusing on web-based long-form articles today, but they exist in print as well.
 
-## Further Reading
+## COLOPHON
+
 [What.CD: A Legacy of Sharing](https://rucore.libraries.rutgers.edu/rutgers-lib/58981/PDF/1/play/) — [Archive.org](https://web.archive.org/web/20251208001041/https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf) [Semantic Scholar](https://www.semanticscholar.org/paper/What.CD%3A-a-legacy-of-sharing-Dunham/7441626d8dc3e6a206644e66861130f1864bd753) [SciSpace](https://scispace.com/pdf/what-cd-a-legacy-of-sharing-sj3ll3tjy8.pdf)
 
 [What.cd's Gazelle on GitHub (Hacker News from Archive.org)](https://web.archive.org/web/20230624070146/https://news.ycombinator.com/item?id=6019392)
@@ -315,8 +335,6 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 [Digital Desire and Recorded Music: OiNK, Mnemotechnics and the Private BitTorrent Architecture](https://scispace.com/papers/digital-desire-and-recorded-music-oink-mnemotechnics-and-the-3sim7zaads)
 
 [Community, Collaboration and Contribution: Evaluating a BitTorrent Tracker as a Digital Library](https://cdr.lib.unc.edu/concern/masters_papers/w66346920)
-
-## COLOPHON
 
 [The most important part of a speech is the opening line. When time is not a factor, I like to try out three or four different ones.](https://tvquot.es/the-office/quote/5wmsp4y/)
 
