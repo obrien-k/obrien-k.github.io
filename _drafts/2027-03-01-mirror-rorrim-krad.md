@@ -50,7 +50,7 @@ I look back at my "dropout letter" where I address my high school counselor and 
 
 My classes, where the entire hour was one long joke, compared with my AP classes where students actually cared about their marks, only compounded my frustration. Why spend several more years in the machine when I could step back and see the machine as a whole? I re-examined the assumed interest in college and found it less compelling. Assuming I would use a Philosophy degree in software, the only other benefit I could see to spending that kind of money on a college degree was networking.
 
-I presumptuously assumed I was already achieving the same by networking online. I had a LinkedIn, was connected with important technorati, and bet I could keep leveraging that network into a job, but later found that wasn't the case.
+I presumptuously assumed I was already achieving the same by networking online. I had a LinkedIn, was connected with important technorati, and bet I could leverage that network into a job, but later found that wasn't the case.
 
 ### [Yes We Can](https://www.youtube.com/watch?v=2fZHou18Cdk)
 
@@ -100,7 +100,7 @@ Where physical books and media typically have more oversight, web-based articles
 
 Lysergic Acid Diethylamide, LSD-25, or acid is the longform of psychedelics. While other psychedelic drugs can provide a brief respite from the banalities of everyday life[^7], trips are exactly that: a trip. Trips can seem like a childish pastime, but if you're in the group that believes that, I implore you to [change your mind](openlibrary.org/works/OL20159801W/How_to_Change_Your_Mind). As previously mentioned, these medicinal therapies aren't for everyone, but neglecting the positive effects for those that it does profoundly impact is, in my opinion, malicious.
 
-SWIM once tripped with Riff Raff and shared a profound experience where they "had an astral plane convergence". SWIM quit smoking cigarettes and hasn't smoked them in the seven years since; Riff Raff "switched things up" the following day. Another SWIM once tripped with a college friend and had conversations with fish, where each could keep the conversation going as though they could read the fish's thoughts. Yet another SWIM attended many concerts in the 90s while tripping, one of which they said they could "feel the harmonics reverberating through their brain."
+SWIM once tripped with Riff Raff and shared a profound experience where they "had an astral plane convergence". SWIM quit smoking cigarettes and hasn't smoked them in the seven years since; Riff Raff "switched things up" the following day. Another SWIM once tripped with a college friend and had conversations with fish, where each could keep the conversation going as though they could read the fish's thoughts. Yet another SWIM attended many concerts in the 90s while tripping, one of which they said they could "feel the harmonics reverberating through [their] brain."
 
 
 
@@ -186,7 +186,7 @@ I know why we gave up, and sadly it's convenient: "[it's easier to run, replacin
 
 Having Nero as emperor must have been infuriatingly exhausting. He was in charge of the state, clowning his way through life, and as the state burned, [he threw a party](https://www.britishmuseum.org/blog/10-questions-about-emperor-nero-and-some-curious-answers).
 
-One direction I considered was [Search](https://www.youtube.com/watch?v=U0-8SrbG0xA) [Engine](https://www.youtube.com/watch?v=S3MQLlMbS-Y) [Optimization](https://www.youtube.com/watch?v=NRzDsxUOm4M) (SEO) and how deeply you can track an individual. Anyone can find these answers easily with a quick search. I would recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
+One direction I considered was [Search](https://www.youtube.com/watch?v=U0-8SrbG0xA) [Engine](https://www.youtube.com/watch?v=S3MQLlMbS-Y) [Optimization](https://www.youtube.com/watch?v=NRzDsxUOm4M) (SEO) and how deeply you can track an individual. Anyone can find these answers easily with a quick search. I recommend creating an ad account on your platform of choice (Facebook's is particularly bonkers) and seeing how specifically you can [target](https://www.youtube.com/watch?v=mYHTpWujrP4) someone.
 
 ### What?
 
@@ -276,7 +276,7 @@ It has taken great willpower to reach out to these people to do some background 
 
 I do have a list of friends that died too young, for other, if not more nefarious, reasons, such as suicide and murder. Suicide from a friend I bonded with over asexuality when we were 17, murder that incited me to run away from home around the same time.
 
-It was a pipe dream to think, around this time, that I could rebuild Gazelle in my own vision of what it could be. I believed Gazelle could be used to make good on what software _should_ be, in service of the users rather than the powers that be. Believe me, I tried to modify Gazelle to fit my means, and at first I believed I was doing something wrong. By the time I was 20, I began to suspect the issue was with the underlying software, so I hired someone to try to get Gazelle running on a server. They made more progress than I did, but also failed to install it.
+It was a pipe dream to think, around this time, that I could rebuild Gazelle in my own vision of what it I wanted it to be. I believed Gazelle could be used to make good on what software _should_ be, in service of the users rather than the powers that be. Believe me, I tried to modify Gazelle to fit my means, and at first I thought I was doing something wrong. By the time I was 20, I began to suspect the issue was with the underlying software, so I hired someone to try to get Gazelle running on a server. They made more progress than I did, but also failed to install it.
 
 Later, [this became much easier](https://github.com/OPSnet/Gazelle), but by then it was too late, and the web had moved on. We were inundated with Spotify, Netflix, and various streaming services that even former Whatters moved on to. Even now, the application I've built, as much as it fits the definition of a universal one, feels too late. This project was primarily to see if I could, and it turned out that, with enough perseverance, I did.
 
