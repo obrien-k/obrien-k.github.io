@@ -12,13 +12,12 @@ hide_description: true
 
 I prefer Kai, but Kyle is acceptable. I like code, sound, and minimalism. I:
 
-- Worked 4 years in Operations for a Fortune 250 telecommunications enterprise that launched [Sling.tv](https://sling.tv).
-- Joined multiple early series startups, including Commerce, which [celebrated an IPO as BIGC in August 2020](https://www.bigcommerce.com/press/releases/bigcommerce-announces-pricing-of-initial-public-offering/).
+- Served four years in Operations for a Fortune 250 telecommunications enterprise that launched [Sling.tv](https://sling.tv).
+- Joined multiple early-series startups, including Commerce, which [celebrated an IPO as BIGC in August 2020](https://www.bigcommerce.com/press/releases/bigcommerce-announces-pricing-of-initial-public-offering/).
+- Partnered with multinational conglomerates including Bosch, Netflix, Wayfair, and DISH.
 - Actively volunteer in tech and the arts.
 
-My career-path began in 2006, cutting my teeth in forums and communities before graduating to production software.
-I spent 2017–2020 at BigCommerce discovering the soul of a great engineering team.
-From 2022-2024, I worked for Apollo, establishing best practices for developer support documentation and community outreach.
+My career path began in 2006, cutting my teeth in forums and communities before graduating to production software. I spent 2017–2020 at BigCommerce discovering the soul of a great engineering team. From 2022-2024, I worked for Apollo, establishing best practices for developer support documentation and community outreach.
 
 I'm also available for SWE, Technical Writing, and design contract work.
 
