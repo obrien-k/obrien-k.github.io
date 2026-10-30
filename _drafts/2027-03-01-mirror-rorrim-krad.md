@@ -167,9 +167,9 @@ Why is today's society so readily willing to sacrifice any shred of privacy for 
 
 > "If you mix the mashed potatoes and sauce, you can't separate them later. It's forever. The smoke comes out of Daddy's cigarette, but it never goes back in. We cannot go back. That's why it's hard to choose. You have to make the right choice. As long as you don't choose, everything remains possible." - [Mr. Nobody](https://www.imdb.com/title/tt0485947/quotes/?item=qt2810448)
 
-This comes from the person who hands Google and Apple all their data with a grin on their face, so this is a bit of schadenfreude, but hear me out: my data is incredibly tainted and noisy. I can't recall exactly why I shared all this data as a teenager (and championed the idea to friends and family), but after 2014 I made damn sure it'd take a lot of sifting, account hopping, and migraine-inducing research to connect any of the dots in my life.
+This comes from the person who [hands Google and Apple all their data with a grin on their face](https://docs.google.com/spreadsheets/d/1n0gpVvIXfljhT5rYXCZwbhkGkegXUuV4ZtKi50fNx3M/edit?usp=sharing), so this is a bit of schadenfreude, but hear me out: my data is incredibly tainted and noisy. I can't recall exactly why I shared all this data as a teenager (and championed the idea to friends and family), but after 2014 I made damn sure it'd take a lot of sifting, account hopping, and migraine-inducing research to connect any of the dots in my life.
 
-Today, that doesn't matter. Generative AI has many faults, but it can certainly gobble up data. But when your government isn't only asking what you can do for it, but stipulating that you relinquish certain (if not all) unalienable rights, it calls into question:
+Today, that doesn't matter. Generative AI has many faults, but it can certainly gobble up data. However, when your government isn't only asking what you can do for it, but stipulating that you relinquish certain (if not all) unalienable rights, it calls into question:
 
 [What have _you_ done for _me_ lately?](https://bleacherreport.com/articles/272429-the-nfl-what-have-you-done-for-me-lately)
 {: style="text-align: center;"}
@@ -178,9 +178,11 @@ Writing _any_ follow-up to `that article` has resulted in indictments of people 
 
 In 2018 or so, [Matt Chaffin](https://www.linkedin.com/in/matthewchaffin/) said to me, "but AI won't be able to replace us; we give everything a human touch," (paraphrasing), and I made some hedging remark like "I'm not so sure" while I wanted to grip him by the shoulders and say "my brother in Christ, we will be the _first_ to go,". I don't think this was cognitive dissonance or stupidity. It is the same reaction I had when generative AI began proliferating in software. "Sucks to suck, but I'll be OK,". Such was not the case.
 
-[In all likelihood, I _am_ on a list now, a previously accepted consequence of writing, typing, editing, and publishing `that article`](https://en.wikipedia.org/wiki/Persecution_of_transgender_people_under_the_second_Trump_administration).
+[In all likelihood, I _am_ on a list now, a previously accepted consequence of writing, typing, editing, and publishing `that article`](https://en.wikipedia.org/wiki/Persecution_of_transgender_people_under_the_second_Trump_administration). Each action, a footprint of verifiable proof across HTTP.
 
 If I'm already on that list, why not finish this diatribe, seven years in the making, in style?
+
+<!-- V broadcast? maybe -->
 
 I know why we gave up, and sadly it's convenient: "[it's easier to run, replacing this pain with something numb](https://linkinpedia.com/wiki/Easier_To_Run)." It's easier to say "I have nothing to hide" than to see the nuance behind what they're asking of you. It's easier to assume you'll never be an enemy of the state because why would you? Fascists attack the marginalized groups first for a reason. [The reason should be self-explanatory](https://encyclopedia.ushmm.org/content/en/article/martin-niemoeller-first-they-came-for-the-socialists). I wonder if Anne Frank's rescuers were concerned with having nothing to hide before 1943. We'll never know that, but I do know futuristic dystopian novels quite well. I love that I read 1984 several times before 10th grade Pre-AP English, skimmed Anthem, and got higher marks on my Anthem test. As much as I love the idea of Objectivism, I disliked Anthem, but liked Atlas Shrugged (the half I made it through).
 
@@ -272,9 +274,9 @@ I don't have the same [list of friends that Philip K. Dick closes "A Scanner Dar
 
 **But the friends of those friends have.**
 
-It has taken great willpower to reach out to these people to do some background coverage on what we remember from my `dropout days`, only because I know how influential they once were in my life, and it would be a test of my own ability to keep set boundaries. It's been insightful, and a reminder that we're all still connected, even if I've taken a step back for over a decade.
+It has taken great willpower to reach out to these people to do some background coverage on what we remember from my `dropout days`, only because I know how influential they once were in my life, and was a test of my ability to keep set boundaries. It's been insightful, and a reminder that we're all still connected, even if I've taken a step back for over a decade.
 
-I do have a list of friends that died too young, for other, if not more nefarious, reasons, such as suicide and murder. Suicide from a friend I bonded with over asexuality when we were 17, murder that incited me to run away from home around the same time.
+I have a list of friends that died too young, for other, if not more nefarious, reasons, including suicide and murder. Suicide from a friend I bonded with over asexuality when we were 17, murder that incited me to run away from home around the same time.
 
 It was a pipe dream to think, around this time, that I could rebuild Gazelle in my own vision of what it I wanted it to be. I believed Gazelle could be used to make good on what software _should_ be, in service of the users rather than the powers that be. Believe me, I tried to modify Gazelle to fit my means, and at first I thought I was doing something wrong. By the time I was 20, I began to suspect the issue was with the underlying software, so I hired someone to try to get Gazelle running on a server. They made more progress than I did, but also failed to install it.
 
