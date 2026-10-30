@@ -127,7 +127,7 @@ I first mentioned my current read on the state of the machine in 2020, when I de
 
 After finishing `that article`, I knew any follow-up article would be difficult to ascertain, given the subject and my ability to continue the `COLOPHON` specified ["NEXT" section](/im-trans/#next). Some of it was easy, but as early as "Dreaming in Code \|\| Lucid Dreaming," I realized how tasking my intentions can be, and I finally published what was originally "Lucid Dreaming" as "The Android's Dream." And we haven't talked about dreaming or lucid dreaming at all. I play this off with friends as though it's intentional. It's not.
 
-I intended to write a biography of someone close to me. I felt with `that article`, that I had bookended the first [cycle](https://encyclopediaofbuddhism.org/wiki/Sa%E1%B9%83s%C4%81ra) or [arc](https://tvtropes.org/pmwiki/pmwiki.php/Main/StoryArc) of this blog, and that it had grown too myopic. Too many threads woven together on too large a tapestry. In fact, we've come so far from my original plan that I'm [5,391 miles](/im-trans/#colophon-brushes-used-for-cover-image) from where I advised I'd be in `that article`. Life finds a way, though, and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter became clear. <!-- Ed. note weak and poorly worded It wasn't clear to me a year ago, nor was it last week. I only had this vague target I referred to as `dropout days`, my time between the ages 15 - 19[^6], when I attempted at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time. -->
+I intended to write a biography of someone close to me. I felt with `that article`, that I had bookended the first [cycle](https://encyclopediaofbuddhism.org/wiki/Sa%E1%B9%83s%C4%81ra) or [arc](https://tvtropes.org/pmwiki/pmwiki.php/Main/StoryArc) of this blog, and that it had grown too myopic. Too many threads woven together on too large a tapestry. In fact, we've come so far from my original plan that I'm [5,391 miles](/im-trans/#colophon-brushes-used-for-cover-image) from where I advised I'd be in `that article`. Life finds a way, though, and [through death](https://www.crowderfuneralhome.com/obituaries/heather-leigh-newstead/), my subject matter became clear. Originally, I only had a vague target which I referred to as `dropout days`, my time between the ages 15 - 19[^8], when I attempted at exploring the world through the eyes of a journalist. I wouldn't describe myself that way, except in that I have (in)consistently journaled for a long time.
 
 [![The One handles Agent Smith with ease](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)](/assets/img/blog/posts/mirror-rorrim-krad/wreck_shop.gif)
 {: style="text-align: center;"}
@@ -256,9 +256,9 @@ The reason SWIM lost their privileges to post on the forums, and similar Gazelle
 
 WhatMan agreed to think about it, and SWIM _tried_ to go back to school, if only for the silly motivation of getting back in the good graces of What.CD's administration. However, falling a few credits short, SWIM decided it was time to move along and began applying for work. What.CD was a distraction, an addictive one, and SWIM started to give credence to staff's decision.
 
-By this time, SWIM began going by the nickname "LSD" on the internet, changing their Steam name, IRC, and first-tried username on sites. No one could say what their motivation was, beyond masquerading as something they had no experience in, but it likely invited conversation on the topic quite readily. It likely brought the right person along to offer to ship it at no cost. It likely resulted in other drugs finding their way to Someone Who Isn't Me. It likely resulted in learning what most visitors to this page have no inclination to learn, such as [Pretty Good Privacy](https://help.uillinois.edu/TDClient/37/uic/KB/Article/869/What-are-PGP-Public-and-Private-Keys), operational security, and decreased trust in an already distrustful person.
+By this time, SWIM began going by the nickname "LSD" on the internet, changing their Steam name, IRC, and first-tried username on sites. No one could say what their motivation was, beyond masquerading as something they had no experience in, but it likely invited conversation on the topic quite readily. It likely brought the right person along to offer to ship it at no cost. It likely resulted in other drugs finding their way to Someone Who Isn't Me. It likely resulted in learning what most visitors to this page have no inclination to learn, such as [Pretty Good Privacy](https://help.uillinois.edu/TDClient/37/uic/KB/Article/869/What-are-PGP-Public-and-Private-Keys), [operational security](https://www.practical-devsecops.com/), and decreased trust in an already distrustful person.
 
-Was this from a Whatter? Who's to say, but I can say it's unlikely SWIM would have found themselves if not for What. When the social fallout happened, SWIM reports that many fellow Whatters reached out to them, one of whom had a transgender parent and thought it'd be good for SWIM to talk to them. But SWIM couldn't be _one of those_; it'd destroy their own parents and might end up with them in gay conversion therapy.
+Was this from a Whatter? Who's to say, but from what I've been advisted, it's unlikely SWIM would have found themselves if not for What. When the social fallout happened, SWIM reports that many fellow Whatters reached out to them, one of whom had a transgender parent and thought it'd be good for SWIM to talk to them. But SWIM couldn't be _one of those_; it'd destroy their own parents and might end up with them in [conversion therapy](https://psycnet.apa.org/doiLanding?doi=10.1111%2Fcpsp.12377) [^9].
 
 The primary sources of addiction in my own life came from recommendations of doctors, suggesting I use a muscle relaxer like Benadryl to sleep, and for someone who was obsessed with lucid dreaming at the time, this was an awful answer. It wasn't from a doctor, but the common household medicine cabinet option of [NyQuil](https://tropedia.fandom.com/wiki/JPod) seemed equally viable, and it wasn't like the local Walmart ever ID'd me in 2008. I haven't allowed these drugs in my household since 2014 (when I first moved out on my own), and I still have physical maladies that affect me to this day from those drugs.
 
@@ -316,7 +316,7 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 [^1]: [Later obsessing over the medical benefits](/assets/ephemera/exchanging-lies-exposing-truth.txt)
 
-[^2]: [This is satire](http://localhost:4000/tags/satire/).
+[^2]: [This is satire](/tags/satire/).
 
 [^3]: Sorry, Ms. B.
 
@@ -324,11 +324,15 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 [^5]: [add citation note: Note this is after the period of addiction to DXM/Benadryl at age 19]
 
-[^6]: Read: faffing about between schools and prior to full-time employment.
+[^6]: We're focusing on web-based long-form articles today, but they exist in print as well.
 
 [^7]: ["The Spirit Molecule"](https://openlibrary.org/books/OL8233276M/DMT_The_Spirit_Molecule), Dimethyltryptamine, or DMT, would be described better by a shaman or similar mystic. I am no medium and only seek to put to text my own experiences.
 
-[^8]: We're focusing on web-based long-form articles today, but they exist in print as well.
+[^8]: Read: faffing about between schools and prior to full-time employment.
+
+[^9]: _I_ know we're talking about two different things, but my parents wouldn't and still don't understand the difference between gender identity and sexual orientation.
+
+
 
 ## COLOPHON
 
