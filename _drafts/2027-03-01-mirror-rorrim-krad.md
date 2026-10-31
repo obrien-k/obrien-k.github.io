@@ -155,6 +155,10 @@ It's not too late to save yourself before you swim, and it's not too late to res
 
 Yesterday (2026.08.26), Dolly Parton died, and today Tim Curry followed suit. While it's easy to call yourself a hero, these passings made me reflect again and offer them as _true_ heroes, two rare exceptions that deserve this title. Panettiere and Bennington absolutely should be in the discussion as well, but the water's murkier, and we'll discuss this at length in the second half of this article.
 
+### Hackers vs. Crackers
+
+Something, something.
+
 ## RORRIM KRAD
 
 > "What does a scanner see? he asked himself. I mean, really see? Into the head? Down into the heart? Does a passive infrared scanner like they used to use or a cube-type holo-scanner like they use these days, the latest thing, see into me - into us - clearly or darkly? I hope it does, he thought, see clearly, because I can't any longer these days see into myself. I see only murk. Murk outside; murk inside. I hope, for everyone's sake, the scanners do better. Because, he thought, if the scanner sees only darkly, the way I myself do, then we are cursed, cursed again and like we have been continually, and we'll wind up dead this way, knowing very little and getting that little fragment wrong too," - "A Scanner Darkly" by [Philip K. Dic](https://www.goodreads.com/quotes/371583-what-does-a-scanner-see-he-asked-himself-i-mean)[k](https://www.npr.org/2006/07/07/5541990/scanner-darkly-looks-odd-and-thats-good)
@@ -307,6 +311,8 @@ Few citizens (and netizens) understand this fact, and believe an omniscient pare
 Unfortunately, Light Magic exists as much as Dark Magic does, and we might call it Positive/Negative Magic, [or whatever](https://www.nngroup.com/articles/accessibility-inclusivity-study-guide/), but `that article` calls it Light Magic, so we'll digress there. We've dipped our toes into Dark Magic enough for today.
 
 I can't tell you exactly what I believe, except that the connectedness I feel while tripping or microdosing LSD, it helps me see beyond the tangible, and profoundly affected me the first time so much that it gives me pause when asked such questions. As with all prose, less is more, and especially in the case of acid: silence is deafeningly loud.
+
+> Do you ever wonder if [your `dropout daze`] effected your IQ? - SWIM
 
 ## Conclusion
 
