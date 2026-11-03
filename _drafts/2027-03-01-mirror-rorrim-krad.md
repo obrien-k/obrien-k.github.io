@@ -157,7 +157,11 @@ Yesterday (2026.08.26), Dolly Parton died, and today Tim Curry followed suit. Wh
 
 ### Hackers vs. Crackers
 
-Something, something.
+Hackers clickity-clack attacks like many silent monks before them, far away from others, but their words are seen worldwide. Crackers are juxtaposed as their blackhat counterparts, they're the "bad guys". I liken myself to a script kiddie more than either of these monikers. Considering some of my "hacky" workarounds, though, I am a hacker-at-heart. It is too far a step for me to go beyond that, into accessing someone's personal data, corporate codes, or what have you.
+
+You'll hear it every now and again, but not as often as the early 2000s, this separation of hackers and crackers. I don't really have much to add except that kind of, "huh", I wonder if we'll hear it less going into next-decade.
+
+There is a venn diagram to be drawn here though, at this exact intercept. Somewhere between the spaces, symbols, and thoughtstuff that make me the person I am, however undefinable as that may be. One removed from Someone Who Isn't Me.
 
 ## RORRIM KRAD
 
@@ -336,7 +340,7 @@ Capturing such magic in a bottle is harder than with lightning; believe me, I've
 
 [^8]: Read: faffing about between schools and prior to full-time employment.
 
-[^9]: _I_ know we're talking about two different things, but my parents wouldn't and still don't understand the difference between gender identity and sexual orientation.
+[^9]: _I_ know we're talking about two different things, but not everyone understands the difference between gender identity and sexual orientation.
 
 
 
